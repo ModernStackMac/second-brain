@@ -1,0 +1,101 @@
+# Meadow Database Schema
+
+> HMS Capacity Planning App — 11 tables, currently SQLite (migrating to Supabase PostgreSQL)
+
+## 1. Settings
+- key (TEXT PK)
+- value (TEXT)
+
+## 2. Clients
+- id (TEXT PK)
+- display_name (TEXT NOT NULL)
+- created_at (TEXT)
+
+## 3. People
+- id (TEXT PK)
+- display_name (TEXT NOT NULL)
+- clockify_user_id (TEXT)
+- capacity_hours_per_week (REAL, default 40)
+- is_active (INTEGER, default 1)
+- created_at (TEXT)
+- notion_page_id (TEXT)
+- is_admin (INTEGER, default 0)
+
+## 4. Projects
+- id (TEXT PK)
+- display_name (TEXT NOT NULL)
+- clockify_project_id (TEXT)
+- client_id (TEXT -> Clients)
+- budget_hours (REAL)
+- end_date (TEXT)
+- is_active (INTEGER, default 1)
+- created_at (TEXT)
+
+## 5. ProjectTasks
+- id (TEXT PK)
+- display_name (TEXT NOT NULL)
+- clockify_task_id (TEXT)
+- project_id (TEXT NOT NULL -> Projects)
+- is_complete (INTEGER, default 0)
+- is_default (INTEGER, default 0)
+- complete_date (TEXT)
+- created_at (TEXT)
+
+## 6. TimeEntries
+- id (TEXT PK)
+- person_id (TEXT NOT NULL -> People)
+- project_id (TEXT NOT NULL -> Projects)
+- project_task_id (TEXT -> ProjectTasks)
+- date (TEXT NOT NULL)
+- hours (REAL NOT NULL)
+- description (TEXT, max 1000 chars)
+- clockify_entry_id (TEXT)
+- source (TEXT NOT NULL — 'clockify' | 'manual')
+
+## 7. Projections
+- id (TEXT PK)
+- person_id (TEXT NOT NULL -> People)
+- project_id (TEXT NOT NULL -> Projects)
+- project_task_id (TEXT -> ProjectTasks)
+- week_start (TEXT NOT NULL)
+- hours (REAL NOT NULL)
+- created_at (TEXT)
+- updated_at (TEXT)
+
+## 8. ActionItems
+- id (TEXT PK)
+- type (TEXT NOT NULL)
+- payload (TEXT NOT NULL, default '{}')
+- status (TEXT NOT NULL — 'open' | 'dismissed' | 'completed')
+- created_at (TEXT)
+- resolved_at (TEXT)
+
+## 9. NotionSyncLog
+- id (TEXT PK)
+- person_id (TEXT -> People)
+- notion_page_id (TEXT)
+- last_synced_at (TEXT)
+- status (TEXT NOT NULL)
+- error (TEXT)
+
+## 10. ExportTemplates
+- id (TEXT PK)
+- display_name (TEXT NOT NULL)
+- created_at (TEXT)
+- updated_at (TEXT)
+- column_definitions (TEXT NOT NULL, default '[]' — JSON array of {header, source_field})
+
+## 11. ProjectResources
+- id (TEXT PK)
+- person_id (TEXT NOT NULL -> People)
+- project_id (TEXT NOT NULL -> Projects)
+- created_at (TEXT)
+- UNIQUE(person_id, project_id)
+
+## Key Relationships
+- Projects -> Clients (client_id)
+- ProjectTasks -> Projects (project_id)
+- TimeEntries -> People, Projects, ProjectTasks
+- Projections -> People, Projects, ProjectTasks
+- ProjectResources -> People, Projects (unique pairing)
+- NotionSyncLog -> People
