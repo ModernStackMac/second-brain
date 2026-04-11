@@ -66,11 +66,15 @@ Documents/
       entities/           # People, orgs, vendors
       articles/           # Article breakdowns
       topics/             # Accumulator pages for interests
+      meetings/           # Meeting summaries with cross-links
       reports/            # Saved query outputs
   Meeting Notes/          # Granola/Shadow transcripts (auto-processed)
     {Company}/{Project}/  # Routed by scheduled task
     _Unmatched/           # Meetings that couldn't be routed
+  session-context/          # Claude Code handoff notes for cross-session continuity
   project-mapping.md      # Single source of truth for projects, contacts, routing
+  Action-Tracker.md       # Open action items from meetings (Claude-maintained)
+  Decision-Log.md         # Key decisions with date, context, source meeting
 ```
 
 ---
@@ -140,8 +144,13 @@ These trigger from natural conversation in Cowork or Claude Code.
 ### Meeting Notes (Automatic)
 1. Have a meeting with Granola running
 2. Transcript auto-appears in Granola
-3. Scheduled task (every 2 hours) pulls it and routes to `Meeting Notes/{Company}/{Project}/`
-4. Next ingest cycle extracts decisions, action items, and context into wiki pages
+3. **Meeting Processing task** (every 2 hours) pulls transcript via Granola MCP, matches attendees and keywords against `project-mapping.md`, and routes to `Meeting Notes/{Company}/{Project}/` with frontmatter (date, company, project, attendees)
+4. **Ingest task** (every 4 hours) picks up the routed transcript, extracts:
+   - **Decisions** → appended to `Decision-Log.md` with date, meeting ref, and context
+   - **Action items** → appended to `Action-Tracker.md` with owner, due date (if mentioned), and source meeting
+   - **Entities/concepts** → creates or updates relevant wiki pages (client pages, tool pages, etc.) with new context from the meeting
+   - **Meeting summary** → saved to `wiki/meetings/` with cross-links to related wiki pages
+5. Unmatched meetings (no project-mapping hit) go to `Meeting Notes/_Unmatched/` — review periodically and update `project-mapping.md` to catch them next time
 
 ### Manual Content
 1. Paste a URL or text into a Cowork/Claude Code session
@@ -151,6 +160,31 @@ These trigger from natural conversation in Cowork or Claude Code.
 ### Project Documents
 1. Drop SOWs, configs, schemas into `raw/projects/{project-name}/`
 2. Scheduled ingest or "ingest this" processes them into wiki pages
+
+---
+
+## Session Context (Cross-Session Memory)
+
+Claude Code doesn't have persistent memory between sessions, but `session-context/` bridges the gap.
+
+**How it works:**
+1. At the end of a long Claude Code session, say "save context" or "write a handoff note"
+2. Claude writes a markdown file to `Second Brain/session-context/` named `{date}-{topic}.md`
+3. The file captures: what you worked on, decisions made, open threads, and next steps
+4. Next session, Claude checks `session-context/` on startup (CLAUDE.md tells it to) and picks up where you left off
+
+**File format:** `2026-04-11-harvey-data-model.md`
+
+**Lifecycle:** Session context files are short-lived working memory. During the weekly lint (Sundays), files older than 30 days get either deleted or ingested into wiki pages if they contain durable knowledge.
+
+**When to use it:**
+- Multi-day work on a complex feature or deliverable
+- Architecture decisions still in progress
+- Any session where you'd lose significant context by starting fresh
+
+**When NOT to use it:**
+- Quick one-off questions
+- Work that's already captured in wiki pages or meeting notes
 
 ---
 
@@ -165,7 +199,7 @@ These trigger from natural conversation in Cowork or Claude Code.
 | **Tasks** | Track to-dos with due dates, priorities, recurring rules | Works out of the box. Any `- [ ]` in vault is trackable. Use `tasks` code blocks for dashboards. |
 | **Calendar** | Date-based navigation for daily notes | Set daily notes folder to `daily/` in Settings -> Daily Notes. |
 | **Templater** | Reusable templates with variables and logic | Set template folder to `raw/templates/` in plugin settings. Templates not yet created. |
-| **Obsidian Git** | Auto-backup vault to Git | Installed. Needs remote repo configured (see Git Setup section below). |
+| **Obsidian Git** | Auto-backup vault to Git every 15 min | Configured. Pushes to `ModernStackMac/second-brain` (private). Base path set to `Second Brain`. |
 | **Excalidraw** | Whiteboarding, architecture diagrams, flowcharts | Works immediately. Create `.excalidraw.md` files or use the ribbon icon. |
 | **Kanban** | Visual project boards | Works immediately. Create a note and add `kanban-plugin: basic` to frontmatter. |
 | **Web Clipper** | Browser extension for saving articles | Configured to save to `Second Brain/raw/articles/`. |
@@ -203,69 +237,17 @@ Keep it under ~100 lines. When people or projects change, update the tables. If 
 
 ---
 
-## Git Setup for Vault Backup
+## Git Backup
 
-### Step 1: Create a Private GitHub Repo
+The vault is backed up to GitHub via the Obsidian Git plugin. Auto-commits every 15 minutes with push. Full version history and off-device backup.
 
-Go to https://github.com/new and create a new repo:
-- Name: `second-brain` (or whatever you want)
-- Visibility: **Private**
-- Don't initialize with README (your vault already has files)
-
-### Step 2: Initialize Git in the Vault
-
-Open Terminal and run:
-
-```bash
-cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Second\ Brain
-
-git init
-```
-
-### Step 3: Create .gitignore
-
-Create a `.gitignore` file in the vault root to exclude Obsidian workspace files:
-
-```bash
-cat > .gitignore << 'EOF'
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/plugins/obsidian-git/data.json
-.DS_Store
-.trash/
-EOF
-```
-
-### Step 4: Initial Commit and Push
-
-```bash
-git add -A
-git commit -m "initial vault backup"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/second-brain.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username.
-
-### Step 5: Configure Obsidian Git Plugin
-
-In Obsidian: Settings -> Obsidian Git:
-- **Auto backup interval:** 15 (minutes)
-- **Auto pull on startup:** enabled
-- **Commit message template:** `vault backup: {{date}}`
-- **Push after commit:** enabled
-
-Now your vault auto-commits and pushes every 15 minutes. Full version history, off-device backup, and you can restore any file to any point in time.
-
-### Authentication
-
-If GitHub prompts for credentials, you'll need a Personal Access Token:
-1. Go to https://github.com/settings/tokens
-2. Generate new token (classic) with `repo` scope
-3. Use it as your password when git prompts
-
-Or set up SSH keys if you prefer.
+- **Repo:** https://github.com/ModernStackMac/second-brain (private)
+- **Auto commit-and-sync interval:** 15 minutes
+- **Push on commit-and-sync:** enabled
+- **Pull on commit-and-sync:** enabled
+- **Pull on startup:** enabled
+- **Commit message:** `vault backup: {{date}}`
+- **Custom base path:** `Second Brain` (because vault root is `Documents/`, git repo is inside `Second Brain/`)
 
 ---
 
