@@ -193,6 +193,7 @@ When told to lint or health-check the wiki:
 ## Rules
 
 - Never modify anything in `raw/`. It's immutable source of truth.
+- Never ingest or process files in `dashboards/` or `session-context/`. These are operational folders, not knowledge sources.
 - Always cite sources when updating wiki pages.
 - Keep wiki pages concise and scannable — no fluff.
 - Use `[[wiki-links]]` for cross-references (Obsidian-compatible).

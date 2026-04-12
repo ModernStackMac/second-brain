@@ -71,6 +71,12 @@ Documents/
   Meeting Notes/          # Granola/Shadow transcripts (auto-processed)
     {Company}/{Project}/  # Routed by scheduled task
     _Unmatched/           # Meetings that couldn't be routed
+  dashboards/              # Dataview-powered live dashboards (not ingested)
+    Home.md               # Central hub — recent activity, quick links, open actions
+    Articles.md           # Recent clips, processed articles, topics
+    Meetings.md           # Meeting notes by project, unmatched meetings
+    Projects.md           # Client pages, decisions, patterns, tools
+    Wiki Health.md        # Page counts, stale pages, unprocessed articles
   session-context/          # Claude Code handoff notes for cross-session continuity
   project-mapping.md      # Single source of truth for projects, contacts, routing
   Action-Tracker.md       # Open action items from meetings (Claude-maintained)
@@ -175,6 +181,24 @@ For pre-project and requirements gathering: discovery call notes, client questio
 Reusable document templates for the Templater plugin. These are NOT ingested into the wiki — they're Obsidian templates you can insert into any note.
 
 Examples: new wiki page template, meeting note template, project kickoff checklist, SOW outline. Currently empty — create templates as patterns emerge from your workflow.
+
+---
+
+## Dashboards
+
+Live dashboards powered by Dataview. These render automatically — no maintenance needed. Open them in Obsidian to browse the system without digging through folders.
+
+| Dashboard | What It Shows |
+|-----------|--------------|
+| **Home** | Central hub: recent clips, recent meetings, recent wiki updates, open action items, active session handoffs. Pin this as your Obsidian startup page. |
+| **Articles** | Recent raw clips, processed wiki articles, topic pages, article count. |
+| **Meetings** | Recent meetings across all projects, per-company views (Harvey, CREtelligent, High Meadows), unmatched meetings needing routing, monthly volume. |
+| **Projects** | Client wiki pages, decision log, raw project docs, discovery notes, patterns library, tools catalog. |
+| **Wiki Health** | Page counts by folder, recently updated pages, oldest pages needing refresh, unprocessed raw articles, stale action items, session context files. |
+
+**To set Home as your startup page:** Settings -> Editor -> Default view for new tabs -> set to "Reading view". Then Settings -> Core plugins -> enable "Open specified page on startup" (or use the Homepage community plugin) and point it at `dashboards/Home`.
+
+Dashboards are excluded from the ingest pipeline — they're Obsidian UI tools, not knowledge sources.
 
 ---
 
