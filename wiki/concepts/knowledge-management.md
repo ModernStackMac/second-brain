@@ -45,6 +45,7 @@ Litify's implementation is a good example: knowledge is fragmented across multip
 - [[litify]] — primary engagement using this pattern
 - [[agentforce]] — the agent providing recommendations
 - [[data-cloud]] — the unification layer
+- [[llm-knowledge-management]] — broader topic page covering LLM-powered wiki patterns
 
 ## Sources
 - Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync.md

@@ -141,3 +141,40 @@
   - Operational automation: morning briefings, lint passes, and wiki maintenance become commands not chores
   - Finetuning endgame: long-term corpus for custom model training on domain expertise
 - **Summary:** Ingested three foundational articles on the emerging LLM wiki pattern plus Obsidian ecosystem. Created two new topic accumulator pages to track this rapidly-evolving space. The pattern represents a significant shift in how knowledge work can be structured — from ephemeral stateless AI usage to persistent, compounding knowledge bases maintained automatically by LLMs. Direct applicability to consulting practice (project memory, decision logs, client context), personal learning (research compounding), and operational efficiency (automation of maintenance). Updated claude-ai.md to reflect this new dimension of Claude usage.
+
+## 2026-04-12 — Lint Pass #3 (Scheduled Weekly)
+
+- **Operation:** LINT — Weekly automated health check
+- **Broken links found (3):**
+  - `[[scheduled-tasks]]` — referenced in 4 pages (llm-knowledge-management, obsidian-ecosystem, andrej-karpathy-method-claude-skills-obsidian, claude-obsidian-illegal)
+  - `[[MCP-Obsidian]]` — referenced in 2 pages (claude-ai, obsidian-ecosystem)
+  - `[[productivity-systems]]` — referenced in 1 page (modern-stack-systems)
+- **Orphaned pages (1):**
+  - `concepts/knowledge-management.md` — no other pages link to it. Likely superseded by `topics/llm-knowledge-management.md`. Needs Mac's review.
+- **Pages without sources (28/33):**
+  - Only 5 pages have proper Sources sections: cretelligent, connect-api, hms-capacity-planning, f2-cetera, andrej-karpathy-method-claude-skills-obsidian
+  - All other pages are missing source citations. This is a systemic gap from initial bulk ingest.
+- **Stale content:** None — all pages updated within last 2 days.
+- **Missing cross-references found (3):**
+  - litify.md missing links to [[agentforce]] and [[data-cloud]]
+  - nbcu.md missing links to [[agentforce]], [[data-cloud]], [[stand8]]
+  - knowledge-management.md missing link to [[llm-knowledge-management]]
+- **Index consistency:** Clean — all 33 pages listed, all entries match files.
+- **Log rotation:** Not needed (8 entries, well below 200 threshold).
+- **Session context:** Empty (only .gitkeep). No cleanup needed.
+- **Auto-fixes applied:**
+  - Added [[agentforce]] and [[data-cloud]] cross-references to litify.md
+  - Added [[agentforce]], [[data-cloud]], and [[mcp]] cross-references to nbcu.md
+  - Added [[llm-knowledge-management]] cross-reference to knowledge-management.md
+- **Issues for Mac's review:**
+  - 3 broken links need stub pages created: scheduled-tasks, MCP-Obsidian, productivity-systems
+  - concepts/knowledge-management.md may be redundant with topics/llm-knowledge-management.md — merge or differentiate?
+  - 28 pages missing Sources sections — recommend adding source citations during next ingest cycle
+
+## Lint Issues
+
+**Needs human review:**
+
+1. **Broken links (3):** `[[scheduled-tasks]]`, `[[MCP-Obsidian]]`, `[[productivity-systems]]` — create stub pages or remove references?
+2. **Orphaned page:** `concepts/knowledge-management.md` — merge into `topics/llm-knowledge-management.md` or keep as separate consulting-focused concept?
+3. **Missing sources (28 pages):** Systemic gap from initial ingest. Most pages lack `## Sources` sections citing the raw files or meeting notes they were derived from. Recommend backfilling during next full ingest or dedicated sources pass.

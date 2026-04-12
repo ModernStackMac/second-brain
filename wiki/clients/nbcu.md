@@ -35,6 +35,9 @@ Primary contact is Naresh, with Salesforce licensing and CoE support backing the
 ## Related Pages
 - [[stand8]] — partner/reseller connection
 - [[litify]] — concurrent agent/MCP use case, similar constraints
+- [[agentforce]] — core technology for POC use cases
+- [[data-cloud]] — holdings data for content recommendation engine
+- [[mcp]] — constraint limiting presentation generation capabilities
 
 ## Sources
 - Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md
