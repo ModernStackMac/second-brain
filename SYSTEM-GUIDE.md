@@ -157,9 +157,24 @@ These trigger from natural conversation in Cowork or Claude Code.
 2. Say "ingest this" or "add this to the brain"
 3. Claude saves to `raw/articles/`, discusses key points, then files into wiki
 
-### Project Documents
-1. Drop SOWs, configs, schemas into `raw/projects/{project-name}/`
+### Project Documents (`raw/projects/`)
+For project-specific source material: SOWs, contracts, API schemas, config exports, architecture docs, ERDs. Organize by project name (`raw/projects/harvey/`, `raw/projects/cretelligent/`, etc.).
+
+1. Drop the file into the appropriate project subfolder
 2. Scheduled ingest or "ingest this" processes them into wiki pages
+3. The original stays in `raw/projects/` permanently as the source of truth
+
+### Discovery Notes (`raw/discovery/`)
+For pre-project and requirements gathering: discovery call notes, client questionnaires, requirements docs, competitive analysis. Material from the scoping phase before a project becomes active.
+
+1. Save discovery notes here during initial client conversations
+2. Ingest processes them into wiki client pages and concept pages
+3. Useful for looking back at original requirements vs. what was actually built
+
+### Templates (`raw/templates/`)
+Reusable document templates for the Templater plugin. These are NOT ingested into the wiki — they're Obsidian templates you can insert into any note.
+
+Examples: new wiki page template, meeting note template, project kickoff checklist, SOW outline. Currently empty — create templates as patterns emerge from your workflow.
 
 ---
 

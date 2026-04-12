@@ -184,8 +184,11 @@ When told to lint or health-check the wiki:
    - Pages not listed in `wiki/index.md`
    - Stale information (sources older than 6 months with no updates)
    - Missing cross-references between related pages
-2. Report issues found and fix what can be fixed automatically.
-3. Suggest raw sources that could fill identified gaps.
+2. **Log rotation:** If `wiki/log.md` exceeds 200 entries, archive entries older than 90 days to `wiki/log-archive-{year}.md`.
+3. **Stale action items:** Check `Action-Tracker.md` for items older than 30 days with no update. Flag them for review — either mark complete, update with status, or escalate.
+4. **Session context cleanup:** Delete files in `session-context/` older than 30 days, or ingest any durable knowledge into wiki pages first.
+5. Report issues found and fix what can be fixed automatically.
+6. Suggest raw sources that could fill identified gaps.
 
 ## Rules
 
