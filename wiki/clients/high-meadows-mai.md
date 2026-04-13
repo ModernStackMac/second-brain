@@ -37,6 +37,16 @@ Core team: Rodrigo Aguirre, Vincent Wang, Sean, Federico Nieto, Brian, Michael C
 **Dev Standup & Sprint Activity**
 - 2026-04-09: Tickets 1181 complete, 1301 done, moving to 1302. IPS case denial bug using validation rule approach. Multiple UAT findings (1304 bank formatting, 1307 decimal handling, 1197 Form 338, 1236 task timing). New file uploader request (~3 SP).
 - 2026-04-10: Rodrigo finished 1302 and 1313, ready for new work. Federico completed 1273, deployed to production. QA: 1299 and 1300 passed, 1301 needs permission set adjustments. ~12 tickets remain in backlog. Prioritizing QA/UAT over new backlog items.
+- 2026-04-13 DSU: Rodrigo completed 1313, 1319, 1301; working on 1212 (→ UAT) and 1097 (lead conversion on person accounts vs households — may not work). Federico deployed 1197 to production, 1270 to UAT. Mac completed 1312, 1314, 1194 Friday + 1319, 1251 today. Multiple items blocked pending David consultation.
+  - **Active blockers:** 1293 (SSN/intake source — account SSN editability vs case write), 1120 (sharing access after prospect conversion — CSS users can't access converted household accounts)
+  - **QA findings:** 1165 moved to done (sharing issue, not code bug); 1085 (address component error intermittent — regression from recent address changes); 1269 (missing stop process functionality — new ticket needed); 958 (Tamarack Trading Support picklist value — typo in spec, routes to operations trading); 1200 (activity creation allowing past times — datetime validation issue)
+  - New tickets from Donna demo being added this week; team picking up unassigned tickets (1196) while waiting
+
+**Ticket Ownership & Backlog** (2026-04-13)
+- David Toursack owns most backlog tickets — limited open work available
+- Steven owns fund assignment ticket
+- Ticket 1251 potential next assignment (needs readiness check)
+- Mac generating bugs during current work and routing to team
 
 **Staffing** (2026-04-02)
 - Full stop on [[flex-dash]] to redirect all capacity to MAI
@@ -60,6 +70,8 @@ Core team: Rodrigo Aguirre, Vincent Wang, Sean, Federico Nieto, Brian, Michael C
 - Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev Session - Type Field and Address Auto-Population.md
 - Meeting Notes/High Meadows/MAI/2026-04-10 - MAI Dev DSU.md
 - Meeting Notes/High Meadows/Internal/2026-04-02 - Lefavi Weekly Call.md
+- Meeting Notes/High Meadows/MAI/2026-04-13 - MAI Dev DSU.md
+- Meeting Notes/High Meadows/MAI/2026-04-13 - New Fund Account Questions.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

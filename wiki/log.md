@@ -178,3 +178,27 @@
 1. **Broken links (3):** `[[scheduled-tasks]]`, `[[MCP-Obsidian]]`, `[[productivity-systems]]` — create stub pages or remove references?
 2. **Orphaned page:** `concepts/knowledge-management.md` — merge into `topics/llm-knowledge-management.md` or keep as separate consulting-focused concept?
 3. **Missing sources (28 pages):** Systemic gap from initial ingest. Most pages lack `## Sources` sections citing the raw files or meeting notes they were derived from. Recommend backfilling during next full ingest or dedicated sources pass.
+
+## 2026-04-13 — Scheduled Ingest #3
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (6 files):**
+  - `raw/articles/New Agentforce Builder Released in Beta Our First Thoughts.md`
+  - `Meeting Notes/High Meadows/F2-Cetera/2026-04-13 - Project Keystone Daily Stand-up.md`
+  - `Meeting Notes/High Meadows/MAI/2026-04-13 - MAI Dev DSU.md`
+  - `Meeting Notes/High Meadows/MAI/2026-04-13 - New Fund Account Questions.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-10 - CREtelligent Weekly Status and Project Sync.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-13 - Internal CREtelligent Weekly Sync.md`
+- **Pages created (2):**
+  - **Articles (1):** new-agentforce-builder-beta — Agent Script, Agent Canvas, testing improvements, beta access details
+  - **Topics (1):** salesforce — New accumulator page for Salesforce ecosystem news (platform releases, Agentforce Builder, MCP status)
+- **Pages updated (5):**
+  - **Clients (3):** f2-cetera (Sprint 2 demo readiness, wealth management automation, custom settings, Advice Works slip, Brady onboarding); high-meadows-mai (Apr 13 DSU detail — active blockers on 1293/1120, QA findings, Donna demo backlog, ticket ownership/David Toursack); cretelligent (demo day results — Quote Matrix approved, Add Vendor adjustments, Choir template ID, DocHub architecture, contact create automation QA)
+  - **Tools (1):** agentforce (new builder beta — Agent Script, Agent Canvas, inline actions, testing improvements)
+  - **Meta (1):** index.md (added new-agentforce-builder-beta article page and salesforce topic page; updated total to 35)
+- **Key changes:**
+  - F2-Cetera meeting notes now appearing under `Meeting Notes/High Meadows/F2-Cetera/` (previously `Stand8/F2-Cetera/`) — folder routing change, likely different transcription source
+  - Quote Matrix LWC approved for current sprint with clear enhancement backlog captured
+  - DocHub integration architecture documented for the first time
+  - New Agentforce Builder Agent Script capability is directly relevant to Harvey and other Agentforce engagements
+- **Summary:** Processed 4 new meeting notes (across F2-Cetera, MAI x2, CREtelligent x2) plus one Salesforce platform article. F2-Cetera sprint 2 on track with demo tomorrow; MAI has two significant active blockers (SSN/sharing) pending David consultation; CREtelligent demo day results captured with clear approval decisions and enhancement scope. Created new `salesforce` topic page as an accumulator for platform news — companion to the existing `agentforce` tool page.

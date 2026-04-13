@@ -43,6 +43,21 @@ Key contacts: Connor, Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, Ju
 - Sprint 3 sign-off target: end of day Friday Apr 10. Going forward, aim for Wednesday delivery of sprint items for review
 - Daily standup being restructured to be more dev-focused; PM items moved to front or async
 
+**Sprint 2 Status (2026-04-13)**
+- Wealth management review automation complete and demo-ready for Apr 14 session
+  - Flow checks for existing records within past 365 days before creating new review info record
+  - Prevents duplicate compliance/reporting records; links back to triggering event
+  - Connor's last-minute changes incorporated
+- Custom settings infrastructure deployed
+  - Hierarchical checkbox system to disable flows/triggers org-wide or per user
+  - Enables clean data loads without automation interference (e.g., David Mazury data load user)
+  - Allows hotfixes while system remains live for other users
+  - Connor's team reviewing existing validation rules/flows for where to apply
+- Advice Works integration at risk of slipping to Sprint 3
+  - Client credential issue blocking sandbox connection
+  - Connor meeting product owner to resolve; low impact given available resources
+- Brady joining dev team post-laptop setup; sandbox user limit reached (need to deactivate unused users)
+
 **Invoicing**
 - PO issue: invoices received but referencing old discovery PO. Project moved under different org — new PO being opened (as of Apr 9). Payment expected within days.
 
@@ -56,6 +71,7 @@ Key contacts: Connor, Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, Ju
 ## Sources
 - Meeting Notes/Stand8/F2-Cetera/2026-04-08 - Quick Sync - F2 Connor.md
 - Meeting Notes/Stand8/F2-Cetera/2026-04-09 - Project Keystone - F2 Cetera Daily Working Session.md
+- Meeting Notes/High Meadows/F2-Cetera/2026-04-13 - Project Keystone Daily Stand-up.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

@@ -54,6 +54,34 @@ Key team members: Andrew Porter, Obed Labra-Pelaez, Michael Degoll (technical le
 - Mass edit and quote screen
 - Manual order processing workflow
 
+**Demo Day Results (2026-04-10 Weekly Status Sync)**
+- Three stories demonstrated: Add Vendor to Connect modal (#81220), Quote Matrix LWC (Grid Buddy replacement), Choir template ID formula field.
+
+- *Quote Matrix LWC* — approved for current sprint as shippable foundation:
+  - Mass select/update for surveyor quotes on opportunities
+  - Features: pagination (10–100), expand/collapse all, nested display, mass apply for price + days to complete, preferred contact
+  - Enhancement requests from Wendell (scope separately): increase modal height, filter by selected contractor per site, filter for cheapest quote per site, sorting options, margin/profit at site level (blocked until cost modeling finalized)
+
+- *Add Vendor to Connect (#81220)* — adjustments identified:
+  - Do NOT pre-populate company field from opportunity — allow search/create
+  - Move launch point from Enviro Site level to PA object level (under Enviro Task)
+  - Need PA skill/contact type dropdown (multi-select) — Travis to clarify how Connect defines service types/zones
+  - API integration: initial tests good, waiting on payload update to build return URL (need ID back from Connect)
+
+- *Choir Template ID* — formula field drives which template is used for reports based on project criteria; Travis needs to provide the template ID (tracked in ClickUp under "template ID formula")
+
+**DocHub Integration (High-Level, 2026-04-10)**
+- Architecture: two Experience Cloud sites with LWC-driven collaboration (comments, document upload/download)
+- Internal Lightning component for CREtelligent staff
+- Plan: persist document records locally rather than hitting Order Service API on every load
+- Opportunity flagged: migrate from custom document object to standard ContentDocument — under review by Andrew and Mac
+
+**Contact Create Automation QA (2026-04-13 Internal Sync)**
+- "Add to Connect" flow fires on every contact create — needs contact type validation before API call
+- Valid contact types that should trigger: Survey, Environmental, Zoning
+- Other types (client, prospect) should NOT trigger the Connect API callout
+- Mac confirming logical flow correctly filters by contact type
+
 ## Related Pages
 - [[stitch]] — delivery partner
 - [[harvey]] — ERP integration complexity pattern
@@ -86,6 +114,8 @@ Key team members: Andrew Porter, Obed Labra-Pelaez, Michael Degoll (technical le
 - Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Team Sync - Sprint Review.md
 - Meeting Notes/Stitch/Cretelligent/2026-04-09 - Stitch & CREtelligent - Tech Team Huddle.md
 - Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync.md
+- Meeting Notes/Stitch/Cretelligent/2026-04-10 - CREtelligent Weekly Status and Project Sync.md
+- Meeting Notes/Stitch/Cretelligent/2026-04-13 - Internal CREtelligent Weekly Sync.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

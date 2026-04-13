@@ -26,6 +26,16 @@ Key clients are piloting Agentforce for specific workflows: email intent parsing
 **CREtelligent:**
 - Andrew advocated for standard Product model to improve long-term Agentforce support
 
+**New Agentforce Builder (Beta, Feb 2026)**
+- Major redesign introduced at Dreamforce 2025, now in open beta
+- **Agent Script:** new markup language for embedding deterministic if-else logic, variables, and action sequences into agent reasoning; solves the "black box" problem
+- **Agent Canvas:** visual no-code editor that renders Agent Script as structured blocks — inline actions, topic transitions, follow-up actions
+- **Inline actions:** pre-load context or set variables before LLM takes over — reduces hallucination risk
+- **Testing improvements:** full conversation simulation with step-by-step topic/action tracing; revamped debugging panel
+- **Guided creation:** natural language → topics/actions/Agent Script via inline AI assistance
+- Access via App Launcher → Agentforce Studio. Enterprise, Performance, Unlimited, Developer Editions. No confirmed GA date; possible TDX 2026 announcement.
+- See: [[new-agentforce-builder-beta]]
+
 **General Limitations:**
 - MCP support is the primary constraint (beta access limited)
 - Presentation and document generation not natively supported without MCP
@@ -44,6 +54,7 @@ Key clients are piloting Agentforce for specific workflows: email intent parsing
 - Meeting Notes/Stand8/Harvey/2026-04-09
 - Meeting Notes/Stand8/NBCU/2026-04-08
 - Meeting Notes/Stand8/Litify/2026-04-09
+- raw/articles/New Agentforce Builder Released in Beta Our First Thoughts.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

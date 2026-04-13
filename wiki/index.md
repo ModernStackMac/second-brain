@@ -49,13 +49,15 @@
 - [[andrej-karpathy-method-claude-skills-obsidian]] — The LLM wiki pattern: raw/ → wiki/ → reports/. Claude as compiler/librarian, Obsidian as knowledge IDE, MCP-Obsidian integration, Claude Code Skills for automation.
 - [[claude-obsidian-illegal]] — Practical implementation of the LLM wiki pattern. Maintenance as the bottleneck (solved by LLMs). CLI examples. Memory.md seeding. Morning briefing and Action-Tracker automation. Vannevar Bush Memex connection.
 - [[obsidian-plugins-replace-paid-apps]] — Six free plugins that replace Notion, Todoist, Trello, Fantastical, TextExpander, and backups: Dataview, Tasks, Kanban, Calendar, Templater, Obsidian Git.
+- [[new-agentforce-builder-beta]] — Salesforce's redesigned Agentforce Builder in beta: Agent Script for deterministic logic, Agent Canvas for visual no-code editing, improved testing and debugging.
 
 ## Topics
 
 - [[apple-hardware]] — Apple hardware releases, leaks, and ecosystem developments.
 - [[llm-knowledge-management]] — Using LLMs to build and maintain persistent wikis. The Karpathy method, maintenance automation, finetuning endgame.
 - [[obsidian-ecosystem]] — Local-first markdown IDE with plugins. Graph view, backlinks, Dataview, Tasks, Kanban, Calendar, Templater, Git. MCP-Obsidian integration for Claude.
+- [[salesforce]] — Salesforce platform news, product releases, and ecosystem developments. Agentforce Builder beta, MCP status, enterprise AI direction.
 
 ---
-*Last updated: 2026-04-11*
-*Total pages: 33*
+*Last updated: 2026-04-13*
+*Total pages: 35*
