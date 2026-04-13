@@ -14,7 +14,10 @@ Second Brain/
 ├── wiki/                   # LLM-maintained knowledge base (you own this)
 │   ├── index.md            # Master index of all wiki pages with brief descriptions
 │   ├── log.md              # Chronological log of all ingest/update operations
-│   ├── clients/            # Client-specific pages (org context, tech stack, history)
+│   ├── projects/           # Active client/internal project pages (one subfolder per project)
+│   │   └── {project}/
+│   │       ├── context.md  # Stable: client info, tech stack, what we're building
+│   │       └── journal.md  # Dynamic: rolling weekly summaries, decisions, open questions
 │   ├── concepts/           # Domain concepts (lead routing, CPQ, data migration, etc.)
 │   ├── patterns/           # Reusable solution patterns and architecture approaches
 │   ├── tools/              # Tools, platforms, integrations (Salesforce, DevOps, MCP, etc.)
@@ -23,6 +26,8 @@ Second Brain/
 │   └── topics/             # Accumulator pages for personal interests and learning
 └── SCHEMA.md               # This file — governance rules
 ```
+
+**Note:** `wiki/clients/` has been superseded by `wiki/projects/`. All project knowledge now lives in `wiki/projects/{name}/`.
 
 ## External Source: Meeting Notes
 
@@ -79,8 +84,41 @@ Core content organized by the page type (see Page Types below).
 
 ## Page Types
 
-### Client Pages (`wiki/clients/`)
-Track: org name, industry, Salesforce edition/products, tech stack, key contacts, project history, pain points, decisions made, lessons learned.
+### Project Pages (`wiki/projects/{name}/`)
+
+Each active project gets a subfolder with exactly two files:
+
+**`context.md`** — Stable reference. Set once, updated only when the project fundamentally changes (new scope, new team, tech stack change). Contains:
+- Client/company info, industry, partner
+- Key contacts
+- What we're building (feature scope, not sprint status)
+- Tech stack and data model
+- Key constraints and architectural decisions
+- Cross-links to related concept/tool/pattern pages
+
+**`journal.md`** — Rolling narrative. Ingest appends a new `## Week of {date}` block at the TOP with each batch of meeting notes. Each entry contains:
+- 2-4 sentence narrative summary of what happened this week
+- **Decisions:** bullet list of decisions made (with enough context to understand why)
+- **Open questions:** bullet list of unresolved items, owner if known
+
+**Journal format:**
+```markdown
+## Week of Apr 7–13, 2026
+
+2-4 sentences describing what happened this week across all meetings.
+
+**Decisions:**
+- Decision made — brief rationale or context
+
+**Open questions:**
+- Question or blocker — owner if known
+```
+
+**Ingest rules for journals:**
+- Prepend new weekly entries to the top (newest first)
+- If the current week already has an entry, add to it rather than creating a duplicate
+- Keep the narrative tight — this is a digest, not a transcript
+- Decisions and open questions are the most important parts; don't skip them
 
 ### Concept Pages (`wiki/concepts/`)
 Track: definition, when/why it matters, common implementations, gotchas, related Salesforce features, links to patterns that use this concept.
@@ -157,7 +195,11 @@ When told to ingest a source:
 3. If the article has overlap with consulting wiki pages (tools, concepts, clients), cross-link and update those pages too.
 4. Never skip an article just because it's not consulting-related — the Second Brain captures everything Mac finds worth saving.
 
-**Meeting Notes ingest:** Also scan `Meeting Notes/` (root-level vault folder) for any files not yet referenced in `wiki/log.md`. Process them the same way — extract entities, concepts, patterns, tools, and client context into wiki pages. The folder path tells you the company and project (e.g., `Meeting Notes/Stand8/Harvey/` = company Stand8, project Harvey).
+**Meeting Notes ingest:** Also scan `Meeting Notes/` (root-level vault folder) for any files not yet referenced in `wiki/log.md`. For each new meeting note:
+1. Identify the project using the folder path (e.g., `Meeting Notes/Stand8/Harvey/` = Harvey project).
+2. **Update `wiki/projects/{project}/journal.md`** — prepend a `## Week of {date}` entry (or append to the current week's entry if it exists) with a narrative summary, decisions, and open questions extracted from the meeting.
+3. **Update `wiki/projects/{project}/context.md`** only if the meeting reveals new stable information (new team member, scope change, tech stack addition, architectural decision). Do not add meeting-specific notes to context.md.
+4. Also update any relevant `wiki/concepts/`, `wiki/patterns/`, `wiki/tools/`, or `wiki/entities/` pages if the meeting contains knowledge that belongs in the shared wiki (reusable patterns, tool insights, etc.).
 
 ### 2. QUERY (answering questions from the wiki)
 

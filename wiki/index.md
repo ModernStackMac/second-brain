@@ -2,15 +2,17 @@
 
 > Master index of all wiki pages. Updated automatically with every ingest operation.
 
-## Clients
+## Projects
 
-- [[harvey]] — Industrial manufacturing/distribution company (via Stand8). Salesforce + AI/Agentforce implementation, 3-year AI roadmap, distributor model, EU expansion.
-- [[nbcu]] — NBCUniversal (via Stand8). Agentforce POC for content recommendation and sales strategy/pricing in content distribution.
-- [[f2-cetera]] — F2/Cetera (via Stand8). Financial services case object migration, CPA referral mapping, FSC standardization.
-- [[litify]] — Legal software company (via Stand8). Service agent for case triage, knowledge management, Data Cloud unification.
-- [[cretelligent]] — Commercial real estate / environmental services (via Stitch). Connect API integrations, site verification, automated reports, cost worksheets, SiteProduct joiner.
-- [[high-meadows-mai]] — High Meadows MAI product. Insurance/SaaS, case configuration, IAM service, dev standup tracking.
-- [[hms-capacity-planning]] — Meadow capacity planning & time tracking app. Node.js/Express/Vite/SQLite, migrating to Supabase/Vercel, four-phase enhancement roadmap.
+Each project has two files: `context.md` (stable — what it is, tech stack, scope) and `journal.md` (dynamic — rolling weekly summaries, decisions, open questions).
+
+- [[harvey/context]] · [[harvey/journal]] — Industrial manufacturing/distribution (Stand8). Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration (Einstein + Claude).
+- [[nbcu/context]] · [[nbcu/journal]] — NBCUniversal (Stand8). Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
+- [[litify/context]] · [[litify/journal]] — Legal SaaS (Stand8). Agentforce service agent for case triage, KB recommendations, Data Cloud unification. SOW in progress.
+- [[f2-cetera/context]] · [[f2-cetera/journal]] — Financial services (Stand8/HMS). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
+- [[cretelligent/context]] · [[cretelligent/journal]] — Commercial real estate/environmental (Stitch). Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
+- [[mai/context]] · [[mai/journal]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
+- [[meadow/context]] · [[meadow/journal]] — High Meadows internal capacity planning app. Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
 
 ## Concepts
 
@@ -60,4 +62,4 @@
 
 ---
 *Last updated: 2026-04-13*
-*Total pages: 35*
+*Total pages: 49 (14 project pages + 35 wiki pages)*

@@ -219,3 +219,22 @@
   - NBCU POC pricing-recommendation scope confirmed; full architecture walkthrough rescheduled pending Karthi attendance
   - NBCU meeting source file dated 2026-04-15 but actual meeting occurred 2026-04-13 (Granola transcription timestamp glitch); wiki corrected to 2026-04-13
 - **Summary:** Light incremental ingest. Two new meeting notes, both client-facing updates under Stand8. Litify wiki page now carries the full SOW working draft ahead of the Wed/Thu review with Evan March. NBCU entry updated with the rescheduled Agentforce architecture session.
+
+## 2026-04-13 — Wiki Restructure: Projects
+
+- **Operation:** RESTRUCTURE — Migrated `wiki/clients/` to `wiki/projects/` with new two-file pattern per project
+- **Motivation:** Single monolithic client pages were mixing stable context with point-in-time notes and action items, making them hard to navigate and use as a quick reference.
+- **New structure:** Each project gets a subfolder with `context.md` (stable: what we're building, tech stack, contacts, architecture) and `journal.md` (dynamic: rolling weekly summaries, decisions, open questions — newest first).
+- **Projects migrated (7):**
+  - `wiki/projects/harvey/` — context.md + journal.md
+  - `wiki/projects/nbcu/` — context.md + journal.md
+  - `wiki/projects/litify/` — context.md + journal.md
+  - `wiki/projects/f2-cetera/` — context.md + journal.md
+  - `wiki/projects/cretelligent/` — context.md + journal.md
+  - `wiki/projects/mai/` — context.md + journal.md (replaces high-meadows-mai)
+  - `wiki/projects/meadow/` — context.md + journal.md (replaces hms-capacity-planning)
+- **Schema updated:** SCHEMA.md now documents the two-file project pattern with explicit ingest rules (journal prepend, context only for stable changes)
+- **Ingest task updated:** second-brain-ingest scheduled task prompt updated to write to `wiki/projects/{name}/journal.md` instead of `wiki/clients/`
+- **Old `wiki/clients/` folder:** deprecated and removed
+- **index.md updated:** Projects section now lists context + journal links for all 7 projects
+- **Total pages:** 49 (14 project pages + 35 shared wiki pages)
