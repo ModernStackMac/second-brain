@@ -4,17 +4,39 @@
 
 ---
 
-## Recent Activity
-
-### Latest Clipped Articles
+## Open Actions
 ```dataview
-TABLE file.ctime as "Clipped", file.name as "Article"
-FROM "Second Brain/raw/articles"
-SORT file.ctime DESC
-LIMIT 10
+TASK
+FROM "Second Brain/Action-Tracker"
+WHERE !completed
+SORT Date ASC
+LIMIT 15
 ```
 
-### Latest Meeting Notes
+---
+
+## Active Projects (Last Updated)
+```dataview
+TABLE file.mtime as "Last Updated"
+FROM "Second Brain/wiki/projects"
+WHERE file.name = "journal"
+SORT file.mtime DESC
+```
+
+---
+
+## Recent Decisions
+```dataview
+TABLE Project, Decision
+FROM "Second Brain/Decision-Log"
+WHERE file.name = "Decision-Log"
+SORT Date DESC
+LIMIT 5
+```
+
+---
+
+## Latest Meeting Notes
 ```dataview
 TABLE file.ctime as "Date", file.folder as "Project"
 FROM "Meeting Notes"
@@ -23,13 +45,14 @@ SORT file.ctime DESC
 LIMIT 10
 ```
 
-### Latest Wiki Updates
+---
+
+## Latest Clipped Articles
 ```dataview
-TABLE file.mtime as "Updated"
-FROM "Second Brain/wiki"
-WHERE file.name != "index" AND file.name != "log"
-SORT file.mtime DESC
-LIMIT 10
+TABLE file.ctime as "Clipped"
+FROM "Second Brain/raw/articles"
+SORT file.ctime DESC
+LIMIT 8
 ```
 
 ---
@@ -42,22 +65,3 @@ LIMIT 10
 - [[dashboards/Meetings|Meetings Dashboard]]
 - [[dashboards/Projects|Projects Dashboard]]
 - [[dashboards/Wiki Health|Wiki Health Dashboard]]
-
----
-
-## Open Action Items
-```dataview
-TABLE Owner, Action, Due, Status
-FROM "Second Brain/Action-Tracker"
-WHERE file.name = "Action-Tracker"
-```
-
----
-
-## Session Context (Active Handoffs)
-```dataview
-TABLE file.ctime as "Created", file.name as "Session"
-FROM "Second Brain/session-context"
-SORT file.ctime DESC
-LIMIT 5
-```

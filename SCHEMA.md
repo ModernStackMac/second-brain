@@ -199,7 +199,9 @@ When told to ingest a source:
 1. Identify the project using the folder path (e.g., `Meeting Notes/Stand8/Harvey/` = Harvey project).
 2. **Update `wiki/projects/{project}/journal.md`** — prepend a `## Week of {date}` entry (or append to the current week's entry if it exists) with a narrative summary, decisions, and open questions extracted from the meeting.
 3. **Update `wiki/projects/{project}/context.md`** only if the meeting reveals new stable information (new team member, scope change, tech stack addition, architectural decision). Do not add meeting-specific notes to context.md.
-4. Also update any relevant `wiki/concepts/`, `wiki/patterns/`, `wiki/tools/`, or `wiki/entities/` pages if the meeting contains knowledge that belongs in the shared wiki (reusable patterns, tool insights, etc.).
+4. **Append to `Action-Tracker.md`** any clear action items with owners. Format: `- [ ] Description [Owner:: Name] [Project:: project-name] [Date:: YYYY-MM-DD]`. Only add items that are genuine commitments with a clear owner — not vague open questions.
+5. **Append to `Decision-Log.md`** any significant decisions as new table rows: `| Date | Project | Decision | Context |`. Only add decisions that are strategic or will affect future work — skip trivial ticket-level choices.
+6. Also update any relevant `wiki/concepts/`, `wiki/patterns/`, `wiki/tools/`, or `wiki/entities/` pages if the meeting contains knowledge that belongs in the shared wiki (reusable patterns, tool insights, etc.).
 
 ### 2. QUERY (answering questions from the wiki)
 
