@@ -32,6 +32,20 @@ Primary contact is Naresh, with Salesforce licensing and CoE support backing the
 - MSS to deliver SOW within 48 hours of org demo
 - Dependency on org environment provisioning from Salesforce
 
+## 2026-04-13 Kickoff Architecture Review
+
+Kickoff-style review of NBCU Salesforce instance architecture for the Agentforce POC. Attendees: Mac, Scott; Karthi (business solutions partner) absent, causing session to cut short and reschedule.
+
+**Confirmed Scope**
+- Agent recommends pricing based on historical closed-won opportunities
+- Data flows through Salesforce Data Cloud
+- Primary use case locked: sales pricing recommendation engine
+
+**Rescheduled Session**
+- Wednesday 1:30 PM Pacific
+- Scott to send updated calendar invite
+- Full Salesforce walkthrough planned: products, price book hierarchy, opportunity data flow into Data Cloud, agent pricing recommendation logic based on closed-won data
+
 ## Related Pages
 - [[stand8]] — partner/reseller connection
 - [[litify]] — concurrent agent/MCP use case, similar constraints
@@ -41,6 +55,7 @@ Primary contact is Naresh, with Salesforce licensing and CoE support backing the
 
 ## Sources
 - Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md
+- Meeting Notes/Stand8/NBCU/2026-04-15 - NBCU STAND 8 Agentforce POC.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

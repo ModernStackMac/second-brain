@@ -202,3 +202,20 @@
   - DocHub integration architecture documented for the first time
   - New Agentforce Builder Agent Script capability is directly relevant to Harvey and other Agentforce engagements
 - **Summary:** Processed 4 new meeting notes (across F2-Cetera, MAI x2, CREtelligent x2) plus one Salesforce platform article. F2-Cetera sprint 2 on track with demo tomorrow; MAI has two significant active blockers (SSN/sharing) pending David consultation; CREtelligent demo day results captured with clear approval decisions and enhancement scope. Created new `salesforce` topic page as an accumulator for platform news — companion to the existing `agentforce` tool page.
+
+## 2026-04-13 — Scheduled Ingest #4
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (2 files):**
+  - `Meeting Notes/Stand8/Litify/2026-04-13 - Internal Litify SOW Discussion.md`
+  - `Meeting Notes/Stand8/NBCU/2026-04-15 - NBCU STAND 8 Agentforce POC.md`
+- **Pages created:** 0
+- **Pages updated (2):**
+  - **Clients (2):**
+    - litify — added full SOW scope section (feature hour estimates, ~120 hrs total, 8-week timeline, scope decisions, exclusions, open action items)
+    - nbcu — added 2026-04-15 kickoff architecture review (confirmed pricing recommendation scope, rescheduled walkthrough for Wed 1:30 PT)
+- **Key changes:**
+  - Litify SOW scope now documented end-to-end: 5 feature areas, testing/support/training allocations, 8-week plan at 20 hrs/week, explicit exclusions list
+  - NBCU POC pricing-recommendation scope confirmed; full architecture walkthrough rescheduled pending Karthi attendance
+  - NBCU meeting source file dated 2026-04-15 but actual meeting occurred 2026-04-13 (Granola transcription timestamp glitch); wiki corrected to 2026-04-13
+- **Summary:** Light incremental ingest. Two new meeting notes, both client-facing updates under Stand8. Litify wiki page now carries the full SOW working draft ahead of the Wed/Thu review with Evan March. NBCU entry updated with the rescheduled Agentforce architecture session.

@@ -35,6 +35,45 @@ Key stakeholders: Evan Markovich (Salesforce AE), Sarah Paulson (Data Cloud AE),
 - SOW delivery after reverse demo
 - Post-SOW: environment access and full engagement kickoff
 
+## SOW Scope (2026-04-13 internal working session)
+
+Building the Litify AI case management SOW with Ryan Ridinger and Leanna. Waiting on AI requirements doc from Evan March (Litify) before finalizing. Targeting Wed/Thu review call.
+
+**Feature Hour Estimates**
+- Case summarization (button-triggered to conserve AI credits): 3-5 hrs
+- Auto-populated case resolution summary on case close: included with above
+- Knowledge article recommendations in Service Cloud agent chat: 15-20 hrs
+- Knowledge article creation with human review: 15 hrs
+- Email drafting assistance (V1 only, generic prompt with case + email chain): 10 hrs
+- Email-to-case field population (AI populates 4 fields, requires email message trigger): 20 hrs
+- Testing: 15-20 hrs
+- Data Cloud setup: 5-10 hrs
+- Post-go-live support: 20 hrs over 30 days
+- Training (train-the-trainer model): 2 hrs
+
+**Total Effort & Timeline**
+- ~120 hours total at Mac's 20 hrs/week capacity
+- 8-week delivery timeline
+- Client commitment: ~5 hrs for testing
+
+**Key Scope Decisions**
+- Case summarization is button-triggered (not automatic) to preserve AI credits
+- Email drafting V1 only; further iterations moved to managed services
+- Data Cloud setup included in scope
+
+**Exclusions**
+- Call transcript integrations
+- Third-party system integrations (Google, Confluence)
+- Community enhancements
+- Website agent deployment
+- V2+ of email drafting and knowledge article creation
+
+**Open Action Items**
+- Ryan — finalize SOW formatting and deliverables chart
+- Leanna — secure AI requirements from Evan March; schedule review call
+- Mac — add technical assumptions and hour refinements
+- Team — internal review before client presentation
+
 ## Related Pages
 - [[stand8]] — partner/reseller connection
 - [[harvey]] — parallel email automation and multi-system intent parsing
@@ -44,6 +83,7 @@ Key stakeholders: Evan Markovich (Salesforce AE), Sarah Paulson (Data Cloud AE),
 
 ## Sources
 - Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync.md
+- Meeting Notes/Stand8/Litify/2026-04-13 - Internal Litify SOW Discussion.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

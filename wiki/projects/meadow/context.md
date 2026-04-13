@@ -1,0 +1,46 @@
+# Meadow — Project Context
+
+> High Meadows internal capacity planning and time tracking SaaS. Cloud migration, auth hardening, Sanity SSO, AI chat interface roadmap.
+
+## Client
+- **Company:** High Meadows (internal product)
+- **Product:** Meadow (capacity planning & time tracking)
+- **Team:** Aisha (HMS), Mac (MSS — lead)
+- **Priority:** Active alongside MAI; Flex-Dash paused to keep capacity here
+
+## What We're Building
+- Cloud migration from local SQLite to Supabase PostgreSQL + Vercel hosting
+- Auth hardening with route-level permission enforcement
+- Sanity SSO (replacing email-only login)
+- Four-phase roadmap beyond cloud migration
+
+## Tech Stack
+- **Backend:** Node.js (ES modules), Express
+- **Frontend:** Vite, HTML/CSS
+- **Database:** SQLite (current) → Supabase PostgreSQL (target)
+- **Hosting:** Vercel (target)
+- **Integrations:** Clockify API (time entry sync, being sunset), Notion API (doc sync)
+- **Auth:** Sanity SSO via @sanity/client SDK (replacing Entra/MSAL decision)
+
+## Database Schema (11 tables)
+Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, ActionItems, NotionSyncLog, ExportTemplates, ProjectResources
+
+## Roadmap Phases
+1. **Cloud Database & Sharing** — Supabase live, auth hardening, Sanity SSO, Vercel deployment, multi-user access controls
+2. **Claude Chat Interface** — natural language queries over time/capacity data ("What capacity do we have next week?")
+3. **Custom Time Entry** — Clockify replacement with native calendar-based time logging
+4. **Salesforce Pipeline Integration** — opportunity-based project resourcing, sales pipeline → capacity planning
+
+## User Story Workstreams (22 stories, priority order)
+1. Auth Hardening — requireAuth on all /api/hms/* routes; requireAdmin for admin-only routes; self-scoped access for non-admin users
+2. Supabase Migration — schema migration, data access layer rewrite, RLS policies, environment variables
+3. Sanity SSO — token validation, sign-in button, auto-provisioning of new users, session management
+4. Vercel Deployment — static build, backend hosting decision, cron jobs, CORS/domain config
+5. Clockify Sunset — admin toggle, legacy fields nullable, source field enforcement
+6. Time Entry Polish — collision detection on edit, merge/block dialog
+
+## Related Pages
+- [[high-meadows]] — parent org
+- [[high-meadows-mai]] — sister product
+- [[supabase]] — target database platform
+- [[claude-ai]] — Phase 2 chat interface
