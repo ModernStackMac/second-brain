@@ -292,3 +292,35 @@
 - **Mac-owned action items added:** 0
 - **Decisions added:** 0
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #6. Wiki remains current through the 2026-04-13 batch. No action required.
+
+## 2026-04-14 — Scheduled Ingest #8
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (6 files):**
+  - `Meeting Notes/High Meadows/F2-Cetera/2026-04-14 - Project Keystone Daily Stand-up.md`
+  - `Meeting Notes/High Meadows/Internal/2026-04-14 - Entity Role Diagram ERD Sync.md`
+  - `Meeting Notes/High Meadows/Internal/Office Hours/2026-04-14 - AI Office Hours.md`
+  - `Meeting Notes/High Meadows/MAI/2026-04-14 - MAI Dev DSU.md`
+  - `Meeting Notes/Modern Stack Systems/2026-04-14 - AI Office Hours.md` (empty, no ingest content)
+  - `Meeting Notes/Stand8/Harvey/2026-04-14 - SOW Review.md`
+- **Pages created:** 0
+- **Pages updated (5):**
+  - **Projects (4):**
+    - f2-cetera/journal.md — Apr 14 standup: permission set architecture decision pending, validation implementation functionally equivalent to spec
+    - mai/journal.md — Apr 14 DSU: tickets running low pre-demo, deploy freeze noon–3pm, UAT training starting
+    - harvey/journal.md — prepended Apr 14 week block: Agent Force for Service SOW finalized (120 hrs base + 18 hrs PM = 138–158 hrs), discovery scoped at ~10 hrs, training docs excluded, case prioritization removed
+    - meadow/journal.md — prepended Apr 14 week block: ERD requirements documented (use entity role as junction, reference Altrata diagrams, include standard accounts), website progressing (Sanity CMS live), Meadow identified as 40+ additional stories needed
+  - **Tools (0):**
+  - **Meta (0):** index.md unchanged (no new pages)
+- **Harvey context.md updated:** Agent Force for Service scope details added (discovery breakdown, timeline, documentation approach)
+- **Key changes:**
+  - F2-Cetera permission set architecture deferred pending Connor/Odie input (job functions vs. record types)
+  - Harvey SOW fully priced and scoped pending client approval
+  - Meadow requires 40+ additional stories beyond initial 22 — timeline significantly extends from website project
+  - HMS website Sanity CMS integration complete and live
+  - MAI demo day on 2026-04-14 noon–3pm ET with deploy freeze
+- **Mac-owned action items captured in journals:**
+  - F2-Cetera: follow up with Connor on validation wording preferences
+  - Meadow: create initial ERD iteration from entity role object in sandbox, iterate based on feedback
+  - MAI: schedule David call for SSN/sharing rules blocker discussion
+- **Summary:** Processed 6 new meeting notes from 2026-04-14. Four projects updated with new week entries. F2-Cetera and MAI active with near-term decisions (permission sets, demo deployment). Harvey SOW finalized with detailed Agent Force for Service pricing and scope. Meadow scope expanded significantly — 40+ additional stories beyond initial 22-story backlog. HMS website with Sanity CMS integration. Unmatched "Michael" meeting (2026-04-14) remains flagged for manual review in project-mapping.md.
