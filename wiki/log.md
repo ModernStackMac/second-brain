@@ -238,3 +238,21 @@
 - **Old `wiki/clients/` folder:** deprecated and removed
 - **index.md updated:** Projects section now lists context + journal links for all 7 projects
 - **Total pages:** 49 (14 project pages + 35 shared wiki pages)
+
+
+## 2026-04-14 — Scheduled Ingest #5
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — 5 files, all already in log
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Scheduled Ingest #4 (2026-04-13). Wiki is current through the 2026-04-13 batch (Litify SOW + NBCU Agentforce POC kickoff). No action required.
