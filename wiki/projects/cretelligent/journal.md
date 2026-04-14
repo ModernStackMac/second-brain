@@ -6,15 +6,27 @@
 
 ## Week of Apr 13–19, 2026
 
-Met once (Apr 13 — Internal Stitch Sync with Obed).
+Met twice (Apr 13 — Internal Stitch Sync with Obed; Apr 14 — Stitch CREtelligent Stand Up).
 
 Short QA-focused sync. Confirmed that the "add to Connect" automation needs contact type filtering before the API call fires — only Survey, Environmental, and Zoning contact types should trigger the Connect API callout. Client and prospect types should be excluded. Mac confirming the logical flow handles this correctly.
 
+Apr 14 Stand Up covered environmental site automation and cost worksheet design. Decision to convert the existing enviro site → task group Flow logic to Apex — team prefers Apex for better control and no further Flow updates are expected. Site creation, enviro operations, and task groups will all run in a single process. Environmental cost worksheet creation is the missing piece in the current flow; it will be triggered record-triggered on task group insert (1:1), with worksheet type determined by task group type. One active worksheet per environment (users can evaluate multiple options but only one active at a time — primarily relevant during phase-one evaluations). ESA flow to be removed as part of cleanup. Site products tracking being added: one product-per-site record, payload comes from the service with all required data. DocHub integration design to be reviewed in Thursday internal meeting.
+
 **Decisions:**
 - Contact types that trigger Connect API: Survey, Environmental, Zoning only
+- Convert enviro site → task group Flow logic to Apex (no further Flow investment)
+- Single-process model: site creation + enviro operations + task groups handled together
+- Environmental cost worksheet: record-triggered on task group insert (1:1), type driven by task group type
+- One active environmental cost worksheet per environment
+- ESA flow to be removed during cleanup
+- Site products: one product-per-site record, payload sourced from the service
 
 **Open questions:**
 - QA validation of the contact type filter — confirm it works as expected in testing
+- Obed building the environmental cost worksheet flow — implementation timing
+- DocHub integration design review — Thursday internal meeting
+- Valuation functionality needs refinement — revisit in upcoming discussions
+- Consider: GitHub repo for logging component development with Claude reports
 
 ---
 

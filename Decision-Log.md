@@ -4,6 +4,12 @@
 
 | Date | Project | Decision | Context |
 |------|---------|----------|---------|
+| 2026-04-14 | Litify | Agent Force for Service SOW: 120 hrs base + 18 hrs PM (15%) → 138–158 hr range | Case prioritization removed, training docs excluded, ~10 hrs discovery |
+| 2026-04-14 | MAI | Trigger handler convention: one handler per object, logic lives in the object's service | Clean separation of concerns across the codebase |
+| 2026-04-14 | MAI | LWC local dev via `sf lightning dev app` is the standard workflow | Much faster than deploying every change |
+| 2026-04-14 | MAI | Client Info Component auto-save → explicit Next-button trigger | Resolves #1085 lead-value bug on related patient creation |
+| 2026-04-14 | CREtelligent | Convert enviro site → task group Flow logic to Apex | Team prefers Apex control; no further Flow investment expected |
+| 2026-04-14 | CREtelligent | Environmental cost worksheet: record-triggered on task group insert (1:1), type driven by task group type | Missing piece in current flow; one active worksheet per environment |
 | 2026-04-13 | MAI | Ticket 1165 closed — sharing/data issue, not a code bug | Moved to done after Vincent confirmed only reproducible with his account |
 | 2026-04-13 | MAI | Ticket 1319 closed — type field now defaults via record type, not flows | Cleaner approach, no flow dependency |
 | 2026-04-13 | F2-Cetera | Wealth management review automation approved for Apr 14 demo | Complete — flow checks 365-day lookback, prevents duplicate compliance records |

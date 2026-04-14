@@ -324,3 +324,28 @@
   - Meadow: create initial ERD iteration from entity role object in sandbox, iterate based on feedback
   - MAI: schedule David call for SSN/sharing rules blocker discussion
 - **Summary:** Processed 6 new meeting notes from 2026-04-14. Four projects updated with new week entries. F2-Cetera and MAI active with near-term decisions (permission sets, demo deployment). Harvey SOW finalized with detailed Agent Force for Service pricing and scope. Meadow scope expanded significantly — 40+ additional stories beyond initial 22-story backlog. HMS website with Sanity CMS integration. Unmatched "Michael" meeting (2026-04-14) remains flagged for manual review in project-mapping.md.
+
+## 2026-04-14 — Scheduled Ingest #9
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (5 files):**
+  - `Meeting Notes/High Meadows/MAI/2026-04-14 - Dev Growth.md`
+  - `Meeting Notes/High Meadows/MAI/2026-04-14 - Michael.md` (empty — no Granola content; flagged)
+  - `Meeting Notes/High Meadows/Internal/HMU/2026-04-14 - Packaging Content for HMU Workshops.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-14 - Stitch CREtelligent Stand Up.md`
+  - `Meeting Notes/Stand8/Litify/2026-04-14 - SOW Review.md`
+- **Pages updated (5):**
+  - `wiki/projects/mai/journal.md` — Apr 14 Dev Growth notes added to current week block (trigger handler convention, LWC local dev, Client Info refactor plan, new tickets needed); flagged ambiguous "Michael" meeting
+  - `wiki/projects/cretelligent/journal.md` — Apr 14 stand up added to current week block (enviro Flow→Apex conversion, cost worksheet design, site products tracking)
+  - `wiki/projects/litify/journal.md` — Apr 14 SOW Review pricing session added (138–158 hr range, case prioritization removed, ~10 hr discovery)
+  - `wiki/projects/litify/context.md` — SOW Scope section updated with finalized hour range, discovery breakdown, documentation scope
+  - `wiki/projects/harvey/journal.md` + `harvey/context.md` — **correction**: removed incorrect Apr 14–20 Harvey week block and Agent Force for Service scope from context.md. Prior Ingest #8 mis-filed the Litify SOW Review under Harvey — no `Stand8/Harvey/2026-04-14 - SOW Review.md` file exists; the SOW Review is a Litify meeting.
+- **Mac-owned action items added (4):**
+  - Review product story for CREtelligent environmental cost worksheet / single-process enviro flow
+  - Review and edit deliverable descriptions in Litify Agent Force for Service SOW
+  - Refactor MAI Client Info Component — auto-save → explicit Next-button trigger (closes #1085)
+  - Confirm which "Michael" the 2:05 PM Apr 14 MAI meeting refers to and re-file if needed
+- **Decisions added (6):** Litify SOW pricing, MAI trigger handler convention, MAI LWC local dev standard, MAI Client Info auto-save change, CREtelligent Flow→Apex conversion, CREtelligent environmental cost worksheet design
+- **HMU meeting notes:** Apr 14 HMU content packaging meeting discussed Obsidian + MCP knowledge repo, interview-format content strategy, and voice tech for automated video narration. No existing `hms-internal` project page — content captured in log only. Mac action: advance planning for interview-format content participation (deferred, not a firm commitment → not added to Action-Tracker).
+- **Index:** no new pages, `wiki/index.md` unchanged
+- **Summary:** Processed 5 new meeting notes from 2026-04-14. Three project journals updated (MAI, CREtelligent, Litify). Also corrected a prior ingest error where the Apr 14 SOW Review was mis-filed under Harvey — the meeting is a Litify Agent Force for Service pricing session; Harvey journal and context.md cleaned up, Litify journal and context.md now hold the canonical SOW scope (138–158 hr range).

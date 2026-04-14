@@ -17,9 +17,13 @@
 - **Data Cloud Setup** — unify fragmented knowledge sources into single source of truth
 
 ## SOW Scope
-- ~120 hours total at 20 hrs/week → 8-week delivery
+- ~120 hours base at 20 hrs/week → 8-week delivery
+- +18 hrs PM support (15% of base) → **138–158 hour total range**
+- Main services: 20 hours included separately
+- Discovery (~10 hrs): case field population, case summaries (3h), article recommendation, email drafting (6h), case status/updates, case resolution (1h), knowledge article creation
+- Documentation: high-level technical only (config, functionality, ongoing processes)
 - Client commitment: ~5 hrs for testing (train-the-trainer model)
-- **Excluded:** call transcripts, third-party integrations (Google, Confluence), community enhancements, website agent, V2+ email/KB features
+- **Excluded:** case prioritization, training documentation, call transcripts, third-party integrations (Google, Confluence), community enhancements, website agent, V2+ email/KB features
 
 ## Effort Estimates
 | Feature | Hours |

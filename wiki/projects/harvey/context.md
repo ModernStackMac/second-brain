@@ -10,11 +10,6 @@
 
 ## What We're Building
 - 3-year AI roadmap (board-approved)
-- Agent Force for Service implementation (138–158 hours: 120 hrs base + 18 hrs PM support)
-  - Discovery scope: case field population, case summaries (3h), article recommendation, email drafting (6h), case status/updates, case resolution (1h), knowledge article creation (~10 hrs total)
-  - Documentation: high-level technical (config, functionality, ongoing processes) — training docs excluded
-  - Removed from scope: case prioritization feature
-  - Main services: 20 hours included separately
 - Email intent parsing POC (Claude — handles multi-intent emails)
 - Multi-agent orchestration strategy (Einstein Agent for native SF workflows + Claude for email)
 - EU expansion support (~120 new Salesforce users)

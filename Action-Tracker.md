@@ -10,9 +10,15 @@
 - [x] Finish API trigger integration for Add Vendor (waiting on payload — need ID back from Connect) [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-10] ✅ 2026-04-14
 - [ ] Validate contact type filter in Add to Connect flow (Survey/Environmental/Zoning only) [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-13]
 - [x] Increase Quote Matrix modal height [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-10] ✅ 2026-04-14
+- [ ] Review product story for environmental cost worksheet / single-process enviro flow [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-14]
 
 ### Litify
 - [ ] Add technical assumptions and hour refinements to Litify SOW [Owner:: Mac] [Project:: litify] [Date:: 2026-04-13]
+- [ ] Review and edit deliverable descriptions in Agent Force for Service SOW (138–158 hr range) [Owner:: Mac] [Project:: litify] [Date:: 2026-04-14]
+
+### MAI
+- [ ] Refactor Client Info Component — auto-save → explicit Next-button trigger (also closes #1085 lead-value bug) [Owner:: Mac] [Project:: mai] [Date:: 2026-04-14]
+- [ ] Confirm which "Michael" the 2:05 PM Apr 14 meeting refers to and re-file if needed [Owner:: Mac] [Project:: mai] [Date:: 2026-04-14]
 
 ### Meadow
 - [x] Confirm company credit card setup for Supabase and Vercel subscriptions [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-09] ✅ 2026-04-14

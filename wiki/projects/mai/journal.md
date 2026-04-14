@@ -20,15 +20,23 @@ New tickets from Donna demo being added this week.
 
 Apr 14 DSU: running low on tickets pre-demo. Four items from Brian's discussion with David: two already in Jira, CSS button issue ticketed, prospect sharing automation assigned to Brian, contract-type visibility for ops/sysadmin unassigned. Demo day deploy freeze noon–3pm ET. Federico can deploy 1194 post-demo (regression testing required). UAT freezes start this week; Olivia and Nicole Tang beginning 30-min training sessions. MCP/Obsidian setup troubleshooting covered.
 
+Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branch/PR process — standard tickets go through MA deploy env; UIT-specific issues cherry-picked and merged directly to UIT. Trigger handler pattern enforced: one handler per object, logic lives in the object's service for clean separation. LWC local dev via `sf lightning dev app` is the standard workflow — significantly faster than deploying every change. #1085 will close after Mac's Client Info Component refactor lands; any residual issues spin up a new ticket. Client Info Component auto-save is moving from "on field change" to "on Next button click only". New tickets identified: DESMI manager sharing problem, contact request values on screen 2, quick action for adding related persons to addresses.
+
 **Decisions:**
 - Ticket 1165 moved to done (sharing issue, not code bug)
 - Ticket 1319 closed — type field now defaults via record type, not flows
 - Ticket 958: fix picklist value (Tamarack Trading Support → operations trading)
+- Trigger handler convention: one handler per object, logic inside the object's service
+- LWC local dev (`sf lightning dev app`) is the standard workflow going forward
+- Client Info Component auto-save → explicit Next-button trigger
+- Close #1085 after the Client Info refactor; new ticket for any leftovers
 
 **Open questions:**
 - Mac to schedule David call for 1293 (SSN/intake source) and prospect sharing rules (1120)
 - 1269: confirm stop process requirements, create follow-up ticket
 - 1200: Mac/Federico offline sync on datetime validation
+- Tickets needed: DESMI manager sharing, contact request values on screen 2, related-persons quick action
+- Ambiguous "Michael" 2:05 PM meeting (Apr 14) — Granola returned no content; Mac to confirm which Michael and re-file
 
 ---
 
