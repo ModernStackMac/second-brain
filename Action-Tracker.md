@@ -7,15 +7,15 @@
 ## Open
 
 ### CREtelligent
-- [ ] Finish API trigger integration for Add Vendor (waiting on payload — need ID back from Connect) [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-10]
+- [x] Finish API trigger integration for Add Vendor (waiting on payload — need ID back from Connect) [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-10] ✅ 2026-04-14
 - [ ] Validate contact type filter in Add to Connect flow (Survey/Environmental/Zoning only) [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-13]
-- [ ] Increase Quote Matrix modal height [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-10]
+- [x] Increase Quote Matrix modal height [Owner:: Mac] [Project:: cretelligent] [Date:: 2026-04-10] ✅ 2026-04-14
 
 ### Litify
 - [ ] Add technical assumptions and hour refinements to Litify SOW [Owner:: Mac] [Project:: litify] [Date:: 2026-04-13]
 
 ### Meadow
-- [ ] Confirm company credit card setup for Supabase and Vercel subscriptions [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-09]
+- [x] Confirm company credit card setup for Supabase and Vercel subscriptions [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-09] ✅ 2026-04-14
 
 ---
 
