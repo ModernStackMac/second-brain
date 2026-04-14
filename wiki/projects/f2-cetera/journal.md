@@ -6,7 +6,7 @@
 
 ## Week of Apr 13–19, 2026
 
-Met once (Apr 13 — Daily Standup). Checking in ahead of Sprint 2 demo on Apr 14.
+Met twice (Apr 13 — Daily Standup, Apr 14 — Daily Standup). Sprint 2 demo completed Apr 14. Permission set architecture and validation implementation under review.
 
 Wealth management review automation is complete and demo-ready — flow checks for records within past 365 days, creates new record only if none found, links back to triggering event, prevents duplicate compliance records. Custom settings infrastructure is deployed and working (hierarchical checkbox to disable flows/triggers org-wide or per user, enables clean data loads and hotfixes).
 
@@ -18,9 +18,13 @@ Brady is joining the dev team (was sick last week, back now, laptop set up). San
 - Wealth management review automation complete and approved for tomorrow's demo
 - Advice Works slip to Sprint 3 accepted if credentials aren't resolved today
 
+Apr 14 standup focused on permission set strategy and validation design. Current approach is one permission set per feature, but multiple case record types would create many sets. Open question: align permissions to job functions vs. individual record types, possibly grouped into permission set groups. Validation implementation is functionally equivalent to Connor's request — only cosmetic wording difference ("skip validation, skip flow" vs. "deactivate"). Connor unavailable (meeting with Feathery) — decisions deferred.
+
 **Open questions:**
 - Connor to get new Advice Works sandbox credentials from product owner
 - Which sandbox users to deactivate for Brady's access
+- Permission set architecture decision (job functions vs. record types) — pending Connor/Odie input
+- Validation wording preferences — Mac to follow up with Connor
 
 ---
 

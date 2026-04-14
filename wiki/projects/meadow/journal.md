@@ -4,6 +4,26 @@
 
 ---
 
+## Week of Apr 14–20, 2026
+
+Met once (Apr 14 — ERD Sync). Meadow captured as more complex than website — 40+ additional user stories required. Authentication and data migration needed; using cloud code for first implementation attempt. Timeline significantly longer than website project.
+
+ERD Sync covered HMS website, Meadow status, Visibility POC, and Entity Role Diagram requirements. Website rollout progressing: Sanity CMS implemented, web forms working, Jessica managing social content uploads. Use Sanity CMS for HMS website content management. ERD requirements: build from entity role object in sandbox as junction object connecting accounts, show nested ownership, reference Altrata ownership structure diagrams, include all standard accounts initially.
+
+**Decisions:**
+- Use Sanity CMS for HMS website content management
+- Build initial ERD using entity role records as junction between account boxes
+- Reference Altrata ownership structure diagrams as visual model
+- Include all standard accounts in first ERD iteration; portfolio objects may come later
+
+**Open questions:**
+- Mac: Create initial ERD iteration from entity role object in sandbox and send for feedback
+- Mac: Iterate on ERD based on feedback until satisfactory
+- ClickUp license access for Visibility POC (delayed)
+- 40+ additional Meadow user stories — prioritization and timeline needed
+
+---
+
 ## Week of Apr 7–12, 2026
 
 Met three times (Apr 9 Product Strategy, Apr 9 Website Sync, Apr 10 Office Hours).
