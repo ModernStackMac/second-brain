@@ -274,3 +274,21 @@
 - **Mac-owned action items added:** 0
 - **Decisions added:** 0
 - **Summary:** Clean scan. No new raw sources or meeting notes since Scheduled Ingest #5 (2026-04-14 earlier). Wiki remains current through the 2026-04-13 batch. No action required.
+
+## 2026-04-14 — Scheduled Ingest #7
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — 3 files, all already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #6. Wiki remains current through the 2026-04-13 batch. No action required.
