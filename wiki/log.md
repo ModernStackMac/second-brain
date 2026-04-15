@@ -386,3 +386,21 @@
 - **HMU meeting notes:** Apr 14 HMU content packaging meeting discussed Obsidian + MCP knowledge repo, interview-format content strategy, and voice tech for automated video narration. No existing `hms-internal` project page — content captured in log only. Mac action: advance planning for interview-format content participation (deferred, not a firm commitment → not added to Action-Tracker).
 - **Index:** no new pages, `wiki/index.md` unchanged
 - **Summary:** Processed 5 new meeting notes from 2026-04-14. Three project journals updated (MAI, CREtelligent, Litify). Also corrected a prior ingest error where the Apr 14 SOW Review was mis-filed under Harvey — the meeting is a Litify Agent Force for Service pricing session; Harvey journal and context.md cleaned up, Litify journal and context.md now hold the canonical SOW scope (138–158 hr range).
+
+## 2026-04-15 — Scheduled Ingest #12
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #11. Wiki remains current through the 2026-04-14 batch (Ingest #9). No action required.
