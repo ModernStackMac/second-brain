@@ -6,7 +6,7 @@
 
 ## Week of Apr 13–19, 2026
 
-Met three times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU).
+Met four times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
 
 Dev DSU: Good sprint velocity but several items blocked on David consultation. Rodrigo completed 1313, 1319, 1301; working on 1212 (→ UAT) and 1097 (lead conversion — may not work on person accounts vs households, needs investigation). Federico deployed 1197 to production, 1270 to UAT. Mac completed 1312, 1314, 1194 Friday + 1319, 1251 today.
 

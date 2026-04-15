@@ -404,3 +404,16 @@
 - **Mac-owned action items added:** 0
 - **Decisions added:** 0
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #11. Wiki remains current through the 2026-04-14 batch (Ingest #9). No action required.
+
+## 2026-04-15 — Scheduled Ingest #13
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (2 files):**
+  - `Meeting Notes/High Meadows/MAI/2026-04-15 - MAI Dev DSU.md` — empty Granola capture (no content/summary)
+  - `Meeting Notes/_Unmatched/2026-04-15 - Andrew Mac.md` — unmatched peer catch-up, not a project meeting
+- **Pages updated (1):** `wiki/projects/mai/journal.md` — noted Apr 15 DSU as empty Granola capture in current week block
+- **Pages created:** 0
+- **Mac-owned action items added:** 0 — the Sutherland-style AI consultant idea from the Andrew/Mac sync is exploratory, not a firm commitment; not added to Action-Tracker
+- **Decisions added:** 0
+- **Unmatched note:** `_Unmatched/2026-04-15 - Andrew Mac.md` is personal/peer business-dev catch-up (Granola demo, vibe code review pitch idea, Rory Sutherland-style AI consultant demo, Lisbon travel, side contract payments). Attendee `andsmi@gmail.com` does not map to any known project contact — flagged in source file for Mac to confirm identity (possibly peer Victor Domatz or someone else) and update `project-mapping.md` if recurring. No project journal touched since the meeting has no project affiliation.
+- **Summary:** Two net-new files since Ingest #12. Both low-signal for the wiki: one empty Granola capture (MAI DSU), one unmatched personal meeting. MAI journal updated with a one-line note; unmatched meeting logged here only.
