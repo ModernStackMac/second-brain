@@ -6,7 +6,9 @@
 
 ## Week of Apr 13–19, 2026
 
-Met four times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
+Met five times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU, Apr 15 — Mac/Steven Weekly). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
+
+Apr 15 Mac/Steven Weekly: dev progress recap — modal sizing fixed, money management system + object integration added, domain LLC config updated, spouse card/table/notes/video components enhanced, new W3 flare landed. Main pain point is a regression in the sales process system — prospect info fields are collapsing and sections (asset summary, income goals, next steps) aren't populating, with dev and UAT behavior diverging. PDF generation is tightly coupled to the current system, so removing it creates risk and an alternative needs evaluation. Team coordination issues surfaced: Sean missing scheduled meetings consistently, focus/energy dips across the team, communication gaps impacting timeline. User demos held until bug fixes land.
 
 Dev DSU: Good sprint velocity but several items blocked on David consultation. Rodrigo completed 1313, 1319, 1301; working on 1212 (→ UAT) and 1097 (lead conversion — may not work on person accounts vs households, needs investigation). Federico deployed 1197 to production, 1270 to UAT. Mac completed 1312, 1314, 1194 Friday + 1319, 1251 today.
 
@@ -30,6 +32,9 @@ Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branc
 - LWC local dev (`sf lightning dev app`) is the standard workflow going forward
 - Client Info Component auto-save → explicit Next-button trigger
 - Close #1085 after the Client Info refactor; new ticket for any leftovers
+- Hold user demos until sales process system bug fixes land
+- Test fixes in dev before promoting to UAT
+- Evaluate PDF generation alternative given current system's tight coupling
 
 **Open questions:**
 - Mac to schedule David call for 1293 (SSN/intake source) and prospect sharing rules (1120)
@@ -37,6 +42,9 @@ Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branc
 - 1200: Mac/Federico offline sync on datetime validation
 - Tickets needed: DESMI manager sharing, contact request values on screen 2, related-persons quick action
 - Ambiguous "Michael" 2:05 PM meeting (Apr 14) — Granola returned no content; Mac to confirm which Michael and re-file
+- Sales process system regression: diagnose collapsing prospect info fields and non-populating asset summary / income goals / next steps sections; reconcile dev vs UAT divergence
+- PDF generation dependency: identify replacement path before removing current system
+- Team coordination: Sean's missed meetings and broader focus/energy issues — Steven to address
 
 ---
 

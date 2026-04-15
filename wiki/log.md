@@ -417,3 +417,20 @@
 - **Decisions added:** 0
 - **Unmatched note:** `_Unmatched/2026-04-15 - Andrew Mac.md` is personal/peer business-dev catch-up (Granola demo, vibe code review pitch idea, Rory Sutherland-style AI consultant demo, Lisbon travel, side contract payments). Attendee `andsmi@gmail.com` does not map to any known project contact — flagged in source file for Mac to confirm identity (possibly peer Victor Domatz or someone else) and update `project-mapping.md` if recurring. No project journal touched since the meeting has no project affiliation.
 - **Summary:** Two net-new files since Ingest #12. Both low-signal for the wiki: one empty Granola capture (MAI DSU), one unmatched personal meeting. MAI journal updated with a one-line note; unmatched meeting logged here only.
+
+## 2026-04-15 — Scheduled Ingest #14
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (2 files):**
+  - `Meeting Notes/High Meadows/MAI/2026-04-15 - Mac Steven Weekly.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-15 - Stitch CREtelligent Dev Team Sync.md`
+- **Pages updated (2):**
+  - `wiki/projects/mai/journal.md` — Apr 15 Mac/Steven Weekly added to current week block (dev progress recap, sales process regression, PDF generator coupling risk, team coordination issues)
+  - `wiki/projects/cretelligent/journal.md` — Apr 15 Dev Team Sync added to current week block (product-centric data model via Site Product, one-enviro-site-per-location rule, MuleSoft decision, cost worksheet category cleanup, product payload research story)
+- **Mac-owned action items added (3):**
+  - Start research story on product payload landmines before full Salesforce/Connect integration (cretelligent, due 2026-04-16)
+  - Diagnose MAI sales process system regression (collapsing fields, non-populating sections, dev/UAT divergence)
+  - Evaluate PDF generation alternative before removing MAI's current tightly-coupled system
+- **Decisions added (6):** MAI hold demos until fixes land; MAI evaluate PDF alternative; CRE product-centric data model; CRE one enviro site per location; CRE use MuleSoft for Connect integration; CRE cost worksheet category cleanup
+- **Index:** no new pages; `wiki/index.md` unchanged
+- **Summary:** Two net-new meeting notes since Ingest #13. MAI journal picked up the Apr 15 Mac/Steven weekly (regression + PDF coupling + team coordination). CREtelligent journal picked up the Apr 15 Dev Team Sync covering a significant architectural shift to a product-centric data model and a MuleSoft-based integration approach, plus cost worksheet category cleanup. Three Mac-owned actions added, six strategic decisions logged.

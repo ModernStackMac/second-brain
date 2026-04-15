@@ -33,3 +33,9 @@
 | 2026-04-02 | MAI | Flex-Dash fully paused, all capacity redirected to MAI | Argentine dev team phased out due to quality; replacement hires in progress |
 | 2026-04-02 | CREtelligent | Salesforce cert expiring June 15: leave alone, monitor for breakage | Nothing in apex classes, named credentials, connected apps references it |
 | 2026-04-02 | MAI | Prioritize QA/UAT over new backlog items | ~12 tickets remain; quality over velocity |
+| 2026-04-15 | MAI | Hold user demos until sales process system bug fixes land | Prospect info fields collapsing, sections not populating, dev/UAT diverging |
+| 2026-04-15 | MAI | Evaluate PDF generation alternative before removing current system | Current generator is tightly coupled; removal creates delivery risk |
+| 2026-04-15 | CREtelligent | Product-centric data model — Site Product object joining products with sites replaces opportunity-level checkboxes | Cleaner scaling as product catalog grows and enables per-site product tracking |
+| 2026-04-15 | CREtelligent | One enviro site per location (not per product) — PCA/ESA combos create one enviro site, two tasks, two site products | Eliminates duplicate enviro sites in current flow for same-property product combos |
+| 2026-04-15 | CREtelligent | Use MuleSoft for Salesforce/Connect API integration instead of a single Apex class | Scalability and maintainability for growing integration surface |
+| 2026-04-15 | CREtelligent | Cost worksheet category cleanup: rename (Regulatory→FOIA, Site assessment→Professional associate, Geo→Geophysical), remove Data/Internal review, consolidate Travel, Other PA→Other cost | Align with Salesforce spreadsheet; six proposed bottom additions handled via dropdowns instead |
