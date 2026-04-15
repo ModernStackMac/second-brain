@@ -325,6 +325,25 @@
   - MAI: schedule David call for SSN/sharing rules blocker discussion
 - **Summary:** Processed 6 new meeting notes from 2026-04-14. Four projects updated with new week entries. F2-Cetera and MAI active with near-term decisions (permission sets, demo deployment). Harvey SOW finalized with detailed Agent Force for Service pricing and scope. Meadow scope expanded significantly — 40+ additional stories beyond initial 22-story backlog. HMS website with Sanity CMS integration. Unmatched "Michael" meeting (2026-04-14) remains flagged for manual review in project-mapping.md.
 
+## 2026-04-15 — Scheduled Ingest #10
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 net-new (1 duplicate reconciled)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+- **Duplicate reconciled:** `Meeting Notes/Stand8/NBCU/2026-04-13 - NBCU STAND 8 Agentforce POC.md` is the same meeting previously ingested under the mis-timestamped `2026-04-15 - NBCU STAND 8 Agentforce POC.md` (Granola glitch). No new wiki content — updated `wiki/projects/nbcu/journal.md` to reflect the correct Apr 13 date and note the duplicate source files.
+- **Pages created:** 0
+- **Pages updated (1):** `wiki/projects/nbcu/journal.md` — date correction only
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #9. Reconciled the NBCU 04-13/04-15 duplicate source-file pair into a single Apr 13 journal entry.
+
 ## 2026-04-14 — Scheduled Ingest #9
 
 - **Operation:** INGEST — Scheduled scan of raw sources and meeting notes

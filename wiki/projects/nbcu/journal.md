@@ -6,7 +6,7 @@
 
 ## Week of Apr 13–19, 2026
 
-Met once (Apr 15 — Architecture Review). Karthi (business solutions partner) was absent, causing the session to cut short and reschedule.
+Met once (Apr 13 — Architecture Review; Granola file timestamp glitch produced duplicate 04-13 and 04-15 source files for the same meeting). Karthi (business solutions partner) was absent, causing the session to cut short and reschedule.
 
 Confirmed scope: primary use case is the **sales pricing recommendation engine** — agent recommends pricing based on historical closed-won opportunities, data flows through Data Cloud. Content recommendation use case remains in scope but pricing is the priority.
 
