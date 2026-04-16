@@ -491,3 +491,23 @@
 - **Mac-owned action items added:** 0
 - **Decisions added:** 0
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #16 (2026-04-16 earlier). Wiki remains current through the 2026-04-15 batch (Ingest #14). No action required.
+
+## 2026-04-16 — Scheduled Ingest #18
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+  - `Meeting Notes/_Unmatched/` — all files already in log
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Note:** Discovered `Clippings/` folder at vault root (outside defined scan scope) containing 6 files dated 2026-04-15, including STITCH-83089 Site Product Object & Pricing Component — detailed Linear ticket doc with architecture decisions for CREtelligent's site product data model and pricing LWC. Not processed (out of scope per schema). Mac may want to move relevant files to `raw/projects/` for future ingest.
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #17. Wiki remains current through the 2026-04-15 batch. One flag: `Clippings/` folder has unprocessed CREtelligent project docs that may be worth ingesting.
