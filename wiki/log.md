@@ -434,3 +434,22 @@
 - **Decisions added (6):** MAI hold demos until fixes land; MAI evaluate PDF alternative; CRE product-centric data model; CRE one enviro site per location; CRE use MuleSoft for Connect integration; CRE cost worksheet category cleanup
 - **Index:** no new pages; `wiki/index.md` unchanged
 - **Summary:** Two net-new meeting notes since Ingest #13. MAI journal picked up the Apr 15 Mac/Steven weekly (regression + PDF coupling + team coordination). CREtelligent journal picked up the Apr 15 Dev Team Sync covering a significant architectural shift to a product-centric data model and a MuleSoft-based integration approach, plus cost worksheet category cleanup. Three Mac-owned actions added, six strategic decisions logged.
+
+## 2026-04-15 — Scheduled Ingest #15
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log (NBCU `2026-04-15 - NBCU STAND 8 Agentforce POC.md` is the reconciled Granola-timestamp duplicate of the Apr 13 meeting, already handled in Ingest #11)
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/_Unmatched/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #14. Wiki remains current. No action required.
