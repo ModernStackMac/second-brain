@@ -6,7 +6,12 @@
 
 ## Week of Apr 13–19, 2026
 
-Met five times (Apr 13 — Internal Stitch Sync with Obed; Apr 14 — Stitch CREtelligent Stand Up; Apr 15 — Stitch CREtelligent Dev Team Sync; Apr 16 — AP/MN Sync; Apr 16 — Internal Team Sync with Andrew + Obed).
+Met seven times (Apr 13 — Internal Stitch Sync with Obed; Apr 14 — Stitch CREtelligent Stand Up; Apr 15 — Stitch CREtelligent Dev Team Sync; Apr 16 — AP/MN Sync; Apr 16 — Internal Team Sync with Andrew + Obed; Apr 17 — Impromptu Zoom with Andrew/Travis/Obed; Apr 17 — Weekly Status & Project Sync).
+
+Apr 17 Weekly Status & Project Sync (w/ Andrew, Obed, Travis, Wendell): TDX takeaways, Cost Worksheet rename + data model lock-in, Order Service → Salesforce payload flow, default value strategy for estimates/actuals, and planning for initial product load. TDX headlines: MCP in Agentforce now supports both hosted and non-hosted (Mac flagged this as the big unlock), developer Agentforce/Data Cloud sandbox got meaningful upgrades. Andrew wants a dedicated 1hr debrief with Mac next week to walk through MCP / Data 360 / MuleSoft / Agentforce roadmap applicability vs. noise. Cost Worksheet rename landed ("Environmental Cost Worksheet" → "Cost Worksheet"); adding lookup to Site (via Valuation Site when present, otherwise direct Site → Enviro Site → Task Group). Cost Worksheet holds all 28 expense fields with budget vs. actual pairs — left side (estimates) locks at proposal acceptance, right side (actuals) stays editable through fulfillment. Default value strategy: estimates = actuals on creation (FOIA $33, Historical $185, Choir = estimate); "everything else" fallback puts 50% of sell price into PA cost only, actual = budget at load. Actuals roll up from PA cost into Cost Worksheet only (not from Internal Expense) — single source to avoid double-counting. Internal Expense still captures travel/mileage/hotel/rental/plane with type + amount + approval tag, but doesn't roll in. Initial product load is static/manual from Travis's product key spreadsheet (~100+ products); monthly/weekly cleanup job catches unrecognized keys. No product endpoint in Order Service yet — Mac handles Name/Product Code/Product Family/SKU/List Price (on payload update). Salesforce buckets unrecognized product keys into an "Other Product" catch. Blake targeting end of next week for test-env payload so Mac can call from dev sandbox and finalize the Apex class. Choir template IDs by product type (Wendell) is the remaining thread before next week's soup-to-nuts walkthrough.
+
+Apr 17 Impromptu Zoom (w/ Andrew, Travis, Obed): quick alignment on loading product data into Salesforce for the CPI/sales build. Travis flagged data quality issues in the current product sheet — tier/day mismatches on drive-by commercial sales, inconsistent values across the sheet. His attempt to use Claude to merge ~70 additional products into the master sheet failed because the source itself is wrong. Team agreed to disregard the current sheet and wait for a corrected version from Blake. Product table import limited to: product name, product code, product family, SKU, list price — no product config (discounting, pricing rules). List price lands via next week's payload update. Metadata columns in the source spreadsheet are for internal mapping only, not imported. Two metadata changes requested: rename "enviro cost worksheet" → "cost worksheet" (done/aligned with later Weekly Sync), add lookup to Site. Mac confirmed LWC dev in progress. Mac dropped early for another call; follow-up metadata-mapping sync to happen later.
+
 
 Apr 16 Internal Team Sync (w/ Andrew + Obed): alignment on flow-to-Apex migration, cost worksheet field cleanup, and product-to-cost mapping now that design has shifted again. Theme of the call was design reversals — Obed and Mac both flagged frustration that requirements keep changing mid-development; team affirmed the pattern and agreed Obed's subtask documentation prevents total rework loss. Mac exported the Lucid current-state diagram on the call; Andrew imported to Miro (connectors auto-converted cleanly). Field-ownership split: Obed owns EnviroCost Worksheet field updates (renames, deletes, new Municipality field) against the updated mapping workbook; Mac owns Site Product field mapping. Product2 keeps catalog fields (product code, product name, short code) — Site Product holds order-specific fields (order number, discount, list price, total price) accessed via lookup. Product-to-cost routing locked in: Automated Report products → third-party cost only on the Automated Report object (no EnviroCost Worksheet); Environmental Site products (Survey, Zoning, etc.) → EnviroCost Worksheet with paired estimate + actual fields. Cost rollup chain reconfirmed: EnviroCost Worksheet → Task Group → EnviroSite → Opportunity. Conga doc gen stays priority #1 (Obed); DocHub is the next team focus — Andrew to schedule a dedicated working session. VS Code auth to CREtelligent prod is persistent; Gear Set compare/deploy as alternative if needed. Outstanding blocker: sample payloads for both Automated Report products and regular products, expected to flow through the opportunity/site payload.
 
@@ -48,6 +53,15 @@ Apr 14 Stand Up covered environmental site automation and cost worksheet design.
 - Product number should NOT be unique on Product2 — uniqueness lives at the Site Product level
 - Field-work split: Obed owns EnviroCost Worksheet field updates against the updated mapping workbook; Mac owns Site Product field mapping
 - Conga doc gen is priority #1; DocHub is the next team focus after Conga clears
+- Rename "Environmental Cost Worksheet" → "Cost Worksheet"; add lookup to Site (via Valuation Site when present, otherwise direct Site → Enviro Site → Task Group)
+- Cost Worksheet holds all 28 expense fields with budget vs. actual pairs; left side (estimates) locks at proposal acceptance, right side (actuals) stays editable
+- Default values: estimates = actuals at creation (FOIA $33, Historical $185, Choir = estimate); "everything else" fallback = 50% sell price → PA cost only
+- Actuals roll-up: PA cost rolls into Cost Worksheet only; Internal Expense object does NOT roll in (single source — avoid double-counting)
+- Initial product load is static/manual from Travis's product key spreadsheet (~100+ products); no Order Service product endpoint yet
+- Monthly/weekly cleanup job catches unrecognized product keys; Salesforce buckets them into an "Other Product" catch
+- Product table import limited to: product name, product code, product family, SKU, list price — no product config (discounting, pricing rules)
+- Disregard current product sheet (tier/day mismatches, inconsistent values); wait for corrected version from Blake
+- Blake builds test-environment payload targeting end of next week (week of Apr 20) so Mac can call from dev sandbox
 
 **Open questions:**
 - QA validation of the contact type filter — confirm it works as expected in testing
@@ -68,6 +82,16 @@ Apr 14 Stand Up covered environmental site automation and cost worksheet design.
 - Andrew to schedule dedicated DocHub working session once Conga priority clears
 - EnviroCost Worksheet field list (with new Municipality field + renames/deletes per updated workbook) pending Obed's cleanup pass
 - Sample payloads for Automated Report products and regular products still outstanding from CREtelligent
+- Andrew to drop R-drive link to product source file for Mac
+- Andrew + Mac pre-load sync on metadata-to-product-table mapping
+- Travis to get corrected product sheet from Blake
+- Travis to produce per-product default values (budget + actual) for every service line, including "everything else" 50% fallback
+- Travis/Blake to push test-env payload end of next week with site ID, product fields, client fields
+- Andrew to schedule 1hr TDX debrief with Mac next week — MCP, Data 360, MuleSoft, Agentforce roadmap alignment
+- Wendell to finish Choir template IDs by product type so doc generation knows what template to use
+- Mac to rename enviro cost worksheet → cost worksheet and add lookup to Site
+- Mac to continue Cost Worksheet object config + LWCs; sync with Obed before product load on which metadata fields land on Product2
+- Obed/Mac to plan next-week "soup to nuts" walkthrough: current Salesforce state through quoting → proposal
 
 ---
 

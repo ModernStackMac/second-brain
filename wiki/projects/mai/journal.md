@@ -6,7 +6,9 @@
 
 ## Week of Apr 13–19, 2026
 
-Met seven times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU, Apr 15 — Mac/Steven Weekly, Apr 16 — Dev DSU, Apr 16 — Impromptu Call). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
+Met eight times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU, Apr 15 — Mac/Steven Weekly, Apr 16 — Dev DSU, Apr 16 — Impromptu Call, Apr 17 — Dev DSU). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
+
+Apr 17 Dev DSU: address-on-conversion pattern clarified, UAT deployment discipline tightened, ticket swap to unblock Mac, and story-point sizing exercise kicked off. Brian explained that account conversion writes addresses to a custom Address object (child of Account, creates record on Course Analysis) rather than the standard primary/mailing fields — Contact Points was rejected because clients own multiple properties with detailed requirements. Brian to share the pattern so Mac can align his open ticket. Federico overwrote Mac's changes on 1345 when sending to UAT without syncing dev first; four additional "Developer Review" tickets also aren't actually deployed. Fix: shared "UAT Deployment Collaboration" Google Doc — Mac logs every deploy going forward. Ticket swap: Mac hands over his fund account ticket, Federico finishes 1343 first to unblock, Mac picks up non-fund-account work in the meantime. Story-point sizing for ~40 unpointed tickets will run off a Jira filter (Michael's preference) rather than the Notion sync page — fastest path to an honest "how much dev time is left" answer for leadership. Mac's hourly Cowork job keeps Notion checkboxes ↔ Jira story points in sync via the Atlassian + Notion MCPs; Notion page may have over-estimated from earlier prompt and will be reset if still useful. Mac also dumping Tuesday demo bug tickets into Jira for review with Michael before assignment. Apr 16 progress: refactor committed + deployed to UAT after freeze lifted (ticket 1206 resolved in same push); ticket 1196 completed Apr 17 morning.
 
 Apr 16 Dev DSU + Impromptu Call: ticket cleanup and a significant design alignment on the prospect address model ahead of the July go-live. QA passes this round: 1097, 1199, 1222. Ticket 1054 (retirement-account list view missing practice field) marked pass — it's David's team's business-account list view for retirement contracts, not MAI's scope. Ticket 1221 "regex too complicated" error handed off to the debt team. 1082 needs retesting with the correct persona: exception timeframe is required for the case requester but not the denial team. 1128/1167 test steps unclear — Vincent + Aisha syncing offline. Rodrigo finished 12, now on 1347; 991 moved to dev with Ferrito pinged. Global picklist bug hitting both financial account case and account records — added to Brian C's existing list. A larger architectural issue surfaced around prospect address: standard OOTB address on prospect modal creates dual-write risk against the existing custom Address object, with related-person addresses (especially schedule B on retirement contracts) adding further complexity. For go-live the team is keeping scope tight — replace the standard address component on prospect modal with the custom address component (link already exists), process only Nicole's person-account change list, and defer the larger related-person / conversion address redesign to an internal working session. Mac's recent JavaScript-only prospect UAT deploy is on hold — bundling with Nicole's changes. Aisha also flagged the fund assignment rebuild as urgently needing retest in UAT before go-live; prior testing was invalid because it ran before deployment.
 
@@ -44,6 +46,10 @@ Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branc
 - Ticket 1221 handed off to the debt team (regex-too-complicated error)
 - Tickets 1097, 1199, 1222 passed QA
 - Fund assignment rebuild must be retested in UAT immediately — prior testing was invalid (ran pre-deploy)
+- Account address pattern: continue using custom Address object on conversion (writes to Course Analysis) — not standard primary/mailing fields; Contact Points rejected due to multi-property client requirements
+- Story-point sizing via Jira filter for unpointed tickets (Michael's preference) — Notion sizing page deferred
+- Adopt shared "UAT Deployment Collaboration" Google Doc for all UAT deploys — avoids cross-dev overwrites
+- Mac/Federico ticket swap: Mac hands over fund account ticket; Federico to finish 1343 next to unblock
 
 **Open questions:**
 - Mac to schedule David call for 1293 (SSN/intake source) and prospect sharing rules (1120)
@@ -62,6 +68,12 @@ Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branc
 - Dev team: retest fund assignment rebuild in UAT (or dev); schedule internal working session on prospect address data model for go-live
 - Federico: continue work on ticket 1-3-47
 - Mac + Brian: review new address modal ticket for feasibility and conflicts
+- Brian to share the custom-address-on-account pattern with Mac so he can align his open ticket
+- Federico: complete 1343 to unblock Mac; review and redeploy 1345 after overwriting Mac's changes in dev
+- Federico: investigate four tickets moved to Developer Review that aren't actually on UAT
+- Mac/Michael: process Tuesday demo bug tickets once Mac finishes loading them into Jira
+- Michael: run story-point sizing via Jira filter for ~40 unpointed items; review the two solution-design tickets Federico sent
+- Aisha: re-sync with Federico on tickets that are marked Developer Review but not deployed
 
 ---
 
