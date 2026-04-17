@@ -609,3 +609,40 @@
 - **Mac-owned action items added:** 0
 - **Decisions added:** 0
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #21 (2026-04-16). Wiki remains current through the Apr 16 batch. No action required.
+
+## 2026-04-17 — Scheduled Ingest #23
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (9 files):**
+  - `Meeting Notes/High Meadows/F2-Cetera/2026-04-16 - Cetera Stand Up [Fathom].md` (Fathom — same meeting as the Apr 16 Granola standup already in log; merged, no new journal block)
+  - `Meeting Notes/High Meadows/MAI/2026-04-16 - MAI Stand up [Fathom].md` (Fathom — same meeting as the Apr 16 MAI Dev DSU Granola already in log; merged, no new journal block)
+  - `Meeting Notes/High Meadows/MAI/2026-04-17 - MAI Dev DSU.md`
+  - `Meeting Notes/Modern Stack Systems/2026-04-17 - Meeting of the Minds.md` (peer sync on Cowork/scheduled tasks/second brain; no project affiliation — logged only)
+  - `Meeting Notes/Stand8/Litify/2026-04-17 - Ryan Liana Chat.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Impromptu Zoom Meeting [Fathom].md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Stitch CREtelligent Weekly Status and Project Sync.md`
+  - `Meeting Notes/_Unmatched/2026-04-16 - Impromptu Call [Fathom].md` (empty Fathom capture — no content)
+  - `Meeting Notes/_Unmatched/2026-04-17 - Impromptu Call [Fathom].md` (empty Fathom capture — no content)
+- **Pages created:** 0
+- **Pages updated (3):**
+  - `wiki/projects/mai/journal.md` — added Apr 17 Dev DSU entry to current week block: custom-address-on-account pattern (writes to Course Analysis), UAT Deployment Collaboration doc adoption, Mac/Federico ticket swap (Federico finishes 1343 first), story-point sizing via Jira filter (~40 unpointed), Tuesday demo bugs going into Jira
+  - `wiki/projects/litify/journal.md` — added Apr 17 Ryan/Liana scale-down entry: SOW trimmed to 66 hrs (57 impl + 9 PM), removed knowledge article recommendation/email drafting/case field population, kept case summaries/case resolution/knowledge article creation; two external agent asks sized (40 hrs external, 20 hrs internal similar-case)
+  - `wiki/projects/cretelligent/journal.md` — added Apr 17 Weekly Status + Impromptu Zoom entries: Cost Worksheet rename + Site lookup, 28 expense fields w/ budget+actual pairs (estimates lock at proposal), default value strategy (estimates=actuals, "everything else" = 50% sell price → PA cost), actuals roll-up from PA cost only (not Internal Expense), static/manual initial product load (~100+ products) from Travis's key spreadsheet, Blake payload end of next week, current product sheet disregarded pending corrected version, TDX headline: MCP in Agentforce now hosted + non-hosted
+- **Mac-owned action items added (9):**
+  - mai: Update UAT Deployment Collaboration Google Doc on every deploy
+  - mai: Pick up non-fund-account ticket while Federico finishes 1343
+  - mai: Load Tuesday demo bug tickets into Jira and review with Michael
+  - mai: Align open address ticket with Brian's custom-address-on-account pattern once shared
+  - cretelligent: Rename Environmental Cost Worksheet → Cost Worksheet; add lookup to Site
+  - cretelligent: Continue Cost Worksheet object config + LWCs; sync with Obed before product load
+  - cretelligent: Plan next-week soup-to-nuts walkthrough with Obed (current SF state through quoting → proposal)
+  - litify: Stand by for Litify clarifications on KB access and case data structure
+- **Decisions added (15):**
+  - litify (4): scaled-down 66 hr SOW; removed KB recommendation/email drafting/case field population; external agent 40 hrs; internal similar-case agent 20 hrs
+  - mai (4): custom Address object on conversion; Jira filter story-point sizing; UAT Deployment Collaboration doc; Mac/Federico ticket swap
+  - cretelligent (7): Cost Worksheet rename + Site lookup; 28 expense fields w/ budget+actual pairs; default value strategy; actuals roll-up source; static/manual initial product load; product table import scope; disregard current product sheet
+- **Notes:**
+  - The two Fathom-source files for Apr 16 F2-Cetera and MAI standups (640399739 and 640319369) mirror Granola captures already in the log. Net-new specifics (F2-Cetera hybrid Opportunity + custom object model framing, MAI "address manager" idea) are already covered in the existing Apr 16 journal entries; no re-work needed.
+  - Apr 17 Meeting of the Minds was a peer sync (no other attendees listed in frontmatter) walking through Mac's Cowork usage — useful content for MSS-internal wiki but doesn't belong in a project journal. Captured here in log; no page created.
+  - Two empty `_Unmatched/` Fathom files (2026-04-16 call_id 640512258, 2026-04-17 call_id 641821592) have no summary or transcript — logged for traceability; Mac should review recordings to reroute if needed.
+- **Summary:** Processed 7 content-bearing meeting files (plus 2 Fathom dupes and 2 empty _Unmatched captures). Three project journals advanced. Litify took the biggest strategic move — SOW scaled down to 66 hrs plus two agent ballpark estimates in response to Litify pricing pushback. MAI landed a cleaner dev-hygiene trio (UAT doc discipline, ticket swap, Jira-based sizing) and clarified the account address pattern. CREtelligent locked in Cost Worksheet rename, data model, default-value strategy, and static product load plan ahead of Blake's test-env payload end of next week.
