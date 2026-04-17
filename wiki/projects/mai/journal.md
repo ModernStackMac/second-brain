@@ -6,7 +6,9 @@
 
 ## Week of Apr 13–19, 2026
 
-Met five times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU, Apr 15 — Mac/Steven Weekly). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
+Met seven times (Apr 13 — Dev DSU, Apr 13 — Fund Account Questions, Apr 14 — Dev DSU, Apr 15 — Dev DSU, Apr 15 — Mac/Steven Weekly, Apr 16 — Dev DSU, Apr 16 — Impromptu Call). The Apr 15 DSU was captured by Granola but no content/summary was recorded — no notes to extract.
+
+Apr 16 Dev DSU + Impromptu Call: ticket cleanup and a significant design alignment on the prospect address model ahead of the July go-live. QA passes this round: 1097, 1199, 1222. Ticket 1054 (retirement-account list view missing practice field) marked pass — it's David's team's business-account list view for retirement contracts, not MAI's scope. Ticket 1221 "regex too complicated" error handed off to the debt team. 1082 needs retesting with the correct persona: exception timeframe is required for the case requester but not the denial team. 1128/1167 test steps unclear — Vincent + Aisha syncing offline. Rodrigo finished 12, now on 1347; 991 moved to dev with Ferrito pinged. Global picklist bug hitting both financial account case and account records — added to Brian C's existing list. A larger architectural issue surfaced around prospect address: standard OOTB address on prospect modal creates dual-write risk against the existing custom Address object, with related-person addresses (especially schedule B on retirement contracts) adding further complexity. For go-live the team is keeping scope tight — replace the standard address component on prospect modal with the custom address component (link already exists), process only Nicole's person-account change list, and defer the larger related-person / conversion address redesign to an internal working session. Mac's recent JavaScript-only prospect UAT deploy is on hold — bundling with Nicole's changes. Aisha also flagged the fund assignment rebuild as urgently needing retest in UAT before go-live; prior testing was invalid because it ran before deployment.
 
 Apr 15 Mac/Steven Weekly: dev progress recap — modal sizing fixed, money management system + object integration added, domain LLC config updated, spouse card/table/notes/video components enhanced, new W3 flare landed. Main pain point is a regression in the sales process system — prospect info fields are collapsing and sections (asset summary, income goals, next steps) aren't populating, with dev and UAT behavior diverging. PDF generation is tightly coupled to the current system, so removing it creates risk and an alternative needs evaluation. Team coordination issues surfaced: Sean missing scheduled meetings consistently, focus/energy dips across the team, communication gaps impacting timeline. User demos held until bug fixes land.
 
@@ -35,6 +37,13 @@ Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branc
 - Hold user demos until sales process system bug fixes land
 - Test fixes in dev before promoting to UAT
 - Evaluate PDF generation alternative given current system's tight coupling
+- For go-live: replace the standard OOTB address on prospect modal with the existing custom Address component (custom address ↔ prospect link already exists) — no wholesale redesign
+- Related-person address complexity (schedule B on contracts, household conversion, multi-address for wealthy prospects) tabled for internal working session — no new requirements before go-live
+- Hold Mac's prospect UAT deployment; bundle with Nicole's person-account changes into a single deploy
+- Ticket 1054 marked pass — business accounts used for retirement contracts, correctly lack practice field (David's team's scope)
+- Ticket 1221 handed off to the debt team (regex-too-complicated error)
+- Tickets 1097, 1199, 1222 passed QA
+- Fund assignment rebuild must be retested in UAT immediately — prior testing was invalid (ran pre-deploy)
 
 **Open questions:**
 - Mac to schedule David call for 1293 (SSN/intake source) and prospect sharing rules (1120)
@@ -45,6 +54,14 @@ Apr 14 Dev Growth sync: dev workflow and architecture conventions covered. Branc
 - Sales process system regression: diagnose collapsing prospect info fields and non-populating asset summary / income goals / next steps sections; reconcile dev vs UAT divergence
 - PDF generation dependency: identify replacement path before removing current system
 - Team coordination: Sean's missed meetings and broader focus/energy issues — Steven to address
+- Aisha to create tickets for Nicole's person-account changes and assign to Mac; Mac to review for implementation issues (validation rules, etc.) before build
+- Brian C owns person-account cleanup + global picklist bug (financial account case/account)
+- Vincent/Aisha: take 1128 and 1167 offline to clarify test steps
+- Vincent: retest 1082 using the correct persona (exception timeframe required only for requester)
+- Vincent: send Aldo a test record for ticket 1221 regex error
+- Dev team: retest fund assignment rebuild in UAT (or dev); schedule internal working session on prospect address data model for go-live
+- Federico: continue work on ticket 1-3-47
+- Mac + Brian: review new address modal ticket for feasibility and conflicts
 
 ---
 

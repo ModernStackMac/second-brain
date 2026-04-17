@@ -6,7 +6,11 @@
 
 ## Week of Apr 13–19, 2026
 
-Met three times (Apr 13 — Internal Stitch Sync with Obed; Apr 14 — Stitch CREtelligent Stand Up; Apr 15 — Stitch CREtelligent Dev Team Sync).
+Met five times (Apr 13 — Internal Stitch Sync with Obed; Apr 14 — Stitch CREtelligent Stand Up; Apr 15 — Stitch CREtelligent Dev Team Sync; Apr 16 — AP/MN Sync; Apr 16 — Internal Team Sync with Andrew + Obed).
+
+Apr 16 Internal Team Sync (w/ Andrew + Obed): alignment on flow-to-Apex migration, cost worksheet field cleanup, and product-to-cost mapping now that design has shifted again. Theme of the call was design reversals — Obed and Mac both flagged frustration that requirements keep changing mid-development; team affirmed the pattern and agreed Obed's subtask documentation prevents total rework loss. Mac exported the Lucid current-state diagram on the call; Andrew imported to Miro (connectors auto-converted cleanly). Field-ownership split: Obed owns EnviroCost Worksheet field updates (renames, deletes, new Municipality field) against the updated mapping workbook; Mac owns Site Product field mapping. Product2 keeps catalog fields (product code, product name, short code) — Site Product holds order-specific fields (order number, discount, list price, total price) accessed via lookup. Product-to-cost routing locked in: Automated Report products → third-party cost only on the Automated Report object (no EnviroCost Worksheet); Environmental Site products (Survey, Zoning, etc.) → EnviroCost Worksheet with paired estimate + actual fields. Cost rollup chain reconfirmed: EnviroCost Worksheet → Task Group → EnviroSite → Opportunity. Conga doc gen stays priority #1 (Obed); DocHub is the next team focus — Andrew to schedule a dedicated working session. VS Code auth to CREtelligent prod is persistent; Gear Set compare/deploy as alternative if needed. Outstanding blocker: sample payloads for both Automated Report products and regular products, expected to flow through the opportunity/site payload.
+
+Apr 16 AP/MN Sync: working session between Mac and Andrew to unblock the CREtelligent build. Mac walked Andrew through his flow diagram of current state (create ops/sites Apex → JSON processing → opportunity/site creation + site triggers for environmental task groups) and the pending redesign around the new Site Product junction object that replaces the checkbox-based product tracking on Site. The primary blocker across most of Mac's open stories is the updated `Create Opportunity and Sites` payload from CREtelligent — it needs a nested `products` array per site plus four new site verification fields before the Apex class rewrite can proceed. Secondary ask: a sample `Automated Reports` payload. Andrew confirmed CREtelligent expected to deliver updated payloads by tomorrow. Architecture direction: modular service classes with separate handlers for site details and product details, breaking nested arrays into focused processors rather than one monolithic class. Automated reports get reparented as a child of Site with an Apex-driven cost rollup (before insert/update/delete on Site Product) — not DLRS. Pricing and discounting logic stay entirely in CREtelligent; Salesforce just stamps `list price`, `discount amount`, or `discount percent` from the payload. Mac cleared to start Site Product object + field model + LWC scaffolding today while waiting on the payload. Site Price LWC placement: editable component on the Site record; nested related list on the Opportunity record showing all sites and their products. "Click quote" is out of scope for now. Mac skipping the client demo today (calendar conflict) and syncing with Andrew at the 1:30 internal instead.
 
 Short QA-focused sync. Confirmed that the "add to Connect" automation needs contact type filtering before the API call fires — only Survey, Environmental, and Zoning contact types should trigger the Connect API callout. Client and prospect types should be excluded. Mac confirming the logical flow handles this correctly.
 
@@ -30,6 +34,20 @@ Apr 14 Stand Up covered environmental site automation and cost worksheet design.
 - Cost worksheet category renames: Regulatory → FOIA, Site assessment → Professional associate, Geo → Geophysical (optional)
 - Remove Data and Internal review categories (keep main Review); consolidate Travel (hotel/flight/rental/fuel); Other PA costs → Other cost; keep Municipality for FOIA rollups
 - Drop the six proposed bottom additions on the cost worksheet — handle via dropdown lists
+- Site Product junction object replaces product checkboxes on Site — scalable model for product-specific data
+- All pricing and discounting logic stays in CREtelligent; Salesforce stamps `list price`, `discount amount`, or `discount percent` from payload (no calc logic in Apex)
+- Automated Report reparented as a child of Site with Apex-driven cost rollup (trigger before insert/update/delete on Site Product) — not DLRS
+- Architecture: modular service classes (separate handlers for site details, product details, etc.) — break nested arrays into focused processors rather than one monolithic Apex class
+- Site Product permissions: view and edit for everyone
+- Product catalog: one-time initial load into Salesforce, then incremental/scheduled batch syncs (monthly cadence acceptable)
+- Site Price LWC placement: editable component on Site record for adding/editing prices; nested related list on Opportunity showing all sites and their products
+- "Click quote" feature out of scope for now
+- Hold off on Apex build until updated payload lands — avoid placeholder work that requires rework
+- Product-to-cost routing: Automated Report products → third-party cost on the Automated Report object only (no EnviroCost Worksheet); Environmental Site products (Survey, Zoning, etc.) → EnviroCost Worksheet with estimate + actual field pairs
+- Product2 holds master catalog fields (product code, product name, short code); Site Product holds order-specific fields (order number, discount, list price, total price)
+- Product number should NOT be unique on Product2 — uniqueness lives at the Site Product level
+- Field-work split: Obed owns EnviroCost Worksheet field updates against the updated mapping workbook; Mac owns Site Product field mapping
+- Conga doc gen is priority #1; DocHub is the next team focus after Conga clears
 
 **Open questions:**
 - QA validation of the contact type filter — confirm it works as expected in testing
@@ -43,6 +61,13 @@ Apr 14 Stand Up covered environmental site automation and cost worksheet design.
 - Cost worksheet category updates implementation — Story #6079
 - Related product details integration — Story #6078
 - MuleSoft evaluation for integration architecture
+- Andrew to push CREtelligent for updated payloads (Create Opportunity and Sites with nested products array + 4 site verification fields, Create Proposal/Order, Automated Report, Site Verification, Product Load endpoint); expected tomorrow
+- Andrew to distill Apr 16 decisions into ClickUp stories; add Site Verification field names to Order Service API mapping doc
+- Mac building Site Product object + fields + lookups + LWC scaffolding while awaiting payload; Site Verification fields added to tab 1, EnviroCost fields added
+- Integration mapping source of truth: `PB_cretelligent` Google Drive folder → `April 15 Order Service` sheet (tab 1 = site verification mapping; product tab = product short code, coordinate, description, discount)
+- Andrew to schedule dedicated DocHub working session once Conga priority clears
+- EnviroCost Worksheet field list (with new Municipality field + renames/deletes per updated workbook) pending Obed's cleanup pass
+- Sample payloads for Automated Report products and regular products still outstanding from CREtelligent
 
 ---
 

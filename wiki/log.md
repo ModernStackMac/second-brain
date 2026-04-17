@@ -511,3 +511,101 @@
 - **Decisions added:** 0
 - **Note:** Discovered `Clippings/` folder at vault root (outside defined scan scope) containing 6 files dated 2026-04-15, including STITCH-83089 Site Product Object & Pricing Component — detailed Linear ticket doc with architecture decisions for CREtelligent's site product data model and pricing LWC. Not processed (out of scope per schema). Mac may want to move relevant files to `raw/projects/` for future ingest.
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #17. Wiki remains current through the 2026-04-15 batch. One flag: `Clippings/` folder has unprocessed CREtelligent project docs that may be worth ingesting.
+
+## 2026-04-16 — Scheduled Ingest #19
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (6 files):**
+  - `Meeting Notes/High Meadows/F2-Cetera/2026-04-16 - Project Keystone Daily Stand-up.md`
+  - `Meeting Notes/High Meadows/MAI/2026-04-16 - Impromptu Call [Fathom].md`
+  - `Meeting Notes/High Meadows/MAI/2026-04-16 - MAI Dev DSU.md`
+  - `Meeting Notes/Modern Stack Systems/2026-04-15 - Andrew Mac [Fathom].md` (no Fathom summary returned; parallel Granola file already in log, no wiki action)
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-16 - AP - MN - CREtelligent Sync.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-16 - AP - MN - CREtelligent Sync [Fathom].md` (same meeting as Granola — merged into single journal entry)
+- **Pages created:** 0
+- **Pages updated (3):**
+  - `wiki/projects/f2-cetera/journal.md` — Apr 16 standup added to current week block: sandbox licenses unblocked (37 post-renewal), three-group permission set strategy, affiliate onboarding/growth engine design direction, RPS/CRPS unification, legacy wealth strategies fold-in, Brian's K1/mailing cleanup confirmed no-impact, Mac cleared to deploy UAT
+  - `wiki/projects/mai/journal.md` — Apr 16 Dev DSU + Impromptu Call added to current week block: prospect address go-live approach (replace OOTB with existing custom Address component), related-person address redesign deferred post go-live, hold prospect UAT deploy and bundle with Nicole's changes, fund assignment retest urgency, QA pass for 1097/1199/1222, 1054 + 1221 handoffs
+  - `wiki/projects/cretelligent/journal.md` — Apr 16 AP/MN Sync added to current week block: Site Product object work, Site Price LWC scaffolding, payload blocker (expected tomorrow), pricing stays in CREtelligent (SF stamps), Automated Report Apex-driven cost rollup, modular service-class architecture, one-time + monthly batch product catalog load
+- **Mac-owned action items added (5):**
+  - f2-cetera: Deploy approved UAT changes from prospect work
+  - f2-cetera: Continue affiliate onboarding + growth engine design with June; circle back with Connor on TRPG-preserving vs. APP-style approaches
+  - mai: Review Nicole's person-account tickets (once Aisha creates them) and flag implementation issues before build
+  - mai: Hold prospect UAT deploy until address refactor direction finalized; bundle with Nicole's person-account changes
+  - mai: Review new address modal ticket for feasibility and conflicts (with Brian)
+  - cretelligent: Build Site Product object (fields, lookups, View/Edit permissions) + Site Verification + EnviroCost fields
+  - cretelligent: Build Site Price LWCs (Site record edit + Opportunity nested related list)
+- **Decisions added (13):**
+  - f2-cetera (3): consolidated permission set groups, opportunity-based affiliate growth model, RPS/CRPS unification
+  - mai (4): prospect address go-live approach, related-person address deferred, hold/bundle prospect UAT deploy, fund assignment retest required
+  - cretelligent (6): Site Product junction object, pricing logic stays in CREtelligent, Automated Report Apex rollup, modular service-class architecture, product catalog load strategy, hold Apex build pending payload
+- **Notes:**
+  - `2026-04-15 - Andrew Mac [Fathom].md` returned no Fathom summary; Granola version (`2026-04-15 - Andrew Mac.md`) appears to have been moved from `_Unmatched/` into `Modern Stack Systems/` since Ingest #13. No project journal update — same unmatched peer catch-up already logged. Attendee `andsmi@gmail.com` still needs routing confirmation.
+  - Both Granola and Fathom versions of the Apr 16 AP/MN CREtelligent Sync describe the same meeting and were merged into one journal entry.
+- **Summary:** Processed 6 net-new meeting files from Apr 16. Three project journals advanced (F2-Cetera, MAI, CREtelligent) with significant architectural and scope decisions across all three: F2-Cetera landed consolidated permission sets and an opportunity-based affiliate model; MAI locked in a pragmatic pre-go-live prospect address approach with the larger related-person redesign deferred; CREtelligent moved to Site Product junction + Apex-rollup automated reports + modular service-class architecture, blocked on updated payload due tomorrow. Five Mac-owned actions added (two F2-Cetera, three MAI, plus two CREtelligent build tasks), thirteen strategic decisions logged.
+
+## 2026-04-16 — Scheduled Ingest #20
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (1 file):**
+  - `Meeting Notes/High Meadows/F2-Cetera/2026-04-16 - Brady Mac 1-1.md`
+- **Pages created:** 0
+- **Pages updated (1):**
+  - `wiki/projects/f2-cetera/journal.md` — Apr 16 Brady/Mac 1:1 added to current week block. Not project work — Brady walked Mac through his ICS-based calendar sync side project (targets enterprise tenants that block third-party OAuth, filling the gap Reclaim can't cover). Triggered by a duplicate meeting invite that persisted on Brady's calendar after Mac canceled.
+- **Mac-owned action items added:** 0 (lone action item is trivial calendar hygiene — clean up lingering ghost event — not project work, skipped per Action-Tracker threshold)
+- **Decisions added:** 0 (none captured in source)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — all processed
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all already in log
+  - `Meeting Notes/Modern Stack Systems/` — all already in log
+- **Summary:** One net-new meeting file since Ingest #19 — a Brady/Mac 1:1 that was effectively an informal side-project chat (Brady's calendar sync tool) rather than F2 delivery work. Noted in F2-Cetera journal for completeness, no Action-Tracker or Decision-Log updates. Wiki otherwise current through the Apr 16 batch.
+
+## 2026-04-16 — Scheduled Ingest #21
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (2 files, same meeting):**
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-16 - INTERNAL CREtelligent Team Sync.md` (Granola)
+  - `Meeting Notes/Stitch/Cretelligent/2026-04-16 - INTERNAL CREtelligent Team Sync [Fathom].md` (Fathom — merged into the same journal entry)
+- **Pages created:** 0
+- **Pages updated (1):**
+  - `wiki/projects/cretelligent/journal.md` — Apr 16 Internal Team Sync (w/ Andrew + Obed) added to current week block: flow-to-Apex migration continuation, product-to-cost routing locked in, Product2 vs Site Product field split, EnviroCost Worksheet field cleanup against updated workbook (new Municipality field + renames/deletes), cost rollup chain reconfirmed, field-work split between Obed (EnviroCost) and Mac (Site Product), Conga #1 / DocHub next, Lucid→Miro diagram export, VS Code prod auth
+- **Mac-owned action items added (1):**
+  - cretelligent: Own Site Product field mapping — clean up per updated mapping workbook, ping Obed when done
+- **Decisions added (6):**
+  - Product-to-cost routing (Automated Report → third-party cost only; EnviroSite products → EnviroCost Worksheet)
+  - Product2 (catalog) vs Site Product (order-specific) field split
+  - Product number not unique on Product2 — uniqueness at Site Product level
+  - Field-work split: Obed owns EnviroCost Worksheet, Mac owns Site Product mapping
+  - Conga doc gen priority #1; DocHub next team focus
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — all already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — two net-new INTERNAL Team Sync files processed (Granola + Fathom same meeting)
+  - `Meeting Notes/Modern Stack Systems/` — all already in log
+- **Summary:** One net-new meeting (captured via both Granola and Fathom, merged). CREtelligent journal advanced with another Apr 16 entry focused on flow-to-Apex continuation, product-to-cost routing rules, Product2/Site Product field split, and a clean work-split between Obed and Mac on the field cleanup against the updated mapping workbook. One Mac-owned action logged (Site Product field mapping). Six strategic decisions captured. Payload from CREtelligent remains the blocker for the Apex build.
+
+## 2026-04-17 — Scheduled Ingest #22
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — 5 files, all already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+  - `Meeting Notes/_Unmatched/` — folder not present / empty
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #21 (2026-04-16). Wiki remains current through the Apr 16 batch. No action required.
