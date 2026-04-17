@@ -646,3 +646,33 @@
   - Apr 17 Meeting of the Minds was a peer sync (no other attendees listed in frontmatter) walking through Mac's Cowork usage — useful content for MSS-internal wiki but doesn't belong in a project journal. Captured here in log; no page created.
   - Two empty `_Unmatched/` Fathom files (2026-04-16 call_id 640512258, 2026-04-17 call_id 641821592) have no summary or transcript — logged for traceability; Mac should review recordings to reroute if needed.
 - **Summary:** Processed 7 content-bearing meeting files (plus 2 Fathom dupes and 2 empty _Unmatched captures). Three project journals advanced. Litify took the biggest strategic move — SOW scaled down to 66 hrs plus two agent ballpark estimates in response to Litify pricing pushback. MAI landed a cleaner dev-hygiene trio (UAT doc discipline, ticket swap, Jira-based sizing) and clarified the account address pattern. CREtelligent locked in Cost Worksheet rename, data model, default-value strategy, and static product load plan ahead of Blake's test-env payload end of next week.
+
+## 2026-04-17 — Scheduled Ingest #24
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed (2 files, same meeting):**
+  - `Meeting Notes/High Meadows/Internal/Website/2026-04-17 - Website Review.md` (Granola — shorter capture)
+  - `Meeting Notes/High Meadows/Internal/Website/2026-04-17 - Website Review [Fathom].md` (Fathom — full meeting including post-Mac-drop portion; merged)
+- **Pages created:** 0
+- **Pages updated (1):**
+  - `wiki/projects/meadow/journal.md` — added Apr 17 Website Review content to current Apr 14–20 week block. Captured pre-launch walkthrough of HMS landing page, Services page, and About section with Brian + CSO. Insights tab stays but labels mirror home page, hero copy tightened (two sentences, drop "purpose-built", 250+ engagements), Services page cleanup (no numbering, no per-tile Learn More, single centered CTA), top-row tile reorder (Business Transformation / AI Design / Data Strategy & Analytics), About page copy changes ("Engage" not "Get in Touch", sales@ email, "indicate interest", "team is comprised of individuals" replacing "advisors"), partnerships section updates (remove Enforge; add Black Diamond, Practify, Orion — hard gate on Bryce sign-off). Phase 1 = direct article links; Phase 2/3 for custom write-ups. LinkedIn RIA posts get expanded into full articles for industry publication.
+- **Mac-owned action items added (4):**
+  - meadow: Implement all agreed copy/layout changes once CSO sends the consolidated notes doc
+  - meadow: Fix broken/dead Insights/article demo links surfaced during the review
+  - meadow: Fix Services tile number color contrast
+  - meadow: Align Insights page section labels with home page (Activity/News, Thought Leadership)
+- **Decisions added (6):**
+  - meadow (6): Phase 1 direct-link launch; Services page cleanup (no numbering, no per-tile CTAs); top-row tile order; replace "advisors" to avoid RIA conflict; partnerships section updates w/ hard gate; expand LinkedIn RIA posts into publication articles
+- **Notes:**
+  - HMS website work tracked in `wiki/projects/meadow/` per precedent set in Ingest #8 — there's no `hms-internal` project wiki page; website + Meadow + HMS infrastructure all consolidate under the meadow project journal.
+  - Granola and Fathom captures of the same meeting were merged. Fathom version is substantially richer because Mac dropped at the 24-minute mark; Brian and the CSO continued and agreed to consolidate remaining changes into a single notes doc rather than re-review synchronously.
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — all files already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — 2 net-new Website Review files processed (Granola + Fathom merged); all other files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all already in log
+  - `Meeting Notes/Modern Stack Systems/` — all already in log
+  - `Meeting Notes/_Unmatched/` — all already in log
+- **Summary:** One net-new meeting captured via both Granola and Fathom, merged into a single entry. HMS website pre-launch review with Brian + CSO landed a long list of copy and layout decisions. Four Mac-owned implementation actions logged pending the CSO's consolidated notes doc. Six strategic website decisions captured. No wiki pages created; index.md unchanged.

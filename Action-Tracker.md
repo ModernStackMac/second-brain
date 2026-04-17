@@ -39,6 +39,10 @@
 
 ### Meadow
 - [x] Confirm company credit card setup for Supabase and Vercel subscriptions [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-09] ✅ 2026-04-14
+- [ ] Implement all agreed copy and layout changes to HMS website once CSO sends the consolidated notes doc from the Apr 17 review [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-17]
+- [ ] Fix broken/dead Insights/article demo links surfaced during the Apr 17 website review [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-17]
+- [ ] Fix Services tile number color contrast — inspector flagged numbers + top-border green as same color despite visible difference [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-17]
+- [ ] Align Insights page section labels with home page (Activity/News, Thought Leadership) [Owner:: Mac] [Project:: meadow] [Date:: 2026-04-17]
 
 ### F2-Cetera
 - [ ] Deploy approved UAT changes from the prospect work [Owner:: Mac] [Project:: f2-cetera] [Date:: 2026-04-16]
