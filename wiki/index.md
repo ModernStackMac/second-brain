@@ -52,6 +52,11 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[claude-obsidian-illegal]] — Practical implementation of the LLM wiki pattern. Maintenance as the bottleneck (solved by LLMs). CLI examples. Memory.md seeding. Morning briefing and Action-Tracker automation. Vannevar Bush Memex connection.
 - [[obsidian-plugins-replace-paid-apps]] — Six free plugins that replace Notion, Todoist, Trello, Fantastical, TextExpander, and backups: Dataview, Tasks, Kanban, Calendar, Templater, Obsidian Git.
 - [[new-agentforce-builder-beta]] — Salesforce's redesigned Agentforce Builder in beta: Agent Script for deterministic logic, Agent Canvas for visual no-code editing, improved testing and debugging.
+- [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — TDX 2026: free Developer Edition gets Agentforce Vibes IDE (browser VS Code), Agentforce Vibes with Claude Sonnet 4.5, and Salesforce Hosted MCP Servers.
+- [[salesforce-web-console-beta]] — TDX 2026: Web Console (Beta) launches 2026-04-14 — browser IDE embedded in Salesforce for debug logs, SOQL, Query Plan Inspector, Anonymous Apex, in-context Apex edits.
+- [[prompt-builder-structured-outputs]] — Platform-enforced JSON response format via Object-based Lightning types. Typed Flow variables, castable `structuredResponse` in Apex. No more `JSON.deserialize` boilerplate for LLM outputs.
+- [[salesforce-mcp-explained-sweep]] — MCP primer (Anthropic's USB-C for AI), historical Salesforce posture (pre-TDX 2026), HubSpot's early public connector, Sweep's semantic-layer pitch.
+- [[tdx-2026-headless-360-operating-model]] — Diginomica's strategic take: Headless 360 is operating-model transformation, not a feature release. Salesforce restructuring to be legible to agents. Operating debt vs. data debt.
 
 ## Topics
 
@@ -61,5 +66,5 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[salesforce]] — Salesforce platform news, product releases, and ecosystem developments. Agentforce Builder beta, MCP status, enterprise AI direction.
 
 ---
-*Last updated: 2026-04-13*
-*Total pages: 49 (14 project pages + 35 wiki pages)*
+*Last updated: 2026-04-18*
+*Total pages: 54 (14 project pages + 40 wiki pages)*

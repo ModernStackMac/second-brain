@@ -695,3 +695,36 @@
 - **Mac-owned action items added:** 0
 - **Decisions added:** 0
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #24 (2026-04-17). Wiki remains current through the Apr 17 batch (latest content: HMS Website Review, MAI Dev DSU, Litify Ryan/Liana scale-down, CREtelligent Weekly Status). No action required.
+
+## 2026-04-18 — Scheduled Ingest #26
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Vault mount:** Pre-granted at `/sessions/*/mnt/Documents` — no fresh `request_cowork_directory` call needed.
+- **Sources processed (5 files, all articles):**
+  - `raw/articles/2026-04-18T074207-0500-New in Salesforce Developer Edition Agentforce Vibes IDE, Claude 4.5, MCP.md`
+  - `raw/articles/2026-04-18T074235-0500-Introducing Web Console (Beta) Code Where You Build on Salesforce.md`
+  - `raw/articles/2026-04-18T074249-0500-Building AI Automations with Prompt Builder Structured Outputs.md`
+  - `raw/articles/2026-04-18T080457-0500-Salesforce Model Context Protocol Explained How MCP Bridges AI and Your CRM.md`
+  - `raw/articles/2026-04-18T082851-0500-Salesforce TDX 2026 – why Salesforce's Headless 360 announcement at TDX is really about operating model transformation.md`
+- **Pages created (5):**
+  - **Articles (5):**
+    - `tdx-2026-agentforce-vibes-claude-mcp-dev-edition` — free Dev Edition gets Agentforce Vibes IDE (browser VS Code), Agentforce Vibes with Claude Sonnet 4.5, and Salesforce Hosted MCP Servers
+    - `salesforce-web-console-beta` — Web Console Beta opens 2026-04-14 for in-context debugging and Apex edits
+    - `prompt-builder-structured-outputs` — platform-enforced JSON response format via Object-based Lightning types; eliminates JSON.deserialize boilerplate
+    - `salesforce-mcp-explained-sweep` — MCP primer + historical (pre-TDX 2026) Salesforce posture + Sweep semantic-layer pitch
+    - `tdx-2026-headless-360-operating-model` — Diginomica's strategic take: Headless 360 as operating-model transformation, not feature release
+- **Pages updated (5):**
+  - **Topics (1):** `salesforce` — added TDX 2026 section (Headless 360, Vibes IDE, Web Console, Hosted MCP GA, Prompt Builder Structured Outputs), updated Notable Articles list
+  - **Tools (2):** `agentforce` — added Agentforce Vibes IDE + Vibes + Hosted MCP sections; revised limitations since MCP is no longer beta; expanded Related Pages. `claude-ai` — Claude Sonnet 4.5 as Vibes default model, Dev Edition allocation details, Hosted MCP unblocker
+  - **Patterns (1):** `json-deserialize-refactor` — noted Structured Outputs as the preferred path for Prompt Builder LLM responses; manual wrapper classes reserved for non-LLM API integrations
+  - **Meta (1):** `index.md` — added 5 article entries; updated total page count to 54 (14 project + 40 wiki)
+- **Mac-owned action items added:** 0 (articles — no direct commitments; surfaced opportunities captured in wiki pages)
+- **Decisions added:** 0 (no strategic project-level decisions; these are platform/news updates)
+- **Key themes / implications:**
+  - **TDX 2026 unblocks Hosted MCP:** long-running MCP-beta constraint across Harvey, NBCU, Litify is now resolved — worth retesting parked doc-gen and external-tool flows.
+  - **Claude-first coding inside Salesforce:** Agentforce Vibes defaults to Claude Sonnet 4.5 — first-class Anthropic integration in Salesforce tooling, validates MSS's agent-agnostic stack.
+  - **Free Dev Edition access:** 110 requests / 1.5M tokens per month through 2026-05-31 for hands-on Vibes + MCP testing at zero cost.
+  - **Structured Outputs supersedes manual JSON wrappers** for Prompt Builder workflows — Harvey email intent parsing, Litify case classification, CREtelligent Prompt Builder work all should use Lightning types going forward.
+  - **Operating model framing** (Headless 360) is a useful reframe for Harvey's 3-year AI roadmap and client discovery conversations — "operating debt" vs. "data debt" as a consulting lens.
+  - **Sweep as competitor/complement signal:** semantic layer + agent-ready tooling is the space MSS could credibly compete in; worth tracking.
+- **Summary:** Processed 5 net-new articles, all dated 2026-04-18 and clipped around the TDX 2026 coverage window. Created 5 article pages and updated the salesforce topic + agentforce/claude-ai tools + json-deserialize-refactor pattern + index. No new meeting notes or project docs since Ingest #25. TDX 2026 is the biggest Salesforce ecosystem inflection since the wiki was initialized — Hosted MCP GA, Claude Sonnet 4.5 in Vibes, and Headless 360 all reshape how current and future Agentforce engagements should be scoped.

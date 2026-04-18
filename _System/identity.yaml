@@ -50,12 +50,30 @@ workspaces:
 
 filters:
   story_sync:
-    # Active set: always included
+    # Active set: always included. Covers Linear-native AND Jira-native
+    # in-flight statuses so nothing open falls through.
     active_statuses:
+      # Linear
       - Todo
       - Unstarted
       - Started
       - In Progress
+      # Jira common
+      - To Do
+      - Open
+      - Selected for Development
+      - In Review
+      - Review
+      - Developer Review
+      - Code Review
+      - Peer Review
+      - Internal QA
+      - QA
+      - In QA
+      - Testing
+      - Ready for QA
+      - Blocked
+      - On Hold
 
     # Backlog set: included only if any condition matches
     backlog_conditions:
@@ -93,6 +111,25 @@ filters:
     archive_after_days_done: 7
     archive_path: Second Brain/raw/archived-actions/
 
+# Project slug map: collapse aliases and group projects into vault subfolders.
+# story-sync reads this (mirrored in PROJECT_SLUG_MAP inside story-sync.js);
+# if you change one, change both.
+project_slug_map:
+  # Internal products live under internal/
+  meadow:                internal/meadow
+  capacity-planning:     internal/meadow          # same product, legacy name
+  capacity-planning-mss: internal/meadow
+  flex-dash:             internal/flex-dash
+  flexdash:              internal/flex-dash
+  high-meadow-website:   internal/high-meadow-website
+  highmeadow-website:    internal/high-meadow-website
+  hm-website:            internal/high-meadow-website
+  # F2 client engagements — flat
+  mai-crm-build:         mai
+  mai:                   mai
+  cetera:                cetera
+  lnw:                   lnw
+
 paths:
   vault_root: "~/Documents/Obsidian Vault"   # adjust if different
   meeting_notes_root: Meeting Notes
@@ -104,5 +141,5 @@ paths:
   resources_reading: Second Brain/resources/reading/
   resources_interests: Second Brain/resources/interests/
 
-version: 1
+version: 2
 updated: 2026-04-18

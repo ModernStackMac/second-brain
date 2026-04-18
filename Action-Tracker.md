@@ -62,12 +62,82 @@ updated: 2026-04-18
 <!-- BEGIN AUTO-SYNC -->
 ## Auto-Synced Stories
 
-_Not yet synced. First `story-sync` run will populate this block with active Linear (MSS + HM) and Jira (F2) stories._
+_Last synced: 2026-04-18T14:46:00.208Z._ Do not edit rows in this block — they are regenerated each sync. Add manual items above this block.
 
-_Rows in this block are regenerated each sync — do not edit._
+### F2
+
+#### Cetera
+- [ ] [CET-120](https://f2strategy.atlassian.net/browse/CET-120) — Tax Return RT swap on Case — _Create TaxReturn Record Type on Case._ [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-120] [Source:: jira] [Date:: 2026-04-17]
+- [ ] [CET-113](https://f2strategy.atlassian.net/browse/CET-113) — Add picklist values to Help Desk and NAS [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-113] [Source:: jira] [Date:: 2026-04-17]
+- [ ] [CET-110](https://f2strategy.atlassian.net/browse/CET-110) — Case / TRPG Work Desk Alignment [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-110] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-4](https://f2strategy.atlassian.net/browse/CET-4) — Configure the custom package that drives the integration to Advice Works (Hold off on Creating until First Full Sandbox is set up) — _Install into Sandbox (Add installation to deployment process spreadsheet) Connor was already working on installing this…_ [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-4] [Source:: jira] [Date:: 2026-04-13]
+
+### HM
+
+#### Capacity Planning
+- [ ] [IP-139](https://linear.app/high-meadow-solutions/issue/IP-139/merge-or-block-collision) — Merge or block collision — _As a user, I want to choose whether to merge the entries or cancel the change when a collision is detected, So that I s…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-139] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-138](https://linear.app/high-meadow-solutions/issue/IP-138/detect-projecttask-collision-on-edit) — Detect project+task collision on edit — _As a user, I want the app to warn me if I change a time entry's project or task to a combination that already exists as…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-138] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-137](https://linear.app/high-meadow-solutions/issue/IP-137/source-field-enforcement) — Source field enforcement — _As a developer, I want all new time entries created in Meadow to have source = 'manual', So that the system clearly dis…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-137] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-136](https://linear.app/high-meadow-solutions/issue/IP-136/legacy-clockify-field-cleanup) — Legacy Clockify field cleanup — _As a developer, I want Clockify-specific fields (clockifyuserid, clockifyprojectid, clockifytaskid, clockifyentryid) ma…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-136] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-135](https://linear.app/high-meadow-solutions/issue/IP-135/clockify-disabled-banner) — Clockify disabled banner — _As an administrator, I want a visible banner on the Settings page when Clockify sync is disabled, So that it's obvious…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-135] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-134](https://linear.app/high-meadow-solutions/issue/IP-134/admin-toggle-to-disable-clockify-sync) — Admin toggle to disable Clockify sync — _As an administrator, I want a toggle in Settings to fully enable/disable Clockify sync at runtime, So that I can turn o…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-134] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-133](https://linear.app/high-meadow-solutions/issue/IP-133/cors-and-domain-configuration) — CORS and domain configuration — _As a developer, I want CORS properly configured between the frontend domain and the API, So that the frontend can make…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-133] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-132](https://linear.app/high-meadow-solutions/issue/IP-132/scheduled-job-migration) — Scheduled job migration — _As a developer, I want Clockify and Notion sync schedulers migrated from setTimeout loops to a cloud-compatible schedul…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-132] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-131](https://linear.app/high-meadow-solutions/issue/IP-131/backend-hosting-decision-and-deployment) — Backend hosting decision and deployment — _As a developer, I want the Express backend deployed to a cloud host, So that the API is accessible from the frontend._ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-131] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-130](https://linear.app/high-meadow-solutions/issue/IP-130/frontend-deployment-vite-static-site) — Frontend deployment (Vite static site) — _As a developer, I want the Vite frontend built and deployed as a static site on Vercel, So that users can access Meadow…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-130] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-129](https://linear.app/high-meadow-solutions/issue/IP-129/token-refresh-and-session-management) — Token refresh and session management — _As a user, I want my session to stay active without re-authenticating constantly, So that I'm not interrupted during ti…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-129] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-128](https://linear.app/high-meadow-solutions/issue/IP-128/auto-provisioning-for-new-entra-users) — Auto-provisioning for new Entra users — _As a system administrator, I want new Entra users to be automatically provisioned in Meadow if their email doesn't matc…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-128] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-127](https://linear.app/high-meadow-solutions/issue/IP-127/msal-integration-frontend) — MSAL integration (frontend) — _As a user, I want a "Sign in with Microsoft" button on the login page, So that I can authenticate with my corporate cre…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-127] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-126](https://linear.app/high-meadow-solutions/issue/IP-126/msal-integration-backend) — MSAL integration (backend) — _As a developer, I want the backend to validate Microsoft Entra ID tokens via MSAL, So that users authenticate through t…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-126] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-125](https://linear.app/high-meadow-solutions/issue/IP-125/data-export-and-import-sqlite-to-supabase) — Data export and import (SQLite to Supabase) — _As a system administrator, I want existing SQLite data exported and imported into Supabase, So that no historical time…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-125] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-124](https://linear.app/high-meadow-solutions/issue/IP-124/row-level-security-policies) — Row-Level Security policies — _As a system administrator, I want RLS policies on Supabase tables that isolate non-admin users to their own data, So th…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-124] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-123](https://linear.app/high-meadow-solutions/issue/IP-123/environment-variable-migration) — Environment variable migration — _As a developer, I want ._ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-123] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-122](https://linear.app/high-meadow-solutions/issue/IP-122/rewrite-data-access-layer-to-supabase-client) — Rewrite data access layer to Supabase client — _As a developer, I want all db._ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-122] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-121](https://linear.app/high-meadow-solutions/issue/IP-121/schema-migration-script-sqlite-to-postgresql) — Schema migration script (SQLite to PostgreSQL) — _As a developer, I want a migration script that converts all 11 SQLite table definitions to PostgreSQL syntax, So that t…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-121] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-120](https://linear.app/high-meadow-solutions/issue/IP-120/self-scoped-project-resources-for-non-admin-users) — Self-scoped project resources for non-admin users — _As a team member (non-admin), I want to only see project resource assignments that include me, So that I only see proje…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-120] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-119](https://linear.app/high-meadow-solutions/issue/IP-119/self-scoped-projections-for-non-admin-users) — Self-scoped projections for non-admin users — _As a team member (non-admin), I want to only see my own capacity projections, So that my projected hours are private to…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-119] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-118](https://linear.app/high-meadow-solutions/issue/IP-118/self-scoped-time-entries-for-non-admin-users) — Self-scoped time entries for non-admin users — _As a team member (non-admin), I want to only see and modify my own time entries, So that I cannot accidentally view or…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-118] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-117](https://linear.app/high-meadow-solutions/issue/IP-117/apply-requireadmin-to-admin-only-routes) — Apply requireAdmin to admin-only routes — _As a system administrator, I want admin-only routes restricted to users with isadmin = 1, So that regular users cannot…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-117] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-116](https://linear.app/high-meadow-solutions/issue/IP-116/apply-requireauth-to-all-protected-routes) — Apply requireAuth to all protected routes — _As a system administrator, I want all /api/hms/\ routes (except /auth/login and /health) to require a valid JWT token,…_ [Owner:: Mac] [Project:: capacity-planning] [Status:: Backlog] [Priority:: No priority] [Ticket:: IP-116] [Source:: linear-hm] [Date:: 2026-04-10]
+- [ ] [IP-114](https://linear.app/high-meadow-solutions/issue/IP-114/project-setup) — Project Setup — _~~Get Repo in Vercel~~ ~~Set up Supabase~~ ~~Create User Stories~~ ~~update twitter URL ~~~~https://x._ [Owner:: Mac] [Project:: capacity-planning] [Status:: In Progress] [Priority:: No priority] [Ticket:: IP-114] [Source:: linear-hm] [Date:: 2026-04-10]
+
+#### Flex Dash
+- [ ] [IP-8](https://linear.app/high-meadow-solutions/issue/IP-8/view-as-feature) — View As Feature — _View dashboard as a specific user_ [Owner:: Mac] [Project:: flex-dash] [Status:: In Progress] [Priority:: Medium] [Ticket:: IP-8] [Source:: linear-hm] [Date:: 2026-03-31]
 <!-- END AUTO-SYNC -->
 
 ---
+
+
+_Last sync: 2026-04-18 — 17 active F2 stories · 0 MSS (all Done) · HM pending local run_
+
+### F2 — Cetera (12)
+- [ ] [F2-CET-110] Case / TRPG Work Desk Alignment (Epic) [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Source:: jira] [Ticket:: CET-110] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-4] Configure Advice Works integration package [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Source:: jira] [Ticket:: CET-4] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-113] Add picklist values to Help Desk and NAS [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Source:: jira] [Ticket:: CET-113] [Priority:: Medium] [Updated:: 2026-04-17]
+- [ ] [F2-CET-120] Tax Return RT swap on Case [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Source:: jira] [Ticket:: CET-120] [Priority:: Medium] [Updated:: 2026-04-17]
+- [ ] [F2-CET-111] Create new fields on TRPG_Help_Desk__c [Owner:: Mac] [Project:: f2-cetera] [Status:: Internal QA] [Source:: jira] [Ticket:: CET-111] [Priority:: Medium] [Updated:: 2026-04-16]
+- [ ] [F2-CET-112] Create new fields on New_Account_Setup__c [Owner:: Mac] [Project:: f2-cetera] [Status:: Internal QA] [Source:: jira] [Ticket:: CET-112] [Priority:: Medium] [Updated:: 2026-04-17]
+- [ ] [F2-CET-114] Build NAS Trade Request automation flows [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Source:: jira] [Ticket:: CET-114] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-115] Replicate validation rules [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Source:: jira] [Ticket:: CET-115] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-116] Build Help Desk automation flows [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Source:: jira] [Ticket:: CET-116] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-117] Build Transfer auto-creation flow from Financial Account [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Source:: jira] [Ticket:: CET-117] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-118] Configure Lightning Page layouts [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Source:: jira] [Ticket:: CET-118] [Priority:: Medium] [Updated:: 2026-04-13]
+- [ ] [F2-CET-119] Configure List Views, Queues, and Permissions [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Source:: jira] [Ticket:: CET-119] [Priority:: Medium] [Updated:: 2026-04-13]
+
+### F2 — MAI (1)
+- [ ] [F2-MAI-1278] Prospect Address Should Populate All Member Addresses by Default [Owner:: Mac] [Project:: mai] [Status:: Developer Review] [Source:: jira] [Ticket:: MAI-1278] [Priority:: Medium] [Updated:: 2026-04-17]
+
+### F2 — Litify / LNW (4)
+- [ ] [F2-LNW-189] Part 1: Visibility Enhancements POC — Meeting Note Additional Functionality [Owner:: Mac] [Project:: litify] [Status:: Review] [Source:: jira] [Ticket:: LNW-189] [Priority:: Medium] [Updated:: 2026-04-06]
+- [ ] [F2-LNW-190] Part 2: Visibility Enhancements POC — Aggregated Visibility [Owner:: Mac] [Project:: litify] [Status:: Review] [Source:: jira] [Ticket:: LNW-190] [Priority:: Medium] [Updated:: 2026-04-06]
+- [ ] [F2-LNW-191] Part 3: Visibility Enhancements POC — Family Level Creation and Assignment [Owner:: Mac] [Project:: litify] [Status:: Review] [Source:: jira] [Ticket:: LNW-191] [Priority:: Medium] [Updated:: 2026-04-06]
+- [ ] [F2-LNW-192] Part 4: Visibility Enhancements POC — UI and UX Enablement [Owner:: Mac] [Project:: litify] [Status:: Review] [Source:: jira] [Ticket:: LNW-192] [Priority:: Medium] [Updated:: 2026-04-06]
+
+### Linear MSS (0)
+_All MSS issues currently Done (Feb–Mar 2026). Last pulled 2026-04-18._
+
+### Linear HM (pending local)
+_Requires local `story-sync.js` run (Keychain-gated API key). Will populate on next cron._
 
 ## Closed
 

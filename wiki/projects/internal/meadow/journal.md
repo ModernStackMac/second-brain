@@ -1,6 +1,17 @@
 # Meadow — Project Journal
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
+>
+> **Note (2026-04-18):** Project folder consolidated to `internal/meadow/` — previously split across `meadow/` and `capacity-planning/`. Website-specific entries going forward should land in `internal/high-meadow-website/journal.md` instead of here. Pre-split history retained below.
+
+---
+
+## 2026-04-18 — Folder restructure
+
+- Consolidated `meadow/` + `capacity-planning/` → `internal/meadow/` (same product, two legacy folders)
+- Added `internal/` grouping for all HMS-internal projects; moved `flex-dash/` → `internal/flex-dash/`
+- Spun up `internal/high-meadow-website/` as its own project (marketing site is a separate engagement from the SaaS)
+- Story-sync `PROJECT_SLUG_MAP` updated to route Linear HM "Capacity Planning" → `internal/meadow/`
 
 ---
 
@@ -58,5 +69,3 @@ Office hours (Apr 10): email migration in progress — Sam and Antonio still on 
 - Supabase migration: blocked on account setup
 - Vercel deployment: blocked on account setup
 - Sanity SSO: blocked on Sanity project config
-
----

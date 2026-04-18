@@ -1,6 +1,8 @@
 # Meadow — Project Context
 
 > High Meadows internal capacity planning and time tracking SaaS. Cloud migration, auth hardening, Sanity SSO, AI chat interface roadmap.
+>
+> **Note (2026-04-18):** Consolidated under `internal/` grouping. Previously split across `meadow/` and `capacity-planning/` — same product, two folders. Linear HM project name is "Capacity Planning"; canonical folder is `internal/meadow/`. Public-facing website is a separate project → `internal/high-meadow-website/`.
 
 ## Client
 - **Company:** High Meadows (internal product)
@@ -42,5 +44,7 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 ## Related Pages
 - [[high-meadows]] — parent org
 - [[high-meadows-mai]] — sister product
+- [[high-meadow-website]] — sister engagement (marketing site)
+- [[flex-dash]] — sister internal tool (paused)
 - [[supabase]] — target database platform
 - [[claude-ai]] — Phase 2 chat interface

@@ -57,6 +57,7 @@ Refactor the business logic to work with typed properties instead of string-base
 ## When NOT to Use
 - Very simple, single-level payloads (manual parsing might be overkill)
 - Payloads with highly dynamic structures (wrapper class approach won't help)
+- **Prompt Builder LLM responses (Apr 2026 onward)** — use Prompt Builder Structured Outputs with Object-based Lightning types instead. The platform now enforces typed JSON, exposes a `structuredResponse` property on the Connect API response, and auto-generates the wrapper Apex class. Reserve manual wrapper classes for non-LLM API integrations. See: [[prompt-builder-structured-outputs]].
 
 ## CREtelligent Example
 The Connect API integration is being refactored using this pattern. Mac is consolidating site verification data, product fields, and actuals logic into strongly-typed wrapper classes, replacing the existing fragile parser. The new structure allows the team to add site verification payload fields and automate report logic with confidence.
@@ -64,9 +65,11 @@ The Connect API integration is being refactored using this pattern. Mac is conso
 ## Related Pages
 - [[cretelligent]] — engagement applying this pattern
 - [[connect-api]] — API being integrated
+- [[prompt-builder-structured-outputs]] — platform-native alternative for LLM responses
 
 ## Sources
 - Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Team Sync - Sprint Review.md
+- raw/articles/2026-04-18T074249-0500-Building AI Automations with Prompt Builder Structured Outputs.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-18*

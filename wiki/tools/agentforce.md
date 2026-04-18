@@ -36,10 +36,23 @@ Key clients are piloting Agentforce for specific workflows: email intent parsing
 - Access via App Launcher → Agentforce Studio. Enterprise, Performance, Unlimited, Developer Editions. No confirmed GA date; possible TDX 2026 announcement.
 - See: [[new-agentforce-builder-beta]]
 
+**Agentforce Vibes IDE + Vibes (TDX 2026, Apr 2026)**
+- **Agentforce Vibes IDE:** browser-based VS Code environment launched directly from Setup. Salesforce CLI, SF Extensions, GitHub integration preconfigured; metadata auto-loaded into SFDX project. Replaces Code Builder in name and scope.
+- **Agentforce Vibes:** enterprise vibe coding surface inside the IDE. Claude Sonnet 4.5 as default coding model. Plan mode (analyze + propose) / Act mode (write Apex, LWC, triggers, tests). Reads actual org metadata before generating — no hallucinated field names.
+- **Free in Developer Edition:** 110 requests / 1.5M tokens per month refreshing through 2026-05-31, then a one-time final allocation. No additional enablement; rolling out to existing Dev Edition orgs (Setup → "Agentforce Vibes").
+- See: [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]]
+
+**Hosted MCP Server (TDX 2026, GA Apr 2026)**
+- Salesforce-hosted MCP server running on Salesforce infra, OAuth 2.0 per user.
+- Exposes sObject API + invocable actions + flows to any MCP-compatible client (Claude Desktop, Cursor, Claude Code).
+- Respects org security model: FLS, sharing rules, profiles all apply.
+- Complementary to DX MCP Server (local, CLI auth, 60+ dev tools) — Hosted for data/logic access from external AI, DX for development/deployment workflows.
+- Now generally available in Developer Edition (free). Removes the prior MCP beta/gated blocker cited across Harvey, NBCU, and Litify engagements.
+
 **General Limitations:**
-- MCP support is the primary constraint (beta access limited)
-- Presentation and document generation not natively supported without MCP
-- Not all integrations (e.g., Office 365) clearly scoped until MCP reaches GA
+- With Hosted MCP GA (Apr 2026), the prior "MCP is beta" constraint is largely resolved — retest previously parked doc-gen and external tool flows.
+- Presentation and document generation workflows should be retested against Hosted MCP.
+- Office 365 integration scope should be revisited in light of Hosted MCP + Claude Desktop.
 
 ## Related Pages
 - [[harvey]] — email intent parsing use case
@@ -47,14 +60,22 @@ Key clients are piloting Agentforce for specific workflows: email intent parsing
 - [[litify]] — service agent triage use case
 - [[cretelligent]] — product model standardization
 - [[data-cloud]] — unification layer for agent data
-- [[claude-ai]] — external AI model coordination
+- [[claude-ai]] — external AI model coordination (Claude Sonnet 4.5 = Vibes default)
 - [[multi-agent-orchestration]] — orchestration pattern across models
+- [[salesforce]] — TDX 2026 and platform topic tracker
+- [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — Vibes IDE + Hosted MCP
+- [[tdx-2026-headless-360-operating-model]] — strategic framing for Agentforce posture
+- [[salesforce-mcp-explained-sweep]] — MCP primer and historical posture
+- [[prompt-builder-structured-outputs]] — typed JSON for Agentforce action inputs/outputs
 
 ## Sources
 - Meeting Notes/Stand8/Harvey/2026-04-09
 - Meeting Notes/Stand8/NBCU/2026-04-08
 - Meeting Notes/Stand8/Litify/2026-04-09
 - raw/articles/New Agentforce Builder Released in Beta Our First Thoughts.md
+- raw/articles/2026-04-18T074207-0500-New in Salesforce Developer Edition Agentforce Vibes IDE, Claude 4.5, MCP.md
+- raw/articles/2026-04-18T080457-0500-Salesforce Model Context Protocol Explained How MCP Bridges AI and Your CRM.md
+- raw/articles/2026-04-18T082851-0500-Salesforce TDX 2026 – why Salesforce's Headless 360 announcement at TDX is really about operating model transformation.md
 
 ---
-*Last updated: 2026-04-13*
+*Last updated: 2026-04-18*

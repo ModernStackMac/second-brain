@@ -22,6 +22,12 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 - Claude Code Skills for automation: kb-compile (ingest sources), kb-report (query wiki), kb-lint (health checks), morning-briefing (daily context)
 - Shift from stateless chat sessions to stateful, compounding knowledge accumulation
 
+**Claude Inside Salesforce (TDX 2026):**
+- Claude Sonnet 4.5 is the default coding model for Agentforce Vibes (Salesforce's enterprise vibe coding surface) — first-class Anthropic integration inside Salesforce tooling.
+- Free Developer Edition access: 110 requests / 1.5M tokens per month refresh through 2026-05-31, then a one-time final allocation.
+- Salesforce Hosted MCP Server (OAuth 2.0, org security enforced) now lets Claude Desktop, Claude Code, and any MCP client query Salesforce data natively — removes the previous "MCP is beta" friction across Harvey/NBCU/Litify.
+- See: [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]]
+
 **Harvey Engagement:**
 - Claude used for email intent parsing, especially multi-intent emails (complaint + order update + P&A request simultaneously)
 - Carl built a Claude-based chat prototype for Helical brand site over a weekend
@@ -52,12 +58,16 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 - [[llm-knowledge-management]] — Claude as compiler/librarian for persistent wikis
 - [[obsidian-ecosystem]] — Integration partner for knowledge management
 - [[andrej-karpathy-method-claude-skills-obsidian]] — The pattern and implementation details
+- [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — Claude Sonnet 4.5 as Vibes default + Hosted MCP
+- [[salesforce]] — TDX 2026 topic tracker
+- [[salesforce-mcp-explained-sweep]] — MCP origin (Anthropic) and ecosystem context
 
 ## Sources
 - Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop.md
 - Meeting Notes/High Meadows/Internal/2026-04-09 - HMS Product Strategy.md
 - Meeting Notes/Modern Stack Systems/2026-04-09 - Recruiter Call - Brittany Fetzner - Salesforce QA Dev Role.md
 - Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md
+- raw/articles/2026-04-18T074207-0500-New in Salesforce Developer Edition Agentforce Vibes IDE, Claude 4.5, MCP.md
 
 ---
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-18*
