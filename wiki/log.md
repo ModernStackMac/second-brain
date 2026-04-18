@@ -743,3 +743,25 @@
 - **Resulting structure:** `wiki/projects/{cretelligent|f2-cetera|harvey|internal/{meadow|flex-dash|high-meadow-website}|litify|lnw|mai|nbcu}/` — each with `overview.md` + `context.md` + `journal.md` (+ stories-{ws}.md when applicable).
 - **Backward compat:** Frontmatter aliases on overview.md preserve all existing wikilinks. Next story-sync run will write F2 Cetera stories to `projects/f2-cetera/` instead of `projects/cetera/`.
 - **Pages/folders removed:** `wiki/clients/` (entire directory), `wiki/projects/cetera/`
+
+## 2026-04-18 — Scheduled Ingest #27
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Vault mount:** Pre-granted at `/sessions/*/mnt/Documents` — no fresh `request_cowork_directory` call needed.
+- **Sources processed:** 0 (no net-new files)
+- **Scan coverage:**
+  - `raw/articles/` — 9 files. 8 already in log. 1 file shows in directory listing as `?.md` (8796 bytes, mtime Apr 18 08:28) — confirmed to be the same TDX Headless 360 article already processed in Ingest #26 as `2026-04-18T082851-0500-Salesforce TDX 2026 – why Salesforce's Headless 360 announcement at TDX is really about operating model transformation.md`. The em-dash and curly apostrophe in the filename render as `?` in this sandbox view; content matches the existing `wiki/articles/tdx-2026-headless-360-operating-model.md`. No re-ingest needed.
+  - `raw/projects/hms-capacity-planning/` — 5 files (incl. .docx source), all already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+  - `Meeting Notes/_Unmatched/` — folder not present in current scan
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Notes:**
+  - The `?.md` filename is a filesystem-display artifact, not a content duplicate. Mac may want to rename the source file in iCloud to a clean ASCII slug (e.g., `2026-04-18-tdx-2026-headless-360-operating-model.md`) so it sorts and displays consistently. Optional cleanup — wiki content is unaffected.
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #26. Wiki remains current through the Apr 17 meeting batch and the Apr 18 TDX 2026 article batch. No action required.
