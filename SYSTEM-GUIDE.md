@@ -348,3 +348,139 @@ Excludes `.obsidian/`, `Excalidraw/`, `Clippings/`, `raw/archived-stories/`, bin
 | `.claudeignore` | Claude Code / Cowork ignore rules at vault root | You |
 | `~/.claude/skills/session-kickoff/` | User-global skill — briefs project/story context at session start | You + Claude |
 | `~/.claude/commands/kickoff.md` | Claude Code slash command wrapper for session-kickoff | You |
+
+
+---
+
+## Updates (2026-04-18b) — Calendar + Kanban + Tasks workflow
+
+The Second Brain now incorporates Obsidian's Calendar, Kanban, and Tasks plugins end-to-end. The goal: one loop where meetings, stories, actions, and daily focus all reinforce each other instead of living in isolation.
+
+### New pieces
+
+| Artifact | Path | Purpose |
+| --- | --- | --- |
+| Daily note template | `Second Brain/raw/templates/daily-note.md` | Drives every daily note. Has live Tasks + Dataview queries for meetings today, due today, overdue, captures, reflection, and yesterday's rollover. |
+| Kanban template | `Second Brain/raw/templates/project-board.md` | Kanban-plugin frontmatter + columns: Backlog / Up Next / In Progress / Review / Blocked / Done. |
+| Today dashboard | `Second Brain/dashboards/Today.md` | Focused daily view. Meetings today, due today, overdue, captured today, completed today. Opens as startup or pin next to Home. |
+| Action-Review dashboard | `Second Brain/dashboards/Action-Review.md` | Weekly triage view. Overdue, due this week, stale, no date, unassigned, by-project. Monday summary block auto-written. |
+| Example board | `Second Brain/wiki/projects/cretelligent/board.md` | Seeded kanban. Story-sync writes the rest automatically. |
+
+### New scheduled tasks
+
+| Task | Schedule | What it does |
+| --- | --- | --- |
+| `daily-note-builder` | Weekdays 6am CT | Builds `Second Brain/raw/daily/YYYY-MM-DD.md` from the template. Pulls today's Calendar events and rolls forward yesterday's unfinished items. |
+| `weekly-action-review` | Monday 8am CT | Scans Action-Tracker.md, writes an overdue/stale/no-date summary between the `WEEKLY-SUMMARY` markers in Action-Review.md. |
+
+### Updated scheduled tasks
+
+- **`story-sync`** now also writes per-project kanban boards at `Second Brain/wiki/projects/{slug}/board.md`. Status mapping: Backlog/Triage → Backlog · Todo/Ready → Up Next · In Progress → In Progress · Review/QA → Review · Blocked → Blocked · Done (last 14 days) → Done. Boards without the `kanban-plugin: basic` frontmatter are skipped (treated as hand-built).
+
+### Action-Tracker format
+
+Two coexisting formats — both valid, both queryable:
+
+1. **Dataview inline fields** (existing, manual sections):
+   ```
+   - [ ] task description [Owner:: Mac] [Project:: CREtelligent] [Status:: Open] [Source:: manual] [Date:: 2026-04-20]
+   ```
+
+2. **Tasks-plugin emoji syntax** (optional, for items you want surfaced in Tasks queries like the dashboards):
+   ```
+   - [ ] Review architecture doc 📅 2026-04-22 🔼 #cretelligent
+   ```
+   
+   - `📅 YYYY-MM-DD` — due date
+   - `⏳ YYYY-MM-DD` — scheduled
+   - `🔺` urgent / `🔼` high / `🔽` low / `⏬` lowest
+   - `#project-slug` — project tag
+
+Both formats render correctly. Use format 1 for items that need structured fields (Owner, Source); use format 2 when you want the item to show up in `tasks` queries on the Today dashboard.
+
+### The daily loop
+
+1. **6am weekday** — `daily-note-builder` writes today's daily note with calendar + rollover.
+2. **Morning** — open Today dashboard (live view) or the daily note (persistent capture).
+3. **All day** — captures land in the daily note under "Captures". Tasks get emoji syntax if they need a date.
+4. **End of day** — fill the reflection block. Unfinished tasks roll to tomorrow automatically via Tasks queries.
+5. **Monday 8am** — `weekly-action-review` rewrites the summary in Action-Review.md. Open it, triage stale/overdue items, close or reschedule.
+6. **Continuous** — story-sync keeps Linear/Jira mirrored into Action-Tracker + per-project boards.
+
+### Plugin requirements
+
+Make sure these are enabled in Obsidian:
+- **Calendar** (community plugin) — sidebar calendar, links dates to daily notes
+- **Kanban** — renders `.md` files with `kanban-plugin: basic` frontmatter as boards
+- **Tasks** — powers ` ```tasks ` query blocks and emoji metadata
+- **Daily notes** (core) — set folder to `Second Brain/raw/daily/` and template to `Second Brain/raw/templates/daily-note.md`
+- **Templater** (optional but recommended) — for richer `{{date:...}}` substitution; otherwise stick with core Daily Notes
+
+### Key files reference additions
+
+| File | Why it matters |
+| --- | --- |
+| `Second Brain/dashboards/Today.md` | Daily startup view |
+| `Second Brain/dashboards/Action-Review.md` | Weekly triage view (Monday summary auto-written) |
+| `Second Brain/raw/templates/daily-note.md` | Daily note template |
+| `Second Brain/raw/templates/project-board.md` | Kanban template for new projects |
+| `Second Brain/wiki/projects/{slug}/board.md` | Per-project kanban (auto-written by story-sync) |
+| `Second Brain/raw/daily/YYYY-MM-DD.md` | Daily notes (auto-built 6am weekdays) |
+
+
+---
+
+## Updates (2026-04-18c) — Templater, Tag Wrangler, Make.md
+
+Three more plugins are now wired into the workflow. Each fills a specific gap without duplicating what Dataview/Tasks/Kanban already do.
+
+### Templater
+
+Powers dynamic templates with real JavaScript. Used by:
+
+- **`Second Brain/raw/templates/daily-note.md`** — rewritten with `<% tp.date.now("YYYY-MM-DD") %>` instead of core `{{date:YYYY-MM-DD}}`. More reliable, supports yesterday lookups, frontmatter interpolation.
+- **`Second Brain/raw/templates/quick-capture.md`** (NEW) — interactive capture. Prompts for title, tags, project (suggester), then renames and routes the file to `raw/captures/YYYY-MM-DD-slug.md`.
+
+Settings to configure once:
+- Templater → Template folder: `Second Brain/raw/templates/`
+- Templater → Trigger Templater on new file creation: **on** (for Daily Notes)
+- Templater → Folder templates: map `Second Brain/raw/daily/` → `daily-note.md`
+- Templater → Folder templates: map `Second Brain/raw/captures/` → `quick-capture.md`
+
+Hotkeys worth binding:
+- "Templater: Open insert template modal" → `Cmd+Shift+T`
+- "Templater: Create new note from template" → `Cmd+Opt+N`
+
+### Tag Wrangler
+
+Enables safe tag refactoring across the vault. New reference: **`Second Brain/TAGS.md`** — canonical tag taxonomy with rules, hierarchy, and deprecated mappings.
+
+Standard taxonomy:
+- `#project/{slug}` — one per active engagement
+- `#status/{todo|in-progress|review|blocked|done}` — mutually exclusive
+- `#type/{daily|meeting|decision|capture|wiki|dashboard|kanban|story|report}` — note type
+- `#context/{focus|meeting|commute|quick|errand}` — work context
+- `#priority/{urgent|high|low}` — reserve for page-level (use Tasks emoji for tasks)
+- `#area/{client-work|business-ops|learning|personal|admin}` — life/work domain
+
+Refactor ops: right-click any tag in the sidebar → Rename. Tag Wrangler rewrites every occurrence in the vault in one pass.
+
+### Make.md
+
+Overlays property-driven database views on curated wiki folders. New reference: **`Second Brain/wiki/MAKE-SPACES.md`** — where to use it, where not to, setup checklist.
+
+Recommended spaces:
+1. **Projects Space** (`wiki/projects/`) — table view with status, owner, client, last_meeting, open_actions. Card view grouped by status.
+2. **Clients Space** (`wiki/clients/`) — table view with tier, primary_contact, last_touched, engagement_status. Board view grouped by tier.
+3. Flow embeds: add `![[board]]` to each `wiki/projects/{slug}/journal.md` for inline kanban.
+
+Conflict avoidance: Make.md owns user-editable frontmatter keys (status, owner, tier). Scheduled tasks own computed keys (updated, last_meeting, open_actions). Do not let both write the same field.
+
+### Updated file reference
+
+| File | Role |
+| --- | --- |
+| `Second Brain/TAGS.md` | Canonical tag taxonomy — single source of truth for Tag Wrangler refactors |
+| `Second Brain/wiki/MAKE-SPACES.md` | Make.md space configuration reference |
+| `Second Brain/raw/templates/quick-capture.md` | Interactive Templater capture template |
+| `Second Brain/raw/templates/daily-note.md` | Rewritten for Templater (dynamic date functions) |

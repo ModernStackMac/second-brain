@@ -124,3 +124,14 @@ LIMIT 8
 - [[dashboards/Projects|Projects Dashboard]]
 - [[dashboards/Stories|Stories Dashboard]]
 - [[dashboards/Wiki Health|Wiki Health Dashboard]]
+
+
+
+---
+
+## New in this version
+
+- [[Today]] — Daily focused view (meetings today, due today, overdue, captures)
+- [[Action-Review]] — Weekly action triage (Mondays)
+- Kanban boards live at `Second Brain/wiki/projects/{project}/board.md`
+- Daily notes at `Second Brain/raw/daily/YYYY-MM-DD.md` (auto-built weekday 6am CT)
