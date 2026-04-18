@@ -12,7 +12,8 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[f2-cetera/context]] · [[f2-cetera/journal]] — Financial services (Stand8/HMS). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
 - [[cretelligent/context]] · [[cretelligent/journal]] — Commercial real estate/environmental (Stitch). Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
 - [[mai/context]] · [[mai/journal]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
-- [[meadow/context]] · [[meadow/journal]] — High Meadows internal capacity planning app. Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
+- [[internal/meadow/context]] · [[internal/meadow/journal]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap. Consolidated under `internal/` from the deprecated `meadow/` and `capacity-planning/` folders.
+- [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
 
 ## Concepts
 
@@ -67,4 +68,4 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 ---
 *Last updated: 2026-04-18*
-*Total pages: 54 (14 project pages + 40 wiki pages)*
+*Total pages: 56 (16 project pages + 40 wiki pages)*

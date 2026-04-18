@@ -16,9 +16,7 @@ updated: 2026-04-18
 ## Open
 
 ### CREtelligent
-- [x] Finish API trigger integration for Add Vendor (waiting on payload — need ID back from Connect) [Owner:: Mac] [Project:: cretelligent] [Status:: Done] [Source:: manual] [Date:: 2026-04-10] ✅ 2026-04-14
 - [ ] Validate contact type filter in Add to Connect flow (Survey/Environmental/Zoning only) [Owner:: Mac] [Project:: cretelligent] [Status:: Open] [Source:: manual] [Date:: 2026-04-13]
-- [x] Increase Quote Matrix modal height [Owner:: Mac] [Project:: cretelligent] [Status:: Done] [Source:: manual] [Date:: 2026-04-10] ✅ 2026-04-14
 - [ ] Review product story for environmental cost worksheet / single-process enviro flow [Owner:: Mac] [Project:: cretelligent] [Status:: Open] [Source:: manual] [Date:: 2026-04-14]
 - [ ] Start research story on product payload landmines before full Salesforce/Connect integration (due within 1 day) [Owner:: Mac] [Project:: cretelligent] [Status:: Open] [Source:: manual] [Date:: 2026-04-15]
 - [ ] Build Site Product object — fields, lookups, View/Edit-for-everyone permissions; add Site Verification fields to tab 1; add EnviroCost fields [Owner:: Mac] [Project:: cretelligent] [Status:: Open] [Source:: manual] [Date:: 2026-04-16]
@@ -47,7 +45,6 @@ updated: 2026-04-18
 - [ ] Align open address ticket with Brian's custom-address-on-account-conversion pattern once shared [Owner:: Mac] [Project:: mai] [Status:: Open] [Source:: manual] [Date:: 2026-04-17]
 
 ### Meadow
-- [x] Confirm company credit card setup for Supabase and Vercel subscriptions [Owner:: Mac] [Project:: meadow] [Status:: Done] [Source:: manual] [Date:: 2026-04-09] ✅ 2026-04-14
 - [ ] Implement all agreed copy and layout changes to HMS website once CSO sends the consolidated notes doc from the Apr 17 review [Owner:: Mac] [Project:: meadow] [Status:: Open] [Source:: manual] [Date:: 2026-04-17]
 - [ ] Fix broken/dead Insights/article demo links surfaced during the Apr 17 website review [Owner:: Mac] [Project:: meadow] [Status:: Open] [Source:: manual] [Date:: 2026-04-17]
 - [ ] Fix Services tile number color contrast — inspector flagged numbers + top-border green as same color despite visible difference [Owner:: Mac] [Project:: meadow] [Status:: Open] [Source:: manual] [Date:: 2026-04-17]
@@ -158,6 +155,9 @@ _Requires local `story-sync.js` run (Keychain-gated API key). Will populate on n
 
 ## Closed
 
+- [x] Finish API trigger integration for Add Vendor (waiting on payload — need ID back from Connect) [Owner:: Mac] [Project:: cretelligent] [Status:: Done] [Source:: manual] [Date:: 2026-04-10] ✅ 2026-04-14 — moved by lint 2026-04-18
+- [x] Increase Quote Matrix modal height [Owner:: Mac] [Project:: cretelligent] [Status:: Done] [Source:: manual] [Date:: 2026-04-10] ✅ 2026-04-14 — moved by lint 2026-04-18
+- [x] Confirm company credit card setup for Supabase and Vercel subscriptions [Owner:: Mac] [Project:: meadow] [Status:: Done] [Source:: manual] [Date:: 2026-04-09] ✅ 2026-04-14 — moved by lint 2026-04-18
 - [x] Schedule David call for ticket 1293 (SSN/intake source) and sharing rules for 1120 [Owner:: Mac] [Project:: mai] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
 - [x] Confirm stop process requirements for ticket 1269 and create follow-up ticket [Owner:: Mac] [Project:: mai] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
 - [x] Fix picklist value for ticket 958 (Tamarack Trading Support → operations trading) [Owner:: Mac] [Project:: mai] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13

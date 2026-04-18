@@ -765,3 +765,59 @@
 - **Notes:**
   - The `?.md` filename is a filesystem-display artifact, not a content duplicate. Mac may want to rename the source file in iCloud to a clean ASCII slug (e.g., `2026-04-18-tdx-2026-headless-360-operating-model.md`) so it sorts and displays consistently. Optional cleanup — wiki content is unaffected.
 - **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #26. Wiki remains current through the Apr 17 meeting batch and the Apr 18 TDX 2026 article batch. No action required.
+
+## 2026-04-18 — Weekly Lint
+
+- **Operation:** LINT — Scheduled weekly health check
+- **Checks run:** project folder completeness, journal/context staleness, shared-wiki staleness, broken `[[wiki-links]]`, index.md consistency, Sources sections, Action-Tracker 30-day staleness + completed-item rotation, Decision-Log recency, log.md rotation (200-entry threshold), session-context cleanup (30-day threshold).
+
+### Fixes applied
+- **index.md:** Replaced broken `[[meadow/context]]` · `[[meadow/journal]]` entry with `[[internal/meadow/context]]` · `[[internal/meadow/journal]]` (the actual canonical folder after the earlier `internal/` consolidation).
+- **index.md:** Added missing entry for `[[internal/high-meadow-website/context]]` · `[[internal/high-meadow-website/journal]]` — real project, was not indexed.
+- **index.md:** Updated totals to 56 pages (16 project pages + 40 wiki pages).
+- **Action-Tracker.md:** Moved 3 completed items from Open → Closed (CREtelligent: Add Vendor trigger integration, Quote Matrix modal height; Meadow: Supabase/Vercel credit card setup). Each is tagged `moved by lint 2026-04-18`.
+
+### Flagged for Mac's review
+
+**Empty project folders (no `context.md` / `journal.md`):**
+- `wiki/projects/capacity-planning/` — superseded by `internal/meadow/`. Safe to delete.
+- `wiki/projects/cetera/` — superseded by `f2-cetera/`. Safe to delete.
+- `wiki/projects/flex-dash/` — actual stories at `internal/flex-dash/`. Safe to delete top-level.
+- `wiki/projects/meadow/` — superseded by `internal/meadow/`. Safe to delete.
+
+**Partial project folders (stories-only, missing context.md + journal.md):**
+- `wiki/projects/internal/flex-dash/` — has `stories-hm.md` only. Create context/journal if this project is still active, otherwise archive stories into `internal/meadow/` or remove.
+- `wiki/projects/lnw/` — has `stories-f2.md` only. Project appears in Action-Tracker auto-sync (4 Review-status LNW stories under Litify). If LNW is a distinct engagement from Litify, needs context.md + journal.md; otherwise roll the stories into `litify/`.
+
+**Broken wiki-links with no clear replacement:**
+- `wiki/tools/claude-ai.md:21` — `[[MCP-Obsidian]]` (no page). Likely should point to a future MCP-Obsidian integration page or be inlined as plain text.
+- `wiki/projects/nbcu/overview.md:47` — `[[mcp]]` (no page). Consider creating a `wiki/tools/mcp.md` page or linking to an existing article (e.g., `[[salesforce-mcp-explained-sweep]]`).
+- `wiki/articles/claude-obsidian-illegal.md:30`, `wiki/articles/andrej-karpathy-method-claude-skills-obsidian.md:33`, `wiki/topics/llm-knowledge-management.md:61` — all reference `[[scheduled-tasks]]` (no page). Either create `wiki/concepts/scheduled-tasks.md` or `wiki/patterns/scheduled-tasks.md`, or remove the links.
+- `wiki/articles/obsidian-plugins-replace-paid-apps.md:30` — `[[productivity-systems]]` (no page). Same treatment.
+- `wiki/projects/internal/high-meadow-website/files/Website-Feedback-2026-04-17.md:11` — `[[context]]` resolves via Obsidian's folder-relative behavior to the sibling `context.md`, so functionally fine; flagged only for awareness.
+
+Aliased links resolve correctly via frontmatter on `overview.md` files — no action needed for `[[hms-capacity-planning]]`, `[[high-meadows-mai]]`, `[[cetera]]`, `[[capacity-planning]]`, `[[meadow-app]]`, `[[mai]]`, `[[mai-crm-build]]`, `[[nbcu]]`, `[[harvey]]`, `[[litify]]`, `[[cretelligent]]`, `[[f2-cetera]]`.
+
+**Pages missing Sources section:**
+- `wiki/topics/apple-hardware.md` — accumulator page, likely pulls from article pages it references. Consider adding a Sources block listing the child article pages.
+- `wiki/topics/salesforce.md` — same pattern. Consider adding a Sources block.
+
+**Staleness checks:**
+- All project `context.md` files last updated 2026-04-13 or later — none stale against the 60-day threshold.
+- All project `journal.md` files last updated 2026-04-14 or later — none stale against the 14-day threshold.
+- All shared wiki pages (concepts, patterns, tools, entities, articles, topics) last updated 2026-04-10 or later — none stale against the 90-day threshold.
+
+**Action-Tracker 30-day check:** No open items predate the 2026-03-19 cutoff. Oldest open auto-synced story is `IP-8` (Flex Dash View As Feature) at 2026-03-31 — 18 days old, within threshold.
+
+**Decision-Log recency:** Latest entry 2026-04-17 — within the 14-day freshness window. Healthy cadence (34+ entries in the last 14 days).
+
+**Log rotation:** `wiki/log.md` has 36 `##` entries total — well below the 200-entry archive threshold. No rotation performed.
+
+**Session-context cleanup:** `Second Brain/session-context/` contains only `.gitkeep`. Nothing to prune.
+
+**Out-of-schema artifacts observed (informational):**
+- `wiki/f2-internal/` — synced Confluence mirror, read-only per its own README; not part of SCHEMA.md but legitimate.
+- Project folders include extra files beyond the schema's `context.md` + `journal.md` pair (`overview.md`, `stories-f2.md`, `stories-hm.md`, `files/`). Overview files carry alias frontmatter to resolve legacy `[[slug]]` links and appear to be intentional. No action.
+
+### Summary
+Clean lint pass. Two structural index fixes applied, three completed items rotated to Closed. Six legacy/empty project folders flagged for decision (keep as placeholders or delete). Five broken wiki-links and two Source-less topic pages flagged for manual resolution — none are urgent. Wiki, Action-Tracker, and Decision-Log are all in healthy shape heading into the week.
