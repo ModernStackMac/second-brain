@@ -1,0 +1,108 @@
+# Mac Nosek — identity manifest
+# Used by: story-sync, meeting-selector, action-tracker auto-append, decision-log auto-append
+# Update here when adding new emails, workspaces, or name variants.
+
+owner:
+  name: Mac Nosek
+  aliases:
+    - Mac
+    - Maciej Nosek
+    - maciej nosek
+    - M Nosek
+    - mac.nosek
+    - maciejnosek
+
+  emails:
+    primary: nosek.mac@gmail.com
+    work:
+      - mac.nosek@modernstacksystems.com
+      - mac.nosek@f2strategy.com
+      - mac@highmeadowsolutions.com
+
+workspaces:
+  linear:
+    - id: mss
+      name: Modern Stack Systems
+      prefix: MSS
+      email: mac.nosek@modernstacksystems.com
+      auth: mcp          # connected via existing Linear MCP
+    - id: hm
+      name: High Meadow
+      prefix: HM
+      email: mac@highmeadowsolutions.com
+      auth: keychain     # key in macOS Keychain: LINEAR_HIGHMEADOW_API_KEY
+      keychain_service: LINEAR_HIGHMEADOW_API_KEY
+
+  jira:
+    - id: f2
+      name: F2 Strategy
+      prefix: F2
+      cloud: f2strategy
+      email: mac.nosek@f2strategy.com
+      auth: mcp          # connected via Atlassian MCP
+
+  confluence:
+    - id: f2-internal
+      cloud: f2strategy
+      email: mac.nosek@f2strategy.com
+      auth: mcp
+      destination: Second Brain/wiki/f2-internal/
+
+filters:
+  story_sync:
+    # Active set: always included
+    active_statuses:
+      - Todo
+      - Unstarted
+      - Started
+      - In Progress
+
+    # Backlog set: included only if any condition matches
+    backlog_conditions:
+      priority_in: [Urgent, High]
+      in_current_cycle: true
+      updated_within_days: 14
+
+    # Identity match: at least one must be true for a ticket to pass
+    identity_match_any_of:
+      - assignee_email_in_list        # assignee email ∈ owner.emails.*
+      - assignee_name_in_aliases      # assignee name ∈ owner.aliases
+
+  meeting_selector:
+    # Scoring rubric for Granola vs Fathom
+    weights:
+      transcript_completeness: 0.30
+      summary_quality: 0.25
+      action_items: 0.25
+      technical_accuracy: 0.15
+      metadata_richness: 0.05
+    trial_end: 2026-05-02              # 2 weeks from Fathom signup
+
+  decision_log:
+    # Tags in meeting summaries that trigger decision-log append
+    trigger_patterns:
+      - "decision:"
+      - "decided:"
+      - "Decisions"
+      - "Key decisions"
+    owner_default: Mac Nosek
+    dedupe_hash_fields: [date, project, decision_first_80]
+
+  action_tracker:
+    owner_only: Mac Nosek             # Only append items where Owner is Mac
+    archive_after_days_done: 7
+    archive_path: Second Brain/raw/archived-actions/
+
+paths:
+  vault_root: "~/Documents/Obsidian Vault"   # adjust if different
+  meeting_notes_root: Meeting Notes
+  raw_granola: Second Brain/raw/meeting-raw/granola/
+  raw_fathom: Second Brain/raw/meeting-raw/fathom/
+  raw_archived_stories: Second Brain/raw/archived-stories/
+  raw_archived_actions: Second Brain/raw/archived-actions/
+  resources_learning: Second Brain/resources/learning/
+  resources_reading: Second Brain/resources/reading/
+  resources_interests: Second Brain/resources/interests/
+
+version: 1
+updated: 2026-04-18
