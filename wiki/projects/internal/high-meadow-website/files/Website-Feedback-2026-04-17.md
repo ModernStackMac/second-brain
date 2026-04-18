@@ -8,7 +8,7 @@ original_format: docx
 
 # Website Feedback — 2026-04-17
 
-> Raw client feedback from HMS stakeholders. Curated punch list lives in [[context]].
+> Raw client feedback from HMS stakeholders. Curated punch list lives in [[Second Brain/wiki/projects/mai/context]].
 
 ## Global / Layout
 1. The logo at the top on all pages needs to be larger. Scroll bar area.

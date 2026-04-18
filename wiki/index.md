@@ -9,7 +9,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[harvey/context]] · [[harvey/journal]] — Industrial manufacturing/distribution (Stand8). Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration (Einstein + Claude).
 - [[nbcu/context]] · [[nbcu/journal]] — NBCUniversal (Stand8). Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
 - [[litify/context]] · [[litify/journal]] — Legal SaaS (Stand8). Agentforce service agent for case triage, KB recommendations, Data Cloud unification. SOW in progress.
-- [[f2-cetera/context]] · [[f2-cetera/journal]] — Financial services (Stand8/HMS). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
+- [[Second Brain/wiki/projects/cetera/context]] · [[Second Brain/wiki/projects/cetera/journal]] — Financial services (Stand8/HMS). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
 - [[cretelligent/context]] · [[cretelligent/journal]] — Commercial real estate/environmental (Stitch). Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
 - [[mai/context]] · [[mai/journal]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
 - [[internal/meadow/context]] · [[internal/meadow/journal]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap. Consolidated under `internal/` from the deprecated `meadow/` and `capacity-planning/` folders.

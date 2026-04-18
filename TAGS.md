@@ -18,7 +18,7 @@ Tag format rules:
 Match `Second Brain/project-mapping.md`. One tag per active engagement.
 
 - `#project/cretelligent`
-- `#project/f2-cetera`
+- `#project/cetera`
 - `#project/harvey`
 - `#project/litify`
 - `#project/mai`
