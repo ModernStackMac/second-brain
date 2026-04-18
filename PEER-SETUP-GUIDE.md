@@ -410,3 +410,140 @@ Minimal but non-zero.
 4. Steal shamelessly from this guide's author's `SYSTEM-GUIDE.md`. Everything in it is meant to be forked.
 
 Questions or stuck? Ping Mac.
+
+
+---
+
+## Addendum (2026-04-18) — Templater, Tag Wrangler, Make.md
+
+Three plugins that sharpen the setup without complicating it. Add them after you've got the base system running (end of Week 2 or start of Week 3).
+
+### Updated community plugin list
+
+Add these to the Phase 1 install list:
+
+| Plugin | Why |
+|--------|-----|
+| **Tag Wrangler** | Rename, merge, and prune tags safely across the entire vault. Makes tag taxonomy maintainable. |
+| **Make.md** (Makemd) | Property-driven database views over curated wiki folders (Projects hub, Clients hub). Overlays markdown with sortable/filterable tables without touching the underlying files. |
+
+(Templater was already in the base list — this is the configuration.)
+
+### Templater configuration
+
+1. Settings → Templater → Template folder: `Second Brain/raw/templates/`
+2. Templater → Trigger Templater on new file creation: **on**
+3. Templater → Folder templates:
+   - `Second Brain/raw/daily/` → `daily-note.md`
+   - `Second Brain/raw/captures/` → `quick-capture.md`
+4. Hotkeys:
+   - "Templater: Open insert template modal" → `Cmd+Shift+T`
+   - "Templater: Create new note from template" → `Cmd+Opt+N`
+
+Use Templater syntax in templates (not core Daily Notes `{{date:...}}`):
+
+```
+<% tp.date.now("YYYY-MM-DD") %>
+<% tp.date.now("dddd, MMMM D, YYYY") %>
+<% tp.date.now("YYYY-MM-DD", -1) %>   // yesterday
+<% await tp.system.prompt("Title?") %>
+<% await tp.system.suggester(labels, values, false, "Pick one") %>
+```
+
+### Tag Wrangler + taxonomy
+
+Tag Wrangler works out of the box, but only pays off if you maintain a taxonomy. Create `Second Brain/TAGS.md` with rules like:
+
+- Lowercase, hyphenated
+- Hierarchy with `/` (`#project/acme`, `#status/blocked`)
+- No more than 3 levels deep
+- Prefer tags for transient state, frontmatter for structured metadata
+
+Recommended top-level tags:
+
+| Namespace | Values |
+|---|---|
+| `#project/` | One per active engagement (match `project-mapping.md`) |
+| `#status/` | `todo`, `in-progress`, `review`, `blocked`, `done` (mutually exclusive) |
+| `#type/` | `daily`, `meeting`, `decision`, `capture`, `wiki`, `dashboard`, `kanban`, `story`, `report` |
+| `#context/` | `focus`, `meeting`, `commute`, `quick`, `errand` |
+| `#priority/` | `urgent`, `high`, `low` (page-level only; use Tasks emoji for task priority) |
+| `#area/` | `client-work`, `business-ops`, `learning`, `personal`, `admin` |
+
+Refactor: right-click tag in sidebar → Rename. Tag Wrangler rewrites every occurrence across the vault. Use this to migrate legacy flat tags to namespaced ones.
+
+### Make.md — selective use
+
+Make.md is powerful but opinionated. Use it for two things, nothing else:
+
+1. **Projects hub** — right-click `wiki/projects/` → Convert to Space. Add properties: `status` (active/paused/complete), `owner`, `client`, `last_meeting`, `open_actions`. Default view: Table sorted by `last_meeting` desc. Card view grouped by `status`.
+
+2. **Clients hub** — right-click `wiki/clients/` → Convert to Space. Add properties: `tier`, `primary_contact`, `last_touched`, `engagement_status`. Default view: Table. Board view grouped by `tier`.
+
+Optionally use **Flow embeds** (`![[board]]`) to surface a project's kanban inline on its journal page.
+
+**Do not** convert `raw/`, `Meeting Notes/`, `dashboards/`, or `Action-Tracker.md` — those are scheduled-task territory and Make.md will fight them for frontmatter ownership.
+
+### Calendar + Kanban + Tasks workflow
+
+Ensure these are enabled and configured:
+
+- **Calendar** (community plugin) — sidebar calendar, clicks create daily notes in `Second Brain/raw/daily/`
+- **Kanban** — renders any `.md` file with `kanban-plugin: basic` frontmatter as a board
+- **Tasks** — powers ```tasks query blocks and emoji metadata (📅 due, ⏳ scheduled, 🔺 urgent, 🔼 high, 🔽 low, ⏬ lowest)
+- **Daily notes** (core) — folder: `Second Brain/raw/daily/`, template: `Second Brain/raw/templates/daily-note.md`
+
+### Action-Tracker format (dual)
+
+Your Action-Tracker.md can mix two formats side-by-side:
+
+1. **Dataview inline fields** (structured):
+   ```
+   - [ ] task [Owner:: Mac] [Project:: Acme] [Status:: Open] [Source:: manual] [Date:: 2026-05-01]
+   ```
+
+2. **Tasks-plugin emoji** (surfaces in ```tasks queries):
+   ```
+   - [ ] task 📅 2026-05-01 🔼 #project/acme
+   ```
+
+Both render correctly. Use format 1 when you need Owner/Source tracking; format 2 when you want the item on the Today dashboard's `due today` list.
+
+### New scheduled tasks to add
+
+| Task | Schedule | Purpose |
+|------|----------|---------|
+| **Daily Note Builder** | Weekdays 6am local | Builds today's daily note from the template. Pulls Calendar events, rolls forward yesterday's unfinished. |
+| **Weekly Action Review** | Monday 8am local | Scans Action-Tracker, writes overdue/stale/no-date/unassigned summary to `dashboards/Action-Review.md` between `WEEKLY-SUMMARY` markers. |
+
+Sample prompt for the daily note builder:
+
+> "Create a scheduled task for weekdays at 6am local time. Read `Second Brain/raw/templates/daily-note.md`, substitute today's date, pull today's Google Calendar events into a static table under 'Meetings today', and write the result to `Second Brain/raw/daily/YYYY-MM-DD.md`. If the file exists, append a timestamped 'Morning rebuild' section instead of overwriting."
+
+### Story-sync updates
+
+If you already have a story-sync task, update it to also write per-project kanban boards at `wiki/projects/{slug}/board.md`. Status mapping: Backlog/Triage → Backlog lane · Todo/Ready → Up Next · In Progress → In Progress · Review/QA → Review · Blocked → Blocked · Done (last 14 days) → Done.
+
+Always write the `kanban-plugin: basic` frontmatter and skip any board.md that lacks it (treat as hand-built).
+
+### Updated 30-day rollout
+
+Slot these into the existing plan:
+
+- **Week 2 addition:** Enable Calendar, Kanban, Tasks plugins. Create the daily-note and project-board templates.
+- **Week 3 addition:** Enable Templater, Tag Wrangler, Make.md. Create `TAGS.md` and the Projects/Clients Spaces. Add the Daily Note Builder and Weekly Action Review scheduled tasks.
+- **Week 4 addition:** Extend story-sync to write kanban boards.
+
+### Key files reference additions
+
+| File | Purpose |
+| --- | --- |
+| `Second Brain/TAGS.md` | Canonical tag taxonomy |
+| `Second Brain/wiki/MAKE-SPACES.md` | Make.md space config reference |
+| `Second Brain/raw/templates/daily-note.md` | Templater-powered daily note |
+| `Second Brain/raw/templates/project-board.md` | Kanban template |
+| `Second Brain/raw/templates/quick-capture.md` | Interactive Templater capture |
+| `Second Brain/dashboards/Today.md` | Daily focused view |
+| `Second Brain/dashboards/Action-Review.md` | Weekly triage view |
+| `Second Brain/wiki/projects/{slug}/board.md` | Per-project kanban (auto-written by story-sync) |
+| `Second Brain/raw/daily/YYYY-MM-DD.md` | Daily notes (auto-built weekday 6am) |

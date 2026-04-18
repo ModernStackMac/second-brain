@@ -69,3 +69,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 ---
 *Last updated: 2026-04-18*
 *Total pages: 56 (16 project pages + 40 wiki pages)*
+
+## Reports
+
+- [[reports/mai-project-overview]] — 2026-04-18 · Snapshot of the MAI engagement: FSC insurance SaaS, highest HMS priority, UAT-driven July go-live, active architectural threads (Type field, address model, fund permissions).

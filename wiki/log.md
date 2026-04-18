@@ -821,3 +821,8 @@ Aliased links resolve correctly via frontmatter on `overview.md` files — no ac
 
 ### Summary
 Clean lint pass. Two structural index fixes applied, three completed items rotated to Closed. Six legacy/empty project folders flagged for decision (keep as placeholders or delete). Five broken wiki-links and two Source-less topic pages flagged for manual resolution — none are urgent. Wiki, Action-Tracker, and Decision-Log are all in healthy shape heading into the week.
+
+## [2026-04-18] report | MAI Project Overview
+- Query: what do i know about the mai project
+- Pages consulted: projects/mai/context.md, projects/mai/journal.md, projects/mai/overview.md, projects/mai/stories-f2.md, concepts/flex-dash.md, entities/high-meadows.md
+- Report: wiki/reports/mai-project-overview.md
