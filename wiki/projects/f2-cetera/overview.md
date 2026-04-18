@@ -1,4 +1,11 @@
-# F2/Cetera
+---
+aliases: [f2-cetera, cetera]
+type: project-overview
+project: f2-cetera
+---
+
+# F2/Cetera — Engagement Overview
+
 > Financial services Salesforce consulting engagement — case object migration, CPA referral analysis, and Marketing Cloud provisioning (Project Keystone).
 
 ## Overview
@@ -58,4 +65,4 @@ Key contacts: Connor, Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, Ju
 - Meeting Notes/Stand8/F2-Cetera/2026-04-09 - Project Keystone - F2 Cetera Daily Working Session.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/f2-cetera.md on 2026-04-18*

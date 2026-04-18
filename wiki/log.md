@@ -728,3 +728,18 @@
   - **Operating model framing** (Headless 360) is a useful reframe for Harvey's 3-year AI roadmap and client discovery conversations — "operating debt" vs. "data debt" as a consulting lens.
   - **Sweep as competitor/complement signal:** semantic layer + agent-ready tooling is the space MSS could credibly compete in; worth tracking.
 - **Summary:** Processed 5 net-new articles, all dated 2026-04-18 and clipped around the TDX 2026 coverage window. Created 5 article pages and updated the salesforce topic + agentforce/claude-ai tools + json-deserialize-refactor pattern + index. No new meeting notes or project docs since Ingest #25. TDX 2026 is the biggest Salesforce ecosystem inflection since the wiki was initialized — Hosted MCP GA, Claude Sonnet 4.5 in Vibes, and Headless 360 all reshape how current and future Agentforce engagements should be scoped.
+
+
+## 2026-04-18 — Wiki Restructure: Clients → Projects Merge (Round 2)
+
+- **Operation:** MERGE + REMAP — Collapsed `wiki/clients/` into `wiki/projects/` (round 2 cleanup)
+- **Motivation:** 1:1 redundancy between folders plus `cetera/` ↔ `f2-cetera/` duplicate. Single folder = single source of truth.
+- **Actions:**
+  - Deleted 7 `wiki/clients/*.md` files (cretelligent, f2-cetera, harvey, high-meadows-mai, hms-capacity-planning, litify, nbcu). Content merged into new `wiki/projects/{proj}/overview.md` per project.
+  - Each overview.md carries frontmatter aliases back to the original client slug so existing `[[cretelligent]]`, `[[hms-capacity-planning]]`, etc. wikilinks resolve cleanly.
+  - Deleted `wiki/projects/cetera/stories-f2.md` (duplicate of f2-cetera); `cetera/` folder pruned.
+  - Updated `_System/identity.yaml` project_slug_map: `cetera → f2-cetera` and added explicit `f2-cetera → f2-cetera` identity entry.
+  - Updated `_System/scripts/story-sync.js` PROJECT_SLUG_MAP to match (v4.1). Sandbox copy mirrored for parity.
+- **Resulting structure:** `wiki/projects/{cretelligent|f2-cetera|harvey|internal/{meadow|flex-dash|high-meadow-website}|litify|lnw|mai|nbcu}/` — each with `overview.md` + `context.md` + `journal.md` (+ stories-{ws}.md when applicable).
+- **Backward compat:** Frontmatter aliases on overview.md preserve all existing wikilinks. Next story-sync run will write F2 Cetera stories to `projects/f2-cetera/` instead of `projects/cetera/`.
+- **Pages/folders removed:** `wiki/clients/` (entire directory), `wiki/projects/cetera/`

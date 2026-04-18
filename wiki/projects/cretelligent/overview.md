@@ -1,4 +1,11 @@
-# CREtelligent
+---
+aliases: [cretelligent]
+type: project-overview
+project: cretelligent
+---
+
+# CREtelligent — Engagement Overview
+
 > Commercial real estate/environmental services — API integration, site verification automation, and product costing data model.
 
 ## Overview
@@ -57,11 +64,13 @@ Key team members: Andrew Porter, Obed Labra-Pelaez, Michael Degoll (technical le
 ## Related Pages
 - [[stitch]] — delivery partner
 - [[harvey]] — ERP integration complexity pattern
-- [[hms-capacity-planning]] — internal project management, related product/project data model
+- [[meadow]] — internal project management, related product/project data model
 - [[validation-rule-workaround]] — pattern used for required picklist blocking saves
 - [[json-deserialize-refactor]] — pattern used for Connect API payload parsing
 - [[site-product-joiner]] — pattern used for per-product site-level pricing
 - [[connect-api]] — external API for vendor management and order processing
+
+## Recent Activity
 
 **QBR & Maintenance** (2026-04-02)
 - QBR reviewed — no high-risk items. Orion section needs additional bullet points documenting householding workflow discovery (was grouped under account hierarchy redesign).
@@ -88,4 +97,4 @@ Key team members: Andrew Porter, Obed Labra-Pelaez, Michael Degoll (technical le
 - Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/cretelligent.md on 2026-04-18*

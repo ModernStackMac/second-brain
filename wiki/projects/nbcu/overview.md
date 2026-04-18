@@ -1,4 +1,11 @@
-# NBCU
+---
+aliases: [nbcu]
+type: project-overview
+project: nbcu
+---
+
+# NBCU — Engagement Overview
+
 > Media/entertainment Salesforce customer running Agentforce POC for content recommendation and dynamic pricing strategy.
 
 ## Overview
@@ -43,4 +50,4 @@ Primary contact is Naresh, with Salesforce licensing and CoE support backing the
 - Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/nbcu.md on 2026-04-18*

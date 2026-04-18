@@ -1,4 +1,11 @@
-# High Meadows Meadow
+---
+aliases: [hms-capacity-planning, capacity-planning, meadow-app]
+type: project-overview
+project: meadow
+---
+
+# High Meadows Meadow — Engagement Overview
+
 > Internal capacity planning and time tracking SaaS — cloud migration, auth hardening, and AI-enhanced query interface.
 
 ## Overview
@@ -56,7 +63,7 @@ Priority order: Auth > Supabase > Sanity SSO > Vercel > Clockify Sunset > Time E
 - Detect project+task collision on edit with warning dialog
 - Merge or block: user chooses "Merge entries" or "Cancel" (merge is visual, not destructive)
 
-## Four-Phase Roadmap** (Strategy Session 2026-04-09)
+## Four-Phase Roadmap (Strategy Session 2026-04-09)
 
 **Phase 1: Cloud Database & Sharing**
 - Supabase PostgreSQL live
@@ -79,7 +86,7 @@ Priority order: Auth > Supabase > Sanity SSO > Vercel > Clockify Sunset > Time E
 - Sales pipeline visibility to capacity planning
 - Bid/estimate resourcing
 
-## Website & Infrastructure** (2026-04-09 Sync)
+## Website & Infrastructure (2026-04-09 Sync)
 
 **Hosting & CI/CD**
 - Vercel deployment confirmed
@@ -102,14 +109,16 @@ Priority order: Auth > Supabase > Sanity SSO > Vercel > Clockify Sunset > Time E
 - Phase 2 roadmap depends on expanded Claude integration for chat queries
 - Mythos AI discussed as alternative for specific capabilities
 
-## Related Pages
-- [[high-meadows-mai]] — sister internal product (insurance case management)
-
 ## IT & Onboarding (Office Hours 2026-04-10)
 - Email migration: several team members (Sam, Antonio) still on Glue On addresses — High Meadows accounts being created
 - Slack workspace accounts to be switched once HM emails provisioned
 - SharePoint document management: Clients + Internal folder structure, OneDrive for personal working files
 - Notion adoption recognized as ongoing challenge; office hours is venue for workflow questions
+
+## Related Pages
+- [[mai]] — sister internal product (insurance case management)
+- [[flex-dash]] — sister internal tool (paused for MAI priority)
+- [[high-meadow-website]] — external brand/lead-gen site
 
 ## Sources
 - raw/projects/hms-capacity-planning/meadow-database-schema.md
@@ -122,4 +131,4 @@ Priority order: Auth > Supabase > Sanity SSO > Vercel > Clockify Sunset > Time E
 - Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/hms-capacity-planning.md on 2026-04-18*

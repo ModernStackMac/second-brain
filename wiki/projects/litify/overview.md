@@ -1,4 +1,11 @@
-# Litify
+---
+aliases: [litify]
+type: project-overview
+project: litify
+---
+
+# Litify — Engagement Overview
+
 > Legal software company implementing Salesforce service agent for case triage, knowledge consolidation, and unified case resolution.
 
 ## Overview
@@ -46,4 +53,4 @@ Key stakeholders: Evan Markovich (Salesforce AE), Sarah Paulson (Data Cloud AE),
 - Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/litify.md on 2026-04-18*

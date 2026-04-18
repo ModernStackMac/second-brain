@@ -1,4 +1,11 @@
-# High Meadows MAI
+---
+aliases: [high-meadows-mai, mai, mai-crm-build]
+type: project-overview
+project: mai
+---
+
+# High Meadows MAI — Engagement Overview
+
 > Internal insurance SaaS product — case object configuration, Financial Services Cloud implementation, and UAT-driven feature backlog.
 
 ## Overview
@@ -48,7 +55,7 @@ Core team: Rodrigo Aguirre, Vincent Wang, Sean, Federico Nieto, Brian, Michael C
 - UAT expectations management ongoing
 
 ## Related Pages
-- [[hms-capacity-planning]] — sister internal product, time tracking/capacity planning
+- [[meadow]] — sister internal product, time tracking/capacity planning
 - [[cretelligent]] — parallel complex case object workflows and validation patterns
 - [[flex-dash]] — development paused to prioritize MAI
 - [[validation-rule-workaround]] — pattern used for Type field and other platform constraints
@@ -62,4 +69,4 @@ Core team: Rodrigo Aguirre, Vincent Wang, Sean, Federico Nieto, Brian, Michael C
 - Meeting Notes/High Meadows/Internal/2026-04-02 - Lefavi Weekly Call.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/high-meadows-mai.md on 2026-04-18*

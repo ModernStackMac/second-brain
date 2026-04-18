@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 /**
- * story-sync.js  (v4)
+ * story-sync.js  (v4.1)
  *
  * Pulls active stories from Linear (MSS + HM) and Jira (F2) and writes them to:
  *   - Second Brain/Action-Tracker.md (auto-sync section)
  *   - Second Brain/wiki/projects/{project-path}/stories-{ws}.md (per-project)
+ *
+ * v4.1 changes:
+ *   - PROJECT_SLUG_MAP: cetera → f2-cetera (aligns with clients→projects merge).
  *
  * v4 changes:
  *   - Filter covers Jira-native statuses (Internal QA, Developer Review, Review,
@@ -138,10 +141,11 @@ const PROJECT_SLUG_MAP = {
   'high-meadow-website':   'internal/high-meadow-website',
   'highmeadow-website':    'internal/high-meadow-website',
   'hm-website':            'internal/high-meadow-website',
-  // F2 client engagements — keep flat for now
+  // F2 client engagements — keep flat
   'mai-crm-build':         'mai',
   'mai':                   'mai',
-  'cetera':                'cetera',
+  'cetera':                'f2-cetera',
+  'f2-cetera':             'f2-cetera',
   'lnw':                   'lnw',
 };
 
@@ -457,7 +461,7 @@ async function main() {
     total_active: all.length,
     by_workspace: all.reduce((m, s) => ((m[s.workspace] = (m[s.workspace]||0)+1), m), {}),
     pruned,
-    version: 'v4-enriched-grouped',
+    version: 'v4.1-clients-merged',
   };
   console.log(JSON.stringify(summary, null, 2));
 }
@@ -465,7 +469,8 @@ async function main() {
 function parseEnvStories(envVar) {
   const raw = process.env[envVar];
   if (!raw) return [];
-  try { return JSON.parse(raw); } catch { return []; }
+  try { return JSON.parse(raw); } catch {}
+  return [];
 }
 
 if (require.main === module) main().catch(e => { log('FATAL', e.message); process.exit(1); });

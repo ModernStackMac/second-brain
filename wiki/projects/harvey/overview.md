@@ -1,4 +1,11 @@
-# Harvey
+---
+aliases: [harvey]
+type: project-overview
+project: harvey
+---
+
+# Harvey — Engagement Overview
+
 > Industrial manufacturing/distribution company leveraging Salesforce, ERP integration, and Claude for multi-intent email automation.
 
 ## Overview
@@ -53,4 +60,4 @@ Key stakeholders include Carl (VP Digital) and Kate (CRM Program Manager), who a
 - Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-10 · Merged from clients/harvey.md on 2026-04-18*

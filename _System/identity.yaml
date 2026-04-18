@@ -127,7 +127,8 @@ project_slug_map:
   # F2 client engagements — flat
   mai-crm-build:         mai
   mai:                   mai
-  cetera:                cetera
+  cetera:                f2-cetera
+  f2-cetera:             f2-cetera
   lnw:                   lnw
 
 paths:
