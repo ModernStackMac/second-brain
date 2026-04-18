@@ -1,14 +1,19 @@
 ---
 type: stories-sync
-project: mai
 workspace: F2
-synced_by: story-sync
-updated: 2026-04-18
+project:  MAI CRM Build
+updated: 2026-04-18T15:13:12.787Z
+story_count: 1
 ---
 
-# MAI — Active Stories (1)
+# F2 Stories —  MAI CRM Build
 
-_Last sync: 2026-04-18 · Source: Jira (f2strategy.atlassian.net) · Do not edit — regenerated each sync._
+> Auto-synced by story-sync. Do not edit by hand — changes are overwritten.
+> Each entry includes ticket link + status + 1-2 sentences of context + parent epic + latest activity.
 
 ## Developer Review
-- [F2-MAI-1278] Prospect Address Should Populate All Member Addresses by Default — [Status:: Developer Review] [Priority:: Medium] [Updated:: 2026-04-17] · parent: MAI-10 · [Jira](https://f2strategy.atlassian.net/browse/MAI-1278)
+
+- [MAI-1278](https://f2strategy.atlassian.net/browse/MAI-1278) — Prospect Address Should Populate All Member Addresses by Default `Medium` [Status:: Developer Review] [Priority:: Medium] [Updated:: 2026-04-17]
+    - **Context:** Address from the prospect record should populate all member addresses by default.  Address logic was previously updated but the prospect→member address flow needs verification and a dedicated ticket.  Source: Sales Process reconciliation, session 3/20, requirement 14.
+    - **Epic: [MAI-10] Sales Process**
+
