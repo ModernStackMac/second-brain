@@ -9,8 +9,9 @@ Stand8 serves as an intermediary between Modern Stack Systems and end clients, m
 **Current Engagements:**
 - [[harvey]] — Industrial manufacturing/distribution; Salesforce optimization and Agentforce implementation
 - [[nbcu]] — NBCUniversal; Agentforce POC for content distribution
-- [[f2-cetera]] — Financial services; case object migration
 - [[litify]] — Legal tech; service agent and Data Cloud implementation
+
+**Historical note:** Cetera (Project Keystone) used to route through Stand8 but is now under High Meadows. See [[cetera/context]].
 
 **Key Contacts:**
 - Ryan Ridinger
@@ -21,14 +22,12 @@ Stand8 serves as an intermediary between Modern Stack Systems and end clients, m
 - [[modern-stack-systems]] — MSS consulting practice; Stand8 is primary partner channel
 - [[harvey]] — Stand8 client; manufacturing
 - [[nbcu]] — Stand8 client; media/entertainment
-- [[f2-cetera]] — Stand8 client; financial services
 - [[litify]] — Stand8 client; legal tech
 
 ## Sources
 - Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop.md
 - Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md
-- Meeting Notes/Stand8/F2-Cetera/2026-04-08 - Quick Sync - F2 Connor.md
 - Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-18*

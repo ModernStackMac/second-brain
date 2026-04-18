@@ -38,10 +38,9 @@ short mode
 ```
 
 ## In progress
-
 ```tasks
 not done
-(tags include #in-progress) OR (status.name = "In Progress")
+[tags include #in-progress] OR [status.name includes In Progress]
 sort by priority
 short mode
 ```

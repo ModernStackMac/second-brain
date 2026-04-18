@@ -50,9 +50,9 @@ updated: 2026-04-18
 - [ ] Fix Services tile number color contrast — inspector flagged numbers + top-border green as same color despite visible difference [Owner:: Mac] [Project:: meadow] [Status:: Open] [Source:: manual] [Date:: 2026-04-17]
 - [ ] Align Insights page section labels with home page (Activity/News, Thought Leadership) [Owner:: Mac] [Project:: meadow] [Status:: Open] [Source:: manual] [Date:: 2026-04-17]
 
-### F2-Cetera
-- [ ] Deploy approved UAT changes from the prospect work [Owner:: Mac] [Project:: f2-cetera] [Status:: Open] [Source:: manual] [Date:: 2026-04-16]
-- [ ] Continue affiliate onboarding + growth engine design with June; circle back with Connor on the two approaches (TRPG-preserving with CRPS records vs. APP-style multiple opportunities) [Owner:: Mac] [Project:: f2-cetera] [Status:: Open] [Source:: manual] [Date:: 2026-04-16]
+### Cetera
+- [ ] Deploy approved UAT changes from the prospect work [Owner:: Mac] [Project:: cetera] [Status:: Open] [Source:: manual] [Date:: 2026-04-16]
+- [ ] Continue affiliate onboarding + growth engine design with June; circle back with Connor on the two approaches (TRPG-preserving with CRPS records vs. APP-style multiple opportunities) [Owner:: Mac] [Project:: cetera] [Status:: Open] [Source:: manual] [Date:: 2026-04-16]
 
 ---
 
@@ -67,18 +67,18 @@ _Last synced: 2026-04-18T18:51:01.000Z._ Do not edit rows in this block — they
 - [ ] [MAI-1278](https://f2strategy.atlassian.net/browse/MAI-1278) — Prospect Address Should Populate All Member Addresses by Default — _Address from the prospect record should populate all member addresses by default._ [Owner:: Mac] [Project:: mai] [Status:: Developer Review] [Priority:: Medium] [Ticket:: MAI-1278] [Source:: jira] [Date:: 2026-04-17]
 
 #### Cetera
-- [ ] [CET-120](https://f2strategy.atlassian.net/browse/CET-120) — Tax Return RT swap on Case — _Create TaxReturn Record Type on Case._ [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-120] [Source:: jira] [Date:: 2026-04-17]
-- [ ] [CET-113](https://f2strategy.atlassian.net/browse/CET-113) — Add picklist values to Help Desk and NAS [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-113] [Source:: jira] [Date:: 2026-04-17]
-- [ ] [CET-112](https://f2strategy.atlassian.net/browse/CET-112) — Create new fields on New_Account_Setup__c [Owner:: Mac] [Project:: f2-cetera] [Status:: Internal QA] [Priority:: Medium] [Ticket:: CET-112] [Source:: jira] [Date:: 2026-04-17]
-- [ ] [CET-111](https://f2strategy.atlassian.net/browse/CET-111) — Create new fields on TRPG_Help_Desk__c — _40 new fields, 6 formulas, and 5 migration tracking fields on TRPGHelpDeskc._ [Owner:: Mac] [Project:: f2-cetera] [Status:: Internal QA] [Priority:: Medium] [Ticket:: CET-111] [Source:: jira] [Date:: 2026-04-16]
-- [ ] [CET-110](https://f2strategy.atlassian.net/browse/CET-110) — Case / TRPG Work Desk Alignment (Epic) [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-110] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-119](https://f2strategy.atlassian.net/browse/CET-119) — Configure List Views, Queues, and Permissions [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-119] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-118](https://f2strategy.atlassian.net/browse/CET-118) — Configure Lightning Page layouts [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-118] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-116](https://f2strategy.atlassian.net/browse/CET-116) — Build Help Desk automation flows [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-116] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-115](https://f2strategy.atlassian.net/browse/CET-115) — Replicate validation rules [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-115] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-117](https://f2strategy.atlassian.net/browse/CET-117) — Build Transfer auto-creation flow from Financial Account [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-117] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-114](https://f2strategy.atlassian.net/browse/CET-114) — Build NAS Trade Request automation flows [Owner:: Mac] [Project:: f2-cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-114] [Source:: jira] [Date:: 2026-04-13]
-- [ ] [CET-4](https://f2strategy.atlassian.net/browse/CET-4) — Configure the custom package that drives the integration to Advice Works (Hold off on Creating until First Full Sandbox is set up) [Owner:: Mac] [Project:: f2-cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-4] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-120](https://f2strategy.atlassian.net/browse/CET-120) — Tax Return RT swap on Case — _Create TaxReturn Record Type on Case._ [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-120] [Source:: jira] [Date:: 2026-04-17]
+- [ ] [CET-113](https://f2strategy.atlassian.net/browse/CET-113) — Add picklist values to Help Desk and NAS [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-113] [Source:: jira] [Date:: 2026-04-17]
+- [ ] [CET-112](https://f2strategy.atlassian.net/browse/CET-112) — Create new fields on New_Account_Setup__c [Owner:: Mac] [Project:: cetera] [Status:: Internal QA] [Priority:: Medium] [Ticket:: CET-112] [Source:: jira] [Date:: 2026-04-17]
+- [ ] [CET-111](https://f2strategy.atlassian.net/browse/CET-111) — Create new fields on TRPG_Help_Desk__c — _40 new fields, 6 formulas, and 5 migration tracking fields on TRPGHelpDeskc._ [Owner:: Mac] [Project:: cetera] [Status:: Internal QA] [Priority:: Medium] [Ticket:: CET-111] [Source:: jira] [Date:: 2026-04-16]
+- [ ] [CET-110](https://f2strategy.atlassian.net/browse/CET-110) — Case / TRPG Work Desk Alignment (Epic) [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-110] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-119](https://f2strategy.atlassian.net/browse/CET-119) — Configure List Views, Queues, and Permissions [Owner:: Mac] [Project:: cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-119] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-118](https://f2strategy.atlassian.net/browse/CET-118) — Configure Lightning Page layouts [Owner:: Mac] [Project:: cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-118] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-116](https://f2strategy.atlassian.net/browse/CET-116) — Build Help Desk automation flows [Owner:: Mac] [Project:: cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-116] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-115](https://f2strategy.atlassian.net/browse/CET-115) — Replicate validation rules [Owner:: Mac] [Project:: cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-115] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-117](https://f2strategy.atlassian.net/browse/CET-117) — Build Transfer auto-creation flow from Financial Account [Owner:: Mac] [Project:: cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-117] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-114](https://f2strategy.atlassian.net/browse/CET-114) — Build NAS Trade Request automation flows [Owner:: Mac] [Project:: cetera] [Status:: To Do] [Priority:: Medium] [Ticket:: CET-114] [Source:: jira] [Date:: 2026-04-13]
+- [ ] [CET-4](https://f2strategy.atlassian.net/browse/CET-4) — Configure the custom package that drives the integration to Advice Works (Hold off on Creating until First Full Sandbox is set up) [Owner:: Mac] [Project:: cetera] [Status:: In Progress] [Priority:: Medium] [Ticket:: CET-4] [Source:: jira] [Date:: 2026-04-13]
 
 #### LNW
 - [ ] [LNW-192](https://f2strategy.atlassian.net/browse/LNW-192) — Part 4: Visibility Enhancements POC - UI and UX Enablement [Owner:: Mac] [Project:: lnw] [Status:: Review] [Priority:: Medium] [Ticket:: LNW-192] [Source:: jira] [Date:: 2026-04-06]
@@ -132,5 +132,7 @@ _Last sync: 2026-04-18 — 17 active F2 stories (MAI 1 · Cetera 12 · LNW 4) ·
 - [x] Confirm stop process requirements for ticket 1269 and create follow-up ticket [Owner:: Mac] [Project:: mai] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
 - [x] Fix picklist value for ticket 958 (Tamarack Trading Support → operations trading) [Owner:: Mac] [Project:: mai] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
 - [x] Sync with Federico on datetime validation ticket 1200 [Owner:: Mac] [Project:: mai] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
-- [x] Get new Advice Works sandbox credentials from product owner [Owner:: Connor] [Project:: f2-cetera] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
-- [x] Identify sandbox users to deactivate for Brady's access [Owner:: Connor] [Project:: f2-cetera] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
+- [x] Get new Advice Works sandbox credentials from product owner [Owner:: Connor] [Project:: cetera] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
+- [x] Identify sandbox users to deactivate for Brady's access [Owner:: Connor] [Project:: cetera] [Status:: Done] [Source:: manual] [Date:: 2026-04-13] ✅ 2026-04-13
+
+---

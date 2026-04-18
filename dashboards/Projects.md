@@ -1,4 +1,3 @@
-# Projects Dashboard
 ---
 type: dashboard
 updated: 2026-04-18
@@ -8,30 +7,48 @@ updated: 2026-04-18
 
 > Per-project health, open actions, recent decisions, synced stories.
 
----
-
 ## Per-project health cards
 
 > [!tip] Health rules
 > 🟢 journal updated <7d AND no urgent overdue actions  ·  🟡 journal 7–14d OR 1–2 urgent  ·  🔴 journal >14d OR 3+ urgent overdue
 
-### CREtelligent
+### Cetera
 ```dataview
 TABLE WITHOUT ID file.mtime as "Journal updated"
-FROM "Second Brain/wiki/projects/cretelligent"
+FROM "Second Brain/wiki/projects/cetera"
 WHERE file.name = "journal"
 ```
 **Open actions**
 ```dataview
 TASK
 FROM "Second Brain/Action-Tracker"
-WHERE !completed AND contains(Project, "cretelligent")
+WHERE !completed AND contains(Project, "cetera")
 SORT Date ASC
 ```
 **Stories**
 ```dataview
 TABLE WITHOUT ID file.link as "Source", story_count as "Count", updated as "Last sync"
-FROM "Second Brain/wiki/projects/cretelligent"
+FROM "Second Brain/wiki/projects/cetera"
+WHERE type = "stories-sync"
+```
+
+### LNW
+```dataview
+TABLE WITHOUT ID file.mtime as "Journal updated"
+FROM "Second Brain/wiki/projects/lnw"
+WHERE file.name = "journal"
+```
+**Open actions**
+```dataview
+TASK
+FROM "Second Brain/Action-Tracker"
+WHERE !completed AND contains(Project, "lnw")
+SORT Date ASC
+```
+**Stories**
+```dataview
+TABLE WITHOUT ID file.link as "Source", story_count as "Count", updated as "Last sync"
+FROM "Second Brain/wiki/projects/lnw"
 WHERE type = "stories-sync"
 ```
 
@@ -55,57 +72,17 @@ FROM "Second Brain/wiki/projects/mai"
 WHERE type = "stories-sync"
 ```
 
-### F2-Cetera
+### CREtelligent
 ```dataview
 TABLE WITHOUT ID file.mtime as "Journal updated"
-FROM "Second Brain/wiki/projects/f2-cetera"
+FROM "Second Brain/wiki/projects/cretelligent"
 WHERE file.name = "journal"
 ```
 **Open actions**
 ```dataview
 TASK
 FROM "Second Brain/Action-Tracker"
-WHERE !completed AND contains(Project, "f2-cetera")
-SORT Date ASC
-```
-**Stories**
-```dataview
-TABLE WITHOUT ID file.link as "Source", story_count as "Count", updated as "Last sync"
-FROM "Second Brain/wiki/projects/f2-cetera"
-WHERE type = "stories-sync"
-```
-
-### Meadow (HMS Capacity Planning)
-```dataview
-TABLE WITHOUT ID file.mtime as "Journal updated"
-FROM "Second Brain/wiki/projects/meadow"
-WHERE file.name = "journal"
-```
-**Open actions**
-```dataview
-TASK
-FROM "Second Brain/Action-Tracker"
-WHERE !completed AND contains(Project, "meadow")
-SORT Date ASC
-```
-**Stories**
-```dataview
-TABLE WITHOUT ID file.link as "Source", story_count as "Count", updated as "Last sync"
-FROM "Second Brain/wiki/projects/meadow"
-WHERE type = "stories-sync"
-```
-
-### Litify
-```dataview
-TABLE WITHOUT ID file.mtime as "Journal updated"
-FROM "Second Brain/wiki/projects/litify"
-WHERE file.name = "journal"
-```
-**Open actions**
-```dataview
-TASK
-FROM "Second Brain/Action-Tracker"
-WHERE !completed AND contains(Project, "litify")
+WHERE !completed AND contains(Project, "cretelligent")
 SORT Date ASC
 ```
 
@@ -123,6 +100,49 @@ WHERE !completed AND contains(Project, "harvey")
 SORT Date ASC
 ```
 
+### Litify
+```dataview
+TABLE WITHOUT ID file.mtime as "Journal updated"
+FROM "Second Brain/wiki/projects/litify"
+WHERE file.name = "journal"
+```
+**Open actions**
+```dataview
+TASK
+FROM "Second Brain/Action-Tracker"
+WHERE !completed AND contains(Project, "litify")
+SORT Date ASC
+```
+
+### NBCU
+```dataview
+TABLE WITHOUT ID file.mtime as "Journal updated"
+FROM "Second Brain/wiki/projects/nbcu"
+WHERE file.name = "journal"
+```
+**Open actions**
+```dataview
+TASK
+FROM "Second Brain/Action-Tracker"
+WHERE !completed AND contains(Project, "nbcu")
+SORT Date ASC
+```
+
+### Internal (Meadow · Flex-Dash · Website)
+```dataview
+TABLE WITHOUT ID file.folder as "Sub-project", file.mtime as "Journal updated"
+FROM "Second Brain/wiki/projects/internal"
+WHERE file.name = "journal"
+SORT file.mtime DESC
+```
+**Open actions**
+```dataview
+TASK
+FROM "Second Brain/Action-Tracker"
+WHERE !completed AND (contains(Project, "meadow") OR contains(Project, "flex-dash") OR contains(Project, "high-meadow-website"))
+SORT Date ASC
+```
+
 ---
 
 ## All active projects (last journal update)
@@ -131,14 +151,6 @@ TABLE file.mtime as "Last Updated"
 FROM "Second Brain/wiki/projects"
 WHERE file.name = "journal"
 SORT file.mtime DESC
-```
-
-## All open actions by project
-```dataview
-TASK
-FROM "Second Brain/Action-Tracker"
-WHERE !completed
-GROUP BY Project
 ```
 
 ## Recent decisions
@@ -161,32 +173,10 @@ SORT Date DESC
 LIMIT 10
 ```
 
-## Project context pages (last updated)
+## Project context pages
 ```dataview
 TABLE file.mtime as "Last Updated"
 FROM "Second Brain/wiki/projects"
 WHERE file.name = "context"
-SORT file.mtime DESC
-```
-
-## Project documents (raw)
-```dataview
-TABLE file.ctime as "Added", file.folder as "Project"
-FROM "Second Brain/raw/projects"
-SORT file.ctime DESC
-LIMIT 15
-```
-
-## Patterns library
-```dataview
-TABLE file.mtime as "Last Updated"
-FROM "Second Brain/wiki/patterns"
-SORT file.mtime DESC
-```
-
-## Tools & platforms
-```dataview
-TABLE file.mtime as "Last Updated"
-FROM "Second Brain/wiki/tools"
 SORT file.mtime DESC
 ```

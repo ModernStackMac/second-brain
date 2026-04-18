@@ -1,7 +1,7 @@
 ---
-aliases: [f2-cetera, cetera]
+aliases: "[cetera, f2-cetera, f2/cetera]"
 type: project-overview
-project: f2-cetera
+project: cetera
 ---
 
 # F2/Cetera — Engagement Overview

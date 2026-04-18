@@ -25,7 +25,6 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - Built AI applications on Salesforce platform including multi-model chatbot selection
 - Hands-on experience with Claude API, OpenRouter, and OpenAI APIs for agentic frameworks
 - Deep knowledge of custom AI development on Salesforce vs. native Agentforce capabilities
-- Published understanding of architectural differences between AI models within Agent Force vs. standalone custom AI
 
 **Recruiting Activity:**
 - Received opportunity from recruiter Brittany Fetzner for Salesforce QA/Dev contract role
@@ -35,28 +34,22 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 **AI Workflow & Tooling** (2026-04-10)
 - Full AI workflow in production: Claude Desktop for meeting transcription/summarization, second brain system for file analysis, morning briefing pulling from Salesforce AI/news/email highlights, QuickBooks connector for weekly summaries
 - Upgraded to $200/month Claude plan
-- Discussion on AI impact: entry-level coding at risk but experience still critical for debugging and compliance
 
 **Peer Network:**
-- [[domatz-victor]] — Peer consultant, ABL Consulting connection. On Saterra project with Trevor but getting limited assignments despite project urgency.
+- [[domatz-victor]] — Peer consultant, ABL Consulting connection. On Saterra project with Trevor.
 - Bradyl (ABL Consulting) — Peer contact for recurring sync calls
 
 **Financial Updates** (2026-04-10)
 - Maz paid Mac $30k on April 8
 - Domatz still waiting on $300 January invoice (Equifi Advisors/Optima follow-on work)
 
-**Culture Notes** (via peer sync)
-- Sean told Mac to "shut up" during a company call after Mac demoed time tracking app locally
-- Brian pushing aggressive product development including Outlook email extraction app and packaging Claude Desktop demos as client products
-- Catherine micromanaging website copy line-by-line during concept meetings
-
 ## Related Pages
 - [[stand8]] — Partner firm; primary engagement channel
 - [[stitch]] — Partner firm; secondary engagement channel
-- [[high-meadows]] — Direct client; insurance/SaaS
+- [[high-meadows]] — Direct client; insurance/SaaS. Routes Cetera + LNW via F2 Strategy.
 - [[harvey]] — Stand8 client; manufacturing
 - [[nbcu]] — Stand8 client; media/entertainment
-- [[f2-cetera]] — Stand8 client; financial services
+- [[cetera/context]] — High Meadows client; financial services (Project Keystone)
 - [[litify]] — Stand8 client; legal tech
 - [[cretelligent]] — Stitch client; commercial real estate
 - [[claude-ai]] — Primary AI tool across all engagements
@@ -67,4 +60,4 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-18*

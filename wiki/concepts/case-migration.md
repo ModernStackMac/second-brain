@@ -2,7 +2,7 @@
 > The process of consolidating case objects and related data across Salesforce implementations, including field mapping, record type alignment, and validation rule review.
 
 ## Overview
-Case migration is a common challenge in Salesforce implementations when consolidating multiple custom objects into the standard Case object, or migrating case data between instances. The F2/Cetera engagement shows a realistic picture: field analysis is straightforward, but record type complexity and validation rules can create significant blockers during UAT if not carefully planned.
+Case migration is a common challenge in Salesforce implementations when consolidating multiple custom objects into the standard Case object, or migrating case data between instances. The Cetera engagement shows a realistic picture: field analysis is straightforward, but record type complexity and validation rules can create significant blockers during UAT if not carefully planned.
 
 The key is breaking the work into phases: identify field gaps, map record types, review validation rules, and only then build automation. Metadata creation and data mapping typically complete before complex automation logic.
 
@@ -42,12 +42,12 @@ The key is breaking the work into phases: identify field gaps, map record types,
 - Phase 4: UAT and sign-off
 
 ## Related Pages
-- [[f2-cetera]] — engagement context and client
-- [[stand8]] — consulting partner
+- [[cetera/context]] — engagement context and client
+- [[high-meadows]] — consulting partner
 - [[validation-rule-workaround]] — handling validation rule blockers during migration
 
 ## Sources
-- Meeting Notes/Stand8/F2-Cetera/2026-04-08 - Quick Sync - F2 Connor.md
+- Meeting Notes/High Meadows/Cetera/2026-04-08 - Quick Sync - F2 Connor.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-18*

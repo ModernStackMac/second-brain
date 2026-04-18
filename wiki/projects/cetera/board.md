@@ -1,8 +1,12 @@
 ---
 kanban-plugin: basic
 type: project-board
-project: f2-cetera
-tags: [kanban, project, f2, cetera]
+project: cetera
+tags:
+  - kanban
+  - project
+  - f2
+  - cetera
 synced_by: story-sync
 updated: 2026-04-18
 ---

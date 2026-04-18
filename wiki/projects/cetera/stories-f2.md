@@ -1,6 +1,6 @@
 ---
 type: stories-sync
-project: f2-cetera
+project: cetera
 workspace: F2
 synced_by: story-sync
 updated: 2026-04-18
