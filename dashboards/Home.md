@@ -13,7 +13,7 @@ updated: 2026-04-18
 
 ```dataview
 TABLE WITHOUT ID file.link AS "Daily note"
-FROM "Second Brain/raw/daily"
+FROM "Second Brain/daily"
 WHERE file.name = dateformat(date(today), "yyyy-MM-dd")
 ```
 

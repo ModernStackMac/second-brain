@@ -576,3 +576,19 @@ SORT last_meeting DESC
 ```
 
 This is what Make.md would render anyway — just without the inline-editing UI.
+
+
+---
+
+## Update 2026-04-18 — Daily notes moved out of `raw/`
+
+Daily notes now live at `Second Brain/daily/YYYY-MM-DD.md` instead of `Second Brain/raw/daily/YYYY-MM-DD.md`. `raw/` is reserved for immutable source material the ingest pipeline may scan; daily notes are ephemeral working pages and belong in a sibling folder.
+
+If you're setting up a peer vault from this guide, substitute `Second Brain/daily/` anywhere this guide says `Second Brain/raw/daily/`. This affects:
+
+- Obsidian **Core → Daily notes** folder setting
+- **Templater → Folder templates** mapping for the daily-note template
+- **Calendar plugin** daily note creation (inherits the core Daily notes folder)
+- The `daily-note-builder` scheduled task
+
+Everything else in this guide still applies. See `SYSTEM-GUIDE.md` Updates 2026-04-18e for the full change note.

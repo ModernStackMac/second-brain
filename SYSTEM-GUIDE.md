@@ -508,3 +508,38 @@ SORT last_meeting DESC
 ```
 
 If the Make.md UI path isn't obvious, skip it.
+
+
+---
+
+## Updates (2026-04-18e) — Daily notes moved out of `raw/`
+
+Daily notes now live at **`Second Brain/daily/YYYY-MM-DD.md`** (not `Second Brain/raw/daily/`). Rationale: `raw/` is reserved for immutable source material that the ingest pipeline may scan. Daily notes are ephemeral working pages — hosting them under `raw/` was fragile (any future ingest-scope change could have pulled them in).
+
+### What changed
+
+| Path reference | Old | New |
+| --- | --- | --- |
+| Daily note location | `Second Brain/raw/daily/YYYY-MM-DD.md` | `Second Brain/daily/YYYY-MM-DD.md` |
+| Daily notes folder (Obsidian core plugin) | `Second Brain/raw/daily/` | `Second Brain/daily/` |
+| Templater folder template mapping | `Second Brain/raw/daily/` → `daily-note.md` | `Second Brain/daily/` → `daily-note.md` |
+| Calendar plugin "Create daily note" location | `Second Brain/raw/daily/` | `Second Brain/daily/` |
+| Template yesterday-rollover dataview | `FROM "Second Brain/raw/daily/{yesterday}"` | `FROM "Second Brain/daily/{yesterday}"` |
+| `dashboards/Home.md` "Today's daily note" dataview | `FROM "Second Brain/raw/daily"` | `FROM "Second Brain/daily"` |
+
+### Files updated in this pass
+
+- `Second Brain/raw/templates/daily-note.md` — yesterday-rollover path corrected
+- `Second Brain/dashboards/Home.md` — "Today's daily note" dataview query corrected
+- `Second Brain/daily/2026-04-18.md` — existing daily note relocated from `raw/daily/`
+- Scheduled task `daily-note-builder` — description + prompt updated to write to `Second Brain/daily/`
+
+### Obsidian settings to re-confirm manually
+
+1. **Core → Daily notes** → Folder: `Second Brain/daily/` (was `Second Brain/raw/daily/`)
+2. **Templater → Folder templates** → map `Second Brain/daily/` → `daily-note.md` (remove the old `raw/daily/` mapping)
+3. **Calendar plugin** → picks up the core Daily notes setting; no separate change needed
+
+### Supersedes prior update sections
+
+Any references to `Second Brain/raw/daily/` in Updates 2026-04-18b (Calendar + Kanban + Tasks) and 2026-04-18c (Templater) are superseded by this note. The canonical daily-note path going forward is `Second Brain/daily/`.

@@ -110,7 +110,7 @@ short mode
 ## Unfinished from yesterday
 
 ```dataview
-TASK FROM "Second Brain/raw/daily/<% yesterday %>"
+TASK FROM "Second Brain/daily/<% yesterday %>"
 WHERE !completed
 ```
 
