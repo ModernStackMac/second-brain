@@ -547,3 +547,32 @@ Slot these into the existing plan:
 | `Second Brain/dashboards/Action-Review.md` | Weekly triage view |
 | `Second Brain/wiki/projects/{slug}/board.md` | Per-project kanban (auto-written by story-sync) |
 | `Second Brain/raw/daily/YYYY-MM-DD.md` | Daily notes (auto-built weekday 6am) |
+
+
+---
+
+## Correction (2026-04-18)
+
+### wiki/clients/ merged into wiki/projects/
+
+The earlier guide mentioned a separate `wiki/clients/` folder and a "Clients Space" in Make.md. That split proved redundant — projects is the single hub now. Any setup step referencing clients as a distinct folder can be ignored; use `wiki/projects/` for everything.
+
+### Make.md setup is version-dependent
+
+"Convert to Space" is the older UI label. Newer Make.md releases use "Add Context", "Set as Database", or require creating the space from the `+` button in the Make.md sidebar. Try in order:
+
+1. Click `wiki/projects/` in the **Make.md sidebar** (not standard file tree). Look for a Context / properties / settings affordance.
+2. Right-click the folder. Look for Convert to Space / Add Context / Edit Folder Properties.
+3. Command palette (`Cmd+P`) → type "Make" → scan for "Create Context" or similar.
+4. Use the `+` at the top of the Make.md sidebar to create a new space pointed at `wiki/projects/`.
+
+If none work, **skip Make.md**. Dataview on your Home dashboard already gives you a sortable projects table:
+
+```dataview
+TABLE status, owner, priority, last_meeting, open_actions
+FROM "Second Brain/wiki/projects"
+WHERE file.name = "journal"
+SORT last_meeting DESC
+```
+
+This is what Make.md would render anyway — just without the inline-editing UI.

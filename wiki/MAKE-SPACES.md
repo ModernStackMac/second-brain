@@ -5,67 +5,71 @@ tags: [meta, makemd]
 
 # Make.md Spaces — Second Brain Configuration
 
-> Make.md ("Makemd") overlays folder-level database views on top of your markdown. We use it selectively — Dataview already handles queries, Tasks handles task surfacing, Kanban handles boards. Make.md fills one specific gap: **property-driven folder hubs** where every file in a folder has consistent fields.
+> Make.md overlays folder-level database views on top of your markdown. We use it for **one thing**: a property-driven Projects hub. Everything else (queries, tasks, boards) is already handled by Dataview, Tasks, and Kanban.
 
-## Where Make.md adds value (and where it doesn't)
+## What we use Make.md for
 
-| Use Make.md for | Don't use Make.md for |
-| --- | --- |
-| Project hub view at `wiki/projects/` — see all projects at once with status, owner, last update, open count | Task queries — Tasks plugin is simpler |
-| Client hub view at `wiki/clients/` — sortable, filterable roster | Dashboards — Dataview is already wired up |
-| Flow blocks on project pages (embed the kanban inline) | Meeting notes — frontmatter + Dataview is enough |
-| Inline property editing (change a status field from the list view) | Anything Templater-driven |
+**Projects hub** at `wiki/projects/` — see every project at once with status, owner, last update, open count. Sort and filter without writing Dataview queries.
 
-## Recommended Spaces
+That's it. `wiki/clients/` was merged into projects — one hub, not two.
 
-### 1. Projects Space — `wiki/projects/`
+## Setup (version-agnostic)
 
-Set up in the Make.md sidebar:
+Make.md's UI has changed across releases — "Convert to Space", "Add Context", and "Set as Database" have all been the same feature at different times. The underlying mechanism is always: **add a Context (property schema) to the folder, then Make.md renders a database view**.
 
-1. Right-click `wiki/projects/` → "Convert to Space"
-2. Add properties (these map to frontmatter on each `journal.md`):
-   - `status` (option: active, paused, complete, discovery)
-   - `owner` (text)
-   - `client` (link — picks from `wiki/clients/`)
-   - `last_meeting` (date — computed from most-recent meeting note)
-   - `open_actions` (number — computed)
-3. Default view: **Table**, sorted by `last_meeting` desc
-4. Additional view: **Card**, grouped by `status`
+Try these in order — one will work depending on your Make.md version:
 
-### 2. Clients Space — `wiki/clients/`
+1. Click on `wiki/projects/` in the **Make.md sidebar** (left panel, not the standard Obsidian file tree). Look at the bottom or right of the folder view — there should be a "Context" button, a "+" for properties, or a settings gear. Add properties.
 
-1. Right-click `wiki/clients/` → "Convert to Space"
-2. Properties:
-   - `tier` (option: strategic, growth, maintenance)
-   - `primary_contact` (text)
-   - `last_touched` (date)
-   - `engagement_status` (option: active, paused, sunset)
-3. Default view: **Table**
-4. Additional view: **Board**, grouped by `tier`
+2. Right-click `wiki/projects/` in either the Make.md sidebar or standard file tree. Look for: "Convert to Space", "Add Context", "Edit Folder Properties", "Set as Database". Whichever you find is the right one.
 
-### 3. Actions Space (optional) — `Second Brain/Action-Tracker.md` as a data source
+3. Open `wiki/projects/` itself as a folder note (Make.md lets you click into a folder and treat it as a page). From that page, the property panel at the top lets you define fields for all children.
 
-Make.md can treat the Action-Tracker as a table if you prefer editing it in a grid. Use with caution — the AUTO-SYNC block is machine-written and will overwrite manual edits on the next `story-sync` run. Recommend: use Make.md for the manual `## Open` sections only, leave AUTO-SYNC as plain markdown.
+4. Last resort — the **command palette**: `Cmd+P` → type "Make" and scan the available commands. "Make: Create Context in current folder" or similar is what you want.
 
-## Flow blocks
+If none of the above work, the version you have may require spaces to be created via the "+" at the top of the Make.md sidebar. Point the new space at `Second Brain/wiki/projects/`.
 
-Make.md's Flow feature lets you embed one note inside another. Useful for:
+## Properties to add
 
-- Embedding a project's `board.md` kanban at the top of its `journal.md` so you see the board without switching pages
-- Embedding the `Today` dashboard in your daily note's frontmatter area
+Whatever UI you end up using, add these properties to the space/context:
 
-Syntax: `![[board]]` (standard embed) renders via Flow if Make.md is enabled.
+| Property | Type | Who writes it |
+| --- | --- | --- |
+| `status` | Option: active, paused, complete, discovery | You |
+| `owner` | Text | You |
+| `last_meeting` | Date | `second-brain-ingest` scheduled task |
+| `open_actions` | Number | `weekly-action-review` scheduled task |
+| `priority` | Option: p0, p1, p2, p3 | You |
 
-## Conflict avoidance
+Default view: **Table**, sorted by `last_meeting` desc. Add a second view as **Card** grouped by `status` if you like the visual.
 
-- **Frontmatter ownership:** if Make.md writes a property, it owns that frontmatter key. Don't have Templater templates or scheduled tasks write the same key — pick one. Make.md wins for user-editable status/owner/tier fields; scheduled tasks own `updated`, `last_meeting`, `open_actions` (computed).
-- **Tasks vs Actions Space:** never have Make.md convert `Second Brain/raw/` or any ingest-source folder. Only convert curated wiki folders.
-- **Index files:** if a folder has an `index.md`, Make.md treats it as the space description. Keep those short — long content in index files makes the Make.md list view render slowly.
+## Keeping frontmatter in sync
 
-## Setup checklist
+For Make.md to populate properties on existing project journals, each `wiki/projects/{slug}/journal.md` needs those frontmatter keys. If they're missing, Make.md shows empty cells.
 
-- [ ] Convert `wiki/projects/` to Space with properties above
-- [ ] Convert `wiki/clients/` to Space with properties above
-- [ ] Add `![[board]]` embed to each `wiki/projects/{slug}/journal.md`
-- [ ] Decide whether to convert Action-Tracker (recommend: skip for now)
-- [ ] Run a `kb-lint-now` pass afterward to catch any frontmatter conflicts
+One-time backfill (ask Claude):
+
+> "For each `wiki/projects/*/journal.md`, add `status: active`, `owner: Mac`, and `priority: p2` to the frontmatter if those keys are missing. Don't overwrite existing values."
+
+After that, scheduled tasks maintain `last_meeting` and `open_actions` automatically.
+
+## What NOT to convert
+
+- `raw/` — source material, not curated
+- `Meeting Notes/` — scheduled-task territory, would fight for frontmatter
+- `dashboards/` — Dataview already queries these, no need for Make.md overlay
+- `Action-Tracker.md` — single file, not a folder
+- `wiki/entities/`, `wiki/concepts/`, `wiki/patterns/`, `wiki/tools/`, `wiki/topics/` — too diverse for a single property schema; leave as plain markdown
+
+## If you can't find the right UI
+
+Make.md is optional. Everything you see in Dataview dashboards already covers the "sortable table of projects" use case. Skip Make.md entirely and the system works.
+
+If you want the Dataview equivalent of what Make.md would show, this query on `Home.md` gives the same view:
+
+```dataview
+TABLE status, owner, priority, last_meeting, open_actions
+FROM "Second Brain/wiki/projects"
+WHERE file.name = "journal"
+SORT last_meeting DESC
+```

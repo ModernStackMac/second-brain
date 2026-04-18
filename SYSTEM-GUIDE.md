@@ -484,3 +484,27 @@ Conflict avoidance: Make.md owns user-editable frontmatter keys (status, owner, 
 | `Second Brain/wiki/MAKE-SPACES.md` | Make.md space configuration reference |
 | `Second Brain/raw/templates/quick-capture.md` | Interactive Templater capture template |
 | `Second Brain/raw/templates/daily-note.md` | Rewritten for Templater (dynamic date functions) |
+
+
+---
+
+## Updates (2026-04-18d) — Corrections
+
+### Clients merged into Projects
+
+`wiki/clients/` does not exist as a separate folder — it was merged into `wiki/projects/`. Any earlier references to a "Clients Space" or `wiki/clients/` in this guide or `PEER-SETUP-GUIDE.md` are stale. Projects is the single hub.
+
+### Make.md UI varies by version
+
+The "Convert to Space" action referenced earlier may not appear depending on your Make.md version. The feature exists under different names across releases: "Convert to Space", "Add Context", "Set as Database". See the updated `wiki/MAKE-SPACES.md` for version-agnostic setup paths.
+
+Make.md is optional. The Dataview query below on `Home.md` gives the same sortable-project-table view without Make.md:
+
+```dataview
+TABLE status, owner, priority, last_meeting, open_actions
+FROM "Second Brain/wiki/projects"
+WHERE file.name = "journal"
+SORT last_meeting DESC
+```
+
+If the Make.md UI path isn't obvious, skip it.
