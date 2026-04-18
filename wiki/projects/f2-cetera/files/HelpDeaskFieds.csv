@@ -1,0 +1,57 @@
+Field API Name,Data Type
+Contact__c,Lookup(Contact)
+Parent_Firm__c,Lookup(Account)
+APP_RPS_Plan__c,Lookup(APP_RPS_Plan__c)
+APP_Participant_Name__c,Text(255)
+APP_Custodian_Service_Request_Number__c,Text(40)
+NIGO_Start_Date__c,Date
+NIGO_End_Date__c,Date
+Participant_Verification_Status_Start_Da__c,Date
+Participant_Verification_Status_End_Date__c,Date
+Pending_Sponsor_Verification_Start_Date__c,Date
+Pending_Sponsor_Verification_End_Date__c,Date
+Assigned_to_MM_Queue__c,Datetime
+Case_Set_to_NIGO__c,Datetime
+Case_Submitted_to_Custodian__c,Datetime
+ETA_Updated__c,Datetime
+APP_Gross_Amount__c,"Currency(18,2)"
+Federal__c,"Percent(18,0)"
+State__c,"Percent(18,0)"
+APP_Check_Money_Link__c,Checkbox
+APP_Journal__c,Checkbox
+APP_Check_Number__c,Text(10)
+APP_Check_Date__c,Date
+APP_Submission_Type__c,Picklist (Paper; Digital)
+APP_Contribution_Amount__c,"Currency(18,2)"
+Fee_Review_Result__c,Picklist (Increase; Reduction; No Change)
+Fee_Change_Effective_Date__c,Date
+Are_Fees_Excluded__c,Checkbox
+Fee_Exclusion_Details__c,Long Text Area(32768)
+APP_Transferring_From__c,Text(255)
+APP_TOA_Value__c,"Currency(18,0)"
+Exception_Request_Reason__c,Picklist (5 values)
+Exception_Amount__c,"Currency(18,2)"
+Solution_Type__c,Picklist (4 values)
+Date_of_Asset_Flow__c,Date
+Prior_Rep_Name__c,Lookup(Contact)
+Receiving_Rep_Name__c,Lookup(Contact)
+Financial_Account_Number_s__c,Text(255)
+APP_Date_Submitted__c,Date
+APP_Completed_Date__c,Date
+APP_Canceled_Date__c,Date
+APP_Follow_Up_Date__c,Date
+APP_Follow_Up_Form_Needed__c,Checkbox
+Topic__c,Picklist (values TBD)
+Financial_Account_Number__c,Text Formula
+Prior_Rep_No__c,Text Formula
+Receiving_Rep_No__c,Text Formula
+of_Days_in_NIGO__c,"Number Formula(18,2)"
+of_Days_in_Pending_Participant_Verific__c,"Number Formula(18,2)"
+of_Days_in_Pending_Sponsor_Verificatio__c,"Number Formula(18,2)"
+APP_Legacy_Id__c,"Text(100), External ID, Unique"
+APP_Legacy_Data_Source__c,Picklist (Salentica; Summit; GA)
+APP_Data_Import_Version__c,Text(100)
+APP_Legacy_Last_Modified_By__c,Text(225)
+APP_Legacy_Last_Modified_Date__c,Datetime
+Legacy_Case_Number__c,Text(30)
+Is_Test_Data__c,Checkbox

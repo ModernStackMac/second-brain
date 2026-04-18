@@ -323,3 +323,28 @@ The vault is backed up to GitHub via the Obsidian Git plugin. Auto-commits every
 | `Action-Tracker.md` | Open action items from meetings | Claude (auto) |
 | `Decision-Log.md` | Key decisions with context | Claude (auto) |
 | `~/.claude/CLAUDE.md` | Hot cache — memory, rules, brain pointers | You + Claude |
+
+
+---
+
+## Updates (2026-04-18)
+
+### New: `.claudeignore` at vault root
+
+Excludes `.obsidian/`, `Excalidraw/`, `Clippings/`, `raw/archived-stories/`, binary attachments, and stray CSVs from Claude Code / Cowork scans. The compiled wiki layer is the intended search surface — Grep/Glob should spend their tokens there, not on raw archives. Add this to the Vault Location section when promoting.
+
+### New: `session-kickoff` skill (On-Demand)
+
+- **Location:** `~/.claude/skills/session-kickoff/` (user-global — available in both Claude Code and Cowork)
+- **Triggers:** "start session on [project]", "kick off [X]", "context me up on [project]", "picking up [ticket ID]", "where did we leave off on [X]"
+- **What it does:** Generates a tight context brief for starting or resuming work on a project or story. Reads `session-context/` handoffs first (highest signal), then `project-mapping.md`, `wiki/clients/{project}.md`, 2-3 most recent meeting notes, `Action-Tracker.md`, and `Decision-Log.md`. If a story ID is given, also pulls the story file. Outputs inline: state, recent activity, open actions, recent decisions, suggested next move.
+- **When to use:** Starting a work session on a project or picking up a story. Collapses the 5-minute cold-start of digging through folders to rebuild context.
+- **Also available as Claude Code slash command:** `/kickoff {project} [story-id]` for deterministic invocation. The skill auto-triggers on natural phrasing in both Cowork and Claude Code.
+
+### New entries for Key Files Reference table
+
+| File | What | Who Maintains |
+|------|------|---------------|
+| `.claudeignore` | Claude Code / Cowork ignore rules at vault root | You |
+| `~/.claude/skills/session-kickoff/` | User-global skill — briefs project/story context at session start | You + Claude |
+| `~/.claude/commands/kickoff.md` | Claude Code slash command wrapper for session-kickoff | You |
