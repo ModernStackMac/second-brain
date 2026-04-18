@@ -1,3 +1,11 @@
+---
+status: active
+owner: Mac
+priority: p2
+last_meeting: 2026-04-13
+open_actions: 2
+---
+
 # NBCU — Project Journal
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.

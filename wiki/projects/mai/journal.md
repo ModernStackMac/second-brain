@@ -1,3 +1,11 @@
+---
+status: active
+owner: Mac
+priority: p1
+last_meeting: 2026-04-17
+open_actions: 22
+---
+
 # MAI — Project Journal
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.

@@ -1,3 +1,11 @@
+---
+status: active
+owner: Mac
+priority: p3
+last_meeting: 2026-04-09
+open_actions: 2
+---
+
 # Harvey — Project Journal
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.

@@ -1,3 +1,11 @@
+---
+status: active
+owner: Mac
+priority: p2
+last_meeting: 2026-04-16
+open_actions: 8
+---
+
 # F2-Cetera — Project Journal
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
