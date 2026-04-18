@@ -60,12 +60,52 @@ sort by due
 - 
 
 ## End-of-day reflection
-
 - **Shipped:** 
 - **Blocked by:** 
 - **Tomorrow's one thing:** 
 
 ---
+
+## Live view
+
+### In progress
+```tasks
+not done
+[tags include #in-progress] OR [status.name includes In Progress]
+sort by priority
+short mode
+```
+
+### Blocked
+```tasks
+not done
+tags include #blocked
+sort by priority
+short mode
+```
+
+### Open actions from Action-Tracker
+```dataview
+TASK FROM "Second Brain/Action-Tracker"
+WHERE !completed
+  AND Date
+  AND Date <= date(today)
+SORT Date ASC
+```
+
+### Captured today
+```dataview
+LIST
+FROM "Second Brain/raw/captures"
+WHERE file.cday = date(today)
+SORT file.ctime DESC
+```
+
+### Completed today
+```tasks
+done today
+short mode
+```
 
 ## Unfinished from yesterday
 

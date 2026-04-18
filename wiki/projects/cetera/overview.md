@@ -1,15 +1,15 @@
 ---
-aliases: "[cetera, f2-cetera, f2/cetera]"
+aliases: [cetera, f2-cetera, f2/cetera]
 type: project-overview
 project: cetera
 ---
 
-# F2/Cetera — Engagement Overview
+# Cetera — Engagement Overview
 
 > Financial services Salesforce consulting engagement — case object migration, CPA referral analysis, and Marketing Cloud provisioning (Project Keystone).
 
 ## Overview
-F2/Cetera is a financial services firm undergoing significant Salesforce data model consolidation. The engagement (internally called "Project Keystone") focuses on migrating legacy case object structures into a unified model while standardizing on Salesforce Financial Services Cloud (FSC) fields for long-term platform compatibility. The work involves identifying field mappings across multiple legacy systems, resolving workflows that have grown organically across different business units, and spinning up Marketing Cloud for journey-based automation.
+Cetera is a financial services firm undergoing significant Salesforce data model consolidation. The engagement (internally called "Project Keystone") focuses on migrating legacy case object structures into a unified model while standardizing on Salesforce Financial Services Cloud (FSC) fields for long-term platform compatibility. The work involves identifying field mappings across multiple legacy systems, resolving workflows that have grown organically across different business units, and spinning up Marketing Cloud for journey-based automation. Delivery runs through High Meadows under the F2 Strategy Jira workspace.
 
 Key contacts: Connor, Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, June, Brian. UAT team input on field naming standards.
 
@@ -54,15 +54,15 @@ Key contacts: Connor, Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, Ju
 - PO issue: invoices received but referencing old discovery PO. Project moved under different org — new PO being opened (as of Apr 9). Payment expected within days.
 
 ## Related Pages
-- [[stand8]] — partner/reseller connection
+- [[high-meadows]] — partner/reseller connection
 - [[litify]] — parallel knowledge consolidation effort
 - [[cretelligent]] — complex data model design pattern
 - [[marketing-cloud]] — provisioning blocker for journey automation
 - [[case-migration]] — core migration pattern
 
 ## Sources
-- Meeting Notes/Stand8/F2-Cetera/2026-04-08 - Quick Sync - F2 Connor.md
-- Meeting Notes/Stand8/F2-Cetera/2026-04-09 - Project Keystone - F2 Cetera Daily Working Session.md
+- Meeting Notes/High Meadows/Cetera/2026-04-08 - Quick Sync - F2 Connor.md
+- Meeting Notes/High Meadows/Cetera/2026-04-09 - Project Keystone - F2 Cetera Daily Working Session.md
 
 ---
-*Last updated: 2026-04-10 · Merged from clients/f2-cetera.md on 2026-04-18*
+*Last updated: 2026-04-18*

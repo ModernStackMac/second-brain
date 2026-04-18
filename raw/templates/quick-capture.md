@@ -2,8 +2,8 @@
 const title = await tp.system.prompt("Capture title?");
 const tags = await tp.system.prompt("Tags (comma-separated, optional)?");
 const project = await tp.system.suggester(
-  ["(none)", "cretelligent", "f2-cetera", "harvey", "litify", "mai", "nbcu", "lnw", "internal", "modern-stack", "high-meadows"],
-  ["", "cretelligent", "f2-cetera", "harvey", "litify", "mai", "nbcu", "lnw", "internal", "modern-stack", "high-meadows"],
+  ["(none)", "cretelligent", "cetera", "harvey", "litify", "mai", "nbcu", "lnw", "internal", "modern-stack", "high-meadows"],
+  ["", "cretelligent", "cetera", "harvey", "litify", "mai", "nbcu", "lnw", "internal", "modern-stack", "high-meadows"],
   false,
   "Project (pick one or Esc for none)"
 );

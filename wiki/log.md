@@ -826,3 +826,37 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Query: what do i know about the mai project
 - Pages consulted: projects/mai/context.md, projects/mai/journal.md, projects/mai/overview.md, projects/mai/stories-f2.md, concepts/flex-dash.md, entities/high-meadows.md
 - Report: wiki/reports/mai-project-overview.md
+
+## [2026-04-18] cleanup | Dashboard Audit + Cetera Rename Sweep
+
+- **Trigger:** Mac's directive — "cetera should be cetera not f2-cetera update the mapping... right now its too large and hard to navigate. there is a bunch of empty folders like tags etc"
+- **Cetera canonical reset (prior session):**
+  - `f2-cetera` → `cetera` everywhere (Action-Tracker, Decision-Log, project journals, project context, Meeting Notes/High Meadows/, quick-capture template, scheduled tasks, project-mapping).
+  - Final stale-text scrub this session: `wiki/articles/tdx-2026-headless-360-operating-model.md` + `wiki/articles/salesforce-web-console-beta.md` ("F2-Cetera" → "Cetera" in Why It Matters bullets).
+  - Exempt: `log.md` historical entries, `project-mapping.md` deprecated-slugs section, `wiki/projects/cetera/overview.md` aliases frontmatter.
+- **Dashboard audit:**
+  - **Deleted:** `Today.md` (5-line redirect → folded into Home as "Today's daily note" block). `Wiki Health.md` (redundant with `kb-lint-now` skill + Home "Stale projects" flag; contained broken dataview queries against non-existent `wiki/f2-internal/` and `session-context/`).
+  - **Rewrote:** `Home.md` — added Today's daily note block at top, trimmed redundant query repeats (latest meetings + open actions now covered in This Week + daily note), updated Quick Links.
+  - **Kept (distinct purpose):** Home, Action-Review (Monday triage), Articles (reading queue), Meetings (Granola/Fathom + unmatched), Projects (per-project health), Stories (Linear + Jira workspace breakdown).
+- **Dashboard count:** 8 → 6.
+- **Empty-folder note:** Obsidian REST API filters empty directories from `list_files_in_dir` responses, so empty folders aren't directly visible. Mac will need to prune `tags/` (and any other leftover empties) from Obsidian's file tree UI — or via Finder — since I can't target folders the API hides. Flagged for manual cleanup.
+
+---
+
+## [2026-04-18] cleanup | Empty Folder Sweep
+
+- **Trigger:** Mac — "there is a bunch of empty folders like tags etc"
+- **Method:** REST API hides empty dirs in listings, so probed-and-deleted by path.
+- **Removed (folder existed + empty):**
+  - `Second Brain/raw/discovery/`
+  - `Second Brain/session-context/`
+  - `Meeting Notes/High Meadows/F2-Cetera/` (emptied by cetera rename migration)
+  - `Meeting Notes/Stand8/F2-Cetera/` (emptied by cetera rename migration)
+- **Checked, did not exist (no-op):**
+  - `Second Brain/tags/`, `Second Brain/wiki/tags/`
+  - `Second Brain/clients/`, `Second Brain/wiki/clients/`
+  - `Second Brain/wiki/f2-internal/`
+  - `Meeting Notes/_Unmatched/`
+- **Note:** If any empty folders remain visible in Obsidian's file tree that aren't accessible via REST, Mac can prune them directly from the file explorer (right-click → Delete).
+
+---

@@ -24,7 +24,7 @@ Guardrails are respected: Apex editing is read-only in production orgs; sandboxe
 
 ## Why It Matters
 
-Every active Salesforce engagement touches Apex debugging and SOQL at some point. Web Console cuts the friction of investigating prod issues from "download/open VS Code + re-auth + find the class + enable logs" to "click through from Setup." For client engagements in production, read-only Apex editing preserves guardrails while still giving an in-context inspection path — a meaningful win for change-control-sensitive orgs like F2-Cetera, MAI, and CREtelligent.
+Every active Salesforce engagement touches Apex debugging and SOQL at some point. Web Console cuts the friction of investigating prod issues from "download/open VS Code + re-auth + find the class + enable logs" to "click through from Setup." For client engagements in production, read-only Apex editing preserves guardrails while still giving an in-context inspection path — a meaningful win for change-control-sensitive orgs like Cetera, MAI, and CREtelligent.
 
 Pairs with Agentforce Vibes IDE: one surface for reactive debugging (Web Console), one for sustained coding (Vibes). For MSS delivery, this is the first signal that Salesforce is serious about the legacy Developer Console sunset.
 

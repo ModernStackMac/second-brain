@@ -1,10 +1,10 @@
-# F2-Cetera — Project Context
+# Cetera — Project Context
 
 > Financial services firm. Case object migration (Project Keystone), CPA referral mapping, Marketing Cloud journeys, FSC standardization.
 
 ## Client
-- **Company:** F2/Cetera
-- **Partner:** Stand8 / High Meadows
+- **Company:** Cetera
+- **Partner:** High Meadows (via F2 Strategy)
 - **Client contacts:** Connor (primary dev contact), Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, June, Brian, Brady (new dev), Frank, Macy, David Mazury (data load user)
 - **Industry:** Financial services
 
@@ -41,7 +41,9 @@
 - PO issue resolved (Apr 9) — new PO opened, project moved under new org
 
 ## Related Pages
-- [[stand8]] — partner
+- [[high-meadows]] — partner
 - [[case-migration]] — core migration pattern
 - [[marketing-cloud]] — journey automation (provisioning blocker)
-- [[f2-cetera]] — (old client page, superseded)
+
+---
+*Last updated: 2026-04-18*

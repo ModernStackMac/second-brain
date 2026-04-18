@@ -1,4 +1,3 @@
-# Home Dashboard
 ---
 type: dashboard
 updated: 2026-04-18
@@ -7,6 +6,18 @@ updated: 2026-04-18
 # Home Dashboard
 
 > Central hub. Pin or set as Obsidian startup page.
+
+---
+
+## Today's daily note
+
+```dataview
+TABLE WITHOUT ID file.link AS "Daily note"
+FROM "Second Brain/raw/daily"
+WHERE file.name = dateformat(date(today), "yyyy-MM-dd")
+```
+
+*If empty, `daily-note-builder` hasn't fired yet — it runs weekdays 6am CT. Kick `daily-note-now` to rebuild on demand.*
 
 ---
 
@@ -70,15 +81,6 @@ SORT file.ctime DESC
 
 ## Reference
 
-### All open actions
-```dataview
-TASK
-FROM "Second Brain/Action-Tracker"
-WHERE !completed
-SORT Date ASC
-LIMIT 15
-```
-
 ### Active projects (last journal update)
 ```dataview
 TABLE file.mtime as "Last Updated"
@@ -96,15 +98,6 @@ SORT Date DESC
 LIMIT 5
 ```
 
-### Latest meeting notes
-```dataview
-TABLE file.ctime as "Date", file.folder as "Project"
-FROM "Meeting Notes"
-WHERE file.name != "_Unmatched"
-SORT file.ctime DESC
-LIMIT 10
-```
-
 ### Latest clipped articles
 ```dataview
 TABLE file.ctime as "Clipped"
@@ -119,19 +112,9 @@ LIMIT 8
 
 - [[Action-Tracker]] — Open action items
 - [[Decision-Log]] — Key decisions
-- [[dashboards/Articles|Articles Dashboard]]
-- [[dashboards/Meetings|Meetings Dashboard]]
-- [[dashboards/Projects|Projects Dashboard]]
-- [[dashboards/Stories|Stories Dashboard]]
-- [[dashboards/Wiki Health|Wiki Health Dashboard]]
-
-
-
----
-
-## New in this version
-
-- [[Today]] — Daily focused view (meetings today, due today, overdue, captures)
-- [[Action-Review]] — Weekly action triage (Mondays)
-- Kanban boards live at `Second Brain/wiki/projects/{project}/board.md`
-- Daily notes at `Second Brain/raw/daily/YYYY-MM-DD.md` (auto-built weekday 6am CT)
+- [[dashboards/Action-Review|Action Review]] — Monday triage
+- [[dashboards/Projects|Projects]] — Per-project health
+- [[dashboards/Stories|Stories]] — Linear + Jira sync
+- [[dashboards/Meetings|Meetings]] — Granola/Fathom routing
+- [[dashboards/Articles|Articles]] — Reading queue
+- [[SYSTEM-GUIDE]] · [[PEER-SETUP-GUIDE]] · [[SCHEMA]] · [[TAGS]]

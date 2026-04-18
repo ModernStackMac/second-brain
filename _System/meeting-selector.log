@@ -1,0 +1,44 @@
+# Meeting Selector Run Log
+
+## 2026-04-18T21:00:00Z — Scheduled Run
+
+**Status:** OK (no writes — all winners already selected)
+
+**Inputs scanned:**
+- `Second Brain/raw/meeting-raw/granola/` — 2 files (2026-04-17 Meeting of the Minds, 2026-04-17 Website Review)
+- `Second Brain/raw/meeting-raw/fathom/` — 2 files (2026-04-17 Impromptu Zoom Meeting, 2026-04-17 Website Review)
+
+**Pair analysis:**
+- Matched pairs (normalized title + date): 1
+  - `2026-04-17 Website Review` — both sources present
+- Singletons: 2
+  - `2026-04-17 Meeting of the Minds` — granola only
+  - `2026-04-17 Impromptu Zoom Meeting` — fathom only
+
+**Scoring (weights: transcript 30 / summary 25 / actions 25 / tech 15 / metadata 5, trial_end 2026-05-02):**
+
+| Meeting | Granola | Fathom | Winner (score) |
+|---|---|---|---|
+| Website Review | 0.78 | 0.86 | fathom (0.86) |
+| Meeting of the Minds | 0.75 | — | granola (singleton) |
+| Impromptu Zoom Meeting | — | 0.85 | fathom (singleton) |
+
+**Routing (per project-mapping.md):**
+- Website Review → `Meeting Notes/High Meadows/Internal/Website/2026-04-17 - Website Review.md`
+- Meeting of the Minds → `Meeting Notes/Modern Stack Systems/2026-04-17 - Meeting of the Minds.md`
+- Impromptu Zoom Meeting → `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Impromptu Zoom Meeting [Fathom].md`
+
+**Writes:** 0 (immutability preserved — all three target files already exist from prior run)
+
+**Notes / anomalies:**
+- Website Review: existing selected file has `source: granola` (processed 2026-04-17 12:05). This run's scoring favors fathom (0.86 > 0.78), but immutability rule prevents replacement. Flagging for trial-end review (2026-05-02) — if the pattern holds (fathom scoring higher on paired meetings), consider migrating.
+- Meeting of the Minds: existing selected file came from granola (processed 2026-04-17 11:09). Matches this run's call.
+- Impromptu Zoom Meeting: existing selected file came from fathom (processed 2026-04-17 11:15). Matches this run's call.
+
+**Action items / decisions append:** Skipped — all three winner files were processed by the prior run; Action-Tracker.md and Decision-Log.md already contain the extracted items from 2026-04-17 meetings (CREtelligent rename + cost worksheet + walkthrough; Meadow website fixes; CREtelligent decisions on product table import, disregard-sheet, rename; Meadow decisions on services page / partnerships / article linking). No new decisions to dedupe-append for this run.
+
+**Winners by source (this run, effective):** granola 1, fathom 2
+**Total processed:** 3
+**Routing failures:** 0
+**Unmatched count:** 0 (no delta vs prior)
+**Email notification:** none (quiet mode — no errors, no unmatched growth)

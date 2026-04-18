@@ -31,7 +31,7 @@ This is the strategic lens MSS should use when framing Agentforce and MCP engage
 
 - **Consulting framing:** shift the client conversation from "which agents can we build?" to "which of your capabilities are agent-legible, and what's the operating debt you need to clear?" Direct applicability to Harvey's 3-year AI roadmap and NBCU's Agentforce POC.
 - **Salesforce's own move validates MSS's positioning:** the Claude + Salesforce + MCP stack Mac has been building around isn't a bet — it's where the platform is deliberately going.
-- **Agent interoperability across org boundaries** has downstream implications for integration architecture — CREtelligent's Connect API + MuleSoft decisions, F2-Cetera's Advice Works integration, and MAI's third-party data flows all get reframed through this lens.
+- **Agent interoperability across org boundaries** has downstream implications for integration architecture — CREtelligent's Connect API + MuleSoft decisions, Cetera's Advice Works integration, and MAI's third-party data flows all get reframed through this lens.
 - **"Operating debt" as a concept** is a usable frame for client conversations — especially with mid-market clients (MAI, CREtelligent) whose capabilities are distributed across flows, Apex, custom fields, and tribal knowledge.
 - Counterweight to the vibe-coding / agent-builder hype: the tooling is cool, but the transformation is organizational. Worth embedding in SOWs and discovery conversations.
 

@@ -6,7 +6,7 @@ last_meeting: 2026-04-16
 open_actions: 8
 ---
 
-# F2-Cetera — Project Journal
+# Cetera — Project Journal
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
 
@@ -44,7 +44,7 @@ Apr 14 standup focused on permission set strategy and validation design. Current
 - Connor: finalize help-desk permission set groupings (3 groups — trading/client service, general back office, third TBD) by EOD Apr 16
 - Connor: review sprint items assigned to him; mark done or punt to Sprint 6 (go-live-dependent)
 - Brady (when back): continue affiliate onboarding design framework; field-mapping questions filtered through June
-- Mac / June: circle back with Connor on the two affiliate onboarding / growth engine approaches (TRPG-preserving with CRPS records vs. APP-style multiple opportunities with new record types)
+- Mac / June: circle back with Connor on the two affiliate onboarding / growth engine approaches (TRPG-preserving with CRPS records vs. APP-style multiple opportunities)
 
 Apr 16 standup covered sandbox licenses, sprint hygiene, and a design review of the affiliate onboarding + growth engine. Sandbox unblocked (37 licenses post-renewal, Brady setup can proceed on Connor's timeline). Sprint items where Connor is tagged but inactive: Connor to clean up or punt to Sprint 6. Permission set debate landed on three consolidated groups aligned to job function — Connor finalizing by EOD. Mac and June walked Connor through the merged APP + TRPG design: APP front-loads affiliate onboarding with multiple opportunities off a single lead; TRPG uses a custom conversion flow requiring opportunity + wallet-share pre-conversion. Connor's direction: modular — keep AUM-impacting lines (RPS, brokerage) on opportunity for forecasting, push process-specific junk (feathery form IDs, file refs) to separate objects. Legacy wealth strategies (estate planning) could fold into the same pattern. Brian briefly joined to confirm his person-account K1/mailing cleanup doesn't impact Mac's conversion work — Mac cleared to deploy UAT changes.
 
