@@ -676,3 +676,22 @@
   - `Meeting Notes/Modern Stack Systems/` — all already in log
   - `Meeting Notes/_Unmatched/` — all already in log
 - **Summary:** One net-new meeting captured via both Granola and Fathom, merged into a single entry. HMS website pre-launch review with Brian + CSO landed a long list of copy and layout decisions. Four Mac-owned implementation actions logged pending the CSO's consolidated notes doc. Six strategic website decisions captured. No wiki pages created; index.md unchanged.
+
+## 2026-04-18 — Scheduled Ingest #25
+
+- **Operation:** INGEST — Scheduled scan of raw sources and meeting notes
+- **Sources processed:** 0 (no new files)
+- **Scan coverage:**
+  - `raw/articles/` — 4 files, all already in log
+  - `raw/projects/hms-capacity-planning/` — 5 files (incl. .docx source), all already in log
+  - `raw/discovery/` — empty
+  - `Meeting Notes/High Meadows/{F2-Cetera, Internal/*, Lefavi, MAI}/` — all files already in log
+  - `Meeting Notes/Stand8/{Harvey, Litify, NBCU}/` — all files already in log
+  - `Meeting Notes/Stitch/Cretelligent/` — all files already in log
+  - `Meeting Notes/Modern Stack Systems/` — all files already in log
+  - `Meeting Notes/_Unmatched/` — all files already in log
+- **Pages created:** 0
+- **Pages updated:** 0
+- **Mac-owned action items added:** 0
+- **Decisions added:** 0
+- **Summary:** Clean scan. No new raw sources or meeting notes since Ingest #24 (2026-04-17). Wiki remains current through the Apr 17 batch (latest content: HMS Website Review, MAI Dev DSU, Litify Ryan/Liana scale-down, CREtelligent Weekly Status). No action required.
