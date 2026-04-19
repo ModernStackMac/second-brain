@@ -27,13 +27,10 @@ For Mac, this is especially relevant because it directly addresses the consultin
 - [[llm-knowledge-management]] — The pattern and why it works
 - [[obsidian-ecosystem]] — Obsidian setup and plugins
 - [[claude-ai]] — Claude's role and API patterns
-- [[scheduled-tasks]] — Cron and scheduling for morning briefings and lint passes
 
 ## Sources
 
 - raw/articles/Claude + Obsidian have to be illegal.md
 
 ---
-*Last updated: 2026-04-11*
-
-
+*Last updated: 2026-04-19*

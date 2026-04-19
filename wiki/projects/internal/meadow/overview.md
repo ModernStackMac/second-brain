@@ -1,5 +1,5 @@
 ---
-aliases: [hms-capacity-planning, capacity-planning, meadow-app]
+aliases: "[hms-capacity-planning, capacity-planning, meadow-app, meadow]"
 type: project-overview
 project: meadow
 ---

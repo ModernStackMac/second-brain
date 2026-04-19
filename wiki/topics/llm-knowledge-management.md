@@ -24,7 +24,7 @@ The architecture is simple: raw sources (articles, transcripts, data) feed into 
 
 **Lint:** Periodic health check → scan for contradictions, orphan pages, outdated claims, unsourced assertions, missing cross-references → write health report with specific fixes → maintain integrity as the wiki grows.
 
-**Morning Briefing:** Cron job runs daily → reads Memory.md for open actions → scans raw/ for new sources from last 24h → prints clean briefing to terminal. Set once, runs forever.
+**Synthesis:** Weekly scheduled pass → read all project journals and recent meetings → surface cross-project patterns, stale commitments, decisions needing follow-up → generate permanent report filed to wiki/reports/.
 
 ## The Pattern Works Because
 
@@ -38,14 +38,14 @@ The architecture is simple: raw sources (articles, transcripts, data) feed into 
 
 For someone like Mac running a consulting practice + continuous learning:
 - **Client context system:** Every call transcript auto-processed → decisions and actions filed → client notes with backlinks → never lose context again.
-- **Project memory:** Decision-Log and Action-Tracker live in the wiki, accessible with full provenance. No more "who decided that and when?"
+- **Project memory:** Decision-Log and commitments.md live in the wiki, accessible with full provenance. No more "who decided that and when?"
 - **Learning compounding:** Articles, research, ideas all feed into a growing knowledge graph. Patterns emerge over time instead of being rediscovered.
-- **Operational automation:** Morning briefings surface what's due. Lint passes surface contradictions and gaps. Maintenance is "run a command" not "spend 2 hours reorganizing."
+- **Operational automation:** Lint passes surface contradictions and gaps. Maintenance is "run a command" not "spend 2 hours reorganizing."
 
 ## Stack & Tools
 
 - **Obsidian:** Local-first markdown editor. Graph view, backlinks, Dataview plugin for queries, Marp for slides, native markdown.
-- **Claude Code + Skills:** Automate kb-compile, kb-report, kb-lint, morning-briefing workflows.
+- **Claude Code + Skills:** Automate kb-compile, kb-report, kb-lint workflows.
 - **MCP-Obsidian:** Direct Claude → vault integration without copy-paste. List files, search, patch content, append content.
 - **Git:** Version control and backup of the entire wiki.
 - **Optional: Ollama:** Run local LLM for privacy-sensitive ingests.
@@ -58,7 +58,6 @@ As the wiki grows large enough (hundreds of sources, thousands of pages), the na
 
 - [[obsidian-ecosystem]] — Obsidian plugins, MCP, workflow details
 - [[claude-ai]] — Claude's role in the stack
-- [[scheduled-tasks]] — Automation layer for cron jobs and periodic operations
 - [[andrej-karpathy-method-claude-skills-obsidian]] — The foundational post
 - [[claude-obsidian-illegal]] — Pragmatic implementation with examples
 
@@ -68,4 +67,4 @@ As the wiki grows large enough (hundreds of sources, thousands of pages), the na
 - raw/articles/Claude + Obsidian have to be illegal.md
 
 ---
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-19*

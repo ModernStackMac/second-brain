@@ -6,16 +6,16 @@
 
 Each project has two files: `context.md` (stable — what it is, tech stack, scope) and `journal.md` (dynamic — rolling weekly summaries, decisions, open questions).
 
-- [[cetera/context]] · [[cetera/journal]] — Financial services (High Meadows / F2 Strategy). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
-- [[lnw/journal]] — LNW Visibility Enhancements POC (High Meadows via F2). Family-level aggregation, meeting note composer.
-- [[mai/context]] · [[mai/journal]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
+- [[cetera/context]] · [[cetera/journal]] · [[cetera/stories-f2]] — Financial services (High Meadows / F2 Strategy). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
+- [[lnw/journal]] · [[lnw/stories-f2]] — LNW Visibility Enhancements POC (High Meadows via F2). Family-level aggregation, meeting note composer.
+- [[mai/context]] · [[mai/journal]] · [[mai/stories-f2]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
 - [[harvey/context]] · [[harvey/journal]] — Industrial manufacturing/distribution (Stand8). Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration (Einstein + Claude).
 - [[nbcu/context]] · [[nbcu/journal]] — NBCUniversal (Stand8). Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
 - [[litify/context]] · [[litify/journal]] — Legal SaaS (Stand8). Agentforce service agent for case triage, KB recommendations, Data Cloud unification. SOW in progress.
 - [[cretelligent/context]] · [[cretelligent/journal]] — Commercial real estate/environmental (Stitch). Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
-- [[internal/meadow/context]] · [[internal/meadow/journal]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
+- [[internal/meadow/context]] · [[internal/meadow/journal]] · [[internal/meadow/stories-hm]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
 - [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
-- [[internal/flex-dash/journal]] — Flex Dash reporting product.
+- [[internal/flex-dash/stories-hm]] — Flex Dash reporting product. Development paused for MAI.
 
 ## Concepts
 
@@ -35,7 +35,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[agentforce]] — Salesforce's AI agent platform. Used across Harvey, NBCU, Litify, CREtelligent. MCP support in beta is key limitation.
 - [[data-cloud]] — Salesforce Data Cloud for unifying fragmented data sources. Key to Litify and NBCU engagements.
 - [[claude-ai]] — Anthropic's Claude model. Used for email parsing (Harvey), rapid development (HMS), agentic frameworks (MSS).
-- [[meadow-app]] — HMS internal capacity planning app. 11-table schema, Clockify/Notion integrations, cloud migration roadmap.
 - [[marketing-cloud]] — Salesforce Marketing Cloud. Being provisioned for Cetera (Project Keystone) journey automation.
 - [[supabase]] — Open-source PostgreSQL platform. Target database for Meadow migration from SQLite.
 - [[connect-api]] — CREtelligent's external API for vendor management, site verification, and order processing.
@@ -73,5 +72,5 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[reports/mai-project-overview]] — 2026-04-18 · Snapshot of the MAI engagement.
 
 ---
-*Last updated: 2026-04-18*
-*Total pages: 56 (16 project pages + 40 wiki pages)*
+*Last updated: 2026-04-19*
+*Total pages: 55 (16 project pages + 39 wiki pages)*

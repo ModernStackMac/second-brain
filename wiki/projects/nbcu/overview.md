@@ -44,10 +44,9 @@ Primary contact is Naresh, with Salesforce licensing and CoE support backing the
 - [[litify]] — concurrent agent/MCP use case, similar constraints
 - [[agentforce]] — core technology for POC use cases
 - [[data-cloud]] — holdings data for content recommendation engine
-- [[mcp]] — constraint limiting presentation generation capabilities
 
 ## Sources
 - Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md
 
 ---
-*Last updated: 2026-04-10 · Merged from clients/nbcu.md on 2026-04-18*
+*Last updated: 2026-04-19*

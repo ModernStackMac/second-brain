@@ -27,11 +27,10 @@ This post highlights the practical, cost-saving angle of Obsidian that complemen
 
 - [[obsidian-ecosystem]] — Comprehensive overview of Obsidian plugins and capabilities
 - [[llm-knowledge-management]] — The broader knowledge-compilation pattern these plugins support
-- [[productivity-systems]] — How unified systems reduce cognitive overhead
 
 ## Sources
 
 - raw/articles/These 6 FREE Obsidian PLUGINS quietly replace $200 worth of PAID APPS.md
 
 ---
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-19*

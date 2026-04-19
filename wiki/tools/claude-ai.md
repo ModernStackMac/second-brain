@@ -18,7 +18,7 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 - Exploring [[llm-knowledge-management]] pattern: using Claude as compiler/librarian to build and maintain persistent markdown-based wiki from raw sources
 
 **Knowledge Management with Claude:**
-- [[MCP-Obsidian]] integration enables Claude to read/write directly into Obsidian vault without copy-paste
+- MCP-Obsidian integration enables Claude to read/write directly into [[obsidian-ecosystem|Obsidian]] vault without copy-paste
 - Claude Code Skills for automation: kb-compile (ingest sources), kb-report (query wiki), kb-lint (health checks), morning-briefing (daily context)
 - Shift from stateless chat sessions to stateful, compounding knowledge accumulation
 
@@ -40,7 +40,7 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 **HMS Internal (High Meadows):**
 - Claude Sonnet running at 2% capacity
 - Development velocity accelerating: complete app rebuilds in a single day, Slack bot deployments in 25 minutes with recursive issue resolution
-- Integration with Meadow app (capacity planning tool) planned as Phase 2 (chat interface)
+- Integration with [[meadow|Meadow app]] (capacity planning tool) planned as Phase 2 (chat interface)
 
 **Model Exploration:**
 - Mythos AI tested and performs better than Sonnet/Opus in some contexts
@@ -51,8 +51,7 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 
 ## Related Pages
 - [[harvey]] — email intent parsing use case
-- [[hms-capacity-planning]] — internal capacity planning with Claude integration planned
-- [[meadow-app]] — Phase 2 includes Claude chat interface
+- [[meadow]] — internal capacity planning with Claude integration planned (Phase 2 chat interface)
 - [[agentforce]] — part of multi-model orchestration strategy
 - [[modern-stack-systems]] — primary employer using Claude extensively
 - [[llm-knowledge-management]] — Claude as compiler/librarian for persistent wikis
@@ -70,4 +69,4 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 - raw/articles/2026-04-18T074207-0500-New in Salesforce Developer Edition Agentforce Vibes IDE, Claude 4.5, MCP.md
 
 ---
-*Last updated: 2026-04-18*
+*Last updated: 2026-04-19*

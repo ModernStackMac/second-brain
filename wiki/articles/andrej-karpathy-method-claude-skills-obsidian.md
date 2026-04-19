@@ -30,11 +30,10 @@ This pattern solves the core problem with current LLM usage: statelessness and e
 - [[llm-knowledge-management]] — Accumulator for this emerging pattern and tools
 - [[obsidian-ecosystem]] — Overview of Obsidian plugins and workflows
 - [[claude-ai]] — Claude's role in LLM-driven knowledge systems
-- [[scheduled-tasks]] — Automation layer for morning briefings and periodic linting
 
 ## Sources
 
 - raw/articles/Andrej Karpathy Method Claude Skills + Obsidian Explained.md
 
 ---
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-19*
