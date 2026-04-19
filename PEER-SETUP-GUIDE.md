@@ -143,7 +143,7 @@ All times Central. Adjust for your timezone. Set up via Cowork's scheduled-tasks
 
 | Task | Schedule | What it does |
 |------|----------|--------------|
-| `second-brain-ingest` | Weekdays every 4 hrs at `:30` | Scans `Meeting Notes/`, `raw/articles/`, `raw/projects/`, `raw/transcripts/` for files not yet in `wiki/log.md`. Extracts entities → wiki pages, decisions → `Decision-Log.md`, commitments → `commitments.md` (4-gate rule). |
+| `second-brain-ingest` | Weekdays every 4 hrs at `:30` | Scans `Meeting Notes/`, `raw/articles/`, `raw/projects/`, `raw/transcripts/` for unprocessed files. Extracts entities → wiki pages, decisions → `Decision-Log.md`, commitments → `commitments.md` (4-gate rule). Prepends weekly entries to project journals. Runs pattern extraction pass → `wiki/patterns/` and `wiki/concepts/`. |
 | `second-brain-lint` | Sundays 1am | Full lint — orphans, broken links, tag canon, slug integrity. |
 | `second-brain-lint-wed` | Wednesdays 1am | Optional mid-week lint. Skip if you don't read the report. |
 | `confluence-ingest` | Weekdays 6:30am | Only if you need a Confluence mirror. Mac uses this for F2 Strategy. |
@@ -201,6 +201,15 @@ Firm commitments get extracted into `commitments.md` under the **4-gate rule**:
 Nothing lands in `commitments.md` without hitting all 4 gates.
 
 **Lifecycle:** ingest appends to `## Open` → you check the box in Obsidian → Sunday lint moves checked items to `## Done (last 14 days)` → items older than 14 days in Done are archived.
+
+### What Ingest Produces
+
+For each source processed, the ingest pipeline:
+1. Creates or updates wiki pages (entities, concepts, tools, topics)
+2. Prepends a weekly entry to the project's `wiki/projects/{slug}/journal.md`
+3. Auto-appends decisions to `Decision-Log.md`
+4. Extracts commitments to `commitments.md` (4-gate rule)
+5. Identifies reusable patterns → `wiki/patterns/` and `wiki/concepts/`
 
 ### Project documents
 Drop SOWs, API schemas, configs, ERDs into `raw/projects/{slug}/`. The original is the source of truth; wiki pages get generated from it by `second-brain-ingest`.

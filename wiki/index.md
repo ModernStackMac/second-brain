@@ -69,8 +69,9 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 ## Reports
 
+- [[reports/weekly-synthesis-2026-04-19]] — 2026-04-19 · Weekly cross-project synthesis for the week of Apr 13–19, 2026.
 - [[reports/mai-project-overview]] — 2026-04-18 · Snapshot of the MAI engagement.
 
 ---
 *Last updated: 2026-04-19*
-*Total pages: 55 (16 project pages + 39 wiki pages)*
+*Total pages: 56 (16 project pages + 39 wiki pages + 1 report)*

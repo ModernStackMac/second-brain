@@ -903,3 +903,8 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 
 **Daily notes cleanup:**
 - Deleted `daily/2026-04-18.md` (only file in folder)
+
+## [2026-04-19] synthesis | Weekly Synthesis — Week of Apr 13–19, 2026
+- Output: wiki/reports/weekly-synthesis-2026-04-19.md
+- Projects covered: 10 (CREtelligent, MAI, Litify, Cetera, NBCU, Harvey, LNW, Meadow, HMS Website, Flex Dash)
+- Key finding: Data model design churn is a universal pattern across CREtelligent, MAI, and Cetera — decisions are landing faster than implementation can absorb, causing rework. MAI's 11 open commitments and approaching go-live make it the highest-risk engagement this week.
