@@ -263,3 +263,74 @@ The wiki should develop deep knowledge in these areas over time.
 - Dev tools, frameworks, and productivity automation
 - Cloud platform evolution and serverless architecture
 - Anything Mac clips into `raw/articles/` — if he saved it, it's worth processing
+
+
+---
+
+## Updates (2026-04-18f) — Action-Tracker deprecated, commitments.md flow locked in
+
+### What changed
+
+- **`Action-Tracker.md` is deprecated.** All prior content archived to `raw/archived-actions/2026-04-pre-sunset.md`. The file at the root is now a read-only pointer. Do not write to it.
+- **`commitments.md`** (vault root) is the new rolling list of open action items Mac owns. Simple append-only markdown list. Daily-note-builder reads it each morning and surfaces open items in today's daily note.
+- **Per-project story context** remains unchanged — `wiki/projects/{project-path}/stories-{ws}.md` is still maintained by `story-sync` as the story-level context source of truth.
+- **Kanban boards are retired.** No automation writes `wiki/projects/*/board.md`. Any existing board files will be deleted. If manual boards are desired in the future, they live outside the automation loop.
+
+### Hard extraction rules for ingest
+
+Ingest MUST enforce ALL of the following before appending an item to `commitments.md`:
+
+1. **Owner = Mac.** The item is an action Mac himself committed to, or is explicitly assigned to Mac by someone else. If the owner is ambiguous, someone else, or a team in general — skip it.
+2. **Firm commitment.** The source contains an explicit commitment verb phrase ("I'll", "Mac will", "action for Mac", "Mac to take", "owner: Mac") or a task assignment. Vague open questions, "we should", "somebody needs to", or "it would be good if" — skip.
+3. **Clear next step.** The item has a concrete next action Mac can do, not a topic area. "Follow up on X" without specifics — skip. "Send the revised SOW to Client Y by Thursday" — keep.
+4. **Deduplicate.** Compare against existing open items in `commitments.md` by first 60 chars + project. If it's already there, update the existing entry (refresh source meeting link, add date) rather than creating a duplicate.
+
+Items that fail any of these 4 gates do NOT get written. If a meeting has no items that pass, ingest writes nothing to `commitments.md` for that meeting.
+
+### commitments.md format
+
+```markdown
+# Commitments
+
+> Rolling list of open action items Mac owns. Auto-maintained by ingest. Daily-note-builder pulls from here each morning.
+
+## Open
+
+- [ ] Description of the commitment [Project:: project-slug] [Source:: Meeting Notes/Company/Project/2026-04-18-title.md] [Captured:: 2026-04-18] [Due:: 2026-04-25]
+- [ ] ...
+
+## Done (last 14 days)
+
+- [x] Completed item [Project:: project-slug] [Closed:: 2026-04-17]
+- [x] ...
+```
+
+**Lifecycle:**
+- Ingest appends to `## Open`.
+- When Mac closes an item (checks the box), the lint pass on Sunday moves it to `## Done (last 14 days)`.
+- Items in Done older than 14 days are moved to `raw/archived-actions/YYYY-MM.md` during the Sunday lint.
+
+### Meeting Notes ingest — corrected step 4
+
+The prior step 4 in the INGEST workflow said "Append to `Action-Tracker.md` any clear action items with owners." **This is superseded.** The corrected step 4 reads:
+
+4. **Append to `commitments.md`** any action items that pass ALL four extraction gates above (Owner=Mac, firm commitment, clear next step, deduplicated). Format each as a single-line list item under `## Open` with inline dataview fields: `- [ ] Description [Project:: slug] [Source:: path/to/meeting.md] [Captured:: YYYY-MM-DD] [Due:: YYYY-MM-DD if explicit, else omit]`. If no items pass, write nothing.
+
+Step 5 (Decision-Log) is unchanged.
+
+### Story-sync scope (locked)
+
+`story-sync` now pulls only the strict active set:
+
+- **Linear:** Todo, In Progress, Started
+- **Jira:** To Do, In Progress
+- **Backlog** items only if in the current cycle (drops the 14-day "recently updated" fallback)
+
+Dropped from scope: In Review, Review, Developer Review, Code Review, Peer Review, Internal QA, QA, In QA, Testing, Ready for QA, Blocked, On Hold, Open, Selected for Development, Unstarted.
+
+`story-sync` no longer writes the AUTO-SYNC block in `Action-Tracker.md`. Per-project `stories-{ws}.md` pages are still written — that's the story context source of truth.
+
+### Supersedes
+
+- Updates 2026-04-18b "Kanban + Action-Tracker" sections — kanban retired, Action-Tracker deprecated.
+- identity.yaml `action_tracker.*` keys — now moot, can be removed on next identity.yaml touch.
