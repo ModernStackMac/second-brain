@@ -21,6 +21,7 @@ Second Brain/
 ├── _System/                   # Infrastructure — identity, changelog, scripts, logs
 │   ├── changelog.md
 │   ├── identity.yaml
+│   ├── llm-kb-architecture.md # Architecture diagram
 │   ├── story-sync.log
 │   ├── selector-log.md
 │   ├── meeting-routing-unrouted.md
@@ -37,8 +38,6 @@ Second Brain/
 │   ├── templates/             # Templater templates
 │   │   └── quick-capture.md
 │   └── meeting-raw/           # FROZEN ARCHIVE — not written to
-├── resources/
-│   └── diagrams/              # Architecture diagrams
 └── wiki/                      # Claude-compiled canonical knowledge
     ├── index.md               # Master catalog
     ├── log.md                 # Processing log

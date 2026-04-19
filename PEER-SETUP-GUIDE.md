@@ -45,6 +45,7 @@ Create this layout at the vault root. Everything else slots in.
 │   ├── TAGS.md                # Canonical tag taxonomy
 │   ├── Decision-Log.md        # Auto-written decisions
 │   ├── _System/               # identity.yaml, changelog.md, scripts/, logs
+│   │   └── llm-kb-architecture.md # Architecture diagram
 │   ├── dashboards/
 │   │   └── Home.md            # Dataview-powered startup page
 │   ├── raw/                   # Immutable source material — Claude never edits
@@ -52,8 +53,6 @@ Create this layout at the vault root. Everything else slots in.
 │   │   ├── projects/{slug}/   # SOWs, configs, ERDs per project
 │   │   ├── transcripts/       # Non-Fathom transcripts (interviews, legacy)
 │   │   └── templates/         # quick-capture.md only
-│   ├── resources/
-│   │   └── diagrams/          # Architecture diagrams
 │   └── wiki/                  # Claude-compiled canonical knowledge
 │       ├── index.md           # Master catalog
 │       ├── log.md             # Processing log
@@ -187,7 +186,7 @@ Install Mac's skills at `~/.claude/skills/`. Trigger via natural language in Cow
 ## Phase 7 — Capture Workflow
 
 ### Meetings
-Join with Fathom running. `process-fathom-transcripts` pulls within 2 hours and writes **one file** directly to `Meeting Notes/{Company}/{Project}/{date} - {title}.md`. No hand-copy, no duplicates. If a meeting lands in `_Unmatched/`, update `project-mapping.md` keywords/attendees and move the file to the correct folder.
+Join with Fathom running. `process-fathom-transcripts` pulls within 2 hours and writes **one file** directly to `Meeting Notes/{Company}/{Project}/{date} - {title}.md`. No hand-copy, no duplicates. If a meeting lands in `_Unmatched/`, update `project-mapping.md` keywords/attendees and move the file manually to the correct folder.
 
 ### Articles
 Hit the Web Clipper extension. Saves to `raw/articles/`. `second-brain-ingest` picks up on the next 4-hour tick, or say "ingest this" for immediate processing.
@@ -256,6 +255,6 @@ Build this out over time as you learn what you actually check each morning.
 - `SYSTEM-GUIDE.md` — full system architecture, MCP connections, troubleshooting
 - `SCHEMA.md` — folder conventions, page types, ingest/query/create/lint workflows
 - `_System/changelog.md` — consolidation history and recent structural changes
-- `resources/diagrams/llm-kb-architecture.md` — canonical architecture diagram
+- `_System/llm-kb-architecture.md` — canonical architecture diagram
 
 If you're ever unsure where a capture goes or what reads what, re-read the diagram first. Short version: **Sources → Meeting Notes/ + raw/ → wiki/ → dashboards/**. Claude writes the middle layers; you browse them.

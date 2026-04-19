@@ -10,7 +10,7 @@ const project = await tp.system.suggester(
 const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const filename = `${tp.date.now("YYYY-MM-DD")}-${slug}`;
 await tp.file.rename(filename);
-await tp.file.move(`/Second Brain/raw/captures/${filename}`);
+await tp.file.move(`/Second Brain/raw/articles/${filename}`);
 -%>
 ---
 type: capture

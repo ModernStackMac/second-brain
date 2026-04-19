@@ -24,13 +24,19 @@ Tell Claude to ingest, query, create solution docs, or lint:
 - "Lint the wiki"
 - `/kb-ingest-now` — immediate processing, no waiting for the cron
 
-### Commitments
+### What Ingest Does
 
-Live in `commitments.md` at the vault root. Claude extracts them from meetings using a 4-gate rule (owner=Mac, firm verb, concrete next step, deduped). `Action-Tracker.md` is retired — don't re-create it.
+When Claude processes a source, it:
+
+1. Creates or updates wiki pages (entities, concepts, tools, topics)
+2. Prepends a weekly entry to the project's `wiki/projects/{slug}/journal.md`
+3. Extracts decisions → auto-appends to `Decision-Log.md`
+4. Extracts commitments → appends to `commitments.md` (4-gate rule: owner=Mac, firm verb, concrete step, deduped)
+5. Identifies reusable patterns → creates or updates `wiki/patterns/` and `wiki/concepts/` pages
 
 ### Weekly Synthesis
 
-Runs every Monday. Produces `wiki/reports/weekly-synthesis-{date}.md` with cross-project analysis, trends, and surfaced connections.
+Runs every Monday. Reads all project journals, commitments, decisions, and meeting notes. Produces `wiki/reports/weekly-synthesis-{date}.md` with cross-project analysis, trends, and surfaced connections.
 
 ### Tips
 

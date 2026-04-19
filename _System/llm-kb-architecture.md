@@ -4,4 +4,3 @@
 ![[Clippings/Image-1.jpg|LLM Knowledge Base Architecture]]
 
 *Source image: `Clippings/Image-1.jpg` (kept in clipping folder for portability).*
-
