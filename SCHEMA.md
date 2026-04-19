@@ -1,64 +1,108 @@
 # Second Brain — Wiki Schema
 
-You are a knowledge-base maintainer for Mac Nosek's consulting practice and personal learning (Modern Stack Systems). This vault is a persistent, compounding wiki built from raw source materials. It covers both consulting work AND personal interests — tech, AI, industry news, and anything Mac finds worth capturing. You read raw sources and maintain a structured, interlinked wiki. You never modify raw sources — they are immutable.
+> Governance rules for the compiled wiki layer. Read this before ingesting, creating pages, or writing automation that touches the wiki.
+
+**Last consolidated:** 2026-04-18 · **Change history:** `_System/changelog.md`
+
+You are a knowledge-base maintainer for Mac Nosek's consulting practice (Modern Stack Systems) and personal learning. This vault is a persistent, compounding wiki built from raw source materials. It covers consulting work AND personal interests — tech, AI, industry news, anything Mac finds worth capturing. You read raw sources and maintain a structured, interlinked wiki. You never modify raw sources — they are immutable.
+
+---
 
 ## Folder Structure
 
 ```
 Second Brain/
-├── raw/                    # Immutable source materials (never modify)
-│   ├── projects/           # SOWs, project docs, deliverables, configs
-│   ├── articles/           # Clipped articles, blog posts, research (ANY topic)
-│   ├── discovery/          # Discovery notes, requirements, client interviews
-│   └── templates/          # Reusable doc templates, frameworks
-├── wiki/                   # LLM-maintained knowledge base (you own this)
-│   ├── index.md            # Master index of all wiki pages with brief descriptions
-│   ├── log.md              # Chronological log of all ingest/update operations
-│   ├── projects/           # Active client/internal project pages (one subfolder per project)
+├── _System/                  # Operational — identity, changelog, selector logs
+├── daily/                    # Daily notes (YYYY-MM-DD.md) — not ingested
+├── dashboards/               # Dataview views — not ingested
+├── raw/                      # Immutable source materials (never modify)
+│   ├── articles/             # Clipped articles, blog posts, research (ANY topic)
+│   ├── projects/             # SOWs, project docs, deliverables, configs, discovery
+│   ├── meeting-raw/          # Pre-selection transcripts
+│   │   ├── fathom/
+│   │   └── granola/
+│   ├── archived-actions/     # Pre-commitments.md archive
+│   ├── archived-stories/     # Old story dumps (excluded from ingest)
+│   └── templates/            # Reusable doc templates (not ingested)
+├── resources/                # Reference docs
+│   ├── diagrams/             # Architecture diagrams
+│   ├── interests/
+│   ├── learning/
+│   └── reading/
+├── wiki/                     # LLM-maintained knowledge base (Claude owns this)
+│   ├── index.md              # Master catalog
+│   ├── log.md                # Chronological operation log
+│   ├── MAKE-SPACES.md        # Make.md space config
+│   ├── projects/             # One subfolder per engagement
 │   │   └── {project}/
-│   │       ├── context.md  # Stable: client info, tech stack, what we're building
-│   │       └── journal.md  # Dynamic: rolling weekly summaries, decisions, open questions
-│   ├── concepts/           # Domain concepts (lead routing, CPQ, data migration, etc.)
-│   ├── patterns/           # Reusable solution patterns and architecture approaches
-│   ├── tools/              # Tools, platforms, integrations (Salesforce, DevOps, MCP, etc.)
-│   ├── entities/           # People, orgs, vendors, partners
-│   ├── articles/           # Individual article breakdowns (one page per article)
-│   └── topics/             # Accumulator pages for personal interests and learning
-└── SCHEMA.md               # This file — governance rules
+│   │       ├── context.md    # Stable: client, stack, what we're building
+│   │       ├── journal.md    # Rolling weekly summaries, decisions, open questions
+│   │       └── stories-{ws}.md # Active stories (auto-written by story-sync)
+│   ├── concepts/             # Domain concepts (CPQ, data migration, etc.)
+│   ├── patterns/             # Reusable solution patterns
+│   ├── tools/                # Tools, platforms, integrations
+│   ├── entities/             # People, orgs, vendors
+│   ├── articles/             # Individual article breakdowns
+│   ├── topics/               # Accumulator pages for personal interests
+│   ├── reports/              # Saved query outputs (kb-report)
+│   └── f2-internal/          # F2 Strategy Confluence mirror (confluence-ingest)
+├── SCHEMA.md                 # This file
+├── SYSTEM-GUIDE.md
+├── PEER-SETUP-GUIDE.md
+├── README.md
+├── TAGS.md
+├── Decision-Log.md
+└── Action-Tracker.md         # DEPRECATED — read-only pointer
 ```
 
-**Note:** `wiki/clients/` has been superseded by `wiki/projects/`. All project knowledge now lives in `wiki/projects/{name}/`.
+**Vault root (outside Second Brain/):**
+
+- `commitments.md` — rolling open action items Mac owns (ingest writes under 4-gate rule)
+- `project-mapping.md` — single source of truth for projects, contacts, routing
+- `Meeting Notes/` — selector winners, routed by `{Company}/{Project}/`
+- `Clippings/` — Web Clipper landing + reference images
+- `.claudeignore` — ignore rules for Claude Code / Cowork
+
+**Note:** `wiki/clients/` does not exist as a separate folder. All project/client knowledge lives in `wiki/projects/{slug}/`.
+
+---
 
 ## External Source: Meeting Notes
 
-The vault also contains a `Meeting Notes/` folder at the root level (outside Second Brain). This is the PRIMARY source for client/project context and is maintained by a separate scheduled task that processes Granola and Shadow meeting transcripts every 2 hours.
+`Meeting Notes/` at vault root is the PRIMARY source for client/project context, populated by `meeting-selector` after scoring Granola vs Fathom pairs.
 
 **Structure:** `Meeting Notes/{Company}/{Project}/YYYY-MM-DD - Title.md`
 
-**Frontmatter fields:** date, title, company, project, attendees, source, processed, tags
+**Frontmatter fields:** date, title, company, project, attendees, source (fathom|granola), selector_score, processed, tags
 
-**How to use Meeting Notes as a source:**
-- Treat `Meeting Notes/` as READ-ONLY — never modify these files.
-- The folder structure itself is the project map: each `{Company}/{Project}/` path represents an active client engagement.
-- When ingesting, scan Meeting Notes for new files not yet referenced in `wiki/log.md`.
-- Extract client context, decisions, action items, tech stack details, pain points, and key contacts from meeting notes into the appropriate wiki pages.
-- Source citations for meeting notes use the format: `Meeting Notes/Company/Project/filename.md`
-- Meeting notes are the richest source of project context — prioritize them during ingest.
+**How to use:**
+
+- READ-ONLY — never modify these files
+- The folder structure itself is the project map
+- Scan for files not referenced in `wiki/log.md`
+- Extract client context, decisions, commitments, tech stack, pain points, contacts into appropriate wiki pages
+- Source citation format: `Meeting Notes/Company/Project/filename.md`
+- Meeting notes are the richest source — prioritize during ingest
+
+---
 
 ## Project Mapping
 
-The vault contains a `project-mapping.md` file at the root level. This is the single source of truth for all active projects, clients, team members, and meeting folder routing. Reference this file to understand:
-- Which companies/clients are active
-- What Salesforce products and tech stacks are in play per project
+`project-mapping.md` at the vault root is the single source of truth for active projects. Reference it to understand:
+
+- Active companies/clients
+- Salesforce products and tech stacks per project
 - Key contacts per engagement
 - Keywords for matching meetings to projects
-- The correct `Meeting Notes/` subfolder path for each project
+- Correct `Meeting Notes/` subfolder path per project
 
-When ingesting, use project-mapping.md to enrich wiki pages with context that might not be in a single meeting note (e.g., industry, project type, full tech stack).
+Enrich wiki pages with context from project-mapping that might not be in any single meeting note (industry, project type, full tech stack).
+
+---
 
 ## Wiki Page Format
 
-Every wiki page must follow this structure:
+Every wiki page follows this structure:
 
 ```markdown
 # Page Title
@@ -69,26 +113,29 @@ Every wiki page must follow this structure:
 2-3 paragraph description.
 
 ## Key Details
-Core content organized by the page type (see Page Types below).
+Core content organized by page type (see Page Types).
 
 ## Related Pages
 - [[page-name]] — brief note on relationship
 
 ## Sources
-- raw/path/to/source.md — what was extracted from this source
+- raw/path/to/source.md — what was extracted
 
 ---
 *Last updated: YYYY-MM-DD*
 *Sources: list of raw/ files that informed this page*
 ```
 
+---
+
 ## Page Types
 
-### Project Pages (`wiki/projects/{name}/`)
+### Project Pages (`wiki/projects/{slug}/`)
 
-Each active project gets a subfolder with exactly two files:
+Each active project gets a subfolder with up to three files:
 
-**`context.md`** — Stable reference. Set once, updated only when the project fundamentally changes (new scope, new team, tech stack change). Contains:
+**`context.md`** — Stable reference. Set once, updated when the project fundamentally changes (new scope, new team, stack change). Contains:
+
 - Client/company info, industry, partner
 - Key contacts
 - What we're building (feature scope, not sprint status)
@@ -96,46 +143,48 @@ Each active project gets a subfolder with exactly two files:
 - Key constraints and architectural decisions
 - Cross-links to related concept/tool/pattern pages
 
-**`journal.md`** — Rolling narrative. Ingest appends a new `## Week of {date}` block at the TOP with each batch of meeting notes. Each entry contains:
-- 2-4 sentence narrative summary of what happened this week
-- **Decisions:** bullet list of decisions made (with enough context to understand why)
-- **Open questions:** bullet list of unresolved items, owner if known
+**`journal.md`** — Rolling narrative. Ingest prepends a new `## Week of {date}` block at the TOP with each batch of meeting notes:
 
-**Journal format:**
 ```markdown
 ## Week of Apr 7–13, 2026
 
-2-4 sentences describing what happened this week across all meetings.
+2-4 sentences describing what happened this week.
 
 **Decisions:**
-- Decision made — brief rationale or context
+- Decision — brief rationale
 
 **Open questions:**
-- Question or blocker — owner if known
+- Question — owner if known
 ```
 
-**Ingest rules for journals:**
-- Prepend new weekly entries to the top (newest first)
-- If the current week already has an entry, add to it rather than creating a duplicate
-- Keep the narrative tight — this is a digest, not a transcript
-- Decisions and open questions are the most important parts; don't skip them
+Ingest rules:
+
+- Prepend weekly entries (newest first)
+- If the current week already has an entry, extend it (no duplicates)
+- Keep tight — this is a digest, not a transcript
+- Decisions and open questions are the most important parts
+
+**`stories-{ws}.md`** — Auto-written by `story-sync`. One file per workspace (e.g., `stories-linear-mss.md`, `stories-jira-f2.md`). Active set only: Linear Todo/In Progress/Started + Jira To Do/In Progress (plus Backlog in current cycle). Do not hand-edit.
 
 ### Concept Pages (`wiki/concepts/`)
-Track: definition, when/why it matters, common implementations, gotchas, related Salesforce features, links to patterns that use this concept.
+
+Definition, when/why it matters, common implementations, gotchas, related Salesforce features, links to patterns that use this concept.
 
 ### Pattern Pages (`wiki/patterns/`)
-Track: problem statement, solution approach, architecture diagram (mermaid if applicable), implementation steps, when to use vs. alternatives, real examples from client work, risks/mitigations.
+
+Problem statement, solution approach, architecture diagram (Mermaid if applicable), implementation steps, when to use vs. alternatives, real examples from client work, risks/mitigations.
 
 ### Tool Pages (`wiki/tools/`)
-Track: what it does, how it fits the stack, setup/config notes, strengths/limitations, licensing, integration points, alternatives.
+
+What it does, how it fits the stack, setup/config notes, strengths/limitations, licensing, integration points, alternatives.
 
 ### Entity Pages (`wiki/entities/`)
-Track: who/what, role/relationship, context, relevant interactions or decisions.
+
+Who/what, role/relationship, context, relevant interactions or decisions.
 
 ### Article Pages (`wiki/articles/`)
-Track: title, source URL, publish date, author, tags (tech/ai/salesforce/learning), a concise summary, key takeaways (bulleted), notable specs/data points, and why it matters (Mac's perspective or relevance to his work/interests). Always link to relevant topic pages and any consulting wiki pages where the content is relevant.
 
-**Article pages use this extended format:**
+Title, source URL, publish date, author, tags, concise summary, key takeaways (bulleted), notable specs/data, why it matters. Always link to relevant topic pages and any consulting wiki pages.
 
 ```markdown
 # Article Title
@@ -145,13 +194,13 @@ Track: title, source URL, publish date, author, tags (tech/ai/salesforce/learnin
 **Source:** [Title](URL) | **Published:** YYYY-MM-DD | **Tags:** tech, ai, etc.
 
 ## Summary
-2-3 paragraph breakdown of the article.
+2-3 paragraph breakdown.
 
 ## Key Takeaways
 - Bulleted list of the most important points, specs, or data.
 
 ## Why It Matters
-Brief note on relevance — to Mac's work, stack, interests, or the broader industry.
+Brief note on relevance — Mac's work, stack, interests, or broader industry.
 
 ## Related Pages
 - [[topic-page]] — relationship
@@ -162,82 +211,104 @@ Brief note on relevance — to Mac's work, stack, interests, or the broader indu
 ```
 
 ### Topic Pages (`wiki/topics/`)
-Topic pages are **accumulator pages** for personal interests and learning. They grow over time as more articles and sources are ingested. Unlike concept pages (which track consulting domain knowledge), topic pages track broader interests: hardware, AI trends, industry news, dev tools, frameworks, etc.
 
-Track: topic description, key developments (chronological, most recent first), notable products/releases/announcements, links to individual article pages, cross-links to consulting wiki pages where relevant.
+Accumulator pages for personal interests. Grow over time. Unlike concept pages (consulting domain knowledge), topic pages track broader interests: hardware, AI trends, industry news, dev tools, frameworks.
 
-**Tagging convention:** Every article page should have one or more tags from this taxonomy. New tags can be added as needed, but prefer these defaults:
+Track: topic description, key developments (chronological, most recent first), notable products/releases/announcements, links to individual article pages, cross-links to consulting wiki where relevant.
+
+**Article tagging taxonomy:**
+
 - `tech` — hardware, devices, operating systems, infrastructure
-- `ai` — AI models, tools, frameworks, industry trends, research
+- `ai` — AI models, tools, frameworks, industry, research
 - `salesforce` — Salesforce ecosystem news (separate from client work)
-- `learning` — tutorials, frameworks, side projects, things Mac is exploring
-- `devops` — CI/CD, deployment, tooling, automation
-- `cloud` — cloud platforms, architecture, serverless, hosting
+- `learning` — tutorials, frameworks, side projects
+- `devops` — CI/CD, deployment, automation
+- `cloud` — cloud platforms, architecture, serverless
+
+### Report Pages (`wiki/reports/`)
+
+Auto-written by `kb-report` skill. Permanent query answers with citations. Cross-linked from relevant wiki pages.
+
+---
 
 ## Workflows
 
 ### 1. INGEST (processing new raw sources)
 
-When told to ingest a source:
+When told to ingest:
+
 1. Read the raw file completely.
 2. Identify all entities, concepts, patterns, tools, and client references.
 3. For each identified item:
-   - If a wiki page exists → update it with new information, note the source.
-   - If no wiki page exists → create one following the page format above.
+   - Wiki page exists → update with new info, note the source
+   - No wiki page → create one using the page format
 4. Update `wiki/index.md` with any new pages.
-5. Add an entry to `wiki/log.md` with: date, source file, pages created/updated, brief summary.
+5. Add `wiki/log.md` entry: date, source file, pages created/updated, brief summary.
 6. Cross-link related pages using `[[wiki-links]]`.
-7. Report what was done: pages created, pages updated, key takeaways.
+7. Report what was done.
 
-**Article ingest (`raw/articles/`):** Articles from `raw/articles/` are NOT limited to consulting content. Process every article:
-1. Create a `wiki/articles/` page using the Article Page format (summary, key takeaways, why it matters).
-2. Identify or create the relevant `wiki/topics/` accumulator page(s) and add the article reference there.
-3. If the article has overlap with consulting wiki pages (tools, concepts, clients), cross-link and update those pages too.
-4. Never skip an article just because it's not consulting-related — the Second Brain captures everything Mac finds worth saving.
+**Article ingest (`raw/articles/`):** Not limited to consulting content. For every article:
 
-**Meeting Notes ingest:** Also scan `Meeting Notes/` (root-level vault folder) for any files not yet referenced in `wiki/log.md`. For each new meeting note:
-1. Identify the project using the folder path (e.g., `Meeting Notes/Stand8/Harvey/` = Harvey project).
-2. **Update `wiki/projects/{project}/journal.md`** — prepend a `## Week of {date}` entry (or append to the current week's entry if it exists) with a narrative summary, decisions, and open questions extracted from the meeting.
-3. **Update `wiki/projects/{project}/context.md`** only if the meeting reveals new stable information (new team member, scope change, tech stack addition, architectural decision). Do not add meeting-specific notes to context.md.
-4. **Append to `Action-Tracker.md`** any clear action items with owners. Format: `- [ ] Description [Owner:: Name] [Project:: project-name] [Date:: YYYY-MM-DD]`. Only add items that are genuine commitments with a clear owner — not vague open questions.
-5. **Append to `Decision-Log.md`** any significant decisions as new table rows: `| Date | Project | Decision | Context |`. Only add decisions that are strategic or will affect future work — skip trivial ticket-level choices.
-6. Also update any relevant `wiki/concepts/`, `wiki/patterns/`, `wiki/tools/`, or `wiki/entities/` pages if the meeting contains knowledge that belongs in the shared wiki (reusable patterns, tool insights, etc.).
+1. Create a `wiki/articles/` page using the Article format.
+2. Identify or create the relevant `wiki/topics/` accumulator page; add the article reference there.
+3. If overlap with consulting wiki pages (tools, concepts, projects), cross-link and update.
+4. Never skip — if Mac clipped it, it's worth processing.
+
+**Meeting Notes ingest:** Scan `Meeting Notes/` for files not in `wiki/log.md`. For each new meeting:
+
+1. Identify the project from the folder path (`Meeting Notes/Stand8/Harvey/` = Harvey).
+2. **Update `wiki/projects/{slug}/journal.md`** — prepend a `## Week of {date}` entry (or extend the current week) with narrative summary, decisions, open questions.
+3. **Update `wiki/projects/{slug}/context.md`** only if the meeting reveals new stable info (new team member, scope change, stack addition, architectural decision). Do not add meeting-specific notes to context.md.
+4. **Append to `commitments.md`** any action items that pass ALL four extraction gates (below). Format: `- [ ] Description [Project:: slug] [Source:: Meeting Notes/.../file.md] [Captured:: YYYY-MM-DD] [Due:: YYYY-MM-DD if explicit]`. If no items pass, write nothing.
+5. **Append to `Decision-Log.md`** significant decisions as new rows: `| Date | Project | Decision | Context |`. Strategic decisions only — skip trivial ticket-level choices.
+6. Update relevant `wiki/concepts/`, `wiki/patterns/`, `wiki/tools/`, `wiki/entities/` if the meeting contains reusable knowledge.
+
+**4-gate commitments rule** — ALL must pass before writing to `commitments.md`:
+
+1. **Owner = Mac.** Explicit assignment or first-person commitment. Ambiguous, someone else, or "the team" → skip.
+2. **Firm commitment.** Explicit verb phrase ("I'll", "Mac will", "action for Mac", "Mac to take", "owner: Mac") or a task assignment. Vague "we should", "somebody needs to", "would be good if" → skip.
+3. **Concrete next step.** Specific action, not a topic. "Follow up on X" without specifics → skip. "Send the revised SOW to Client Y by Thursday" → keep.
+4. **Deduplicate.** Compare against open items by first 60 chars + project. If duplicate, refresh existing entry (source link, date) rather than creating.
 
 ### 2. QUERY (answering questions from the wiki)
 
-When asked a question:
 1. Consult `wiki/index.md` to find relevant pages.
-2. Read relevant wiki pages and, if needed, trace back to raw sources for detail.
+2. Read relevant wiki pages; trace back to raw sources for detail if needed.
 3. Synthesize an answer citing specific wiki pages and raw sources.
-4. If the wiki doesn't have enough info, say so and suggest what raw sources would fill the gap.
+4. If the wiki lacks info, say so and suggest what raw sources would fill the gap.
 
-### 3. CREATE (generating deliverables from wiki knowledge)
+### 3. CREATE (generating deliverables)
 
-When asked to create a deliverable (solution doc, user stories, proposal, etc.):
-1. Query the wiki for all relevant context (client, patterns, concepts, tools).
-2. Pull from raw templates if available in `raw/templates/`.
-3. Generate the deliverable with full context from the knowledge base.
+1. Query the wiki for all relevant context.
+2. Pull from `raw/templates/` if applicable.
+3. Generate with full context.
 4. Note in `wiki/log.md` that a deliverable was generated and what wiki pages informed it.
 
 ### 4. LINT (health check)
 
-When told to lint or health-check the wiki:
-1. Scan all wiki pages for:
+1. Scan wiki pages for:
    - Broken or missing `[[wiki-links]]`
    - Pages with no sources cited
    - Pages not listed in `wiki/index.md`
-   - Stale information (sources older than 6 months with no updates)
+   - Stale info (sources > 6 months with no updates)
    - Missing cross-references between related pages
-2. **Log rotation:** If `wiki/log.md` exceeds 200 entries, archive entries older than 90 days to `wiki/log-archive-{year}.md`.
-3. **Stale action items:** Check `Action-Tracker.md` for items older than 30 days with no update. Flag them for review — either mark complete, update with status, or escalate.
-4. **Session context cleanup:** Delete files in `session-context/` older than 30 days, or ingest any durable knowledge into wiki pages first.
-5. Report issues found and fix what can be fixed automatically.
-6. Suggest raw sources that could fill identified gaps.
+   - Non-canonical tags (compare against `TAGS.md`)
+   - Frontmatter conflicts
+   - Project-slug integrity (folder-to-mapping coverage, stories project=folder, ticket prefix routing)
+2. **Log rotation:** `wiki/log.md` > 200 entries → archive entries > 90 days to `wiki/log-archive-{year}.md`.
+3. **Stale commitments:** `commitments.md` `## Open` items > 30 days with no update → flag for review.
+4. **Closed commitments:** `## Done` items > 14 days → move to `raw/archived-actions/YYYY-MM.md`.
+5. **Session context cleanup:** Delete `session-context/` files > 30 days old, or ingest durable knowledge into wiki pages first.
+6. Report issues; fix what's safe automatically.
+7. Suggest raw sources to fill gaps.
+
+---
 
 ## Rules
 
-- Never modify anything in `raw/`. It's immutable source of truth.
-- Never ingest or process files in `dashboards/` or `session-context/`. These are operational folders, not knowledge sources.
+- Never modify anything in `raw/`. Immutable source of truth.
+- Never ingest or process files in `dashboards/`, `session-context/`, `daily/`, or `_System/`. Operational folders, not knowledge sources.
+- `Meeting Notes/` winners are READ-ONLY (immutability preserved across selector reruns).
 - Always cite sources when updating wiki pages.
 - Keep wiki pages concise and scannable — no fluff.
 - Use `[[wiki-links]]` for cross-references (Obsidian-compatible).
@@ -246,91 +317,22 @@ When told to lint or health-check the wiki:
 - Maintain `wiki/index.md` and `wiki/log.md` with every operation.
 - Professional but casual tone — match Mac's voice.
 
+---
+
 ## Domain Context
 
-Mac runs Modern Stack Systems, a consulting practice focused on:
+Mac runs **Modern Stack Systems**, a consulting practice focused on:
+
 - Salesforce architecture and implementation (Sales Cloud, Service Cloud, CPQ, integrations)
 - DevOps and CI/CD (GitHub Actions, Salesforce DX, deployment automation)
 - AI/MCP tooling and automation
 - Cloud architecture and system design
 - Business development and go-to-market strategy
 
-The wiki should develop deep knowledge in these areas over time.
+**Personal interests** (article/topic pages):
 
-**Personal interests** (for article/topic pages):
-- Apple hardware and ecosystem (daily driver, cares about new releases and specs)
-- AI industry trends, model releases, and tooling evolution
-- Dev tools, frameworks, and productivity automation
+- Apple hardware and ecosystem
+- AI industry trends, model releases, tooling evolution
+- Dev tools, frameworks, productivity automation
 - Cloud platform evolution and serverless architecture
-- Anything Mac clips into `raw/articles/` — if he saved it, it's worth processing
-
-
----
-
-## Updates (2026-04-18f) — Action-Tracker deprecated, commitments.md flow locked in
-
-### What changed
-
-- **`Action-Tracker.md` is deprecated.** All prior content archived to `raw/archived-actions/2026-04-pre-sunset.md`. The file at the root is now a read-only pointer. Do not write to it.
-- **`commitments.md`** (vault root) is the new rolling list of open action items Mac owns. Simple append-only markdown list. Daily-note-builder reads it each morning and surfaces open items in today's daily note.
-- **Per-project story context** remains unchanged — `wiki/projects/{project-path}/stories-{ws}.md` is still maintained by `story-sync` as the story-level context source of truth.
-- **Kanban boards are retired.** No automation writes `wiki/projects/*/board.md`. Any existing board files will be deleted. If manual boards are desired in the future, they live outside the automation loop.
-
-### Hard extraction rules for ingest
-
-Ingest MUST enforce ALL of the following before appending an item to `commitments.md`:
-
-1. **Owner = Mac.** The item is an action Mac himself committed to, or is explicitly assigned to Mac by someone else. If the owner is ambiguous, someone else, or a team in general — skip it.
-2. **Firm commitment.** The source contains an explicit commitment verb phrase ("I'll", "Mac will", "action for Mac", "Mac to take", "owner: Mac") or a task assignment. Vague open questions, "we should", "somebody needs to", or "it would be good if" — skip.
-3. **Clear next step.** The item has a concrete next action Mac can do, not a topic area. "Follow up on X" without specifics — skip. "Send the revised SOW to Client Y by Thursday" — keep.
-4. **Deduplicate.** Compare against existing open items in `commitments.md` by first 60 chars + project. If it's already there, update the existing entry (refresh source meeting link, add date) rather than creating a duplicate.
-
-Items that fail any of these 4 gates do NOT get written. If a meeting has no items that pass, ingest writes nothing to `commitments.md` for that meeting.
-
-### commitments.md format
-
-```markdown
-# Commitments
-
-> Rolling list of open action items Mac owns. Auto-maintained by ingest. Daily-note-builder pulls from here each morning.
-
-## Open
-
-- [ ] Description of the commitment [Project:: project-slug] [Source:: Meeting Notes/Company/Project/2026-04-18-title.md] [Captured:: 2026-04-18] [Due:: 2026-04-25]
-- [ ] ...
-
-## Done (last 14 days)
-
-- [x] Completed item [Project:: project-slug] [Closed:: 2026-04-17]
-- [x] ...
-```
-
-**Lifecycle:**
-- Ingest appends to `## Open`.
-- When Mac closes an item (checks the box), the lint pass on Sunday moves it to `## Done (last 14 days)`.
-- Items in Done older than 14 days are moved to `raw/archived-actions/YYYY-MM.md` during the Sunday lint.
-
-### Meeting Notes ingest — corrected step 4
-
-The prior step 4 in the INGEST workflow said "Append to `Action-Tracker.md` any clear action items with owners." **This is superseded.** The corrected step 4 reads:
-
-4. **Append to `commitments.md`** any action items that pass ALL four extraction gates above (Owner=Mac, firm commitment, clear next step, deduplicated). Format each as a single-line list item under `## Open` with inline dataview fields: `- [ ] Description [Project:: slug] [Source:: path/to/meeting.md] [Captured:: YYYY-MM-DD] [Due:: YYYY-MM-DD if explicit, else omit]`. If no items pass, write nothing.
-
-Step 5 (Decision-Log) is unchanged.
-
-### Story-sync scope (locked)
-
-`story-sync` now pulls only the strict active set:
-
-- **Linear:** Todo, In Progress, Started
-- **Jira:** To Do, In Progress
-- **Backlog** items only if in the current cycle (drops the 14-day "recently updated" fallback)
-
-Dropped from scope: In Review, Review, Developer Review, Code Review, Peer Review, Internal QA, QA, In QA, Testing, Ready for QA, Blocked, On Hold, Open, Selected for Development, Unstarted.
-
-`story-sync` no longer writes the AUTO-SYNC block in `Action-Tracker.md`. Per-project `stories-{ws}.md` pages are still written — that's the story context source of truth.
-
-### Supersedes
-
-- Updates 2026-04-18b "Kanban + Action-Tracker" sections — kanban retired, Action-Tracker deprecated.
-- identity.yaml `action_tracker.*` keys — now moot, can be removed on next identity.yaml touch.
+- Anything Mac clips into `raw/articles/` — if he saved it, process it
