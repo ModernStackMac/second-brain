@@ -12,32 +12,32 @@ Three layers:
 
 **Obsidian** — the frontend. Plain markdown in an iCloud-synced vault. Browse wiki pages, view the graph, use plugins for tasks/dashboards/drawing.
 
-**Claude** — the backend. Scheduled tasks and on-demand skills read raw sources, compile wiki pages, maintain cross-references, and run health checks. Claude writes; you read.
+**Claude** — the backend. Scheduled tasks and on-demand skills read sources, compile wiki pages, maintain cross-references, and run health checks. Claude writes; you read.
 
 **MCPs** — the connections. Claude talks to Obsidian (via Local REST API), Fathom, Gmail, Slack, Google Calendar, QuickBooks, Linear, Jira, Notion, and others.
 
 Canonical architecture diagram: `resources/diagrams/llm-kb-architecture.md`.
 
 ```
-┌────────────────────────────────────────────────────┐
-│  YOU (Obsidian)                                    │
-│  Browse wiki · Graph view · Tasks · Excalidraw     │
-└──────────────────────┬─────────────────────────────┘
-                       │ reads / browses
-┌──────────────────────▼─────────────────────────────┐
-│  VAULT (iCloud)                                    │
-│  raw/ → wiki/ → reports/                           │
-│  Meeting Notes/ · commitments.md · project-mapping │
-└──────────────────────┬─────────────────────────────┘
-                       │ reads / writes
-┌──────────────────────▼─────────────────────────────┐
-│  CLAUDE (scheduled tasks + on-demand skills)       │
-│  Ingest · Lint · Report · Fathom router · Story    │
-│  Via: mcp-obsidian, Fathom, Gmail, Linear, Jira…   │
-└────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│  YOU (Obsidian)                                  │
+│  Browse wiki · Graph view · Tasks · Excalidraw   │
+└───────────────────────┬──────────────────────────┘
+                        │ reads / browses
+┌───────────────────────▼──────────────────────────┐
+│  VAULT (iCloud)                                  │
+│  Meeting Notes/ · raw/ · wiki/ · reports/        │
+│  commitments.md · project-mapping.md             │
+└───────────────────────┬──────────────────────────┘
+                        │ reads / writes
+┌───────────────────────▼──────────────────────────┐
+│  CLAUDE (scheduled tasks + on-demand skills)     │
+│  Fathom route · Ingest · Lint · Story · Report   │
+│  Via: mcp-obsidian, Fathom, Gmail, Linear, Jira… │
+└──────────────────────────────────────────────────┘
 ```
 
-Data flow: **Sources → raw/ (immutable) → wiki/ (LLM-compiled) → dashboards/ (surfaced).** Claude never edits `raw/`.
+Data flow: **Sources → Meeting Notes/ + raw/ (intake) → wiki/ (LLM-compiled) → dashboards/ (surfaced).** Claude never rewrites an existing Meeting Notes file and treats `raw/` as additive-only.
 
 ---
 
@@ -53,7 +53,7 @@ Folder tree:
 Documents/
   Clippings/                  # Web Clipper landing zone + reference images
   Excalidraw/                 # Excalidraw drawings (excluded from ingest)
-  Meeting Notes/              # Fathom meeting notes — routed by project
+  Meeting Notes/              # Fathom meeting notes — sole meeting destination
     {Company}/{Project}/
     _Unmatched/               # Meetings the router couldn't route
   Second Brain/               # The knowledge base
@@ -69,8 +69,8 @@ Documents/
     raw/                      # Immutable source material
       articles/               # Web Clipper saves here
       projects/               # SOWs, configs, client docs
-      meeting-raw/            # Fathom transcripts pre-routing
-        fathom/               # Current capture folder (the only active one)
+      transcripts/            # Non-Fathom transcripts (Granola legacy, interviews)
+      meeting-raw/            # DEPRECATED — historical archive, frozen, not written to
       archived-actions/       # Pre-commitments.md archive
       archived-stories/       # Old story dumps
       templates/              # Templater templates (daily-note, quick-capture)
@@ -94,7 +94,9 @@ Documents/
   .claudeignore               # Excludes noise from Claude Code / Cowork scans
 ```
 
-`.claudeignore` excludes: `.obsidian/`, `Excalidraw/`, `Clippings/`, `raw/archived-stories/`, binary attachments, stray CSVs. The compiled wiki layer is the intended search surface.
+`.claudeignore` excludes: `.obsidian/`, `Excalidraw/`, `Clippings/`, `raw/archived-stories/`, `raw/meeting-raw/` (deprecated archive), binary attachments, stray CSVs. The compiled wiki layer is the intended search surface.
+
+**Meeting storage:** Fathom recordings land directly in `Meeting Notes/{Company}/{Project}/`. There is no duplicate write to `raw/meeting-raw/fathom/` — that folder is a historical archive only. `Meeting Notes/` is the sole live meeting store.
 
 ---
 
@@ -106,15 +108,15 @@ All times Central. All tasks run automatically — no manual intervention needed
 
 | Task | Schedule | What it does |
 |------|----------|--------------|
-| `process-fathom-transcripts` | Weekdays every 2hrs, 8am–6pm | Ingests new Fathom recordings into `raw/meeting-raw/fathom/` AND routes each one to `Meeting Notes/{Company}/{Project}/` via `project-mapping.md` in a single pass. Ingest + route fused — no separate selector task. Unroutable → `Meeting Notes/_Unmatched/` and `_System/meeting-routing-unrouted.md`. Log: `_System/selector-log.md`. |
+| `process-fathom-transcripts` | Weekdays every 2hrs, 8am–6pm | Ingests new Fathom recordings **directly** to `Meeting Notes/{Company}/{Project}/` via `project-mapping.md`. Single destination — no duplicate to `raw/`. Unroutable → `Meeting Notes/_Unmatched/` and `_System/meeting-routing-unrouted.md`. Log: `_System/selector-log.md`. |
 
-Fathom is the sole meeting source. Immutability: once routed, a file stays — routing is additive.
+Fathom is the sole meeting source. Meeting Notes is additive-only — once a file is written, it is never overwritten.
 
 ### Knowledge pipeline
 
 | Task | Schedule | What it does |
 |------|----------|--------------|
-| `second-brain-ingest` | Weekdays every 4hrs at :30 | Scans `raw/` + `Meeting Notes/` for files not in `wiki/log.md`. Extracts entities/concepts → wiki pages, decisions → `Decision-Log.md`, commitments → `commitments.md` (4-gate rule). Updates `wiki/index.md` and `wiki/log.md`. |
+| `second-brain-ingest` | Weekdays every 4hrs at :30 | Scans `Meeting Notes/`, `raw/articles/`, `raw/projects/`, `raw/transcripts/` for files not in `wiki/log.md`. Does NOT scan `raw/meeting-raw/` (deprecated). Extracts entities/concepts → wiki pages, decisions → `Decision-Log.md`, commitments → `commitments.md` (4-gate rule). Updates `wiki/index.md` and `wiki/log.md`. |
 | `second-brain-lint` | Sundays 1am | Full lint — broken links, orphans, index gaps, cross-ref gaps, tag canon, frontmatter conflicts, project-slug integrity. Auto-fixes safe issues; reports the rest. |
 | `second-brain-lint-wed` | Wednesdays 1am | Mid-week lint — same checks, lighter scope (skips archived folders). Optional; disable if you don't actively read the report. |
 | `confluence-ingest` | Weekdays 6:30am | Mirrors F2 Strategy Confluence pages into `wiki/f2-internal/`. Sync-only — don't edit mirrored files by hand. |
@@ -124,7 +126,7 @@ Fathom is the sole meeting source. Immutability: once routed, a file stays — r
 
 | Task | Schedule | What it does |
 |------|----------|--------------|
-| `daily-note-builder` | Weekdays 6am | Builds `daily/YYYY-MM-DD.md` — today's calendar events + open commitments + rolled-forward unfinished items + recent decisions. |
+| `daily-note-builder` | Weekdays 6am | Builds `daily/YYYY-MM-DD.md` — today's calendar, today's focus commitments, yesterday's wins, blocked/needs unblock, follow-ups due today, active stories by project, recent decisions. Preserves user-authored Notes/Scratch sections. |
 | `daily-morning-briefing` | Daily 6am | Curated Salesforce / AI / tech / HN news as styled HTML email. |
 | `daily-email-summary` | Weekdays 7am | Summarizes last 3 days of Gmail — orders, tracking, important — styled HTML digest. |
 | `weekly-financial-digest` | Fridays 7am | QuickBooks P&L + cash flow → Gmail draft → send via Chrome. |
@@ -156,10 +158,8 @@ Trigger from natural language in Cowork or Claude Code. All live in `~/.claude/s
 ### Meetings (Fathom)
 
 1. Join with Fathom running
-2. `process-fathom-transcripts` pulls the recording within 2 hours and does both steps in one pass:
-   - Writes the raw transcript to `raw/meeting-raw/fathom/` with frontmatter
-   - Routes the note to `Meeting Notes/{Company}/{Project}/` using `project-mapping.md`
-3. Unroutable → `Meeting Notes/_Unmatched/`. Review weekly, update `project-mapping.md`
+2. `process-fathom-transcripts` pulls the recording within 2 hours and writes **one file** directly to `Meeting Notes/{Company}/{Project}/{date} - {title}.md` — no duplicate in `raw/`
+3. Routing uses `project-mapping.md` (attendees + keywords). Unroutable → `Meeting Notes/_Unmatched/`; review weekly and update `project-mapping.md`
 4. `second-brain-ingest` picks up the routed note and extracts:
    - Decisions → `Decision-Log.md`
    - Commitments → `commitments.md` (4-gate rule)
@@ -202,6 +202,8 @@ Set Home as startup: Settings → Editor → Default view = Reading view; enable
 
 `commitments.md` at the vault root is the rolling open-items list. `Action-Tracker.md` is sunset — do not create.
 
+**Writer:** `second-brain-ingest` (weekdays every 4hrs at :30) + on-demand `kb-ingest-now` skill.
+
 **4-gate extraction rule** — ingest MUST enforce all four before writing:
 
 1. **Owner = Mac.** Explicit assignment or first-person commitment. Ambiguous → skip.
@@ -216,9 +218,34 @@ Format:
 - [ ] Description [Project:: slug] [Source:: Meeting Notes/.../file.md] [Captured:: YYYY-MM-DD] [Due:: YYYY-MM-DD]
 ```
 
-Lifecycle: ingest appends to `## Open`. When you check the box, Sunday lint moves it to `## Done (last 14 days)`. Items > 14 days in Done → `raw/archived-actions/YYYY-MM.md`.
+**Lifecycle:**
+- Ingest appends to `## Open`
+- You check the box in Obsidian (`- [x]`)
+- Sunday lint moves checked items to `## Done (last 14 days)`
+- Items > 14 days in Done → `raw/archived-actions/YYYY-MM.md` (and removed from commitments.md)
+- Open items untouched > 14 days → flagged in `_System/commitments-stale.md` for review (no auto-delete)
 
-`daily-note-builder` reads `commitments.md` each morning and surfaces today's focus.
+**Reader:** `daily-note-builder` reads `## Open` each morning and surfaces today's focus + overdue + blocked items.
+
+---
+
+## daily/ (what the daily note contains)
+
+`daily-note-builder` creates today's note at `Second Brain/daily/YYYY-MM-DD.md` weekdays at 6am. Sections, in order:
+
+| Section | Source | Notes |
+|---------|--------|-------|
+| Today's Calendar | Google Calendar MCP | Today's events with attendees |
+| Today's Focus | `commitments.md` ## Open | Due today + overdue + fresh (last 2 business days). Max 8. |
+| Yesterday's Wins | `commitments.md` ## Done | Items closed in last 24 hrs |
+| Blocked / Needs Unblock | `commitments.md` ## Open | Tagged `[Blocked::]`, "waiting on", or open > 7 days |
+| Follow-ups Due Today | `commitments.md` ## Open | Items with `[Due:: today]` only. Omitted if empty. |
+| Active Stories by Project | `wiki/projects/{slug}/stories-*.md` | Up to 5 projects × 3 stories, assigned to Mac, active status |
+| Recent Decisions | `Decision-Log.md` | Last 5 entries |
+| Notes | (user-authored) | Preserved across reruns |
+| Scratch | (user-authored) | Preserved across reruns |
+
+The builder is read-only against commitments/decisions/stories — it never modifies them.
 
 ---
 
@@ -317,7 +344,7 @@ Auto-commit + push every 15 minutes via Obsidian Git.
 
 **Scheduled task not processing new files** — File already in `wiki/log.md` (skipped)? `project-mapping.md` has an entry for the project? Check task run history in Cowork sidebar.
 
-**Meeting not routing** — Unrouted transcripts go to `Meeting Notes/_Unmatched/`. Update `project-mapping.md` keywords and attendees.
+**Meeting not routing** — Unrouted meetings go to `Meeting Notes/_Unmatched/`. Update `project-mapping.md` keywords and attendees, then move the file to the correct `{Company}/{Project}/` folder manually.
 
 **Web Clipper saving to wrong folder** — Extension settings → Folder = `Second Brain/raw/articles`.
 

@@ -71,3 +71,22 @@ Granola deleted. Fathom is now the sole meeting source.
 - Added `Linear Project` field to the "Adding a New Project" template.
 
 **Flag for Mac:** `second-brain-lint-wed` (Wednesdays 1am) still active. Second lint per week is optional — disable if the Sunday report is sufficient.
+
+
+## 2026-04-18 — Single-destination meeting pipeline + daily-note expansion
+
+**Architecture change.** Eliminated the double-write of Fathom recordings. Meeting Notes/ is now the sole live destination; `raw/meeting-raw/` is deprecated and frozen as a historical archive.
+
+**Scheduled tasks updated:**
+- `process-fathom-transcripts` — prompt rewritten. Writes one file per recording, directly to `Meeting Notes/{Company}/{Project}/{date} - {title}.md`. No write to `raw/meeting-raw/`. Routing logic, _Unmatched fallback, and selector-log behavior unchanged.
+- `second-brain-ingest` — prompt rewritten. Scope is now: `Meeting Notes/`, `raw/articles/`, `raw/projects/`, `raw/transcripts/`. Explicitly excludes `raw/meeting-raw/`, `raw/archived-actions/`, `raw/archived-stories/`, `raw/templates/`, `dashboards/`, `daily/`, `Excalidraw/`, `Clippings/`. Eliminates double-ingest risk that existed when the same meeting lived in both `raw/meeting-raw/fathom/` and `Meeting Notes/`.
+- `daily-note-builder` — prompt expanded. New sections: Yesterday's Wins, Blocked / Needs Unblock, Follow-ups Due Today, Active Stories by Project. Existing sections preserved (Calendar, Today's Focus, Recent Decisions). Builder now preserves user-authored `## Notes` and `## Scratch` across reruns.
+
+**Vault docs updated:**
+- `SYSTEM-GUIDE.md` — folder tree marks `raw/meeting-raw/` as DEPRECATED; meeting pipeline table reflects single destination; new `daily/` section documents builder output sections; `commitments.md` lifecycle expanded with stale-flagging behavior.
+- `PEER-SETUP-GUIDE.md` — Phase 2 folder tree, Phase 5 task descriptions, Phase 7 capture workflow all updated to reflect single-destination model.
+
+**Linked work flagged for next lint (`second-brain-lint-wed` 2026-04-22 1am CT):**
+- Verify no scheduled task or skill still references `raw/meeting-raw/fathom/` as a write target.
+- Confirm `.claudeignore` lists `raw/meeting-raw/` so Claude Code/Cowork scans skip it.
+- Confirm `process-fathom-transcripts` and `second-brain-ingest` both ran successfully under new prompts.

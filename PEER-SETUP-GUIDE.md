@@ -2,7 +2,7 @@
 
 Stand up your own Second Brain that mirrors Mac's. Follow in order — each phase builds on the previous.
 
-**Mental model first:** `Sources → raw/ (immutable) → wiki/ (Claude-compiled) → dashboards/ (daily use)`. Claude reads and writes `wiki/` + `dashboards/`. Claude never edits `raw/`. Anything else you see in this guide is plumbing that supports that flow.
+**Mental model first:** `Sources → Meeting Notes/ + raw/ (intake) → wiki/ (Claude-compiled) → dashboards/ (daily use)`. Claude reads sources and compiles `wiki/` + `dashboards/`. Meeting Notes is additive-only. `raw/` is immutable. Anything else you see here is plumbing.
 
 ---
 
@@ -34,7 +34,7 @@ Create this layout at the vault root. Everything else slots in.
 {Vault}/
 ├── Clippings/                 # Web Clipper image/asset dumping ground
 ├── Excalidraw/                # Drawings (excluded from ingest)
-├── Meeting Notes/             # Routed Fathom notes
+├── Meeting Notes/             # Fathom notes — sole live meeting destination
 │   ├── {Company}/{Project}/   # One folder per active project
 │   └── _Unmatched/            # Router fallback when mapping is missing
 ├── Second Brain/
@@ -50,8 +50,8 @@ Create this layout at the vault root. Everything else slots in.
 │   ├── raw/                   # Immutable source material — Claude never edits
 │   │   ├── articles/          # Web Clipper lands here
 │   │   ├── projects/          # SOWs, configs, ERDs per project
-│   │   ├── meeting-raw/
-│   │   │   └── fathom/        # Fathom transcripts pre-routing
+│   │   ├── transcripts/       # Non-Fathom transcripts (interviews, legacy)
+│   │   ├── meeting-raw/       # DEPRECATED archive — frozen, not written to
 │   │   ├── templates/         # Templater templates
 │   │   ├── archived-actions/
 │   │   └── archived-stories/
@@ -73,6 +73,8 @@ Create this layout at the vault root. Everything else slots in.
 ├── project-mapping.md         # Single source of truth — projects, contacts, routing
 └── .claudeignore              # Excludes noise from Claude Code / Cowork scans
 ```
+
+**Meeting storage note:** Fathom writes directly to `Meeting Notes/{Company}/{Project}/`. There is no parallel write into `raw/meeting-raw/` — that folder is a historical archive only. Meeting Notes is your sole live meeting store.
 
 Projects replace the old "clients" concept. A client relationship = one or more project entries in `project-mapping.md`.
 
@@ -134,19 +136,19 @@ Copy Mac's `project-mapping.md` as a starting template and replace with your own
 All times Central (adjust for your timezone). Set up via Cowork's scheduled-tasks UI.
 
 ### Meeting pipeline (Fathom only)
-- **`process-fathom-transcripts`** — weekdays every 2 hours, 8am–6pm. Ingests Fathom recordings into `raw/meeting-raw/fathom/` AND routes each one to `Meeting Notes/{Company}/{Project}/` in a single pass. Uses `project-mapping.md` for routing (attendees → keywords). Unroutable → `Meeting Notes/_Unmatched/`. Logs to `_System/selector-log.md`.
+- **`process-fathom-transcripts`** — weekdays every 2 hours, 8am–6pm. Ingests new Fathom recordings **directly** into `Meeting Notes/{Company}/{Project}/` via `project-mapping.md`. Single destination — no duplicate in `raw/`. Unroutable → `Meeting Notes/_Unmatched/` + `_System/meeting-routing-unrouted.md`. Logs every decision to `_System/selector-log.md`.
 
 Fathom is the sole meeting source in Mac's setup (Granola was retired 2026-04-18).
 
 ### Knowledge pipeline
-- **`second-brain-ingest`** — weekdays every 4 hours at `:30`. Scans `raw/` and `Meeting Notes/` for files not yet in `wiki/log.md`. Extracts entities → wiki pages, decisions → `Decision-Log.md`, commitments → `commitments.md` (4-gate rule).
+- **`second-brain-ingest`** — weekdays every 4 hours at `:30`. Scans `Meeting Notes/`, `raw/articles/`, `raw/projects/`, `raw/transcripts/` for files not yet in `wiki/log.md`. Does NOT scan `raw/meeting-raw/` (deprecated). Extracts entities → wiki pages, decisions → `Decision-Log.md`, commitments → `commitments.md` (4-gate rule).
 - **`second-brain-lint`** — Sundays 1am. Full lint — orphans, broken links, tag canon, slug integrity.
 - **`second-brain-lint-wed`** — Wednesdays 1am. Optional mid-week lint. Skip if you don't read the report.
 - **`confluence-ingest`** — weekdays 6:30am. Only if you need a Confluence mirror. Mac uses this for F2 Strategy.
 - **`story-sync`** — weekdays every 2 hours at `:15`, 7am–7pm. Pulls active Linear + Jira stories assigned to you. Routes via `project-mapping.md`.
 
 ### Daily / email
-- **`daily-note-builder`** — weekdays 6am. Builds today's `daily/YYYY-MM-DD.md` from calendar + commitments + recent decisions.
+- **`daily-note-builder`** — weekdays 6am. Builds today's `daily/YYYY-MM-DD.md`. Sections: today's calendar, today's focus commitments, yesterday's wins, blocked/needs unblock, follow-ups due today, active stories by project, recent decisions. Preserves user-authored `## Notes` and `## Scratch` across reruns.
 - **`daily-morning-briefing`** — daily 6am. Curated news email (tune the topics to your interests).
 - **`daily-email-summary`** — weekdays 7am. Gmail digest of last 3 days.
 - **`weekly-financial-digest`** — Fridays 7am. QuickBooks P&L → email. Only if you have QuickBooks connected.
@@ -174,7 +176,7 @@ Install Mac's skills at `~/.claude/skills/`. Trigger via natural language in Cow
 ## Phase 7 — Capture Workflow
 
 ### Meetings
-Join with Fathom running. `process-fathom-transcripts` pulls within 2 hours and routes to the right project folder. Don't copy transcripts by hand — the pipeline handles it.
+Join with Fathom running. `process-fathom-transcripts` pulls within 2 hours and writes **one file** directly to `Meeting Notes/{Company}/{Project}/{date} - {title}.md`. No hand-copy, no duplicate to `raw/`. If a meeting lands in `_Unmatched/`, update `project-mapping.md` keywords/attendees and move the file to the correct folder.
 
 ### Articles
 Hit the Web Clipper extension. Saves to `raw/articles/`. `second-brain-ingest` picks up on the next 4-hour tick, or say "ingest this" for immediate.
@@ -188,8 +190,10 @@ Firm commitments get extracted into `commitments.md` under the 4-gate rule:
 
 Nothing lands in `commitments.md` without hitting all 4 gates. `Action-Tracker.md` is sunset — do not create.
 
+**Lifecycle:** ingest appends to `## Open` → you check the box in Obsidian → Sunday lint moves checked items to `## Done (last 14 days)` → items > 14 days in Done archive to `raw/archived-actions/YYYY-MM.md`.
+
 ### Daily notes
-Auto-generated 6am weekdays into `daily/`. Jot freeform notes there; nothing downstream parses them automatically.
+Auto-generated 6am weekdays into `daily/`. Sections are rebuilt each morning; `## Notes` and `## Scratch` are preserved across reruns for hand-written additions.
 
 ### Project documents
 Drop SOWs, API schemas, configs, ERDs into `raw/projects/{slug}/`. Original is source of truth; wiki pages get generated from it.
@@ -234,7 +238,7 @@ Settings → Editor → Default view = Reading view. Enable Homepage plugin poin
 - **Scheduled tasks not firing** → Cowork running and signed in? Tasks only fire when Cowork is live. Check task history in the sidebar.
 - **Empty daily note** → Templater template missing or daily-note-builder disabled. Run manually from sidebar to validate.
 - **Git sync conflict** → Pull before commit. If stuck, resolve in GitHub Desktop or CLI — not inside Obsidian.
-- **Meeting routed to _Unmatched** → Add the project, attendees, or keywords to `project-mapping.md`. Re-run the task.
+- **Meeting routed to _Unmatched** → Add the project, attendees, or keywords to `project-mapping.md`. Move the file manually to the correct folder.
 - **Wiki pages not showing in Obsidian** → iCloud lag. Give it a minute. If still missing, close/reopen the vault.
 
 ---
@@ -246,4 +250,4 @@ Settings → Editor → Default view = Reading view. Enable Homepage plugin poin
 - `_System/changelog.md` — consolidation history and recent structural changes
 - `resources/diagrams/llm-kb-architecture.md` — canonical architecture diagram
 
-If you're ever unsure where a capture goes or what reads what, re-read the diagram first. Short version: **Sources → raw/ → wiki/ → dashboards/**. Claude writes the middle two; you browse them.
+If you're ever unsure where a capture goes or what reads what, re-read the diagram first. Short version: **Sources → Meeting Notes/ + raw/ → wiki/ → dashboards/**. Claude writes the middle layers; you browse them.
