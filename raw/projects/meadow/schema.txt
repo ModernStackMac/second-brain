@@ -8,4 +8,4 @@
 8. ActionItems — id (TEXT PK), type (TEXT NOT NULL), payload (TEXT NOT NULL, default '{}'), status (TEXT NOT NULL — 'open' | 'dismissed' | 'completed'), created_at (TEXT), resolved_at (TEXT)
 9. NotionSyncLog — id (TEXT PK), person_id (TEXT → People), notion_page_id (TEXT), last_synced_at (TEXT), status (TEXT NOT NULL), error (TEXT)
 10. ExportTemplates — id (TEXT PK), display_name (TEXT NOT NULL), created_at (TEXT), updated_at (TEXT), column_definitions (TEXT NOT NULL, default '[]' — JSON array of {header, source_field})
-11. ProjectResources — id (TEXT PK), person_id (TEXT NOT NULL → People), project_id (TEXT NOT NULL → Projects), created_at (TEXT), UNIQUE(person_id, project_id)
+11. ProjectResources — id (TEXT PK), person_id (TEXT NOT NULL → People), project_id (TEXT NOT NULL → Projects), created_at (TEXT), UNIQUE(person_id, project_id))

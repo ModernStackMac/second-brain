@@ -1,51 +1,53 @@
 # Second Brain — Quick Start
 
-Lean entry point. For full details see `SYSTEM-GUIDE.md`, `SCHEMA.md`, and `PEER-SETUP-GUIDE.md`.
+Lean entry point. Full details live in `SYSTEM-GUIDE.md` and `SCHEMA.md`.
 
 ## How to Use
 
 ### Adding Content
 
-Drop files into the appropriate `raw/` subfolder:
+Drop files into the right `raw/` subfolder:
 
-- `raw/projects/` — SOWs, solution docs, project deliverables, Salesforce configs, client discovery notes
+- `raw/projects/{slug}/` — SOWs, solution docs, configs, client discovery notes
 - `raw/articles/` — Articles, blog posts, research (Obsidian Web Clipper drops here)
-- `raw/meeting-raw/fathom/` — Fathom transcripts (auto-populated by scheduled ingest — don't hand-edit)
-- `raw/templates/` — Reusable doc templates and frameworks
-
-Note: `raw/discovery/` and `raw/meeting-notes/` are legacy paths — discovery lives under `raw/projects/`, meetings under `raw/meeting-raw/fathom/`. Granola was retired 2026-04-18; any historical files under `raw/meeting-raw/granola/` are read-only.
+- `raw/templates/` — Templater templates (`quick-capture.md` lives here)
+- `Meeting Notes/` — Auto-populated by Fathom. Don't hand-edit.
 
 ### Processing Content
 
-Tell Claude to:
+Tell Claude to ingest, query, create solution docs, or lint:
 
-- "Ingest everything in raw/articles/" — processes new articles into `wiki/`
-- "Ingest raw/projects/client-x-sow.md" — processes a specific file
-- "What do we know about [client/topic]?" — queries the wiki
-- "Create a solution doc for [scenario]" — generates deliverables from wiki knowledge
-- "Lint the wiki" — runs health checks
-- "/kb-ingest-now" — on-demand ingest without waiting for the 4-hour cron
+- "Ingest everything in raw/articles/"
+- "Ingest raw/projects/client-x-sow.md"
+- "What do we know about [topic]?"
+- "Create a solution doc for [scenario]"
+- "Lint the wiki"
+- `/kb-ingest-now` — immediate processing, no waiting for the cron
 
 ### Commitments
 
-Firm commitments live in `dashboards/commitments.md`. Claude extracts them from meetings using a 4-gate rule (owner=Mac, firm verb, concrete next step, deduped). The old `Action-Tracker.md` pattern is retired — don't re-create it.
+Live in `commitments.md` at the vault root. Claude extracts them from meetings using a 4-gate rule (owner=Mac, firm verb, concrete next step, deduped). `Action-Tracker.md` is retired — don't re-create it.
+
+### Weekly Synthesis
+
+Runs every Monday. Produces `wiki/reports/weekly-synthesis-{date}.md` with cross-project analysis, trends, and surfaced connections.
 
 ### Tips
 
-- The more you feed it, the better it gets. Start with recent project docs.
+- Feed it more — the more sources, the better the output.
 - Clip articles with the Obsidian Web Clipper extension.
-- After 20–30 sources, cross-references get genuinely useful.
-- Run a lint pass every couple weeks.
+- Cross-references get genuinely useful after 20–30 sources.
+- Run a lint pass every couple of weeks.
 
 ### Obsidian Web Clipper Setup
 
 1. Install the Obsidian Web Clipper Chrome extension
 2. Set default save location to `Second Brain/raw/articles/`
-3. Clip any article — it drops straight into raw sources and gets picked up on the next ingest tick
+3. Clip any article — it lands in raw sources and gets picked up on the next ingest
 
 ### What NOT to Do
 
-- Don't manually edit files in `wiki/` — Claude maintains those (it reads + writes wiki/dashboards, never raw/)
+- Don't manually edit files in `wiki/` — Claude maintains those
 - Don't delete files from `raw/` — they're the source of truth
-- Don't reorganize the folder structure without updating `SCHEMA.md` and `_System/changelog.md`
-- Don't paste meeting transcripts into `wiki/` manually — the ingest pipeline handles routing
+- Don't reorganize folders without updating `SCHEMA.md` and `changelog.md`
+- Don't paste meeting transcripts into `wiki/` — the ingest pipeline handles routing

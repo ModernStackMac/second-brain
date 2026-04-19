@@ -124,15 +124,15 @@ Want to knock out auth hardening now?
 
 Other
 
- **SPEC.md** at C:\\HMS\\SPEC.md has the full original specification
+· **SPEC.md** at C:\\HMS\\SPEC.md has the full original specification
 
- **Auth middleware** is already written and exported from
+· **Auth middleware** is already written and exported from
 routes/auth.js --- they just need to apply it to routes
 
- **Clockify is read-only** --- the app must never POST to or DELETE
+· **Clockify is read-only** --- the app must never POST to or DELETE
 from Clockify
 
- **node:sqlite quirks** --- positional ? params only, db.exec() one
+· **node:sqlite quirks** --- positional ? params only, db.exec() one
 statement at a time, no native db.transaction()
 
- **All ES module imports** need .js extensions in route files
+· **All ES module imports** need .js extensions in route files

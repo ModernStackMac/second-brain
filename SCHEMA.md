@@ -12,77 +12,68 @@ You are a knowledge-base maintainer for Mac Nosek's consulting practice (Modern 
 
 ```
 Second Brain/
-├── _System/                  # Operational — identity, changelog, routing logs
-├── dashboards/               # Dataview views — not ingested
-├── raw/                      # Immutable source materials (never modify)
-│   ├── articles/             # Clipped articles, blog posts, research (ANY topic)
-│   ├── projects/             # SOWs, project docs, deliverables, configs, discovery
-│   ├── meeting-raw/          # Fathom transcripts pre-routing
-│   │   └── fathom/
-│   ├── archived-actions/     # Pre-commitments.md archive
-│   ├── archived-stories/     # Old story dumps (excluded from ingest)
-│   └── templates/            # Reusable doc templates (not ingested)
-├── resources/                # Reference docs
-│   ├── diagrams/             # Architecture diagrams
-│   ├── interests/
-│   ├── learning/
-│   └── reading/
-├── wiki/                     # LLM-maintained knowledge base (Claude owns this)
-│   ├── index.md              # Master catalog
-│   ├── log.md                # Chronological operation log
-│   ├── MAKE-SPACES.md        # Make.md space config
-│   ├── projects/             # One subfolder per engagement
-│   │   └── {project}/
-│   │       ├── context.md    # Stable: client, stack, what we're building
-│   │       ├── journal.md    # Rolling weekly summaries, decisions, open questions
-│   │       └── stories-{ws}.md # Active stories (auto-written by story-sync)
-│   ├── concepts/             # Domain concepts (CPQ, data migration, etc.)
-│   ├── patterns/             # Reusable solution patterns
-│   ├── tools/                # Tools, platforms, integrations
-│   ├── entities/             # People, orgs, vendors
-│   ├── articles/             # Individual article breakdowns
-│   ├── topics/               # Accumulator pages for personal interests
-│   ├── reports/              # Saved query outputs (kb-report + weekly-synthesis)
-│   └── f2-internal/          # F2 Strategy Confluence mirror (confluence-ingest)
-├── SCHEMA.md                 # This file
-├── SYSTEM-GUIDE.md
-├── PEER-SETUP-GUIDE.md
-├── README.md
-├── TAGS.md
-├── Decision-Log.md
-└── Action-Tracker.md         # DEPRECATED — read-only pointer
+├── README.md                  # Quick start
+├── SCHEMA.md                  # This file — wiki governance
+├── SYSTEM-GUIDE.md            # Full system reference
+├── PEER-SETUP-GUIDE.md        # Teammate onboarding
+├── TAGS.md                    # Canonical tag taxonomy
+├── Decision-Log.md            # Auto-appended decisions from meetings
+├── _System/                   # Infrastructure — identity, changelog, scripts, logs
+│   ├── changelog.md
+│   ├── identity.yaml
+│   ├── story-sync.log
+│   ├── selector-log.md
+│   ├── meeting-routing-unrouted.md
+│   └── scripts/
+│       ├── story-sync.js
+│       └── run-story-sync.sh
+├── dashboards/
+│   └── Home.md                # Single Dataview startup page
+├── raw/                       # Immutable source material — Claude never edits
+│   ├── articles/              # Web Clipper drops here
+│   ├── projects/              # SOWs, configs, ERDs — one subfolder per project slug
+│   │   └── meadow/
+│   ├── transcripts/           # Non-Fathom transcripts
+│   ├── templates/             # Templater templates
+│   │   └── quick-capture.md
+│   └── meeting-raw/           # FROZEN ARCHIVE — not written to
+├── resources/
+│   └── diagrams/              # Architecture diagrams
+└── wiki/                      # Claude-compiled canonical knowledge
+    ├── index.md               # Master catalog
+    ├── log.md                 # Processing log
+    ├── projects/              # One subfolder per engagement
+    ├── concepts/              # Domain knowledge
+    ├── entities/              # People, orgs, vendors
+    ├── patterns/              # Reusable solution patterns
+    ├── tools/                 # Platforms, integrations
+    ├── topics/                # Accumulator pages for interests
+    ├── articles/              # Article breakdowns
+    ├── reports/               # On-demand + weekly synthesis reports
+    └── f2-internal/           # Confluence mirror
 ```
 
 **Vault root (outside Second Brain/):**
 
-- `commitments.md` — rolling open action items Mac owns (ingest writes under 4-gate rule)
-- `project-mapping.md` — single source of truth for projects, contacts, routing
-- `Meeting Notes/` — Fathom meeting notes, routed by `{Company}/{Project}/`
-- `Clippings/` — Web Clipper landing + reference images
-- `.claudeignore` — ignore rules for Claude Code / Cowork
-
-**Deprecated folders:**
-- `daily/` — Daily notes (removed 2026-04-19). Automated daily note generation added noise without signal; calendar, commitments, and stories are already surfaced by dedicated scheduled tasks and commitments.md. If a dashboard view is needed, use a static `dashboards/home.md` with live Dataview queries instead of date-stamped files.
-
-**Note:** `wiki/clients/` does not exist as a separate folder. All project/client knowledge lives in `wiki/projects/{slug}/`. Historical Granola captures may exist under `raw/meeting-raw/granola/` — read-only, do not add new files there.
+- `Meeting Notes/` — sole live meeting destination. Fathom writes directly here, routed by `project-mapping.md`.
+- `commitments.md` — rolling open action items Mac owns (ingest writes under 4-gate rule).
+- `project-mapping.md` — single routing table for all projects: companies, contacts, keywords, folder paths.
 
 ---
 
 ## External Source: Meeting Notes
 
-`Meeting Notes/` at vault root is the PRIMARY source for client/project context, populated by `meeting-selector` routing Fathom transcripts from `raw/meeting-raw/fathom/` to the correct project folder.
+`Meeting Notes/` at the vault root is the PRIMARY source for client/project context. Fathom is the sole meeting source — transcripts are routed to the correct project folder by `process-fathom-transcripts`.
 
 **Structure:** `Meeting Notes/{Company}/{Project}/YYYY-MM-DD - Title.md`
 
 **Frontmatter fields:** date, title, company, project, attendees, source (fathom), processed, tags
 
-Legacy files may carry `source: granola` and a `selector_score` field from the Fathom/Granola trial (ended 2026-04-18). Leave those fields alone on historical files — do not backfill or strip.
+**Rules:**
 
-**How to use:**
-
-- READ-ONLY — never modify these files
+- READ-ONLY — never modify these files after initial write
 - The folder structure itself is the project map
-- Scan for files not referenced in `wiki/log.md`
+- Scan for files not referenced in `wiki/log.md` to find unprocessed meetings
 - Extract client context, decisions, commitments, tech stack, pain points, contacts into appropriate wiki pages
 - Source citation format: `Meeting Notes/Company/Project/filename.md`
 - Meeting notes are the richest source — prioritize during ingest
@@ -100,6 +91,20 @@ Legacy files may carry `source: granola` and a `selector_score` field from the F
 - Correct `Meeting Notes/` subfolder path per project
 
 Enrich wiki pages with context from project-mapping that might not be in any single meeting note (industry, project type, full tech stack).
+
+---
+
+## Immutability Rules
+
+These are hard constraints. No exceptions.
+
+| Path | Rule |
+|---|---|
+| `raw/` (all contents) | Never modify. Immutable source of truth. Claude reads, never writes or edits. |
+| `raw/meeting-raw/` | FROZEN ARCHIVE. Historical only. No new files written here — Fathom routes to `Meeting Notes/` now. |
+| `Meeting Notes/` | Read-only after initial write. Never modify existing files, even across router reruns. |
+| `dashboards/` | Operational. Not a knowledge source. Do not ingest or process. |
+| `_System/` | Infrastructure. Do not ingest or process (except reading `identity.yaml` for context). |
 
 ---
 
@@ -135,7 +140,7 @@ Core content organized by page type (see Page Types).
 
 ### Project Pages (`wiki/projects/{slug}/`)
 
-Each active project gets a subfolder with up to three files:
+Each active project gets a subfolder with up to four files:
 
 **`context.md`** — Stable reference. Set once, updated when the project fundamentally changes (new scope, new team, stack change). Contains:
 
@@ -167,7 +172,9 @@ Ingest rules:
 - Keep tight — this is a digest, not a transcript
 - Decisions and open questions are the most important parts
 
-**`stories-{ws}.md`** — Auto-written by `story-sync`. One file per workspace (e.g., `stories-linear-mss.md`, `stories-jira-f2.md`). Active set only: Linear Todo/In Progress/Started + Jira To Do/In Progress (plus Backlog in current cycle). Do not hand-edit.
+**`stories-{ws}.md`** — Auto-written by `story-sync`. One file per workspace (e.g., `stories-f2.md`, `stories-hm.md`). Active set only: Linear Todo/In Progress/Started + Jira To Do/In Progress (plus Backlog in current cycle). Do not hand-edit.
+
+**`overview.md`** — Optional high-level project summary for long-running engagements. Created manually or on request.
 
 ### Concept Pages (`wiki/concepts/`)
 
@@ -245,13 +252,13 @@ When told to ingest:
 
 1. Read the raw file completely.
 2. Identify all entities, concepts, patterns, tools, and client references.
-3. For each identified item:
-   - Wiki page exists → update with new info, note the source
-   - No wiki page → create one using the page format
-4. Update `wiki/index.md` with any new pages.
-5. Add `wiki/log.md` entry: date, source file, pages created/updated, brief summary.
-6. Cross-link related pages using `[[wiki-links]]`.
-7. **Pattern extraction pass** (see below).
+3. **Pattern extraction** — for each identified item, ask: "Is there a reusable solution pattern, architectural decision, or domain concept here that would be valuable across other engagements?" If yes, create or update the relevant `wiki/patterns/` or `wiki/concepts/` page and cross-link from the source project.
+4. For each identified item:
+   - Wiki page exists → update with new info, note the source.
+   - No wiki page → create one using the page format.
+5. Update `wiki/index.md` with any new pages.
+6. Add `wiki/log.md` entry: date, source file, pages created/updated, patterns extracted (or "none"), brief summary.
+7. Cross-link related pages using `[[wiki-links]]`.
 8. Report what was done.
 
 **Article ingest (`raw/articles/`):** Not limited to consulting content. For every article:
@@ -277,45 +284,22 @@ When told to ingest:
 3. **Concrete next step.** Specific action, not a topic. "Follow up on X" without specifics → skip. "Send the revised SOW to Client Y by Thursday" → keep.
 4. **Deduplicate.** Compare against open items by first 60 chars + project. If duplicate, refresh existing entry (source link, date) rather than creating.
 
-**Pattern extraction pass** — runs after each ingest cycle:
-
-1. Review journal entries updated this cycle (or in the past 7 days).
-2. For each, ask: "Is there a reusable solution pattern, architectural decision, or domain concept here that would be valuable across other engagements?"
-3. Look for: repeatable solutions (validation workarounds, integration approaches, data model designs, deployment strategies), domain concepts that transcend a single project, and cross-project similarities.
-4. For each candidate:
-   - Existing `wiki/patterns/` or `wiki/concepts/` page → update with new example/context.
-   - No page exists → create one using the Pattern or Concept format.
-   - Cross-link from the project journal/context to the new page.
-5. Log extracted patterns in the `wiki/log.md` entry: `Patterns extracted: {list or "none"}`.
-6. If no patterns detected this cycle, that's fine — don't force it.
-
-### 2. SYNTHESIS (weekly cross-project analysis)
-
-Runs automatically via `weekly-synthesis` scheduled task (Mondays 5:30am CT). Can also be triggered on-demand.
-
-1. Read `project-mapping.md` for all active projects.
-2. For each project: read journal.md, context.md, and stories files.
-3. Read `commitments.md` — flag items >14 days old.
-4. Read `Decision-Log.md` — recent decisions.
-5. Scan `Meeting Notes/` for unprocessed files.
-6. Generate `wiki/reports/weekly-synthesis-{YYYY-MM-DD}.md` covering: executive summary, per-project status (moved/blocked/decisions/watch), cross-project patterns, commitments at risk, unprocessed sources, and recommendations.
-7. Update `wiki/index.md` and `wiki/log.md`.
-
-### 3. QUERY (answering questions from the wiki)
+### 2. QUERY / REPORT (answering questions from the wiki)
 
 1. Consult `wiki/index.md` to find relevant pages.
 2. Read relevant wiki pages; trace back to raw sources for detail if needed.
 3. Synthesize an answer citing specific wiki pages and raw sources.
 4. If the wiki lacks info, say so and suggest what raw sources would fill the gap.
+5. For permanent reports, save to `wiki/reports/` and update `wiki/index.md` and `wiki/log.md`.
 
-### 4. CREATE (generating deliverables)
+### 3. CREATE (generating deliverables)
 
 1. Query the wiki for all relevant context.
 2. Pull from `raw/templates/` if applicable.
 3. Generate with full context.
 4. Note in `wiki/log.md` that a deliverable was generated and what wiki pages informed it.
 
-### 5. LINT (health check)
+### 4. LINT (health check)
 
 1. Scan wiki pages for:
    - Broken or missing `[[wiki-links]]`
@@ -327,10 +311,21 @@ Runs automatically via `weekly-synthesis` scheduled task (Mondays 5:30am CT). Ca
    - Frontmatter conflicts
    - Project-slug integrity (folder-to-mapping coverage, stories project=folder, ticket prefix routing)
 2. **Log rotation:** `wiki/log.md` > 200 entries → archive entries > 90 days to `wiki/log-archive-{year}.md`.
-3. **Stale commitments:** `commitments.md` `## Open` items > 30 days with no update → flag for review.
-4. **Closed commitments:** `## Done` items > 14 days → move to `raw/archived-actions/YYYY-MM.md`.
-5. Report issues; fix what's safe automatically.
-6. Suggest raw sources to fill gaps.
+3. **Stale commitments:** `commitments.md` open items > 30 days with no update → flag for review.
+4. Report issues; fix what's safe automatically.
+5. Suggest raw sources to fill gaps.
+
+### 5. SYNTHESIS (weekly cross-project analysis)
+
+Runs automatically via `weekly-synthesis` scheduled task (Mondays 5:30am CT). Can also be triggered on-demand.
+
+1. Read `project-mapping.md` for all active projects.
+2. For each project: read journal.md, context.md, and stories files.
+3. Read `commitments.md` — flag items >14 days old.
+4. Read `Decision-Log.md` — recent decisions.
+5. Scan `Meeting Notes/` for unprocessed files.
+6. Generate `wiki/reports/weekly-synthesis-{YYYY-MM-DD}.md` covering: executive summary, per-project status (moved/blocked/decisions/watch), cross-project patterns, commitments at risk, unprocessed sources, and recommendations.
+7. Update `wiki/index.md` and `wiki/log.md`.
 
 ---
 
@@ -338,32 +333,35 @@ Runs automatically via `weekly-synthesis` scheduled task (Mondays 5:30am CT). Ca
 
 | Task | Schedule | Purpose |
 |---|---|---|
+| `process-fathom-transcripts` | Every 2hrs weekdays 8am-6pm CT | Route Fathom recordings to `Meeting Notes/` |
 | `second-brain-ingest` | Every 4hrs weekdays | Process new sources → wiki, extract commitments, extract patterns |
-| `weekly-synthesis` | Mon 5:30am CT | Cross-project synthesis report |
 | `second-brain-lint` | Sun 1am CT | Full lint pass |
 | `second-brain-lint-wed` | Wed 1am CT | Mid-week lint |
-| `process-fathom-transcripts` | Every 2hrs weekdays 8am-6pm | Route Fathom recordings to Meeting Notes/ |
-| `story-sync` | Every 2hrs weekdays 7am-7pm | Sync Linear + Jira stories to wiki |
-| `confluence-ingest` | Weekdays 6:30am CT | Mirror F2 Confluence pages |
+| `confluence-ingest` | Weekdays 6:30am CT | Mirror F2 Confluence pages to `wiki/f2-internal/` |
+| `story-sync` | Every 2hrs weekdays 7am-7pm CT | Sync Linear + Jira stories to `wiki/projects/{slug}/stories-*.md` |
 | `daily-morning-briefing` | Daily 6am CT | Curated tech/AI/SF news email |
 | `daily-email-summary` | Weekdays 7am CT | Gmail digest email |
 | `weekly-financial-digest` | Fri 7am CT | QuickBooks P&L + cash flow email |
-| `daily-note-builder` | **DISABLED** | Was: daily note generation. Replaced by commitments.md + synthesis reports. |
+| `weekly-synthesis` | Mon 5:30am CT | Cross-project synthesis report → `wiki/reports/` |
 
 ---
 
 ## Rules
 
-- Never modify anything in `raw/`. Immutable source of truth.
-- Never ingest or process files in `dashboards/`, `_System/`, or deprecated `daily/`. Operational folders, not knowledge sources.
-- `Meeting Notes/` files are READ-ONLY (immutability preserved across router reruns).
-- Always cite sources when updating wiki pages.
-- Keep wiki pages concise and scannable — no fluff.
-- Use `[[wiki-links]]` for cross-references (Obsidian-compatible).
-- Dates in ISO format (YYYY-MM-DD).
-- When in doubt about categorization, prefer the most specific page type.
-- Maintain `wiki/index.md` and `wiki/log.md` with every operation.
-- Professional but casual tone — match Mac's voice.
+1. **Never modify `raw/`.** Immutable source of truth.
+2. **Never modify `Meeting Notes/`** after initial write. Immutability preserved across router reruns.
+3. **Never ingest or process** files in `dashboards/` or `_System/`. Operational folders, not knowledge sources.
+4. **`raw/meeting-raw/` is frozen.** Historical archive only. No new files are written there. Fathom routes to `Meeting Notes/` now.
+5. **Always cite sources** when updating wiki pages.
+6. **Keep wiki pages concise and scannable** — no fluff.
+7. **Use `[[wiki-links]]`** for cross-references (Obsidian-compatible).
+8. **Dates in ISO format** (YYYY-MM-DD).
+9. **When in doubt about categorization**, prefer the most specific page type.
+10. **Maintain `wiki/index.md` and `wiki/log.md`** with every operation.
+11. **Professional but casual tone** — match Mac's voice.
+12. **`raw/projects/` uses project slugs** as subfolder names (e.g., `meadow/`).
+13. **Pattern extraction happens during ingest** (Step 3) — don't defer it to a separate pass.
+14. **Commitments follow the 4-gate rule** — owner=Mac, firm verb, concrete step, deduped. No exceptions.
 
 ---
 
