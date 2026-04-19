@@ -17,7 +17,7 @@ FROM "Second Brain/daily"
 WHERE file.name = dateformat(date(today), "yyyy-MM-dd")
 ```
 
-*If empty, `daily-note-builder` hasn't fired yet — it runs weekdays 6am CT. Kick `daily-note-now` to rebuild on demand.*
+*If empty, `daily-note-builder` hasn't fired yet — it runs weekdays 6am CT. Run it manually from the sidebar to rebuild on demand.*
 
 ---
 
@@ -114,6 +114,6 @@ LIMIT 8
 - [[Decision-Log]] — Key decisions
 - [[dashboards/Projects|Projects]] — Per-project health
 - [[dashboards/Stories|Stories]] — Linear + Jira sync (project pages are canonical)
-- [[dashboards/Meetings|Meetings]] — Granola/Fathom routing
+- [[dashboards/Meetings|Meetings]] — Fathom meeting routing
 - [[dashboards/Articles|Articles]] — Reading queue
 - [[SYSTEM-GUIDE]] · [[PEER-SETUP-GUIDE]] · [[SCHEMA]] · [[TAGS]]

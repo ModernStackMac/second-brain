@@ -24,7 +24,8 @@ Create this folder tree at the vault root. Canonical layout — no `clients/`, n
 Second Brain/
 ├── _System/              # Changelog, meta, governance
 ├── raw/                  # Immutable captures
-│   ├── meeting-raw/      # Read-only meeting transcripts (Fathom/Granola)
+│   ├── meeting-raw/      # Fathom transcripts (read-only, auto-populated)
+│   │   └── fathom/
 │   ├── articles/         # Clipped articles before ingest
 │   ├── projects/         # Project discovery notes
 │   ├── templates/        # Templater templates
@@ -71,20 +72,24 @@ Projects replace the old `clients/` concept. A client relationship = one or more
 
 All times Central. Set up via Cowork's scheduled-tasks UI or the MCP. Full list lives in `SYSTEM-GUIDE.md`; critical ones:
 
-**Meeting pipeline**
-- `fathom-ingest` — every 2 hours, weekdays 8a–6p. Pulls Fathom transcripts → `raw/meeting-raw/fathom/`.
-- `granola-ingest` — every 2 hours, weekdays 8a–6p. Pulls Granola transcripts → `raw/meeting-raw/granola/`.
-- `meeting-selector` — weekdays, `:45` of each even hour 8a–6p. Scores Fathom vs Granola per meeting, writes winner to `wiki/` and logs to `_System/selector-log.md`. Runs 15 min after ingests to ensure both sources landed.
-- `granola-fathom-decision` — one-time on 2026-05-02. Prompts the official commit based on selector-log results.
+**Meeting pipeline (Fathom only)**
+- `process-fathom-transcripts` — every 2 hours, weekdays 8a–6p. Pulls Fathom transcripts → `raw/meeting-raw/fathom/`.
+- `meeting-selector` — weekdays, `:45` of each even hour 8a–6p. Routes the Fathom note to `Meeting Notes/{Company}/{Project}/` via `project-mapping.md`. Runs 15 min after ingest to give the transcript time to land.
+
+Granola was retired 2026-04-18. Fathom is the sole meeting source.
 
 **Knowledge pipeline**
-- `kb-ingest` — every 4 hours. Processes anything new in `raw/articles/` into `wiki/` pages.
-- `kb-lint` — Sundays. Orphan check, broken links, tag hygiene, stale page flag.
-- `confluence-ingest` — weekdays 6:30a. Mirrors F2 Strategy Confluence → `raw/articles/confluence/`.
+- `second-brain-ingest` — every 4 hours at `:30` on weekdays. Processes anything new in `raw/` and `Meeting Notes/` into `wiki/`.
+- `second-brain-lint` — Sundays 1am. Orphan check, broken links, tag hygiene, stale page flag.
+- `second-brain-lint-wed` — Wednesdays 1am. Lighter mid-week pass.
+- `confluence-ingest` — weekdays 6:30a. Mirrors F2 Strategy Confluence → `wiki/f2-internal/`.
+- `story-sync` — weekdays every 2 hours at `:15`. Pulls Linear + Jira stories, routes via project-mapping.
 
 **Daily/email**
 - `daily-note-builder` — weekdays 6:00a. Creates the day's note in `daily/` from template.
-- `daily-email-summary` — weekdays 6:15a. Emails yesterday's summary + today's plan.
+- `daily-morning-briefing` — daily 6:00a. Curated news email.
+- `daily-email-summary` — weekdays 7:00a. Gmail digest.
+- `weekly-financial-digest` — Fridays 7:00a. QuickBooks P&L.
 
 No duplicated cron slots. If you add tasks, space them ≥15 min apart per hour to prevent collision.
 
@@ -106,7 +111,7 @@ These are slash-style skills available in Claude — no schedule needed, fire wh
 
 ## Phase 7 — Capture Workflow
 
-**Meetings** — join with both Fathom and Granola running. Ingest tasks pull transcripts every 2 hours; selector picks the winning version. Don't manually copy transcripts — the pipeline handles it.
+**Meetings** — join with Fathom running. `process-fathom-transcripts` pulls every 2 hours; `meeting-selector` routes the note to the right project folder. Don't manually copy transcripts — the pipeline handles it.
 
 **Commitments** — firm commitments get extracted into `dashboards/commitments.md` using the 4-gate rule:
 1. Owner is Mac (not assigned to someone else)
@@ -116,7 +121,7 @@ These are slash-style skills available in Claude — no schedule needed, fire wh
 
 Nothing auto-lands in commitments.md without hitting all 4 gates. This replaces the deprecated `Action-Tracker.md` pattern — do not create a new Action-Tracker file.
 
-**Articles** — drop into `raw/articles/` (web clipper, paste, whatever). `kb-ingest` picks them up on the next 4-hour tick, or hit `/kb-ingest-now`.
+**Articles** — drop into `raw/articles/` (web clipper, paste, whatever). `second-brain-ingest` picks them up on the next 4-hour tick, or hit `/kb-ingest-now`.
 
 **Daily notes** — auto-generated at 6am weekdays into `daily/`. Jot freeform notes there; nothing downstream parses daily notes automatically.
 
@@ -136,8 +141,7 @@ Claude reads wiki/dashboards for answers and writes back to wiki/dashboards. It 
 
 - **REST API won't connect** → check port 27124, verify cert installed, confirm Obsidian is running.
 - **Scheduled tasks not firing** → check Cowork is logged in and the MCP is enabled. Tasks only fire when Cowork is running.
-- **Duplicate meeting notes** → selector hasn't run yet or one ingest failed. Check `_System/selector-log.md`.
-- **Empty daily note** → Templater template missing or daily-note-builder disabled. Run `/daily-note-now` manually.
+- **Empty daily note** → Templater template missing or daily-note-builder disabled. Run it manually from the sidebar.
 - **Git sync conflict** → pull before commit; if stuck, resolve in GitHub Desktop or CLI, not inside Obsidian.
 
 ## Reference

@@ -14,27 +14,27 @@ The system has three layers:
 
 **Claude** — the backend. Scheduled tasks and on-demand skills read raw sources, compile wiki pages, maintain cross-references, and run health checks. Claude writes; you read.
 
-**MCPs** — the connections. Claude talks to Obsidian (via Local REST API), Granola + Fathom (meeting transcripts), Gmail, Slack, Google Calendar, QuickBooks, Linear, Jira, and others.
+**MCPs** — the connections. Claude talks to Obsidian (via Local REST API), Fathom (meeting transcripts), Gmail, Slack, Google Calendar, QuickBooks, Linear, Jira, and others.
 
 See `resources/diagrams/llm-kb-architecture.md` for the canonical one-page picture.
 
 ```
-┌──────────────────────────────────────────────────────┐
+┌─────────────────────────────────────────────────────┐
 │  YOU (Obsidian)                                      │
 │  Browse wiki · Graph view · Tasks · Excalidraw       │
-└──────────────────────┬───────────────────────────────┘
+└──────────────────────┬──────────────────────────────┘
                        │ reads / browses
-┌──────────────────────▼───────────────────────────────┐
+┌──────────────────────▼──────────────────────────────┐
 │  VAULT (iCloud)                                      │
 │  raw/ → wiki/ → reports/                             │
 │  Meeting Notes/ · commitments.md · project-mapping.md│
-└──────────────────────┬───────────────────────────────┘
+└──────────────────────┬──────────────────────────────┘
                        │ reads / writes
-┌──────────────────────▼───────────────────────────────┐
+┌──────────────────────▼──────────────────────────────┐
 │  CLAUDE (scheduled tasks + on-demand skills)         │
-│  Ingest · Lint · Report · Meeting selector · Story   │
-│  Via: mcp-obsidian, Granola, Fathom, Gmail, etc.     │
-└──────────────────────────────────────────────────────┘
+│  Ingest · Lint · Report · Meeting router · Story    │
+│  Via: mcp-obsidian, Fathom, Gmail, etc.              │
+└─────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -51,9 +51,9 @@ Folder tree:
 Documents/
   Clippings/                  # Web Clipper landing zone + reference images
   Excalidraw/                 # Excalidraw drawings (excluded from ingest)
-  Meeting Notes/              # Selector winners — routed by project
+  Meeting Notes/              # Fathom meeting notes — routed by project
     {Company}/{Project}/
-    _Unmatched/               # Meetings the selector couldn't route
+    _Unmatched/               # Meetings the router couldn't route
   Second Brain/               # The knowledge base
     README.md                 # Quick start / orientation
     SCHEMA.md                 # Wiki governance (page types, formats, workflows)
@@ -62,15 +62,14 @@ Documents/
     TAGS.md                   # Canonical tag taxonomy
     Decision-Log.md           # Key decisions with date, context, source meeting
     Action-Tracker.md         # DEPRECATED — read-only pointer to commitments.md
-    _System/                  # identity.yaml, changelog, meeting-selector logs
+    _System/                  # identity.yaml, changelog, routing logs
     daily/                    # Daily notes (YYYY-MM-DD.md) — auto-built 6am weekdays
     dashboards/               # Dataview-powered live views (excluded from ingest)
     raw/                      # Immutable source material
       articles/               # Web Clipper saves here
       projects/               # SOWs, configs, client docs
-      meeting-raw/            # Pre-selection transcripts
+      meeting-raw/            # Fathom transcripts pre-routing
         fathom/
-        granola/
       archived-actions/       # Pre-commitments.md archive
       archived-stories/       # Old story dumps
       templates/              # Templater templates (daily-note, quick-capture)
@@ -96,21 +95,22 @@ Documents/
 
 **`.claudeignore` excludes:** `.obsidian/`, `Excalidraw/`, `Clippings/`, `raw/archived-stories/`, binary attachments, stray CSVs. The compiled wiki layer is the intended search surface.
 
+Note: `raw/meeting-raw/granola/` is the historical Granola capture folder. Granola was retired 2026-04-18; the folder is retained for any Granola-only meetings not yet migrated but no new files land there.
+
 ---
 
 ## Scheduled Automations
 
 All run automatically. No manual intervention needed. All times Central.
 
-### Meeting pipeline (Granola + Fathom + selector)
+### Meeting pipeline (Fathom)
 
 | Task | Schedule | What it does |
 |------|----------|--------------|
-| `process-meeting-transcripts` | Weekdays 8am, 10am, 12pm, 2pm, 4pm, 6pm | Pulls Granola transcripts into `raw/meeting-raw/granola/` with frontmatter |
 | `process-fathom-transcripts` | Weekdays 8am, 10am, 12pm, 2pm, 4pm, 6pm | Pulls Fathom transcripts into `raw/meeting-raw/fathom/` with frontmatter |
-| `meeting-selector` | Weekdays :45 past 8am–6pm (every 2hrs) | Scores each pair (transcript 30% / summary 25% / actions 25% / tech 15% / metadata 5%), writes winner to `Meeting Notes/{Company}/{Project}/`. Immutability preserved — once a file is selected, it stays. |
+| `meeting-selector` | Weekdays :45 past 8am–6pm (every 2hrs) | Routes Fathom transcripts to `Meeting Notes/{Company}/{Project}/` via `project-mapping.md`. Immutability preserved — once routed, a file stays. Unroutable → `_System/meeting-routing-unrouted.md`. |
 
-**Fathom/Granola trial:** ends 2026-05-02. `granola-fathom-decision` fires that day to prompt a commit. Current data: Fathom winning every scored pair. Standardize on Fathom at trial end.
+Granola was retired 2026-04-18 — Fathom is the sole meeting source. No scoring or selection step anymore; the "selector" task is now pure routing.
 
 ### Knowledge pipeline
 
@@ -136,7 +136,10 @@ All run automatically. No manual intervention needed. All times Central.
 | Task | Trigger | What it does |
 |------|---------|--------------|
 | `daily-note-review` | Run from sidebar | Reads today's daily note + commitments + recent decisions. Produces a 90-second focus brief. |
-| `granola-fathom-decision` | One-time 2026-05-02 | End-of-trial prompt to commit to Fathom or Granola based on selector-log scoring. |
+
+### Archived (2026-04-18)
+
+Disabled and safe to delete via sidebar UI: `process-meeting-transcripts` (Granola ingest), `granola-fathom-decision` (trial-end prompt), `granola-plan-check`, `restore-second-brain-crons`, `weekly-action-review`, `daily-note-now`, `story-sync-now`.
 
 ---
 
@@ -163,12 +166,12 @@ Trigger from natural language in Cowork or Claude Code. All live in `~/.claude/s
 3. Scheduled ingest processes within 4 hours, or say "ingest this" for immediate
 4. `Ctrl+Shift+D` in Obsidian downloads images locally for any clipped note
 
-### Meetings (Granola + Fathom)
+### Meetings (Fathom)
 
-1. Have your meeting with both Granola and Fathom running (while the trial is live)
-2. Processors pull each transcript every 2 hours into `raw/meeting-raw/{granola,fathom}/`
-3. `meeting-selector` scores both versions, writes the winner to `Meeting Notes/{Company}/{Project}/` with frontmatter
-4. Unmatched → `Meeting Notes/_Unmatched/`. Review weekly and update `project-mapping.md`
+1. Have your meeting with Fathom running
+2. `process-fathom-transcripts` pulls the transcript every 2 hours into `raw/meeting-raw/fathom/`
+3. `meeting-selector` (now a Fathom-only router) writes the note to `Meeting Notes/{Company}/{Project}/` with frontmatter
+4. Unroutable → `Meeting Notes/_Unmatched/`. Review weekly and update `project-mapping.md`
 5. `second-brain-ingest` picks up the routed transcript and extracts:
    - **Decisions** → appended to `Decision-Log.md`
    - **Commitments** → appended to `commitments.md` under the 4-gate rule (Owner=Mac, firm commitment verb, concrete next step, deduped)
@@ -297,7 +300,7 @@ Refactor via Tag Wrangler: right-click tag → Rename → vault-wide rewrite.
 
 ### Other connected MCPs
 
-Granola, Fathom, Google Calendar, Gmail, Slack, Notion, Linear, Jira, QuickBooks, Apollo, Figma, Canva, Lucid, Obsidian REST API.
+Fathom, Google Calendar, Gmail, Slack, Notion, Linear, Jira, QuickBooks, Apollo, Figma, Canva, Lucid, Obsidian REST API.
 
 ---
 
@@ -331,9 +334,7 @@ Auto-commit + push every 15 minutes via Obsidian Git.
 
 **Scheduled task not processing new files** — File already in `wiki/log.md` (skipped)? `project-mapping.md` has an entry for the project? Check task run history in Cowork sidebar.
 
-**Meeting not routing** — Unmatched transcripts go to `Meeting Notes/_Unmatched/`. Update `project-mapping.md` keywords and attendees.
-
-**Selector picked the wrong version** — Check `_System/meeting-selector.log` for the score breakdown. Immutability is preserved; re-running won't overwrite existing selections.
+**Meeting not routing** — Unrouted transcripts go to `Meeting Notes/_Unmatched/`. Update `project-mapping.md` keywords and attendees.
 
 **Web Clipper saving to wrong folder** — Extension settings → Folder = `Second Brain/raw/articles`.
 
@@ -357,7 +358,7 @@ Auto-commit + push every 15 minutes via Obsidian Git.
 | `wiki/MAKE-SPACES.md` | Make.md space config | You |
 | `_System/identity.yaml` | Owner manifest, workspaces, filters | You |
 | `_System/changelog.md` | System change history | You + Claude |
-| `_System/meeting-selector.log` | Per-pair Granola/Fathom scoring | Claude (auto) |
+| `_System/selector-log.md` | Meeting routing run log (historical scoring data from Fathom/Granola trial) | Claude (auto) |
 | `resources/diagrams/llm-kb-architecture.md` | Canonical architecture diagram | You |
 | `.claudeignore` | Claude Code / Cowork ignore rules | You |
 | `~/.claude/CLAUDE.md` | Hot cache — memory, rules, pointers | You + Claude |

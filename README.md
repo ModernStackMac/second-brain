@@ -10,10 +10,10 @@ Drop files into the appropriate `raw/` subfolder:
 
 - `raw/projects/` — SOWs, solution docs, project deliverables, Salesforce configs, client discovery notes
 - `raw/articles/` — Articles, blog posts, research (Obsidian Web Clipper drops here)
-- `raw/meeting-raw/` — Fathom/Granola transcripts (auto-populated by scheduled ingests — don't hand-edit)
+- `raw/meeting-raw/fathom/` — Fathom transcripts (auto-populated by scheduled ingest — don't hand-edit)
 - `raw/templates/` — Reusable doc templates and frameworks
 
-Note: `raw/discovery/` and `raw/meeting-notes/` are legacy paths — discovery lives under `raw/projects/`, meetings under `raw/meeting-raw/`.
+Note: `raw/discovery/` and `raw/meeting-notes/` are legacy paths — discovery lives under `raw/projects/`, meetings under `raw/meeting-raw/fathom/`. Granola was retired 2026-04-18; any historical files under `raw/meeting-raw/granola/` are read-only.
 
 ### Processing Content
 
@@ -41,11 +41,11 @@ Firm commitments live in `dashboards/commitments.md`. Claude extracts them from 
 
 1. Install the Obsidian Web Clipper Chrome extension
 2. Set default save location to `Second Brain/raw/articles/`
-3. Clip any article — it drops straight into raw sources and gets picked up on the next `kb-ingest` tick
+3. Clip any article — it drops straight into raw sources and gets picked up on the next ingest tick
 
 ### What NOT to Do
 
 - Don't manually edit files in `wiki/` — Claude maintains those (it reads + writes wiki/dashboards, never raw/)
 - Don't delete files from `raw/` — they're the source of truth
 - Don't reorganize the folder structure without updating `SCHEMA.md` and `_System/changelog.md`
-- Don't paste meeting transcripts into `wiki/` manually — let the selector pipeline pick the winner
+- Don't paste meeting transcripts into `wiki/` manually — the ingest pipeline handles routing

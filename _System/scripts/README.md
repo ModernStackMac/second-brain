@@ -1,6 +1,6 @@
 # _System/scripts
 
-Source-of-truth copy of the two Node scripts that power story-sync (Linear HM) and meeting-selector (Granola vs Fathom).
+Source-of-truth copy of the two Node scripts that power story-sync (Linear HM) and meeting-selector (Fathom routing).
 
 **These scripts are stored here for reference and version control. They must be executed from `~/scripts/second-brain/` on your Mac, not from the vault.**
 
@@ -26,7 +26,7 @@ node ~/scripts/second-brain/meeting-selector.js
 
 # Logs
 tail -f "$VAULT_ROOT/Second Brain/_System/story-sync.log"
-tail -f "$VAULT_ROOT/Second Brain/_System/meeting-selector.log"
+tail -f "$VAULT_ROOT/Second Brain/_System/selector-log.md"
 ```
 
 ## Dependencies
@@ -37,5 +37,5 @@ tail -f "$VAULT_ROOT/Second Brain/_System/meeting-selector.log"
 
 ## Files
 
-- `story-sync.js` — Linear HM pull + Action-Tracker AUTO-SYNC update + per-project stories files + prune-to-archive
-- `meeting-selector.js` — Scores Granola/Fathom pair files in `raw/meeting-raw/{granola,fathom}/` and writes winner to `Meeting Notes/`
+- `story-sync.js` — Linear HM pull + commitments.md update + per-project stories files + prune-to-archive
+- `meeting-selector.js` — Routes Fathom files from `raw/meeting-raw/fathom/` to `Meeting Notes/{Company}/{Project}/` via project-mapping. Granola was retired 2026-04-18; the historical scoring path in this script is dead code retained for reference.

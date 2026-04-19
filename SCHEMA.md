@@ -12,15 +12,14 @@ You are a knowledge-base maintainer for Mac Nosek's consulting practice (Modern 
 
 ```
 Second Brain/
-├── _System/                  # Operational — identity, changelog, selector logs
+├── _System/                  # Operational — identity, changelog, routing logs
 ├── daily/                    # Daily notes (YYYY-MM-DD.md) — not ingested
 ├── dashboards/               # Dataview views — not ingested
 ├── raw/                      # Immutable source materials (never modify)
 │   ├── articles/             # Clipped articles, blog posts, research (ANY topic)
 │   ├── projects/             # SOWs, project docs, deliverables, configs, discovery
-│   ├── meeting-raw/          # Pre-selection transcripts
-│   │   ├── fathom/
-│   │   └── granola/
+│   ├── meeting-raw/          # Fathom transcripts pre-routing
+│   │   └── fathom/
 │   ├── archived-actions/     # Pre-commitments.md archive
 │   ├── archived-stories/     # Old story dumps (excluded from ingest)
 │   └── templates/            # Reusable doc templates (not ingested)
@@ -59,21 +58,23 @@ Second Brain/
 
 - `commitments.md` — rolling open action items Mac owns (ingest writes under 4-gate rule)
 - `project-mapping.md` — single source of truth for projects, contacts, routing
-- `Meeting Notes/` — selector winners, routed by `{Company}/{Project}/`
+- `Meeting Notes/` — Fathom meeting notes, routed by `{Company}/{Project}/`
 - `Clippings/` — Web Clipper landing + reference images
 - `.claudeignore` — ignore rules for Claude Code / Cowork
 
-**Note:** `wiki/clients/` does not exist as a separate folder. All project/client knowledge lives in `wiki/projects/{slug}/`.
+**Note:** `wiki/clients/` does not exist as a separate folder. All project/client knowledge lives in `wiki/projects/{slug}/`. Historical Granola captures may exist under `raw/meeting-raw/granola/` — read-only, do not add new files there.
 
 ---
 
 ## External Source: Meeting Notes
 
-`Meeting Notes/` at vault root is the PRIMARY source for client/project context, populated by `meeting-selector` after scoring Granola vs Fathom pairs.
+`Meeting Notes/` at vault root is the PRIMARY source for client/project context, populated by `meeting-selector` routing Fathom transcripts from `raw/meeting-raw/fathom/` to the correct project folder.
 
 **Structure:** `Meeting Notes/{Company}/{Project}/YYYY-MM-DD - Title.md`
 
-**Frontmatter fields:** date, title, company, project, attendees, source (fathom|granola), selector_score, processed, tags
+**Frontmatter fields:** date, title, company, project, attendees, source (fathom), processed, tags
+
+Legacy files may carry `source: granola` and a `selector_score` field from the Fathom/Granola trial (ended 2026-04-18). Leave those fields alone on historical files — do not backfill or strip.
 
 **How to use:**
 
@@ -308,7 +309,7 @@ When told to ingest:
 
 - Never modify anything in `raw/`. Immutable source of truth.
 - Never ingest or process files in `dashboards/`, `session-context/`, `daily/`, or `_System/`. Operational folders, not knowledge sources.
-- `Meeting Notes/` winners are READ-ONLY (immutability preserved across selector reruns).
+- `Meeting Notes/` files are READ-ONLY (immutability preserved across router reruns).
 - Always cite sources when updating wiki pages.
 - Keep wiki pages concise and scannable — no fluff.
 - Use `[[wiki-links]]` for cross-references (Obsidian-compatible).

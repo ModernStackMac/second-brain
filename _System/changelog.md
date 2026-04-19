@@ -25,3 +25,29 @@ Folded 7 layered updates (a–g) into the base bodies of `SYSTEM-GUIDE.md`, `SCH
 - 5 disabled/completed one-time scheduled tasks flagged `[ARCHIVED 2026-04-18]` for manual deletion via sidebar: `granola-plan-check`, `restore-second-brain-crons`, `weekly-action-review`, `daily-note-now`, `story-sync-now`
 
 **Fathom vs Granola trial:** Meeting-selector log shows Fathom winning every scored pair. Standardize on Fathom at 2026-05-02 trial-end review (`granola-fathom-decision` task fires).
+
+
+## 2026-04-18 — Granola retired
+
+Granola deleted. Fathom is now the sole meeting source.
+
+**Schedules updated:**
+
+- `process-meeting-transcripts` (Granola ingest) → disabled, flagged `[ARCHIVED 2026-04-18]`
+- `granola-fathom-decision` → disabled (decision made early — Fathom)
+- `meeting-selector` → repurposed from "scoring + selecting" to "Fathom-only routing". Same cron, new prompt: route Fathom files from `raw/meeting-raw/fathom/` to `Meeting Notes/{Company}/{Project}/` via `project-mapping.md`. No more scoring step.
+
+**Vault docs scrubbed of Granola references:**
+
+- `SYSTEM-GUIDE.md`, `SCHEMA.md`, `PEER-SETUP-GUIDE.md`, `README.md` — rewritten to describe Fathom-only pipeline
+- `dashboards/Home.md`, `dashboards/Meetings.md` — selector trial widgets removed
+- `raw/meeting-raw/README.md` — updated to reflect Fathom-only ingest
+
+**Historical data preserved:**
+
+- `raw/meeting-raw/granola/` retained read-only for any Granola-only meetings (no Fathom counterpart)
+- Frontmatter fields `selected_from: granola` and `selected_score` left intact on historical Meeting Notes — do not backfill or strip
+- `_System/selector-log.md` retained as historical scoring record from the trial period
+- Pre-Granola-retirement bodies live in Git history (`ModernStackMac/second-brain`)
+
+**Meeting note dedupe:** Where both Fathom and Granola captured the same meeting, the Granola raw file and any duplicate Meeting Notes routing were deleted. Granola-only meetings (no Fathom counterpart) were preserved.

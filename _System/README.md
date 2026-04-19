@@ -5,8 +5,10 @@ Configuration and machine-readable config for the Second Brain. Not user-facing 
 ## Files
 
 - `identity.yaml` — Mac's identity manifest (emails, workspaces, filters, paths). Read by all sync + ingestion tasks.
+- `changelog.md` — historical record of material system changes.
 - `story-sync.log` — append-only log of story-sync runs (created on first sync).
-- `meeting-selector.log` — append-only log of Granola/Fathom selection decisions (created on first run).
+- `selector-log.md` — append-only log of meeting-selector runs. Historical scoring data from the Fathom/Granola trial (ended 2026-04-18) preserved; current runs log Fathom-only routing decisions.
+- `meeting-routing-unrouted.md` — list of Fathom meetings meeting-selector couldn't route (missing project-mapping entry).
 
 ## Rules
 

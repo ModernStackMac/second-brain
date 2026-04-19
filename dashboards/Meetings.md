@@ -1,4 +1,3 @@
-# Meetings Dashboard
 ---
 type: dashboard
 updated: 2026-04-18
@@ -6,14 +5,14 @@ updated: 2026-04-18
 
 # Meetings Dashboard
 
-> All meeting transcripts by project, selector decisions, unmatched routing flags.
+> All Fathom meeting notes by project, plus unmatched routing flags.
 
 ---
 
 ## At a glance
 
 > [!info] This week
-> **Meetings this week:** `$= dv.pages('"Meeting Notes"').where(p => p.file.ctime >= dv.date("today").minus(dv.duration("7 days")) && p.file.name !== "_Unmatched").length`  ·  **Unmatched total:** `$= dv.pages('"Meeting Notes/_Unmatched"').length`  ·  **Granola wins (last 14d):** `$= dv.pages('"Meeting Notes"').where(p => p.selected_from === "granola" && p.file.ctime >= dv.date("today").minus(dv.duration("14 days"))).length`  ·  **Fathom wins (last 14d):** `$= dv.pages('"Meeting Notes"').where(p => p.selected_from === "fathom" && p.file.ctime >= dv.date("today").minus(dv.duration("14 days"))).length`
+> **Meetings this week:** `$= dv.pages('"Meeting Notes"').where(p => p.file.ctime >= dv.date("today").minus(dv.duration("7 days")) && p.file.name !== "_Unmatched").length`  ·  **Unmatched total:** `$= dv.pages('"Meeting Notes/_Unmatched"').length`
 
 ---
 
@@ -36,28 +35,6 @@ updated: 2026-04-18
 > SORT file.ctime DESC
 > LIMIT 15
 > ```
-
----
-
-## Granola vs Fathom — trial results
-
-> Meeting-selector writes `selected_from` (granola|fathom) and `selected_score` into each meeting's frontmatter. Below tracks which tool is winning.
-
-### Selection breakdown (last 14 days)
-```dataview
-TABLE WITHOUT ID file.link as "Meeting", selected_from as "Winner", selected_score as "Score", file.ctime as "Date"
-FROM "Meeting Notes"
-WHERE selected_from AND file.ctime >= date(today) - dur(14 days)
-SORT file.ctime DESC
-```
-
-### Winner distribution
-```dataview
-TABLE length(rows) as "Meetings"
-FROM "Meeting Notes"
-WHERE selected_from AND file.ctime >= date(today) - dur(14 days)
-GROUP BY selected_from
-```
 
 ---
 
@@ -133,3 +110,7 @@ GROUP BY file.folder
 type: bar
 id: meetings-by-company
 ```
+
+---
+
+*Historical note: Granola was retired 2026-04-18. Legacy files routed from Granola may carry `selected_from: granola` in frontmatter — leave those fields alone on historical records.*
