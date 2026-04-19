@@ -543,3 +543,71 @@ Daily notes now live at **`Second Brain/daily/YYYY-MM-DD.md`** (not `Second Brai
 ### Supersedes prior update sections
 
 Any references to `Second Brain/raw/daily/` in Updates 2026-04-18b (Calendar + Kanban + Tasks) and 2026-04-18c (Templater) are superseded by this note. The canonical daily-note path going forward is `Second Brain/daily/`.
+
+
+---
+
+## Updates (2026-04-18f) — Action-Tracker sunset + Architecture diagram + Phase A changes
+
+### Architecture diagram (canonical)
+
+The end-to-end LLM Knowledge Base architecture is now formalized as a single reference at `Second Brain/resources/diagrams/llm-kb-architecture.md`. It includes both a PNG embed (drop the source image at `resources/diagrams/llm-kb-architecture.png`) and a Mermaid fallback that renders immediately in Obsidian.
+
+Embedded view:
+
+![[resources/diagrams/llm-kb-architecture]]
+
+See the diagram file for the full mapping table (ingest → engine → store → outputs → frontend) and the two Second-Brain-specific sub-flows (Meeting pipeline and Story sync → Daily loop).
+
+### Action-Tracker.md deprecated, `commitments.md` is the new flow
+
+`Action-Tracker.md` has been sunset as of 2026-04-18. Prior content archived to `raw/archived-actions/2026-04-pre-sunset.md`. The file at the root is now a read-only pointer.
+
+Replacement: **`commitments.md`** (vault root). Rolling list of open action items Mac owns. Simple `- [ ]` list with dataview inline fields. Auto-maintained by ingest. `daily-note-builder` pulls from here each morning.
+
+**Hard extraction gates for ingest** (all four must pass):
+1. Owner = Mac (explicit assignment or first-person commitment)
+2. Firm commitment verb phrase ("I'll", "Mac will", "action for Mac")
+3. Clear next step (concrete action, not a topic)
+4. Deduplicated against existing open items
+
+See `SCHEMA.md` Updates (2026-04-18f) for full rules.
+
+### Kanban boards retired
+
+No automation writes `wiki/projects/*/board.md`. Existing board files deleted. Kanban plugin can still be used manually for any board you want to hand-build, but it's outside the automation loop.
+
+### Story-sync narrowed to strict active set
+
+`story-sync` now pulls only **To Do / Todo / In Progress / Started** (plus Backlog items in the current cycle). Dropped: In Review, QA, Developer Review, Code Review, Blocked, On Hold, Open, Selected for Development, etc.
+
+`story-sync` no longer writes the AUTO-SYNC block in `Action-Tracker.md`. Per-project `wiki/projects/{slug}/stories-{ws}.md` pages remain as the story-level context source of truth.
+
+### Scheduled task changes (Phase A)
+
+| Task | Change |
+|---|---|
+| `second-brain-ingest` | Prompt updated — writes action items to `commitments.md` (not Action-Tracker), enforces 4-gate extraction |
+| `story-sync` | Prompt updated — narrow filter; no AUTO-SYNC block write |
+| `weekly-action-review` | Disabled (Action-Tracker is gone) |
+| `daily-note-builder` | Prompt updated — pulls from `commitments.md` instead of Action-Tracker |
+
+### New on-demand skill: `daily-note-review`
+
+Morning briefing skill that reads today's daily note + `commitments.md` + recent meeting decisions and produces a focused start-of-day summary. Triggers: "daily review", "morning brief", "what's on today".
+
+### Supersedes
+
+- 2026-04-18b Kanban + Action-Tracker sections
+- 2026-04-18c Make.md "Clients Space" reference (clients already merged into projects)
+
+
+---
+
+## Updates (2026-04-18g) — Architecture diagram: direct PNG only
+
+The Mermaid diagrams from 2026-04-18f looked bad in Obsidian's auto-layout. Switching to a direct PNG embed only. Diagram doc has been simplified to image + mapping table (no Mermaid).
+
+![[llm-kb-architecture.png]]
+
+Save the canonical image at `Second Brain/resources/diagrams/llm-kb-architecture.png` for the embed to resolve. The vault-specific mapping table lives at `Second Brain/resources/diagrams/llm-kb-architecture.md`.

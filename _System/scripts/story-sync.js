@@ -1,10 +1,22 @@
 #!/usr/bin/env node
 /**
- * story-sync.js  (v4.1)
+ * story-sync.js  (v4.2)
  *
  * Pulls active stories from Linear (MSS + HM) and Jira (F2) and writes them to:
- *   - Second Brain/Action-Tracker.md (auto-sync section)
  *   - Second Brain/wiki/projects/{project-path}/stories-{ws}.md (per-project)
+ *
+ * v4.2 changes (2026-04-18 — Action-Tracker sunset):
+ *   - Narrowed active_statuses to STRICT in-flight only:
+ *       Linear: Todo, Started, In Progress
+ *       Jira:   To Do, In Progress
+ *     Drops In Review / QA / Blocked / Backlog-via-stale-update noise.
+ *   - Backlog inclusion now requires inCurrentCycle === true. The
+ *     14-day-updated and priority-Urgent/High fallbacks are removed.
+ *   - main() no longer calls updateActionTracker(). Action-Tracker.md is
+ *     deprecated per SCHEMA.md Updates (2026-04-18f). Project pages remain
+ *     the single source of truth for synced stories.
+ *   - updateActionTracker() and buildAutoBlock() retained as no-op exports
+ *     in case a downstream consumer still imports them; safe to delete in v5.
  *
  * v4.1 changes:
  *   - PROJECT_SLUG_MAP: cetera → f2-cetera (aligns with clients→projects merge).
@@ -28,12 +40,10 @@
  * Sync-and-prune: stories that no longer match the active filter are moved to
  *   Second Brain/raw/archived-stories/{project}/{id}.md
  *
- * Filter:
- *   status ∈ active_statuses (identity.yaml filters.story_sync.active_statuses)
+ * Filter (v4.2 strict):
+ *   status ∈ active_statuses
  *   OR
- *   (status = Backlog AND (priority ∈ {Urgent, High}
- *                          OR cycle = @current
- *                          OR updatedAt > now - 14d))
+ *   (status = Backlog AND inCurrentCycle === true)
  *
  * Identity filter: assignee email ∈ identity.yaml owner.emails.*
  *                  OR assignee name ∈ owner.aliases
@@ -54,11 +64,12 @@ const https = require('https');
 
 const VAULT_ROOT = process.env.VAULT_ROOT || path.join(process.env.HOME, 'Documents/Obsidian Vault');
 const IDENTITY_PATH = path.join(VAULT_ROOT, 'Second Brain/_System/identity.yaml');
-const ACTION_TRACKER = path.join(VAULT_ROOT, 'Second Brain/Action-Tracker.md');
 const STORIES_OUT_DIR = path.join(VAULT_ROOT, 'Second Brain/wiki/projects');
 const ARCHIVE_DIR = path.join(VAULT_ROOT, 'Second Brain/raw/archived-stories');
 const LOG_FILE = path.join(VAULT_ROOT, 'Second Brain/_System/story-sync.log');
 
+// Retained constants for backward-compat with any downstream caller of
+// buildAutoBlock(); not used by main() in v4.2.
 const AUTO_SYNC_BEGIN = '<!-- BEGIN AUTO-SYNC -->';
 const AUTO_SYNC_END   = '<!-- END AUTO-SYNC -->';
 
@@ -103,27 +114,21 @@ function identityMatch(identity, assignee) {
 }
 
 function passesFilter(story) {
-  // Linear-native + Jira-native active/work-in-flight statuses. Anything that
-  // represents work Mac still owns and hasn't closed should pass.
+  // v4.2 STRICT active set. Linear-native + Jira-native in-flight only.
+  // Drops In Review / QA / Blocked / On Hold — those re-surface as story
+  // rows on project pages but no longer drive top-of-mind workload here.
+  // Source of truth: identity.yaml filters.story_sync.active_statuses
   const active = [
     // Linear
-    'Todo','Unstarted','Started','In Progress','In progress','in progress',
-    // Jira common
-    'To Do','Open','Selected for Development','In Review','Review',
-    'Developer Review','Code Review','Peer Review',
-    'Internal QA','QA','In QA','Testing','Ready for QA',
-    'Blocked','On Hold',
+    'Todo','Started','In Progress','In progress','in progress',
+    // Jira
+    'To Do','In Progress',
   ];
   const s = (story.status || '').trim();
   if (active.some(a => a.toLowerCase() === s.toLowerCase())) return true;
   if (/backlog/i.test(s)) {
-    if (['Urgent','High'].includes(story.priority)) return true;
+    // v4.2: only include backlog when explicitly in current cycle.
     if (story.inCurrentCycle) return true;
-    if (story.updatedAt) {
-      const updated = new Date(story.updatedAt);
-      const ageDays = (Date.now() - updated.getTime()) / 86400000;
-      if (ageDays <= 14) return true;
-    }
   }
   return false;
 }
@@ -323,7 +328,7 @@ function writeStoriesToProjectPages(stories) {
 
     const byStatus = {};
     for (const s of list) (byStatus[s.status] ||= []).push(s);
-    const statusOrder = ['Urgent','In Progress','In progress','Started','Developer Review','Code Review','In Review','Review','Internal QA','QA','In QA','Testing','Ready for QA','To Do','Todo','Unstarted','Selected for Development','Open','Blocked','On Hold','Backlog'];
+    const statusOrder = ['Urgent','In Progress','In progress','Started','To Do','Todo','Backlog'];
     const sortedStatuses = Object.keys(byStatus).sort((a,b) => (statusOrder.indexOf(a) + 99) - (statusOrder.indexOf(b) + 99));
 
     for (const status of sortedStatuses) {
@@ -341,29 +346,16 @@ function writeStoriesToProjectPages(stories) {
   return currentlySynced;
 }
 
-function updateActionTracker(stories) {
-  let text = fs.existsSync(ACTION_TRACKER) ? fs.readFileSync(ACTION_TRACKER, 'utf8') : '# Action Tracker\n\n';
-
-  const autoBlock = buildAutoBlock(stories);
-
-  if (text.includes(AUTO_SYNC_BEGIN)) {
-    text = text.replace(
-      new RegExp(`${AUTO_SYNC_BEGIN}[\\s\\S]*?${AUTO_SYNC_END}`),
-      `${AUTO_SYNC_BEGIN}\n${autoBlock}\n${AUTO_SYNC_END}`
-    );
-  } else {
-    if (text.includes('## Closed')) {
-      text = text.replace('## Closed', `${AUTO_SYNC_BEGIN}\n${autoBlock}\n${AUTO_SYNC_END}\n\n## Closed`);
-    } else {
-      text = text.trimEnd() + `\n\n${AUTO_SYNC_BEGIN}\n${autoBlock}\n${AUTO_SYNC_END}\n`;
-    }
-  }
-
-  fs.writeFileSync(ACTION_TRACKER, text);
-  log(`UPDATED Action-Tracker.md — ${stories.length} synced stories`);
+// ------- DEPRECATED in v4.2 (Action-Tracker sunset) -------
+// Retained as no-ops to avoid breaking any external import. main() no longer
+// calls updateActionTracker(). Safe to delete in v5 once nothing references.
+function updateActionTracker(_stories) {
+  log('updateActionTracker is a no-op as of v4.2 (Action-Tracker sunset)');
 }
 
 function buildAutoBlock(stories) {
+  // Preserved for backward-compat. Action-Tracker.md is no longer the
+  // destination for synced rows; project pages own that responsibility now.
   if (!stories.length) return '## Auto-Synced Stories\n\n_No active stories at last sync._';
 
   const byWs = {};
@@ -379,8 +371,6 @@ function buildAutoBlock(stories) {
     for (const proj of Object.keys(byWs[ws]).sort()) {
       out += `#### ${proj}\n`;
       for (const s of byWs[ws][proj]) {
-        // Action-Tracker rows stay single-line for Dataview. Prefer LLM summary
-        // over a raw description excerpt when available.
         const ctxShort = (s.summary && s.summary.trim()) ? s.summary.trim().slice(0, 160) : firstSentences(s.description, 1, 140);
         const summary = ctxShort ? ` — _${ctxShort}_` : '';
         out += `- [ ] [${s.id}](${s.url}) — ${oneLineTitle(s.title)}${summary} [Owner:: Mac] [Project:: ${mapProjectSlug(slugify(s.project))}] [Status:: ${s.status}] [Priority:: ${s.priority || 'None'}] [Ticket:: ${s.id}] [Source:: ${sourceTag(ws)}] [Date:: ${s.updatedAt?.slice(0,10) || ''}]\n`;
@@ -453,7 +443,7 @@ async function main() {
     .filter(passesFilter);
 
   const currentlySynced = writeStoriesToProjectPages(all);
-  updateActionTracker(all);
+  // v4.2: Action-Tracker.md is sunset. No write here.
   const pruned = pruneStale(currentlySynced);
 
   const summary = {
@@ -461,7 +451,7 @@ async function main() {
     total_active: all.length,
     by_workspace: all.reduce((m, s) => ((m[s.workspace] = (m[s.workspace]||0)+1), m), {}),
     pruned,
-    version: 'v4.1-clients-merged',
+    version: 'v4.2-action-tracker-sunset',
   };
   console.log(JSON.stringify(summary, null, 2));
 }

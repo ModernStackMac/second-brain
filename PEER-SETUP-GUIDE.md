@@ -592,3 +592,43 @@ If you're setting up a peer vault from this guide, substitute `Second Brain/dail
 - The `daily-note-builder` scheduled task
 
 Everything else in this guide still applies. See `SYSTEM-GUIDE.md` Updates 2026-04-18e for the full change note.
+
+
+---
+
+## Update 2026-04-18 — Architecture diagram (the mental model)
+
+Before you start building, see the one-page picture of how this all fits together:
+
+![[resources/diagrams/llm-kb-architecture]]
+
+Full diagram reference with the Mermaid fallback and the vault-specific mapping table (ingest sources → LLM engine → knowledge store → outputs → frontend) lives at `Second Brain/resources/diagrams/llm-kb-architecture.md`. The Mermaid version always renders in Obsidian; the PNG embed activates once you drop the canonical image at `resources/diagrams/llm-kb-architecture.png`.
+
+The diagram is the shared mental model — if you're onboarding a colleague, send them the diagram file first, then this guide.
+
+### Key takeaway
+
+The pattern is: **raw docs → LLM engine (compile + Q&A + lint + index) → wiki store → outputs (markdown, slides, charts) filed back into the wiki**. Everything in this guide is a concrete instance of that loop. The meeting pipeline is the highest-ROI instance. The story-sync and daily-note loops are tuned derivatives.
+
+---
+
+## Update 2026-04-18 — Action-Tracker sunset (simpler flow for new peers)
+
+If you're setting up a fresh vault from this guide, **skip Action-Tracker.md entirely**. It's been deprecated in the reference setup. Use `commitments.md` at the vault root instead — a simple rolling list of open action items the user owns. Ingest writes to it under a 4-gate rule (owner match, firm commitment, concrete next step, deduplicated). Daily-note-builder reads from it each morning.
+
+Replace any "Action-Tracker" references in the 30-day rollout above with "commitments.md". Skip the `weekly-action-review` scheduled task — it's tied to Action-Tracker and is no longer part of the reference setup.
+
+Kanban boards are also out of the reference setup. The Kanban plugin still works for any hand-built boards you want, but no automation writes `.md` files with `kanban-plugin: basic`.
+
+See `SCHEMA.md` Updates 2026-04-18f for the full extraction rules and `SYSTEM-GUIDE.md` Updates 2026-04-18f for the architectural narrative.
+
+
+---
+
+## Update 2026-04-18g — Architecture diagram: direct PNG only
+
+The Mermaid in the prior section is superseded. Use the direct PNG embed below.
+
+![[llm-kb-architecture.png]]
+
+Save the canonical image at `Second Brain/resources/diagrams/llm-kb-architecture.png` for the embed to resolve.

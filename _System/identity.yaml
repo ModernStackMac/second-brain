@@ -1,6 +1,6 @@
-# Mac Nosek — identity manifest
-# Used by: story-sync, meeting-selector, action-tracker auto-append, decision-log auto-append
-# Update here when adding new emails, workspaces, or name variants.
+# Mac Nosek — identity manifest (v3 — 2026-04-18)
+# Used by: story-sync, meeting-selector, decision-log auto-append
+# commitments.md extraction is governed by SCHEMA.md Updates (2026-04-18f)
 
 owner:
   name: Mac Nosek
@@ -25,12 +25,12 @@ workspaces:
       name: Modern Stack Systems
       prefix: MSS
       email: mac.nosek@modernstacksystems.com
-      auth: mcp          # connected via existing Linear MCP
+      auth: mcp
     - id: hm
       name: High Meadow
       prefix: HM
       email: mac@highmeadowsolutions.com
-      auth: keychain     # key in macOS Keychain: LINEAR_HIGHMEADOW_API_KEY
+      auth: keychain
       keychain_service: LINEAR_HIGHMEADOW_API_KEY
 
   jira:
@@ -39,7 +39,7 @@ workspaces:
       prefix: F2
       cloud: f2strategy
       email: mac.nosek@f2strategy.com
-      auth: mcp          # connected via Atlassian MCP
+      auth: mcp
 
   confluence:
     - id: f2-internal
@@ -50,54 +50,39 @@ workspaces:
 
 filters:
   story_sync:
-    # Active set: always included. Covers Linear-native AND Jira-native
-    # in-flight statuses so nothing open falls through.
+    # STRICT active set (narrowed 2026-04-18). Drop In Review, QA, Blocked, etc.
+    # story-sync.js active_statuses constant must match this list.
     active_statuses:
       # Linear
       - Todo
-      - Unstarted
       - Started
       - In Progress
-      # Jira common
+      # Jira
       - To Do
-      - Open
-      - Selected for Development
-      - In Review
-      - Review
-      - Developer Review
-      - Code Review
-      - Peer Review
-      - Internal QA
-      - QA
-      - In QA
-      - Testing
-      - Ready for QA
-      - Blocked
-      - On Hold
+      - In Progress
 
-    # Backlog set: included only if any condition matches
+    # Backlog set: only if in current cycle. Dropped 14-day updated fallback.
     backlog_conditions:
-      priority_in: [Urgent, High]
       in_current_cycle: true
-      updated_within_days: 14
 
-    # Identity match: at least one must be true for a ticket to pass
+    # Identity match: at least one must be true.
     identity_match_any_of:
-      - assignee_email_in_list        # assignee email ∈ owner.emails.*
-      - assignee_name_in_aliases      # assignee name ∈ owner.aliases
+      - assignee_email_in_list
+      - assignee_name_in_aliases
+
+    # 2026-04-18: story-sync no longer writes Action-Tracker.md AUTO-SYNC block.
+    write_action_tracker: false
 
   meeting_selector:
-    # Scoring rubric for Granola vs Fathom
     weights:
       transcript_completeness: 0.30
       summary_quality: 0.25
       action_items: 0.25
       technical_accuracy: 0.15
       metadata_richness: 0.05
-    trial_end: 2026-05-02              # 2 weeks from Fathom signup
+    trial_end: 2026-05-02
 
   decision_log:
-    # Tags in meeting summaries that trigger decision-log append
     trigger_patterns:
       - "decision:"
       - "decided:"
@@ -106,25 +91,26 @@ filters:
     owner_default: Mac Nosek
     dedupe_hash_fields: [date, project, decision_first_80]
 
-  action_tracker:
-    owner_only: Mac Nosek             # Only append items where Owner is Mac
-    archive_after_days_done: 7
+  commitments:
+    # Replaces the deprecated action_tracker filter. All four gates must pass.
+    file: commitments.md
+    extraction_gates:
+      - owner_is_mac                    # explicit commitment from Mac or assignment to Mac
+      - firm_commitment_verb            # "I'll", "Mac will", "action for Mac"
+      - concrete_next_step              # actionable, not a topic area
+      - deduplicate_open_items          # compare first 60 chars + project
+    archive_after_days_done: 14
     archive_path: Second Brain/raw/archived-actions/
 
-# Project slug map: collapse aliases and group projects into vault subfolders.
-# story-sync reads this (mirrored in PROJECT_SLUG_MAP inside story-sync.js);
-# if you change one, change both.
 project_slug_map:
-  # Internal products live under internal/
   meadow:                internal/meadow
-  capacity-planning:     internal/meadow          # same product, legacy name
+  capacity-planning:     internal/meadow
   capacity-planning-mss: internal/meadow
   flex-dash:             internal/flex-dash
   flexdash:              internal/flex-dash
   high-meadow-website:   internal/high-meadow-website
   highmeadow-website:    internal/high-meadow-website
   hm-website:            internal/high-meadow-website
-  # F2 client engagements — flat
   mai-crm-build:         mai
   mai:                   mai
   cetera:                f2-cetera
@@ -132,15 +118,16 @@ project_slug_map:
   lnw:                   lnw
 
 paths:
-  vault_root: "~/Documents/Obsidian Vault"   # adjust if different
+  vault_root: "~/Documents/Obsidian Vault"
   meeting_notes_root: Meeting Notes
   raw_granola: Second Brain/raw/meeting-raw/granola/
   raw_fathom: Second Brain/raw/meeting-raw/fathom/
   raw_archived_stories: Second Brain/raw/archived-stories/
   raw_archived_actions: Second Brain/raw/archived-actions/
+  commitments_file: commitments.md
   resources_learning: Second Brain/resources/learning/
   resources_reading: Second Brain/resources/reading/
   resources_interests: Second Brain/resources/interests/
 
-version: 2
+version: 3
 updated: 2026-04-18
