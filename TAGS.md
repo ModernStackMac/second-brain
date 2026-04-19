@@ -44,15 +44,12 @@ Applied to tasks and captures. Must be mutually exclusive.
 
 What kind of note this is. One per note.
 
-- `#type/daily` — daily note
 - `#type/meeting` — meeting summary or transcript
 - `#type/decision` — decision record
 - `#type/capture` — raw capture (articles, ideas, clippings)
 - `#type/wiki` — compiled wiki page
-- `#type/dashboard` — Dataview/Tasks dashboard
-- `#type/kanban` — kanban board
 - `#type/story` — Linear/Jira story mirror
-- `#type/report` — saved query output
+- `#type/report` — saved query output or weekly synthesis
 
 ## Context tags
 
@@ -66,7 +63,7 @@ Where or when the work happens.
 
 ## Priority tags
 
-Use sparingly — prefer Tasks plugin emoji (`🔺 🔼 🔽 ⏬`) for task priority. Reserve priority tags for page-level importance.
+Use sparingly — prefer Tasks plugin emoji for task priority. Reserve priority tags for page-level importance.
 
 - `#priority/urgent`
 - `#priority/high`
@@ -89,6 +86,9 @@ Migrate via Tag Wrangler (right-click → Rename tag):
 | `#todo` | `#status/todo` |
 | `#wip` | `#status/in-progress` |
 | `#followup` | `#status/review` |
+| `#type/daily` | removed (daily notes killed) |
+| `#type/dashboard` | removed (dashboards consolidated to Home only) |
+| `#type/kanban` | removed (Kanban boards retired) |
 
 ---
 

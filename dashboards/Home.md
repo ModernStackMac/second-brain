@@ -1,36 +1,24 @@
 ---
 type: dashboard
-updated: 2026-04-18
+updated: 2026-04-19
+sticker: lucide//layout-dashboard
 ---
 
-# Home Dashboard
+# Home
 
-> Central hub. Pin or set as Obsidian startup page.
-
----
-
-## Today's daily note
-
-```dataview
-TABLE WITHOUT ID file.link AS "Daily note"
-FROM "Second Brain/daily"
-WHERE file.name = dateformat(date(today), "yyyy-MM-dd")
-```
-
-*If empty, `daily-note-builder` hasn't fired yet — it runs weekdays 6am CT. Run it manually from the sidebar to rebuild on demand.*
+> Pin as Obsidian startup page (Homepage plugin → `dashboards/Home`).
 
 ---
 
-## At a glance
+## At a Glance
 
 > [!info] KPI strip
-> **Open commitments:** `$= dv.pages('"commitments"').file.tasks.where(t => !t.completed).length`  ·  **Meetings this week:** `$= dv.pages('"Meeting Notes"').where(p => p.file.ctime >= dv.date("today").minus(dv.duration("7 days"))).length`  ·  **Decisions this month:** `$= dv.pages('"Second Brain/Decision-Log"').file.lists.where(l => l.Date && l.Date >= dv.date("today").minus(dv.duration("30 days"))).length`  ·  **Unmatched:** `$= dv.pages('"Meeting Notes/_Unmatched"').length`
+> **Open commitments:** `$= dv.pages('"commitments"').file.tasks.where(t => !t.completed).length`  ·  **Meetings this week:** `$= dv.pages('"Meeting Notes"').where(p => p.file.ctime >= dv.date("today").minus(dv.duration("7 days"))).length`  ·  **Unmatched:** `$= dv.pages('"Meeting Notes/_Unmatched"').length`
 
 ---
 
-## This Week
+## Open Commitments by Project
 
-### Open commitments by project
 ```dataview
 TASK
 FROM "commitments"
@@ -38,7 +26,10 @@ WHERE !completed
 GROUP BY Project
 ```
 
-### Meetings this week
+---
+
+## Meetings This Week
+
 ```dataview
 TABLE WITHOUT ID file.link as "Meeting", file.ctime as "Date", file.folder as "Project"
 FROM "Meeting Notes"
@@ -59,7 +50,7 @@ SORT file.ctime DESC
 > ```
 
 > [!danger] Unmatched meetings
-> Meetings that couldn't be routed — update `project-mapping.md` keywords.
+> Update `project-mapping.md` keywords to fix routing.
 >
 > ```dataview
 > TABLE WITHOUT ID file.link as "Meeting", file.ctime as "Date"
@@ -67,9 +58,7 @@ SORT file.ctime DESC
 > SORT file.ctime DESC
 > ```
 
-> [!warning] Stale projects
-> Project journals not updated in 14+ days.
->
+> [!warning] Stale project journals (14+ days)
 > ```dataview
 > TABLE file.mtime as "Last Updated"
 > FROM "Second Brain/wiki/projects"
@@ -79,9 +68,8 @@ SORT file.ctime DESC
 
 ---
 
-## Reference
+## Active Projects
 
-### Active projects (last journal update)
 ```dataview
 TABLE file.mtime as "Last Updated"
 FROM "Second Brain/wiki/projects"
@@ -89,7 +77,8 @@ WHERE file.name = "journal"
 SORT file.mtime DESC
 ```
 
-### Recent decisions
+## Recent Decisions
+
 ```dataview
 TABLE Project, Decision
 FROM "Second Brain/Decision-Log"
@@ -98,7 +87,8 @@ SORT Date DESC
 LIMIT 5
 ```
 
-### Latest clipped articles
+## Latest Clipped Articles
+
 ```dataview
 TABLE file.ctime as "Clipped"
 FROM "Second Brain/raw/articles"
@@ -106,14 +96,21 @@ SORT file.ctime DESC
 LIMIT 8
 ```
 
+## Latest Synthesis Reports
+
+```dataview
+TABLE file.ctime as "Generated"
+FROM "Second Brain/wiki/reports"
+WHERE contains(file.name, "weekly-synthesis")
+SORT file.ctime DESC
+LIMIT 3
+```
+
 ---
 
 ## Quick Links
 
-- [[commitments]] — Open commitments (replaces Action-Tracker)
+- [[commitments]] — Open action items
 - [[Decision-Log]] — Key decisions
-- [[dashboards/Projects|Projects]] — Per-project health
-- [[dashboards/Stories|Stories]] — Linear + Jira sync (project pages are canonical)
-- [[dashboards/Meetings|Meetings]] — Fathom meeting routing
-- [[dashboards/Articles|Articles]] — Reading queue
-- [[SYSTEM-GUIDE]] · [[PEER-SETUP-GUIDE]] · [[SCHEMA]] · [[TAGS]]
+- [[project-mapping]] — Project routing table
+- [[SYSTEM-GUIDE]] · [[SCHEMA]] · [[TAGS]]

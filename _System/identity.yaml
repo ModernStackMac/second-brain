@@ -1,6 +1,6 @@
-# Mac Nosek — identity manifest (v3 — 2026-04-18)
-# Used by: story-sync, meeting-selector, decision-log auto-append
-# commitments.md extraction is governed by SCHEMA.md Updates (2026-04-18f)
+# Mac Nosek — identity manifest (v4 — 2026-04-19)
+# Used by: story-sync, process-fathom-transcripts, decision-log auto-append
+# commitments.md extraction governed by SCHEMA.md §1 (Ingest workflow)
 
 owner:
   name: Mac Nosek
@@ -70,18 +70,6 @@ filters:
       - assignee_email_in_list
       - assignee_name_in_aliases
 
-    # 2026-04-18: story-sync no longer writes Action-Tracker.md AUTO-SYNC block.
-    write_action_tracker: false
-
-  meeting_selector:
-    weights:
-      transcript_completeness: 0.30
-      summary_quality: 0.25
-      action_items: 0.25
-      technical_accuracy: 0.15
-      metadata_richness: 0.05
-    trial_end: 2026-05-02
-
   decision_log:
     trigger_patterns:
       - "decision:"
@@ -92,7 +80,6 @@ filters:
     dedupe_hash_fields: [date, project, decision_first_80]
 
   commitments:
-    # Replaces the deprecated action_tracker filter. All four gates must pass.
     file: commitments.md
     extraction_gates:
       - owner_is_mac                    # explicit commitment from Mac or assignment to Mac
@@ -100,7 +87,6 @@ filters:
       - concrete_next_step              # actionable, not a topic area
       - deduplicate_open_items          # compare first 60 chars + project
     archive_after_days_done: 14
-    archive_path: Second Brain/raw/archived-actions/
 
 project_slug_map:
   meadow:                internal/meadow
@@ -120,14 +106,13 @@ project_slug_map:
 paths:
   vault_root: "~/Documents/Obsidian Vault"
   meeting_notes_root: Meeting Notes
-  raw_granola: Second Brain/raw/meeting-raw/granola/
-  raw_fathom: Second Brain/raw/meeting-raw/fathom/
-  raw_archived_stories: Second Brain/raw/archived-stories/
-  raw_archived_actions: Second Brain/raw/archived-actions/
+  raw_articles: Second Brain/raw/articles/
+  raw_projects: Second Brain/raw/projects/
+  raw_transcripts: Second Brain/raw/transcripts/
+  wiki: Second Brain/wiki/
   commitments_file: commitments.md
-  resources_learning: Second Brain/resources/learning/
-  resources_reading: Second Brain/resources/reading/
-  resources_interests: Second Brain/resources/interests/
+  decision_log: Second Brain/Decision-Log.md
+  diagrams: Second Brain/resources/diagrams/
 
-version: 3
-updated: 2026-04-18
+version: 4
+updated: 2026-04-19
