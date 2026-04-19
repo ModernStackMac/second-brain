@@ -860,3 +860,10 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - **Note:** If any empty folders remain visible in Obsidian's file tree that aren't accessible via REST, Mac can prune them directly from the file explorer (right-click → Delete).
 
 ---
+
+## [2026-04-19] lint | Weekly Health Check
+- Pages scanned: 72
+- Issues: 6 critical, 11 recommended, 5 informational
+- Auto-fixed: none (every candidate fix had ask-first blast radius)
+- Notable findings: `project-mapping.md` not present in mounted vault; `wiki/index.md:18` `[[internal/flex-dash/journal]]` points to nonexistent file; suspected story-sync leak (MSS-74 in `lnw/stories-f2.md`); vault-prefixed wiki-link in `Website-Feedback-2026-04-17.md` targeting wrong project
+- Report: wiki/lint-report.md
