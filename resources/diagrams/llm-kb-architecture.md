@@ -2,7 +2,7 @@
 
 > Canonical architecture diagram for the Second Brain. Referenced from `SYSTEM-GUIDE.md` and `PEER-SETUP-GUIDE.md`.
 
-![[llm-kb-architecture.png]]
+![[Image-1.jpg]]
 
 > If the embed above is broken, save the canonical architecture image to `Second Brain/resources/diagrams/llm-kb-architecture.png`. Obsidian resolves it automatically once iCloud syncs.
 

@@ -24,18 +24,18 @@ WHERE file.name = dateformat(date(today), "yyyy-MM-dd")
 ## At a glance
 
 > [!info] KPI strip
-> **Open actions:** `$= dv.pages('"Second Brain/Action-Tracker"').file.tasks.where(t => !t.completed).length`  ·  **Overdue:** `$= dv.pages('"Second Brain/Action-Tracker"').file.tasks.where(t => !t.completed && t.Date && t.Date < dv.date("today")).length`  ·  **Meetings this week:** `$= dv.pages('"Meeting Notes"').where(p => p.file.ctime >= dv.date("today").minus(dv.duration("7 days"))).length`  ·  **Decisions this month:** `$= dv.pages('"Second Brain/Decision-Log"').file.lists.where(l => l.Date && l.Date >= dv.date("today").minus(dv.duration("30 days"))).length`  ·  **Unmatched:** `$= dv.pages('"Meeting Notes/_Unmatched"').length`
+> **Open commitments:** `$= dv.pages('"commitments"').file.tasks.where(t => !t.completed).length`  ·  **Meetings this week:** `$= dv.pages('"Meeting Notes"').where(p => p.file.ctime >= dv.date("today").minus(dv.duration("7 days"))).length`  ·  **Decisions this month:** `$= dv.pages('"Second Brain/Decision-Log"').file.lists.where(l => l.Date && l.Date >= dv.date("today").minus(dv.duration("30 days"))).length`  ·  **Unmatched:** `$= dv.pages('"Meeting Notes/_Unmatched"').length`
 
 ---
 
 ## This Week
 
-### Due this week
+### Open commitments by project
 ```dataview
 TASK
-FROM "Second Brain/Action-Tracker"
-WHERE !completed AND Date AND Date <= date(today) + dur(7 days) AND Date >= date(today) - dur(7 days)
-SORT Date ASC
+FROM "commitments"
+WHERE !completed
+GROUP BY Project
 ```
 
 ### Meetings this week
@@ -50,12 +50,12 @@ SORT file.ctime DESC
 
 ## Flags
 
-> [!danger] Overdue actions
+> [!danger] Stale open commitments (>14 days)
 > ```dataview
 > TASK
-> FROM "Second Brain/Action-Tracker"
-> WHERE !completed AND Date AND Date < date(today)
-> SORT Date ASC
+> FROM "commitments"
+> WHERE !completed AND Captured AND Captured < date(today) - dur(14 days)
+> SORT Captured ASC
 > ```
 
 > [!danger] Unmatched meetings
@@ -110,11 +110,10 @@ LIMIT 8
 
 ## Quick Links
 
-- [[Action-Tracker]] — Open action items
+- [[commitments]] — Open commitments (replaces Action-Tracker)
 - [[Decision-Log]] — Key decisions
-- [[dashboards/Action-Review|Action Review]] — Monday triage
 - [[dashboards/Projects|Projects]] — Per-project health
-- [[dashboards/Stories|Stories]] — Linear + Jira sync
+- [[dashboards/Stories|Stories]] — Linear + Jira sync (project pages are canonical)
 - [[dashboards/Meetings|Meetings]] — Granola/Fathom routing
 - [[dashboards/Articles|Articles]] — Reading queue
 - [[SYSTEM-GUIDE]] · [[PEER-SETUP-GUIDE]] · [[SCHEMA]] · [[TAGS]]

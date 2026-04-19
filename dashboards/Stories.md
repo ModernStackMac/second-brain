@@ -5,7 +5,8 @@ updated: 2026-04-18
 
 # Stories Dashboard
 
-> Auto-synced Linear (MSS + HM) and Jira (F2) stories assigned to Mac. Filter: active (Todo/Unstarted/Started/In Progress) + backlog with (Urgent/High OR current cycle OR updated <14d).
+> Auto-synced Linear (MSS + HM) and Jira (F2) stories assigned to Mac. Filter (v4.2 strict): in-flight only — Linear Todo/Started/In Progress, Jira To Do/In Progress, + Backlog only if in current cycle.
+> Action-Tracker queries removed 2026-04-18. The per-project story pages at `Second Brain/wiki/projects/*/stories-*.md` are now canonical.
 
 ---
 
@@ -16,18 +17,8 @@ updated: 2026-04-18
 
 ---
 
-> [!danger] Urgent / High priority
-> All synced stories with priority Urgent or High.
->
-> ```dataview
-> TASK
-> FROM "Second Brain/Action-Tracker"
-> WHERE !completed AND (Priority = "Urgent" OR Priority = "High") AND contains(Source, "linear")
-> SORT Priority ASC, Date ASC
-> ```
-
-> [!warning] Stale stories
-> Synced stories with no update in 14+ days — candidate for deprioritization or archival.
+> [!warning] Stale story syncs
+> Per-project sync files with no update in 14+ days — likely means story-sync failed to refresh that project.
 >
 > ```dataview
 > TABLE WITHOUT ID file.link as "Project sync", updated as "Last sync"
@@ -62,16 +53,6 @@ TABLE WITHOUT ID file.link as "Project", story_count as "Open", updated as "Sync
 FROM "Second Brain/wiki/projects"
 WHERE type = "stories-sync" AND workspace = "F2"
 SORT updated DESC
-```
-
----
-
-## All synced stories in Action-Tracker
-```dataview
-TASK
-FROM "Second Brain/Action-Tracker"
-WHERE !completed AND contains(Source, "linear") OR contains(Source, "jira")
-SORT Priority ASC, Date ASC
 ```
 
 ---
