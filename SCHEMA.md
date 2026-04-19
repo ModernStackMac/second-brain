@@ -2,7 +2,7 @@
 
 > Governance rules for the compiled wiki layer. Read this before ingesting, creating pages, or writing automation that touches the wiki.
 
-**Last consolidated:** 2026-04-18 · **Change history:** `_System/changelog.md`
+**Last consolidated:** 2026-04-19 · **Change history:** `_System/changelog.md`
 
 You are a knowledge-base maintainer for Mac Nosek's consulting practice (Modern Stack Systems) and personal learning. This vault is a persistent, compounding wiki built from raw source materials. It covers consulting work AND personal interests — tech, AI, industry news, anything Mac finds worth capturing. You read raw sources and maintain a structured, interlinked wiki. You never modify raw sources — they are immutable.
 
@@ -13,7 +13,6 @@ You are a knowledge-base maintainer for Mac Nosek's consulting practice (Modern 
 ```
 Second Brain/
 ├── _System/                  # Operational — identity, changelog, routing logs
-├── daily/                    # Daily notes (YYYY-MM-DD.md) — not ingested
 ├── dashboards/               # Dataview views — not ingested
 ├── raw/                      # Immutable source materials (never modify)
 │   ├── articles/             # Clipped articles, blog posts, research (ANY topic)
@@ -43,7 +42,7 @@ Second Brain/
 │   ├── entities/             # People, orgs, vendors
 │   ├── articles/             # Individual article breakdowns
 │   ├── topics/               # Accumulator pages for personal interests
-│   ├── reports/              # Saved query outputs (kb-report)
+│   ├── reports/              # Saved query outputs (kb-report + weekly-synthesis)
 │   └── f2-internal/          # F2 Strategy Confluence mirror (confluence-ingest)
 ├── SCHEMA.md                 # This file
 ├── SYSTEM-GUIDE.md
@@ -61,6 +60,9 @@ Second Brain/
 - `Meeting Notes/` — Fathom meeting notes, routed by `{Company}/{Project}/`
 - `Clippings/` — Web Clipper landing + reference images
 - `.claudeignore` — ignore rules for Claude Code / Cowork
+
+**Deprecated folders:**
+- `daily/` — Daily notes (removed 2026-04-19). Automated daily note generation added noise without signal; calendar, commitments, and stories are already surfaced by dedicated scheduled tasks and commitments.md. If a dashboard view is needed, use a static `dashboards/home.md` with live Dataview queries instead of date-stamped files.
 
 **Note:** `wiki/clients/` does not exist as a separate folder. All project/client knowledge lives in `wiki/projects/{slug}/`. Historical Granola captures may exist under `raw/meeting-raw/granola/` — read-only, do not add new files there.
 
@@ -228,7 +230,10 @@ Track: topic description, key developments (chronological, most recent first), n
 
 ### Report Pages (`wiki/reports/`)
 
-Auto-written by `kb-report` skill. Permanent query answers with citations. Cross-linked from relevant wiki pages.
+Two types of reports live here:
+
+1. **On-demand reports** — auto-written by `kb-report` skill. Permanent query answers with citations. Cross-linked from relevant wiki pages.
+2. **Weekly synthesis reports** — auto-written by `weekly-synthesis` scheduled task (Mondays 5:30am CT). Cross-project patterns, stale commitments, decisions needing follow-up. Format: `weekly-synthesis-{YYYY-MM-DD}.md`.
 
 ---
 
@@ -246,7 +251,8 @@ When told to ingest:
 4. Update `wiki/index.md` with any new pages.
 5. Add `wiki/log.md` entry: date, source file, pages created/updated, brief summary.
 6. Cross-link related pages using `[[wiki-links]]`.
-7. Report what was done.
+7. **Pattern extraction pass** (see below).
+8. Report what was done.
 
 **Article ingest (`raw/articles/`):** Not limited to consulting content. For every article:
 
@@ -271,21 +277,45 @@ When told to ingest:
 3. **Concrete next step.** Specific action, not a topic. "Follow up on X" without specifics → skip. "Send the revised SOW to Client Y by Thursday" → keep.
 4. **Deduplicate.** Compare against open items by first 60 chars + project. If duplicate, refresh existing entry (source link, date) rather than creating.
 
-### 2. QUERY (answering questions from the wiki)
+**Pattern extraction pass** — runs after each ingest cycle:
+
+1. Review journal entries updated this cycle (or in the past 7 days).
+2. For each, ask: "Is there a reusable solution pattern, architectural decision, or domain concept here that would be valuable across other engagements?"
+3. Look for: repeatable solutions (validation workarounds, integration approaches, data model designs, deployment strategies), domain concepts that transcend a single project, and cross-project similarities.
+4. For each candidate:
+   - Existing `wiki/patterns/` or `wiki/concepts/` page → update with new example/context.
+   - No page exists → create one using the Pattern or Concept format.
+   - Cross-link from the project journal/context to the new page.
+5. Log extracted patterns in the `wiki/log.md` entry: `Patterns extracted: {list or "none"}`.
+6. If no patterns detected this cycle, that's fine — don't force it.
+
+### 2. SYNTHESIS (weekly cross-project analysis)
+
+Runs automatically via `weekly-synthesis` scheduled task (Mondays 5:30am CT). Can also be triggered on-demand.
+
+1. Read `project-mapping.md` for all active projects.
+2. For each project: read journal.md, context.md, and stories files.
+3. Read `commitments.md` — flag items >14 days old.
+4. Read `Decision-Log.md` — recent decisions.
+5. Scan `Meeting Notes/` for unprocessed files.
+6. Generate `wiki/reports/weekly-synthesis-{YYYY-MM-DD}.md` covering: executive summary, per-project status (moved/blocked/decisions/watch), cross-project patterns, commitments at risk, unprocessed sources, and recommendations.
+7. Update `wiki/index.md` and `wiki/log.md`.
+
+### 3. QUERY (answering questions from the wiki)
 
 1. Consult `wiki/index.md` to find relevant pages.
 2. Read relevant wiki pages; trace back to raw sources for detail if needed.
 3. Synthesize an answer citing specific wiki pages and raw sources.
 4. If the wiki lacks info, say so and suggest what raw sources would fill the gap.
 
-### 3. CREATE (generating deliverables)
+### 4. CREATE (generating deliverables)
 
 1. Query the wiki for all relevant context.
 2. Pull from `raw/templates/` if applicable.
 3. Generate with full context.
 4. Note in `wiki/log.md` that a deliverable was generated and what wiki pages informed it.
 
-### 4. LINT (health check)
+### 5. LINT (health check)
 
 1. Scan wiki pages for:
    - Broken or missing `[[wiki-links]]`
@@ -299,16 +329,33 @@ When told to ingest:
 2. **Log rotation:** `wiki/log.md` > 200 entries → archive entries > 90 days to `wiki/log-archive-{year}.md`.
 3. **Stale commitments:** `commitments.md` `## Open` items > 30 days with no update → flag for review.
 4. **Closed commitments:** `## Done` items > 14 days → move to `raw/archived-actions/YYYY-MM.md`.
-5. **Session context cleanup:** Delete `session-context/` files > 30 days old, or ingest durable knowledge into wiki pages first.
-6. Report issues; fix what's safe automatically.
-7. Suggest raw sources to fill gaps.
+5. Report issues; fix what's safe automatically.
+6. Suggest raw sources to fill gaps.
+
+---
+
+## Scheduled Tasks Overview
+
+| Task | Schedule | Purpose |
+|---|---|---|
+| `second-brain-ingest` | Every 4hrs weekdays | Process new sources → wiki, extract commitments, extract patterns |
+| `weekly-synthesis` | Mon 5:30am CT | Cross-project synthesis report |
+| `second-brain-lint` | Sun 1am CT | Full lint pass |
+| `second-brain-lint-wed` | Wed 1am CT | Mid-week lint |
+| `process-fathom-transcripts` | Every 2hrs weekdays 8am-6pm | Route Fathom recordings to Meeting Notes/ |
+| `story-sync` | Every 2hrs weekdays 7am-7pm | Sync Linear + Jira stories to wiki |
+| `confluence-ingest` | Weekdays 6:30am CT | Mirror F2 Confluence pages |
+| `daily-morning-briefing` | Daily 6am CT | Curated tech/AI/SF news email |
+| `daily-email-summary` | Weekdays 7am CT | Gmail digest email |
+| `weekly-financial-digest` | Fri 7am CT | QuickBooks P&L + cash flow email |
+| `daily-note-builder` | **DISABLED** | Was: daily note generation. Replaced by commitments.md + synthesis reports. |
 
 ---
 
 ## Rules
 
 - Never modify anything in `raw/`. Immutable source of truth.
-- Never ingest or process files in `dashboards/`, `session-context/`, `daily/`, or `_System/`. Operational folders, not knowledge sources.
+- Never ingest or process files in `dashboards/`, `_System/`, or deprecated `daily/`. Operational folders, not knowledge sources.
 - `Meeting Notes/` files are READ-ONLY (immutability preserved across router reruns).
 - Always cite sources when updating wiki pages.
 - Keep wiki pages concise and scannable — no fluff.

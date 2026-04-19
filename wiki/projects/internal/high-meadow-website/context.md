@@ -1,10 +1,10 @@
-# High Meadow Website — Project Context
 ---
 aliases: [high-meadow-website]
 type: project-context
 project: high-meadow-website
 ---
 
+# High Meadow Website — Project Context
 
 > Marketing/public-facing site for High Meadow Solutions (HMS). External brand + lead-gen surface, separate from the internal Meadow SaaS (capacity-planning) product.
 
@@ -106,4 +106,4 @@ Working files live in `./files/` — brand guide, feedback docs, partner logos, 
 
 ## Status
 - **Phase:** Active build — round 1 feedback incorporated
-- **Last updated:** 2026-04-18
+- **Last updated:** 2026-04-19

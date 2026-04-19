@@ -867,3 +867,39 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Auto-fixed: none (every candidate fix had ask-first blast radius)
 - Notable findings: `project-mapping.md` not present in mounted vault; `wiki/index.md:18` `[[internal/flex-dash/journal]]` points to nonexistent file; suspected story-sync leak (MSS-74 in `lnw/stories-f2.md`); vault-prefixed wiki-link in `Website-Feedback-2026-04-17.md` targeting wrong project
 - Report: wiki/lint-report.md
+
+## [2026-04-19] maintenance | Vault Cleanup + Workflow Overhaul
+
+**Broken links fixed:**
+- `[[MCP-Obsidian]]` → inline link to `[[obsidian-ecosystem|Obsidian]]` in tools/claude-ai.md
+- `[[mcp]]` removed from nbcu/overview.md (was dangling)
+- `[[scheduled-tasks]]` removed from 2 article pages + 1 topic page (never existed)
+- `[[productivity-systems]]` removed from obsidian-plugins-replace-paid-apps.md (never existed)
+- `[[meadow]]` — added alias to internal/meadow/overview.md frontmatter (resolves 5+ broken links across vault)
+- `[[high-meadow-website]]` — added alias to internal/high-meadow-website/context.md frontmatter (resolves 2 broken links)
+- `[[Second Brain/wiki/projects/mai/context]]` → `[[high-meadow-website|Website Project Context]]` in Website-Feedback-2026-04-17.md (vault-prefixed + wrong target)
+- `[[hms-capacity-planning]]` and `[[meadow-app]]` → `[[meadow]]` in claude-ai.md
+
+**Orphan pages removed:**
+- `wiki/tools/meadow-app.md` — shadowed by meadow alias; content lives in internal/meadow/overview.md
+- `wiki/projects/flex-dash/` — empty folder (deleted)
+
+**Index updated:**
+- Added missing `[[stories-f2]]` and `[[stories-hm]]` links for cetera, lnw, mai, meadow, flex-dash
+- Removed stale `meadow-app` from Tools section
+
+**Scheduled tasks:**
+- `daily-note-builder` — DISABLED. Daily notes added noise without signal.
+- `weekly-synthesis` — CREATED. Mondays 5:30am CT. Cross-project synthesis report.
+- `second-brain-ingest` — UPDATED. Added pattern-extraction pass (Step 3) to auto-detect reusable patterns/concepts from journal entries.
+
+**SCHEMA.md updated:**
+- Removed `daily/` from active folder structure (deprecated)
+- Added Synthesis workflow (§2)
+- Added pattern extraction pass to Ingest workflow (§1)
+- Added Report page types (on-demand + weekly synthesis)
+- Added Scheduled Tasks Overview table
+- Updated Rules section
+
+**Daily notes cleanup:**
+- Deleted `daily/2026-04-18.md` (only file in folder)
