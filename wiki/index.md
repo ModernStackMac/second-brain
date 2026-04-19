@@ -16,6 +16,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[internal/meadow/context]] · [[internal/meadow/journal]] · [[internal/meadow/stories-hm]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
 - [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
 - [[internal/flex-dash/stories-hm]] — Flex Dash reporting product. Development paused for MAI.
+- [[modern-stack-systems/context]] · [[modern-stack-systems/journal]] — Modern Stack Systems (Mac's consulting practice). Recruiting, business development, peer network, operations.
 
 ## Concepts
 
@@ -74,4 +75,4 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 ---
 *Last updated: 2026-04-19*
-*Total pages: 56 (16 project pages + 39 wiki pages + 1 report)*
+*Total pages: 58 (18 project pages + 39 wiki pages + 1 report)*

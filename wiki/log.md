@@ -1,5 +1,20 @@
 # Wiki Log
 
+## 2026-04-19 — Manual: MSS wiki folder + synthesis cleanup
+
+- **Trigger:** Weekly synthesis report (2026-04-19) flagged Modern Stack Systems as having 5 unprocessed meetings and no wiki folder.
+- **Sources processed:**
+  - `Meeting Notes/Modern Stack Systems/` (5 meetings: Apr 10, 11, 14, 15, 17)
+- **Pages created (2):**
+  - `wiki/projects/modern-stack-systems/context.md` — practice overview, key contacts, tech stack, meeting cadence
+  - `wiki/projects/modern-stack-systems/journal.md` — week of Apr 14–19 entry
+- **Other cleanup:**
+  - Deleted 6 duplicate files from `Meeting Notes/High Meadows/F2-Cetera/` (canonical folder is `Cetera/`)
+  - Confirmed `Meeting Notes/_Unmatched/` does not exist (impromptu calls already documented in project-mapping.md Pending Review)
+  - Fixed `project-mapping.md`: Meadow raw sources path corrected from `hms-capacity-planning/` to `meadow/`, removed "(not yet created)" from MSS wiki folder annotation
+  - Added MSS to `wiki/index.md` Projects section
+
+
 > Chronological record of all ingest, update, and maintenance operations.
 
 ## 2026-04-10
