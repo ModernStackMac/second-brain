@@ -1,6 +1,6 @@
 # _System/scripts
 
-Source-of-truth copy of the two Node scripts that power story-sync (Linear HM) and meeting-selector (Fathom routing).
+Source-of-truth copy of the Node script(s) that power locally-run automations. Currently just story-sync — meeting routing moved into the `process-fathom-transcripts` scheduled task prompt (no local script needed).
 
 **These scripts are stored here for reference and version control. They must be executed from `~/scripts/second-brain/` on your Mac, not from the vault.**
 
@@ -12,7 +12,7 @@ cp "$VAULT_ROOT/Second Brain/_System/scripts/"*.js ~/scripts/second-brain/
 chmod +x ~/scripts/second-brain/*.js
 ```
 
-Where `$VAULT_ROOT` is your vault root (e.g., `/Users/maciejnosek/Documents/Obsidian Vault`).
+Where `$VAULT_ROOT` is your vault root.
 
 ## Run
 
@@ -22,11 +22,9 @@ export VAULT_ROOT="/Users/maciejnosek/Documents/Obsidian Vault"
 
 # Test
 node ~/scripts/second-brain/story-sync.js
-node ~/scripts/second-brain/meeting-selector.js
 
 # Logs
 tail -f "$VAULT_ROOT/Second Brain/_System/story-sync.log"
-tail -f "$VAULT_ROOT/Second Brain/_System/selector-log.md"
 ```
 
 ## Dependencies
@@ -38,4 +36,8 @@ tail -f "$VAULT_ROOT/Second Brain/_System/selector-log.md"
 ## Files
 
 - `story-sync.js` — Linear HM pull + commitments.md update + per-project stories files + prune-to-archive
-- `meeting-selector.js` — Routes Fathom files from `raw/meeting-raw/fathom/` to `Meeting Notes/{Company}/{Project}/` via project-mapping. Granola was retired 2026-04-18; the historical scoring path in this script is dead code retained for reference.
+- `run-story-sync.sh` — wrapper script for story-sync
+
+## Removed
+
+- `meeting-selector.js` (deleted 2026-04-18) — Fathom routing logic was folded into the `process-fathom-transcripts` scheduled task prompt. No local script needed. If you had a local copy at `~/scripts/second-brain/meeting-selector.js`, delete it too.

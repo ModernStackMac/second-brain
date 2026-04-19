@@ -51,3 +51,23 @@ Granola deleted. Fathom is now the sole meeting source.
 - Pre-Granola-retirement bodies live in Git history (`ModernStackMac/second-brain`)
 
 **Meeting note dedupe:** Where both Fathom and Granola captured the same meeting, the Granola raw file and any duplicate Meeting Notes routing were deleted. Granola-only meetings (no Fathom counterpart) were preserved.
+
+
+## 2026-04-18 — Post-Granola cleanup pass
+
+**Scheduled tasks:**
+- Disabled `daily-note-review` — manual-only, redundant with the on-demand daily-review skill.
+- Disabled `meeting-selector` — routing logic folded into `process-fathom-transcripts` so ingest + route happen in one pass.
+- Updated `process-fathom-transcripts` prompt + description to reflect the merged ingest/route responsibility.
+- Both archived tasks carry the `[ARCHIVED 2026-04-18]` prefix and are safe to delete via the Cowork sidebar.
+
+**Vault docs:**
+- Rewrote `SYSTEM-GUIDE.md` to reflect current state — dropped Action-Tracker deprecation notes, stale archived-tasks list, separate meeting-selector references. Meeting pipeline described as single task.
+- Rewrote `PEER-SETUP-GUIDE.md` from scratch as a prescriptive, phase-by-phase setup for a new teammate. Mirrors today's Fathom-only, inline-routing state.
+
+**project-mapping.md:**
+- Added `Linear Project: Meadow (HM workspace)` + `Stories` path to the Meadow entry (mirrors the Flex Dash pattern). Story-sync will now route `meadow` slug to the Meadow Linear board.
+- Updated slug index to note Linear boards for Meadow and Flex Dash.
+- Added `Linear Project` field to the "Adding a New Project" template.
+
+**Flag for Mac:** `second-brain-lint-wed` (Wednesdays 1am) still active. Second lint per week is optional — disable if the Sunday report is sufficient.
