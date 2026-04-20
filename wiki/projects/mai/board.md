@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-20T13:22:00-05:00
+updated: 2026-04-20T20:45:00-05:00
 ---
 
 # MAI — Board
@@ -12,13 +12,13 @@ updated: 2026-04-20T13:22:00-05:00
 
 ## Up Next
 
-- [ ] MAI-1382 Account Open: Add Plan Admin Info field to FA page
-- [ ] MAI-1375 Sales Process: Spouse Information should not be required
+- [ ] MAI-1375 Sales Process: Spouse Info not required 🟡
+- [ ] MAI-1376 Sales Process: Prospect Info save/PDF issue 🟡
 
 ## In Progress
 
-- [ ] MAI-1381 Account Open: Remove Trust Docs or Pertinent Pages
-- [ ] MAI-1376 Sales Process: Prospect Info save/PDF issue
+- [ ] MAI-1382 Account Open: Add Plan Admin Info to FA page 🟡
+- [ ] MAI-1381 Account Open: Remove Trust Docs or Pertinent Pages 🟡
 
 ## Review
 
@@ -27,4 +27,3 @@ updated: 2026-04-20T13:22:00-05:00
 
 
 ## Done
-
