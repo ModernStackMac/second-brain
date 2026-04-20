@@ -939,3 +939,8 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Output: wiki/reports/weekly-synthesis-2026-04-19.md
 - Projects covered: 10 (CREtelligent, MAI, Litify, Cetera, NBCU, Harvey, LNW, Meadow, HMS Website, Flex Dash)
 - Key finding: Data model design churn is a universal pattern across CREtelligent, MAI, and Cetera — decisions are landing faster than implementation can absorb, causing rework. MAI's 11 open commitments and approaching go-live make it the highest-risk engagement this week.
+
+## [2026-04-20] synthesis | Weekly Synthesis — Week of Apr 14–20, 2026
+- Output: wiki/reports/weekly-synthesis-2026-04-20.md
+- Projects covered: 11 (7 active, 4 no-activity)
+- Key finding: Data model hardening is the common thread across CREtelligent, MAI, and Cetera — all three are replacing stretched standard objects with purpose-built custom objects this week. Scope pressure and external dependency bottlenecks are the meta-themes across every active engagement.
