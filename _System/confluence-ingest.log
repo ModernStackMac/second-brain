@@ -1,0 +1,21 @@
+## Confluence Ingest Log
+
+### 2026-04-20T00:00:00Z — Scheduled Sync Run
+
+**Spaces scanned:** CE (Cetera), LN (LNW), MP (MAI Post-MVP), WB (William Blair), RW (Ritholtz Wealth)
+**Date window:** 2026-04-13 to 2026-04-20 (last 7 days)
+**First run:** Yes (no prior sync log or project-mapping.md found)
+
+**Pages synced:**
+- CE/growth-engine.md — "Growth Engine" (page_id: 275972100, last updated: 2026-04-15T22:06:11Z)
+
+**Pages skipped (no updates in window):**
+- LN space: 14 pages, none updated since 2026-04-13
+- MP space: 1 page (default homepage only, last updated 2025-10-10)
+- WB space: 1 page (default homepage only, last updated 2025-08-18)
+- RW space: 1 page (default homepage only, last updated 2025-09-18)
+
+**Notes:**
+- project-mapping.md not found; used identity.yaml project_slug_map to determine active projects (cetera/f2-cetera, lnw, mai)
+- No pages tagged "private" or in personal spaces were encountered
+- CE space has 50 pages total; only "Growth Engine" was modified within the sync window
