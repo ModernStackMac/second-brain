@@ -15,7 +15,7 @@ updated: 2026-04-18
 ---
 kanban-plugin: basic
 project: lnw
-updated: 2026-04-20T12:15:00-05:00
+updated: 2026-04-20T09:22:00-05:00
 ---
 
 # LNW — Kanban Board
