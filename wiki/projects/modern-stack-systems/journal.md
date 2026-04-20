@@ -1,10 +1,26 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-04-19
+updated: 2026-04-20
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of Apr 20, 2026
+
+Andrew/Mac Sync (Apr 20) — light catch-up. Two notable tech threads:
+
+**AI tooling:** Andrew has been using Claude CoWork to build automated test systems, leveraging a new MCP that controls Android and iOS simulators for mobile testing (available in the last couple months). Mac reported Opus 4.7 has significant performance regressions despite adding useful automatic mode (eliminates repetitive permission prompts in CoWork and Code sessions). Mac has fully switched to Claude Code and dropped Cursor due to cost; Andrew still on Cursor Pro but considering downgrading. Anthropic is launching a new Figma-like design product — will appear as a fourth icon in Cloud Desktop alongside chat/cowork/code. Designs created there can potentially be passed into Cloud Code for implementation.
+
+**Salesforce/React from TDX:** Andrew joined a Friday call with Victor and Brady where Victor reported TDX was all AI. Salesforce announced React support for building on the platform. The team's concern: if React replaces LWC, the value of specialized Salesforce developers drops — React devs are more common, cheaper, and arguably more skilled than SF-specific developers. Mac noted there's been a community around React-on-Salesforce for a while but it never fully took off due to limitations and guardrails.
+
+No action items identified.
+
+**Open questions:**
+- React-on-Salesforce viability and implications for the consulting practice — worth monitoring post-TDX
+
+---
+
 
 ## Week of Apr 14–19, 2026
 

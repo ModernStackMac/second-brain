@@ -2,11 +2,32 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-17
+last_meeting: 2026-04-20
 open_actions: 22
 ---
 
 # MAI — Project Journal
+
+## Week of Apr 20, 2026
+
+Dev DSU (Apr 20) — part of a multi-session Fathom recording that also captured HMS website and Cetera standup segments.
+
+Training sessions scheduled this week: 11:30 AM–2:00 PM (deployment-free CUAT) and 1:00 PM. Team planned around the training windows.
+
+Status updates: Federico completed 13.43 and 13.44, deploying components to production today before moving to a new phone account ticket. Mac deployed the lead conversion story (reviewed over the weekend, confirmed working) and is now working on account open tickets. Speaker 1 noted the client info component needs checking but conversion itself looks good. Rodrigo completed 1-3-45, working on 1.364 (data migration — marking legacy values as inactive in the closer reason value set; only five values stay active out of many legacy entries).
+
+Ticket 7-98 (pad settings not working/linked) escalated: David Torsak previously questioned whether it's even a real issue. Team confused on whether "path" field should be removed entirely. Decision: block 7-98 and escalate to David Torsak for clarification rather than proceeding without clear requirements.
+
+**Decisions:**
+- Ticket 7-98 blocked and escalated to David Torsak — not proceeding without clear requirements on pad settings behavior
+- Legacy closer reason values: mark majority as inactive, keep only five active values (data migration requirement)
+
+**Open questions:**
+- David Torsak: clarify ticket 7-98 — is this a real issue? What's the expected pad settings behavior?
+- Rodrigo: confirm inactive value marking approach for closer reason picklist (ticket 1.364)
+
+---
+
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
 

@@ -2,11 +2,22 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-16
+last_meeting: 2026-04-20
 open_actions: 8
 ---
 
 # Cetera — Project Journal
+
+## Week of Apr 20, 2026
+
+Standup segment from a multi-session Fathom recording (Apr 20; primary routed to MAI). Light admin-focused standup — no blockers, no technical decisions.
+
+Speaker 1 outlined priorities for the day: regroup from being out Friday, curate remaining Sprint 4 items, and review UAT requirements (cases done, other items still need processing). June is out for her wedding anniversary (back tomorrow or Wednesday), Brady is out this week (back next week). Growth engine design discussions ongoing between June, Connor, and Speaker 1 — Odie and Chris will present to the broader team once shaped up. Connor moved a scheduled meeting to 5:00 PM Eastern (4:00 PM his time).
+
+No new decisions or blockers.
+
+---
+
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
 

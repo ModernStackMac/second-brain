@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-04-20] ingest | Andrew/Mac Sync (Modern Stack Systems)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+- Patterns extracted: none
+- Key takeaways: Light tech catch-up. Claude CoWork now controls mobile simulators for automated testing. Opus 4.7 has performance regressions. Salesforce React announcement from TDX raises concerns about SF developer value prop.
+
+## [2026-04-20] ingest | Impromptu Call (MAI + HMS Website + Cetera)
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-20 - Impromptu Call.md`
+- Pages created: none
+- Pages updated: `wiki/projects/mai/journal.md`, `wiki/projects/internal/high-meadow-website/journal.md`, `wiki/projects/cetera/journal.md`
+- Commitments added: 1 (Resend.com API keys for careers email feature — high-meadow-website; note: appended after Done section in commitments.md due to Obsidian patch tool limitation with nested headings — needs manual repositioning under Open)
+- Decisions added: 6 (MAI: ticket 7-98 blocked, legacy closer reason values inactive; HMS Website: careers lead type__c field, resume stays in email, Resend.com as email service, Vercel Pro upgrade)
+- Patterns extracted: none
+- Key takeaways: Multi-session recording covering three projects. MAI sprint progressing — lead conversion deployed, ticket 7-98 escalated to David Torsak. HMS website careers feature taking shape with Resend.com for email and type__c on Lead for routing. Vercel upgraded to Pro ($20/month). Cetera light admin day — Sprint 4 curation and UAT review, June and Brady both out this week.
+
+
 ## 2026-04-20 — Scheduled Ingest #3 (no new sources)
 
 - **Operation:** INGEST — Automated scheduled scan (third run today)

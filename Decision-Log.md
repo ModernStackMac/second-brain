@@ -94,3 +94,9 @@ append_only: true
 
 
 ---
+| 2026-04-20 | MAI | Ticket 7-98 blocked and escalated to David Torsak — not proceeding without clear requirements on pad settings behavior | David previously questioned whether it's even an issue; team confused on "path" field removal | Mac | meeting|2026-04-20 - Impromptu Call | David Torsak clarifies |
+| 2026-04-20 | MAI | Legacy closer reason values: mark majority as inactive, keep only five active (data migration requirement for ticket 1.364) | Legacy data values in closer reason value set need proper flagging for data migration | Mac | meeting|2026-04-20 - Impromptu Call | — |
+| 2026-04-20 | high-meadow-website | Careers leads: type__c = "Candidate" on Lead (no record types); source = "web"; Area of Interest populated | Record types don't exist on Lead yet; type__c field is cleaner path | Speaker 1 | meeting|2026-04-20 - Impromptu Call | Record types added to Lead |
+| 2026-04-20 | high-meadow-website | Resume stays in email (via Resend), not attached to Salesforce lead | Avoids SF file attachment complexity; careers inbox gets the full submission | Speaker 1 | meeting|2026-04-20 - Impromptu Call | — |
+| 2026-04-20 | high-meadow-website | Resend.com as the email service for website-originated emails (info@ sending, careers@ receiving) | Mac identified Resend; API keys generated during the call | Mac | meeting|2026-04-20 - Impromptu Call | Email service change |
+| 2026-04-20 | high-meadow-website | Vercel upgraded from trial to Pro ($20/month) | Trial expiring in three days; credit card added to prevent service interruption | Speaker 1 | meeting|2026-04-20 - Impromptu Call | — |

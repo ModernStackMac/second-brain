@@ -1,5 +1,24 @@
 # High Meadow Website — Journal
 
+## 2026-04-20 — Careers feature + Resend.com + Vercel Pro
+
+From a multi-session Fathom recording (primary routed to MAI; cross-referenced here).
+
+**Careers feature implementation:** Instead of record types on leads (which don't exist yet), Speaker 1 decided on a new `type__c` field on Lead with "Candidate" as the value. Area of Interest field also used, source = "web" for all career submissions. Dual action on form submit: create a Lead in Salesforce AND send an email to the careers inbox with the resume attached (resume stays in email, not uploaded to Salesforce).
+
+**Resend.com setup:** Mac identified resend.com as the email service for sending career inquiry notifications. Speaker 1 created the account during the call and generated API keys for both sending (info@) and receiving (careers@) email addresses. Mac needs those API keys as environment variables in the `.env` file.
+
+**Vercel Pro upgrade:** Trial expiring in three days — Speaker 1 upgraded to Pro plan ($20/month) during the call to ensure uninterrupted service.
+
+**Decisions:**
+- Careers leads: `type__c = "Candidate"` on Lead (no record types); source = "web"; Area of Interest field populated
+- Resume stays in email (via Resend), not attached to the Salesforce lead record
+- Resend.com as the email service for website-originated emails (info@ sending, careers@ receiving)
+- Vercel upgraded from trial to Pro ($20/month)
+
+---
+
+
 > Running log of decisions, context, and progress. Newest entries at the top.
 
 ---
