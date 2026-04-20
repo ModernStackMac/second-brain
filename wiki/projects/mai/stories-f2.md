@@ -1,19 +1,26 @@
 ---
 type: stories-sync
-workspace: F2
-project:  MAI CRM Build
-updated: 2026-04-18T15:13:12.787Z
-story_count: 1
+project: mai
+workspace: f2strategy
+jira_project_key: MAI
+updated: 2026-04-20T14:00:00-05:00
+story_count: 5
 ---
 
-# F2 Stories —  MAI CRM Build
+# MAI — Active Stories (F2 Strategy Jira)
 
-> Auto-synced by story-sync. Do not edit by hand — changes are overwritten.
-> Each entry includes ticket link + status + 1-2 sentences of context + parent epic + latest activity.
+_Last sync: 2026-04-20 · Source: Jira (f2strategy.atlassian.net) · Do not edit — regenerated each sync._
 
-## Developer Review
+## Active
 
-- [MAI-1278](https://f2strategy.atlassian.net/browse/MAI-1278) — Prospect Address Should Populate All Member Addresses by Default `Medium` [Status:: Developer Review] [Priority:: Medium] [Updated:: 2026-04-17]
-    - **Context:** Address from the prospect record should populate all member addresses by default.  Address logic was previously updated but the prospect→member address flow needs verification and a dedicated ticket.  Source: Sales Process reconciliation, session 3/20, requirement 14.
-    - **Epic: [MAI-10] Sales Process**
+- [F2-MAI-1297] Account Open: All fields on page 1 of the LWC need to be on the KYC page — [Status:: Active] [Priority:: Highest] [Updated:: 2026-04-20] · parent: Investment Account Open Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1297)
 
+## New
+
+- [F2-MAI-1376] Sales Process: Prospect Information Model, Tiffany Abril (CSS) cannot save and generate PDF — [Status:: New] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Sales Process · [Jira](https://f2strategy.atlassian.net/browse/MAI-1376)
+
+## To Do
+
+- [F2-MAI-1375] Sales Process: Spouse Information should not be required — [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Sales Process · [Jira](https://f2strategy.atlassian.net/browse/MAI-1375)
+- [F2-MAI-1382] Account Open: Add Plan Admin Info field to Investment Account record page (FA) — [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Financial Accounts · [Jira](https://f2strategy.atlassian.net/browse/MAI-1382)
+- [F2-MAI-1381] Account Open: Remove Trust Docs or Pertinent Pages — [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Investment Account Open Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1381)

@@ -17,3 +17,6 @@
 [2026-04-20T09:22:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1381 — no mapping in project-mapping.md
 [2026-04-20T09:22:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1297 — no mapping in project-mapping.md
 [2026-04-20T09:22:00-05:00] NOTE: Linear HM workspace not connected — meadow and flex-dash stories could not be fetched.
+
+[2026-04-20T14:00:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=TBD for mai and Jira Project Key=F2 (should be CET) for cetera. Recommend updating: (f2strategy.atlassian.net, CET) → cetera, (f2strategy.atlassian.net, MAI) → mai.
+[2026-04-20T14:00:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. Only MSS workspace visible (all stories Done).

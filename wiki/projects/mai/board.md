@@ -1,38 +1,29 @@
 ---
 kanban-plugin: basic
-type: project-board
+type: board
 project: mai
-tags: [kanban, project, f2, mai]
-synced_by: story-sync
-updated: 2026-04-18
+updated: 2026-04-20T14:00:00-05:00
 ---
+
+# MAI — Board
 
 ## Backlog
 
-
-
 ## Up Next
-
-
 
 ## In Progress
 
-
+- MAI-1297 Account Open: KYC page fields alignment 🔴
 
 ## Review
 
-- [ ] MAI-1278: Prospect Address Should Populate All Member Addresses by Default (Developer Review) [Priority:: Medium] [Due:: 2026-04-17] [Link:: https://f2strategy.atlassian.net/browse/MAI-1278]
-
 ## Blocked
-
-
 
 ## Done
 
+## To Do
 
-
-%% kanban:settings
-```
-{"kanban-plugin":"basic","show-checkboxes":true,"lane-width":260,"link-date-to-daily-note":true,"new-note-folder":"Second Brain/raw/captures","archive-with-date":true}
-```
-%%
+- MAI-1376 Sales Process: Prospect Info Model save/PDF issue 🟡
+- MAI-1375 Sales Process: Spouse Info should not be required 🟡
+- MAI-1382 Account Open: Add Plan Admin Info field to FA page 🟡
+- MAI-1381 Account Open: Remove Trust Docs or Pertinent Pages 🟡
