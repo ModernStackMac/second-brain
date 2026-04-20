@@ -45,3 +45,4 @@ Three-step fallback for required picklist/complex logic:
 - [[validation-rule-workaround]] — pattern for required picklist constraints
 - [[json-deserialize-refactor]] — pattern for Connect API payload parsing
 - [[site-product-joiner]] — junction object pricing pattern
+- [[cost-rollup-hierarchy]] — multi-category cost aggregation pattern (survey, automated report, valuation, zoning)

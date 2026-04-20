@@ -76,3 +76,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 ---
 *Last updated: 2026-04-19*
 *Total pages: 58 (18 project pages + 39 wiki pages + 1 report)*
+
+<!-- INDEX UPDATE 2026-04-20: New pattern page added - reposition under ## Patterns section -->
+<!-- - [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through a hierarchical chain. Applied in CREtelligent. -->

@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-17
+last_meeting: 2026-04-20
 open_actions: 23
 ---
 
@@ -144,3 +144,40 @@ Account onboarding form ~90% built (combines contract, profile, Schwab applicati
 - Jay (other advisor) on hold pending family situation
 
 ---
+
+## Week of Apr 20–26, 2026
+
+Met once (Apr 20 — Internal CREtelligent Weekly Sync w/ Andrew Porter + Obed Labra-Pelaez).
+
+**Vendor payload** still blocked — Mac confirmed the mass code LWC is complete except for the payload piece. Once he gets the field storage location and URL configuration, it's a quick fix. Different URLs needed for testing vs. production. Andrew taking this to Travis.
+
+**LWC progress:** Mac has been building LWCs on the Site Product object and Pricing component. Styling work still in progress. Agreed to demo later that day. Mac also got approval to remove the sidebar from the Site record page layout.
+
+**Flow-to-Apex migration status:** The `cite after insert after update` flow (Obed's) is fully migrated to Apex. The `cite after flow` was partially migrated — Mac left the zoning logic intact to avoid duplicate records. The consult estimation workflow (creating cost worksheets) is already handled by the site trigger logic that was migrated from Obed's flow. Estimates get created on site creation (trigger-based), so testing can be done by creating a site directly without needing the payload.
+
+**Cost roll-ups architecture (Sprint 3):** Andrew walked through the four cost categories and their sources:
+1. **Survey costs** from selected PA quotes (where selected PA = true)
+2. **Automated report costs** from the Automated Report object
+3. **Valuation costs** from Cost Worksheets where cost product category = valuation
+4. **Zoning costs** from Cost Worksheets where cost product category = zoning
+
+All four roll up to the Site level, then propagate to the correct Site Product. A new "cost product category" field is needed on the Cost Worksheet (distinct from the existing type field). Roll-ups will be implemented in Apex (not DLRS). Once costs are summed at site level, they get stamped onto the appropriate site product, followed by an order service API call sending costs back. Obed confirmed the cost worksheet lookup to site is in place.
+
+**Conga implementation:** Obed feeling good overall but hasn't hit tables yet (expecting some difficulty). New payload fields being tracked in the mapping workbook. Proposal delivery remains fully blocked pending endpoint confirmation — Andrew removed the due date.
+
+**Other items:** Discount-stamping story assigned to Mac for review. Environmental automated reports blocked on endpoint but will be a "nothing burger" since everything moves to site products now. An opportunity management Grid Buddy replacement (LWC + API call) is queued but may not be needed yet.
+
+**Decisions:**
+- Cost roll-ups in Apex (not DLRS) — four categories summing to site level then propagating to site products
+- New "cost product category" field needed on Cost Worksheet (not the same as the existing type field)
+- Proposal delivery: removed due date, fully blocked until endpoint confirmed
+
+**Open questions:**
+- Travis to provide vendor payload field storage location + URL configuration (test vs. prod)
+- Mac and Obed to review Sprint 3 cost roll-up stories and provide questions
+- Wendell owes filled-out default estimate/actual amounts mapping
+- Environmental automated report endpoint still outstanding
+- Discount-stamping story — Mac to review
+
+---
+

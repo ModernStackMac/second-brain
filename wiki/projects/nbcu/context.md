@@ -28,3 +28,17 @@
 - [[stand8]] — partner
 - [[agentforce]] — core POC platform
 - [[data-cloud]] — holdings data for recommendation and pricing
+
+## DealSet System (Source System)
+- Manages opportunities, proposals, and proposal line items (fees, start dates, end dates, titles)
+- **Safe** is source of truth for accounts and titles — integrated to DealSet via platform events every 20 minutes
+- Title identifiers: six-gen number, title ID, safe ID (indicate active status and system relationships)
+- **Modules:** Parent Volume Opportunities (large-volume opp management), Budget Module (connected via Data Cloud to Global Force + Safe + currency systems for annual title-level forecasting), Marketing tabs (Season/Feature Product Memo — flows between systems), Deal Approvals (TVD + AMD required for >$5M opportunities)
+- **Raghu** — technical contact on DealSet side
+
+## Pricing Agent Constraints
+- Matching criteria: genre + budget only (confirmed by Karthi)
+- Cast data available (top 10 actor names per title) but explicitly excluded — no success/revenue metrics attached
+- IMDB data augmentation rejected
+- Mac flagged accuracy risk: same genre can have wildly different budgets depending on cast caliber
+- SOW is complimentary (non-billable) — scope, timeline, and level of effort

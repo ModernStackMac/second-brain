@@ -1,5 +1,24 @@
 # Wiki Log
 
+## [2026-04-20] ingest | NBCU Stand8 POC (DealSet Architecture + Agent Discussion)
+- Source: `Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC.md`
+- Pages created: none
+- Pages updated: `wiki/projects/nbcu/journal.md`, `wiki/projects/nbcu/context.md`, `commitments.md`, `Decision-Log.md`
+- Commitments added: 1 (email detailed questions to Naresh on matching parameters)
+- Decisions added: 2 (genre+budget matching criteria locked; SOW is complimentary/non-billable)
+- Patterns extracted: none
+- Key takeaways: DealSet architecture walkthrough complete. Pricing agent has a fundamental accuracy gap — only genre and budget as matching criteria. Mac raised concerns but Karthi excluded cast from scoring. SOW (complimentary) targeted for Thursday. Questions to be emailed to Naresh within 48 hours.
+
+## [2026-04-20] ingest | Internal CREtelligent Weekly Sync (Sprint 3 Cost Roll-ups)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `commitments.md`, `Decision-Log.md`
+- Commitments added: 2 (review Sprint 3 cost roll-up stories; review discount-stamping story)
+- Decisions added: 2 (cost roll-ups in Apex with four categories; new cost product category field on Cost Worksheet)
+- Patterns extracted: [[cost-rollup-hierarchy]] candidate (see pattern notes below)
+- Key takeaways: Cost roll-up architecture finalized — four source categories summing to site then propagating to site products via Apex. Vendor payload still blocked (Andrew → Travis). Flow-to-Apex migration mostly complete. Conga progressing, proposal delivery fully blocked on endpoint. LWC work advancing on site products.
+
+
 ## [2026-04-20] ingest | Andrew/Mac Sync (Modern Stack Systems)
 - Source: `Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md`
 - Pages created: none
