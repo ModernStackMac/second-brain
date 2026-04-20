@@ -4,6 +4,12 @@ type: board
 project: lnw
 updated: 2026-04-20T20:45:00-05:00
 ---
+---
+kanban-plugin: basic
+type: board
+project: lnw
+updated: 2026-04-20T22:15:00-05:00
+---
 
 # LNW — Board
 

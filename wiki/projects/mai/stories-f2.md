@@ -6,6 +6,14 @@ jira_project_key: MAI
 updated: 2026-04-20T20:45:00-05:00
 story_count: 4
 ---
+---
+type: stories-sync
+project: mai
+workspace: f2strategy
+jira_project_key: MAI
+updated: 2026-04-20T22:15:00-05:00
+story_count: 3
+---
 
 # MAI — Active Stories (F2 Strategy Jira)
 
@@ -14,7 +22,6 @@ _Last sync: 2026-04-20 · Source: Jira (f2strategy.atlassian.net) · Do not edit
 ## Active
 
 - [F2-MAI-1382] Account Open: Add Plan Admin Info field to Investment Account record page (FA) — [Status:: Active] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Financial Accounts · [Jira](https://f2strategy.atlassian.net/browse/MAI-1382)
-- [F2-MAI-1381] Account Open: Remove Trust Docs or Pertinent Pages — [Status:: Active] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Investment Account Open Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1381)
 
 ## New
 

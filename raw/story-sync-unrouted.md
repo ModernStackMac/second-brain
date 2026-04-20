@@ -20,3 +20,7 @@
 
 [2026-04-20T14:00:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=TBD for mai and Jira Project Key=F2 (should be CET) for cetera. Recommend updating: (f2strategy.atlassian.net, CET) → cetera, (f2strategy.atlassian.net, MAI) → mai.
 [2026-04-20T14:00:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. Only MSS workspace visible (all stories Done).
+
+[2026-04-20T22:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=TBD for mai and Jira Project Key=F2 (should be CET) for cetera. Recommend updating: (f2strategy.atlassian.net, CET) → cetera, (f2strategy.atlassian.net, MAI) → mai.
+[2026-04-20T22:15:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. Only MSS workspace visible (all stories Done — no active stories to route).
+[2026-04-20T22:15:00-05:00] ARCHIVE: MAI-1381 removed from active tracker (no longer in Jira active filter). Stub written to raw/archived-stories/mai/f2-MAI-1381.md.
