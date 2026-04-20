@@ -4,3 +4,5 @@
 - [2026-04-20 14:15 CT] "Andrew/Mac Sync" → Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md · confidence: high · match: attendee (Andrew Smith = MSS peer contact)
 
 - [2026-04-20 16:30 CT] "Impromptu Call" → Meeting Notes/High Meadows/MAI/2026-04-20 - Impromptu Call.md · confidence: medium · match: attendee+keyword (multi-project recording: MAI DSU primary, also contains high-meadow-website 1:1 and cetera standup)
+
+- [2026-04-20 21:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md · confidence: high · match: keyword+attendee
