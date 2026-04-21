@@ -181,3 +181,14 @@ All four roll up to the Site level, then propagate to the correct Site Product. 
 
 ---
 
+
+Apr 20 Impromptu Call / Dev Standup (w/ Federico/Ulrich, Rodri, Isaac, Vincent, Michael, Brian, Connor, Odie, Chris, Trevor): combined Fathom recording covering CREtelligent dev standup and HMS internal sync on the same call.
+
+**Dev standup highlights:** Mac deployed the lead conversion story (confirmed working by Speaker 1, though client info component needs a visual check). Federico/Ulrich completed tickets 13.43 and 13.44, deploying components to production, then moving to a new phone account ticket. Rodri completed ticket 1-3-45 and picked up 1.364 (data migration — marking legacy closer reason values as inactive; only five values remain active, rest are legacy). Ticket 7-98 (pad settings not linked properly) blocked and escalated to David Torsak for clarification — David previously said he didn't think it was an issue, and the team decided not to proceed without clear requirements. Training sessions scheduled this week (deployment-free CUAT windows: 11:30 AM–2:00 PM and 1:00 PM).
+
+**Website / careers sidebar (Mac + Speaker 1 1:1):** Discussed on the same call but pertains to [[high-meadow-website]] — careers feature (type__c = "Candidate" on Lead), Resend.com setup (API keys generated), Vercel upgraded to Pro ($20/month). See HMS Website journal for details.
+
+**HMS internal standup (second half of recording):** June out (wedding anniversary), Brady out for the week. Sprint 4 curation and UAT review ongoing. Growth engine design (June + Connor conversations) being consolidated — Odie and Chris to present to team.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-20 - Impromptu Call [Fathom].md`)*
+

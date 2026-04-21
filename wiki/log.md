@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-04-21] ingest | CREtelligent Impromptu Call / Dev Standup (Apr 20)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-20 - Impromptu Call [Fathom].md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`
+- Commitments added: 0 (no Mac commitments passed 4-gate; Resend API key commitment already captured from MAI Impromptu Call)
+- Decisions added: 0 (ticket 7-98 escalation, legacy values, careers/Resend/Vercel decisions already logged from parallel MAI Impromptu Call processing)
+- Patterns extracted: none
+- Key takeaways: Combined Fathom recording spanning CREtelligent dev standup, Mac/Speaker 1 website sidebar, and HMS internal standup. Dev standup: Mac's lead conversion deployed and confirmed working; Federico completed 13.43/13.44 and deploying to prod; Rodri on data migration ticket 1.364 (legacy closer reason values marked inactive). Ticket 7-98 blocked/escalated to David Torsak. Training sessions this week with deployment-free CUAT windows. Website portion (Resend, Vercel Pro upgrade, careers feature) already captured via MAI Impromptu Call log entry.
+
+
 ## [2026-04-21] ingest | No new sources
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: All sources already processed. No new files detected since last run.
