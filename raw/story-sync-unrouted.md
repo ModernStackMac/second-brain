@@ -41,3 +41,8 @@
 [2026-04-21T19:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
 [2026-04-21T19:15:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. MSS workspace: all stories Done — no active stories to route.
 [2026-04-21T19:15:00-05:00] NEW: MAI-1369, MAI-1378, MAI-1379 added to active tracker (To Do, IPS epic).
+
+[2026-04-21T23:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-04-21T23:15:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. MSS workspace: all stories Done — no active stories to route.
+[2026-04-21T23:15:00-05:00] ARCHIVE: MAI-1369 removed from active tracker (no longer in Jira active filter). Stub written to raw/archived-stories/mai/f2-MAI-1369.md.
+[2026-04-21T23:15:00-05:00] ARCHIVE: MAI-1376 removed from active tracker (no longer in Jira active filter). Stub written to raw/archived-stories/mai/f2-MAI-1376.md.

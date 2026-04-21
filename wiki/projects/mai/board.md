@@ -1,22 +1,21 @@
 ---
 kanban-plugin: basic
-type: board
 project: mai
-updated: 2026-04-21T19:15:00-05:00
+updated: 2026-04-21T23:15:00-05:00
 ---
+
+# MAI CRM Build — Board
 
 ## Backlog
 
-- [ ] MAI-1369 IPS: Exception Time Frame not required 🟡
-- [ ] MAI-1378 IPS OOT: Unable to Deny submitted case 🟡
-- [ ] MAI-1379 IPS: Exception time frame not required (new IPS) 🟡
 
 ## Up Next
 
+- MAI-1378 IPS OOT: Unable to Deny a submitted case 🟡
+- MAI-1379 IPS: Exception time frame should not be required when creating a new IPS 🟡
 
 ## In Progress
 
-- [ ] MAI-1376 Sales Process: Prospect Info save/PDF issue 🟡
 
 ## Review
 
