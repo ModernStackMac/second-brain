@@ -28,3 +28,6 @@
 - [2026-04-21 16:00 CT] SKIPPED "Internal: CREtelligent Weekly Sync" (2026-04-20) — already exists at Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md
 - [2026-04-21 16:00 CT] SKIPPED "Impromptu Call" (2026-04-20) — already exists at Meeting Notes/High Meadows/MAI/2026-04-20 - Impromptu Call.md
 - [2026-04-21 16:00 CT] SKIPPED "Andrew/Mac Sync" (2026-04-20) — already exists at Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md
+
+- [2026-04-21 20:30 CT] "INTERNAL: CREtelligent Team Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-21 - INTERNAL CREtelligent Team Sync.md · confidence: high · match: attendee (Andrew Porter, Obed Labra-Pelaez) + keyword (cretelligent, site product)
+- [2026-04-21 20:30 CT] "Modern Stack Systems between Mac Nosek and Ivory Tang" → Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Contour Platform Demo.md · confidence: high · match: keyword (Modern Stack Systems in title) + business dev context
