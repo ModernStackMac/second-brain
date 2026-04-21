@@ -78,3 +78,17 @@ AI workflow deep dive: Mac running full Claude Desktop pipeline — meeting tran
 
 ---
 *Last updated: 2026-04-21*
+
+
+Contour Platform Demo (Apr 21) — intro call with Ivory Tang (ivory@usecontour.ai), co-founder of Contour. AI platform for the full software implementation lifecycle, primarily Salesforce-focused but applicable to AWS and other platforms.
+
+**Contour capabilities:** Discovery call bot that suggests better questions during live client meetings (Mac's primary interest), integration with common note-takers (Fathom, Granola), generation of execution-ready artifacts (SOWs, ROMs, resource plans, process stories). Core value prop: traceability — every decision stays connected throughout the engagement, linked back to transcript moments.
+
+**Mac's current workflow gap identified:** Mac has the Second Brain (Obsidian + MCP + scheduled ingest) handling post-call knowledge management and SOW generation via Claude. But he lacks real-time suggestions during discovery calls — he has to manually reference Obsidian mid-conversation. Contour's discovery bot would fill that gap, though Mac acknowledged it's more impactful once he's writing SOWs more frequently.
+
+**Mac background shared:** Eight years across Simplest (Infosys acquisition), Cloud Masonry (employee #28), Optima, AllShrimp → independent at start of 2026. Mix of 1099 contracting for SF shops + smaller direct clients. Claude gets SOWs "almost all the way there." Discovery process ranges from zero to a few hours depending on project size.
+
+**Next steps:** Mac to send Obsidian context/transcripts to Ivory via Google Drive. Ivory to set up a Contour account and schedule a setup session. Mac comfortable sharing meeting data for platform training.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Contour Platform Demo.md`)*
+

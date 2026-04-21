@@ -79,3 +79,5 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 ---
 *Last updated: 2026-04-21*
 *Total pages: 61 (19 project pages + 40 wiki pages + 2 reports)*
+
+- [[contour]] — AI platform for the software implementation lifecycle. Discovery call bot, SOW generation, traceability. Trial in progress (Apr 2026).

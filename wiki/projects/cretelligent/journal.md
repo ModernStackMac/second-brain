@@ -192,3 +192,17 @@ Apr 20 Impromptu Call / Dev Standup (w/ Federico/Ulrich, Rodri, Isaac, Vincent, 
 
 *(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-20 - Impromptu Call [Fathom].md`)*
 
+
+
+Co-Sprint Coordination (Apr 21, w/ Andrew Porter, Chris Harrell, Travis Hickey, Blake Stracener, Jeff Adams) — establishing cross-team working norms for the upcoming two-week co-sprint starting Thursday (99% migration-related work).
+
+**Co-sprint purpose:** Travis framed it around critical integration points that "could completely fall apart if we're not talking on the regular." Sprint includes additional payload fields, cost worksheet stuff, and "opening the floodgates" (sending all products to Salesforce).
+
+**Payload restructuring:** Current payload is product-specific (built for a subset of products with specific fields per product). Needs to be rewritten to a more generic/product-agnostic structure. Andrew clarified expectations: order payload → sites → products array per site with product-specific fields (turnaround, pricing, codes). Tasks and party data placement TBD. Blake confirmed understanding of his sprint scope: adding site verification fields to site/opportunity objects and creating the new site product object mapping to Stitch's corresponding object.
+
+**Communication cadence:** Tue/Wed/Thu 9:00–9:15 AM ET dailies (Blake on East Coast, everyone else Pacific). Andrew sending calendar invites. Teams channel preferred over Slack (Blake's Mac doesn't surface Slack notifications — Travis checking with IT/Josh on best option). Stitch team invited (optional) to CREtelligent's Monday/Wednesday 90-min refinement sessions and Friday 30-min status meetings.
+
+**Sprint logistics:** Two-week initial co-sprint; reassess after. ClickUp (CREtelligent) and Jira (Stitch) story mapping for translatable tracking. Andrew pushing hard to knock out Quire tomorrow (working session with Wendell + Kurt). In-person co-sprint meeting date TBD (13th vs 14th — Chris double-checking).
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-21 - Stitch CREtelligent - Co-Sprint Coordination.md`)*
+
