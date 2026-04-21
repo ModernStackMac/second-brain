@@ -13,3 +13,5 @@
 
 - [2026-04-20 22:30 CT] SCHEDULED RUN — 7 meetings in window (past 3 days), 0 new. All 7 already exist in Meeting Notes/. No writes needed.
 - [2026-04-20 22:45 CT] MANUAL REROUTE — "Brady Mac 1-1" (2026-04-16) moved from Meeting Notes/High Meadows/Cetera/ → Meeting Notes/High Meadows/Internal/ per Mac's correction. Content was a 1:1 about Brady's side project, not Cetera work.
+- [2026-04-20 23:00 CT] MANUAL REROUTE — "Entity Role Diagram ERD Sync" (2026-04-14) moved from Meeting Notes/High Meadows/Internal/ → Meeting Notes/High Meadows/LNW/ per Mac's correction. Content covers Visibility POC / ERD work which is LNW scope.
+- [2026-04-20 23:00 CT] FOLDER RESTRUCTURE — Created Meeting Notes/High Meadows/Internal/1-1s/ subfolder. Moved "Brady Mac 1-1" (2026-04-16) from Internal/ root → Internal/1-1s/. Updated project-mapping.md routing rules: HM-only 1:1s now route to 1-1s/ subfolder.

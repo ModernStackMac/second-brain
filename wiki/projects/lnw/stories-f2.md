@@ -1,27 +1,15 @@
 ---
 type: stories-sync
 project: lnw
-workspace: f2strategy
+workspace: f2
 jira_project_key: LNW
-updated: 2026-04-20T20:45:00-05:00
-story_count: 4
----
----
-type: stories-sync
-project: lnw
-workspace: f2strategy
-jira_project_key: LNW
-updated: 2026-04-20T22:15:00-05:00
+updated: 2026-04-21T07:15:00-05:00
 story_count: 4
 ---
 
-# LNW — Active Stories (F2 Strategy Jira)
+# LNW — Jira Stories (F2)
 
-_Last sync: 2026-04-20 · Source: Jira (f2strategy.atlassian.net) · Do not edit — regenerated each sync._
-
-## Review
-
-- [F2-LNW-192] Part 4: Visibility Enhancements POC - UI and UX Enablement — [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-192)
-- [F2-LNW-191] Part 3: Visibility Enhancements POC - Family Level Creation and Assignment — [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-191)
-- [F2-LNW-190] Part 2: Visibility Enhancements POC - Aggregated Visibility — [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-190)
-- [F2-LNW-189] Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality — [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-189)
+- [f2-LNW-189] Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-189)
+- [f2-LNW-190] Part 2: Visibility Enhancements POC - Aggregated Visibility [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-190)
+- [f2-LNW-191] Part 3: Visibility Enhancements POC - Family Level Creation and Assignment [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-191)
+- [f2-LNW-192] Part 4: Visibility Enhancements POC - UI and UX Enablement [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-192)

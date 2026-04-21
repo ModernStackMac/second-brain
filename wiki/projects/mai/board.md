@@ -2,16 +2,8 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-20T20:45:00-05:00
+updated: 2026-04-21T07:15:00-05:00
 ---
----
-kanban-plugin: basic
-type: board
-project: mai
-updated: 2026-04-20T22:15:00-05:00
----
-
-# MAI — Board
 
 ## Backlog
 
@@ -23,7 +15,7 @@ updated: 2026-04-20T22:15:00-05:00
 
 ## In Progress
 
-- [ ] MAI-1382 Account Open: Add Plan Admin Info to FA page 🟡
+- [ ] MAI-1382 Account Open: Plan Admin Info on FA page 🟡
 
 ## Review
 
@@ -32,3 +24,4 @@ updated: 2026-04-20T22:15:00-05:00
 
 
 ## Done
+
