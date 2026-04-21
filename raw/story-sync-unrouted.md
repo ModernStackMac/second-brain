@@ -28,3 +28,8 @@
 [2026-04-21T07:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still missing from vault. Recommend restoring: (f2strategy.atlassian.net, CET) → cetera, (f2strategy.atlassian.net, MAI) → mai.
 [2026-04-21T07:15:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. MSS workspace: all stories Done — no active stories to route.
 [2026-04-21T07:15:00-05:00] ARCHIVE: LNW-165 removed from active tracker (status=Complete). Stub written to raw/archived-stories/lnw/f2-LNW-165.md.
+
+[2026-04-21T15:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-04-21T15:15:00-05:00] LINEAR NOTE: HM workspace not connected to Linear MCP. Meadow and Flex Dash stories cannot be synced. MSS workspace: all stories Done — no active stories to route.
+[2026-04-21T15:15:00-05:00] ARCHIVE: MAI-1375 removed from active tracker (no longer in Jira active filter). Stub written to raw/archived-stories/mai/f2-MAI-1375.md.
+[2026-04-21T15:15:00-05:00] NEW: MAI-1361 added to active tracker (To Do, assigned to Mac).
