@@ -15,3 +15,8 @@
 - [2026-04-20 22:45 CT] MANUAL REROUTE — "Brady Mac 1-1" (2026-04-16) moved from Meeting Notes/High Meadows/Cetera/ → Meeting Notes/High Meadows/Internal/ per Mac's correction. Content was a 1:1 about Brady's side project, not Cetera work.
 - [2026-04-20 23:00 CT] MANUAL REROUTE — "Entity Role Diagram ERD Sync" (2026-04-14) moved from Meeting Notes/High Meadows/Internal/ → Meeting Notes/High Meadows/LNW/ per Mac's correction. Content covers Visibility POC / ERD work which is LNW scope.
 - [2026-04-20 23:00 CT] FOLDER RESTRUCTURE — Created Meeting Notes/High Meadows/Internal/1-1s/ subfolder. Moved "Brady Mac 1-1" (2026-04-16) from Internal/ root → Internal/1-1s/. Updated project-mapping.md routing rules: HM-only 1:1s now route to 1-1s/ subfolder.
+
+- [2026-04-21 06:00 CT] "NBCU/Stadn8 POC" → Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC.md · SKIPPED (already exists)
+- [2026-04-21 06:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md · SKIPPED (already exists)
+- [2026-04-21 06:00 CT] "Impromptu Call" → Meeting Notes/Stitch/Cretelligent/2026-04-20 - Impromptu Call [Fathom].md · confidence: medium · match: keyword (CREtelligent team members, ticket discussions, prior routing pattern for Impromptu calls)
+- [2026-04-21 06:00 CT] "Andrew/Mac Sync" → Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md · SKIPPED (already exists)
