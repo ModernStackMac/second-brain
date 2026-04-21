@@ -12,3 +12,4 @@
 - [2026-04-20 16:30 CT] "NBCU/Stadn8 POC" → Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC.md · confidence: high · match: keyword (nbcu, stand8)
 
 - [2026-04-20 22:30 CT] SCHEDULED RUN — 7 meetings in window (past 3 days), 0 new. All 7 already exist in Meeting Notes/. No writes needed.
+- [2026-04-20 22:45 CT] MANUAL REROUTE — "Brady Mac 1-1" (2026-04-16) moved from Meeting Notes/High Meadows/Cetera/ → Meeting Notes/High Meadows/Internal/ per Mac's correction. Content was a 1:1 about Brady's side project, not Cetera work.
