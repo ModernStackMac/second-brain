@@ -20,3 +20,11 @@
 - [2026-04-21 06:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md · SKIPPED (already exists)
 - [2026-04-21 06:00 CT] "Impromptu Call" → Meeting Notes/Stitch/Cretelligent/2026-04-20 - Impromptu Call [Fathom].md · confidence: medium · match: keyword (CREtelligent team members, ticket discussions, prior routing pattern for Impromptu calls)
 - [2026-04-21 06:00 CT] "Andrew/Mac Sync" → Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md · SKIPPED (already exists)
+
+- [2026-04-21 16:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-04-21 - MAI Dev DSU.md · confidence: high · match: keyword+attendee
+- [2026-04-21 16:00 CT] "Modern Stack Systems between Mac Nosek and Vuk Stajic" → Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Blink Data Cloud Advisory.md · confidence: high · match: keyword
+- [2026-04-21 16:00 CT] "AI Office Hours" → Meeting Notes/High Meadows/Internal/Office Hours/2026-04-21 - AI Office Hours.md · confidence: high · match: keyword
+- [2026-04-21 16:00 CT] SKIPPED "NBCU/Stadn8 POC" (2026-04-20) — already exists at Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC.md
+- [2026-04-21 16:00 CT] SKIPPED "Internal: CREtelligent Weekly Sync" (2026-04-20) — already exists at Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md
+- [2026-04-21 16:00 CT] SKIPPED "Impromptu Call" (2026-04-20) — already exists at Meeting Notes/High Meadows/MAI/2026-04-20 - Impromptu Call.md
+- [2026-04-21 16:00 CT] SKIPPED "Andrew/Mac Sync" (2026-04-20) — already exists at Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync.md
