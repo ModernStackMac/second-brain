@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: cetera
-updated: 2026-04-21T07:15:00-05:00
+updated: 2026-04-21T12:19:00-05:00
 ---
 
 ## Backlog
@@ -10,6 +10,12 @@ updated: 2026-04-21T07:15:00-05:00
 
 ## Up Next
 
+- [ ] CET-114 Build NAS Trade Request automation flows 🟡
+- [ ] CET-115 Replicate validation rules 🟡
+- [ ] CET-116 Build Help Desk automation flows 🟡
+- [ ] CET-117 Build Transfer auto-creation flow from FA 🟡
+- [ ] CET-118 Configure Lightning Page layouts 🟡
+- [ ] CET-119 Configure List Views, Queues, and Permissions 🟡
 
 ## In Progress
 

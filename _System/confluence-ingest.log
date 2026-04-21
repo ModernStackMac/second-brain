@@ -19,3 +19,17 @@
 - project-mapping.md not found; used identity.yaml project_slug_map to determine active projects (cetera/f2-cetera, lnw, mai)
 - No pages tagged "private" or in personal spaces were encountered
 - CE space has 50 pages total; only "Growth Engine" was modified within the sync window
+
+## Sync Run: 2026-04-21
+
+**Spaces scanned:** LN (LNW), WB (William Blair), RW (Ritholtz Wealth), MP (MAI Post-MVP), CE (Cetera)
+**CQL query:** `type = page AND lastModified >= now("-7d") AND space.type = "global"`
+**Pages found (updated in last 7 days):** 1
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Growth Engine | CE | 275972100 | 2026-04-15T22:06:11.069Z | Written to wiki/f2-internal/CE/growth-engine.md |
+
+**Skipped:** 0 (no unchanged pages to skip)
+**Errors:** Obsidian MCP timed out on initial reads (identity.yaml, project-mapping.md, existing log). Recovered on write attempts. Proceeded with all global spaces from Confluence rather than filtering by identity.yaml.
+**Notes:** Only 1 page across all 5 global spaces was modified in the last 7 days. Personal spaces excluded per task rules.
