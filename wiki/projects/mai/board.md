@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-21T15:15:00-05:00
+updated: 2026-04-21T11:21:00-05:00
 ---
 
 ## Backlog
@@ -10,7 +10,6 @@ updated: 2026-04-21T15:15:00-05:00
 
 ## Up Next
 
-- [ ] MAI-1361 Sales Process: Projected AUM & Contract status required 🟡
 
 ## In Progress
 

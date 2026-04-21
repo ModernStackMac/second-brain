@@ -3,13 +3,13 @@ type: stories-sync
 project: cetera
 workspace: f2
 jira_project_key: CET
-updated: 2026-04-21T15:15:00-05:00
+updated: 2026-04-21T11:21:00-05:00
 story_count: 11
 ---
 
 # Cetera — Jira Stories (F2)
 
-- [f2-CET-4] Configure the custom package that drives the integration to Advice Works [Status:: In Progress] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Client Suitability Tracking · [Jira](https://f2strategy.atlassian.net/browse/CET-4)
+- [f2-CET-4] Configure the custom package that drives the integration to Advice Works (Hold off on Creating until First Full Sandbox is set up) [Status:: In Progress] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Client Suitability Tracking · [Jira](https://f2strategy.atlassian.net/browse/CET-4)
 - [f2-CET-110] Case / TRPG Work Desk Alignment [Status:: In Progress] [Priority:: Medium] [Updated:: 2026-04-13] · parent: — · [Jira](https://f2strategy.atlassian.net/browse/CET-110)
 - [f2-CET-111] Create new fields on TRPG_Help_Desk__c [Status:: Ready for Demo] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Case / TRPG Work Desk Alignment · [Jira](https://f2strategy.atlassian.net/browse/CET-111)
 - [f2-CET-112] Create new fields on New_Account_Setup__c [Status:: Ready for Demo] [Priority:: Medium] [Updated:: 2026-04-20] · parent: Case / TRPG Work Desk Alignment · [Jira](https://f2strategy.atlassian.net/browse/CET-112)
