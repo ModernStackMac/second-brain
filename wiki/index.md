@@ -31,6 +31,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[site-product-joiner]] — Junction object pattern to avoid field explosion on parent records. Per-product pricing, cost, and margin tracking.
 - [[validation-rule-workaround]] — Three-step fallback for required picklist fields blocking automated record saves.
 - [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through a hierarchical chain. Applied in CREtelligent.
+- [[job-function-permission-sets]] — Align Salesforce permission sets to job functions (3–5 groups) instead of per-record-type or per-feature. Applied in Cetera.
 
 ## Tools
 
@@ -76,6 +77,5 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[reports/mai-project-overview]] — 2026-04-18 · Snapshot of the MAI engagement.
 
 ---
-*Last updated: 2026-04-20*
-*Total pages: 60 (19 project pages + 39 wiki pages + 2 reports)*
-
+*Last updated: 2026-04-21*
+*Total pages: 61 (19 project pages + 40 wiki pages + 2 reports)*

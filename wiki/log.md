@@ -1053,3 +1053,85 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Patterns extracted: none
 - Key takeaways: Detailed pre-launch review of HMS landing page, Services, and About sections. Extensive copy tightening, partnership section updates, and Services tile cleanup. All content previously captured across Meadow journal and website journal. Mac dropped at 24 min; CSO to send consolidated notes doc.
 
+
+## [2026-04-21] ingest | Bulk back-fill — 46 meeting notes + 8 articles (Apr 2–20)
+- Source: Multiple — see individual entries below
+- Pages created: `wiki/patterns/job-function-permission-sets.md`
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md` (added Week of Apr 7–13)
+- Patterns extracted: `job-function-permission-sets` (from Cetera case permission set architecture)
+- Key takeaways: Full audit of all Meeting Notes/ and raw/articles/ against log.md. Found 46 meeting notes and 8 articles that were processed into wiki journals and article pages by prior ingest cycles but never logged. All project journals (MAI, CREtelligent, Cetera, NBCU, Harvey, Litify, MSS, Meadow) are comprehensive through Apr 20. The only journal gap was MSS missing a "Week of Apr 7–13" section covering a recruiter call ($150/hr QA/Dev role, 40hrs/week — Mac left door open) and a peer sync with Domatz and Bradyl (workload burnout, HMS culture friction, AI pipeline demo, payment updates). Gap now filled.
+
+### Previously processed but unlogged sources (back-fill):
+
+**Stand8/Harvey:**
+- `Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop.md` → journal, context, Decision-Log
+
+**Stand8/Litify:**
+- `Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync.md` → journal
+- `Meeting Notes/Stand8/Litify/2026-04-13 - Internal Litify SOW Discussion.md` → journal, Decision-Log
+- `Meeting Notes/Stand8/Litify/2026-04-14 - SOW Review.md` → journal, Decision-Log
+- `Meeting Notes/Stand8/Litify/2026-04-17 - Ryan Liana Chat.md` → journal, Decision-Log
+
+**Stand8/NBCU:**
+- `Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md` → journal, Decision-Log
+- `Meeting Notes/Stand8/NBCU/2026-04-13 - NBCU STAND 8 Agentforce POC.md` → journal
+- `Meeting Notes/Stand8/NBCU/2026-04-15 - NBCU STAND 8 Agentforce POC.md` → journal
+
+**High Meadows/Cetera:**
+- `Meeting Notes/High Meadows/Cetera/2026-04-08 - Quick Sync - F2 Connor.md` → journal
+- `Meeting Notes/High Meadows/Cetera/2026-04-09 - Project Keystone - Cetera Daily Working Session.md` → journal, Decision-Log
+- `Meeting Notes/High Meadows/Cetera/2026-04-13 - Project Keystone Daily Stand-up.md` ��� journal
+- `Meeting Notes/High Meadows/Cetera/2026-04-14 - Project Keystone Daily Stand-up.md` → journal
+- `Meeting Notes/High Meadows/Cetera/2026-04-16 - Cetera Stand Up [Fathom].md` → journal, Decision-Log
+
+**High Meadows/Internal:**
+- `Meeting Notes/High Meadows/Internal/1-1s/2026-04-16 - Brady Mac 1-1.md` → cetera journal (side project context)
+- `Meeting Notes/High Meadows/Internal/Office Hours/2026-04-14 - AI Office Hours.md` → meadow journal (stub — no content)
+
+**High Meadows/MAI:**
+- `Meeting Notes/High Meadows/MAI/2026-04-06 - Bug IAM Service Type Showing Single Value per Record Type.md` → journal
+- `Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev DSU.md` �� journal
+- `Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev Session - Type Field and Address Auto-Population.md` → journal, Decision-Log
+- `Meeting Notes/High Meadows/MAI/2026-04-10 - MAI Dev DSU.md` → journal
+- `Meeting Notes/High Meadows/MAI/2026-04-13 - MAI Dev DSU.md` → journal
+- `Meeting Notes/High Meadows/MAI/2026-04-13 - New Fund Account Questions.md` → journal
+- `Meeting Notes/High Meadows/MAI/2026-04-14 - MAI Dev DSU.md` → journal
+- `Meeting Notes/High Meadows/MAI/2026-04-14 - Dev Growth.md` → journal, Decision-Log
+- `Meeting Notes/High Meadows/MAI/2026-04-14 - Michael.md` → journal (stub — no content)
+- `Meeting Notes/High Meadows/MAI/2026-04-15 - MAI Dev DSU.md` → journal (stub — no content)
+- `Meeting Notes/High Meadows/MAI/2026-04-15 - Mac Steven Weekly.md` �� journal
+- `Meeting Notes/High Meadows/MAI/2026-04-16 - Impromptu Call [Fathom].md` �� journal, Decision-Log
+- `Meeting Notes/High Meadows/MAI/2026-04-16 - MAI Stand up [Fathom].md` → journal, Decision-Log
+- `Meeting Notes/High Meadows/MAI/2026-04-17 - MAI Dev DSU.md` → journal, Decision-Log
+
+**Modern Stack Systems:**
+- `Meeting Notes/Modern Stack Systems/2026-04-09 - Recruiter Call - Brittany Fetzner - Salesforce QA Dev Role.md` → journal (newly added Week of Apr 7–13)
+- `Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md` → journal (newly added Week of Apr 7–13)
+- `Meeting Notes/Modern Stack Systems/2026-04-14 - AI Office Hours.md` → journal (stub)
+- `Meeting Notes/Modern Stack Systems/2026-04-15 - Andrew Mac.md` → journal
+- `Meeting Notes/Modern Stack Systems/2026-04-17 - Meeting of the Minds.md` → journal
+
+**Stitch/Cretelligent:**
+- `Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync.md` → journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Quick Sync - Validation Workaround.md` → journal
+- `Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Team Sync - Sprint Review.md` → journal
+- `Meeting Notes/Stitch/Cretelligent/2026-04-09 - Stitch & CREtelligent - Tech Team Huddle.md` → journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-10 - CREtelligent Weekly Status and Project Sync.md` ��� journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-13 - Internal CREtelligent Weekly Sync.md` → journal
+- `Meeting Notes/Stitch/Cretelligent/2026-04-14 - Stitch CREtelligent Stand Up.md` ��� journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-15 - Stitch CREtelligent Dev Team Sync.md` → journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-16 - AP - MN - CREtelligent Sync [Fathom].md` → journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-16 - INTERNAL CREtelligent Team Sync [Fathom].md` → journal, Decision-Log
+- `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Impromptu Zoom Meeting [Fathom].md` → journal
+- `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Stitch CREtelligent Weekly Status and Project Sync.md` → journal, Decision-Log
+
+**Articles (all 8 already have wiki/articles/ counterparts):**
+- `Second Brain/raw/articles/2026-04-18T074207-0500-New in Salesforce Developer Edition...` → `wiki/articles/tdx-2026-agentforce-vibes-claude-mcp-dev-edition.md`
+- `Second Brain/raw/articles/2026-04-18T074235-0500-Introducing Web Console...` �� `wiki/articles/salesforce-web-console-beta.md`
+- `Second Brain/raw/articles/2026-04-18T074249-0500-Building AI Automations...` → `wiki/articles/prompt-builder-structured-outputs.md`
+- `Second Brain/raw/articles/2026-04-18T080457-0500-Salesforce Model Context Protocol...` → `wiki/articles/salesforce-mcp-explained-sweep.md`
+- `Second Brain/raw/articles/Andrej Karpathy Method...` → `wiki/articles/andrej-karpathy-method-claude-skills-obsidian.md`
+- `Second Brain/raw/articles/Claude + Obsidian...` → `wiki/articles/claude-obsidian-illegal.md`
+- `Second Brain/raw/articles/New Agentforce Builder...` → `wiki/articles/new-agentforce-builder-beta.md`
+- `Second Brain/raw/articles/These 6 FREE Obsidian PLUGINS...` → `wiki/articles/obsidian-plugins-replace-paid-apps.md`
+

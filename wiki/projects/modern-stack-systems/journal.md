@@ -6,6 +6,7 @@ updated: 2026-04-20
 
 # Modern Stack Systems — Journal
 
+
 ## Week of Apr 20, 2026
 
 Andrew/Mac Sync (Apr 20) — light catch-up. Two notable tech threads:
@@ -21,12 +22,11 @@ No action items identified.
 
 ---
 
-
 ## Week of Apr 14–19, 2026
 
 Peer sync week. Meeting of the Minds (Apr 17) was a deep demo of Claude Cowork vs. Claude Code — Mac walked through scheduled tasks (daily email summary, morning briefing, QuickBooks digest, second-brain ingest), the refine-the-prompt loop, and computer-use for Gmail send. Key takeaway: peer needs help restructuring their second brain before scheduled ingestion will work. Mac agreed to review their prompts/setup.
 
-AI Office Hours (Apr 14) was a stub — Granola captured no content. Recruiter call (Apr 9) with Brittany Fetzner for a Salesforce QA Dev role. Andrew/Mac sync (Apr 15) — peer/business-dev catch-up.
+AI Office Hours (Apr 14) was a stub — Granola captured no content. Andrew/Mac sync (Apr 15) — peer/business-dev catch-up covering career/travel, a Granola demo, a "vibe code review" consulting pitch idea for HMS network (~$5K package), a Rory Sutherland-style AI consultant demo (auto-built from YouTube transcripts + books + RAG DB), and side-contract payment logistics (Helcium for $8K contract). Mac exploring genericizing the virtual consultant tool for arbitrary personalities (open-source consideration).
 
 **Decisions:**
 - Start small with scheduled tasks: pick one project and run a single ingest on cadence before expanding
@@ -36,4 +36,26 @@ AI Office Hours (Apr 14) was a stub — Granola captured no content. Recruiter c
 - Peer's second brain structure needs review before their ingest pipeline will work
 
 ---
-*Last updated: 2026-04-19*
+
+## Week of Apr 7–13, 2026
+
+Met twice with substance (Apr 9 — Recruiter Call with Brittany Fetzner, Apr 10 — Meeting of the Minds Peer Sync).
+
+**Recruiter Call (Apr 9):** Brittany Fetzner pitched a Salesforce QA/Developer contract role at $150/hr, 40 hrs/week. Team uses Claude Code for a telephony build to centralize dealer interactions and reduce switching. Mac walked through his experience: junior SF dev to TA, daily Claude Code power user ($200 plan, multiple concurrent instances), built AI apps on top of Salesforce (chatbot with multi-model selection), used Claude API + OpenRouter + OpenAI APIs for agentic frameworks. Clarified the difference between using Claude within Agentforce vs. building custom AI on the SF platform. Role is 40 hrs/week — Mac currently running two 40hr + one 20hr contract, so capacity is the constraint. Left the door open if schedule shifts.
+
+**Peer Sync (Apr 10, w/ Domatz + Bradyl):** Covered workloads, High Meadows culture friction, AI tool adoption, and payment updates. Mac flagged burnout from billing 20–28 hours/day across multiple clients. Domatz on the Saterra project with limited assignments despite project urgency. Maz paid Mac $30K on Apr 8; Domatz still chasing a $300 January invoice (Equifi Advisors/Optima).
+
+Culture friction at HMS surfacing: Sean told Mac to "shut up" during a company demo of the time tracking app; Brian pushing aggressive product development (Outlook email extraction, packaging Claude Desktop demos as client products); Catherine micromanaging website copy line-by-line during concept meetings; Stephen ($16.5K retainer, 25 hrs/week W2) not proactively asking for work.
+
+AI workflow deep dive: Mac running full Claude Desktop pipeline — meeting transcription/summarization, second brain, morning briefing (SF/AI/tech/current events), QuickBooks weekly summaries. Upgraded to $200/month Claude plan. Financial Services Cloud issue: tasks should surface household/person/trust accounts but solution architects not explaining requirements clearly. Entry-level coding at risk from AI but experience remains critical for debugging and compliance.
+
+**Decisions:**
+- Set up recurring one-on-ones between Mac, Domatz, and Bradyl
+
+**Open questions:**
+- Recruiter role: will Brittany come back with a sub-40hr option or adjusted scope?
+- Saterra staffing issue for Domatz
+- HMS culture friction — how to navigate without burning bridges
+
+---
+*Last updated: 2026-04-21*
