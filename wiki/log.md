@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-04-21] ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources already processed. No new files detected since last run.
+
+
 ## [2026-04-20] ingest | NBCU Stand8 POC (DealSet Architecture + Agent Discussion)
 - Source: `Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC.md`
 - Pages created: none
