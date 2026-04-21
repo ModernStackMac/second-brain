@@ -7,7 +7,7 @@
 Each project has two files: `context.md` (stable — what it is, tech stack, scope) and `journal.md` (dynamic — rolling weekly summaries, decisions, open questions).
 
 - [[cetera/context]] · [[cetera/journal]] · [[cetera/stories-f2]] — Financial services (High Meadows / F2 Strategy). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
-- [[lnw/journal]] · [[lnw/stories-f2]] — LNW Visibility Enhancements POC (High Meadows via F2). Family-level aggregation, meeting note composer.
+- [[lnw/context]] · [[lnw/journal]] · [[lnw/stories-f2]] — LNW Visibility Enhancements POC (High Meadows via F2). Entity Role Diagrams, family-level aggregation, meeting note composer.
 - [[mai/context]] · [[mai/journal]] · [[mai/stories-f2]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
 - [[harvey/context]] · [[harvey/journal]] — Industrial manufacturing/distribution (Stand8). Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration (Einstein + Claude).
 - [[nbcu/context]] · [[nbcu/journal]] — NBCUniversal (Stand8). Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
@@ -30,6 +30,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[json-deserialize-refactor]] — Replacing fragile manual JSON parsing in Apex with JSON.deserialize and typed wrapper classes.
 - [[site-product-joiner]] — Junction object pattern to avoid field explosion on parent records. Per-product pricing, cost, and margin tracking.
 - [[validation-rule-workaround]] — Three-step fallback for required picklist fields blocking automated record saves.
+- [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through a hierarchical chain. Applied in CREtelligent.
 
 ## Tools
 
@@ -70,12 +71,11 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 ## Reports
 
+- [[reports/weekly-synthesis-2026-04-20]] — 2026-04-20 · Weekly cross-project synthesis for the week of Apr 14–20, 2026.
 - [[reports/weekly-synthesis-2026-04-19]] — 2026-04-19 · Weekly cross-project synthesis for the week of Apr 13–19, 2026.
 - [[reports/mai-project-overview]] — 2026-04-18 · Snapshot of the MAI engagement.
 
 ---
-*Last updated: 2026-04-19*
-*Total pages: 58 (18 project pages + 39 wiki pages + 1 report)*
+*Last updated: 2026-04-20*
+*Total pages: 60 (19 project pages + 39 wiki pages + 2 reports)*
 
-<!-- INDEX UPDATE 2026-04-20: New pattern page added - reposition under ## Patterns section -->
-<!-- - [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through a hierarchical chain. Applied in CREtelligent. -->

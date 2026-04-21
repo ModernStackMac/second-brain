@@ -988,3 +988,68 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Output: wiki/reports/weekly-synthesis-2026-04-20.md
 - Projects covered: 11 (7 active, 4 no-activity)
 - Key finding: Data model hardening is the common thread across CREtelligent, MAI, and Cetera — all three are replacing stretched standard objects with purpose-built custom objects this week. Scope pressure and external dependency bottlenecks are the meta-themes across every active engagement.
+
+
+## [2026-04-20] ingest | LNW Entity Role Diagram ERD Sync
+- Source: `Meeting Notes/High Meadows/LNW/2026-04-14 - Entity Role Diagram ERD Sync.md`
+- Pages created: `wiki/projects/lnw/context.md`
+- Pages updated: `wiki/projects/lnw/journal.md`, `commitments.md`, `Decision-Log.md`
+- Commitments added: 1 (create initial ERD iteration from entity role object in sandbox)
+- Decisions added: 1 (build ERD from entity role junction, reference Altrata diagrams)
+- Patterns extracted: none
+- Key takeaways: ERD requirements locked — entity role as junction between accounts, nested ownership view, Altrata-style diagrams as reference. Visibility POC on third testing kickoff attempt with ClickUp license still delayed.
+
+## [2026-04-20] ingest | Lefavi Weekly Call (Flex-Dash Licensing + MAI Priority)
+- Source: `Meeting Notes/High Meadows/Lefavi/2026-04-02 - Lefavi Weekly Call.md`
+- Pages created: none
+- Pages updated: `Decision-Log.md`
+- Commitments added: 0 (Mac action items from Apr 2 are stale/completed — Flex-Dash paused, MAI prioritized)
+- Decisions added: 2 (no AppExchange licensing for Flex-Dash — implementation fee only; access control architecture back-burnered)
+- Patterns extracted: none
+- Key takeaways: Strategic licensing decision — managed package prevents code theft but no recurring license revenue. Full Flex-Dash pause to redirect capacity to MAI. Argentine dev team replacement in progress. Key decisions already reflected in MAI journal (Week of Mar 31 – Apr 4) and existing Decision-Log entries.
+
+## [2026-04-20] ingest | HMU Workshop — Packaging Content for Training Programs
+- Source: `Meeting Notes/High Meadows/Internal/HMU/2026-04-14 - Packaging Content for HMU Workshops.md`
+- Pages created: none
+- Pages updated: `Decision-Log.md`
+- Commitments added: 0 (no firm Mac commitments — interview content participation is exploratory)
+- Decisions added: 2 (Obsidian + MCP as knowledge backbone for HMU training content; MVP platform launch excludes full content repo)
+- Patterns extracted: none
+- Key takeaways: Content strategy session for monetized HMU Workshops. Capture 100+ external training pieces first, organize later. Brian excited about second brain concept for all HMS business lines. Voice training tech (Sean Berry) could enable automated script reading for video content. No firm delivery commitments from Mac.
+
+## [2026-04-20] ingest | HMS Office Hours (IT Onboarding + SharePoint)
+- Source: `Meeting Notes/High Meadows/Internal/Office Hours/2026-04-10 - HMS Office Hours.md`
+- Pages created: none
+- Pages updated: none (already covered in `wiki/projects/internal/meadow/journal.md` Week of Apr 7–12)
+- Commitments added: 0 (email account creation for Sam/Antonio is an operational task, likely completed by now)
+- Decisions added: 0 (operational decisions already captured in Meadow journal)
+- Patterns extracted: none
+- Key takeaways: IT housekeeping — email migration from Glue On to High Meadows, Slack workspace switch, SharePoint/OneDrive walkthrough. Already summarized in Meadow journal.
+
+## [2026-04-20] ingest | HMS Product Strategy (Roadmap + Savey + AI Tooling)
+- Source: `Meeting Notes/High Meadows/Internal/Product Calls/2026-04-09 - HMS Product Strategy.md`
+- Pages created: none
+- Pages updated: `Decision-Log.md`
+- Commitments added: 0 (quality review and Savey reparenting are operational — already tracked in Meadow journal open questions)
+- Decisions added: 2 (dev updates can be async Monday EOD/Tuesday AM; capacity planning app migrates to company GitHub after quality review)
+- Patterns extracted: none
+- Key takeaways: Four-phase capacity planning roadmap locked in (already in Decision-Log from prior ingest). SSO strategy shifted to Sanity. AI tooling discussion — Claude Sonnet at 2% capacity, Mythos AI shows promise but safety-tuning gap. Already covered in Meadow journal Week of Apr 7–12.
+
+## [2026-04-20] ingest | Website Sync (Vercel + Supabase + Git Workflow)
+- Source: `Meeting Notes/High Meadows/Internal/Website/2026-04-09 - Website Sync.md`
+- Pages created: none
+- Pages updated: `Decision-Log.md`
+- Commitments added: 0 (Vercel setup conditional on payment; developer-owned tasks)
+- Decisions added: 3 (Vercel for hosting; Supabase Postgres for DB; replace Clockify with custom time-entry; vendors@ DL created)
+- Patterns extracted: none
+- Key takeaways: Infrastructure decisions for HMS web apps — Vercel deployment, Supabase migration from SQLite, custom time-entry replacing Clockify. Company credit card needed for subscriptions. Already covered in Meadow journal Week of Apr 7–12.
+
+## [2026-04-20] ingest | Website Review (Pre-Launch Walkthrough)
+- Source: `Meeting Notes/High Meadows/Internal/Website/2026-04-17 - Website Review [Fathom].md`
+- Pages created: none
+- Pages updated: none (already thoroughly covered in `wiki/projects/internal/meadow/journal.md` Week of Apr 14–20 and `wiki/projects/internal/high-meadow-website/journal.md`)
+- Commitments added: 0 (website copy/layout changes already in commitments under Meadow)
+- Decisions added: 0 (all decisions already in Decision-Log from prior ingest cycle)
+- Patterns extracted: none
+- Key takeaways: Detailed pre-launch review of HMS landing page, Services, and About sections. Extensive copy tightening, partnership section updates, and Services tile cleanup. All content previously captured across Meadow journal and website journal. Mac dropped at 24 min; CSO to send consolidated notes doc.
+
