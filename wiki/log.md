@@ -1,5 +1,33 @@
 # Wiki Log
 
+## [2026-04-21] ingest | MAI Dev DSU (Apr 21)
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-21 - MAI Dev DSU.md`
+- Pages created: none
+- Pages updated: `wiki/projects/mai/journal.md`, `commitments.md`, `Decision-Log.md`
+- Commitments added: 3 (permission set for CSS/Advisor profiles, diagnose PDF access issue, sales process EOD update)
+- Decisions added: 4 (no new fund account number field, ticket 1288 disregarded, deprecated field deletion policy, ticket 1203 no checkbox)
+- Patterns extracted: none
+- Key takeaways: Heavy QA triage session. Deployment freeze for CSS/advisor test script training. Permission set naming divergence between UAT (operations) and prod (CSS) causing PDF access issues. Sales process tickets urgent ahead of Friday call. SMA manager field still non-selectable on ticket 1A.
+
+## [2026-04-21] ingest | Blink Data Cloud Advisory (Apr 21)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Blink Data Cloud Advisory.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md`, `wiki/projects/modern-stack-systems/context.md`, `wiki/tools/data-cloud.md`, `commitments.md`
+- Commitments added: 2 (send scope email to Raphi/Vuk, schedule initial Leah session)
+- Decisions added: 0
+- Patterns extracted: none
+- Key takeaways: New advisory engagement for Mac's consulting practice. Blink (UK payments) needs Data Cloud coaching for internal resource Leah — stuck at ingestion-to-activation gap. £1,000 budget, 1-2 hrs/week for a month. Mac to send scope email. Also have live Agentforce agent with 25-30% query deflection.
+
+## [2026-04-21] ingest | AI Office Hours (Apr 21)
+- Source: `Meeting Notes/High Meadows/Internal/Office Hours/2026-04-21 - AI Office Hours.md`
+- Pages created: none
+- Pages updated: `wiki/projects/internal/high-meadow-website/journal.md`, `commitments.md`, `Decision-Log.md`
+- Commitments added: 2 (revert partner icons to B&W, provide MD files for Thursday Obsidian call)
+- Decisions added: 1 (revert partner logos to black and white)
+- Patterns extracted: none
+- Key takeaways: Website icon styling reverted to B&W. Deep Second Brain architecture discussion — Speaker 1 getting more invested in Obsidian/Cowork, usage up to 16%. Key insight shared: Second Brain should contain precise curated data, not raw cowork session dumps. Thursday Obsidian training call with Speaker 1, Mac, Chloe, and Sean at 2 PM. Speaker 1's personal assistant app doing email/task/calendar/Slack aggregation with priority learning — Second Brain as a data layer underneath would enhance it significantly.
+
+
 ## [2026-04-21] ingest | CREtelligent Impromptu Call / Dev Standup (Apr 20)
 - Source: `Meeting Notes/Stitch/Cretelligent/2026-04-20 - Impromptu Call [Fathom].md`
 - Pages created: none

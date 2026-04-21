@@ -1,5 +1,19 @@
 # High Meadow Website — Journal
 
+## 2026-04-21 — Icon styling + content updates
+
+From AI Office Hours call (Apr 21).
+
+**Partner logo icons:** Mac changed icons from black and white to colored versions. Speaker 1 prefers original black and white — F2 icon in particular looks poor in color. Team agreed to revert to black and white for consistency and cleaner appearance. Mac to implement.
+
+**Content updates:** Speaker 1 removed family member names (kids' names) that were added for personalization. Jessica handling revised content updates per Slack DM between Catherine, Brian, Mac, and Jessica. Mac also fixing mobile responsiveness issues.
+
+**Decisions:**
+- Revert partner logos/icons to black and white (not colored)
+
+---
+
+
 ## 2026-04-20 — Careers feature + Resend.com + Vercel Pro
 
 From a multi-session Fathom recording (primary routed to MAI; cross-referenced here).

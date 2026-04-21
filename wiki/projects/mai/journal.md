@@ -2,11 +2,43 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-20
+last_meeting: 2026-04-21
 open_actions: 22
 ---
 
 # MAI — Project Journal
+
+## Week of Apr 21, 2026
+
+Dev DSU (Apr 21) — full team standup covering ticket triage, QA passes, and permission set issues.
+
+Account number consolidation: Team decided NOT to create a new fund account number field — seven already exist. Using existing financial account number for now, potential rename later.
+
+Deployment freeze 11 AM to 2 PM Apr 21. Aisha walking CSS and advisors through test scripts — first time involving them in testing.
+
+Ticket progress: Rodrigo completed 1364 and 1310; 1305 cancelled; now on 1280. Federico deploying UAT-to-prod, then 2-3 new phone account tickets. Mac got four tickets done yesterday, working sales process today — Aisha stressed urgency, Friday call with CSS/operations. Mac committed to EOD update.
+
+Permission set gap: Mac added perm set only for Tiffany per ticket. Aisha requested ALL CSS and Advisor profile users (Client Service Specialist and Advisor profiles). Mac to apply broadly.
+
+PDF save/generate access broken for advisors and CSS users. Root cause: missing operations-based perm set (called operations in UAT, CSS in prod). Mac diagnosing, reverted QA ticket and added PDF issue to it.
+
+QA reviews: 1329 passes (all record types, Vincent verifying). 1346 (custodian deprecated-to-custodian) passes, needs Santi update script. 1288 (pending) disregarded — David renaming; Michael took ownership. 1203 — no checkbox needed, business in type picklist. 1204 — duplicate warning on account not during conversion. 1240/1291/1310 deployed. 1278 — mailing address not populating (separate bug). 1A — SMA manager still non-selectable (blocker).
+
+Field deletion: deprecated field — delete if no real data; verify Santi migration from Dynamics. Move data first if present.
+
+**Decisions:**
+- Do NOT create new fund account number field — consolidate around existing financial account number
+- Ticket 1288 disregarded — pending status being renamed by David
+- Delete unused deprecated fields IF no real data; migrate first if needed
+- Ticket 1203: no checkbox — business option lives in type picklist
+
+**Open questions:**
+- Mac: sales process tickets (1361, 1376) ETA before Friday CSS/operations call
+- SMA manager non-selectable on ticket 1A — outstanding blocker
+- Santi data migration scripts accumulating — need centralized communication
+
+---
+
 
 ## Week of Apr 20, 2026
 

@@ -1,10 +1,29 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-04-20
+updated: 2026-04-21
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of Apr 21, 2026
+
+Blink Data Cloud Advisory (Apr 21) — intro call with Vuk Stajic and Raphi Katz from Blink (UK payments company). New advisory engagement scoped.
+
+**Blink overview:** Payments company running entire business on Salesforce. Banks send large CSVs of merchant data. Internal resource (Leah) taking Data Cloud courses but stuck at the ingestion-to-activation gap. Already have a live Agentforce agent on their payment platform handling 25-30% of queries without human intervention (migrated from Einstein to Agentforce One, lost some functionality in transition).
+
+**Engagement scope:** Coaching/advisory, not a deliverables project. Mac works directly with Leah, 1-2 hrs/week for about a month. Budget: £1,000 with preliminary FD approval. Senior leadership skeptical of Salesforce due to past partner shakeups — engagement needs to prove Data Cloud value.
+
+**Data Cloud use cases:** (1) Update merchant account fields with daily SFTP-ingested processing data, (2) Identity resolution to cross-match merchants from multiple providers into unified identities, (3) Knowledge base sync (potential future).
+
+**Key advisory points:** Data Cloud triggered flows can call Apex for custom matching/creation logic. Not everything needs Data Cloud — for sources with APIs, scheduled Apex classes may be more cost-effective. Evaluate each use case individually. Salesforce pricing is confusing; Blink has pre-paid credits and wants to see them utilized.
+
+**Logistics:** Mac invoices through LLC (S Corp), month-end, net 30. No formal SOW — email outlining scope. NDA at some point.
+
+**Next steps:** Mac sends email outlining scope/time for £1,000 budget. Raphi gets final FD confirmation. Mac schedules initial session with Leah.
+
+---
+
 
 
 ## Week of Apr 20, 2026
