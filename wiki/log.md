@@ -1,5 +1,91 @@
 # Wiki Log
 
+## [2026-04-22] pattern-extraction | UAT Deployment Coordination
+- Source: Cross-project analysis of MAI Apr 17 journal entries
+- Pages created: `wiki/patterns/uat-deployment-coordination.md`
+- Pages updated: `wiki/index.md`
+- Key takeaways: New pattern extracted from MAI's Federico/Mac deploy conflict. Shared deployment log (Google Doc) as lightweight mutex for multi-dev UAT environments. Broadly applicable to any Salesforce project with 3+ devs on a shared sandbox.
+
+## [2026-04-22] maintenance | Scheduled ingest run
+- Log rotation: not needed (28 entries, all < 90 days)
+- Commitment archival: not needed (Done items from Apr 21, only 1 day old)
+- Unprocessed meeting notes remaining: ~30 older files (Apr 2-15) already in journals but not individually logged. Content is covered via journal Week-of entries written in prior sessions. Next ingest cycle can backfill these if needed.
+- No new raw sources detected since last run.
+
+
+## [2026-04-22] backfill | Meeting Notes Apr 14-17 + Articles (20 sources)
+
+Backfill log entries for meetings and articles already processed into journals, commitments, and Decision-Log in prior sessions but not logged.
+
+### Meeting Notes (Apr 17)
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-17 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Custom address on account conversion (writes to Course Analysis). UAT Deployment Collaboration Google Doc adopted. Mac/Federico ticket swap. Story-point sizing via Jira filter.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Stitch CREtelligent Weekly Status and Project Sync.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Cost Worksheet rename and data model lock-in. Default value strategy. Actuals roll up from PA cost only. Blake test-env payload targeting end of next week.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-17 - Impromptu Zoom Meeting [Fathom].md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`, `Decision-Log.md`
+  - Key takeaways: Product sheet data quality issues. Import limited to name/code/family/SKU/list price.
+
+- Source: `Meeting Notes/Stand8/Litify/2026-04-17 - Ryan Liana Chat.md`
+  - Pages updated: `wiki/projects/litify/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Scaled-down SOW at 66 hrs. External agent 40 hrs, internal similar-case agent 20 hrs. Both SOW versions to Evan.
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-17 - Meeting of the Minds.md`
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+  - Key takeaways: Cowork vs Code demo. Scheduled tasks walkthrough. Peer needs second brain restructuring help.
+
+### Meeting Notes (Apr 16)
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-16 - Impromptu Call [Fathom].md`
+  - Pages updated: `wiki/projects/mai/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Prospect address go-live blocker. Replace standard with custom Address component. Fund assignment UAT retest urgent.
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-16 - MAI Stand up [Fathom].md`
+  - Pages updated: `wiki/projects/mai/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Same Fathom recording as Impromptu Call. Deep dive on prospect address architecture.
+
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-16 - Cetera Stand Up [Fathom].md`
+  - Pages updated: `wiki/projects/cetera/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Hybrid affiliate onboarding model. Job-function permission sets. Brady unblocked. Mac cleared for UAT deploy.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-16 - AP - MN - CREtelligent Sync [Fathom].md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Site Product junction replaces checkboxes. Pricing logic stays in CREtelligent. Modular service class architecture.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-16 - INTERNAL CREtelligent Team Sync [Fathom].md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`, `commitments.md`, `Decision-Log.md`
+  - Key takeaways: Flow-to-Apex migration. Cost roll-up chain. Product-to-cost routing locked in. Scope creep pattern.
+
+- Source: `Meeting Notes/High Meadows/Internal/1-1s/2026-04-16 - Brady Mac 1-1.md`
+  - Pages updated: `wiki/projects/cetera/journal.md`
+  - Key takeaways: Not project work. Brady's calendar sync side project (ICS for enterprise OAuth-blocked tenants).
+
+- Source: `Meeting Notes/High Meadows/Internal/Office Hours/2026-04-14 - AI Office Hours.md`
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+  - Key takeaways: Lean skill collections. Obsidian as second brain. Granola preferred for meeting notes.
+
+### Articles (8 sources, clipped Apr 11-18)
+
+All articles already in `wiki/articles/` and cross-linked to topics/tools.
+
+- Source: `Second Brain/raw/articles/2026-04-18T074207-0500-New in Salesforce Developer Edition Agentforce Vibes IDE, Claude 4.5, MCP.md` → `wiki/articles/tdx-2026-agentforce-vibes-claude-mcp-dev-edition.md`
+- Source: `Second Brain/raw/articles/2026-04-18T074235-0500-Introducing Web Console (Beta) Code Where You Build on Salesforce.md` → `wiki/articles/salesforce-web-console-beta.md`
+- Source: `Second Brain/raw/articles/2026-04-18T074249-0500-Building AI Automations with Prompt Builder Structured Outputs.md` → `wiki/articles/prompt-builder-structured-outputs.md`
+- Source: `Second Brain/raw/articles/2026-04-18T080457-0500-Salesforce Model Context Protocol Explained How MCP Bridges AI and Your CRM.md` → `wiki/articles/salesforce-mcp-explained-sweep.md`
+- Source: `Second Brain/raw/articles/Andrej Karpathy Method Claude Skills + Obsidian Explained.md` → `wiki/articles/andrej-karpathy-method-claude-skills-obsidian.md`
+- Source: `Second Brain/raw/articles/Claude + Obsidian have to be illegal.md` → `wiki/articles/claude-obsidian-illegal.md`
+- Source: `Second Brain/raw/articles/New Agentforce Builder Released in Beta Our First Thoughts.md` → `wiki/articles/new-agentforce-builder-beta.md`
+- Source: `Second Brain/raw/articles/These 6 FREE Obsidian PLUGINS quietly replace $200 worth of PAID APPS.md` → `wiki/articles/obsidian-plugins-replace-paid-apps.md`
+
+- Patterns extracted: see separate pattern extraction pass below
+- Key takeaways: Full backlog of 12 meeting notes and 8 articles accounted for. All content was already in wiki pages from prior sessions. This entry closes the logging gap.
+
+
 ## [2026-04-21] ingest | MAI Dev DSU (Apr 21)
 - Source: `Meeting Notes/High Meadows/MAI/2026-04-21 - MAI Dev DSU.md`
 - Pages created: none
