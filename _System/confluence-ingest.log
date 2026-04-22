@@ -33,3 +33,20 @@
 **Skipped:** 0 (no unchanged pages to skip)
 **Errors:** Obsidian MCP timed out on initial reads (identity.yaml, project-mapping.md, existing log). Recovered on write attempts. Proceeded with all global spaces from Confluence rather than filtering by identity.yaml.
 **Notes:** Only 1 page across all 5 global spaces was modified in the last 7 days. Personal spaces excluded per task rules.
+
+## Sync Run: 2026-04-22
+
+**Spaces scanned:** CE (Cetera), LN (LNW), WB (William Blair), RW (Ritholtz Wealth), MP (MAI Post-MVP)
+**CQL query:** `type = page AND lastModified >= now("-7d") AND space.type = "global"`
+**Pages found (updated in last 7 days):** 4
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Growth Engine | CE | 275972100 | 2026-04-21 ~5:22 PM | Updated — wiki/f2-internal/CE/growth-engine.md (prev sync had last_confluence_update 2026-04-15, page updated since) |
+| Gifts Object Alignment | CE | 430964740 | 2026-04-21 ~6:16 PM | New — wiki/f2-internal/CE/gifts-object-alignment.md |
+| APP Address | CE | 430768132 | 2026-04-21 ~6:19 PM | New — wiki/f2-internal/CE/app-address.md |
+| Core Salesforce Usage Alignment | CE | 275382274 | 2026-04-21 ~6:12 PM | New — wiki/f2-internal/CE/core-salesforce-usage-alignment.md |
+
+**Skipped:** 0
+**Errors:** None
+**Notes:** All 4 updated pages were in the CE (Cetera) space. LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. Growth Engine page now includes new diagrams (referenced as Confluence attachments — image blobs not mirrored, noted as "See diagrams in Confluence" in mirror), updated design section with Lead Conversion Logic, and Data Model diagrams added since last sync.
