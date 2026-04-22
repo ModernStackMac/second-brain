@@ -1,9 +1,10 @@
 ---
 type: action-tracker
-updated: 2026-04-22T07:22:00-05:00
+updated: 2026-04-22T14:30:00-05:00
 ---
 
 # Action Tracker
+
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
@@ -18,11 +19,9 @@ updated: 2026-04-22T07:22:00-05:00
 | cetera | CET-117 | Build Transfer auto-creation flow from Financial Account | To Do | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-117) |
 | cetera | CET-118 | Configure Lightning Page layouts | To Do | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-118) |
 | cetera | CET-119 | Configure List Views, Queues, and Permissions | To Do | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-119) |
-| mai | MAI-1403 | Financial Account: Investment Account Page Updates | New | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1403) |
-| mai | MAI-1401 | Financial Account Creation: CSS restrictions | To Do | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1401) |
-| mai | MAI-1393 | Account Open: Remove OFAC Date requirement | New | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1393) |
+| mai | MAI-1385 | Contract Request - Standard Contract: fee entry bug | Active | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1385) |
+| mai | MAI-1354 | Operations Request - General: file upload | To Do | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1354) |
 | mai | MAI-1355 | Fund Assignment: Case Bugs | To Do | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1355) |
-| mai | MAI-1348 | New Fund Account: Fund Account Record Page Updates | To Do | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1348) |
 | lnw | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 | lnw | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
 | lnw | LNW-191 | Part 3: Visibility Enhancements POC - Family Level | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-191) |
@@ -43,10 +42,10 @@ updated: 2026-04-22T07:22:00-05:00
 | meadow | IP-126 | MSAL integration (backend) | Backlog | -- | -- | 2026-04-10 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-126/msal-integration-backend) |
 | meadow | IP-127 | MSAL integration (frontend) | Backlog | -- | -- | 2026-04-10 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-127/msal-integration-frontend) |
 | flex-dash | IP-8 | View As Feature | In Progress | Medium | -- | 2026-03-31 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-8/view-as-feature) |
-| flex-dash | IP-33 | Dashboard Metrics for Demos | Backlog | -- | -- | 2026-03-26 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-33/dashboard-metrics-for-demos) |
-| flex-dash | IP-1 | Dynamic Dashboard Filtering | Backlog | -- | -- | 2026-03-26 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-1/dynamic-dashboard-filtering) |
-| flex-dash | IP-34 | External Data Source | Backlog | -- | -- | 2026-03-26 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-34/external-data-source) |
-| flex-dash | IP-7 | Apex Class to set up FSC Test Data | Backlog | -- | -- | 2026-03-05 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-7/apex-class-to-set-up-financial-services-cloud-test-data) |
+| flex-dash | IP-33 | Dashboard Metrics for Demos | Backlog | Medium | -- | 2026-03-26 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-33/dashboard-metrics-for-demos) |
+| flex-dash | IP-1 | Dynamic Dashboard Filtering | Backlog | Medium | -- | 2026-03-26 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-1/dynamic-dashboard-filtering) |
+| flex-dash | IP-34 | External Data Source | Backlog | Medium | -- | 2026-03-26 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-34/external-data-source) |
+| flex-dash | IP-7 | Apex Class to set up FSC Test Data | Backlog | Medium | -- | 2026-03-05 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-7/apex-class-to-set-up-financial-services-cloud-test-data) |
 
 > **Routing note:** Cetera tickets use Jira project key `CET` and MAI tickets use `MAI`, but project-mapping.md still shows Jira Project Key=F2 for cetera and TBD for mai. Recommend updating the mapping file.
-> **This run (2026-04-22T07:22):** MAI gained 5 active stories (MAI-1403, MAI-1401, MAI-1393, MAI-1355, MAI-1348). Cetera (11), LNW (4), Meadow (15), Flex Dash (5) unchanged. No new archives.
+> **This run (2026-04-22T14:30):** MAI dropped 4 stories to Done (MAI-1403, MAI-1401, MAI-1393, MAI-1348), gained 2 new (MAI-1385, MAI-1354). Cetera (11), LNW (4), Meadow (15), Flex Dash (5) unchanged. 4 new archives written.

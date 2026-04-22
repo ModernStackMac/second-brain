@@ -3,21 +3,20 @@ type: stories-sync
 project: mai
 workspace: f2
 jira_project_key: MAI
-updated: 2026-04-22T07:22:00-05:00
-story_count: "5"
+updated: 2026-04-22T14:30:00-05:00
+story_count: "3"
 ---
 
 # MAI CRM Build — Jira Stories (F2)
 
+
 > Auto-synced by story-sync. Do not edit by hand -- changes are overwritten.
 
-## New
+## Active
 
-- [f2-MAI-1403] Financial Account: Investment Account Page Updates [Status:: New] [Priority:: Medium] [Updated:: 2026-04-22] · parent: -- · [Jira](https://f2strategy.atlassian.net/browse/MAI-1403)
-- [f2-MAI-1393] Account Open: Remove OFAC Date requirement for operations on Case submission [Status:: New] [Priority:: Medium] [Updated:: 2026-04-22] · parent: Investment Account Open Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1393)
+- [f2-MAI-1385] Contract Request - Standard Contract: Able to enter in a fee when "Included in investment management fee" is set to true [Status:: Active] [Priority:: Medium] [Updated:: 2026-04-22] · parent: Contract Request Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1385)
 
 ## To Do
 
-- [f2-MAI-1401] Financial Account Creation: CSS should not be able to create new fund accounts or investment accounts using the new financial account creation modal [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-22] · parent: Financial Accounts · [Jira](https://f2strategy.atlassian.net/browse/MAI-1401)
+- [f2-MAI-1354] Operations Request - General: Need to be able to upload a file to each request [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-22] · parent: Operations Request - General Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1354)
 - [f2-MAI-1355] Fund Assignment: Case Bugs [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-22] · parent: Fund Assignment Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1355)
-- [f2-MAI-1348] New Fund Account: Fund Account Record Page Updates [Status:: To Do] [Priority:: Medium] [Updated:: 2026-04-22] · parent: New Fund Account Workflow · [Jira](https://f2strategy.atlassian.net/browse/MAI-1348)
