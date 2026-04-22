@@ -1,10 +1,10 @@
 ---
 kanban-plugin: basic
 project: cetera
-updated: 2026-04-22T03:15:00-05:00
+updated: 2026-04-22T07:22:00-05:00
 ---
 
-# Cetera — Board
+# Cetera -- Board
 
 ## Backlog
 

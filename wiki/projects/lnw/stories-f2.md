@@ -3,7 +3,7 @@ type: stories-sync
 project: lnw
 workspace: f2
 jira_project_key: LNW
-updated: 2026-04-22T12:00:00-05:00
+updated: 2026-04-22T07:22:00-05:00
 story_count: 4
 ---
 
