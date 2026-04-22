@@ -1198,3 +1198,18 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Patterns extracted: none
 - Key takeaways: Cross-team co-sprint logistics locked in for a two-week sprint starting Thursday. Tue/Wed/Thu 9am ET dailies. Major technical thread: payload restructuring from product-specific to product-generic to support "opening the floodgates" (all products to Salesforce). Blake confirmed sprint scope (site verification fields + site product object mapping). Communication channel TBD (Teams vs Slack).
 
+
+## [2026-04-22] ingest | INTERNAL CREtelligent Team Sync (Apr 21)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-21 - INTERNAL CREtelligent Team Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended Week of Apr 20–26), `Decision-Log.md`, `commitments.md`
+- Commitments added: 3 (deploy auto-report object to sandbox, make sell price + client days editable in LWC, reorder LWC columns to match reference sheet); refreshed 1 (Sprint 3 cost roll-up → consolidated story 83417)
+- Decisions added: 2 (task-level fields → task group object; Site Product Cost subtask consolidated into story 83417)
+- Patterns extracted: none
+- Key takeaways: Site product migration progressing well (~10 fields, minimal automation). LWCs demoed and approved with minor edits (editable sell price/client days, column reorder). Two blockers remain: EnviroSite lookup (needs Wendell review) and auto report (needs payload + prod→sandbox deploy). Andrew consolidating stories and scheduling dedicated Wendell sessions for field migration review.
+
+## [2026-04-22] lint | Mid-week Health Check
+- Issues: 4 critical, 7 recommended
+- Critical: cetera Jira Project Key mismatch (mapping says `F2`, actual is `CET`); broken `[[internal/flex-dash/journal]]` in index.md (still unresolved from Sunday); MSS journal orphaned Contour entry outside week heading; LNW journal blank `last_meeting` frontmatter
+- Recommended: Harvey journal approaching 14-day staleness; flex-dash folder incomplete (no context/journal); obsidian-ecosystem.md deprecated `clients` reference; non-canonical `[[meadow-app]]` and `[[hms-capacity-planning]]` wikilinks in supabase.md, high-meadows.md, mai/context.md; MAI Jira key TBD in mapping but story-sync uses `MAI`; lefavi wiki folder not yet created
+- Report: wiki/lint-report-mid.md

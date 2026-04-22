@@ -206,3 +206,21 @@ Co-Sprint Coordination (Apr 21, w/ Andrew Porter, Chris Harrell, Travis Hickey, 
 
 *(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-21 - Stitch CREtelligent - Co-Sprint Coordination.md`)*
 
+
+
+Internal Team Sync (Apr 21, w/ Andrew Porter + Obed Labra-Pelaez): status check on site product migration, LWC demos, and blocked items.
+
+**Site product migration:** Mac working through the Apex classes and flows that reference proposal fields on the Site object. Hesitant to modify without expert validation — had Claude take a first pass at field definitions but wants Andrew and Wendell to review before proceeding. Andrew scheduling a dedicated 30-min session with Wendell to review which proposal-related fields move from Site to Site Product. Separate process needed for task-level fields, which move to a new "task group" object (not Site Product).
+
+**LWC demos:** Mac showed the site products table component — fully searchable by price, name, discounts. Same component reused at the opportunity level with client collapse buttons (filter by site, ESA, or discount level). Displays high-level cost and discount totals. Andrew requested two edits: (1) sell price and client days fields must be editable, (2) column ordering must match the reference sheet he provided via Slack.
+
+**Progress snapshot:** Object-level config complete. Site pricing and opportunity LWCs in solid state. EnviroSite task to site product lookup implemented (may need rollout adjustment). Migration scope is ~10 fields with minimal automation (create opportunity class, quote matrix, a few flows) — team in a good position.
+
+**Blocked items:**
+- EnviroSite to site product lookup — blocked pending Wendell discussion
+- Auto report — blocked on opportunity/site payload from CREtelligent dev team, but confirmed auto report will be built against the site object. Auto-report object and all related fields need to be pushed from production to sandbox.
+
+**Story consolidation:** Andrew merged the blocked "Site Product Cost" subtask into story 83417 (cost roll-ups and pricing updates). Subscription discount and per-line-item discount work grouped together in the same story.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-21 - INTERNAL CREtelligent Team Sync.md`)*
+
