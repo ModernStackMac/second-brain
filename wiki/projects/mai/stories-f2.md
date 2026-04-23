@@ -3,7 +3,7 @@ type: stories-sync
 project: mai
 workspace: f2
 jira_project_key: MAI
-updated: 2026-04-23T07:15:00-05:00
+updated: 2026-04-23T09:24:00-05:00
 story_count: "4"
 ---
 
