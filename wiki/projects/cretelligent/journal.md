@@ -2,11 +2,29 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-20
+last_meeting: 2026-04-23
 open_actions: 23
 ---
 
 # CREtelligent — Project Journal
+
+
+MuleSoft API Design Discussion (Apr 23, w/ Andrew Porter, Hesham Masoud) and Internal Team Sync (Apr 23, w/ Andrew Porter, Obed Labra-Pelaez, Michael DeGoll).
+
+**MuleSoft evaluation for Order Service rebuild:** Team evaluated whether rebuilding the Order Service handler in MuleSoft makes sense. Mac expressed skepticism: the integration is straightforward (accept payload, deserialize to custom model class, upsert Salesforce records) with no complex data transformations or multi-system routing. However, Andrew clarified the client has invested significantly in MuleSoft and wants to consolidate their integration platform there. Hesham estimated ~40 hours for the MuleSoft implementation (same pattern as existing POC but different objects; original two-way POC took ~60 hours). Key concern from Mac: error handling visibility on the Salesforce side when MuleSoft handles the integration. MuleSoft returns structured error responses to the caller (Radius/Order Service), but CREtelligent's external system would need its own error handling. Mac suggested potentially creating a Nebula logging framework call on the Salesforce side. Consensus: decision hinges on error handling architecture, updated payload specs from client, and whether consolidating all integrations in MuleSoft (avoiding hybrid) justifies additional timeline risk. Andrew to discuss with client using the sizing and trade-off info from this call.
+
+**Mac staffed on MuleSoft build:** Andrew asked Mac about interest in working alongside Hesham on the MuleSoft build. Mac confirmed some MuleSoft experience (simple flows, Salesforce polling, platform events) and expressed confidence that integration patterns are transferable. Flagged deployments as a potential concern, noted he could reach out to Michael DeGoll for help. Plan: Hesham at ~8 hrs/week (lightweight, already did POC), Mac getting allocation bump, Andrew providing guidance.
+
+**Cost roll-up direction correction:** Critical architecture fix: Mac had roll-ups going from cost worksheet directly to site, but the correct flow is cost worksheet to site product FIRST, then site product to site. Each site product should have a cost associated with it based on the product category. Mac acknowledged "I just did this backwards" and noted it will actually be easier with the corrected direction. Four cost fields on site product, triggers for insert/update/delete all created and tested. Test classes in progress.
+
+**Discount roll-up chain added:** New requirement surfaced from Obed's proposal doc gen work. Discount percent and discounted sales price fields come from the Order Service and need to roll up: site product to site (Mac, via Apex triggers) to opportunity (Obed). Andrew adding this as a child subtask to the site product pricing task, marked as blocked for client review at next standup. These are number fields populated via Apex, not formula fields.
+
+**Proposal doc gen progress:** Obed finishing up, had clarifying questions about fee roll-up (confirmed as roll-up cost formula, not a standard Salesforce roll-up) and discount fields. Andrew asked Obed to document ALL merge fields used in the proposal document with object + field API name. Refinement session targeting Monday for remaining blocked items.
+
+**Profit/margin formulas confirmed:** Profit margin formula already exists on site product (sell price minus cost divided by sell price). But the cost field on site product isn't populated yet by roll-ups. Once the corrected roll-up chain (cost worksheet to site product to site) is in place, the formula will work.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-23 - Cretelligent Mulesoft API Design Discussion.md`, `Meeting Notes/Stitch/Cretelligent/2026-04-23 - INTERNAL CREtelligent Team Sync.md`)*
+
 
 
 Andrew/Mac Sync (Apr 22) — quick cost worksheet architecture decision.

@@ -73,3 +73,6 @@ Source: [[cretelligent]] journal, Apr 20 2026
 
 **Update (2026-04-22):** Cost worksheet now references site product directly (no product lookup field). Auto-set logic populates site product when cost worksheet is created with certain fields. Roll-up chain confirmed: cost worksheet → site product → site. Costs aggregated by cost category at site level. May need intermediary object for roll-ups in future.
 *(Source: Meeting Notes/Stitch/Cretelligent/2026-04-22 - Andrew Mac Sync Stitch.md)*
+
+**Update (2026-04-23):** Critical correction to the roll-up direction. Mac had initially built triggers flowing cost worksheet directly to site. Correct flow is cost worksheet to site product FIRST, then site product to site. Each site product needs its own cost based on product category. Mac acknowledged "I just did this backwards" and noted the corrected direction is actually simpler. Four cost fields on site product with triggers for insert/update/delete all created and tested; test classes in progress. Additionally, discount percent and discounted sales price fields added to the roll-up chain: site product to site (Mac, Apex triggers) to opportunity (Obed). These are number fields populated via Apex, not formula fields.
+*(Source: Meeting Notes/Stitch/Cretelligent/2026-04-23 - INTERNAL CREtelligent Team Sync.md)*

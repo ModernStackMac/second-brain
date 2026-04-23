@@ -1345,3 +1345,49 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Decisions added: 2 (Order Service owns Quire folder creation, SF owns template/report; Quire folder ID at EnviroSite task group level)
 - Patterns extracted: none (Quire integration is project-specific, not a reusable pattern yet)
 - Key takeaways: Deep dive on Quire report generator integration. Folder creation is event-triggered (Order Service), polling-based status retrieval (hourly cron, no webhooks). ~67 products reviewed for Quire eligibility. Integration rebuild approach (Apex vs MuleSoft) TBD — session tomorrow. POID mapping clarified.
+
+
+## [2026-04-23] ingest | CREtelligent MuleSoft API Design Discussion (Apr 23)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-23 - Cretelligent Mulesoft API Design Discussion.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended Week of Apr 20-26)
+- Commitments added: 0 (all action items are team-level or Andrew-owned: discuss with client, wait for payload, coordinate endpoint redirect, determine error handling strategy)
+- Decisions added: 0 (evaluation meeting, no final decisions made)
+- Patterns extracted: none (MuleSoft vs Apex evaluation is project-specific at this stage)
+- Key takeaways: Team evaluated MuleSoft for Order Service rebuild. Hesham estimates ~40 hours. Mac skeptical (simple payload-to-record flow doesn't warrant MuleSoft complexity) but client wants to maximize MuleSoft investment and avoid hybrid integrations. Key concern: error handling visibility on the Salesforce side. Decision pending updated payload specs and client conversation.
+
+## [2026-04-23] ingest | INTERNAL CREtelligent Team Sync (Apr 23)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-23 - INTERNAL CREtelligent Team Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended Week of Apr 20-26), `commitments.md` (2 CRE items), `Decision-Log.md`, `wiki/patterns/cost-rollup-hierarchy.md`, `wiki/patterns/site-product-joiner.md`
+- Commitments added: 2 (rework cost roll-up trigger direction; add discount percent + discounted sales price roll-ups)
+- Decisions added: 3 (cost roll-up direction corrected CW->SP->Site; discount roll-up chain SP->Site->Opp; Mac+Hesham MuleSoft collaboration if approved)
+- Patterns extracted: updated cost-rollup-hierarchy and site-product-joiner with corrected direction and discount fields
+- Key takeaways: Critical architecture fix: Mac had cost roll-ups going directly to site, but correct flow is cost worksheet to site product first, then site product to site. Mac acknowledged the mistake and noted the corrected direction is actually simpler. Discount roll-up chain added (site product to site to opportunity). Mac staffed for potential MuleSoft build alongside Hesham (~8 hrs/week each).
+
+## [2026-04-23] ingest | MAI Dev DSU (Apr 23)
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-23 - MAI Dev DSU.md`
+- Pages created: none
+- Pages updated: `wiki/projects/mai/journal.md` (extended Week of Apr 21-26), `commitments.md` (1 MAI item), `Decision-Log.md`
+- Commitments added: 1 (investigate Jacob/Kovoski bank account creation issue)
+- Decisions added: 1 (prospect org-wide sharing updated from public read-only to public read-write)
+- Patterns extracted: none
+- Key takeaways: Mac completed 6 tickets yesterday, strong velocity. Fixed CSS perm set (1376) by adding lead read access. Prospect sharing updated to public read-write. Critical discovery: Nima has excessive permissions in UAT, invalidating Michael's recent test scripts. Two demos tomorrow (retirement contracts, sales process). IPS flow issues surfaced (save/submit button discrepancy, duplicate buttons). Contract exhibit cleanup needed.
+
+## [2026-04-23] ingest | High Meadow Labs (Apr 22)
+- Source: `Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md`
+- Pages created: `wiki/projects/internal/high-meadow-labs/journal.md`
+- Pages updated: `wiki/index.md`
+- Commitments added: 0 (action items are team-level, none pass Mac-owner 4-gate: "team to build POC", "team to define requirements", etc.)
+- Decisions added: 0 (kickoff discussion, decisions formalized in Apr 23 follow-up)
+- Patterns extracted: none (concepts discussed but not yet implemented)
+- Key takeaways: HMS internal AI product initiative launched. Strategy: augment open-source models with industry-specific data for wealth management clients. Compliance is the key value prop (AI restrictions in MSAs). Local hosting on Mac Studio for POC, cloud for production. HMS owns IP, client controls execution environment.
+
+## [2026-04-23] ingest | High Meadow Labs 0.1 (Apr 23)
+- Source: `Meeting Notes/High Meadows/Internal/Product Calls/2026-04-23 - High Meadow Labs 0.1.md`
+- Pages created: `wiki/patterns/multi-agent-voting.md`
+- Pages updated: `wiki/projects/internal/high-meadow-labs/journal.md` (consolidated with Apr 22), `wiki/index.md`, `Decision-Log.md`
+- Commitments added: 0 (Mac and Steven assigned as "builders" but no concrete next-step verb phrase passing the 4-gate)
+- Decisions added: 2 (regulatory compliance as first POC use case; team split into idea group and builder group)
+- Patterns extracted: 1 (multi-agent-voting pattern for AI consistency)
+- Key takeaways: Regulatory compliance selected as first POC use case (more "cut and dry" than financial opinions). Multi-agent voting pattern discussed as solution for AI consistency, already being used by SWAC and others. Team split into idea guys (Brian, Sean) and builders (Shaun, Mac, David, Steven). Strong push from Shaun to move faster and stop getting academic. Catherine and June to provide experiential industry knowledge for the compliance agent.

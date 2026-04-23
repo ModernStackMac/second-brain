@@ -84,3 +84,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-22):** New pattern page added: [[uat-deployment-coordination]] — Shared deployment log to prevent cross-developer UAT overwrites. Applied in MAI.
+
+
+**Note (2026-04-23):** New project page: [[internal/high-meadow-labs/journal]] — HMS internal AI product initiative. Training specialized models for wealth management, regulatory compliance POC selected as first use case. New pattern page: [[multi-agent-voting]] — Run multiple AI agents in parallel and surface results only on consensus. Addresses LLM consistency challenge for high-stakes outputs.

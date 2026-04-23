@@ -2,11 +2,31 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-22
+last_meeting: 2026-04-23
 open_actions: 22
 ---
 
 # MAI — Project Journal
+
+
+Dev DSU (Apr 23) -- high ticket velocity, permission fixes, and demo prep.
+
+**Mac's progress:** Completed six tickets yesterday (1348, 1403, 1401, 1393, 1354, 1385, mostly simple fixes and UI stories). Today: fixed public group that didn't exist (1386), resolved CSS permission set issue (1376) by adding read access to leads which was blocking attachment creation, deployed fee addendum updates to UAT, two more tickets in queue.
+
+**Prospect sharing fix:** Non-owners had read-only access to prospects despite requirements stating prospects should not be limited by practice. Mac updated the org-wide sharing setting from public read-only to public read-write. Michael confirmed this is fine: "do this and see if they complain."
+
+**Bank account creation issue:** Jacob/Kovoski ticket: Mac logged in as Zim and created bank accounts successfully, suggesting a data or permission issue specific to the user. Assigning back for further investigation.
+
+**Critical permission discovery:** Federico found that Nima has excessive permissions in UAT (operations permission set). Michael had assumed this was intentional for testing. This invalidates Michael's recent test scripts since he was testing against incorrect permissions. Must be corrected before further testing.
+
+**Demo schedule:** Two demos tomorrow: retirement contracts and sales process. Aisha explicitly requested no UAT deployments during demo sessions. UAT deployment freeze from earlier in the week lifted for everything except demo windows. Sales process demo looking good per Aisha's testing.
+
+**IPS flow issues:** Rodrigo found save/submit button behavior differs between dev and UAT. Michael taking ownership to investigate. Also identified duplicate buttons (review exception and review reception exception request) calling the same flow. Vincent found IPS custodian value issue on 1329, handing back to Brian for correction.
+
+**Contract exhibit issues:** Vincent identified that 338 consulting service agreement doesn't create a contract exhibit, and a "new retirement contract" record type appears with missing details (likely remnants from old setup). Michael investigating both.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-04-23 - MAI Dev DSU.md`)*
+
 
 
 ## Week of Apr 21–26, 2026 (continued)
