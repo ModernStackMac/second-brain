@@ -2,11 +2,35 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 
+last_meeting: 2026-04-22
 open_actions: 4
 ---
 
 # LNW — Project Journal
+
+
+## Week of Apr 20–26, 2026
+
+June/Sam LNW Sync (Apr 22) — entity structure feedback, family tree bug, and subject field limitation.
+
+**Entity structure correction:** Sam flagged that the current ERD incorrectly focuses on household/institution ownership. The model should prioritize LLCs, trusts, and people as core entities with clear ownership percentages (e.g., LLC owned 48.5% by Red Trust, 48.5% by Yellow Trust, each trust owned 100% by a person). Households can be ignored for now. Sam sending Mac a screenshot/document of the correct structure as reference. Mac committed to completing the entity work before month-end (over the weekend if needed).
+
+**Family tree relations bug:** Critical issue discovered — family tree view doesn't display relations (institutions/households) for records without associated meeting notes. Root cause: component was designed to filter on activities with meeting notes, but users expect all activities regardless of meeting note status. Mac had added a filter button for this, but the underlying logic needs rework. June and Sam to discuss implications for the Outlook add-in email logging workflow.
+
+**Subject field picklist limitation:** Users requesting free text instead of dropdown for the subject field. Mac identified a hard technical constraint: the subject field is a picklist with a 1,000-value limit. Allowing free text would create a new picklist value per entry, eventually breaking activity creation. Team needs to solution this before implementing.
+
+**May visibility POC:** Sam emphasized May is critical for the visibility POC — will require significant work from Mac starting in May. Roughly six weeks of availability before a new large project potentially pulls Mac away.
+
+**LucidChart access:** Mac's license status unclear (Sean may have revoked it). Sam offered to share diagrams via F2 email. Mac following up with Sean.
+
+**Decisions:**
+- Entity model: prioritize LLCs, trusts, people — ignore households for now
+- Subject field: no free text until picklist limit is solved
+
+*(Source: `Meeting Notes/High Meadows/LNW/2026-04-22 - June Sam LNW Sync.md`)*
+
+---
+
 
 > High Meadows engagement via F2 Strategy. Jira workspace `f2strategy.atlassian.net`, project key `LNW`.
 >

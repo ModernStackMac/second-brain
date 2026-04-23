@@ -6,6 +6,22 @@ updated: 2026-04-21
 
 # Modern Stack Systems — Journal
 
+
+Impromptu Sync (Apr 22) — Andrew demoed Open Effigy, pitched High Meadows Labs, career/income strategy chat.
+
+**Open Effigy:** Andrew built an AI character creation tool that combines personality traits from multiple people using RAG (YouTube transcripts + text files into local vector DB). Characters can interact with each other. Exports agents in OpenCLAW-compatible format. Built for entertainment/open-source release, not commercial viability. Could be augmented with Eleven Labs voice and video.
+
+**High Meadows Labs pitch:** Andrew pitching his CEO on a new business unit called "High Meadows Labs" focused on training AI models for wealth management compliance. Huge high-net-worth client base (hundreds of millions under management). Emphasis on compliance management over investment optimization. Andrew proposing retainer + executive position. Dia (Andrew's wife) has compliance/finance background that's directly relevant — potential exec role in Labs.
+
+**Income/career strategy:** Andrew approaching ~$100k in last two months, working 12-hr days but with flex (golf Fridays). Mac billing 105-106 hrs/week across High Meadows (full-time allocation + side projects), Mike's company (6-7 hrs/day), and random work. Mac pushing harder than usual — saving for house build, wants to cash flow some of it. Year-to-date W-2 around $100k+ with bonuses; projecting $260k+ from W-2 alone. Both targeting $500k/year while maintaining flexibility — the challenge is converting from high-paying job to sustainable business model.
+
+**AI business opportunity discussion:** Andrew believes now is the time to build — AI will create millionaires. Mac pushes back: big labs will recreate or acquire. Andrew counters with historical precedent (Google emerged despite Lycos/Yahoo/AltaVista). Both agree the real opportunity is innovating on SDLC processes specifically for AI — not just using AI to do old things in old ways. That intersection is where the billion-dollar ideas live.
+
+**Kathleen's playground app:** Local TV interview tomorrow. 3,500 downloads, 10-30 daily active users. Andrew's localization work attracting European users (Croatia, France actively adding content). Worldwide data from open stream.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-04-22 - Impromptu Google Meet - Andrew Mac.md`)*
+
+
 ## Week of Apr 21, 2026
 
 Blink Data Cloud Advisory (Apr 21) — intro call with Vuk Stajic and Raphi Katz from Blink (UK payments company). New advisory engagement scoped.

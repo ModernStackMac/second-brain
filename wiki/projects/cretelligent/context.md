@@ -46,3 +46,18 @@ Three-step fallback for required picklist/complex logic:
 - [[json-deserialize-refactor]] — pattern for Connect API payload parsing
 - [[site-product-joiner]] — junction object pricing pattern
 - [[cost-rollup-hierarchy]] — multi-category cost aggregation pattern (survey, automated report, valuation, zoning)
+
+
+## Quire Integration Architecture (added 2026-04-22)
+
+Report generator integration for environmental assessments and "human in the loop" products (~67 products reviewed, subset requires Quire).
+
+**Data flow:** Order/project goes active → Order Service auto-creates Quire project folder (event-triggered, not button) → folder ID stored at EnviroSite task group level in Salesforce → user selects template via dropdown → "Generate Quire Report" button creates report from template → Quire tracks progress/milestones → polling (hourly cron in Order Service, no webhooks) pulls status back to Salesforce → "ready for review" triggers senior reviewer task → completed report sent to Salesforce for client delivery.
+
+**Ownership split:** Order Service owns folder creation (reusing existing logic). Salesforce owns template selection, report creation, and manual fail-safe button. Integration rebuild TBD: evaluating Salesforce Apex vs MuleSoft approach.
+
+**Key identifiers:** Portfolio Order ID (POID) = 9-10 char identifier with dashes from bulk load data, maps to opportunities. Quire object is a child of the order object, no direct mapping to Salesforce opportunities.
+
+## Cost Worksheet Architecture (added 2026-04-22)
+
+Cost worksheet references site product directly (no product lookup field). Auto-set logic populates site product when cost worksheet is created with certain fields. Roll-up chain: cost worksheet → site product → site. Costs aggregated by cost category at site level (not by individual product). May need intermediary object for roll-ups in future.

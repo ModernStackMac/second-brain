@@ -8,6 +8,34 @@ open_actions: 23
 
 # CREtelligent — Project Journal
 
+
+Andrew/Mac Sync (Apr 22) — quick cost worksheet architecture decision.
+
+**Cost worksheet product reference:** Eliminated the product lookup field on cost worksheet. Instead, using "site product" as the reference field. Mac implementing logic to auto-set the site product when the cost worksheet is created with certain fields populated. All roll-ups flow: cost worksheet → site product → site. Costs aggregated by cost category at the site level (not by individual product). May need an intermediary object for roll-ups in the future, but proceeding with direct site product approach for now.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-22 - Andrew Mac Sync Stitch.md`)*
+
+
+
+Weekly Refinement and Planning (Apr 22) — deep dive on Quire report generator integration with Blake, Andrew, Wendell, Jeff, Travis, and Obed.
+
+**Report generator workflow:** When an order/project containing Quire products goes active, the system auto-creates a Quire project folder (recently changed from button-triggered to event-triggered by Travis). Folder structure uses a top-level portfolio order ID format. System selects the appropriate report template via formula, creates the project folder in Quire, and initializes the template document. During creation, milestones and progress percentages are tracked and sent back to Salesforce for operations monitoring. Upon completion, the final report is sent back to Salesforce for client delivery.
+
+**Architecture decisions:** Order Service creates Quire folders automatically when projects go active (reusing existing well-established logic — path of least resistance). Salesforce retains a manual "Create Quire Folder" button as fail-safe. Template selection and report creation logic owned by Salesforce. Quire folder ID consumed and stored at the EnviroSite task group level. A "Generate Quire Report" button launches from the task group.
+
+**Quire data retrieval:** Polling-based (cron job in Order Service, currently hourly) since Quire has no API webhooks. Pulls data when reports reach "ready for review" or "completed" status. Three interim data types identified: report status, editing time by user, editing time by date — team investigating API availability.
+
+**Senior reviewer notifications:** When a report hits "ready for review," a task is created for the senior reviewer (EPM2 task set to pending, emails to project coordinator, report preparer, PM, and senior reviewer). Salesforce will create a similar task on EnviroSite.
+
+**Product mapping:** ~67 products reviewed. Products with "human in the loop" require Quire (environmental site assessments, etc.). Zoning, Boundary Survey, Commercial Appraisal do not use Quire. Quire UI elements placed at the EnviroSite task level in Salesforce.
+
+**Integration approach TBD:** Team spending time tomorrow reviewing whether to rebuild the Order Service custom integration entirely in Salesforce Apex vs. using MuleSoft for data conversion. Net-new build either way.
+
+**Terminology/mapping cleanup:** Portfolio Order ID (POID) is the 9-10 char identifier with dashes from bulk load data, maps to opportunities in Salesforce. Quire object should NOT map directly to opportunities. Mapping document being created to clarify naming inconsistencies.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-22 - Stitch CREtelligent Weekly Refinement and Planning.md`)*
+
+
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
 
 ---

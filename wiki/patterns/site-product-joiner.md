@@ -81,3 +81,7 @@ CREtelligent is implementing SiteProduct to track multiple environmental service
 
 ---
 *Last updated: 2026-04-10*
+
+
+**Update (2026-04-22):** Cost worksheet now uses site product as the direct reference field instead of a product lookup. Auto-set logic populates the site product when cost worksheet is created. Sell price and client days fields confirmed editable in the LWC. Column ordering to match reference sheet.
+*(Source: Meeting Notes/Stitch/Cretelligent/2026-04-22 - Andrew Mac Sync Stitch.md)*

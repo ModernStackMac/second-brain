@@ -69,3 +69,7 @@ Source: [[cretelligent]] journal, Apr 20 2026
 ---
 *Last updated: 2026-04-20*
 *Sources: Meeting Notes/Stitch/Cretelligent/2026-04-20 - Internal CREtelligent Weekly Sync [Fathom].md*
+
+
+**Update (2026-04-22):** Cost worksheet now references site product directly (no product lookup field). Auto-set logic populates site product when cost worksheet is created with certain fields. Roll-up chain confirmed: cost worksheet → site product → site. Costs aggregated by cost category at site level. May need intermediary object for roll-ups in future.
+*(Source: Meeting Notes/Stitch/Cretelligent/2026-04-22 - Andrew Mac Sync Stitch.md)*

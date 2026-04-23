@@ -2,11 +2,36 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-21
+last_meeting: 2026-04-22
 open_actions: 22
 ---
 
 # MAI — Project Journal
+
+
+## Week of Apr 21–26, 2026 (continued)
+
+Dev DSU (Apr 22) — retirement contracts gap, production data integrity, training schedule, and comprehensive ticket review.
+
+**Retirement contracts gap:** Aisha has an upcoming call with the retirement team to initiate contracts at the business account level. Critical missing info: authorized person details on business accounts, signer-to-business-account relationships, and whether contacts need to be created from business accounts. No contacts were migrated for business accounts, creating a significant gap. Michael noted business accounts were never discussed in detail during the project. Aisha scheduling a 30-min call with David and Corey to gather requirements.
+
+**Production data integrity:** Data loaded from Dynamics into Prod and UAT is offset by hours because correct org time was never set. A wipe and reload is required. Steven's sharing model will need review — Aisha scheduling a call with Santi to scope impact.
+
+**Training and deployment freeze:** One more training session tomorrow. Deployment freeze tomorrow 12:30–3:00 PM. Next week marks the start of process training with significantly increased activity — production deployments will be very limited.
+
+**Ticket progress:** Federico on phone account tickets 13.32/13.41, expecting to finish today. Rodrigo deployed 1364 to UAT, finished 1280, working 1368. Mac completed 1382, 1360, 1375, 1376, 1369, 1379 yesterday, knocking out low-hanging fruit today. Steven catching up on other projects — plans to fix SOQL 101 error by moving sharing logic to async.
+
+**Ticket reviews:** Case Status Customization (12.04) blocked, no requirements. File Upload LWC confirmed for in-LWC multi-file support. Duplicate Detection (12.04) passes (household dupes not detected, person accounts are). Picklist Issues (1329) easy fix, two picklists found. Visibility Filters (1312) using old picklist values, needs update. Financial Account Type (1292) field reference confusion resolved. Quick passes on 997, 11.96, 1327, 1333, 13.47, 13.51.
+
+**Post-go-live cleanup epic:** Federico raised feedback from Brian Gallagher about notes field placement on financial accounts. Valid but non-critical — Aisha creating a "Go Live Cleanup" epic.
+
+**Decisions:**
+- Create "Go Live Cleanup" epic for post-launch items (notes field placement, etc.)
+- Retirement contracts require discovery call before any build — business account contacts never scoped
+- Production wipe and reload needed to fix Dynamics time offset
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-04-22 - MAI Dev DSU.md`)*
+
 
 ## Week of Apr 21, 2026
 

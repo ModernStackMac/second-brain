@@ -128,3 +128,12 @@ append_only: true
 
 | 2026-04-21 | CREtelligent | Task-level fields migrate to new "task group" object (not Site Product) — separate review process from proposal field migration | Proposal fields → Site Product, task fields → Task Group; Andrew scheduling Wendell session for proposal fields first | Andrew | meeting|2026-04-21 - INTERNAL CREtelligent Team Sync | Wendell review outcome |
 | 2026-04-21 | CREtelligent | Site Product Cost subtask consolidated into story 83417 (cost roll-ups and pricing updates); subscription discount + per-line-item discount grouped together | Avoids orphaned subtasks; keeps all cost/pricing work in one trackable story | Andrew | meeting|2026-04-21 - INTERNAL CREtelligent Team Sync | — |
+
+| 2026-04-22 | lnw | Entity model: prioritize LLCs, trusts, people as core entities; ignore households for now | Sam flagged current ERD incorrectly focuses on household/institution ownership. Correct model shows LLC ownership percentages flowing through trusts to people. |
+| 2026-04-22 | lnw | Subject field: no free text until picklist 1,000-value limit is solved | Users want free text but allowing it would create a new picklist value per entry, eventually breaking activity creation. |
+| 2026-04-22 | cretelligent | Cost worksheet uses site product reference (no product lookup); auto-set via logic on creation | Navigating the object hierarchy for product lookup would be too cumbersome. All roll-ups flow cost worksheet → site product → site by cost category. |
+| 2026-04-22 | cretelligent | Order Service creates Quire folders (not Salesforce); Salesforce owns template selection and report creation | Reuses existing well-established Order Service logic (path of least resistance). Salesforce retains manual button as fail-safe. |
+| 2026-04-22 | cretelligent | Quire folder ID stored at EnviroSite task group level in Salesforce | Quire UI elements placed at task level; folder and report buttons launch from task group. |
+| 2026-04-22 | mai | Create "Go Live Cleanup" epic for post-launch items | Notes field placement on financial accounts is valid feedback but non-critical for go-live. |
+| 2026-04-22 | mai | Retirement contracts require discovery call before build; business account contacts never scoped | No contacts migrated for business accounts. Authorized person details, signer relationships all unknown. |
+| 2026-04-22 | mai | Production wipe and reload needed to fix Dynamics data time offset | Data loaded from Dynamics is offset by hours because correct org time was never configured. |

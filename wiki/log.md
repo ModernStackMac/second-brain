@@ -1299,3 +1299,49 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Critical: cetera Jira Project Key mismatch (mapping says `F2`, actual is `CET`); broken `[[internal/flex-dash/journal]]` in index.md (still unresolved from Sunday); MSS journal orphaned Contour entry outside week heading; LNW journal blank `last_meeting` frontmatter
 - Recommended: Harvey journal approaching 14-day staleness; flex-dash folder incomplete (no context/journal); obsidian-ecosystem.md deprecated `clients` reference; non-canonical `[[meadow-app]]` and `[[hms-capacity-planning]]` wikilinks in supabase.md, high-meadows.md, mai/context.md; MAI Jira key TBD in mapping but story-sync uses `MAI`; lefavi wiki folder not yet created
 - Report: wiki/lint-report-mid.md
+
+
+## [2026-04-23] ingest | June/Sam LNW Sync (Apr 22)
+- Source: `Meeting Notes/High Meadows/LNW/2026-04-22 - June Sam LNW Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/lnw/journal.md` (new Week of Apr 20-26), `commitments.md` (2 LNW items: entity structure month-end deadline, LucidChart license follow-up), `Decision-Log.md`
+- Commitments added: 2 (entity structure before month-end; LucidChart license follow-up with Sean); refreshed 1 (ERD iteration → entity structure with LLCs/trusts/people priority)
+- Decisions added: 2 (entity model prioritizes LLCs/trusts/people over households; subject field no free text until picklist limit solved)
+- Patterns extracted: none
+- Key takeaways: Entity structure work due before month-end. Sam corrected the ERD focus from households to LLCs/trusts/people with ownership percentages. Critical family tree view bug: records without meeting notes don't show relations. May is critical for visibility POC. Subject field picklist has a hard 1,000-value limit blocking free text requests.
+
+## [2026-04-23] ingest | MAI Dev DSU (Apr 22)
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-22 - MAI Dev DSU.md`
+- Pages created: none
+- Pages updated: `wiki/projects/mai/journal.md` (extended Week of Apr 21-26), `Decision-Log.md`
+- Commitments added: 0 (action items assigned to Aisha, Steven, Vincent, Brian, Federico — none pass Mac owner gate)
+- Decisions added: 3 (Go Live Cleanup epic for post-launch items; retirement contracts require discovery before build; production wipe and reload for Dynamics time offset)
+- Patterns extracted: none
+- Key takeaways: Retirement contracts surfaced a major scoping gap — business account contacts were never migrated or discussed. Production data has a time offset from Dynamics. Mac completed 6 tickets yesterday, continuing low-hanging fruit today. Deployment freeze tomorrow 12:30-3 PM. Next week: process training ramps up, production deploys very limited.
+
+## [2026-04-23] ingest | Impromptu Google Meet - Andrew Mac (Apr 22)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-22 - Impromptu Google Meet - Andrew Mac.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md` (extended Week of Apr 21)
+- Commitments added: 0 (no concrete Mac-owned action items passing all gates)
+- Decisions added: 0
+- Patterns extracted: none
+- Key takeaways: Andrew pitched High Meadows Labs (wealth management compliance AI). Both Mac and Andrew targeting $500k/year sustainable income. Key insight: real AI opportunity is innovating SDLC processes for AI, not just using AI to do old things. Kathleen's playground app at 3,500 downloads with growing international users.
+
+## [2026-04-23] ingest | Andrew/Mac Sync Stitch (Apr 22)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-22 - Andrew Mac Sync Stitch.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended current week), `wiki/projects/cretelligent/context.md` (cost worksheet architecture), `commitments.md` (2 items), `Decision-Log.md`, `wiki/patterns/cost-rollup-hierarchy.md`, `wiki/patterns/site-product-joiner.md`
+- Commitments added: 2 (implement site product ref field with auto-set logic; build cost worksheet roll-ups)
+- Decisions added: 1 (cost worksheet uses site product reference, no product lookup; auto-set on creation)
+- Patterns extracted: updated cost-rollup-hierarchy and site-product-joiner patterns with new cost worksheet → site product direct reference
+- Key takeaways: Key architecture decision: cost worksheet references site product directly (skipping product lookup). Roll-up chain confirmed: cost worksheet → site product → site by cost category. May need intermediary object later.
+
+## [2026-04-23] ingest | Stitch CREtelligent Weekly Refinement and Planning (Apr 22)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-22 - Stitch CREtelligent Weekly Refinement and Planning.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended current week), `wiki/projects/cretelligent/context.md` (Quire integration architecture), `commitments.md` (2 items), `Decision-Log.md`
+- Commitments added: 2 (define SF field names for Quire status consumption; investigate MuleSoft vs Apex for Order Service rebuild)
+- Decisions added: 2 (Order Service owns Quire folder creation, SF owns template/report; Quire folder ID at EnviroSite task group level)
+- Patterns extracted: none (Quire integration is project-specific, not a reusable pattern yet)
+- Key takeaways: Deep dive on Quire report generator integration. Folder creation is event-triggered (Order Service), polling-based status retrieval (hourly cron, no webhooks). ~67 products reviewed for Quire eligibility. Integration rebuild approach (Apex vs MuleSoft) TBD — session tomorrow. POID mapping clarified.
