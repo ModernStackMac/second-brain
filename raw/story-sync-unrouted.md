@@ -59,3 +59,7 @@
 [2026-04-22T11:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
 [2026-04-22T11:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow (15 active) and Flex Dash (5 active) stories synced. MSS workspace: 0 active (High Meadow Solutions team returned 0 issues).
 [2026-04-22T11:15:00-05:00] NEW: MAI-1292 added to active tracker (Developer Review, parent: Account Type picklist value updates).
+
+[2026-04-23T07:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-04-23T07:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow dropped from 15 to 1 active (14 completed: Entra SSO + Supabase migration + Clockify sunset + deployment stories all Done). Flex Dash steady at 5 active.
+[2026-04-23T07:15:00-05:00] CHANGE: MAI lost 3 stories (MAI-1385, MAI-1354, MAI-1355 removed from active filter). Gained 3 new stories (MAI-1404, MAI-1274, MAI-1349). Meadow archived 14 completed stories.
