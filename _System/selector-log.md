@@ -51,3 +51,6 @@
 
 - [2026-04-23 14:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-04-23 - MAI Dev DSU.md · confidence: high · match: keyword+attendee (title contains "MAI", attendees Aisha/Michael/Federico/Rodrigo/Vincent all MAI key contacts)
 - [2026-04-23 14:30 CT] SCHEDULED INGEST: Scanned 17 Fathom meetings (2026-04-20 to 2026-04-23). 1 new, 16 already exist in Meeting Notes/. 0 unrouted. 1 write performed.
+
+- [2026-04-23 14:30 CT] "Andrew / Hesham / Mac - Cretelligent Mulesoft API Design Discussion" → Meeting Notes/Stitch/Cretelligent/2026-04-23 - Cretelligent Mulesoft API Design Discussion.md · confidence: high · match: attendee+keyword
+- [2026-04-23 14:30 CT] "High Meadow Labs" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md · confidence: high · match: keyword (all HM employees, internal product strategy, "high meadows labs")
