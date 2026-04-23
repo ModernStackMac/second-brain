@@ -57,3 +57,5 @@
 
 - [2026-04-23 18:00 CT] "INTERNAL: CREtelligent Team Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-23 - INTERNAL CREtelligent Team Sync.md · confidence: high · match: attendee+keyword
 - [2026-04-23 18:00 CT] "High Meadow Labs" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md · confidence: high · match: keyword
+
+- [2026-04-23 19:15 CT] "High Meadow Labs 0.1" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-23 - High Meadow Labs 0.1.md · confidence: high · match: keyword (title "High Meadow Labs" + all HM-internal attendees + product strategy content, routed to Product Calls subfolder per Internal routing rules)
