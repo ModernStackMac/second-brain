@@ -63,3 +63,8 @@
 [2026-04-23T07:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
 [2026-04-23T07:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow dropped from 15 to 1 active (14 completed: Entra SSO + Supabase migration + Clockify sunset + deployment stories all Done). Flex Dash steady at 5 active.
 [2026-04-23T07:15:00-05:00] CHANGE: MAI lost 3 stories (MAI-1385, MAI-1354, MAI-1355 removed from active filter). Gained 3 new stories (MAI-1404, MAI-1274, MAI-1349). Meadow archived 14 completed stories.
+
+[2026-04-23T13:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-04-23T13:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active.
+[2026-04-23T13:15:00-05:00] ARCHIVE: CET-114, CET-115, CET-116, CET-117, CET-118, CET-119 removed from active tracker (no longer in Jira active filter). Stubs written to raw/archived-stories/cetera/.
+[2026-04-23T13:15:00-05:00] ARCHIVE: MAI-1349, MAI-1274 removed from active tracker (no longer in Jira active filter). Stubs written to raw/archived-stories/mai/.
