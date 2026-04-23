@@ -3,17 +3,13 @@ type: stories-sync
 project: mai
 workspace: f2
 jira_project_key: MAI
-updated: 2026-04-23T17:15:00-05:00
-story_count: "2"
+updated: 2026-04-23T15:23:00-05:00
+story_count: "1"
 ---
 
 # MAI CRM Build — Jira Stories (F2)
 
 > Auto-synced by story-sync. Do not edit by hand -- changes are overwritten.
-
-## To Do
-
-- [f2-MAI-1373] FA: Mortgages Updates [Status:: New] [Priority:: High] [Updated:: 2026-04-23] · parent: Financial Accounts · [Jira](https://f2strategy.atlassian.net/browse/MAI-1373)
 
 ## In Progress
 

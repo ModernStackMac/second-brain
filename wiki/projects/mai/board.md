@@ -1,14 +1,13 @@
 ---
 kanban-plugin: basic
 project: mai
-updated: 2026-04-23T17:15:00-05:00
+updated: 2026-04-23T15:23:00-05:00
 ---
 
 # MAI CRM Build -- Board
 
 ## Backlog
 
-- MAI-1373 FA: Mortgages Updates 🔴
 
 ## Up Next
 
