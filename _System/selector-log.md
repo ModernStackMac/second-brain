@@ -39,3 +39,10 @@
 - [2026-04-22 11:15 CT] SCHEDULED INGEST: Scanned 10 Fathom meetings (2026-04-19 to 2026-04-22). All 10 already exist in Meeting Notes/. 0 new, 0 unmatched. No writes performed.
 
 - [2026-04-22 09:00 CT] "Impromptu Google Meet Meeting" → Meeting Notes/Modern Stack Systems/2026-04-22 - Impromptu Google Meet - Andrew Mac.md · confidence: high · match: attendee
+
+- [2026-04-23 00:15 CT] "Stitch // CREtelligent - Weekly Refinement & Planning" → Meeting Notes/Stitch/Cretelligent/2026-04-22 - Stitch CREtelligent Weekly Refinement and Planning.md · confidence: high · match: keyword
+- [2026-04-23 00:15 CT] "June/Sam LNW sync" → Meeting Notes/High Meadows/LNW/2026-04-22 - June Sam LNW Sync.md · confidence: high · match: keyword
+- [2026-04-23 00:15 CT] "Andrew/Mac Sync Stitch" → Meeting Notes/Stitch/Cretelligent/2026-04-22 - Andrew Mac Sync Stitch.md · confidence: high · match: keyword
+- [2026-04-23 00:15 CT] "High Meadow Labs" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md · confidence: medium · match: keyword
+- [2026-04-23 00:15 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-04-22 - MAI Dev DSU.md · confidence: high · match: keyword
+- [2026-04-23 00:15 CT] "AI Office Hours" → Meeting Notes/High Meadows/Internal/Office Hours/2026-04-21 - AI Office Hours.md · confidence: high · match: keyword
