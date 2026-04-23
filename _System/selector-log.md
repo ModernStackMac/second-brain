@@ -54,3 +54,6 @@
 
 - [2026-04-23 14:30 CT] "Andrew / Hesham / Mac - Cretelligent Mulesoft API Design Discussion" → Meeting Notes/Stitch/Cretelligent/2026-04-23 - Cretelligent Mulesoft API Design Discussion.md · confidence: high · match: attendee+keyword
 - [2026-04-23 14:30 CT] "High Meadow Labs" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md · confidence: high · match: keyword (all HM employees, internal product strategy, "high meadows labs")
+
+- [2026-04-23 18:00 CT] "INTERNAL: CREtelligent Team Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-23 - INTERNAL CREtelligent Team Sync.md · confidence: high · match: attendee+keyword
+- [2026-04-23 18:00 CT] "High Meadow Labs" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md · confidence: high · match: keyword
