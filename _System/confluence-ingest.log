@@ -50,3 +50,21 @@
 **Skipped:** 0
 **Errors:** None
 **Notes:** All 4 updated pages were in the CE (Cetera) space. LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. Growth Engine page now includes new diagrams (referenced as Confluence attachments — image blobs not mirrored, noted as "See diagrams in Confluence" in mirror), updated design section with Lead Conversion Logic, and Data Model diagrams added since last sync.
+
+## Sync Run: 2026-04-23
+
+**Spaces scanned:** CE (Cetera), LN (LNW), WB (William Blair), RW (Ritholtz Wealth), MP (MAI Post-MVP)
+**CQL query:** `type = page AND lastModified >= now("-7d") AND space.type = "global"`
+**Pages found (updated in last 7 days):** 4
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Growth Engine | CE | 275972100 | 2026-04-21T22:22:31Z | Skipped, unchanged since last sync (last_confluence_update matches) |
+| Gifts Object Alignment | CE | 430964740 | 2026-04-21T23:16:58Z | Skipped, unchanged since last sync |
+| APP Address | CE | 430768132 | 2026-04-21T23:19:07Z | Skipped, unchanged since last sync |
+| Core Salesforce Usage Alignment | CE | 275382274 | 2026-04-21T23:12:21Z | Skipped, unchanged since last sync |
+
+**Synced:** 0
+**Skipped (unchanged):** 4
+**Errors:** None
+**Notes:** All 4 pages in the CE space were last modified on 2026-04-21, matching the timestamps from the previous sync on 2026-04-22. No pages in LN, WB, RW, or MP spaces were modified in the last 7 days. No new pages detected. No pages tagged "private" or in personal spaces.
