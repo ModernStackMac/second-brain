@@ -46,3 +46,5 @@
 - [2026-04-23 00:15 CT] "High Meadow Labs" → Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md · confidence: medium · match: keyword
 - [2026-04-23 00:15 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-04-22 - MAI Dev DSU.md · confidence: high · match: keyword
 - [2026-04-23 00:15 CT] "AI Office Hours" → Meeting Notes/High Meadows/Internal/Office Hours/2026-04-21 - AI Office Hours.md · confidence: high · match: keyword
+
+- [2026-04-23 12:00 CT] SCHEDULED INGEST: Scanned 16 Fathom meetings (2026-04-20 to 2026-04-22). All 16 already exist in Meeting Notes/. 0 new, 0 unrouted. No writes performed.
