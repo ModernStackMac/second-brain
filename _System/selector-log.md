@@ -63,3 +63,5 @@
 - [2026-04-23 18:30 CT] Scheduled Fathom ingest: scanned 20 meetings (2026-04-20 to 2026-04-23). All 20 already exist in Meeting Notes/. 0 new, 0 unrouted. No writes performed.
 
 - [2026-04-24 scheduled run] 16 meetings checked (2026-04-21 to 2026-04-23), 0 new, 16 already captured. No action taken.
+
+- [2026-04-24 14:00 CT] "The Meeting of the Minds" → Meeting Notes/Modern Stack Systems/2026-04-24 - The Meeting of the Minds.md · confidence: high · match: attendee (Victor Domatz) + keyword (peer sync, Meeting of the Minds)
