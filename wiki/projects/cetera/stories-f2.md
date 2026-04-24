@@ -3,11 +3,11 @@ type: stories-sync
 project: cetera
 workspace: f2
 jira_project_key: CET
-updated: 2026-04-23T21:15:00-05:00
-story_count: "5"
+updated: 2026-04-24T07:15:00-05:00
+story_count: 5
 ---
 
-# Cetera — Jira Stories (F2)
+# Cetera -- Jira Stories (F2)
 
 > Auto-synced by story-sync. Do not edit by hand -- changes are overwritten.
 
