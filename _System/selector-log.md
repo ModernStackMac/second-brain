@@ -65,3 +65,5 @@
 - [2026-04-24 scheduled run] 16 meetings checked (2026-04-21 to 2026-04-23), 0 new, 16 already captured. No action taken.
 
 - [2026-04-24 14:00 CT] "The Meeting of the Minds" → Meeting Notes/Modern Stack Systems/2026-04-24 - The Meeting of the Minds.md · confidence: high · match: attendee (Victor Domatz) + keyword (peer sync, Meeting of the Minds)
+
+- [2026-04-24 19:15 CT] "Stitch // CREtelligent - Weekly Status and Project Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-24 - Stitch CREtelligent Weekly Status and Project Sync.md · confidence: high · match: attendee+keyword
