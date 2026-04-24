@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-24T11:15:00-05:00
+updated: 2026-04-24T15:15:00-05:00
 ---
 
 # MAI CRM Build -- Board
@@ -11,13 +11,9 @@ updated: 2026-04-24T11:15:00-05:00
 
 ## Up Next
 
-## In Progress
+- MAI-1389 Financial Plan Proposal: On Save, case owner is the Practice instead of the case initiator 🔴
 
-- MAI-1416 Financial Account: Credit Card HH view
-- MAI-1415 Financial Account: Mortgage HH view
-- MAI-1414 Financial Account: Insurance Policies HH view
-- MAI-1417 Jacob Witkowski & Tiffany Abril cannot select Address Type 🔴
-- MAI-1425 Account close: Error when creating case 🔴
+## In Progress
 
 ## Review
 
