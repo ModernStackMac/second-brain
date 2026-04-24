@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-24T15:15:00-05:00
+updated: 2026-04-24T19:15:00-05:00
 ---
 
 # MAI CRM Build -- Board

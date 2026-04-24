@@ -95,3 +95,7 @@
 [2026-04-24T15:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
 [2026-04-24T15:15:00-05:00] CHANGE: MAI lost 5 stories (MAI-1416, MAI-1415, MAI-1414, MAI-1417, MAI-1425 removed from active filter). Gained 1 new story (MAI-1389 New, High, parent: Financial Plan Proposal Workflow). Net story count 6→2.
 [2026-04-24T15:15:00-05:00] ARCHIVE: MAI-1416, MAI-1415, MAI-1414, MAI-1417, MAI-1425 removed from active tracker (no longer in Jira active filter). Stubs written to raw/archived-stories/mai/.
+
+[2026-04-24T19:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-04-24T19:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
+[2026-04-24T19:15:00-05:00] NO CHANGES: All 17 active stories unchanged from prior sync. No new stories, no archives needed.
