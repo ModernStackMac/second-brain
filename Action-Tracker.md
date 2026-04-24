@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-04-24T07:15:00-05:00
+updated: 2026-04-24T11:15:00-05:00
 ---
 
 # Action Tracker
@@ -18,8 +18,11 @@ updated: 2026-04-24T07:15:00-05:00
 | lnw | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
 | lnw | LNW-191 | Part 3: Visibility Enhancements POC - Family Level Creation and Assignment | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-191) |
 | lnw | LNW-192 | Part 4: Visibility Enhancements POC - UI and UX Enablement | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-192) |
-| mai | MAI-1425 | Account close: Error when creating case | New | Medium | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1425) |
-| mai | MAI-1417 | Jacob Witkowski & Tiffany Abril cannot select Address Type | New | Medium | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1417) |
+| mai | MAI-1417 | Jacob Witkowski & Tiffany Abril cannot select Address Type | Active | Highest | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1417) |
+| mai | MAI-1425 | Account close: Error when creating case | Active | Highest | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1425) |
+| mai | MAI-1416 | Financial Account: Credit Card HH view | Active | Low | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1416) |
+| mai | MAI-1415 | Financial Account: Mortgage HH view | Active | Low | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1415) |
+| mai | MAI-1414 | Financial Account: Insurance Policies HH view | Active | Low | -- | 2026-04-24 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1414) |
 | mai | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | meadow | IP-125 | Data export and import (SQLite to Supabase) | Blocked | -- | -- | 2026-04-22 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-125/data-export-and-import-sqlite-to-supabase) |
 | flex-dash | IP-8 | View As Feature | In Progress | Medium | -- | 2026-03-31 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-8/view-as-feature) |
