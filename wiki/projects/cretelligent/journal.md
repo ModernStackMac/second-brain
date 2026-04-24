@@ -9,6 +9,28 @@ open_actions: 23
 # CREtelligent — Project Journal
 
 
+Weekly Status and Project Sync (Apr 24, w/ Andrew Porter, Obed Labra-Pelaez, Wendell Sommers, Blake Stracener, Travis Hickey): payload enrichment direction, order processing demo, click quote architecture, opportunity stage simplification, Quote Matrix LWC enhancements.
+
+**Payload enrichment (no MuleSoft for now):** Team confirmed NOT going with MuleSoft for the current payload work due to timeline risks from hybrid integration challenges. Blake will enrich the existing payload with site verification fields and site product arrays (including cost worksheets) by building a separate flow. Expected delivery: next week.
+
+**Manual order processing demo:** Obed demoed the full flow: order hits Salesforce, triggers creation of opportunities, sites, EnviroApp, EnviroSite, EnviroSite task groups, and cost worksheets. For a sample order (3 sites, 2 products), system correctly created 3 EnviroSites and 6 EnviroSite task groups (one per product per site), each with cost worksheets. Key change: cost worksheets now created at EnviroSite task group creation, not when opportunity stage moves to active.
+
+**Click quote flag:** Travis confirmed a click quote flag exists (yes/no/consult) at the individual order level. Wendell pushed for site-product-level granularity (e.g., single bulk order where zoning is click-quoted but survey is not). Team agreed: click quote boolean goes at site product level in the Order Service API Mapping Workbook. Travis adding to payload story.
+
+**Data model clarification:** Andrew confirmed only EnviroSite task GROUP exists in production. The EnviroSite task object in sandbox will be deleted, will NOT make it to production. All logic moving forward based on site products, not checkboxes. Wendell needs 10-15 min follow-up with Andrew/Obed to review his acquired template logic against the correct object.
+
+**Opportunity stage simplification:** Obed presented four stages: quoting, proposal, active, declined. Validation rule requires declined reason when moving to declined. Wendell raised concerns about replacing the existing extensive stage model (active invoice, canceled, on hold, etc.) and potential loss of historic data. Andrew willing to add sub-statuses if needed. Decline reasons from order tracker approved: "Project was canceled," "For vendor took too long," "No client response," "Crisis."
+
+**Quote Matrix LWC enhancements (Mac demo):** Filter by cheapest quotes (configurable top 2-5 per site), expanded modal (95% view width, dynamic height with scroll), "add quotes" button for empty sites, plus sign in site bar for quote creation. Mass apply for price and days-to-compare across selected/visible quotes. Andrew flagged issue: mass apply appears to select ALL filtered quotes rather than just user-selected quotes. Mac committed to investigating.
+
+**Acquired template progress:** Wendell made significant progress on the acquired template object. Contains all templates with logic to find the right template. Needs clarification on site task vs. EnviroSite task fields. Andrew scheduling a 2-hour spike session early next week.
+
+**Next demos:** DocGen ready for demo early next week. Site product stuff with cost rollups ready in 1-2 weeks.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-24 - Stitch CREtelligent Weekly Status and Project Sync.md`)*
+
+
+
 MuleSoft API Design Discussion (Apr 23, w/ Andrew Porter, Hesham Masoud) and Internal Team Sync (Apr 23, w/ Andrew Porter, Obed Labra-Pelaez, Michael DeGoll).
 
 **MuleSoft evaluation for Order Service rebuild:** Team evaluated whether rebuilding the Order Service handler in MuleSoft makes sense. Mac expressed skepticism: the integration is straightforward (accept payload, deserialize to custom model class, upsert Salesforce records) with no complex data transformations or multi-system routing. However, Andrew clarified the client has invested significantly in MuleSoft and wants to consolidate their integration platform there. Hesham estimated ~40 hours for the MuleSoft implementation (same pattern as existing POC but different objects; original two-way POC took ~60 hours). Key concern from Mac: error handling visibility on the Salesforce side when MuleSoft handles the integration. MuleSoft returns structured error responses to the caller (Radius/Order Service), but CREtelligent's external system would need its own error handling. Mac suggested potentially creating a Nebula logging framework call on the Salesforce side. Consensus: decision hinges on error handling architecture, updated payload specs from client, and whether consolidating all integrations in MuleSoft (avoiding hybrid) justifies additional timeline risk. Andrew to discuss with client using the sizing and trade-off info from this call.

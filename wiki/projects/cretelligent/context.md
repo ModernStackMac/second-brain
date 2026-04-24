@@ -61,3 +61,16 @@ Report generator integration for environmental assessments and "human in the loo
 ## Cost Worksheet Architecture (added 2026-04-22)
 
 Cost worksheet references site product directly (no product lookup field). Auto-set logic populates site product when cost worksheet is created with certain fields. Roll-up chain: cost worksheet → site product → site. Costs aggregated by cost category at site level (not by individual product). May need intermediary object for roll-ups in future.
+
+
+## Data Model Clarifications (added 2026-04-24)
+
+**EnviroSite task vs. task group:** Only the EnviroSite task GROUP level exists in production. The EnviroSite task object in the sandbox will be deleted and will NOT make it to production. All template logic and field references should target task group, not task.
+
+**Cost worksheet creation timing:** Cost worksheets are now created when EnviroSite task groups are created (not when opportunity stage moves to active). This ensures cost data is available immediately for quoting.
+
+**Click quote:** Boolean field at the site product level (not order level) in the Order Service API Mapping Workbook. Allows per-product-per-site click quote decisions within a single bulk order.
+
+**Opportunity stages (simplified):** Four stages: quoting, proposal, active, declined. Validation rule requires declined reason. Decline reasons: "Project was canceled," "For vendor took too long," "No client response," "Crisis." Sub-statuses can be added if historic data alignment requires it.
+
+**Payload approach:** Current payload being enriched directly (NOT MuleSoft) with site verification fields + site product arrays + cost worksheets. Blake building separate flow, delivery targeting end of Apr 2026.

@@ -57,3 +57,9 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 
 ---
 *Last updated: 2026-04-21*
+
+
+## Industry Contacts (updated Apr 2026)
+- **Matt Gary** — CTA, Salesforce development thought leader (trigger handler framework, orchestration layers). 10 years coding before Salesforce. Offered a role on the Agentforce team at Salesforce by the only two devs working on Agentforce (Mike and Jeff). Connected with Victor at TDX 2026.
+- **Odyssea** — Salesforce backup solution competing with Own Backup. Differentiators: pre/post-integration encryption (fills Shield gaps), proprietary DB optimizer (100M records in 13 seconds vs 1hr 7min standard). CEO is a CTA. Victor connected at TDX 2026.
+- **Tyler Gardner (Social Cap CPA)** — CPA recommended by Victor for tax optimization consultation. Instagram content creator, book releasing Dec 2026. Mac considering for S-Corp tax strategy review.

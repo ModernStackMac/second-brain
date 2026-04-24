@@ -7,6 +7,26 @@ updated: 2026-04-21
 # Modern Stack Systems — Journal
 
 
+## Week of Apr 20, 2026 (continued)
+
+Meeting of the Minds (Apr 24, w/ Victor Domatz, Andrew Smith, Brady Labrum): TDX debrief, Odyssea deep dive, AI industry outlook, financial strategy, High Meadow Labs update.
+
+**TDX 2025 networking recap:** Victor attended TDX and focused on strategic networking via happy hours. Spent two hours with the CEO of Odyssea, a Salesforce backup solution competing with Own Backup. Odyssea differentiators: (1) encrypts data before integration and decrypts after (fills gaps in Salesforce Shield), (2) proprietary database optimizer retrieves 100M records in 13 seconds vs. 1hr 7min via standard SF APIs. CEO's strategy: build relationships with mid-career professionals betting 10% will reach director roles in five years. Victor also connected with Matt Gary (CTA), who was offered a role on the Agentforce team by the only two Salesforce developers working on Agentforce (Mike and Jeff). Mac has followed Matt's technical content (trigger handler framework, orchestration layers, programming principles) for eight years.
+
+**AI industry shift from TDX:** Victor's observation: 2025 TDX was all talk, no demos. 2026 TDX had every company showing concrete AI implementations. Victor believes AI changes the industry but doesn't eliminate TA/developer roles. Mac expressed concern about senior developer value erosion, but Victor countered: experienced devs like Mac will manage 3-5 projects simultaneously instead of 2 as AI matures, creating significant earning potential during the transition window before the industry adjusts.
+
+**Mac's current work portfolio:** Billing 35-40 hrs/week for Michael's company, 60 hrs/week for High Meadow, plus side work (few hrs/week). Sierra (at a recent call) mentioned seeing Brady and Mac signaled availability for more work.
+
+**Financial management:** Victor recommended Taylor Gardner (Social Cap CPA) for tax consultation. Mac revealed S-Corp structure: $250K W-2 salary with owner distributions going to a 4% high-interest savings account, then investing through Schwab under personal name. Victor questioned whether $250K salary is too high (paying excess taxes). Mac acknowledged his current CPA arrangement isn't optimal and he's locked into a one-year agreement. Mac committed to researching tax optimization options.
+
+**High Meadow Labs update:** Mac confirmed HM is spinning up subsidiaries and offering him an executive position. Two initiatives discussed: (1) AI training company (High Metal Labs) for training and deploying models for wealth management clients, (2) Internal SF consulting with a DevOps agent on GitHub handling code reviews, merges, and deployments via GitHub Actions (AI-powered Copado alternative). Victor expressed skepticism about trusting agents with deployment decisions.
+
+**Technical troubleshooting (second half of call):** Team joined to debug permission/access issues in Salesforce. Jacob (CSS user) can't see custodian fields on prospect records. Root cause: custodian field only appears when "Advisor Referral Program" is selected on prospect source field. Team suspects a permission set deployment overrode existing configurations. Working through record access, created filtered institution views. Need CSS and advisor permissions resolved by Monday for a "day in the life" client demo.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-04-24 - The Meeting of the Minds.md`)*
+
+
+
 Impromptu Sync (Apr 22) — Andrew demoed Open Effigy, pitched High Meadows Labs, career/income strategy chat.
 
 **Open Effigy:** Andrew built an AI character creation tool that combines personality traits from multiple people using RAG (YouTube transcripts + text files into local vector DB). Characters can interact with each other. Exports agents in OpenCLAW-compatible format. Built for entertainment/open-source release, not commercial viability. Could be augmented with Eleven Labs voice and video.

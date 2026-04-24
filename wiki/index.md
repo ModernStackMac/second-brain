@@ -87,3 +87,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-23):** New project page: [[internal/high-meadow-labs/journal]] — HMS internal AI product initiative. Training specialized models for wealth management, regulatory compliance POC selected as first use case. New pattern page: [[multi-agent-voting]] — Run multiple AI agents in parallel and surface results only on consensus. Addresses LLM consistency challenge for high-stakes outputs.
+
+
+**Note (2026-04-24):** Ingested 2 meeting notes (Meeting of the Minds Apr 24, CREtelligent Weekly Status Apr 24). Updated journals, context pages, commitments, and decision log. CREtelligent context expanded with data model clarifications (EnviroSite task deletion, cost worksheet timing, click quote, opportunity stages, payload approach). MSS context expanded with industry contacts (Matt Gary, Odyssea, Tyler Gardner CPA).
