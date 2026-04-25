@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-24T19:15:00-05:00
+updated: 2026-04-25T00:30:00-05:00
 ---
 
 # MAI CRM Build -- Board
@@ -10,8 +10,6 @@ updated: 2026-04-24T19:15:00-05:00
 ## Backlog
 
 ## Up Next
-
-- MAI-1389 Financial Plan Proposal: On Save, case owner is the Practice instead of the case initiator 🔴
 
 ## In Progress
 
