@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-04-26] lint | Weekly Health Check
+- Pages scanned: 82
+- Issues: 6 critical, 8 recommended, 4 informational
+- Critical: unmapped `high-meadow-labs` folder, deprecated `f2-cetera` alias in cetera/overview.md, missing `reports/mai-project-overview.md`, 80+ broken bare project-slug links, stale empty `wiki/projects/flex-dash/` directory, missing `lefavi` folder
+- Auto-fixed: none (all issues require review due to blast radius)
+- Report: wiki/lint-report.md
+
+## [2026-04-26] ingest | No New Sources (Scheduled Run)
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-04-24 already processed. No new files found for 2026-04-25 or 2026-04-26.
+- Maintenance: Checked commitments.md Done section for 14-day archival. All Done items are from Apr 21-24, no archival needed. Log at 1440 lines, under rotation threshold.
+- Note: Previous detection false positive (9 `[Fathom]` files) caused by grep treating square brackets as regex character classes. All 9 files confirmed already logged via fixed-string grep.
+
+
 ## [2026-04-24] ingest | No New Sources (Scheduled Run)
 - Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/MAI, Modern Stack Systems, Stitch/Cretelligent), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: All sources through 2026-04-23 already processed. No new files found for 2026-04-24.
