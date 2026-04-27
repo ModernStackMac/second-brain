@@ -90,3 +90,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-24):** Ingested 2 meeting notes (Meeting of the Minds Apr 24, CREtelligent Weekly Status Apr 24). Updated journals, context pages, commitments, and decision log. CREtelligent context expanded with data model clarifications (EnviroSite task deletion, cost worksheet timing, click quote, opportunity stages, payload approach). MSS context expanded with industry contacts (Matt Gary, Odyssea, Tyler Gardner CPA).
+
+
+**Note (2026-04-27):** Weekly synthesis report generated: [[reports/weekly-synthesis-2026-04-27]] — 2026-04-27 · Weekly cross-project synthesis for the week of Apr 21–27, 2026. 11 projects covered. Key finding: CREtelligent co-sprint and MAI go-live push dominated the week; High Meadow Labs launched as new AI initiative; Litify 14 days stale.

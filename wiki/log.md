@@ -1467,3 +1467,8 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pages updated: none
 - Patterns extracted: none
 - Key takeaways: All sources through 2026-04-24 already processed. No new meeting notes, articles, or project documents found since last ingest.
+
+## [2026-04-27] synthesis | Weekly Synthesis — Week of Apr 21–27, 2026
+- Output: wiki/reports/weekly-synthesis-2026-04-27.md
+- Projects covered: 11 (CREtelligent, MAI, LNW, NBCU, High Meadow Labs, High Meadow Website, Cetera, Modern Stack Systems, Harvey, Litify, Flex-Dash)
+- Key finding: CREtelligent co-sprint and MAI go-live push dominated the week. High Meadow Labs launched as a new AI initiative (regulatory compliance POC). Litify engagement is 14 days stale and at risk of going cold. Mac's workload (105+ hrs/week) is the single biggest cross-project risk factor.
