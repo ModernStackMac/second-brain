@@ -1,11 +1,18 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-04-21
+updated: 2026-04-27
 ---
 
 # Modern Stack Systems — Journal
 
+## Week of Apr 27, 2026
+
+Jessica Roundy Sync (Apr 27): Fathom captured no summary, action items, or transcript for this recording. Content unavailable for ingest. Manual review of Fathom recording recommended if this was a substantive call.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-04-27 - Modern Stack Systems between Mac Nosek and Jessica Roundy.md`)*
+
+---
 
 ## Week of Apr 20, 2026 (continued)
 

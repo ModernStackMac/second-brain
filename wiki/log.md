@@ -1480,3 +1480,31 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Output: wiki/reports/weekly-synthesis-2026-04-27.md
 - Projects covered: 11 (CREtelligent, MAI, LNW, NBCU, High Meadow Labs, High Meadow Website, Cetera, Modern Stack Systems, Harvey, Litify, Flex-Dash)
 - Key finding: CREtelligent co-sprint and MAI go-live push dominated the week. High Meadow Labs launched as a new AI initiative (regulatory compliance POC). Litify engagement is 14 days stale and at risk of going cold. Mac's workload (105+ hrs/week) is the single biggest cross-project risk factor.
+
+
+## [2026-04-27] ingest | Cetera Stand Up (Apr 27)
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-27 - Cetera Stand Up.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cetera/journal.md` (new Week of Apr 27), `wiki/projects/cetera/context.md` (Growth Engine + automation validation switch sections), `commitments.md` (2 Cetera items), `Decision-Log.md`
+- Commitments added: 2 (integrate Connor's deployment items into plan/spreadsheet; document automation validation switch in Jira)
+- Decisions added: 1 (automation validation switch implementation beginning latter half of week, added to most/all integrations)
+- Patterns extracted: none
+- Key takeaways: Sprint 3 closeout in progress (structural elements, no demo). Sprint 4 parallel work streams (SSO, Calendly, Ring to Teams, Orion) being tracked but executed outside main process. Connor's team confirmed automation validation switch implementation starting this week. UAT informed Sprint 3 was structural, testing comes in Sprint 4.
+
+## [2026-04-27] ingest | Brian Hyman Sync (Apr 27)
+- Source: `Meeting Notes/_Unmatched/2026-04-27 - Brian Hyman.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cetera/journal.md` (extended Week of Apr 27 with Growth Engine architecture), `wiki/projects/cetera/context.md` (Growth Engine section)
+- Commitments added: 0 (no Mac-owned action items passing 4-gate)
+- Decisions added: 0 (informational session, no new decisions)
+- Patterns extracted: none
+- Key takeaways: Brian walked Mac through Growth Engine diagram (CPA referral process married to accelerator). Key difference: CPA referral includes financial plan presentation in every prospecting engagement vs. standard process (plans built after signing). Also troubleshot Brian's Claude session usage exhaustion: a stale Cowork scheduled task (branding changes to Notion) was consuming sessions overnight. Disabled the schedule.
+
+## [2026-04-27] ingest | Modern Stack Systems / Jessica Roundy (Apr 27)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-27 - Modern Stack Systems between Mac Nosek and Jessica Roundy.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md` (new Week of Apr 27, stub entry)
+- Commitments added: 0
+- Decisions added: 0
+- Patterns extracted: none
+- Key takeaways: Fathom returned no summary, action items, or transcript. Empty recording. Manual review of Fathom recording recommended.

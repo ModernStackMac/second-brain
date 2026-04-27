@@ -40,10 +40,22 @@
 ## Invoicing
 - PO issue resolved (Apr 9) — new PO opened, project moved under new org
 
+## Growth Engine / CPA Referral Process
+- **Accelerator:** F2/Cetera's prospecting process (standard flow builds financial plans after client signs engagement document)
+- **CPA Referral Team variant:** Every prospecting engagement includes a financial plan presentation (key architectural difference from standard accelerator)
+- **Lead:** Carrie (head of CPA referral team), marketing team collaboration
+- **Architecture:** Referral process maps to the accelerator, with opportunity-level activities migrating to lead object. Growth Engine diagram represents this marriage.
+- **Status:** Design in progress (Connor provided diagram, Brian reviewed with marketing)
+
+## Automation Validation Switch
+- Custom setting / toggle mechanism Mac built to enable/disable integrations selectively
+- Connor's team implementing adjustments to existing integrations (starting late Apr 2026)
+- Adding to most/all existing integrations; some integrations should remain always-on
+
 ## Related Pages
 - [[high-meadows]] — partner
 - [[case-migration]] — core migration pattern
 - [[marketing-cloud]] — journey automation (provisioning blocker)
 
 ---
-*Last updated: 2026-04-18*
+*Last updated: 2026-04-27*

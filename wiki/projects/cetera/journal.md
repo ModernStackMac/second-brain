@@ -2,11 +2,37 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-20
+last_meeting: 2026-04-27
 open_actions: 8
 ---
 
 # Cetera — Project Journal
+
+## Week of Apr 27, 2026
+
+Cetera Stand Up (Apr 27, Mac solo update to team): Sprint 3 closeout validation, Sprint 4 parallel work streams, UAT communication, automation validation switch implementation timeline.
+
+**Sprint 3 validation:** Mac validating Sprint 3 change set completeness and deploy-readiness. Sprint 3 was predominantly structural elements (metadata, objects, layouts). No demo items, but Mac confirming nothing is missing and the change set can deploy independently.
+
+**Deployment plan:** Mac integrating the items Connor sent over end of last week into the deployment plan and spreadsheet to pull them into the work stream. Still working through the details, expects follow-up tomorrow.
+
+**JIRA cleanup:** Closing out Sprint 3 items that were account-opening-related but handled in other work streams or already in process. Similar cleanup for Sprint 4 items (SSO, Calendly, Ring to Teams, Orion) that are executing simultaneously outside the main process stream. Mac noting on those tickets that they're being handled in parallel for efficiency.
+
+**UAT communication:** UAT asked about Sprint 3 items. Mac clarifying that Sprint 3 was structural, and validations/automations land in Sprint 4 for testing at sprint end. Sam (HMS side) will test Connor's items for QA unless Connor prefers to skip internal testing.
+
+**Automation validation switch:** Connor's team reviewed the switch Mac built and confirmed they'll start implementing adjustments to existing integrations in the latter half of this week. Adding the switch to most or all existing integrations, with the understanding that some integrations should not be turned off while others should. Mac documenting this in the corresponding Jira ticket.
+
+Brian Hyman sync (Apr 27, unscheduled): Troubleshooting session + Growth Engine context.
+
+**Growth Engine referral process architecture:** Brian walked Mac through a diagram Connor provided showing the marriage of the CPA referral team process with the accelerator (F2/Cetera's prospecting process). Key architectural difference: in the CPA referral flow, every prospecting engagement includes a financial plan presentation. In the standard accelerator process, financial plans are only built after the client signs the engagement document. This diagram represents the collaboration between marketing and Carrie (head of CPA referral team) to visualize where opportunity-level activities will map to the lead object.
+
+**Session usage troubleshooting:** Brian maxed out his Claude session usage (100% despite being 38% through weekly allocation, bought more and consumed almost immediately). Mac investigated and found an active scheduled task in Cowork that automatically saves branding changes to Notion. Brian no longer using it. Usage jumped from 90% to 96% overnight, confirming the schedule was consuming resources while Brian slept. Disabled the schedule. Also identified Granola notifications as a potential contributor, recommended restarting the app.
+
+**Brian's Second Brain setup:** Brian uses a handover log system to transfer work context between devices (PC to MacBook via Obsidian). Records important sessions documenting key architecture decisions. Wants to integrate Granola meeting recordings but hasn't activated it yet. Granola connected to High Meadow calendar but not F2 calendar.
+
+*(Sources: `Meeting Notes/High Meadows/Cetera/2026-04-27 - Cetera Stand Up.md`, `Meeting Notes/_Unmatched/2026-04-27 - Brian Hyman.md`)*
+
+---
 
 ## Week of Apr 20, 2026
 
@@ -81,3 +107,4 @@ Invoicing issue: old PO on invoices, project moved to new org — new PO being o
 - Field naming standards doc needed for UAT team (singular vs. plural, federal tax bracket vs. tax bracket)
 
 ---
+
