@@ -1,5 +1,43 @@
 # Wiki Log
 
+
+## [2026-04-27] ingest | Andrew/Mac Sync (Apr 27)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-27 - Andrew Mac.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md` (extended Week of Apr 27)
+- Commitments added: 0 (no concrete Mac-owned action items passing all gates; AI focus commitment is aspirational, RCA contact action tracked under Loftware)
+- Decisions added: 0
+- Patterns extracted: none
+- Key takeaways: GitHub agents tab discovery, model training vs prompting debate, Labs pitch progressing with coordination challenges, HM margin ~$75/hr on Mac, RCA project risk for new Loftware prospect (seven-figure deal with low success probability), Sticker Mule sponsorship for Andrew's wife's app.
+
+## [2026-04-27] ingest | Internal CREtelligent Weekly Sync (Apr 27)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-27 - Internal CREtelligent Weekly Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (new Week of Apr 27)
+- Commitments added: 1 (Quire API investigation)
+- Decisions added: 1 (Mule route preserved despite client pushback)
+- Patterns extracted: none
+- Key takeaways: Client pushing back on Mule integration (misconception about workload reduction). LBC matrix got great feedback. Expense object fields still blocked (Wendell). Two new Quire stories (folder creation + report generation). Mac pivoting to Quire API investigation while waiting on expense fields.
+
+## [2026-04-27] ingest | Loftware - Attack Plan (Apr 27)
+- Source: `Meeting Notes/_Unmatched/2026-04-27 - Loftware - Attack Plan.md`
+- Pages created: `wiki/projects/loftware/context.md`, `wiki/projects/loftware/journal.md`
+- Pages updated: `commitments.md`, `Decision-Log.md`
+- Commitments added: 1 (reach out to John Gravins re: RCA architect availability + LinkedIn)
+- Decisions added: 2 (reframe RCA as consultative honesty; lead with paid assessment + plan by Thursday)
+- Patterns extracted: none
+- Key takeaways: New High Meadows prospect pursuit. Seven-figure deal requiring RCA implementation (highest risk component). John Gravins identified as primary RCA architect candidate (Salesforce Revenue Cloud solution architecture background). Team strategy: honest approach to RCA gap, detailed plan of attack to counter Plative failure narrative, paid assessment. Mac flagged bandwidth constraints across MAI/LNW/Cetera/Meadow.
+
+## [2026-04-27] ingest | Impromptu Microsoft Teams Meeting (Apr 27)
+- Source: `Meeting Notes/_Unmatched/2026-04-27 - Impromptu Microsoft Teams Meeting.md`
+- Pages created: none
+- Pages updated: none
+- Commitments added: 0
+- Decisions added: 0
+- Patterns extracted: none
+- Key takeaways: Casual chat (exercise equipment) + platform switch to Zoom for the actual Loftware onsite meeting. No project substance.
+
+
 ## [2026-04-27] ingest | No new sources (scheduled run #3)
 - Source: Scheduled scan of Meeting Notes/, raw/articles/, raw/projects/
 - Pages created: none

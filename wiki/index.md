@@ -16,6 +16,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[internal/meadow/context]] · [[internal/meadow/journal]] · [[internal/meadow/stories-hm]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
 - [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
 - [[internal/flex-dash/stories-hm]] — Flex Dash reporting product. Development paused for MAI.
+- [[loftware/context]] · [[loftware/journal]] — Loftware (High Meadows prospect). Wealth management firm, Salesforce implementation takeover from Plative, RCA high-risk component, seven-figure deal.
 - [[modern-stack-systems/context]] · [[modern-stack-systems/journal]] — Modern Stack Systems (Mac's consulting practice). Recruiting, business development, peer network, operations.
 
 ## Concepts
