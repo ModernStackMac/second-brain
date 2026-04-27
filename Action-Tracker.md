@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-04-28T01:15:00-05:00
+updated: 2026-04-28T05:15:00-05:00
 ---
 
 # Action Tracker
@@ -9,11 +9,9 @@ updated: 2026-04-28T01:15:00-05:00
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| cetera | CET-4 | Configure the custom package that drives the integration to Advice Works | In Progress | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-4) |
+| cetera | CET-4 | Configure the custom package that drives the integration to Advice Works | In Progress | Medium | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-4) |
 | cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | -- | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
-| cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
-| cetera | CET-112 | Create new fields on New_Account_Setup__c | Ready for Demo | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-112) |
-| cetera | CET-113 | Add picklist values to Help Desk and NAS | Ready for Demo | Medium | -- | 2026-04-20 | [Jira](https://f2strategy.atlassian.net/browse/CET-113) |
+| cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
 | mai | MAI-1431 | Sales Process: Next meeting date not required on ops conversion | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1431) |
 | mai | MAI-1430 | Sales Process: Convert Prospect button CSS data loss | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1430) |
 | mai | MAI-1292 | Hide remaining Financial Account Type picklist values | Developer Review | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
