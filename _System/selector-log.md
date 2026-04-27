@@ -75,3 +75,5 @@
 - [2026-04-24 22:00 CT] SCHEDULED RUN: 18 meetings scanned (2026-04-21 to 2026-04-24), 0 new. All already captured in Meeting Notes/. No writes performed.
 
 - [2026-04-27 10:00 CT] SCHEDULED RUN: 2 Fathom meetings found (past 3 days), 0 new. "Stitch // CREtelligent - Weekly Status and Project Sync" (2026-04-24) already exists at Meeting Notes/Stitch/Cretelligent/. "The Meeting of the Minds" (2026-04-24) already exists at Meeting Notes/Modern Stack Systems/. No writes needed.
+
+- [2026-04-27 13:45 CT] SCHEDULED RUN: 2 Fathom meetings found (past 3 days). Both already exist in Meeting Notes/ -- skipped. (1) "Stitch // CREtelligent - Weekly Status and Project Sync" 2026-04-24 exists at Stitch/Cretelligent/. (2) "The Meeting of the Minds" 2026-04-24 exists at Modern Stack Systems/. 0 new, 0 unrouted.
