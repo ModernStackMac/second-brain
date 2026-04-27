@@ -121,3 +121,7 @@
 [2026-04-27T17:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
 [2026-04-27T17:15:00-05:00] CHANGE: MAI lost 2 stories (MAI-1186, MAI-1421 removed from active filter). Net story count 4→2.
 [2026-04-27T17:15:00-05:00] ARCHIVE: MAI-1186, MAI-1421 removed from active tracker (no longer in Jira active filter). Stubs written to raw/archived-stories/mai/.
+
+[2026-04-27T21:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-04-27T21:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
+[2026-04-27T21:15:00-05:00] CHANGE: MAI gained 2 stories (MAI-1431 To Do High, MAI-1430 To Do High). Both are Sales Process epic children. Net story count 2→4.
