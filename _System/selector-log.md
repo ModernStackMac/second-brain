@@ -89,3 +89,5 @@
 - [2026-04-27 22:30 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-27 - Internal CREtelligent Weekly Sync.md · confidence: high · match: attendee+keyword. Andrew Porter + Obed Labra-Pelaez are CREtelligent contacts, title contains "CREtelligent". Topics: Mule integration pushback, LBC matrix feedback, Quire API investigation, expense object blockers, sprint task assignments.
 
 - [2026-04-27 21:30 CT] "Loftware - Attack Plan" → Meeting Notes/_Unmatched/2026-04-27 - Loftware - Attack Plan.md · confidence: none · match: fallback. "Loftware" is not a mapped project. Attendees Brian Hyman, Dave Masri, Sean Berry not mapped to any project. Content is a High Meadows sales pursuit for prospect "Loftware" (also referenced as "Lawfare"/"Lawford" in transcript), covering RCA skill gap strategy, John Gravins sourcing, and requirements analysis from BRDs. Consider creating a new project entry if this engagement progresses.
+
+- [2026-04-27 23:00 CT] SCHEDULED RUN: 9 Fathom meetings found (past 3 days). 0 new, 9 already exist in Meeting Notes/. No files written.
