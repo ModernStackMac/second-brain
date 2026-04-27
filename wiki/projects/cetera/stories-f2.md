@@ -3,7 +3,7 @@ type: stories-sync
 project: cetera
 workspace: f2
 jira_project_key: CET
-updated: 2026-04-25T00:30:00-05:00
+updated: 2026-04-27T09:15:00-05:00
 story_count: 5
 ---
 

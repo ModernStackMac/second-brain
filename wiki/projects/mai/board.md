@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-04-25T00:30:00-05:00
+updated: 2026-04-27T09:15:00-05:00
 ---
 
 # MAI CRM Build -- Board
@@ -11,11 +11,15 @@ updated: 2026-04-25T00:30:00-05:00
 
 ## Up Next
 
+- MAI-1186 Follow-up: Sourcer/Servicer Commission Assignment for Sales Process 🔴
+- MAI-1421 Contract Request: Create new case button on business account RT 🔴
+- MAI-1365 Update error message when ops attempts prospect conversion 🟡
+
 ## In Progress
 
 ## Review
 
-- MAI-1292 Hide remaining Financial Account Type picklist values (red items)
+- MAI-1292 Hide remaining Financial Account Type picklist values (red items) 🟡
 
 ## Blocked
 
