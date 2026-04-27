@@ -3,15 +3,7 @@ type: stories-sync
 project: meadow
 workspace: HM
 linear_project: Capacity Planning
-updated: 2026-04-27T13:15:00-05:00
-story_count: 1
----
----
-type: stories-sync
-project: meadow
-workspace: HM
-linear_project: Capacity Planning
-updated: 2026-04-27T21:15:00-05:00
+updated: 2026-04-28T01:15:00-05:00
 story_count: 1
 ---
 

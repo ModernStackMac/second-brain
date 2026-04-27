@@ -1,11 +1,8 @@
 ---
 kanban-plugin: basic
+type: stories-sync
 project: mai
-updated: 2026-04-27T17:15:00-05:00
----
----
-kanban-plugin: basic
-updated: 2026-04-27T21:15:00-05:00
+updated: 2026-04-28T01:15:00-05:00
 ---
 
 # MAI CRM Build -- Board
@@ -13,11 +10,10 @@ updated: 2026-04-27T21:15:00-05:00
 ## Backlog
 
 ## Up Next
-- MAI-1431 Sales Process: Next meeting date not required on ops conversion 🔴
-- MAI-1430 Sales Process: Convert Prospect button CSS data loss 🔴
 
 ## In Progress
-- MAI-1365 Sales Process: Update error message name on prospect conversion 🔴
+- MAI-1431 Sales Process: Next meeting date not required on ops conversion 🔴
+- MAI-1430 Sales Process: Convert Prospect button CSS data loss 🔴
 
 ## Review
 - MAI-1292 Hide remaining Financial Account Type picklist values 🟡
