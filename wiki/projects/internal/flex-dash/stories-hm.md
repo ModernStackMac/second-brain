@@ -6,6 +6,14 @@ linear_project: Flex Dash
 updated: 2026-04-27T13:15:00-05:00
 story_count: 5
 ---
+---
+type: stories-sync
+project: flex-dash
+workspace: HM
+linear_project: Flex Dash
+updated: 2026-04-27T21:15:00-05:00
+story_count: 5
+---
 
 # Flex Dash -- Linear Stories (HM)
 

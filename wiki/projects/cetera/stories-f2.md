@@ -6,6 +6,14 @@ jira_project_key: CET
 updated: 2026-04-27T13:15:00-05:00
 story_count: 5
 ---
+---
+type: stories-sync
+project: cetera
+workspace: f2
+jira_project_key: CET
+updated: 2026-04-27T21:15:00-05:00
+story_count: 5
+---
 
 # Cetera -- Jira Stories (F2)
 

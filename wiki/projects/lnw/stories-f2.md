@@ -6,6 +6,14 @@ jira_project_key: LNW
 updated: 2026-04-27T13:15:00-05:00
 story_count: 4
 ---
+---
+type: stories-sync
+project: lnw
+workspace: f2
+jira_project_key: LNW
+updated: 2026-04-27T21:15:00-05:00
+story_count: 4
+---
 
 # LNW -- Jira Stories (F2)
 
