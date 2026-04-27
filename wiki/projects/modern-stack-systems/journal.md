@@ -12,6 +12,25 @@ Jessica Roundy Sync (Apr 27): Fathom captured no summary, action items, or trans
 
 *(Source: `Meeting Notes/Modern Stack Systems/2026-04-27 - Modern Stack Systems between Mac Nosek and Jessica Roundy.md`)*
 
+
+Andrew/Mac Sync (Apr 27, w/ Andrew Smith): GitHub agents feature, model training debate, Labs pitch status, RCA project risk, Sticker Mule sponsorship, meeting focus reset.
+
+**GitHub agents feature:** Andrew discovered a new "agents" tab in GitHub's top navigation (between pull requests and actions). Mac hasn't explored it yet, primarily using GitHub for merge requests. Sparked discussion about AI-driven code review and feedback tooling.
+
+**Model training vs. complex prompting:** Mac proposed training custom AI models on internal programming standards, hooking them into GitHub Actions for automated commit/PR feedback (custom linting). Andrew questioned whether this needs actual model training vs. a sophisticated prompt. Mac's case for training: (1) enterprises don't want open-source models and prefer running their own, (2) models need to be trained on company-specific coding standards. Both noted the trend toward local deployment/own-infrastructure hosting. Mac remains uncertain on the optimal approach, especially with enterprise OpenAI/Anthropic subscriptions evolving and some features being sunset.
+
+**Labs pitch status:** Progressing well but facing coordination challenges with "a lot of cooks in the kitchen." Mac still billing 12 hrs/day to High Meadow despite preferring to focus on his own ventures.
+
+**High Meadow margin analysis:** Andrew estimated HM captures at least $75/hr margin on Mac (Mac bills ~$125/hr, HM likely charges client ~$200/hr). Mac is low-maintenance, making this a favorable arrangement for the firm.
+
+**RCA project risk (Loftware prospect):** HM landed a potential seven-figure deal with a new client requiring RCA implementation. During discovery, the executive made aggressive claims about RCA expertise when only a handful of successful implementations exist. Client described their use case as "crazy complex" and demanded references. Mac felt pressured into committing full-time resources to an uncertain project. He scrambled to find RCA consultants (exploring Sean Philbin, Raul, and a contact recommended by Steph P). Mac and Andrew drew parallels to CPQ: 600K+ implementations exist but large enterprises over-complicate configurations, turning technical problems into unsolvable business problems. See also: [[loftware]] for the dedicated prospect pursuit session.
+
+**Sticker Mule sponsorship:** Andrew negotiated a $1,000 store credit sponsorship from Anthony Constantino (Sticker Mule CEO) for his wife's playground app, in exchange for switching the website's merchandise link from Cafe Press to Sticker Mule. Sticker Mule offers giveaway functionality (free merch links for promotions) that Cafe Press doesn't.
+
+**Meeting focus reset:** Mac acknowledged recent syncs have lacked AI focus and committed to prioritizing AI-related discussions going forward. Andrew is focused on vacation planning (DC Memorial Day, Ireland Juneteenth, England August, Marseille October, Sicily Thanksgiving).
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-04-27 - Andrew Mac.md`)*
+
 ---
 
 ## Week of Apr 20, 2026 (continued)

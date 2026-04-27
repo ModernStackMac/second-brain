@@ -2,12 +2,31 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-23
+last_meeting: 2026-04-27
 open_actions: 23
 ---
 
 # CREtelligent — Project Journal
 
+## Week of Apr 27, 2026
+
+Internal CREtelligent Weekly Sync (Apr 27, w/ Andrew Porter, Obed Labra-Pelaez): Mule integration client pushback, LBC matrix positive feedback, expense object blockers, Quire API stories, task assignments.
+
+**Mule integration client resistance:** Andrew needs help responding to Blake's email on data transmission strategy. Mac proposed sending all opportunity, site, and product array data to the client. Client pushing back on the Mule integration route, believing they won't need certain work if Mule is used (a misconception). Andrew clarified Mule would actually require MORE work (regression testing, additional planning). Mapping directly to MongoDB would waste POC work (order service to Salesforce via Mule). Mule remains the sensible path despite client resistance. Mac observed the client appears disorganized.
+
+**LBC matrix positive feedback:** Client was enthusiastic about the matrix presentation at Friday's (Apr 24) LBC meeting. Andrew praised Mac's work on the deliverable.
+
+**Expense object blockers:** Missing fields for the internal expense object. Without verified fields, all related code would need to change. Andrew identified this as a Wendell task (field-level work) that can be completed today since it's in the current sprint. Default values already tracked by Andrew. Team still needs the endpoint for a service API call.
+
+**Quire report stories:** Two new stories from the Quire call: (1) folder creation from Salesforce (fail-safe, since the order service is supposed to handle this but needs a fallback), (2) Quire report generation from Salesforce. Wendell's template logic to be reviewed today or tomorrow. A 4:30-6 PM ET call scheduled for today: Blake providing order service endpoint updates, team reviewing template selection logic and required endpoints. Mac may join the first hour depending on calendar.
+
+**Quire API investigation:** Team confirmed they have the necessary Quire API documentation (cloud-generated from Wendell's shared docs) plus underlying reference materials. Mac will tackle the Quire API investigation next, reading through docs and raising questions before returning to cost roll-ups (since expense object fields aren't available yet).
+
+**Task assignments:** Andrew assigned stories A through I to Obed, with Mac leading after stories enter the sprint. Obed's immediate goal: get doc generation generating today, with field questions answered tomorrow or in a separate session. Field aliases can be used as a workaround in queries if needed. Andrew expects additional stories to emerge from today's meetings.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-27 - Internal CREtelligent Weekly Sync.md`)*
+
+---
 
 Weekly Status and Project Sync (Apr 24, w/ Andrew Porter, Obed Labra-Pelaez, Wendell Sommers, Blake Stracener, Travis Hickey): payload enrichment direction, order processing demo, click quote architecture, opportunity stage simplification, Quote Matrix LWC enhancements.
 

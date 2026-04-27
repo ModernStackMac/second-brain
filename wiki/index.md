@@ -93,3 +93,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-27):** Weekly synthesis report generated: [[reports/weekly-synthesis-2026-04-27]] — 2026-04-27 · Weekly cross-project synthesis for the week of Apr 21–27, 2026. 11 projects covered. Key finding: CREtelligent co-sprint and MAI go-live push dominated the week; High Meadow Labs launched as new AI initiative; Litify 14 days stale.
+
+
+**Note (2026-04-27, ingest #2):** Ingested 4 meeting notes (Andrew/Mac Apr 27, Internal CREtelligent Weekly Sync Apr 27, Loftware Attack Plan Apr 27, Impromptu MS Teams Apr 27). New project created: [[loftware/context]] + [[loftware/journal]] (High Meadows prospect pursuit, seven-figure RCA deal, John Gravins as RCA architect candidate). CREtelligent journal updated with Week of Apr 27 (Mule client pushback, Quire API stories, expense object blockers). MSS journal extended (GitHub agents, model training debate, Labs pitch, RCA risk discussion). Impromptu Teams meeting had no substantive content (platform switch to Zoom).
