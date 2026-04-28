@@ -3,10 +3,35 @@ status: active
 owner: Mac
 priority: p1
 last_meeting: 2026-04-28
-open_actions: 24
+open_actions: "26"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of Apr 27, 2026 (continued)
+
+INTERNAL CREtelligent Team Sync (Apr 28, w/ Andrew Porter, Obed Labra-Pelaez): task group field cleanup, API push field verification, standup updates, cost roll-up testing, discount functionality ready, field delete impact research documentation.
+
+**Task group field cleanup:** Obed created several fields on the task group object that don't belong there — budget fields and green-highlighted product-related fields. Andrew confirmed these should be deleted entirely from the object since they're product-related, not task-related. Obed proceeding with deletion.
+
+**API push field verification:** Andrew asked Obed to confirm all fields with API pushes are properly documented in the site product cost mapping workbook. Quick review showed most environment/site task group fields (transaction type, elevated conversion, etc.) are already in the sheet. Transaction type is at the opportunity level (per Wendell's morning session); elevated conversion is at site product level. Obed doing a double-check pass.
+
+**Mac's progress:** Completed the acquired investigation with feedback in comments — most requested items can't be done because they're not in the APIs. Working on a field delete impact report (documenting which fields are referenced in which objects). Andrew directed Mac to start working on generate Quire report and generate Quire folder tasks using provided API documentation since endpoints have been shared.
+
+**Andrew's testing plans:** Testing site product cost roll-ups and discount functionality today. Hoping Blake provides an endpoint update tomorrow but not optimistic based on Wendell's comments.
+
+**Wendell collaboration dynamic:** Team reflected on Wendell's working style — he's a hustler but difficult collaborator who doesn't explain well and prefers to do work himself rather than delegate. Mac noted Wendell wants to be a solution architect, which is holding back actual solution creation. Andrew observed that if the client had adopted the team's original data model proposal (tasks as child to sites), it would have saved at least four weeks of effort. However, the client pays reliably, so no financial stress. Andrew will communicate the timeline status to Chris and Travis on Friday.
+
+**Cost roll-ups and discount ready for testing:** Site-level cost roll-ups exist, categorized by type (automated reports, environmental cost, surveys, zoning, valuation) with both cost and price data. No separate site product or site roll-ups needed since site products handle reporting. Discount functionality ready to test — switches between discount amount and percent, calculates final price from total price and discount applied.
+
+**Blockers:** Internal expense work is the primary blocker preventing progress on other items. Mac has done substantial testing from his side; Andrew needs to conduct additional testing to help unblock the backlog.
+
+**Field delete documentation:** Mac will document field delete impact research either as ticket comments or a markdown document — Andrew indicated either format is fine.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-28 - INTERNAL CREtelligent Team Sync.md`)*
+
+---
+
 
 ## Week of Apr 27, 2026
 

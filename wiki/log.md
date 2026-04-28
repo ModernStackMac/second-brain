@@ -1,5 +1,23 @@
 # Wiki Log
 
+## [2026-04-28] ingest | INTERNAL CREtelligent Team Sync (Apr 28)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-28 - INTERNAL CREtelligent Team Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended Week of Apr 27 entry), `commitments.md` (2 new items: field delete impact report, Quire report/folder tasks)
+- Decisions added: 0 (tactical cleanup items only, no strategic decisions)
+- Patterns extracted: none
+- Key takeaways: Internal debrief after morning Wendell session. Task group field cleanup (Obed), API push field verification, Mac pivoting to Quire API work. Discount functionality ready for Andrew testing. Internal expense remains primary blocker. Timeline officially late — Andrew communicating to Chris/Travis Friday.
+
+## [2026-04-28] ingest | _Unmatched meetings (Apr 27) — low-value sources
+- Source: `Meeting Notes/_Unmatched/2026-04-27 - Brian Hyman.md`, `Meeting Notes/_Unmatched/2026-04-27 - Impromptu Microsoft Teams Meeting.md`
+- Pages created: none
+- Pages updated: none
+- Commitments added: 0
+- Decisions added: 0
+- Patterns extracted: none
+- Key takeaways: Brian Hyman call was operational support (troubleshooting Brian's Cowork session usage — found background Notion schedule consuming resources, Granola notification issues) plus brief Growth Engine referral process review (Connor's diagram, CPA referral team architecture). No wiki-actionable content for Mac's projects. Impromptu Teams meeting was trivial — participants switching from Teams to Zoom for the actual meeting.
+
+
 ## [2026-04-28] ingest | CREtelligent Impromptu Zoom Meeting (Apr 28)
 - Source: `Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md`
 - Pages created: none

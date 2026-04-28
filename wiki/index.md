@@ -97,3 +97,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-27, ingest #2):** Ingested 4 meeting notes (Andrew/Mac Apr 27, Internal CREtelligent Weekly Sync Apr 27, Loftware Attack Plan Apr 27, Impromptu MS Teams Apr 27). New project created: [[loftware/context]] + [[loftware/journal]] (High Meadows prospect pursuit, seven-figure RCA deal, John Gravins as RCA architect candidate). CREtelligent journal updated with Week of Apr 27 (Mule client pushback, Quire API stories, expense object blockers). MSS journal extended (GitHub agents, model training debate, Labs pitch, RCA risk discussion). Impromptu Teams meeting had no substantive content (platform switch to Zoom).
+
+
+**Note (2026-04-28, ingest #2):** Ingested 1 new meeting note (INTERNAL CREtelligent Team Sync Apr 28). CREtelligent journal extended with task group field cleanup, API push verification, Mac pivoting to Quire API work, discount functionality testing. 2 commitments added. Brian Hyman support call (Apr 27, _Unmatched) logged as low-value — no wiki pages created.
