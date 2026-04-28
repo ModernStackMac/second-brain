@@ -1,22 +1,23 @@
 ---
 kanban-plugin: basic
-type: stories-sync
 project: flex-dash
-updated: 2026-04-27T22:50:00-05:00
+updated: 2026-04-28T09:15:00-05:00
 ---
 
-# Flex Dash -- Board
+# Flex Dash -- Kanban Board
 
 ## Backlog
-- IP-33 Dashboard Metrics for Demos 🟡
-- IP-1 Dynamic Dashboard Filtering 🟡
-- IP-34 External Data Source 🟡
-- IP-7 Apex Class to set up FSC Test Data 🟡
+
+- IP-33 Dashboard Metrics for Demos 🟡 Medium
+- IP-1 Dynamic Dashboard Filtering 🟡 Medium
+- IP-34 External Data Source 🟡 Medium
+- IP-7 Apex Class to set up Financial Services Cloud Test Data 🟡 Medium
 
 ## Up Next
 
 ## In Progress
-- IP-8 View As Feature 🟡
+
+- IP-8 View As Feature 🟡 Medium
 
 ## Review
 

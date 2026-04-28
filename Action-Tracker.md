@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-04-27T22:50:00-05:00
+updated: 2026-04-28T09:15:00-05:00
 ---
 
 # Action Tracker
@@ -12,12 +12,13 @@ updated: 2026-04-27T22:50:00-05:00
 | cetera | CET-4 | Configure the custom package that drives the integration to Advice Works | In Progress | Medium | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-4) |
 | cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | -- | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
 | cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
-| mai | MAI-1431 | Sales Process: Next meeting date not required on ops conversion | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1431) |
-| mai | MAI-1430 | Sales Process: Convert Prospect button CSS data loss | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1430) |
+| mai | MAI-1367 | CST Modal updates | Active | High | -- | 2026-04-28 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1367) |
+| mai | MAI-1431 | Sales Process: Next meeting date should not be required | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1431) |
+| mai | MAI-1430 | Sales Process: Convert Prospect button doesnt save all info | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1430) |
 | mai | MAI-1292 | Hide remaining Financial Account Type picklist values | Developer Review | Medium | -- | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
-| lnw | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
+| lnw | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 | lnw | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
-| lnw | LNW-191 | Part 3: Visibility Enhancements POC - Family Level Creation and Assignment | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-191) |
+| lnw | LNW-191 | Part 3: Visibility Enhancements POC - Family Level Creation | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-191) |
 | lnw | LNW-192 | Part 4: Visibility Enhancements POC - UI and UX Enablement | Review | Medium | -- | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-192) |
 | meadow | IP-125 | Data export and import (SQLite to Supabase) | Blocked | No priority | -- | 2026-04-22 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-125/data-export-and-import-sqlite-to-supabase) |
 | flex-dash | IP-8 | View As Feature | In Progress | Medium | -- | 2026-03-31 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-8/view-as-feature) |
