@@ -97,3 +97,5 @@
 - [2026-04-28 09:30 CT] "Impromptu Zoom Meeting" → Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md · confidence: high · match: attendee (Wendell Sommers, Andrew Porter, Obed Labra-Pelaez — all CREtelligent key contacts) + keyword (Radius, Phase One ESA, task groups, site products, ClickUp)
 
 - [2026-04-28 21:15 CT] FATHOM INGEST — 8 meetings in window (past 3 days), 0 new (all 8 already exist in Meeting Notes/). No writes performed.
+
+- [2026-04-28 22:00 CT] "INTERNAL: CREtelligent Team Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-28 - INTERNAL CREtelligent Team Sync.md · confidence: high · match: attendee+keyword. Andrew Porter and Obed Labra-Pelaez are CREtelligent key contacts; "CREtelligent" in title.
