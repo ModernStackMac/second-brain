@@ -99,3 +99,5 @@
 - [2026-04-28 21:15 CT] FATHOM INGEST — 8 meetings in window (past 3 days), 0 new (all 8 already exist in Meeting Notes/). No writes performed.
 
 - [2026-04-28 22:00 CT] "INTERNAL: CREtelligent Team Sync" → Meeting Notes/Stitch/Cretelligent/2026-04-28 - INTERNAL CREtelligent Team Sync.md · confidence: high · match: attendee+keyword. Andrew Porter and Obed Labra-Pelaez are CREtelligent key contacts; "CREtelligent" in title.
+
+- [2026-04-28 23:45 CT] SCHEDULED RUN: 9 Fathom meetings found (past 3 days), 0 new — all 9 already exist in Meeting Notes/. No writes performed.
