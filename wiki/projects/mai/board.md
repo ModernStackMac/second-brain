@@ -1,12 +1,14 @@
 ---
 kanban-plugin: basic
 project: mai
-updated: 2026-04-28T13:15:00-05:00
+updated: 2026-04-28T17:15:00-05:00
 ---
 
 # MAI CRM Build -- Kanban Board
 
 ## Backlog
+
+- MAI-1441 Person Account: External team field not visible 🔴 High
 
 ## Up Next
 

@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-04-28T13:15:00-05:00
+updated: 2026-04-28T17:15:00-05:00
 ---
 
 # Action Tracker
@@ -12,6 +12,7 @@ updated: 2026-04-28T13:15:00-05:00
 | cetera | CET-4 | Configure the custom package that drives the integration to Advice Works | In Progress | Medium | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-4) |
 | cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | -- | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
 | cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
+| mai | MAI-1441 | Person Account: External team field not visible on person account | New | High | -- | 2026-04-28 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1441) |
 | mai | MAI-1367 | CST Modal updates | Active | High | -- | 2026-04-28 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1367) |
 | mai | MAI-1431 | Sales Process: Next meeting date should not be required | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1431) |
 | mai | MAI-1430 | Sales Process: Convert Prospect button doesnt save all info | Active | High | -- | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1430) |
