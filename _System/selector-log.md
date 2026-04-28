@@ -93,3 +93,5 @@
 - [2026-04-27 23:00 CT] SCHEDULED RUN: 9 Fathom meetings found (past 3 days). 0 new, 9 already exist in Meeting Notes/. No files written.
 
 - [2026-04-28 12:15 CT] SCHEDULED RUN: 7 Fathom meetings found (2026-04-25 to 2026-04-28). All 7 already exist in Meeting Notes/ — 0 new files written. Skipped: "Loftware - Attack Plan" (_Unmatched/), "Impromptu Microsoft Teams Meeting" (_Unmatched/), "Andrew / Mac" (Modern Stack Systems/), "Internal: CREtelligent Weekly Sync" (Stitch/Cretelligent/), "Modern Stack Systems between Mac Nosek and Jessica Roundy" (Modern Stack Systems/), "Cetera Stand Up" (High Meadows/Cetera/), "Brian Hyman" (_Unmatched/).
+
+- [2026-04-28 09:30 CT] "Impromptu Zoom Meeting" → Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md · confidence: high · match: attendee (Wendell Sommers, Andrew Porter, Obed Labra-Pelaez — all CREtelligent key contacts) + keyword (Radius, Phase One ESA, task groups, site products, ClickUp)
