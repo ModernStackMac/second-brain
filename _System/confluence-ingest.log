@@ -105,3 +105,22 @@
 **Skipped (unchanged):** 2
 **Errors:** None
 **Notes:** All 5 pages in the CE (Cetera) space. LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. New page "Financial planning" covers Story 1.2 (Financial Planning feature design with LWC UI and Apex/Flow backend). Gifts Object Alignment and APP Address both received Jira item links (CET-136 through CET-139 and CET-131 through CET-134 respectively) and expanded design notes since last sync.
+
+## Sync Run: 2026-04-28
+
+**Spaces scanned:** CE (Cetera), LN (LNW), WB (William Blair), RW (Ritholtz Wealth), MP (MAI Post-MVP)
+**CQL query:** `type = page AND lastModified >= now("-7d") AND space.type = "global"`
+**Pages found (updated in last 7 days):** 5
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Financial planning | CE | 433487874 | 2026-04-24T21:52:51Z | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-24) |
+| Gifts Object Alignment | CE | 430964740 | 2026-04-24T22:19:10Z | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-24) |
+| APP Address | CE | 430768132 | 2026-04-24T22:04:51Z | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-24) |
+| Growth Engine | CE | 275972100 | 2026-04-21T22:22:31Z | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-21T22:22) |
+| Core Salesforce Usage Alignment | CE | 275382274 | 2026-04-21T23:12:21Z | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-21T23:12) |
+
+**Synced:** 0
+**Skipped (unchanged):** 5
+**Errors:** None
+**Notes:** All 5 pages are in the CE (Cetera) space. No pages in LN, WB, RW, or MP spaces were modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. All mirror files are current — no updates needed.
