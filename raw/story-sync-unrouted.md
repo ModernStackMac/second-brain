@@ -145,3 +145,7 @@
 [2026-04-28T17:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
 [2026-04-28T17:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
 [2026-04-28T17:15:00-05:00] NEW: MAI-1441 added to active tracker (New, High, Person Account: External team field not visible). Net MAI story count 4→5.
+
+[2026-04-28T21:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
+[2026-04-28T21:15:00-05:00] ARCHIVE: MAI-1441 dropped from active query — no longer assigned to Mac or status changed. Archived to raw/archived-stories/mai/f2-MAI-1441.md.
+[2026-04-28T21:15:00-05:00] ARCHIVE: LNW-165 status=Complete (Done). Archived to raw/archived-stories/lnw/f2-LNW-165.md.

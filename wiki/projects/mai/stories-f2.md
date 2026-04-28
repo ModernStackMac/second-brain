@@ -3,17 +3,13 @@ type: stories-sync
 project: mai
 workspace: f2
 jira_project_key: MAI
-updated: 2026-04-28T17:15:00-05:00
-story_count: 5
+updated: 2026-04-28T21:15:00-05:00
+story_count: "4"
 ---
 
 # MAI CRM Build -- Jira Stories (F2)
 
 > Auto-synced by story-sync. Do not edit by hand -- changes are overwritten.
-
-## New
-
-- [f2-MAI-1441] Person Account: External team field not visible on person account — only CS team shows [Status:: New] [Priority:: High] [Updated:: 2026-04-28] · parent: -- · [Jira](https://f2strategy.atlassian.net/browse/MAI-1441)
 
 ## Active
 
