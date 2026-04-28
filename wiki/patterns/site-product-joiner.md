@@ -89,3 +89,7 @@ CREtelligent is implementing SiteProduct to track multiple environmental service
 
 **Update (2026-04-23):** Cost roll-up direction corrected. Costs now flow: cost worksheet to site product to site (Mac had initially skipped the site product level). Additionally, profit margin formula already exists on site product (sell price minus cost divided by sell price) but wasn't functional because cost wasn't being populated at the site product level yet. Discount fields (discount percent, discounted sales price) added to the roll-up chain: site product to site (Mac) to opportunity (Obed) via Apex triggers.
 *(Source: Meeting Notes/Stitch/Cretelligent/2026-04-23 - INTERNAL CREtelligent Team Sync.md)*
+
+
+**Update (2026-04-28):** Proposal field migration confirmed — all proposal-related fields currently on the Site object moving to Site Product to eliminate duplication and establish single source of truth. Dependency analysis (flows, Apex, reports) required before deletion. Additionally, task template architecture locked in: task group type is set based on the site product, with templates sourced from the product level. This reinforces the SiteProduct's role as the central junction for product-specific logic — it now drives not just pricing/cost but also task group creation and template selection.
+*(Source: Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md)*

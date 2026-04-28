@@ -2,13 +2,39 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-27
-open_actions: 23
+last_meeting: 2026-04-28
+open_actions: 24
 ---
 
 # CREtelligent — Project Journal
 
 ## Week of Apr 27, 2026
+
+Impromptu Zoom Meeting (Apr 28, w/ Wendell Sommers, Andrew Porter, Obed Labra-Pelaez): data categorization automation, "other services" product strategy, site product component design, opportunity stages review, proposal field migration, task template architecture, EnviroSite layout, product matrix + task group field specs.
+
+**Data categorization automation:** Wendell demonstrated automation logic to categorize data without unnecessary complexity (e.g., distinguishing Phase One ESA in Canada vs. with SBA financing). Uses conditional logic to determine priority when multiple attributes apply. Andrew approved — the template/keyword-driven approach lets the client maintain the system independently without external support.
+
+**"Other services" product split decision:** Critical gap identified: "other services" products arrive from Radius as unstructured data with no specification of type (environmental, survey, or zoning). Rather than requiring manual post-order selection, Wendell proposed Radius create three distinct products — "other service environmental," "other service survey," "other service zoning" — enabling automatic routing. Andrew agreed and committed to communicating the requirement to Travis at Radius.
+
+**Site product component with service type selector:** For "other service" products that arrive without type specification, Mac will implement a site product component with an additional column allowing users to select the service type, which triggers the correct automation for task group creation and site assignment.
+
+**Opportunity stages review:** Team reviewed Salesforce stages (quoting, proposal, active, declined, closed one) against Order Tracker stages. Wendell walked through the current flow: quoting → proposal → active (closed one) → active invoice → complete. Agreed to simplify but defer final decision to the parking lot — revisit during testing.
+
+**Proposal fields migration to Site Product:** Confirmed all proposal-related fields on the Site object should migrate to Site Product to avoid duplication and maintain single source of truth. Mac already removed them from the site page layout. Team will run a dependency analysis (flows, Apex, reports) before deletion. Wendell providing input on which flows/processes reference these fields.
+
+**Task template architecture decision:** Debated single-record multi-field approach vs. individual task records. Wendell strongly preferred sourcing tasks from the product level; Andrew agreed. Task group type set based on site product. Source of truth for which tasks apply to which products: a spreadsheet Wendell maintains, with visibility logic configured in Salesforce based on product key.
+
+**EnviroSite page layout:** Wendell requested all task groups related to a site be visible on the EnviroSite page in related lists (FOIA, site visit, report writing across multiple products visible simultaneously). Andrew proposed creating a component to display all task groups on the site page rather than requiring drill-down into individual records. Both distributors (Aubrey's team) and producers (environmental team) work with the same products from different pages — agreed to surface task groups appropriately without duplicating data.
+
+**Product matrix and task group configuration:** Andrew requested Wendell provide a final product matrix listing all products/product keys with task group field requirements. Wendell confirmed this is on his to-do list — updated spreadsheet with correct product names and field requirements incoming.
+
+**Task group field specifications (Obed walkthrough with Wendell):** Detailed field-by-field validation: enter site name (formula → site owner, confirmed), report type (should be task group type field, delete separate field), transaction type (text from Radius at opportunity level), elevated conversion (yes/no picklist), report due date (from API at product level), report status (text with Radius workflow integration), address (formula → site address, confirmed), discount fields (subscription + elevated conversion — cannot both be populated simultaneously), cost worksheet fields (handled separately, green-highlighted removed from task group), open comments (deferred pending Doc Hub architecture), site visit status (picklist), date fields (standard). Team will meet internally to finalize cost/revenue field handling and discount validation logic.
+
+**Follow-up session scheduled:** Next day 10:30 AM–12:00 PM (90 min) — continuing task group fields + site product grid component.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md`)*
+
+---
 
 Internal CREtelligent Weekly Sync (Apr 27, w/ Andrew Porter, Obed Labra-Pelaez): Mule integration client pushback, LBC matrix positive feedback, expense object blockers, Quire API stories, task assignments.
 

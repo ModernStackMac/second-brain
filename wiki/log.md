@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-04-28] ingest | CREtelligent Impromptu Zoom Meeting (Apr 28)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md` (extended Week of Apr 27 entry), `commitments.md` (1 new item), `Second Brain/Decision-Log.md` (5 new entries)
+- Patterns extracted: Updated `wiki/patterns/site-product-joiner.md` (proposal field migration + task template sourcing confirmation)
+- Maintenance: Done items in commitments.md are 7 days old (under 14-day threshold). Log at 67 entries (under 200). No archival or rotation needed.
+- Key takeaways: Deep architecture session — "other services" product split decided (3 distinct products from Radius), proposal fields confirmed migrating to Site Product, task template architecture locked to product-level sourcing, extensive task group field-by-field spec validation with Wendell
+
+
 ## [2026-04-28] ingest | No new sources (scheduled run, afternoon)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files since morning run. All sources through 2026-04-27 remain current.
