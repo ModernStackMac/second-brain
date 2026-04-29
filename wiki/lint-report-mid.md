@@ -1,64 +1,92 @@
 # Wiki Lint Report — Mid-week
-**Run date:** 2026-04-22
-**Issues found:** 4 critical, 7 recommended
+**Run date:** 2026-04-29
+**Issues found:** 6 critical, 8 recommended
 
 ## Critical
 
-### 1. Jira Project Key mismatch — cetera
-`project-mapping.md` Canonical Slug Index lists cetera's Jira Project Key as `F2`, but `wiki/projects/cetera/stories-f2.md` frontmatter shows `jira_project_key: CET` and all ticket IDs use `CET-*` prefix (e.g., `CET-4`, `CET-110`). Story-sync is using the correct key; the mapping table is stale.
-**Suggested fix:** Update project-mapping.md — change cetera's Jira Project Key from `F2` to `CET` in both the Canonical Slug Index table and the Active Projects detail section.
+### C1. `loftware` folder unmapped in project-mapping.md
+`wiki/projects/loftware/` exists with `context.md` and `journal.md` (active, created 2026-04-27). Not listed in the Canonical Slug Index table in `project-mapping.md`.
+**Suggested fix:** Add row to Canonical Slug Index: `loftware` | High Meadows | Loftware | `wiki/projects/loftware/` | TBD | TBD. Add full Active Projects section entry.
 
-### 2. Broken index.md entry — `[[internal/flex-dash/journal]]`
-`wiki/index.md` references `[[internal/flex-dash/journal]]` but no `journal.md` exists in `wiki/projects/internal/flex-dash/`. The folder contains only `stories-hm.md` and `board.md`. Previously flagged in Sunday lint (2026-04-20) — still unresolved.
-**Suggested fix:** Either create `wiki/projects/internal/flex-dash/journal.md` (even a stub noting the project is paused), or update the index entry to `[[internal/flex-dash/stories-hm]]` only.
+### C2. `high-meadow-labs` folder unmapped in project-mapping.md
+`wiki/projects/internal/high-meadow-labs/` exists with `journal.md` (active, `last_meeting: 2026-04-23`). Not in the Canonical Slug Index. Flagged on 2026-04-23 in index.md appended note — still not added.
+**Suggested fix:** Add `high-meadow-labs` → `wiki/projects/internal/high-meadow-labs/` to project-mapping.md Canonical Slug Index and Active Projects.
 
-### 3. Modern Stack Systems journal — orphaned content outside week heading
-The Contour Platform Demo entry (Apr 21) in `wiki/projects/modern-stack-systems/journal.md` is appended after the `*Last updated*` footer and outside any `## Week of` heading block. It belongs inside the `## Week of Apr 21, 2026` block alongside the Blink advisory entry.
-**Suggested fix:** Move the Contour Platform Demo content into the `## Week of Apr 21, 2026` section, before the `---` separator.
+### C3. Deprecated slug `f2-cetera` in cetera/overview.md aliases
+`wiki/projects/cetera/overview.md` line 2: `aliases: [cetera, f2-cetera, f2/cetera]`. Both `f2-cetera` and `f2/cetera` are deprecated. Obsidian will still resolve wikilinks using these slugs, which defeats the deprecation. Carried over from prior lint (2026-04-22) — still unfixed.
+**Suggested fix:** Remove `f2-cetera` and `f2/cetera` from aliases. Final: `aliases: [cetera]`.
 
-### 4. LNW journal — blank `last_meeting` frontmatter
-`wiki/projects/lnw/journal.md` has `last_meeting: ` (empty) in frontmatter, but the journal body contains a `## Week of Apr 14–19, 2026` entry. The staleness check can't evaluate this project without a valid date.
-**Suggested fix:** Set `last_meeting: 2026-04-14` in the frontmatter.
+### C4. Deprecated slug `clients` in obsidian-ecosystem.md
+`wiki/topics/obsidian-ecosystem.md` references `wiki/clients/ — client context` in an example folder structure. Deprecated since 2026-04-18. Carried over from 2026-04-22 lint — still unfixed.
+**Suggested fix:** Update to `wiki/projects/ — project context`.
+
+### C5. Broken index entry — `[[reports/mai-project-overview]]`
+`wiki/index.md` lists `[[reports/mai-project-overview]]` under Reports, but `wiki/reports/mai-project-overview.md` does not exist. Carried over from Sunday lint — still broken.
+**Suggested fix:** Either create the file or remove the index entry.
+
+### C6. Cetera Jira Project Key mismatch — mapping vs stories
+`project-mapping.md` Canonical Slug Index lists cetera's Jira Project Key as `F2`, but `wiki/projects/cetera/stories-f2.md` frontmatter shows `jira_project_key: CET` and all ticket IDs use `CET-*` prefix. Carried over from 2026-04-22 lint — still unfixed.
+**Suggested fix:** Update project-mapping.md — change cetera's Jira Project Key from `F2` to `CET`.
 
 ## Recommended
 
-### 5. Harvey journal approaching staleness threshold
-`wiki/projects/harvey/journal.md` shows `last_meeting: 2026-04-09` (13 days ago), `status: active`. Will breach the 14-day stale-journal threshold tomorrow (Apr 23). No new meeting notes found in `Meeting Notes/Stand8/Harvey/` since Apr 9.
-**Action:** Confirm whether Harvey is on hold or if meetings are happening outside Fathom capture.
+### R1. Harvey journal stale — 20 days since last meeting
+`wiki/projects/harvey/journal.md` shows `last_meeting: 2026-04-09` (20 days ago), `status: active`. Most recent entry: `## Week of Apr 7–13, 2026`. Breached the 14-day threshold on Apr 23. Carried over from prior lint.
+**Action:** Confirm whether Harvey is on hold or meetings are happening outside Fathom capture.
 
-### 6. Incomplete flex-dash project folder
-`wiki/projects/internal/flex-dash/` has only `stories-hm.md` (1 ticket: IP-8) and `board.md`. Missing `context.md` and `journal.md`. Flex-Dash development is "fully paused to redirect capacity to MAI" per multiple sources.
-**Action:** Either create minimal context.md/journal.md stubs noting the pause, or demote flex-dash to inactive in project-mapping.md.
+### R2. Index.md has multiple appended notes not integrated into sections
+Several items were added as `**Note (date):**` blocks at the bottom of index.md instead of being placed in the proper section. Affected entries:
+- `[[contour]]` (2026-04-21) — should be in `## Tools`
+- `[[uat-deployment-coordination]]` (2026-04-22) — should be in `## Patterns`
+- `[[internal/high-meadow-labs/journal]]` (2026-04-23) — should be in `## Projects`
+- `[[multi-agent-voting]]` (2026-04-23) — should be in `## Patterns`
+- `[[reports/weekly-synthesis-2026-04-27]]` (2026-04-27) — should be in `## Reports`
+- `[[loftware/context]]` + `[[loftware/journal]]` (2026-04-27) — should be in `## Projects`
+**Suggested fix:** Move each entry into its correct section and remove the appended notes.
 
-### 7. `wiki/topics/obsidian-ecosystem.md` references deprecated `wiki/clients/`
-Line references `wiki/clients/ — client context` in an example folder structure. The `clients/` folder was deprecated (2026-04-18) and merged into `projects/`. Previously flagged in Sunday lint — still present.
-**Suggested fix:** Update to `wiki/projects/ — project context`.
+### R3. f2-internal/CE/ pages not in index.md
+Five files exist under `wiki/f2-internal/CE/` but are not cataloged anywhere in `wiki/index.md`:
+- `growth-engine.md`
+- `core-salesforce-usage-alignment.md`
+- `gifts-object-alignment.md`
+- `app-address.md`
+- `financial-planning.md`
+**Suggested fix:** Add an `## F2 Internal` section to index.md listing these pages.
 
-### 8. Stale `[[meadow-app]]` wikilink in `wiki/tools/supabase.md`
-`supabase.md` still uses `[[meadow-app]]` and `[[hms-capacity-planning]]`. These resolve via aliases on `internal/meadow/overview.md`, so not technically broken, but non-canonical. Sunday lint fixed the same pattern in `claude-ai.md` but missed supabase.md.
-**Suggested fix:** Replace `[[meadow-app]]` → `[[meadow]]` and `[[hms-capacity-planning]]` → `[[meadow]]` in supabase.md.
+### R4. Incomplete flex-dash project folder
+`wiki/projects/internal/flex-dash/` still has only `stories-hm.md` and `board.md`. Missing `context.md` and `journal.md`. Development is "fully paused to redirect capacity to MAI." Carried over from prior lint.
+**Action:** Create minimal stubs noting the pause, or demote flex-dash to inactive in project-mapping.md.
 
-### 9. Stale `[[hms-capacity-planning]]` wikilinks in active pages
-Found in `wiki/entities/high-meadows.md` (2 occurrences) and `wiki/projects/mai/context.md`. Resolve via alias but are non-canonical. Prefer `[[meadow]]`.
-**Suggested fix:** Replace with `[[meadow]]` in all three locations.
+### R5. Stale non-canonical wikilinks in supabase.md and other pages
+`wiki/tools/supabase.md` still uses `[[meadow-app]]` and `[[hms-capacity-planning]]`. `wiki/entities/high-meadows.md` has 2 occurrences of `[[hms-capacity-planning]]`. These resolve via aliases on `internal/meadow/overview.md` but are non-canonical. Carried over from prior lint.
+**Suggested fix:** Replace all with `[[meadow]]`.
 
-### 10. MAI Jira Project Key — mapping says TBD but story-sync uses `MAI`
-`wiki/projects/mai/stories-f2.md` frontmatter shows `jira_project_key: MAI` but project-mapping.md still lists `TBD` for both Jira Workspace and Jira Project Key. Currently 0 active stories so no routing impact.
-**Suggested fix:** Update project-mapping.md with the correct MAI Jira workspace and project key once confirmed.
+### R6. MAI Jira Project Key still TBD in mapping
+`wiki/projects/mai/stories-f2.md` frontmatter shows `jira_project_key: MAI` but project-mapping.md still lists `TBD`. Currently 0 active stories. Carried over from prior lint.
+**Suggested fix:** Update project-mapping.md with correct MAI workspace and project key.
 
-### 11. `lefavi` wiki folder not yet created
-project-mapping.md documents `wiki/projects/lefavi/` as "(not yet created)". Meeting notes exist at `Meeting Notes/High Meadows/Lefavi/`. If the engagement becomes active, the wiki folder should be scaffolded.
-**Action:** Create when needed, or add a stub now to prevent future routing gaps.
+### R7. Litify journal approaching staleness threshold
+`wiki/projects/litify/journal.md` last_meeting is 2026-04-17 (12 days ago). Will breach 14-day threshold on 2026-05-01. No new meeting notes in `Meeting Notes/Stand8/Litify/`.
+**Action:** Monitor — will flag as stale if no update by next lint.
+
+### R8. Missing frontmatter on some journals
+`wiki/projects/internal/high-meadow-website/journal.md` and `wiki/projects/internal/meadow/journal.md` have no YAML frontmatter (`status`, `last_meeting`, `open_actions`). Other project journals follow this convention.
+**Suggested fix:** Add standard frontmatter to match other project journals.
 
 ## Checks with no issues
 
 - **Workspace+key uniqueness:** No duplicate (jira_workspace, jira_project_key) pairs found.
-- **Stories frontmatter matches folder:** `cetera/stories-f2.md` → `project: cetera` ✓, `mai/stories-f2.md` → `project: mai` ✓, `internal/meadow/stories-hm.md` → `project: meadow` ✓, `internal/flex-dash/stories-hm.md` → `project: flex-dash` ✓, `lnw/stories-f2.md` → `project: lnw` ✓.
-- **Ticket-prefix routing:** CET-* tickets in cetera ✓, LNW-* tickets in lnw ✓, IP-* tickets in meadow and flex-dash ✓.
+- **Stories frontmatter matches folder:** All 5 stories files correct (cetera→cetera, mai→mai, lnw→lnw, meadow→meadow, flex-dash→flex-dash).
+- **Ticket-prefix routing:** CET-* in cetera ✓, LNW-* in lnw ✓, IP-* in meadow/flex-dash ✓.
 - **Parenthetical cross-reference headings:** None found in any stories files.
-- **Deprecated slug `f2-cetera` in wiki pages:** Only found in `cetera/overview.md` aliases (intentional backward compat) and historical log.md entries (exempt). `weekly-synthesis-2026-04-19.md` references it in context of the migration — informational, not active usage.
-- **Deprecated slug `clients` in wiki pages:** Only found in historical/informational contexts (log.md, changelog.md, overview.md provenance notes, PEER-SETUP-GUIDE.md explanation) plus the obsidian-ecosystem.md issue flagged above as #7.
-- **Non-canonical tags:** No new non-canonical tags detected.
+- **Non-canonical tags:** No new non-canonical tags detected. Wiki pages remain largely untagged.
+- **LNW journal frontmatter:** Fixed since last lint — `last_meeting: 2026-04-22` now populated.
+
+## Resolved since last mid-week lint (2026-04-22)
+
+- ~~LNW journal blank `last_meeting`~~ — now set to `2026-04-22`.
+- ~~Broken index entry `[[internal/flex-dash/journal]]`~~ — removed from index.md.
+- ~~MSS journal orphaned Contour content~~ — content now inside proper week heading.
 
 ---
 *Auto-generated by second-brain-lint-wed*

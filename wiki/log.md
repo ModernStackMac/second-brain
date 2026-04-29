@@ -1,5 +1,34 @@
 # Wiki Log
 
+## [2026-04-29] ingest | No new sources (scheduled run, evening)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All 86 meeting notes and 8 raw articles on disk remain fully logged. No new files since morning run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done items 8–9 days old (under 14-day archival threshold). Log at 71 entries (under 200 rotation threshold). No action needed.
+- Key takeaways: Wednesday evening — Fathom may have captured today's syncs but meeting notes haven't landed in vault yet. Next check will pick them up.
+
+## [2026-04-29] lint | Mid-week Health Check
+- Issues: 6 critical, 8 recommended
+- Report: wiki/lint-report-mid.md
+- Critical: loftware + high-meadow-labs unmapped in project-mapping, f2-cetera deprecated alias in cetera/overview.md, clients deprecated slug in obsidian-ecosystem.md, broken index entry (mai-project-overview), cetera Jira key mismatch (F2 vs CET)
+- Recommended: Harvey stale (20 days), index.md appended notes not integrated, f2-internal/CE not indexed, flex-dash stubs missing, non-canonical meadow wikilinks, MAI Jira key TBD, Litify approaching staleness, missing journal frontmatter
+- Resolved since last mid-week: LNW last_meeting populated, flex-dash/journal index entry removed, MSS journal Contour content fixed
+
+## [2026-04-29] ingest | No new sources (scheduled run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All 86 meeting notes and 8 raw articles on disk are already logged. No new files since Apr 28 evening run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done items 5-8 days old (under 14-day archival threshold). Log at 70 entries (under 200 rotation threshold). No action needed.
+- Key takeaways: Wednesday — new meeting notes expected from today's syncs via Fathom.
+
+## [2026-04-28] ingest | No new sources (scheduled run, evening)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-04-28 already processed. Both Apr 28 CREtelligent meetings (Impromptu Zoom, Internal Team Sync) ingested earlier today. No new files since last run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: No action needed. Log under rotation threshold, done items under archival threshold.
+- Key takeaways: No new sources. Next expected: Wednesday morning syncs via Fathom.
+
+
 ## [2026-04-28] ingest | INTERNAL CREtelligent Team Sync (Apr 28)
 - Source: `Meeting Notes/Stitch/Cretelligent/2026-04-28 - INTERNAL CREtelligent Team Sync.md`
 - Pages created: none

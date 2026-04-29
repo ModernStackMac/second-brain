@@ -153,3 +153,6 @@
 [2026-04-28T23:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
 [2026-04-28T23:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
 [2026-04-28T23:15:00-05:00] NO CHANGES: All 17 active stories unchanged from prior sync. No new stories, no archives needed.
+
+[2026-04-29T04:30:00-05:00] workspace=f2strategy.atlassian.net project=CET — routed to `cetera` via established prior-sync pattern, but project-mapping.md lists Jira Project Key=F2 (not CET). Recommend updating mapping.
+[2026-04-29T04:30:00-05:00] workspace=f2strategy.atlassian.net project=MAI — routed to `mai` via established prior-sync pattern, but project-mapping.md lists Jira Project Key=TBD (not MAI). Recommend updating mapping.

@@ -1,7 +1,7 @@
 ---
 kanban-plugin: basic
 project: mai
-updated: 2026-04-29T00:30:00-05:00
+updated: 2026-04-29T04:30:00-05:00
 ---
 
 # MAI CRM Build -- Kanban Board
@@ -12,13 +12,8 @@ updated: 2026-04-29T00:30:00-05:00
 
 ## In Progress
 
-- MAI-1367 CST Modal updates 🔴 High
-- MAI-1431 Sales Process: Next meeting date... 🔴 High
-- MAI-1430 Sales Process: Convert Prospect button... 🔴 High
-
 ## Review
 
-- MAI-1441 Person Account: External team field not visible 🔴 High
 - MAI-1292 Hide remaining Financial Account Type picklist values 🟡 Medium
 
 ## Blocked

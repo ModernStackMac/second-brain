@@ -3,8 +3,8 @@ type: stories-sync
 project: cetera
 workspace: f2
 jira_project_key: CET
-updated: 2026-04-28T23:15:00-05:00
-story_count: "3"
+updated: 2026-04-29T04:30:00-05:00
+story_count: 3
 ---
 
 # Cetera -- Jira Stories (F2)
@@ -13,7 +13,7 @@ story_count: "3"
 
 ## In Progress
 
-- [f2-CET-4] Configure the custom package that drives the integration to Advice Works (Hold off on Creating until First Full Sandbox is set up) [Status:: In Progress] [Priority:: Medium] [Updated:: 2026-04-27] · parent: Client Suitability Tracking · [Jira](https://f2strategy.atlassian.net/browse/CET-4)
+- [f2-CET-4] Configure the custom package that drives the integration to Advice Works [Status:: In Progress] [Priority:: Medium] [Updated:: 2026-04-27] · parent: Client Suitability Tracking · [Jira](https://f2strategy.atlassian.net/browse/CET-4)
 - [f2-CET-110] Case / TRPG Work Desk Alignment [Status:: In Progress] [Priority:: Medium] [Updated:: 2026-04-13] · parent: -- · [Jira](https://f2strategy.atlassian.net/browse/CET-110)
 
 ## Review
