@@ -3,7 +3,7 @@ type: stories-sync
 project: cetera
 workspace: f2strategy.atlassian.net
 jira_project_key: CET
-updated: 2026-04-29T20:15:00-05:00
+updated: 2026-04-30T00:15:00-05:00
 story_count: 3
 ---
 
