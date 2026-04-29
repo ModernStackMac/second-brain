@@ -1660,3 +1660,7 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - **Archives written:** 1 (MAI-1432 dropped from active filter)
 - **Changes:** MAI-1432 archived (no longer assigned or status changed). MAI-1186 (Developer Review, High) and MAI-1452 (Active, Highest) newly assigned. CET, LNW, Meadow, Flex Dash unchanged.
 - **Mapping note:** CET and MAI still routed via established prior-sync pattern. project-mapping.md Jira Project Key fields remain stale (cetera=F2 should be CET, mai=TBD should be MAI).
+
+## [2026-04-29] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-04-28 already processed. No new files since last run.
