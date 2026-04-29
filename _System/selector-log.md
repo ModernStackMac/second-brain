@@ -111,3 +111,5 @@
 - [2026-04-29 20:15 CT] SCHEDULED FATHOM INGEST — 9 meetings found in 3-day window (2026-04-26 to 2026-04-28), all 9 already exist in Meeting Notes/. 0 new, 0 unrouted. No writes.
 
 - [2026-04-29 20:30 CT] FATHOM INGEST RUN: 9 meetings found in window (2026-04-26 → 2026-04-28). All 9 already exist in Meeting Notes/ — 0 new files written. Skipped: "INTERNAL: CREtelligent Team Sync" (04-28, exists Stitch/Cretelligent/), "Impromptu Zoom Meeting" (04-28, exists Stitch/Cretelligent/), "Loftware - Attack Plan" (04-27, exists _Unmatched/), "Impromptu Microsoft Teams Meeting" (04-27, exists _Unmatched/), "Andrew / Mac" (04-27, exists Modern Stack Systems/), "Internal: CREtelligent Weekly Sync" (04-27, exists Stitch/Cretelligent/), "Modern Stack Systems between Mac Nosek and Jessica Roundy" (04-27, exists Modern Stack Systems/), "Cetera Stand Up" (04-27, exists High Meadows/Cetera/), "Brian Hyman" (04-27, exists _Unmatched/).
+
+- [2026-04-29 20:00 CT] SCHEDULED FATHOM INGEST — 0 new meetings. 9 recordings found in 3-day window (Apr 26–28), all already present in Meeting Notes/. No writes needed.
