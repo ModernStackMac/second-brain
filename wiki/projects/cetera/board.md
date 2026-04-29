@@ -1,21 +1,26 @@
 ---
 kanban-plugin: basic
-updated: 2026-04-29T12:15:00-05:00
 ---
 
-# Cetera — Board
+# Cetera — Kanban Board
 
 ## Backlog
 
+
 ## Up Next
 
+
 ## In Progress
-- CET-4 Configure the custom package — Advice Works integration 🔵
-- CET-110 Case / TRPG Work Desk Alignment 🔵
+
+- [ ] CET-4 Configure Advice Works integration package 🟡 Medium
+- [ ] CET-110 Case / TRPG Work Desk Alignment 🟡 Medium
 
 ## Review
-- CET-111 Create new fields on TRPG_Help_Desk__c 🔵
+
+- [ ] CET-111 Create new fields on TRPG_Help_Desk__c 🟡 Medium
 
 ## Blocked
 
+
 ## Done
+

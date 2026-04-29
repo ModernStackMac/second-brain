@@ -1,20 +1,26 @@
 ---
 kanban-plugin: basic
-updated: 2026-04-29T12:15:00-05:00
 ---
 
-# MAI — Board
+# MAI — Kanban Board
 
 ## Backlog
-- MAI-1432 Sales Process: secondary contact on HH — secondary signer only 🔴
-- MAI-1292 Hide remaining Financial Account Type picklist values 🔵
+
 
 ## Up Next
 
+
 ## In Progress
+
+- [ ] MAI-1452 Sales Process: Operations was able to convert prospect without necessary fields 🔴 Highest
+- [ ] MAI-1186 Follow-up: Sourcer/Servicer Commission Assignment 🟠 High
+- [ ] MAI-1292 Hide remaining Financial Account Type picklist values 🟡 Medium
 
 ## Review
 
+
 ## Blocked
 
+
 ## Done
+

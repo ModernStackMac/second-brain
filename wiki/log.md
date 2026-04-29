@@ -1641,3 +1641,14 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pages created: none
 - Pages updated: none
 - Patterns extracted: none
+
+
+## 2026-04-29 — Story Sync (16:15 CT)
+
+- **Operation:** STORY-SYNC — Scheduled pull from Linear (HM) + Jira (F2 Strategy)
+- **Projects synced:** 5 (mai, cetera, lnw, meadow, flex-dash)
+- **Stories routed:** 16
+- **Stories unrouted (logged):** 0
+- **Archives written:** 1 (MAI-1432 dropped from active filter)
+- **Changes:** MAI-1432 archived (no longer assigned or status changed). MAI-1186 (Developer Review, High) and MAI-1452 (Active, Highest) newly assigned. CET, LNW, Meadow, Flex Dash unchanged.
+- **Mapping note:** CET and MAI still routed via established prior-sync pattern. project-mapping.md Jira Project Key fields remain stale (cetera=F2 should be CET, mai=TBD should be MAI).

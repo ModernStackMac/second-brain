@@ -3,7 +3,7 @@ type: stories-sync
 project: flex-dash
 workspace: high-meadow-solutions
 linear_project: Flex Dash
-updated: 2026-04-29T12:15:00-05:00
+updated: 2026-04-29T16:15:00-05:00
 story_count: 5
 ---
 
