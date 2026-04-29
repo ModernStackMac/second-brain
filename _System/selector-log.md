@@ -103,3 +103,5 @@
 - [2026-04-28 23:45 CT] SCHEDULED RUN: 9 Fathom meetings found (past 3 days), 0 new — all 9 already exist in Meeting Notes/. No writes performed.
 
 - [2026-04-28 23:00 CT] SCHEDULED RUN: 9 Fathom meetings found (Apr 25–28), all 9 already exist in Meeting Notes/. 0 new, 0 unrouted. No writes performed.
+
+- [2026-04-29 12:00 CT] SCHEDULED INGEST — 9 Fathom meetings in window (Apr 26–28). All 9 already exist in Meeting Notes/. 0 new files written. No action taken.
