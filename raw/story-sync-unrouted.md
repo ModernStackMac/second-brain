@@ -169,3 +169,7 @@
 [2026-04-29T16:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active (1 In Progress, 4 Backlog).
 [2026-04-29T16:15:00-05:00] ARCHIVE: MAI-1432 dropped from active query — no longer assigned to Mac or status changed. Archived to raw/archived-stories/mai/f2-MAI-1432.md.
 [2026-04-29T16:15:00-05:00] NEW: MAI-1186 (Developer Review, High) and MAI-1452 (Active, Highest) newly appearing in active filter for MAI.
+
+[2026-04-29T20:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
+[2026-04-29T20:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active (1 In Progress, 4 Backlog). HM Solutions team: 0 issues assigned.
+[2026-04-29T20:15:00-05:00] ARCHIVE: MAI-1452 (Active, Highest) and MAI-1186 (Developer Review, High) dropped from active query — no longer assigned to Mac or status changed. Archived to raw/archived-stories/mai/.

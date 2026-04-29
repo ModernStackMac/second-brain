@@ -1,14 +1,12 @@
 ---
 type: action-tracker
-updated: 2026-04-29T16:15:00-05:00
+updated: 2026-04-29T20:15:00-05:00
 ---
 
 # Action Tracker — All Active Stories
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI | MAI-1452 | Sales Process: Operations was able to convert prospect without necessary fields | Active | Highest | — | 2026-04-29 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1452) |
-| MAI | MAI-1186 | Follow-up: Sourcer/Servicer Commission Assignment for Sales Process | Developer Review | High | — | 2026-04-29 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1186) |
 | MAI | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-4 | Configure Advice Works integration package | In Progress | Medium | — | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-4) |
 | Cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
@@ -26,4 +24,4 @@ updated: 2026-04-29T16:15:00-05:00
 
 > **Routing note:** CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
 >
-> **This sync:** MAI-1432 dropped from active filter and archived. MAI-1186 and MAI-1452 newly assigned. All other stories unchanged.
+> **This sync:** MAI-1452 and MAI-1186 dropped from active filter and archived. All other stories unchanged.
