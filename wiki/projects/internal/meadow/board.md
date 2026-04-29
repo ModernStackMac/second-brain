@@ -1,10 +1,11 @@
 ---
 kanban-plugin: basic
+type: stories-sync
 project: meadow
-updated: 2026-04-29T04:30:00-05:00
+updated: 2026-04-29T08:15:00-05:00
 ---
 
-# Meadow -- Kanban Board
+# Meadow — Board
 
 ## Backlog
 
@@ -19,3 +20,4 @@ updated: 2026-04-29T04:30:00-05:00
 - IP-125 Data export and import (SQLite to Supabase)
 
 ## Done
+

@@ -156,3 +156,7 @@
 
 [2026-04-29T04:30:00-05:00] workspace=f2strategy.atlassian.net project=CET — routed to `cetera` via established prior-sync pattern, but project-mapping.md lists Jira Project Key=F2 (not CET). Recommend updating mapping.
 [2026-04-29T04:30:00-05:00] workspace=f2strategy.atlassian.net project=MAI — routed to `mai` via established prior-sync pattern, but project-mapping.md lists Jira Project Key=TBD (not MAI). Recommend updating mapping.
+
+[2026-04-29T08:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
+[2026-04-29T08:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
+[2026-04-29T08:15:00-05:00] NEW: MAI-1432 (New, Highest, parent: Sales Process) and MAI-1451 (New, High, Bug: Remove Client Status Automation) added to active tracker. LNW-165 already archived in prior sync — skipped.

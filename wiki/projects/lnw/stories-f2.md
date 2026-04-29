@@ -1,17 +1,13 @@
 ---
 type: stories-sync
 project: lnw
-workspace: f2
+workspace: f2strategy.atlassian.net
 jira_project_key: LNW
-updated: 2026-04-29T04:30:00-05:00
+updated: 2026-04-29T08:15:00-05:00
 story_count: 4
 ---
 
-# LNW -- Jira Stories (F2)
-
-> Auto-synced by story-sync. Do not edit by hand -- changes are overwritten.
-
-## Review
+# LNW — Active Stories (F2 Strategy Jira)
 
 - [f2-LNW-189] Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-189)
 - [f2-LNW-190] Part 2: Visibility Enhancements POC - Aggregated Visibility [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture · [Jira](https://f2strategy.atlassian.net/browse/LNW-190)
