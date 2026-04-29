@@ -160,3 +160,7 @@
 [2026-04-29T08:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
 [2026-04-29T08:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
 [2026-04-29T08:15:00-05:00] NEW: MAI-1432 (New, Highest, parent: Sales Process) and MAI-1451 (New, High, Bug: Remove Client Status Automation) added to active tracker. LNW-165 already archived in prior sync — skipped.
+
+[2026-04-29T12:15:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
+[2026-04-29T12:15:00-05:00] LINEAR NOTE: HM workspace connected. Meadow steady at 1 active (IP-125 Blocked). Flex Dash steady at 5 active. HM Solutions team: 0 issues assigned.
+[2026-04-29T12:15:00-05:00] ARCHIVE: MAI-1451 dropped from active query — no longer assigned to Mac or status changed. Archived to raw/archived-stories/mai/f2-MAI-1451.md.

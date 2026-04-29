@@ -1,8 +1,6 @@
 ---
 kanban-plugin: basic
-type: stories-sync
-project: cetera
-updated: 2026-04-29T08:15:00-05:00
+updated: 2026-04-29T12:15:00-05:00
 ---
 
 # Cetera — Board
@@ -12,15 +10,12 @@ updated: 2026-04-29T08:15:00-05:00
 ## Up Next
 
 ## In Progress
-
-- CET-4 Configure the custom package — Advice Works integration 🟡
-- CET-110 Case / TRPG Work Desk Alignment 🟡
+- CET-4 Configure the custom package — Advice Works integration 🔵
+- CET-110 Case / TRPG Work Desk Alignment 🔵
 
 ## Review
-
-- CET-111 Create new fields on TRPG_Help_Desk__c 🟡
+- CET-111 Create new fields on TRPG_Help_Desk__c 🔵
 
 ## Blocked
 
 ## Done
-

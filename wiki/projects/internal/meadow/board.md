@@ -1,8 +1,6 @@
 ---
 kanban-plugin: basic
-type: stories-sync
-project: meadow
-updated: 2026-04-29T08:15:00-05:00
+updated: 2026-04-29T12:15:00-05:00
 ---
 
 # Meadow — Board
@@ -16,8 +14,6 @@ updated: 2026-04-29T08:15:00-05:00
 ## Review
 
 ## Blocked
-
 - IP-125 Data export and import (SQLite to Supabase)
 
 ## Done
-
