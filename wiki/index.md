@@ -100,3 +100,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-28, ingest #2):** Ingested 1 new meeting note (INTERNAL CREtelligent Team Sync Apr 28). CREtelligent journal extended with task group field cleanup, API push verification, Mac pivoting to Quire API work, discount functionality testing. 2 commitments added. Brian Hyman support call (Apr 27, _Unmatched) logged as low-value — no wiki pages created.
+
+
+**Note (2026-04-30, ingest):** Ingested 1 new meeting note (Chad & Mac Connect Apr 30). New project created: [[cartier/context]] + [[cartier/journal]] (direct MSS client, independent financial advisor). Scope: email attachment automation + case activity timeline LWC reuse. DocuSign back-office integration deferred. 2 commitments added, 3 decisions logged.

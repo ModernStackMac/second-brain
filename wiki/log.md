@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-04-30] ingest | Chad & Mac Connect (Apr 30)
+- Source: `Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect.md`
+- Pages created: `wiki/projects/cartier/context.md`, `wiki/projects/cartier/journal.md`
+- Pages updated: `commitments.md` (2 new items: solution design doc, activity timeline LWC reuse), `Second Brain/Decision-Log.md` (3 new decisions: Phase 1 scope, LWC reuse, attachment association level)
+- Patterns extracted: none (activity timeline LWC reuse is project-specific component reuse, not yet a generalizable pattern — only two instances so far)
+- Key takeaways: New direct client project for MSS. Chad Cartier is an independent financial advisor using Salesforce + Cirrus Insights. Two enhancements scoped: email attachment auto-capture and case activity timeline. DocuSign back-office integration deferred. Solution design doc due ~May 14.
+
+
 ## [2026-04-30] ingest | No new sources (scheduled run, afternoon)
 - Scanned: `Meeting Notes/` (all subfolders incl. newly created High Meadows/Loftware/, High Meadows/Internal/1-1s, HMU, Office Hours, Product Calls, Website), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files since last run. All meeting notes through 2026-04-28 remain current. No Apr 29 or Apr 30 meeting notes have landed.
