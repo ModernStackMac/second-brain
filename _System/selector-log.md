@@ -126,3 +126,5 @@
 - [2026-04-30 09:00 CT] "Impromptu Microsoft Teams Meeting" → Meeting Notes/_Unmatched/2026-04-27 - Impromptu Microsoft Teams Meeting.md · confidence: none · match: fallback
 
 - [2026-04-30 09:05 CT] "Chad & Mac Connect" → CORRECTED: Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect.md · confidence: high · match: user-override (Chad Cartier is owner of Cartier, routes to Modern Stack Systems)
+
+- [2026-04-30 20:30 CT] "Impromptu Microsoft Teams Meeting" → Meeting Notes/High Meadows/Internal/2026-04-27 - Impromptu Microsoft Teams Meeting.md · confidence: medium · match: attendee. All attendees are HM employees (Brian Hyman, Dave Masri, Mac). No client-specific keywords. Routed to Internal per Rule #4. Content is casual exercise equipment chat + platform switch to Zoom — no substantive project discussion.
