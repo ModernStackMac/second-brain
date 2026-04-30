@@ -124,3 +124,5 @@
 
 - [2026-04-30 09:00 CT] "Chad & Mac Connect" → Meeting Notes/_Unmatched/2026-04-30 - Chad & Mac Connect.md · confidence: none · match: fallback
 - [2026-04-30 09:00 CT] "Impromptu Microsoft Teams Meeting" → Meeting Notes/_Unmatched/2026-04-27 - Impromptu Microsoft Teams Meeting.md · confidence: none · match: fallback
+
+- [2026-04-30 09:05 CT] "Chad & Mac Connect" → CORRECTED: Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect.md · confidence: high · match: user-override (Chad Cartier is owner of Cartier, routes to Modern Stack Systems)
