@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-04-30] ingest | No new sources (scheduled run, afternoon)
+- Scanned: `Meeting Notes/` (all subfolders incl. newly created High Meadows/Loftware/, High Meadows/Internal/1-1s, HMU, Office Hours, Product Calls, Website), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since last run. All meeting notes through 2026-04-28 remain current. No Apr 29 or Apr 30 meeting notes have landed.
+- Note: Loftware Attack Plan (Apr 27) and Brian Hyman (Apr 27) were rerouted from `_Unmatched/` to `High Meadows/Loftware/` and `High Meadows/Internal/` respectively today — content already ingested in prior runs (Apr 27), no re-processing needed.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: No action needed.
+- Key takeaways: Wednesday afternoon — awaiting today's Fathom recordings.
+
+
+## [2026-04-30] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since last run. All sources through 2026-04-28 remain current. No Apr 29 or Apr 30 meeting notes or articles have landed.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: No action needed. Log under rotation threshold.
+- Key takeaways: Thursday evening — no new Fathom recordings or raw articles since last scan.
+
+
 ## [2026-04-29] ingest | No new sources (scheduled run, night)
 - Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files since last run. All sources through 2026-04-28 remain current. No Apr 29 meeting notes have landed yet.

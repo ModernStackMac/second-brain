@@ -1,5 +1,7 @@
 
 ## 2026-04-27 - Brian Hyman
+**RESOLVED 2026-04-30:** Brian Hyman confirmed as High Meadows CEO. Meeting rerouted to `Meeting Notes/High Meadows/Internal/`. Loftware added as new High Meadows project; Attack Plan meeting rerouted to `Meeting Notes/High Meadows/Loftware/`. Impromptu MS Teams meeting remains in `_Unmatched/` (no project substance).
+
 
 - **Date:** 2026-04-27
 - **Title:** Brian Hyman

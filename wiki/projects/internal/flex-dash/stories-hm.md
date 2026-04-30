@@ -6,6 +6,14 @@ linear_project: Flex Dash
 updated: 2026-04-29T19:00:00-05:00
 story_count: 5
 ---
+---
+type: stories-sync
+project: flex-dash
+workspace: high-meadow-solutions
+linear_project: Flex Dash
+updated: 2026-04-30T12:00:00-05:00
+story_count: 5
+---
 
 # Flex Dash — Active Stories (HM Linear)
 

@@ -3,8 +3,8 @@ type: confluence-mirror
 source_url: https://f2strategy.atlassian.net/wiki/spaces/CE/pages/433487874/Financial+planning
 space: CE
 page_id: "433487874"
-last_synced: 2026-04-27T06:00:00Z
-last_confluence_update: 2026-04-24T00:00:00Z
+last_synced: 2026-04-30T06:00:00Z
+last_confluence_update: 2026-04-29T19:59:00Z
 title: Financial planning
 ---
 

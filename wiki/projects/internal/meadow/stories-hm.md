@@ -6,6 +6,14 @@ linear_project: Capacity Planning
 updated: 2026-04-29T19:00:00-05:00
 story_count: 1
 ---
+---
+type: stories-sync
+project: meadow
+workspace: high-meadow-solutions
+linear_project: Capacity Planning
+updated: 2026-04-30T12:00:00-05:00
+story_count: 1
+---
 
 # Meadow — Active Stories (HM Linear)
 
