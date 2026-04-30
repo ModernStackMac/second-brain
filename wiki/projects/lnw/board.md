@@ -3,17 +3,19 @@ kanban-plugin: basic
 project: lnw
 updated: 2026-04-30T22:30:00-05:00
 ---
+---
+kanban-plugin: basic
+project: lnw
+updated: 2026-05-01T04:30:00-05:00
+---
 
-# LNW — Kanban Board
+# LNW — Board
 
 ## Backlog
 
-
 ## Up Next
 
-
 ## In Progress
-
 
 ## Review
 
@@ -24,6 +26,4 @@ updated: 2026-04-30T22:30:00-05:00
 
 ## Blocked
 
-
 ## Done
-

@@ -3,18 +3,22 @@ kanban-plugin: basic
 project: flex-dash
 updated: 2026-04-30T22:30:00-05:00
 ---
+---
+kanban-plugin: basic
+project: flex-dash
+updated: 2026-05-01T04:30:00-05:00
+---
 
-# Flex Dash — Kanban Board
+# Flex Dash — Board
 
 ## Backlog
 
 - IP-33 Dashboard Metrics for Demos 🟡
 - IP-1 Dynamic Dashboard Filtering 🟡
 - IP-34 External Data Source 🟡
-- IP-7 Apex Class to set up Financial Services Cloud Test Data 🟡
+- IP-7 Apex Class to set up FSC Test Data 🟡
 
 ## Up Next
-
 
 ## In Progress
 
@@ -22,9 +26,6 @@ updated: 2026-04-30T22:30:00-05:00
 
 ## Review
 
-
 ## Blocked
 
-
 ## Done
-
