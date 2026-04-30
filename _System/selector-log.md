@@ -130,3 +130,5 @@
 - [2026-04-30 20:30 CT] "Impromptu Microsoft Teams Meeting" → Meeting Notes/High Meadows/Internal/2026-04-27 - Impromptu Microsoft Teams Meeting.md · confidence: medium · match: attendee. All attendees are HM employees (Brian Hyman, Dave Masri, Mac). No client-specific keywords. Routed to Internal per Rule #4. Content is casual exercise equipment chat + platform switch to Zoom — no substantive project discussion.
 
 - [2026-04-30 22:00 CT] FATHOM INGEST RUN: 10 meetings found in 3-day window (Apr 27-30). All 10 already exist in Meeting Notes — 0 new, 0 unrouted. No files written.
+
+- [2026-04-30 21:00 CT] SCHEDULED RUN: Scanned 10 Fathom meetings from past 3 days (2026-04-27 to 2026-04-30). All 10 already exist in Meeting Notes/. 0 new meetings captured, 0 unrouted. No action taken.
