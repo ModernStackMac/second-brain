@@ -13,3 +13,15 @@
 - **2026-04-27 "Impromptu Microsoft Teams Meeting"** | Date: 2026-04-27 | Attendees: Mac Nosek, Brian Hyman | Suggested candidates: Cetera (Brian Hyman appeared in previous Cetera-adjacent meetings), but content is only casual chat + platform switch to Zoom with no project substance. Routed to _Unmatched pending manual review.
 
 - **2026-04-27 "Loftware - Attack Plan"** | Date: 2026-04-27 | Attendees: Mac Nosek, Brian Hyman, Dave Masri, Sean Berry | Fathom URL: https://fathom.video/calls/650773723 | Suggested candidates: High Meadows (new prospect pursuit). "Loftware" appears to be a wealth management firm prospect replacing a failed Plative engagement. Involves RCA (Revenue Cloud Automation), Broadridge Sales Connect migration, and Salesforce implementation. Brian Hyman and Dave Masri are High Meadows leadership. If this becomes an active project, add "loftware" to project-mapping.md with Meeting Folder and keywords (loftware, lawfare, rca, broadridge, plative, kyle).
+
+## 2026-04-30 - Chad & Mac Connect
+- **Date:** 2026-04-30
+- **Attendees:** Mac Nosek, Chad Cartier
+- **Summary:** Salesforce email attachment automation, DocuSign integration challenge (Cetera back office), case activity timeline enhancement. Chad uses Cirrus Insights for email tracking.
+- **Suggested candidates:** Possibly a standalone client project for Chad Cartier (financial advisor using Salesforce). Mentions Cetera as his broker-dealer back office but is not the same as the High Meadows/Cetera project. Consider creating a new project entry in project-mapping.md.
+
+## 2026-04-27 - Impromptu Microsoft Teams Meeting
+- **Date:** 2026-04-27
+- **Attendees:** Brian Hyman
+- **Summary:** Brief lobby conversation (exercise equipment chat) before participants realized the actual meeting was on Zoom. No substantive content.
+- **Suggested candidates:** Likely related to a High Meadows onsite (mentions Masri), but too trivial to route confidently. The actual meeting content would be captured in the Zoom recording.

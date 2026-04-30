@@ -121,3 +121,6 @@
 - [2026-04-30 10:00 CT] PROJECT-MAPPING UPDATE: Added "loftware" as new High Meadows project (RCA implementation, Broadridge migration). Added Brian Hyman (CEO) as Internal key contact.
 
 - [2026-04-30 12:15 CT] SCHEDULED FATHOM INGEST — 9 meetings found in 3-day window (2026-04-27 to 2026-04-28). All 9 already exist in Meeting Notes/. 0 new files written. Skipped: "INTERNAL: CREtelligent Team Sync" (04-28, Stitch/Cretelligent/), "Impromptu Zoom Meeting" (04-28, Stitch/Cretelligent/), "Loftware - Attack Plan" (04-27, High Meadows/Loftware/), "Impromptu Microsoft Teams Meeting" (04-27, previously _Unmatched/), "Andrew / Mac" (04-27, Modern Stack Systems/), "Internal: CREtelligent Weekly Sync" (04-27, Stitch/Cretelligent/), "Modern Stack Systems between Mac Nosek and Jessica Roundy" (04-27, Modern Stack Systems/), "Cetera Stand Up" (04-27, High Meadows/Cetera/), "Brian Hyman" (04-27, High Meadows/Internal/).
+
+- [2026-04-30 09:00 CT] "Chad & Mac Connect" → Meeting Notes/_Unmatched/2026-04-30 - Chad & Mac Connect.md · confidence: none · match: fallback
+- [2026-04-30 09:00 CT] "Impromptu Microsoft Teams Meeting" → Meeting Notes/_Unmatched/2026-04-27 - Impromptu Microsoft Teams Meeting.md · confidence: none · match: fallback
