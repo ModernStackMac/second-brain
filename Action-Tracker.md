@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-05-01T00:30:00-05:00
+updated: 2026-04-30T22:30:00-05:00
 ---
 
 # Action Tracker — All Active Stories
@@ -27,4 +27,4 @@ updated: 2026-05-01T00:30:00-05:00
 
 > **Routing note:** CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating project-mapping.md.
 >
-> **This sync (2026-05-01T00:30):** No story count changes from prior sync. MAI steady at 4 (1 Active, 3 Developer Review). CET steady at 3 (2 In Progress, 1 Ready for Demo). LNW steady at 4 (all Review). Meadow steady at 1 (Blocked). Flex Dash steady at 5 (1 In Progress, 4 Backlog). Linear HM workspace returned 0 issues assigned to Mac.
+> **This sync (2026-04-30T22:30):** No story count changes from prior sync. MAI steady at 4 (1 Active, 3 Developer Review). CET steady at 3 (2 In Progress, 1 Ready for Demo). LNW steady at 4 (all Review). Meadow steady at 1 (Blocked). Flex Dash steady at 5 (1 In Progress, 4 Backlog). Linear HM workspace returned 0 issues on High Meadow Solutions team.
