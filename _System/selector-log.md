@@ -136,3 +136,8 @@
 - [2026-04-30 22:30 CT] FATHOM INGEST: 10 meetings in window (Apr 27-30). All 10 already exist in Meeting Notes/ — 0 new, 0 unrouted. No writes.
 
 - [2026-04-30 21:00 CT] FATHOM INGEST RUN: 10 meetings found in 3-day window (2026-04-27 to 2026-04-30). 0 new — all 10 already exist in Meeting Notes/. Breakdown: Chad & Mac Connect (Modern Stack Systems/Cartier/), INTERNAL CREtelligent Team Sync 04-28 (Stitch/Cretelligent/), Impromptu Zoom Meeting 04-28 (Stitch/Cretelligent/), Loftware Attack Plan (High Meadows/Loftware/), Impromptu Microsoft Teams Meeting (High Meadows/Internal/), Andrew/Mac (Modern Stack Systems/), Internal CREtelligent Weekly Sync 04-27 (Stitch/Cretelligent/), Modern Stack Systems - Jessica Roundy (Modern Stack Systems/), Cetera Stand Up (High Meadows/Cetera/), Brian Hyman (High Meadows/Internal/). No action taken.
+
+- [2026-05-01 08:45 CT] FATHOM INGEST: 3 meetings found in window (2026-04-28 to 2026-05-01), 0 new. All 3 already exist in Meeting Notes — skipped per additive-only rule.
+  - "Chad & Mac Connect" (2026-04-30) → already at Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect.md
+  - "INTERNAL: CREtelligent Team Sync" (2026-04-28) → already at Meeting Notes/Stitch/Cretelligent/2026-04-28 - INTERNAL CREtelligent Team Sync.md
+  - "Impromptu Zoom Meeting" (2026-04-28) → already at Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md
