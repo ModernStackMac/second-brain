@@ -1,17 +1,9 @@
 ---
 type: stories-sync
 project: meadow
-workspace: high-meadow-solutions
-linear_project: Capacity Planning
-updated: 2026-04-30T22:30:00-05:00
-story_count: 1
----
----
-type: stories-sync
-project: meadow
 workspace: linear-hm
 linear_project: Capacity Planning
-updated: 2026-05-01T04:30:00-05:00
+updated: 2026-04-30T19:00:00-05:00
 story_count: 1
 ---
 
