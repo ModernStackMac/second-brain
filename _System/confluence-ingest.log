@@ -141,3 +141,20 @@
 **Skipped (unchanged):** 2
 **Errors:** None
 **Notes:** Only 3 pages across all 5 global spaces were modified in the last 7 days (down from 5 last sync — Growth Engine and Core Salesforce Usage Alignment have aged out of the 7-day window). All 3 pages are in the CE (Cetera) space. LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. Financial planning page was re-saved on Apr 29 but body content is identical to the Apr 24 version — likely a minor edit or attachment update in Confluence.
+
+## Sync Run: 2026-05-01
+
+**Spaces scanned:** CE (Cetera), LN (LNW), WB (William Blair), RW (Ritholtz Wealth), MP (MAI Post-MVP)
+**CQL query:** `type = page AND lastModified >= now("-7d") AND space.type = "global"`
+**Pages found (updated in last 7 days):** 3
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Financial planning | CE | 433487874 | 2026-04-29T19:59:09Z | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-29T19:59:00Z) |
+| Gifts Object Alignment | CE | 430964740 | 2026-04-24 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-24) |
+| APP Address | CE | 430768132 | 2026-04-24 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-04-24) |
+
+**Synced:** 0
+**Skipped (unchanged):** 3
+**Errors:** None
+**Notes:** All 3 pages are in the CE (Cetera) space. Growth Engine and Core Salesforce Usage Alignment have aged out of the 7-day window (last modified 2026-04-21). LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. All mirror files are current — no updates needed.
