@@ -6,6 +6,14 @@ jira_project_key: LNW
 updated: 2026-04-30T19:00:00-05:00
 story_count: 4
 ---
+---
+type: stories-sync
+project: lnw
+workspace: f2strategy.atlassian.net
+jira_project_key: LNW
+updated: 2026-05-01T08:30:00-05:00
+story_count: 4
+---
 
 # LNW — Active Stories (F2 Strategy Jira)
 
