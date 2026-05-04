@@ -59,3 +59,9 @@
 [2026-05-04T11:00:00-05:00] workspace=linear-hm project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/
 [2026-05-04T11:00:00-05:00] NEW: MAI-1495 (Active, High) and MAI-1463 (Active, Highest) added to active tracker. Both newly appearing in assignee query.
 [2026-05-04T11:00:00-05:00] CHANGE: MAI grew from 3 to 5 active stories (+2 new: MAI-1495, MAI-1463). CET unchanged at 2. LNW unchanged at 4. Meadow unchanged at 1 (IP-145 In Review). Flex Dash 5 active (unrouted). Total routed active: 12.
+
+[2026-05-04T16:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-34 — no folder at wiki/projects/flex-dash/ in project-mapping.md
+[2026-05-04T16:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-33 — no folder at wiki/projects/flex-dash/ in project-mapping.md
+[2026-05-04T16:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-1 — no folder at wiki/projects/flex-dash/ in project-mapping.md
+[2026-05-04T16:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-8 — no folder at wiki/projects/flex-dash/ in project-mapping.md
+[2026-05-04T16:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/ in project-mapping.md

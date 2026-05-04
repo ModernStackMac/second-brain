@@ -25,3 +25,26 @@ updated: 2026-05-04T11:00:00-05:00
 ## Blocked
 
 ## Done
+---
+kanban-plugin: basic
+project: mai
+updated: 2026-05-04T16:00:00-05:00
+---
+
+# MAI CRM Build — Board
+
+## Backlog
+
+## Up Next
+
+## In Progress
+- MAI-1495 Return to requestor routing bug 🔴
+- MAI-1494 Sales Process: Person Account Owners Upon Conversion 🔴
+
+## Review
+- MAI-1451 Remove Client Status Automation for Household Members 🔴
+- MAI-1292 Hide remaining Financial Account Type picklist values 🟡
+
+## Blocked
+
+## Done
