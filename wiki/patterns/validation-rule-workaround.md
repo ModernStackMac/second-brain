@@ -78,8 +78,19 @@ CREtelligent has a required Status__c picklist on the Case object with a validat
 - [[cretelligent]] — engagement using this pattern
 - [[case-migration]] — related pattern for handling validation rules during data migration
 
+## Cetera Example: Queue-Scoping Variant
+
+A different flavor of the same problem: the `Next Meeting Date` validation rule was correctly enforcing business logic (require a next meeting date when status changes) but its scope was too broad. It fired when records were assigned to the `Operations Onboarding` queue during lead conversion, blocking the conversion process.
+
+**Fix:** Refined the validation rule condition to fire only for status changes *before* the `Decision` stage or for disqualification. Queue assignments during conversion no longer trigger the rule.
+
+**Lesson:** Validation rules in orgs with queue-based routing need explicit exclusions for automated ownership changes. Always check: "Does this rule fire on owner change, and can queues be owners?"
+
+*(Source: Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md)*
+
 ## Sources
 - Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Quick Sync - Validation Workaround.md
+- Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-05-04*

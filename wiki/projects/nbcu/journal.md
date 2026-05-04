@@ -2,11 +2,24 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-20
+last_meeting: 2026-04-30
 open_actions: "3"
 ---
 
 # NBCU — Project Journal
+
+## Week of Apr 28, 2026
+
+NBCU POC strategy discussed during multi-project Cetera/MAI standup (Apr 30). No dedicated NBCU meeting — this was a segment of the broader sprint standup.
+
+**Dual-path strategy pivot:** The NBCU AI POC will proceed with a dual-path approach. **Primary plan:** build the title pricing engine in Agentforce, leveraging the project's stall to pressure NBCU leadership for the long-delayed license approval. **Backup plan:** direct GenAI models (non-Agentforce) if approval isn't imminent. Mac to email the updated SOW to Ranjit/Naresh with budget, guardrails, and the Agentforce vs Plan B breakdown. Separate email to Andrew with Agentforce vs Plan B pros/cons.
+
+**Agentforce access escalation:** Mac to schedule a call with the NBCU Salesforce rep regarding Agentforce access; Scott to be included.
+
+*(Source: `Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md`, `Meeting Notes/High Meadows/MAI/2026-04-30 - Impromptu Call.md`)*
+
+---
+
 
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
 

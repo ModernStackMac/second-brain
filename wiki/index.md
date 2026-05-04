@@ -106,3 +106,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-05-01):** New report: [[reports/agentforce-knowledge-report]] -- 2026-05-01 -- Comprehensive Agentforce knowledge synthesis across 11 wiki pages. Covers 4 client engagements (Harvey, NBCU, Litify, CREtelligent), platform updates (Builder beta, Vibes IDE, Hosted MCP GA, Structured Outputs), and architecture patterns (multi-agent orchestration, multi-agent voting, semantic layer gap).
+
+
+**Note (2026-05-04, ingest):** Ingested 3 meeting notes (Andrew/Mac May 4, Cetera/MAI Impromptu Call Apr 30 — dual-routed). New pattern page: [[dual-path-vendor-dependency]] — proceed with primary vendor-dependent + backup vendor-independent paths when licensing stalls. Applied in NBCU Agentforce POC. Updated: [[validation-rule-workaround]] with queue-scoping variant from Cetera. Updated journals: MSS (May 4 week), Cetera (Apr 28 week), MAI (Apr 28 week), NBCU (Apr 28 week). Updated Cetera context (DocuSign, EAC/Inbox Graph upgrade, Sumo→Onito). 14 commitments added (11 Cetera, 3 NBCU). 4 decisions logged.

@@ -1,10 +1,33 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-04-27
+updated: 2026-05-04
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of May 4, 2026
+
+Andrew/Mac Sync (May 4, w/ Andrew Smith): AI co-gen reality check, strategic billing practices, CPA upgrade, Fathom/Claude session usage, Cartier and L&W mentions, Second Brain pitch to HMS CEO.
+
+**AI co-gen reality check:** A colleague's $200/mo Copilot subscription for an internal app illustrates the gap — AI coding tools are productivity multipliers for existing developers, not replacements for non-developers. Average users who haven't written code are still a long way from building usable apps with co-gen.
+
+**Strategic billing:** Mac bills 4–5 hours per story even when work takes less time, managing client expectations and avoiding under-billing. On one L&W project with 10 refinement stories, Mac does one per day, bills five hours each. Client expected the batch to last a week; Mac completed one in about an hour. The art is pacing delivery without clients noticing work is done in their org prematurely (branches, not direct deploy).
+
+**CPA upgrade:** Mac firing current generalist CPA and upgrading to an S-corp specialist. Expecting ~$400K income this year. Found a Colorado-based CPA who wrote the book on S-corps — $4,500/year (up from $2,600). Meeting scheduled for late May (after Barcelona trip). Also looking at Dark Horse CPA as a backup. A friend who switched CPAs once got a $150K return — the ROI case for specialist expertise is clear. Friend also recommended an entrepreneur focus group (not Maker City).
+
+**Fathom/Claude session usage:** Users burning through $200/mo Claude credits in hours because they feed massive production databases into sessions or install bloated skill packs (e.g., "awesome cloud code skills" = thousands of skills inflating session context). Mac's approach: refined skills with multiple focused commands, uses Superpower/Superhuman plugin for session optimization (planning commands, subagent flows for parallel execution).
+
+**Second Brain pitch:** Mac's HMS CEO sees the Second Brain (Obsidian + MCP + Fathom transcripts + scheduled ingest) as a major tool for the whole company. Mac notes it's fundamentally a coding tool — connected to Jira/ClickUp, pulls active stories, provides full project context at session start.
+
+**Cartier / L&W mentions:** Cartier — Mac writing another solution doc (~50 hours, $7–8K). Recommending a custom object for task change tracking (client wants to see all changes on a task via triggers). L&W — 10 refinement stories assigned, pacing one per day at five billable hours.
+
+No new commitments identified (Cartier solution doc already captured in prior ingest).
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md`)*
+
+---
+
 
 ## Week of Apr 27, 2026
 

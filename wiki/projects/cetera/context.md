@@ -14,6 +14,9 @@
 - **Marketing Cloud Journeys** — journey-based automation (provisioning in progress)
 - **Advice Works Integration** — advisor "sent to Advice Works" button functionality
 - **Custom Settings Infrastructure** — hierarchical checkbox system to disable flows/triggers org-wide or per user
+- **DocuSign Integration** — DocuSign Maestro field mapping to Salesforce Account/Contact objects; unblocked as of Apr 30
+- **EAC/Inbox Microsoft Graph Upgrade** — migrating from legacy auth to Microsoft Graph
+- **Sumo Scheduler → Onito** — vendor rebranded; impact assessment pending
 
 ## Data Model Scope
 - 40 net new fields identified in discovery
@@ -58,4 +61,4 @@
 - [[marketing-cloud]] — journey automation (provisioning blocker)
 
 ---
-*Last updated: 2026-04-27*
+*Last updated: 2026-05-04*

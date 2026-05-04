@@ -1782,3 +1782,17 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Maintenance: Log at 90 entries, no rotation needed. Commitments.md Done items oldest from Apr 21 (13 days) — under 14-day archival threshold, will archive tomorrow if still present.
 - Note: Obsidian MCP unavailable (connection refused on port 27124) — used direct filesystem fallback.
 - Key takeaways: Clean scan. Sunday — no new meeting notes expected. Apr 21 Done items hit archival threshold tomorrow.
+
+## [2026-05-04] ingest | Andrew/Mac Sync (May 4)
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+- Patterns extracted: none (strategic billing/CPA topics are personal business strategy, not reusable technical patterns)
+- Key takeaways: AI co-gen is a dev multiplier not a replacement; Mac billing 4-5 hrs/story strategically; upgrading to S-corp specialist CPA ($4,500/yr, expects $400K income); Fathom/Claude session optimization tips (avoid bloated skill packs); Second Brain pitched to HMS CEO.
+
+## [2026-05-04] ingest | Cetera/MAI Multi-Project Standup (Apr 30)
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md`, `Meeting Notes/High Meadows/MAI/2026-04-30 - Impromptu Call.md`
+- Pages created: `wiki/patterns/dual-path-vendor-dependency.md`
+- Pages updated: `wiki/projects/cetera/journal.md`, `wiki/projects/cetera/context.md`, `wiki/projects/mai/journal.md`, `wiki/projects/nbcu/journal.md`, `wiki/patterns/validation-rule-workaround.md`, `commitments.md`, `Second Brain/Decision-Log.md`
+- Patterns extracted: dual-path-vendor-dependency (new), validation-rule-workaround queue-scoping variant (update)
+- Key takeaways: NBCU POC pivoting to dual-path (Agentforce primary + GenAI backup) after 6-month license stall. Next Meeting Date validation fix unblocked lead conversion. DocuSign Maestro integration unblocked. Chire API de-scoped for Phase 1. Meadow app targeting June 1 launch. Sumo Scheduler rebranded to Onito. 14 new commitments for Mac (11 Cetera, 3 NBCU).

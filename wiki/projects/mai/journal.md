@@ -2,11 +2,40 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-23
+last_meeting: 2026-04-30
 open_actions: 22
 ---
 
 # MAI — Project Journal
+
+## Week of Apr 28, 2026
+
+Multi-project sprint standup (Apr 30, routed to MAI as primary by volume): validation rules, DocuSign, fund assignments, case routing, Chire API, and several other work streams. Cross-reference: [[cetera]], [[nbcu]], [[internal/meadow]].
+
+**Next Meeting Date validation fix (critical blocker resolved):** The `Next Meeting Date` validation rule was blocking lead conversion by firing on the `Operations Onboarding` queue. Fixed to fire only for status changes *before* the `Decision` stage or for disqualification.
+
+**DocuSign integration unblocked:** Mac providing Salesforce API names for `Account` and `Contact` objects to Travis for DocuSign Maestro field mapping. Collected data syncs directly to Salesforce.
+
+**Contract-required conversion:** Mac testing/fixing to ensure Contract Status = Complete is enforced during conversion.
+
+**Case routing to Operations Billing:** Re-testing and documenting routing logic; updating flow to route "Other" fee schedules correctly.
+
+**SMA account identification:** Ticket to be created to correct identification logic.
+
+**Fund Assignment (Epic 923):** Remaining tickets in progress. LWC tweak needed — Custodian Registration to become a lookup field.
+
+**Chire API:** De-scoping fields not in current endpoints; relying on Order Service for Phase 1. Mac sending investigation summary to Andrew/Travis.
+
+**EAC/Inbox Microsoft Graph upgrade:** Moving from legacy auth to Microsoft Graph; coordinating re-auth with Travis.
+
+**Sumo Scheduler → Onito rebrand:** Impact assessment needed after rebranding.
+
+**Family page layout:** Missing fields to be added.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-04-30 - Impromptu Call.md`)*
+
+---
+
 
 
 Dev DSU (Apr 23) -- high ticket velocity, permission fixes, and demo prep.

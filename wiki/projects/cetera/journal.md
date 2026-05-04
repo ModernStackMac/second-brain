@@ -2,11 +2,42 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-27
+last_meeting: 2026-04-30
 open_actions: 8
 ---
 
 # Cetera — Project Journal
+
+## Week of Apr 28, 2026
+
+Multi-project sprint standup (Apr 30, Mac + Travis Hickey + Andrew Porter + Vincent + Rodin): covered Cetera, NBCU POC, DocuSign, Fund Assignment, Chire API, Meadow, and internal tooling. Long session (~multi-hour).
+
+**Next Meeting Date validation fix:** The validation rule was blocking lead conversion by firing on the `Operations Onboarding` queue. Fix: validation now fires only for status changes *before* the `Decision` stage or for disqualification. Aisha/Michael confirmed the logic.
+
+**DocuSign integration unblocked:** Mac providing Salesforce API names for `Account` and `Contact` objects so Travis can map fields in DocuSign Maestro and sync collected data directly to Salesforce.
+
+**Fund Assignment (Epic 923):** Remaining tickets in progress. Fund Assignment LWC needs a tweak — make Custodian Registration a lookup field. Ticket to be created and linked to 1066.
+
+**Chire API de-scoping:** De-scoping Chire fields not in current API endpoints; relying on Order Service for Phase 1. Mac to send investigation summary to Andrew/Travis.
+
+**EAC/Inbox Microsoft Graph upgrade:** Upgrading EAC/Inbox from legacy auth to Microsoft Graph. Coordinating re-auth with Travis.
+
+**Sumo Scheduler → Onito rebrand:** Sumo Scheduler rebranded to Onito. Impact assessment needed — Mac investigating.
+
+**SMA account identification:** Ticket needed to correct SMA account identification logic.
+
+**Family page layout:** Missing fields need to be added.
+
+**Contract-required conversion:** Mac testing/fixing contract-required conversion to ensure Contract Status = Complete.
+
+**Case routing:** Re-testing and documenting case routing to Operations Billing; updating flow to route "Other" fee schedules.
+
+**Site Product/cost roll-ups:** Mac to send demo (screenshots/video) to Andrew/Travis.
+
+*(Source: `Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md`)*
+
+---
+
 
 ## Week of Apr 27, 2026
 
