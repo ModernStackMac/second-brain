@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-04T18:30:00-05:00
+updated: 2026-05-04T19:00:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -10,6 +10,8 @@ updated: 2026-05-04T18:30:00-05:00
 ## Backlog
 
 ## Up Next
+
+- MAI-1372 FA: Loan Updates - Remove Type Field 🔴
 
 ## In Progress
 
