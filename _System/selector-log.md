@@ -151,3 +151,7 @@
 - [2026-05-04 11:00 CT] "Andrew / Mac" → SKIPPED (already exists at Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md)
 
 - [2026-05-04 18:00 CT] FATHOM INGEST RUN: 2 meetings found in 3-day window (2026-05-01 to 2026-05-04). 0 new, 2 already exist. "Andrew / Mac" (2026-05-04) → already at Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md. "Impromptu Call" (2026-04-30) → already at Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md + Meeting Notes/High Meadows/MAI/2026-04-30 - Impromptu Call.md. 0 unrouted. No writes.
+
+- [2026-05-04 18:00 CT] SCHEDULED FATHOM INGEST: 2 meetings found in 3-day window (2026-05-01 to 2026-05-04). Both already exist in Meeting Notes/ — 0 new files written, 0 unrouted.
+  - "Andrew / Mac" (2026-05-04) → already at Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md
+  - "Impromptu Call" (2026-04-30) → already at Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md + Meeting Notes/High Meadows/MAI/2026-04-30 - Impromptu Call.md
