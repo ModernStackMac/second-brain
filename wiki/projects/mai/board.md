@@ -1,8 +1,7 @@
 ---
 kanban-plugin: basic
-type: stories-sync
 project: mai
-updated: 2026-05-04T11:00:00-05:00
+updated: 2026-05-04T17:30:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -12,38 +11,12 @@ updated: 2026-05-04T11:00:00-05:00
 ## Up Next
 
 ## In Progress
-
-- MAI-1495 Return to requestor routing 🔴 High
-- MAI-1463 Trustee Workflow on Prospect Conversion 🔴 Highest
-- MAI-1494 Person Account Owners Upon Conversion 🔴 High
-- MAI-1448 Family & Household Lookup on Prospects 🔴 High
+- MAI-1495 Return to requestor: routing fix 🟠
+- MAI-1494 Sales Process: Person Account Owners Upon Conversion 🟠
 
 ## Review
-
-- MAI-1292 Hide Financial Account Type picklist values 🟡 Medium
-
-## Blocked
-
-## Done
----
-kanban-plugin: basic
-project: mai
-updated: 2026-05-04T16:00:00-05:00
----
-
-# MAI CRM Build — Board
-
-## Backlog
-
-## Up Next
-
-## In Progress
-- MAI-1495 Return to requestor routing bug 🔴
-- MAI-1494 Sales Process: Person Account Owners Upon Conversion 🔴
-
-## Review
-- MAI-1451 Remove Client Status Automation for Household Members 🔴
-- MAI-1292 Hide remaining Financial Account Type picklist values 🟡
+- MAI-1373 FA: Mortgages Updates 🟠
+- MAI-1292 Hide remaining FA Type picklist values (red items) 🟡
 
 ## Blocked
 
