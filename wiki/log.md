@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-04] ingest | No new sources (scheduled run, late evening)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files. All sources through 2026-05-04 remain current.
+- Maintenance: Done items (Apr 21 batch) at 13 days — archival not yet triggered. Log rotation not needed. Note: several open commitments misplaced under `## Done` — flagged for next lint pass.
+- Key takeaways: Sunday evening clean scan. Apr 21 Done items eligible for archival May 6. Next expected: Monday meeting notes.
+
+
 ## [2026-05-04] ingest | No new sources (scheduled run)
 - Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files. All 87 meeting notes, 8 raw articles, and 3 raw/projects files remain current through 2026-04-30.
