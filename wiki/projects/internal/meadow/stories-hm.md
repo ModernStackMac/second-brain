@@ -1,12 +1,12 @@
 ---
 type: stories-sync
-project: meadow
+project: internal/meadow
 workspace: linear-hm
 linear_project: Capacity Planning
-updated: 2026-05-01T14:00:00-05:00
+updated: 2026-05-04T11:00:00-05:00
 story_count: 1
 ---
 
-# Meadow — Active Stories (Linear HM)
+# Meadow (Capacity Planning) — Active Stories (Linear HM)
 
-- [hm-IP-125] Data export and import (SQLite to Supabase) [Status:: Blocked] [Priority:: No priority] [Updated:: 2026-04-22] · parent: — · [Linear](https://linear.app/high-meadow-solutions/issue/IP-125/data-export-and-import-sqlite-to-supabase)
+- [hm-IP-145] Role system: admin / manager / user with in-app role + manager management [Status:: In Review] [Priority:: High] [Updated:: 2026-05-02] · parent: — · [Linear](https://linear.app/high-meadow-solutions/issue/IP-145/role-system-admin-manager-user-with-in-app-role-manager-management)

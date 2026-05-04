@@ -103,3 +103,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-04-30, ingest):** Ingested 1 new meeting note (Chad & Mac Connect Apr 30). New project created: [[cartier/context]] + [[cartier/journal]] (direct MSS client, independent financial advisor). Scope: email attachment automation + case activity timeline LWC reuse. DocuSign back-office integration deferred. 2 commitments added, 3 decisions logged.
+
+
+**Note (2026-05-01):** New report: [[reports/agentforce-knowledge-report]] -- 2026-05-01 -- Comprehensive Agentforce knowledge synthesis across 11 wiki pages. Covers 4 client engagements (Harvey, NBCU, Litify, CREtelligent), platform updates (Builder beta, Vibes IDE, Hosted MCP GA, Structured Outputs), and architecture patterns (multi-agent orchestration, multi-agent voting, semantic layer gap).

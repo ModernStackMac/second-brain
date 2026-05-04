@@ -90,7 +90,7 @@ Once you establish frontmatter conventions (tags, dates, properties), Dataview q
 - `wiki/` — LLM-compiled knowledge
   - `wiki/articles/` — summaries of each article
   - `wiki/topics/` — accumulator pages (like this one)
-  - `wiki/clients/` — client context
+  - `wiki/projects/` — project context (one subfolder per engagement)
   - `wiki/concepts/` — domain knowledge
   - `wiki/patterns/` — reusable solutions
   - `wiki/tools/` — software and platforms

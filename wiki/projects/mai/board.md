@@ -1,27 +1,26 @@
 ---
 kanban-plugin: basic
-project: mai
-updated: 2026-04-30T22:30:00-05:00
----
----
-kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-01T08:30:00-05:00
+updated: 2026-05-04T11:00:00-05:00
 ---
 
-# MAI — Board
+# MAI CRM Build — Board
 
 ## Backlog
 
 ## Up Next
 
 ## In Progress
-- MAI-1463 Define and Build Trustee Workflow on Prospect Conversion 🔴 Highest
-- MAI-1452 Sales Process: Operations convert without fields 🔴 Highest
+
+- MAI-1495 Return to requestor routing 🔴 High
+- MAI-1463 Trustee Workflow on Prospect Conversion 🔴 Highest
+- MAI-1494 Person Account Owners Upon Conversion 🔴 High
+- MAI-1448 Family & Household Lookup on Prospects 🔴 High
 
 ## Review
-- MAI-1292 Hide remaining Financial Account Type picklist values 🟡 Medium
+
+- MAI-1292 Hide Financial Account Type picklist values 🟡 Medium
 
 ## Blocked
 

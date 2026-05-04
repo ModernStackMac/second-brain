@@ -1,176 +1,142 @@
 # Wiki Lint Report
-**Run date:** 2026-04-26
-**Total pages scanned:** 82
-**Issues found:** 6 critical, 8 recommended, 4 informational
+**Run date:** 2026-05-03
+**Total pages scanned:** 91
+**Issues found:** 10 critical, 9 recommended, 4 informational
+
+---
 
 ## Critical Issues
 
-### C1. Unmapped project folder: `high-meadow-labs`
+### 1. Unmapped project folder: `cartier`
+- **Path:** `wiki/projects/cartier/` (contains context.md, journal.md)
+- **Created:** 2026-04-30 ingest (Chad & Mac Connect)
+- **Fix:** Add `cartier` row to the Canonical Slug Index table in `project-mapping.md` and a full `### Modern Stack Systems / Cartier` section under Active Projects. Suggested fields: Slug=`cartier`, Partner=Modern Stack Systems (direct client), Client=Cartier, Folder=`wiki/projects/cartier/`, Jira Workspace=N/A, Jira Project Key=N/A.
 
-`wiki/projects/internal/high-meadow-labs/` exists with a `journal.md` (has valid frontmatter: status=active, owner=Mac, priority=p2) but has NO entry in `project-mapping.md`'s Canonical Slug Index. Story-sync and other automation cannot route to this project.
+### 2. Unmapped project folder: `high-meadow-labs`
+- **Path:** `wiki/projects/internal/high-meadow-labs/` (contains journal.md)
+- **Created:** 2026-04-23 ingest
+- **Fix:** Add `high-meadow-labs` row to the Canonical Slug Index table. Suggested: Slug=`high-meadow-labs`, Partner=High Meadows, Client=Internal (AI model training initiative), Folder=`wiki/projects/internal/high-meadow-labs/`, Jira=N/A.
 
-**Fix:** Add a `high-meadow-labs` row to the Canonical Slug Index in `project-mapping.md` and a full Active Projects section. This was created 2026-04-23 per the index.md note.
+### 3. Loftware slug not integrated into Canonical Slug Index table
+- **Path:** `project-mapping.md` — Updates section at bottom (line ~268) has the row but it was never moved into the actual table (line ~17–32).
+- **Fix:** Move the `loftware` row into the Canonical Slug Index table and integrate the `### High Meadows / Loftware` section into Active Projects.
 
-### C2. Deprecated slug `f2-cetera` in wiki content
+### 4. Cetera Jira project key mismatch
+- **Mapping says:** `f2strategy.atlassian.net` / `F2`
+- **Actual tickets:** CET-4, CET-111, CET-110 (key = `CET`)
+- **File:** `wiki/projects/cetera/stories-f2.md` frontmatter: `jira_project_key: CET`
+- **Fix:** Update project-mapping.md Canonical Slug Index to change cetera's Jira Project Key from `F2` to `CET`. Story-sync is already using the correct key.
 
-- `wiki/projects/cetera/overview.md` line 2: `aliases: [cetera, f2-cetera, f2/cetera]` includes the deprecated slug `f2-cetera` as an alias.
+### 5. Broken link: `[[reports/mai-project-overview]]`
+- **File:** `wiki/index.md` line 78
+- **Issue:** No file exists at `wiki/reports/mai-project-overview.md`. The MAI overview lives at `wiki/projects/mai/overview.md` — this is not a report.
+- **Fix:** Remove the index entry or create a redirect. The content is already at `wiki/projects/mai/overview.md`.
 
-**Fix:** Remove `f2-cetera` and `f2/cetera` from the aliases list. Canonical slug is `cetera`.
+### 6. Broken link: `[[hms-capacity-planning]]` (4 occurrences)
+- `wiki/tools/supabase.md` line 37
+- `wiki/projects/mai/context.md` line 44
+- `wiki/entities/high-meadows.md` lines 11, 37
+- **Issue:** Legacy alias from pre-consolidation. No file or alias with this name.
+- **Fix:** Replace with `[[internal/meadow/context|Meadow]]` or add alias `hms-capacity-planning` to `wiki/projects/internal/meadow/overview.md`.
 
-### C3. Missing report file referenced in index
+### 7. Broken link: `[[meadow-app]]`
+- **File:** `wiki/tools/supabase.md` line 36
+- **Issue:** No file or alias. Likely meant `[[internal/meadow/context|Meadow]]`.
+- **Fix:** Replace with `[[internal/meadow/context|Meadow]]` or add alias.
 
-- `wiki/index.md` references `[[reports/mai-project-overview]]` but `wiki/reports/mai-project-overview.md` does not exist. Only two report files exist: `weekly-synthesis-2026-04-19.md` and `weekly-synthesis-2026-04-20.md`.
+### 8. Broken link: `[[high-meadow-labs]]`
+- **File:** `wiki/patterns/multi-agent-voting.md` line 47
+- **Issue:** No file named `high-meadow-labs.md` and no alias. The content is at `wiki/projects/internal/high-meadow-labs/journal.md`.
+- **Fix:** Replace with `[[internal/high-meadow-labs/journal|High Meadow Labs]]`.
 
-**Fix:** Either create the report page or remove the dangling index entry.
+### 9. Orphan empty folder: `wiki/projects/flex-dash/`
+- **Issue:** Empty directory at top level. Canonical location is `wiki/projects/internal/flex-dash/`. This is a leftover from the 2026-04-18 restructure.
+- **Fix:** Delete the empty `wiki/projects/flex-dash/` directory.
 
-### C4. Broken project-slug wiki-links (80+ references across 40+ pages)
+### 10. Index.md has 8+ items in Notes not integrated into proper sections
+- **Issue:** Since 2026-04-22, new pages have been appended as `**Note (date):**` blocks at the bottom of `wiki/index.md` instead of being inserted into the correct section (Projects, Patterns, Reports, Tools). This includes:
+  - Projects: cartier, loftware, internal/high-meadow-labs
+  - Patterns: uat-deployment-coordination, multi-agent-voting
+  - Reports: weekly-synthesis-2026-04-27, agentforce-knowledge-report
+  - Tools: contour (partially — listed as a standalone bullet outside any section)
+- **Fix:** Integrate each item into its proper index section and remove the Note blocks.
 
-Project slugs are used as bare `[[slug]]` links throughout the wiki, but no file has that exact basename. These links do NOT resolve in Obsidian:
-
-| Broken Link | Reference Count | Example File |
-|---|---|---|
-| `[[harvey]]` | 14 | wiki/tools/agentforce.md |
-| `[[cretelligent]]` | 15 | wiki/tools/connect-api.md |
-| `[[litify]]` | 14 | wiki/tools/data-cloud.md |
-| `[[nbcu]]` | 10 | wiki/tools/data-cloud.md |
-| `[[meadow]]` | 7 | wiki/tools/claude-ai.md |
-| `[[high-meadow-website]]` | 5 | wiki/projects/internal/high-meadow-website/files/Website-Feedback-2026-04-17.md |
-| `[[high-meadows-mai]]` | 5 | wiki/entities/high-meadows.md |
-| `[[hms-capacity-planning]]` | 4 | wiki/tools/supabase.md |
-| `[[mai]]` | 3 | wiki/patterns/uat-deployment-coordination.md |
-| `[[cetera]]` | 1 | wiki/patterns/job-function-permission-sets.md |
-| `[[high-meadow-labs]]` | 1 | wiki/patterns/multi-agent-voting.md |
-| `[[meadow-app]]` | 1 | wiki/tools/supabase.md |
-
-**Fix options (ask first, high blast radius):**
-1. Create redirect/alias files (e.g., `wiki/projects/harvey.md` that points to `harvey/context.md`)
-2. Rewrite all bare `[[slug]]` links to `[[slug/context]]` or `[[slug/overview]]`
-3. Add Obsidian `aliases` frontmatter in each project's `context.md` so `[[harvey]]` resolves
-
-### C5. Stale empty folder: `wiki/projects/flex-dash/`
-
-Top-level `wiki/projects/flex-dash/` exists as an empty directory. The canonical location is `wiki/projects/internal/flex-dash/`. This is a leftover from the 2026-04-18 folder restructure.
-
-**Fix:** Delete the empty `wiki/projects/flex-dash/` directory.
-
-### C6. Missing project folder: `lefavi`
-
-`project-mapping.md` lists `lefavi` with folder `wiki/projects/lefavi/` marked "(not yet created)". No folder exists yet.
-
-**Fix:** Create `wiki/projects/lefavi/` with at minimum a `context.md` and `journal.md` when the engagement starts, or add a note to project-mapping that this is pending kickoff.
+---
 
 ## Recommended Fixes
 
-### R1. Missing journal: `wiki/projects/internal/flex-dash/journal.md`
+### 1. Broken link: `[[meadow]]` — 7 occurrences, no file or alias
+- `wiki/projects/mai/overview.md` line 58
+- `wiki/projects/cretelligent/overview.md` line 67
+- `wiki/projects/internal/high-meadow-website/context.md` line 104
+- `wiki/projects/internal/meadow/overview.md` line 120
+- `wiki/projects/modern-stack-systems/context.md` line 36
+- `wiki/tools/claude-ai.md` lines 43, 54
+- **Fix:** Add `aliases: [meadow]` to `wiki/projects/internal/meadow/overview.md` frontmatter. This resolves all 7 links at once.
 
-No journal.md exists for the flex-dash project. Only `board.md` and `stories-hm.md` are present.
+### 2. Broken link: `[[loftware]]` in `wiki/projects/modern-stack-systems/journal.md` line 26
+- **Fix:** Add `aliases: [loftware]` to `wiki/projects/loftware/context.md` frontmatter.
 
-**Fix:** Create a minimal `journal.md` with status/owner/priority/last_meeting/open_actions frontmatter.
+### 3. Missing journal: `wiki/projects/internal/flex-dash/`
+- **Issue:** `flex-dash` is a mapped project but has no `journal.md`. Only contains `stories-hm.md` and `board.md`.
+- **Fix:** Create `journal.md` with standard frontmatter. Development is paused (for MAI), so a minimal stub is appropriate.
 
-### R2. Missing journal frontmatter fields
+### 4. Journals missing standard frontmatter (status, owner, priority, last_meeting, open_actions)
+- `wiki/projects/cartier/journal.md` — has type/project/updated, missing status/owner/priority/last_meeting/open_actions
+- `wiki/projects/loftware/journal.md` — same
+- `wiki/projects/modern-stack-systems/journal.md` — same
+- `wiki/projects/internal/high-meadow-website/journal.md` — no frontmatter at all
+- `wiki/projects/internal/meadow/journal.md` — no frontmatter at all
 
-These journals exist but lack the required frontmatter (status, owner, priority, last_meeting, open_actions):
+### 5. Orphan pages with zero inbound links
+- `wiki/projects/projects.md` — Spaces config file, not a wiki page. Consider removing from wiki/.
+- `wiki/projects/*/board.md` (5 files: cetera, lnw, mai, internal/flex-dash, internal/meadow) — not linked from index or any other page.
+- `wiki/f2-internal/CE/*.md` (5 files) — Confluence mirror pages, not linked from index.
 
-- `wiki/projects/modern-stack-systems/journal.md` -- has `type` and `project` fields only, missing status/owner/priority/last_meeting/open_actions
-- `wiki/projects/internal/meadow/journal.md` -- no frontmatter at all
-- `wiki/projects/internal/high-meadow-website/journal.md` -- no frontmatter at all
+### 6. Missing project folder: `lefavi`
+- **Mapping:** `project-mapping.md` lists `lefavi` with note "(not yet created)".
+- **Fix:** Create `wiki/projects/lefavi/context.md` and `wiki/projects/lefavi/journal.md` when the project becomes active, or remove from mapping if abandoned.
 
-**Fix:** Add the standard frontmatter block to each.
+### 7. Missing context.md: `wiki/projects/internal/high-meadow-labs/`
+- **Issue:** Folder only has `journal.md`. Per SCHEMA, project folders should have both `context.md` (stable reference) and `journal.md` (rolling narrative).
+- **Fix:** Create `context.md` with HMS Labs AI initiative overview, tech stack, and key contacts.
 
-### R3. Orphan pages (zero inbound links)
+### 8. Deprecated path reference in active content
+- **File:** `wiki/topics/obsidian-ecosystem.md` line 93
+- **Content:** `wiki/clients/` — client context
+- **Fix:** Replace with `wiki/projects/` — the `clients/` folder was merged into `projects/` on 2026-04-18.
 
-These pages have no inbound wiki-links from any other page:
+### 9. Missing cross-references
+- `wiki/entities/high-meadows.md` doesn't reference Loftware or High Meadow Labs.
+- `wiki/entities/modern-stack-systems.md` doesn't reference Cartier.
+- `wiki/projects/loftware/context.md` not cross-linked from entity pages.
 
-- `wiki/f2-internal/CE/app-address.md`
-- `wiki/f2-internal/CE/core-salesforce-usage-alignment.md`
-- `wiki/f2-internal/CE/gifts-object-alignment.md`
-- `wiki/f2-internal/CE/growth-engine.md`
-- `wiki/projects/cetera/board.md`
-- `wiki/projects/internal/flex-dash/board.md`
-- `wiki/projects/internal/meadow/board.md`
-- `wiki/projects/lnw/board.md`
-- `wiki/projects/mai/board.md`
-- `wiki/projects/projects.md`
-
-**Fix:** The `f2-internal/CE/` pages should be cross-linked from `wiki/projects/cetera/context.md`. The `board.md` files and `projects.md` may be operational (Dataview-driven) and don't need inbound links, but confirm intent.
-
-### R4. Missing index entries
-
-These wiki files are not listed in `wiki/index.md`:
-
-- `wiki/f2-internal/CE/app-address.md`
-- `wiki/f2-internal/CE/core-salesforce-usage-alignment.md`
-- `wiki/f2-internal/CE/gifts-object-alignment.md`
-- `wiki/f2-internal/CE/growth-engine.md`
-- `wiki/projects/cetera/board.md`
-- `wiki/projects/internal/flex-dash/board.md`
-- `wiki/projects/internal/meadow/board.md`
-- `wiki/projects/lnw/board.md`
-- `wiki/projects/mai/board.md`
-- `wiki/projects/projects.md`
-- `wiki/projects/internal/high-meadow-website/files/README.md`
-- `wiki/projects/internal/high-meadow-website/files/Website-Feedback-2026-04-17.md`
-
-**Fix:** Add an "F2 Internal" section and note board files in index.md. Board files may be excluded intentionally (operational, not knowledge).
-
-### R5. Missing `contour` in index Tools section
-
-`wiki/tools/contour.md` exists and is referenced at the bottom of `wiki/index.md` as a loose note but is not in the Tools section.
-
-**Fix:** Move the `[[contour]]` entry into the Tools section of index.md.
-
-### R6. `wiki/projects/internal/high-meadow-labs/` missing context.md
-
-The high-meadow-labs project folder only has `journal.md`. Per schema, projects should have a `context.md` with stable reference info.
-
-**Fix:** Create `wiki/projects/internal/high-meadow-labs/context.md` with HMS AI product initiative details from the journal.
-
-### R7. Historical broken links in log.md (40+ occurrences)
-
-`wiki/log.md` contains many broken links from older entries: `[[MCP-Obsidian]]`, `[[scheduled-tasks]]`, `[[productivity-systems]]`, `[[hms-capacity-planning]]`, `[[high-meadows-mai]]`, `[[meadow-app]]`, `[[mai-crm-build]]`, `[[f2-cetera]]`, `[[capacity-planning]]`, `[[Second Brain/wiki/projects/mai/context]]`.
-
-These are legacy references from before the 2026-04-18 restructure. They don't affect navigation but add noise.
-
-**Fix:** Batch-replace deprecated link targets in log.md entries to canonical paths. Low priority since log.md is operational, not navigated.
-
-### R8. Log rotation check
-
-`wiki/log.md` has 48 entries / 1440 lines. Under the 200-entry threshold. No rotation needed this cycle.
+---
 
 ## Informational
 
-### I1. Stale overview pages
+### 1. Stale projects (no meeting > 14 days)
+- **Harvey:** last_meeting 2026-04-09 (24 days ago). Oldest active project.
+- **Litify:** last_meeting 2026-04-17 (16 days ago). SOW phase may explain gap.
 
-These overview pages have `Last updated` dates older than 14 days on active projects:
+### 2. Deprecated slug `f2-cetera` in aliases
+- **File:** `wiki/projects/cetera/overview.md` line 2 — `aliases: [cetera, f2-cetera, f2/cetera]`
+- **Purpose:** Backward-compatible Obsidian alias for old links. Functional but could be removed once all legacy references are gone.
 
-- `wiki/projects/mai/overview.md` -- Last updated: 2026-04-10
-- `wiki/projects/harvey/overview.md` -- Last updated: 2026-04-10
-- `wiki/projects/cretelligent/overview.md` -- Last updated: 2026-04-10
-- `wiki/projects/litify/overview.md` -- Last updated: 2026-04-10
-- `wiki/projects/internal/meadow/overview.md` -- Last updated: 2026-04-10
+### 3. Historical `clients/` references in "Merged from" notes
+- 5 files contain `Merged from clients/...` in their "Last updated" line: mai/overview.md, harvey/overview.md, meadow/overview.md, cretelligent/overview.md, litify/overview.md.
+- These are historical provenance notes, not active links. No action needed.
 
-None are past the 60-day threshold yet. These were merged during the Apr 18 restructure and haven't been refreshed since.
+### 4. Non-canonical tag: `#active`
+- Used in 2 files. Not listed in TAGS.md. Should be `#status/in-progress` or removed.
 
-### I2. Source coverage
+---
 
-All 8 files in `raw/articles/` have been processed into `wiki/articles/`. No unprocessed raw sources detected.
+## Log Rotation Status
+- **Entries:** 87 (threshold: 200). No rotation needed.
 
-`Meeting Notes/` folder is not mounted in the current sandbox session, so unprocessed meeting note detection was not possible this run. The last ingest (2026-04-24) reported all sources through 2026-04-23 as processed.
-
-### I3. Non-canonical tag usage
-
-- `#active` used in `wiki/topics/obsidian-ecosystem.md` line 49 (inside prose, not as a tag). This is inline example text, not an actual tag application. No action needed.
-
-### I4. Ticket prefix validation
-
-All stories files have correct ticket-prefix-to-folder routing:
-- `wiki/projects/mai/stories-f2.md`: MAI-* tickets, project=mai -- correct
-- `wiki/projects/cetera/stories-f2.md`: CET-* tickets, project=cetera -- correct (CET prefix not in mapping but no conflict)
-- `wiki/projects/lnw/stories-f2.md`: LNW-* tickets, project=lnw -- correct (matches `f2strategy.atlassian.net` / `LNW`)
-- `wiki/projects/internal/flex-dash/stories-hm.md`: IP-* tickets, project=flex-dash -- correct (Linear)
-- `wiki/projects/internal/meadow/stories-hm.md`: IP-* tickets, project=meadow -- note: both flex-dash and meadow use IP-* prefix from the same Linear workspace. No conflict since Linear project names differ.
-
-No heading cross-reference issues found (no `# SlugA (SlugB)` patterns in stories files).
+## Commitments Status
+- Not scanned this run (commitments.md outside mounted folder).
 
 ---
 *Auto-generated by second-brain-lint*

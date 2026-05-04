@@ -1,11 +1,11 @@
 ---
 kanban-plugin: basic
 type: stories-sync
-project: meadow
-updated: 2026-05-01T14:00:00-05:00
+project: internal/meadow
+updated: 2026-05-04T11:00:00-05:00
 ---
 
-# Meadow — Board
+# Meadow (Capacity Planning) — Board
 
 ## Backlog
 
@@ -15,8 +15,8 @@ updated: 2026-05-01T14:00:00-05:00
 
 ## Review
 
-## Blocked
+- IP-145 Role system: admin / manager / user 🔴 High
 
-- IP-125 Data export and import (SQLite to Supabase)
+## Blocked
 
 ## Done

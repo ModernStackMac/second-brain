@@ -1,5 +1,31 @@
 # Wiki Log
 
+## [2026-05-04] ingest | No new sources (scheduled run)
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files. All 87 meeting notes, 8 raw articles, and 3 raw/projects files remain current through 2026-04-30.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Log at ~131 entries (under 200 rotation threshold). Done items in commitments.md from Apr 21 are 13 days old — will hit 14-day archival threshold tomorrow. No archival action taken this run.
+- Key takeaways: Sunday — no new Fathom recordings or clipped articles since last Thursday. Next expected sources: Monday meeting notes.
+
+## [2026-05-03] lint | Weekly Health Check
+- Pages scanned: 91
+- Issues: 10 critical, 9 recommended, 4 informational
+- Auto-fixed: deprecated path `wiki/clients/` → `wiki/projects/` in obsidian-ecosystem.md
+- Key findings: 2 unmapped project folders (cartier, high-meadow-labs), Cetera Jira key mismatch (F2→CET), loftware slug not integrated into mapping table, 4 broken legacy links (hms-capacity-planning, meadow-app, high-meadow-labs, reports/mai-project-overview), index.md has 8+ items stuck in Notes instead of proper sections, 7 unresolved bare `[[meadow]]` links
+- Report: wiki/lint-report.md
+
+## [2026-05-01] ingest | No new sources (scheduled run, evening)
+- Scanned: `Meeting Notes/` (all subfolders incl. Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since afternoon run. All 87 meeting notes and 8 raw articles remain current through 2026-04-30.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: No action needed. Log under rotation threshold. Commitments under archival threshold.
+- Key takeaways: Thursday evening — end of first business day of May. No new Fathom recordings or clipped articles have landed today.
+
+## [2026-05-01] report | Agentforce Knowledge Report
+- Query: What do I know about Agentforce?
+- Pages consulted: agentforce, multi-agent-orchestration, multi-agent-voting, new-agentforce-builder-beta, tdx-2026-agentforce-vibes-claude-mcp-dev-edition, salesforce-mcp-explained-sweep, prompt-builder-structured-outputs, harvey/context, harvey/journal, nbcu/context, litify/context
+- Report: wiki/reports/agentforce-knowledge-report.md
+
 ## [2026-05-01] ingest | No new sources (scheduled run, afternoon)
 - Scanned: `Meeting Notes/` (all subfolders incl. Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files since morning run. All sources through 2026-04-30 remain current. No May 1 meeting notes, articles, or project docs have landed.
@@ -1727,3 +1753,32 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: No action needed. Log under 200 entries, no rotation required. Commitments.md Done items oldest from Apr 21 (10 days), under 14-day archival threshold.
 - Key takeaways: Thursday — new meeting notes expected from today's syncs via Fathom later today or overnight.
+
+## [2026-05-01] scheduled-ingest | No new sources (afternoon run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since morning run. All sources through 2026-04-30 remain current.
+- Maintenance: Log at 133 entries, under 200 threshold. Commitments.md Done items oldest from Apr 21 (10 days), no archival needed.
+- Note: Obsidian MCP (Local REST API) was unavailable this run — connection refused on port 27124. Used direct filesystem access as fallback. All operations completed successfully.
+
+## [2026-05-01] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since earlier today. All sources through 2026-04-30 remain current.
+- Maintenance: Log at 128 entries, under 200 threshold. Commitments.md Done items oldest from Apr 21 (10 days), no archival needed.
+- Note: Obsidian MCP unavailable (connection refused on port 27124) — used direct filesystem fallback.
+- Key takeaways: Clean scan. No May 1 meeting notes have landed yet.
+
+## [2026-05-04] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-04-30 remain current. No new meeting notes, articles, or project docs since last run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Log at 88 entries, no rotation needed. Commitments.md Done items oldest from Apr 21 (13 days) — archival threshold is 14 days, will archive on next run if still present.
+- Note: Obsidian MCP unavailable (connection refused on port 27124) — used direct filesystem fallback.
+- Key takeaways: Clean scan. No weekend meeting notes have landed. Done items approaching archival threshold — next run should trigger archival for Apr 21 batch.
+
+## [2026-05-04] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-04-30 remain current. No new meeting notes, articles, or project docs since last run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Log at 90 entries, no rotation needed. Commitments.md Done items oldest from Apr 21 (13 days) — under 14-day archival threshold, will archive tomorrow if still present.
+- Note: Obsidian MCP unavailable (connection refused on port 27124) — used direct filesystem fallback.
+- Key takeaways: Clean scan. Sunday — no new meeting notes expected. Apr 21 Done items hit archival threshold tomorrow.
