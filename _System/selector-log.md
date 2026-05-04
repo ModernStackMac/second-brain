@@ -143,3 +143,6 @@
   - "Impromptu Zoom Meeting" (2026-04-28) → already at Meeting Notes/Stitch/Cretelligent/2026-04-28 - Impromptu Zoom Meeting.md
 
 - [2026-05-01 09:30 CT] Scheduled Fathom ingest: 3 meetings found (2026-04-28 to 2026-04-30), all 3 already exist in Meeting Notes/ — 0 new files written. Skipped: "Chad & Mac Connect" (Cartier/), "INTERNAL: CREtelligent Team Sync" (Cretelligent/), "Impromptu Zoom Meeting" (Cretelligent/).
+
+- [2026-05-04 12:00 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md · confidence: high · match: attendee (Andrew Smith = MSS peer contact, consistent routing pattern)
+- [2026-05-04 12:00 CT] "Impromptu Call" → Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call.md · confidence: medium · match: attendee+keyword (Travis Hickey, Andrew Porter, Vincent = HM/Cetera team; dominant topics: Next Meeting Date validation, DocuSign integration, Fund Assignment LWC, Case routing — all Cetera scope. Also covers NBCU POC strategy as secondary topic). Note: transcript too large to inline (598k chars, multi-hour sprint standup); Fathom URL linked instead.
