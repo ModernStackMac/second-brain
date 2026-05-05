@@ -107,3 +107,6 @@
 [2026-05-05T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-33 — no folder at wiki/projects/flex-dash/
 [2026-05-05T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-1 — no folder at wiki/projects/flex-dash/
 [2026-05-05T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/
+
+[2026-05-05T22:00:00-05:00] MAPPING NOTE: CET and MAI routed via established pattern (prior syncs). project-mapping.md still shows Jira Project Key=F2 for cetera (should be CET) and TBD for mai (should be MAI). Recommend updating the mapping file.
+[2026-05-05T22:00:00-05:00] LINEAR: Flex Dash (5 active) and Meadow/Capacity Planning (1 active) successfully routed to internal/flex-dash/ and internal/meadow/ respectively. Prior "no folder at wiki/projects/flex-dash/" errors resolved — correct path is wiki/projects/internal/flex-dash/.
