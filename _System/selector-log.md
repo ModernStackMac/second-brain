@@ -169,3 +169,8 @@
 - [2026-05-05 14:00 CT] Scheduled run — 3 meetings in window, 0 new (all duplicates). Skipped: "Stitch // CREtelligent - daily dev standup" (2026-05-05), "Stitch // CREtelligent - Weekly Refinement / Planning" (2026-05-04), "Andrew / Mac" (2026-05-04).
 
 - [2026-05-05 scheduled-run] Fathom ingest: 3 meetings found (past 3 days), 0 new — all already existed in Meeting Notes/. Skipped: "Stitch // CREtelligent - daily dev standup" (2026-05-05), "Stitch // CREtelligent - Weekly Refinement / Planning" (2026-05-04), "Andrew / Mac" (2026-05-04).
+
+- [2026-05-05 ~12:00 CT] Scheduled run — 3 meetings found in Fathom (past 3 days), all already exist in vault. 0 new files written.
+  - "Stitch // CREtelligent - daily dev standup" (2026-05-05) → already at Meeting Notes/Stitch/Cretelligent/2026-05-05 - Stitch CREtelligent - Daily Dev Standup.md
+  - "Stitch // CREtelligent - Weekly Refinement / Planning" (2026-05-04) → already at Meeting Notes/Stitch/Cretelligent/2026-05-04 - Stitch CREtelligent Weekly Refinement and Planning.md
+  - "Andrew / Mac" (2026-05-04) → already at Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md
