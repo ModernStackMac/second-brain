@@ -159,3 +159,7 @@
 - [2026-05-04 14:00 CT] "Stitch // CREtelligent - Weekly Refinement / Planning" → Meeting Notes/Stitch/Cretelligent/2026-05-04 - Stitch CREtelligent Weekly Refinement and Planning.md · confidence: high · match: keyword
 - [2026-05-04 14:00 CT] "Andrew / Mac" → SKIPPED (already exists at Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md) · confidence: n/a · match: n/a
 - [2026-05-04 14:00 CT] "Impromptu Call" → Meeting Notes/Modern Stack Systems/2026-04-30 - Impromptu Call.md · confidence: medium · match: keyword (multi-project internal sync, matches established Andrew/Mac pattern)
+
+- [2026-05-05 12:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-05 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent, stitch) + attendee (Andrew Porter)
+- [2026-05-05 12:00 CT] "Stitch // CREtelligent - Weekly Refinement / Planning" (2026-05-04) → SKIPPED · already exists at Meeting Notes/Stitch/Cretelligent/2026-05-04 - Stitch CREtelligent Weekly Refinement and Planning.md
+- [2026-05-05 12:00 CT] "Andrew / Mac" (2026-05-04) → SKIPPED · already exists at Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md
