@@ -2,29 +2,24 @@
 kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-05T18:00:00-05:00
+updated: 2026-05-05T16:30:00-05:00
 ---
 
 # MAI CRM Build — Board
 
 ## Backlog
 
-
 ## Up Next
-
-- [ ] MAI-1517 Family/Household lookup not populating on Case 🔴
+- Fund Assignment: Review Assignment: Save without Approve 🔴
 
 ## In Progress
-
-- [ ] MAI-1495 Return to requestor routing 🔴
-- [ ] MAI-1514 Add "Manage Docs" button on Fund Assignment Case 🟡
-- [ ] MAI-1516 Remove fund type field from fund account 🔴
+- Family/Household lookup not populating on Case 🟠
+- Add "Manage Docs" button directly on Fund Assignment Case page 🟡
+- Return to requestor routing bug 🟠
 
 ## Review
-
-- [ ] MAI-1292 Hide remaining Financial Account Type picklist values 🟡
+- Hide remaining Financial Account Type picklist values (red items) 🟡
 
 ## Blocked
-
 
 ## Done

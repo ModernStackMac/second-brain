@@ -1,17 +1,17 @@
 ---
-type: stories-sync
-updated: 2026-05-05T18:00:00-05:00
+type: action-tracker
+updated: 2026-05-05T16:30:00-05:00
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI CRM Build | MAI-1517 | Family/Household lookup not populating on Case | To Do | High | — | 2026-05-05 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1517) |
-| MAI CRM Build | MAI-1495 | Return to requestor routing | Active | High | — | 2026-05-04 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1495) |
-| MAI CRM Build | MAI-1514 | Add "Manage Docs" button on Fund Assignment Case | Active | Medium | — | 2026-05-04 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1514) |
-| MAI CRM Build | MAI-1516 | Remove fund type field from fund account | Active | High | — | 2026-05-04 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1516) |
-| MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
+| MAI CRM Build | MAI-1522 | Fund Assignment: Review Assignment: Save without Approve | To Do | Highest | — | 2026-05-05 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1522) |
+| MAI CRM Build | MAI-1517 | Family/Household lookup not populating on Case | Active | High | — | 2026-05-05 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1517) |
+| MAI CRM Build | MAI-1514 | Add "Manage Docs" button directly on Fund Assignment Case page | Active | Medium | — | 2026-05-05 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1514) |
+| MAI CRM Build | MAI-1495 | Return to requestor routing bug | Active | High | — | 2026-05-04 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1495) |
+| MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | — | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
 | Cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
 | LNW | LNW-192 | Part 4: Visibility Enhancements POC - UI and UX Enablement | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-192) |
