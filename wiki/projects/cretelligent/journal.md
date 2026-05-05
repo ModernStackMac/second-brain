@@ -2,11 +2,43 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-28
+last_meeting: 2026-05-04
 open_actions: "26"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of May 4, 2026
+
+Weekly Refinement / Planning (May 4, w/ Andrew Porter, Blake Stracener): proposal redesign direction, integration unblocked via new Site Product data model, live payload testing scheduled, SOW/T&C dynamic inclusion requirements.
+
+**Integration unblocked — Site Product data model ready for testing:** The new `Site Product` data model is ready. Live payload tests scheduled for the May 5 DevSync (9 AM ET) with Blake firing payloads from his local environment. Four separate endpoints exist on the Nexus side (create opportunity insights, update opportunity site, update opportunity field, update site field) — Mac reviewing all four. Blake submitting PR on their end so testing can move beyond local environments. Once Mac updates the Opportunity Insights Apex class to accept the new payload and create Site Products, three previously blocked stories (site verification, automated reports, site product data flow) are unblocked.
+
+**LWC reference fix:** Rollup logic is working but the LWC may be using old field references post-data-model change. Mac updating.
+
+**Proposal redesign (major initiative):** Current proposal document is a "mess" blending Radius and Nexus legacy systems — unscalable for multi-site projects. Wendell leading a full redesign to create a modern, dynamic document. Requirements: group by site, list products per site, show 3-digit site number, TAT in "Business Days", site-level pricing. Proposal must dynamically include the correct SOW for each ordered product. Missing SOWs (PCA, Zoning Reports) need adding to the Salesforce product table. Client-specific terms (payment, notice delivery) stored at Account level for dynamic pull.
+
+**DocGen demo:** Obed demonstrated the Conga template generation using the new data model (site products). SOW section still needs reconfiguration for the new model but core generation works.
+
+**CE/CSM field source alignment:** Team needs to confirm whether CE and CSM fields should source from Account or Opportunity level — Blake to align.
+
+**May 14 plan:** Chris referenced a May 14 milestone; Andrew calling to confirm scope/plan.
+
+**Decisions:**
+- Proposal must dynamically include correct SOW per ordered product — missing SOWs (PCA, Zoning) to be added to product table
+- Client-specific terms live at Account level (not Opportunity) for dynamic proposal generation
+- Four separate Nexus→Salesforce endpoints confirmed; Mac reviewing all for new payload compatibility
+- Live payload testing via Blake's local environment during May 5 DevSync
+
+**Open questions:**
+- CE/CSM field source: Account vs Opportunity? (Blake aligning)
+- May 14 milestone scope (Chris/Andrew confirming)
+- Wendell morning availability for follow-up proposal design sessions
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-04 - Stitch CREtelligent Weekly Refinement and Planning.md`)*
+
+---
+
 
 ## Week of Apr 27, 2026 (continued)
 

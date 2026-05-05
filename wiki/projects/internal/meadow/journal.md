@@ -1,5 +1,16 @@
 # Meadow — Project Journal
 
+## Week of Apr 28, 2026
+
+**June 1 go-live confirmed:** The custom "Meadow" time-entry system (built for High Meadow Solutions) will go live on June 1. It replaces the current Google Sheets-based process with an LWC-powered Salesforce app for all consultants.
+
+**GitHub repo for Claude skills:** Andrew setting up a GitHub repo for Claude skills and granting Mac access — supports the AI tooling layer around Meadow and other internal projects.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-04-30 - Impromptu Call.md`)*
+
+---
+
+
 > Rolling weekly summaries, decisions, and open questions. Most recent first.
 >
 > **Note (2026-04-18):** Project folder consolidated to `internal/meadow/` — previously split across `meadow/` and `capacity-planning/`. Website-specific entries going forward should land in `internal/high-meadow-website/journal.md` instead of here. Pre-split history retained below.
