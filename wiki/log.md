@@ -1834,3 +1834,13 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: Archived 8 Done items from Apr 21 (14+ days old) to `Second Brain/raw/archived-actions/commitments-2026-04.md`. Log at 146 entries, under 200 threshold.
 - Key takeaways: Monday — expect new meeting notes from today's syncs. Apr 21 Done items archived per 14-day rule.
+
+## [2026-05-05] ingest | Scheduled Scan (no new sources)
+- Source: Scheduled scan of Meeting Notes/, raw/articles/, raw/projects/
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/1-1s, High Meadows/Internal/HMU, High Meadows/Internal/Office Hours, High Meadows/Internal/Product Calls, High Meadows/Internal/Website, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-04 already processed by prior runs. No new files since last ingest.
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Commitments added: 0
+- Key takeaways: Clean run — vault is current. 98 log entries (under 200 threshold, no rotation needed).
