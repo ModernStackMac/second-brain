@@ -1803,3 +1803,19 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pages updated: `wiki/projects/cetera/journal.md`, `wiki/projects/cetera/context.md`, `wiki/projects/mai/journal.md`, `wiki/projects/nbcu/journal.md`, `wiki/patterns/validation-rule-workaround.md`, `commitments.md`, `Second Brain/Decision-Log.md`
 - Patterns extracted: dual-path-vendor-dependency (new), validation-rule-workaround queue-scoping variant (update)
 - Key takeaways: NBCU POC pivoting to dual-path (Agentforce primary + GenAI backup) after 6-month license stall. Next Meeting Date validation fix unblocked lead conversion. DocuSign Maestro integration unblocked. Chire API de-scoped for Phase 1. Meadow app targeting June 1 launch. Sumo Scheduler rebranded to Onito. 14 new commitments for Mac (11 Cetera, 3 NBCU).
+
+## [2026-05-04] ingest | Stitch CREtelligent Weekly Refinement / Planning (May 4)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-04 - Stitch CREtelligent Weekly Refinement and Planning.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`
+- Patterns extracted: none
+- Commitments added: 2 (Update LWC references, Update Opportunity Insights Apex for new payload)
+- Key takeaways: Site Product data model ready for live testing; proposal redesign initiative kicked off with dynamic SOW/T&C requirements; integration unblocked for site verification and automated reports.
+
+## [2026-05-04] ingest | Modern Stack Systems Impromptu Call (Apr 30)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-30 - Impromptu Call.md`
+- Pages created: none
+- Pages updated: `wiki/projects/internal/meadow/journal.md`
+- Patterns extracted: none
+- Commitments added: 0 (all Mac-assigned items already captured from High Meadows/Cetera and High Meadows/MAI paths of same meeting)
+- Key takeaways: Duplicate recording of multi-project standup already ingested via HM paths. New info extracted: Meadow time-entry app go-live confirmed for June 1; GitHub repo for Claude skills being set up.
