@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-05] ingest | No new sources (scheduled run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files. All sources through 2026-05-04 remain current. No May 5 meeting notes or articles have landed yet.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: No action needed.
+- Next expected: Monday/Tuesday meeting notes via Fathom.
+
+
 ## [2026-05-04] ingest | No new sources (scheduled run, late evening)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files. All sources through 2026-05-04 remain current.
