@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-05T16:30:00-05:00
+updated: 2026-05-05T18:00:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -13,11 +13,11 @@ updated: 2026-05-05T16:30:00-05:00
 - Fund Assignment: Review Assignment: Save without Approve 🔴
 
 ## In Progress
-- Family/Household lookup not populating on Case 🟠
 - Add "Manage Docs" button directly on Fund Assignment Case page 🟡
-- Return to requestor routing bug 🟠
+- Return to requestor routing 🟠
 
 ## Review
+- Financial Account: Credit Card HH view 🟠
 - Hide remaining Financial Account Type picklist values (red items) 🟡
 
 ## Blocked
