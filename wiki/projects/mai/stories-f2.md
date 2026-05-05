@@ -3,8 +3,8 @@ type: stories-sync
 project: mai
 workspace: f2
 jira_project_key: MAI
-updated: 2026-05-04T19:00:00-05:00
-story_count: "4"
+updated: 2026-05-04T21:00:00-05:00
+story_count: "7"
 ---
 
 # MAI CRM Build — Active Stories (Jira)
