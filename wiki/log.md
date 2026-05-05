@@ -1827,3 +1827,10 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Patterns extracted: none
 - Commitments added: 0 (all Mac-assigned items already captured from High Meadows/Cetera and High Meadows/MAI paths of same meeting)
 - Key takeaways: Duplicate recording of multi-project standup already ingested via HM paths. New info extracted: Meadow time-entry app go-live confirmed for June 1; GitHub repo for Claude skills being set up.
+
+## [2026-05-05] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-04 remain current. No new meeting notes, articles, or project docs since last run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Archived 8 Done items from Apr 21 (14+ days old) to `Second Brain/raw/archived-actions/commitments-2026-04.md`. Log at 146 entries, under 200 threshold.
+- Key takeaways: Monday — expect new meeting notes from today's syncs. Apr 21 Done items archived per 14-day rule.
