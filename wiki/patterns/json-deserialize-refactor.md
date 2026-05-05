@@ -62,6 +62,8 @@ Refactor the business logic to work with typed properties instead of string-base
 ## CREtelligent Example
 The Connect API integration is being refactored using this pattern. Mac is consolidating site verification data, product fields, and actuals logic into strongly-typed wrapper classes, replacing the existing fragile parser. The new structure allows the team to add site verification payload fields and automate report logic with confidence.
 
+**Update (2026-05-05):** Mac actively implementing this pattern on the `update opportunity site` endpoint. Building a complete data model class from Blake's class files (OT-side payload objects), then using `JSON.deserialize()` to parse incoming payloads and create Site Product records, cost worksheets, and site fields. The legacy JSON parser approach is being fully replaced across all four Connect API endpoints.
+
 ## Related Pages
 - [[cretelligent]] — engagement applying this pattern
 - [[connect-api]] — API being integrated
@@ -70,6 +72,8 @@ The Connect API integration is being refactored using this pattern. Mac is conso
 ## Sources
 - Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Team Sync - Sprint Review.md
 - raw/articles/2026-04-18T074249-0500-Building AI Automations with Prompt Builder Structured Outputs.md
+- Meeting Notes/Stitch/Cretelligent/2026-05-05 - Stitch CREtelligent - Daily Dev Standup.md
 
 ---
+*Last updated: 2026-05-05*
 *Last updated: 2026-04-18*

@@ -74,3 +74,14 @@ Cost worksheet references site product directly (no product lookup field). Auto-
 **Opportunity stages (simplified):** Four stages: quoting, proposal, active, declined. Validation rule requires declined reason. Decline reasons: "Project was canceled," "For vendor took too long," "No client response," "Crisis." Sub-statuses can be added if historic data alignment requires it.
 
 **Payload approach:** Current payload being enriched directly (NOT MuleSoft) with site verification fields + site product arrays + cost worksheets. Blake building separate flow, delivery targeting end of Apr 2026.
+
+
+## Authentication & Integration Standards (added 2026-05-05)
+
+**Auth standard:** All new Salesforce-to-OT integrations use **Named Credentials** (replacing Custom Labels). A Named Credential may already exist from a prior story.
+
+**Document endpoint (OT → SF):** Single `POST` endpoint to retrieve documents. POST method required because client secret must be in request body. Parameters: `project_id` (required), `id` (site ID, optional), `doc_type` (optional), `visible` (optional).
+
+**Document sync:** Current logic deletes all documents and reinserts on every sync (workaround for SF content document version duplication). Must be rewritten to proper upsert before DocHub allows direct uploads from SF or DocHub to S3 — otherwise user-uploaded docs would be destroyed.
+
+**DocHub folder creation:** Creating new folders and uploading documents to them requires a separate design spike before implementation (complex enough to not inline with existing stories).

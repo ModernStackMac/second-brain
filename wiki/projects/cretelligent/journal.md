@@ -2,11 +2,32 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-04
+last_meeting: 2026-05-05
 open_actions: "26"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of May 4, 2026 (continued)
+
+Daily Dev Standup (May 5, w/ Andrew Porter, Blake Stracener, Jeff Adams): endpoint development kickoff, document integration strategy defined, Named Credentials auth standard confirmed, document sync rewrite scoped.
+
+**Endpoint development — update opportunity site:** Mac starting work on the `update opportunity site` endpoint today. Approach: build a proper data model class and use `JSON.deserialize()` (replacing the legacy JSON parser). Blake sending class files for all payload objects so Mac can ensure model completeness. Testing plan: once initial class skeleton is ready, Blake fires test payloads from his local environment (pointed at sandbox). Products not yet defined, so matching logic deferred — building skeletons first.
+
+**Document endpoint strategy defined:** Initial endpoint will be a single `POST` (POST required because client secret goes in request body). Parameters: `project_id` (required — fail without it), `id` (site ID, optional), `doc_type` (optional), `visible` (optional). Slated for Blake's sprint starting Thursday. Separate from the proposal doc gen endpoint.
+
+**Document sync rewrite scoped:** Current OT→SF document sync uses delete-and-reinsert on every sync (workaround for SF content document version duplication issues). This breaks once DocHub allows uploads from Salesforce or DocHub directly to S3 — would destroy user-uploaded documents. Decision: rewrite docs class with proper upsert logic in a future session.
+
+**DocHub folder creation:** Requirement for DocHub to create new folders and upload documents to them. Decision: complex enough to warrant a separate design spike before implementation.
+
+**Auth standard confirmed:** All new Salesforce-to-OT integrations will use Named Credentials (replacing Custom Labels). Mac believes one already exists from a prior story — will verify and schedule setup with Andrew if needed.
+
+**Priority sequencing:** Mac focusing on roll-up logic and OBC updates first, then pivoting to endpoint work.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-05 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
+
 
 ## Week of May 4, 2026
 

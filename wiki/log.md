@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-05] ingest | CREtelligent Daily Dev Standup (May 5)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-05 - Stitch CREtelligent - Daily Dev Standup.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md`, `wiki/patterns/json-deserialize-refactor.md`, `commitments.md`, `Decision-Log.md`
+- Patterns extracted: reinforced [[json-deserialize-refactor]] (Mac actively implementing on update opportunity site endpoint)
+- Key takeaways: Mac starting endpoint dev work (data model + JSON.deserialize approach); Named Credentials confirmed as auth standard; document sync delete-and-reinsert flagged for rewrite; DocHub folder creation deferred to design spike.
+
+
 ## [2026-05-05] ingest | No new sources (scheduled run)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files. All sources through 2026-05-04 remain current. No May 5 meeting notes or articles have landed yet.
