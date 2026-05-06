@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-06] ingest | CREtelligent Daily Dev Standup (May 6)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-06 - Stitch CREtelligent - Daily Dev Standup.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md`
+- Commitments: none (both action items assigned to Blake, not Mac)
+- Decisions: none (field mapping pending Travis confirmation — not strategic)
+- Patterns extracted: none
+- Key takeaways: Product key field mapping under discussion (4 unique identifiers on CREtelligent side, Blake confirming canonical mapping with Travis). Two new discount fields added to site product payload. Mac heads-down on endpoint build.
+
+
 ## [2026-05-06] scheduled-ingest | No new sources (evening run)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files since the 2026-05-05 CREtelligent Daily Dev Standup ingest. No May 6 meeting notes or articles have landed.

@@ -2,13 +2,25 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-05
+last_meeting: 2026-05-06
 open_actions: "26"
 ---
 
 # CREtelligent — Project Journal
 
 ## Week of May 4, 2026 (continued)
+
+Daily Dev Standup (May 6, w/ Blake Stracener, Obed Labra-Pelaez): product key field mapping clarification, site product payload field additions, heads-down Salesforce build day.
+
+**Product key mapping — pending Travis confirmation:** Mac raised whether the product key will be in the payload. Blake confirmed four unique product identifiers exist (product code, product name, product short code, product key) but the mapping between CREtelligent's fields and the Salesforce product key field is unclear. Blake checking with Travis. Mac confirmed any consistent unique identifier works — the core file structure is the priority, field mapping is swappable later. Blake will pass the product key as the actual product type enum.
+
+**Site product payload additions:** Blake adding two new fields to the site product payload: `product_subscription_discount_percent` and `product_subscription_discount_amount`. Discount percent will have values; discount amount may not be functional yet. Already in the mapping document.
+
+**Team status:** Mac heads-down on Salesforce endpoint work (no blockers). Obed working on resume template using HTML Blake provided. Andrew offline (traveling, internet out).
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-06 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
 
 Daily Dev Standup (May 5, w/ Andrew Porter, Blake Stracener, Jeff Adams): endpoint development kickoff, document integration strategy defined, Named Credentials auth standard confirmed, document sync rewrite scoped.
 

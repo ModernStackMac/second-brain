@@ -19,7 +19,8 @@
 ## Data Model
 - **EnviroCostWorksheet:** child of EnviroSiteTask; dual-column (estimate/actual); consult approval checkbox blocks proposal creation
 - **SiteProduct:** junction object; sell price, cost, production days, client days, discount, margin; avoids field explosion on parent records
-- **Identifiers:** `product_key` and `shortcode` as canonical IDs across systems
+- **Identifiers:** `product_key` (enum from product type) and `shortcode` as canonical IDs across systems. Four unique fields exist on CREtelligent side: product code, product name, product short code, product key — product key confirmed as the canonical mapping target (pending final Travis confirmation).
+- **Site Product payload additions (2026-05-06):** `product_subscription_discount_percent` and `product_subscription_discount_amount` being added by Blake. Discount percent functional; discount amount may not have values yet.
 - **Long-term:** deferred migration to standard SF Product/OpportunityLineItem/Asset model
 
 ## Tech Stack
