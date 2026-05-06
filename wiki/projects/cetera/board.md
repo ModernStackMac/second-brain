@@ -26,3 +26,29 @@ updated: 2026-05-06T14:31:26-05:00
 
 ## Done
 
+---
+kanban-plugin: basic
+type: board
+project: cetera
+updated: 2026-05-06T15:45:00-05:00
+---
+
+## Backlog
+
+
+## Up Next
+
+
+## In Progress
+
+- CET-110 Case / TRPG Work Desk Alignment 🟡
+
+## Review
+
+- CET-111 Create new fields on TRPG_Help_Desk__c 🟡
+
+## Blocked
+
+
+## Done
+

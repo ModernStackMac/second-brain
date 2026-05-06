@@ -28,3 +28,29 @@ updated: 2026-05-06T14:31:26-05:00
 
 ## Done
 
+---
+kanban-plugin: basic
+type: board
+project: mai
+updated: 2026-05-06T15:45:00-05:00
+---
+
+## Backlog
+
+
+## Up Next
+
+
+## In Progress
+
+- MAI-1495 Return to requestor routing fix 🔴
+
+## Review
+
+- MAI-1292 Hide Financial Account Type picklist values 🟡
+
+## Blocked
+
+
+## Done
+
