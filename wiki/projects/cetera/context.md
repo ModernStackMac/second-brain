@@ -59,6 +59,8 @@
 - [[high-meadows]] — partner
 - [[case-migration]] — core migration pattern
 - [[marketing-cloud]] — journey automation (provisioning blocker)
+- [[automation-kill-switch]] — hierarchical custom settings pattern for selective automation bypass
+- [[job-function-permission-sets]] — permission set architecture pattern
 
 ---
-*Last updated: 2026-05-04*
+*Last updated: 2026-05-06*

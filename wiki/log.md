@@ -1912,3 +1912,78 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Maintenance: Log at 153 entries, no rotation needed. Done section empty — no archival needed.
 - Note: Obsidian MCP unavailable (connection refused on port 27124) — used direct filesystem fallback.
 - Key takeaways: Wednesday — expect new meeting notes from today's syncs later today.
+
+## [2026-05-06] ingest | Retroactive Log — Early April Meetings (Batch)
+
+34 meeting notes from early April were previously processed into project journals but never logged. Adding retroactive entries now.
+
+### Stand8 / Harvey
+- Source: `Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop.md`
+- Pages updated: `wiki/projects/harvey/journal.md`, `wiki/projects/harvey/context.md`
+- Key takeaways: AI Vision workshop, 3-year roadmap, agent-agnostic strategy (Einstein + Claude), EU complexity (40M price lines, 120 new users)
+
+### Stand8 / Litify
+- Source: `Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync.md`
+- Source: `Meeting Notes/Stand8/Litify/2026-04-13 - Internal Litify SOW Discussion.md`
+- Source: `Meeting Notes/Stand8/Litify/2026-04-14 - SOW Review.md`
+- Pages updated: `wiki/projects/litify/journal.md`, `wiki/projects/litify/context.md`
+- Key takeaways: Service agent scoping, Data Cloud unification for 5-platform knowledge consolidation, SOW pricing (120 hrs base + 18 PM → 138-158 range)
+
+### Stand8 / NBCU
+- Source: `Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC.md`
+- Source: `Meeting Notes/Stand8/NBCU/2026-04-13 - NBCU STAND 8 Agentforce POC.md`
+- Source: `Meeting Notes/Stand8/NBCU/2026-04-15 - NBCU STAND 8 Agentforce POC.md`
+- Pages updated: `wiki/projects/nbcu/journal.md`, `wiki/projects/nbcu/context.md`
+- Key takeaways: Two-use-case POC (content recommendation + sales pricing), $400-450/user licensing, architecture walkthrough rescheduled twice (Karthi absent)
+
+### Stitch / CREtelligent (8 meetings)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Quick Sync - Validation Workaround.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-09 - CREtelligent Team Sync - Sprint Review.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-09 - Stitch & CREtelligent - Tech Team Huddle.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-10 - CREtelligent Weekly Status and Project Sync.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-13 - Internal CREtelligent Weekly Sync.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-14 - Stitch CREtelligent Stand Up.md`
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-15 - Stitch CREtelligent Dev Team Sync.md`
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md`
+- Key takeaways: Connect API payload gaps, JSON refactor to JSON.deserialize, SiteProduct joiner architecture, EnviroCostWorksheet data model, Quote Matrix LWC demo approval, MuleSoft integration direction, product-centric model migration
+
+### High Meadows / Cetera (4 meetings)
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-08 - Quick Sync - F2 Connor.md`
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-09 - Project Keystone - Cetera Daily Working Session.md`
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-13 - Project Keystone Daily Stand-up.md`
+- Source: `Meeting Notes/High Meadows/Cetera/2026-04-14 - Project Keystone Daily Stand-up.md`
+- Pages updated: `wiki/projects/cetera/journal.md`, `wiki/projects/cetera/context.md`
+- Key takeaways: Case object migration (40 net new fields), Marketing Cloud provisioning blocker, automation kill-switch infrastructure deployed, Sprint 2→3 acceleration, permission set architecture decisions pending
+
+### High Meadows / MAI (11 meetings)
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-06 - Bug IAM Service Type Showing Single Value per Record Type.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev DSU.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev Session - Type Field and Address Auto-Population.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-10 - MAI Dev DSU.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-13 - MAI Dev DSU.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-13 - New Fund Account Questions.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-14 - Dev Growth.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-14 - MAI Dev DSU.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-14 - Michael.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-15 - MAI Dev DSU.md`
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-15 - Mac Steven Weekly.md`
+- Pages updated: `wiki/projects/mai/journal.md`, `wiki/projects/mai/context.md`
+- Key takeaways: IAM Service Type bug, standard field limitation workaround (custom field + hide + backend trigger), IPS case denial validation fix, trigger handler architecture, LWC local dev adoption, sales process system regression, file uploader request
+
+### Modern Stack Systems (3 meetings)
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-09 - Recruiter Call - Brittany Fetzner - Salesforce QA Dev Role.md`
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md`
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-15 - Andrew Mac.md`
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+- Key takeaways: QA/Dev recruiter call ($150/hr, 40hrs/week, telephony build w/ Claude Code), peer sync (workload burnout, AI workflow adoption, payment updates, company culture friction), business-dev brainstorming (vibe code review, virtual consultant tool)
+
+### Pattern Extraction
+- Pages created: `wiki/patterns/automation-kill-switch.md`
+- Pattern: Hierarchical Custom Settings to selectively disable automations org-wide or per user. Applied in Cetera Project Keystone (Sprint 3).
+
+### Maintenance
+- Commitments: Done section already archived (2026-05-05). No new archival needed.
+- Log rotation: 107 entries — under 200 threshold. No rotation needed.
+- raw/projects/meadow/: 4 files present but already ingested under hms-capacity-planning path. No reprocessing needed.
+
