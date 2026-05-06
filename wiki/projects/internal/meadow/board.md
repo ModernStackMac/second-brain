@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: internal/meadow
-updated: 2026-05-05T19:30:00-05:00
+updated: 2026-05-06T14:31:26-05:00
 ---
 
 # Meadow (Capacity Planning) — Board

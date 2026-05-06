@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-05T19:30:00-05:00
+updated: 2026-05-06T14:31:26-05:00
 ---
 
 # MAI CRM Build — Board
@@ -16,13 +16,12 @@ updated: 2026-05-05T19:30:00-05:00
 ## In Progress
 
 - MAI-1522 Fund Assignment: Review Assignment: Save without Approve 🔴
-- MAI-1514 Add "Manage Docs" button on Fund Assignment Case page 🟡
-- MAI-1495 Return to requestor routing bug 🟠
+- MAI-1514 Add "Manage Docs" button directly on Fund Assignment Case page 🟡
+- MAI-1495 Return to requestor: - return to requester should route back to original request 🟠
 
 ## Review
 
-- MAI-1416 Financial Account: Credit Card HH view 🟠
-- MAI-1292 Hide remaining Financial Account Type picklist values 🟡
+- MAI-1292 Hide remaining Financial Account Type picklist values (red items) 🟡
 
 ## Blocked
 

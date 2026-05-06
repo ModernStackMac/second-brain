@@ -1,5 +1,37 @@
 # Wiki Log
 
+## [2026-05-06] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since the 2026-05-05 CREtelligent Daily Dev Standup ingest. No May 6 meeting notes or articles have landed.
+- Maintenance: Done section empty (archived 2026-05-05). Log at ~105 entries, under 200 threshold. No rotation needed.
+- Patterns extracted: none
+- Key takeaways: Tuesday evening scan — no new Fathom recordings today. Next expected: Wednesday meeting notes.
+
+
+## [2026-05-06] lint | Mid-week Health Check
+- Issues: 4 critical, 22 recommended
+- Report: wiki/lint-report-mid.md
+- Critical: 3 broken wiki-links (`[[reports/mai-project-overview]]`, `[[high-meadow-labs]]`, `[[loftware]]`), 1 deprecated slug alias (`f2-cetera`/`f2/cetera` in cetera/overview.md)
+- Recommended: 3 stale journals (Harvey 27d, Litify 19d, HMS Website 15d), 7 orphan pages (5 f2-internal/CE + 2 HMS website files), 12 pages missing from index proper sections, 9 unmapped project folders, 1 non-canonical tag
+- Clean: stories frontmatter, ticket routing, workspace+key uniqueness, cross-ref headings, deprecated slug `clients`
+
+
+## [2026-05-06] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since the 2026-05-05 CREtelligent Daily Dev Standup ingest. No May 6 meeting notes or articles have landed.
+- Maintenance: Done section empty (archived 2026-05-05). Log under 200 threshold. No rotation needed.
+- Patterns extracted: none
+- Key takeaways: Tuesday scan — no new Fathom recordings yet. Next expected: today's meeting notes once they land.
+
+
+## [2026-05-05] scheduled-ingest | No new sources (late evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new files since the 2026-05-05 CREtelligent Daily Dev Standup ingest. No new May 5 or May 6 meeting notes or articles have landed.
+- Maintenance: Done section clean (archived earlier today). Log at ~102 entries, under 200 threshold. No rotation needed.
+- Patterns extracted: none
+- Key takeaways: All sources fully current. Next expected: Tuesday meeting notes via Fathom.
+
+
 ## [2026-05-05] scheduled-ingest | No new sources (evening run)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new files since the 2026-05-05 CREtelligent Daily Dev Standup ingest.
@@ -1862,3 +1894,11 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Patterns extracted: none
 - Commitments added: 0
 - Key takeaways: Clean run — vault is current. 98 log entries (under 200 threshold, no rotation needed).
+
+## [2026-05-06] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-05 remain current. No new meeting notes, articles, or project docs since last run.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Log at 153 entries, no rotation needed. Done section empty — no archival needed.
+- Note: Obsidian MCP unavailable (connection refused on port 27124) — used direct filesystem fallback.
+- Key takeaways: Wednesday — expect new meeting notes from today's syncs later today.
