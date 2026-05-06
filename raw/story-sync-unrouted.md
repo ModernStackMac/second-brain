@@ -20,3 +20,9 @@
 [2026-05-06T16:15:00-05:00] workspace=linear-hm project=Flex Dash ticket=IP-1 — folder wiki/projects/flex-dash/ does not exist
 [2026-05-06T16:15:00-05:00] workspace=linear-hm project=Flex Dash ticket=IP-8 — folder wiki/projects/flex-dash/ does not exist
 [2026-05-06T16:15:00-05:00] workspace=linear-hm project=Flex Dash ticket=IP-7 — folder wiki/projects/flex-dash/ does not exist
+
+[2026-05-06T20:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-34 — no folder at wiki/projects/flex-dash/
+[2026-05-06T20:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-33 — no folder at wiki/projects/flex-dash/
+[2026-05-06T20:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-1 — no folder at wiki/projects/flex-dash/
+[2026-05-06T20:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-8 — no folder at wiki/projects/flex-dash/
+[2026-05-06T20:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/
