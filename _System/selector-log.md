@@ -181,3 +181,5 @@
 - [2026-05-06 14:45 CT] SKIPPED "Andrew / Mac" (2026-05-04) — already exists as Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac.md
 
 - [2026-05-06 14:45 CT] SCHEDULED RUN: process-fathom-transcripts. Window: 2026-05-03 to 2026-05-06. Fathom returned 4 meetings. All 4 already exist in Meeting Notes/ — 0 new, 0 unrouted. No writes performed.
+
+- [2026-05-06 14:00 CT] Scheduled fathom-ingest run: 4 meetings in window (2026-05-03 → 2026-05-06). All 4 already exist in Meeting Notes/ — 0 new, 0 unrouted. No writes performed.
