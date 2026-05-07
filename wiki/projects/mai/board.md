@@ -1,17 +1,8 @@
 ---
 kanban-plugin: basic
-type: stories-sync
+type: board
 project: mai
-updated: 2026-05-07T17:00:00-05:00
----
-
-# MAI CRM Build — Board
-
----
-kanban-plugin: basic
-type: stories-sync
-project: mai
-updated: 2026-05-07T18:00:00-05:00
+updated: 2026-05-07T19:30:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -22,9 +13,10 @@ updated: 2026-05-07T18:00:00-05:00
 
 ## In Progress
 
+- MAI-1463 Define and Build Trustee Workflow on Prospect Conversion 🔴
+
 ## Review
 
-- MAI-1494 Sales Process: Person Account Owners Upon Conversion 🔴
 - MAI-1292 Hide remaining Financial Account Type picklist values (red items)
 
 ## Blocked

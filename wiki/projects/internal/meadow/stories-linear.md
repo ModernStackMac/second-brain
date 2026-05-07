@@ -3,18 +3,7 @@ type: stories-sync
 project: internal/meadow
 workspace: linear
 linear_project: Capacity Planning
-updated: 2026-05-07T17:00:00-05:00
-story_count: 1
----
-
-# Meadow (Capacity Planning) — Linear Stories
-
----
-type: stories-sync
-project: internal/meadow
-workspace: linear
-linear_project: Capacity Planning
-updated: 2026-05-07T18:00:00-05:00
+updated: 2026-05-07T19:30:00-05:00
 story_count: 1
 ---
 
