@@ -5,7 +5,7 @@
 ## Client
 - **Company:** High Meadows (internal product)
 - **Product:** MAI (Modern Assurance Insurance)
-- **Team:** Rodrigo Aguirre (dev), Federico Nieto (dev), Vincent Wang (QA), Aisha, Nicole, David, Michael Crudder, Sean, David Toursack (owns most backlog tickets), Steven, Justin, Brady
+- **Team:** Brian Cersosimo (dev lead), Chloe Thai (PM/scrum), Michael Crudder, Rodrigo Aguirre (dev), Federico Nieto (dev), Vincent Wang (QA), Aisha (QA), Shaun Barry (operations/process), Nicole, David, David Toursack (owns most backlog tickets), Steven, Justin, Brian G (backlog refinement/prioritization), Brady, Megan (F2 — UAT support)
 - **Priority:** Highest across all HMS work — Flex-Dash fully paused to redirect capacity here
 
 ## What We're Building
@@ -27,6 +27,7 @@
 - Client service-based permission set missing fund object access — all custom permission sets need at least read access
 - Fund admin team: full CRUD
 - Operations team access: TBD
+- Permission Set Groups (PSGs) evaluated and rejected (May 2026) — no deployment benefit vs current approach; Federico proposed role-based PSGs (Operations Users, Advisors) but Michael/team decided to stay with flat permission sets unless a deployment constraint surfaces
 
 ## Dev Workflow
 - Daily standups (DSU)

@@ -2,11 +2,43 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-04-30
-open_actions: 22
+last_meeting: 2026-05-07
+open_actions: 12
 ---
 
 # MAI — Project Journal
+
+## Week of May 5, 2026
+
+Dev DSU (May 7, w/ Brian Cersosimo, Chloe Thai, Michael Crudder, Federico Nieto, Shaun Barry, Vincent Wang): ticket shortage, trustee ticket consolidation, QA bottleneck planning, permission set architecture discussion.
+
+**Ticket shortage — backlog rebalancing needed:** Team running out of dev tickets. Brian G created several items during backlog refinement but kept them in his name — unclear if he's holding for prioritization or if they need reassignment. Chloe reaching out to Justin for clarity. Prioritization approach confirmed: filter by highest priority first, then by epic (not epic-only, since some critical items span epics or have no epic).
+
+**Trustee ticket consolidation:** Three tickets rationalized — 1463 (trustee work, mostly done, updating per David's input), 1445 (original ticket, killed as superseded), 1448 (household/family lookups on prospect — in Vincent's QA queue, then to Michael). Brian picking up 1448 for solution design since it's the "mother of all tickets" combining multiple requirements.
+
+**QA bottleneck with Aisha out:** Vincent covering QA solo, averaging 5-6 tickets/day. Committed to clearing ~20 tickets by Monday across today through Sunday. Aisha returns Monday. Megan (F2) may handle UAT-stage items in the interim. If devs run idle, may assist with testing to unblock deployment pipeline.
+
+**Sean Barry's JIRA diagnostic:** Running blocked-ticket analysis + New→To Do pipeline audit. Sending results to Chloe and Justin. Goal: identify legitimately blocked items vs. items that can be unblocked and moved to To Do.
+
+**Fund admin walkthrough for Brian G:** Brian G requested a walkthrough with MAI fund ops team to confirm dev work is on target. Sean checking board status — fund admin work believed to be largely complete. Will give Brian G a quick answer.
+
+**Permission set architecture (Federico/Michael):** Federico proposed migrating to Permission Set Groups for role-based access (e.g., Operations Users group with Sales Process access, Advisors group). Michael pushed back — doesn't see the value unless there's a specific deployment reason. Staying with current permission sets for now.
+
+**Mac's PR & next work:** $14.66 PR submitted and tested in both environments, awaiting approval. Moving to ownership work next. Will need more tickets soon.
+
+**Decisions:**
+- Kill ticket 1445 (superseded by 1463)
+- Prioritize by highest priority first, then epic — don't filter by epic alone
+- Stay with permission sets (no PSG migration) unless deployment-justified
+
+**Open questions:**
+- What tickets does Brian G hold that can be reassigned? — Chloe asking Justin
+- Code freeze 5/22 — is capacity plan realistic given current ticket velocity? — Sean reviewing
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-07 - MAI Dev DSU.md`)*
+
+---
+
 
 ## Week of Apr 28, 2026
 

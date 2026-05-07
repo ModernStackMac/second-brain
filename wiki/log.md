@@ -2032,3 +2032,27 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: Log at 113 entries, no rotation needed. Commitments Done section empty, no archival needed.
 - Key takeaways: Wednesday evening — no new meeting notes have landed yet for May 7. Vault current.
+
+## [2026-05-07] ingest | MAI Dev DSU (May 7)
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-07 - MAI Dev DSU.md`
+- Pages created: none
+- Pages updated: `wiki/projects/mai/journal.md`, `wiki/projects/mai/context.md` (team roster + PSG decision), `Decision-Log.md` (3 entries), `commitments.md` (0 — no Mac commitments passed 4-gate)
+- Patterns extracted: none
+- Key takeaways: Team running out of dev tickets; trustee tickets consolidated (killed 1445); QA bottleneck with Aisha out — Vincent covering solo targeting 20 tickets by Monday; PSGs evaluated and rejected; code freeze target 5/22.
+
+## [2026-05-07] ingest | CREtelligent Daily Dev Standup (May 7)
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-07 - Stitch CREtelligent - Daily Dev Standup.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `Decision-Log.md` (3 entries), `commitments.md` (2 items)
+- Patterns extracted: none
+- Key takeaways: Blake fixed uppercase field formatting causing 400 errors; null formula fields breaking triggers; automated report logic gap identified — Mac building once Blake sends Radius payload; Eris integration deferred; DocGen going pixel-perfect (reversed simplification); product catalog coordination with Travis.
+
+## [2026-05-07] ingest | Skipped/duplicate sources
+- Source: `Meeting Notes/High Meadows/Loftware/2026-04-27 - Loftware - Attack Plan.md` — duplicate of previously processed `_Unmatched/` version (re-routed file)
+- Source: `Meeting Notes/High Meadows/Internal/2026-04-27 - Brian Hyman.md` — duplicate of previously processed `_Unmatched/` version (re-routed file)
+- Source: `Meeting Notes/High Meadows/Internal/2026-04-27 - Impromptu Microsoft Teams Meeting.md` — trivial (platform switch from Teams to Zoom, no substantive content)
+- Source: `Meeting Notes/High Meadows/Internal/2026-04-14 - Entity Role Diagram ERD Sync.md` — duplicate filing; same content already processed from `LNW/` path per project-mapping Resolved section
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-14 - AI Office Hours.md` — empty Granola stub with no content
+- Pages created: none
+- Pages updated: none
+- Key takeaways: 5 sources identified as new by path but already processed or empty. No action needed.

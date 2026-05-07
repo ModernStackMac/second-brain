@@ -2,11 +2,38 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-06
-open_actions: "26"
+last_meeting: 2026-05-07
+open_actions: "28"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of May 4, 2026 (continued)
+
+Daily Dev Standup (May 7, w/ Andrew Porter, Blake Stracener, Jeff): field formatting fix verified, null formula field bug identified, automated report logic gap scoped, Eris integration deferred, DocGen assets requested.
+
+**Field formatting 400 error resolved:** Blake identified two fields with uppercase C's instead of lowercase in the payload, causing 400 errors. Corrected and resent. Mac confirmed previous payload came through fine on CREtelligent's side — the break was downstream in Salesforce triggers.
+
+**Null formula field bug:** Formula fields displaying `null` instead of `0` when blank, causing arithmetic errors in trigger logic. Mac has detailed logging showing the full payload flow and pinpointed the break point. Blake offered to default values to zero on his end if needed — Mac will assess after deeper investigation.
+
+**Integration mapping status:** Everything mapped. Account upserts only update HubSpot ID (keyed by CREtelligent Intelligence ID). Creating/upserting: opportunities, sites, site products, cost worksheets. Product-related fields (code, name, short code) not updated — using product key to find existing Salesforce product and relate to site product.
+
+**Automated reports — logic gap identified:** Current integration doesn't handle automated report products. When a product has type "automated report," a different Salesforce object needs to be created. Mac will build the logic once Blake sends a test payload from Radius (OT doesn't support ordering automated reports). Separate test cycle needed.
+
+**Eris integration deferred:** Travis, Wendell, and Kurt have competing views on whether Eris automation is needed. Travis kicking the can until internal alignment. Currently manual — users log into Eris directly. Not blocking current sprint.
+
+**DocGen image assets:** Andrew requested background and logo assets for proposal PDF recreation. Blake locating them in S3, will zip and send to the Stitch/CREtelligent email channel. Team going for pixel-perfect recreation of existing proposal (reversed earlier decision to simplify).
+
+**Product catalog:** Andrew following up with Travis today. Excel Blake provided is helpful — short codes, product keys confirmed as what's in their database. Deprecated products flagged with a column.
+
+**Open questions:**
+- Net new fields (tracked in yellow on open items) — Travis needs to confirm tracking on CREtelligent's end
+- Account field changes for DocGen — need to discuss with Travis (opportunity vs account field sourcing)
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-07 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
+
 
 ## Week of May 4, 2026 (continued)
 
