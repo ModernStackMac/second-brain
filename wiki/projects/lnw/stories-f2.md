@@ -3,11 +3,11 @@ type: stories-sync
 project: lnw
 workspace: f2
 jira_project_key: LNW
-updated: 2026-05-06T12:00:00Z
+updated: 2026-05-07T18:00:00Z
 story_count: 4
 ---
 
-# LNW — Active Stories (Jira / F2 Strategy)
+# LNW — Active Stories (Jira)
 
 - [f2-LNW-192] Part 4: Visibility Enhancements POC - UI and UX Enablement [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture (LNW-112) · [Jira](https://f2strategy.atlassian.net/browse/LNW-192)
 - [f2-LNW-191] Part 3: Visibility Enhancements POC - Family Level Creation and Assignment [Status:: Review] [Priority:: Medium] [Updated:: 2026-04-06] · parent: Client Architecture (LNW-112) · [Jira](https://f2strategy.atlassian.net/browse/LNW-191)
