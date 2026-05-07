@@ -3,3 +3,9 @@
 [2026-05-07T17:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-33 — no folder at wiki/projects/flex-dash/ (slug mapped but folder missing)
 [2026-05-07T17:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-1 — no folder at wiki/projects/flex-dash/ (slug mapped but folder missing)
 [2026-05-07T17:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/ (slug mapped but folder missing)
+
+[2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-34 — no folder at wiki/projects/flex-dash/
+[2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-33 — no folder at wiki/projects/flex-dash/
+[2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-1 — no folder at wiki/projects/flex-dash/
+[2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-8 — no folder at wiki/projects/flex-dash/
+[2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/

@@ -1,13 +1,12 @@
 ---
 type: stories-sync
-updated: 2026-05-07T17:00:00-05:00
+updated: 2026-05-07T18:00:00-05:00
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI CRM Build | MAI-1466 | Financial Account Lookup needs to show both Financial Account Name & Account Number | Active | Highest | — | 2026-05-06 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1466) |
 | MAI CRM Build | MAI-1494 | Sales Process: Person Account Owners Upon Conversion | Developer Review | High | — | 2026-05-06 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1494) |
 | MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | — | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
