@@ -34,3 +34,15 @@ last_updated_before_archive: 2026-03-09
 # LNW-165 — Design: Client Architecture POC Features
 
 Archived by story-sync on 2026-05-06. Status moved to Complete (Done category).
+---
+workspace: jira
+project_key: LNW
+ticket: LNW-165
+title: "Design: Client Architecture POC Features"
+final_status: Complete
+archived: 2026-05-07T12:00:00-05:00
+reason: status_done
+last_updated_before_archive: 2026-03-09
+---
+
+Archived by story-sync. Story reached Done status category.
