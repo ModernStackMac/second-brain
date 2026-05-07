@@ -196,3 +196,5 @@
 - [2026-05-07 scheduled] Fathom ingest: 6 meetings scanned, 0 new (all 6 already exist in Meeting Notes/). No action taken.
 
 - [2026-05-07 12:00 CT] Fathom ingest run — 6 meetings in window, 0 new (all 6 already exist in Meeting Notes/). No action taken.
+
+- [2026-05-07 19:30 CT] Scheduled ingest run: 6 Fathom meetings found (past 3 days). All 6 already exist in Meeting Notes/ — 0 new, 0 unrouted. No writes performed.
