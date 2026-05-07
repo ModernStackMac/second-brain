@@ -187,3 +187,6 @@
 - [2026-05-06 14:00 CT] SCHEDULED RUN — 4 Fathom meetings in window (2026-05-03 → 2026-05-06). All 4 already exist in Meeting Notes/. Zero new files written. Skipped: "Stitch // CREtelligent - daily dev standup" (2026-05-06, 2026-05-05), "Stitch // CREtelligent - Weekly Refinement / Planning" (2026-05-04), "Andrew / Mac" (2026-05-04).
 
 - [2026-05-07 14:00 CT] SCHEDULED RUN: process-fathom-transcripts — 4 meetings in window (May 4–7), all 4 already exist in Meeting Notes/. 0 new, 0 unrouted. No writes.
+
+- [2026-05-07 12:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-07 - MAI Dev DSU.md · confidence: high · match: keyword
+- [2026-05-07 12:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-07 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword
