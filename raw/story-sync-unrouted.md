@@ -9,3 +9,8 @@
 [2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-1 — no folder at wiki/projects/flex-dash/
 [2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-8 — no folder at wiki/projects/flex-dash/
 [2026-05-07T18:00:00-05:00] workspace=linear project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/
+
+[2026-05-07T18:00:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-111 — no mapping in project-mapping.md (mapping says key=F2 for cetera, actual Jira project key is CET)
+[2026-05-07T18:00:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (mapping says key=F2 for cetera, actual Jira project key is CET)
+[2026-05-07T18:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1494 — no mapping in project-mapping.md (Jira Workspace and Project Key are TBD)
+[2026-05-07T18:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (Jira Workspace and Project Key are TBD)
