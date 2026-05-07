@@ -2002,3 +2002,26 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pages created: none
 - Pages updated: none
 - Patterns extracted: none
+
+## [2026-05-07] ingest | CREtelligent Daily Dev Standup (May 5) — retroactive log
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-05 - Stitch CREtelligent - Daily Dev Standup.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md`, `commitments.md`, `Second Brain/Decision-Log.md`
+- Patterns extracted: none
+- Note: Journal, context, commitments, and decision log were updated by a prior run that failed to write this log entry. Logging retroactively.
+- Key takeaways: Mac kicked off update opportunity site endpoint (JSON.deserialize approach). Document POST endpoint defined (project_id required, site ID/doc_type/visible optional). Named Credentials confirmed as auth standard. Document sync delete-and-reinsert flagged for upsert rewrite. DocHub folder creation deferred to design spike. 1 commitment added (verify Named Credential).
+
+## [2026-05-07] ingest | CREtelligent Daily Dev Standup (May 6) — retroactive log
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-06 - Stitch CREtelligent - Daily Dev Standup.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md`
+- Patterns extracted: none
+- Note: Journal and context were updated by a prior run that failed to write this log entry. Logging retroactively.
+- Key takeaways: Product key mapping ambiguity — four unique identifiers on CREtelligent side (code, name, short code, key). Blake confirming with Travis. Mac building core file structure first, field mapping swappable later. Two new site product payload fields (discount percent + discount amount). No new commitments.
+
+## [2026-05-07] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Cartier), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-06 now processed and logged. Two retroactive log entries added for May 5 and May 6 CREtelligent standups (content was already in wiki but log entries were missing from prior run).
+- Pattern extraction: No new patterns detected. May 5-6 standups were tactical (endpoint dev, product key mapping).
+- Maintenance: Log at 155 entries, no rotation needed. Commitments Done section empty, no archival needed.
+- Key takeaways: Clean scan. Vault current through May 6. No new meeting notes for May 7 have landed yet.
