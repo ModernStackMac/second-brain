@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: cetera
-updated: 2026-05-07T21:00:00-05:00
+updated: 2026-05-07T22:45:00-05:00
 ---
 
 # Cetera — Board
@@ -12,10 +12,10 @@ updated: 2026-05-07T21:00:00-05:00
 ## Up Next
 
 ## In Progress
-- CET-110 · Case / TRPG Work Desk Alignment
+- CET-110 Case / TRPG Work Desk Alignment 🟡
 
 ## Review
-- CET-111 · Create new fields on TRPG_Help_Desk__c
+- CET-111 Create new fields on TRPG_Help_Desk__c 🟡
 
 ## Blocked
 
