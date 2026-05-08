@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-08] scheduled-ingest | No new sources (scheduled run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-07 remain current. No new meeting notes or project docs since last run. No May 8 meeting notes have landed yet via Fathom.
+- Maintenance: Done section has 2 items from 2026-05-07 (1 day old, under 14-day archival threshold). Log under 200 entries, no rotation needed.
+- Patterns extracted: none
+
+
+
 ## [2026-05-08] scheduled-ingest | No new sources
 - Result: All sources through 2026-05-07 remain current. No new meeting notes, articles, or project docs since last run.
 
