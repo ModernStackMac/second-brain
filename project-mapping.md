@@ -1,6 +1,6 @@
 ---
 type: system-config
-updated: 2026-05-04T10:00:00-05:00
+updated: 2026-05-08T18:00:00-05:00
 ---
 
 # Project Mapping
@@ -22,7 +22,7 @@ Canonical routing table for story-sync. Maps (workspace, project_key) pairs to v
 | Linear Team | Linear Project | Canonical Slug |
 |---|---|---|
 | Internal Projects | Capacity Planning | internal/meadow |
-| Internal Projects | Flex Dash | flex-dash |
+| Internal Projects | Flex Dash | internal/flex-dash |
 
 ## Canonical Slug Index
 
@@ -32,7 +32,7 @@ Canonical routing table for story-sync. Maps (workspace, project_key) pairs to v
 | cetera | Cetera | Jira CET |
 | lnw | LNW | Jira LNW |
 | internal/meadow | Meadow (Capacity Planning) | Linear Internal Projects / Capacity Planning |
-| flex-dash | Flex Dash | Linear Internal Projects / Flex Dash |
+| internal/flex-dash | Flex Dash | Linear Internal Projects / Flex Dash |
 
 ## Deprecated Slugs
 
@@ -42,4 +42,4 @@ None.
 
 - Created 2026-05-04 by story-sync. Prior runs routed CET and MAI via established pattern but project-mapping.md was missing from vault.
 - Linear project "Meadow" was renamed to "Capacity Planning" in Linear. Canonical slug remains `internal/meadow`.
-- `flex-dash` slug is mapped but wiki/projects/flex-dash/ folder does not yet exist. Stories will log as unrouted until folder is created.
+- `flex-dash` slug corrected to `internal/flex-dash` on 2026-05-08 to match actual folder path at wiki/projects/internal/flex-dash/.

@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-05-08] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-07 remain current. No new meeting notes, articles, or project docs for May 8. Fathom notes from today's meetings have not landed yet.
+- Maintenance: Done section empty — no archival needed. Log at 125 entries, under 200 threshold. No rotation needed.
+- Patterns extracted: none
+- Key takeaways: Clean scan, vault current through May 7. Friday — next expected sources are any May 8 meeting notes once Fathom processes them.
+
+## [2026-05-08] scheduled-ingest | No new sources + commitment fix
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-07 remain current. No new meeting notes, articles, or project docs for May 8. Fathom notes from today's standups have not landed yet.
+- Maintenance fix: Relocated 2 unchecked CREtelligent commitment items (from May 7 standup) from `## Done` back to `## Open > CREtelligent` in `commitments.md`. Prior ingest run misplaced them under Done instead of Open.
+- Log entries: 122 — under 200 threshold. No rotation needed.
+- Done section: Now empty after relocation fix. No archival needed.
+- Patterns extracted: none
+- Key takeaways: Clean scan, vault current through May 7. Commitment hygiene fix applied.
+
 ## [2026-05-08] scheduled-ingest | No new sources (scheduled run)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: All sources through 2026-05-07 remain current. No new meeting notes or project docs since last run. No May 8 meeting notes have landed yet via Fathom.
@@ -2091,3 +2107,36 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: Log at ~180 entries, under 200 threshold. No rotation needed. No Done items requiring archival.
 - Key takeaways: Thursday morning scan. Vault current through May 7. Expecting CREtelligent and MAI standups to land later today.
+
+## [2026-05-08] ingest | 3 retroactive log entries — previously processed, never logged
+- Note: These 3 meeting notes were fully processed by prior runs (journal entries, commitments, and decision log entries all exist) but log entries were never written. Logging retroactively to close the gap detected by source-vs-log diff.
+
+### MAI Impromptu Call (Apr 30) — retroactive log
+- Source: `Meeting Notes/High Meadows/MAI/2026-04-30 - Impromptu Call.md`
+- Pages created: `wiki/patterns/dual-path-vendor-dependency.md` (created by prior run)
+- Pages updated: `wiki/projects/mai/journal.md`, `commitments.md` (14 items across Cetera, NBCU, MAI), `Decision-Log.md` (4 entries: NBCU dual-path, Cetera validation, Cetera Chire de-scope, Internal Meadow launch)
+- Patterns extracted: `dual-path-vendor-dependency` (already logged under separate entry)
+- Key takeaways: Multi-project sprint standup — NBCU POC dual-path strategy, Next Meeting Date validation fix, DocuSign unblocked, Chire API de-scoped, Meadow June 1 launch target, Sumo→Onito rebrand.
+
+### Modern Stack Systems Meeting of the Minds (Apr 24) — retroactive log
+- Source: `Meeting Notes/Modern Stack Systems/2026-04-24 - The Meeting of the Minds.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md`, `commitments.md` (2 items: tax optimization, TDX booking)
+- Patterns extracted: none
+- Key takeaways: TDX networking debrief (Odyssea, Matt Gary/Agentforce team offer), AI maturity shift (2025 talk → 2026 demos), Mac's S-Corp tax structure discussion ($250K W-2 + distributions), High Meadow Labs expansion (AI training company, DevOps agent), SF permission troubleshooting (custodian field visibility tied to Advisor Referral Program selection).
+
+### CREtelligent Weekly Status and Project Sync (Apr 24) — retroactive log
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-04-24 - Stitch CREtelligent Weekly Status and Project Sync.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/patterns/site-product-joiner.md` (click quote update), `commitments.md` (1 item: mass apply investigation), `Decision-Log.md` (1 entry: cost worksheet creation timing)
+- Patterns extracted: site-product-joiner updated with click quote architecture
+- Key takeaways: Payload enrichment over MuleSoft (timeline risk), Obed's order processing demo (3 sites × 2 products = 6 task groups), click quote flag at site-product level (not order level), opportunity stage simplification (4 stages + decline reasons), Quote Matrix LWC enhancements (filter by cheapest, mass apply).
+
+### Pattern Extraction
+- Reviewed all 3 newly logged sources for reusable patterns.
+- `site-product-joiner.md` updated with click quote architecture decision from Apr 24 CREtelligent weekly status (flags/attributes belong at the most granular junction level, not the parent).
+- No new standalone patterns — remaining content is project-tactical or personal/business strategy.
+
+### Maintenance
+- Commitments Done section: empty, no archival needed.
+- Log rotation: 128 entries — under 200 threshold. No rotation needed.
