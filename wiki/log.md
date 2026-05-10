@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-10] lint | Weekly Health Check
+- Pages scanned: 102
+- Issues: 8 critical, 12 recommended, 4 informational
+- Auto-fixed: none (all issues require review due to blast radius or are recurring from prior weeks)
+- Critical: 7 broken wiki-links persisting (meadow×7, high-meadows-mai×5, hms-capacity-planning×4, meadow-app×1, high-meadow-labs×1, reports/mai-project-overview×1), 2 stories frontmatter mismatches (internal/flex-dash, internal/meadow)
+- Recommended: 9 unmapped project folders, 5 orphan f2-internal pages, 5 journals missing frontmatter, 2 missing context.md, Harvey stale (31d), Litify approaching (23d), index.md notes not integrated, deprecated aliases serving no purpose
+- Improvement since May 6 mid-week: MCP-Obsidian, scheduled-tasks, productivity-systems broken links confirmed resolved. No new broken links introduced.
+- Report: wiki/lint-report.md
+
 ## [2026-05-08] scheduled-ingest | No new sources (evening run)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: All sources through 2026-05-07 remain current. No new meeting notes, articles, or project docs for May 8. Fathom notes from today's meetings have not landed yet.
