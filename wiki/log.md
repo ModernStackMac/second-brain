@@ -2172,3 +2172,13 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Output: wiki/reports/weekly-synthesis-2026-05-11.md
 - Projects covered: 13
 - Key finding: Only CREtelligent and MAI had active development this week. Litify has been stalled 24+ days with no next step. LNW's critical May visibility POC has had no meetings in 19 days despite stated urgency. MAI faces a QA bottleneck and ticket shortage 11 days before code freeze (May 22). CREtelligent carries 28+ open commitments and an expanding integration surface (6 concurrent vendor APIs). Cartier solution design document due May 14. Cross-project pattern: integration complexity and auth modernization efforts running in parallel across CREtelligent and Cetera.
+
+## [2026-05-11] ingest | Modern Stack Systems / Blink Advisory Follow-up (May 11)
+- Source: `Meeting Notes/_Unmatched/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md` (new Week of May 11 entry — empty stub noted)
+- Patterns extracted: none
+- Commitments extracted: none (no content available)
+- Key takeaways: Granola stub with no summary or transcript. Follow-up to Apr 21 Blink Data Cloud Advisory intro call (Raphi Katz, R Brayam from Blink UK). Prior engagement status was "Pending" — this call may indicate the advisory moved forward. Manual review of Granola recording recommended.
+- Maintenance: Log at ~130 entries, no rotation needed. Commitments Done section empty, no archival needed.
+- Scanned: All Meeting Notes subfolders, raw/articles/, raw/projects/. This was the only new source since the May 11 morning run.

@@ -1,10 +1,21 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of May 11, 2026
+
+Blink Data Cloud Advisory Follow-up (May 11, w/ Raphi Katz, R Brayam) — Granola captured no summary or transcript for this recording. This is a follow-up to the April 21 advisory intro call with Blink (UK payments company). Content unavailable for ingest. Manual review of Granola recording recommended if substantive discussion occurred.
+
+**Status:** Blink advisory engagement status unknown — prior state was "Pending" (Mac to send scope email, Raphi to get FD confirmation). This call may indicate the engagement moved forward.
+
+*(Source: `Meeting Notes/_Unmatched/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md`)*
+
+---
+
 
 ## Week of May 4, 2026
 
