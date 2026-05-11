@@ -1,15 +1,16 @@
 ---
 type: action-tracker
-updated: 2026-05-08T22:45:00-05:00
+updated: 2026-05-11T12:00:00-05:00
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI CRM Build | MAI-1530 | Sales Process changes | To Do | Highest | — | 2026-05-08 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1530) |
-| MAI CRM Build | MAI-1186 | Follow-up: Sourcer/Servicer Commission Assignment | Developer Review | High | — | 2026-05-08 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1186) |
-| MAI CRM Build | MAI-1281 | CSS/Advisors should NOT select Client as Role | Active | High | — | 2026-05-07 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1281) |
+| MAI CRM Build | MAI-1530 | Sales Process changes | Active | Highest | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1530) |
+| MAI CRM Build | MAI-1281 | CSS/Advisors should NOT select Client as Role | Developer Review | High | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1281) |
+| MAI CRM Build | MAI-1186 | Follow-up: Sourcer/Servicer Commission Assignment | Developer Review | High | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1186) |
+| MAI CRM Build | MAI-1514 | Add "Manage Docs" button on Fund Assignment Case page | Developer Review | Medium | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1514) |
 | MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
 | Cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | — | 2026-04-27 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
