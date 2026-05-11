@@ -1,5 +1,26 @@
 # Meadow — Project Journal
 
+## Week of May 11, 2026
+
+Meadow Internal Sync (May 11, Mac solo): Database consolidation complete, entering user testing phase, EO/EOA membership exploration.
+
+**Database consolidation done:** Deleted one organization, moved project to correct bucket. Full test script completed. App is ready for user testing (not just cloud/dev testing anymore).
+
+**User testing setup requirements:** (1) Defect repository — spreadsheet is acceptable for tracking bugs. (2) Three access levels needed: admin, manager, user. (3) Test data to be purged after testing is complete.
+
+**Technical notes:** Name formatting script runs on first-time logins (Aisha's name currently lowercase with periods — will auto-correct). React app may need cache refresh if changes don't stick. Capacity field is now changeable (no longer defaulted to 40 hours). User deactivation toggle needed for handling inactive assignment records.
+
+**EO/EOA membership exploration:** Mac exploring Entrepreneurs' Organization membership. EOA (Accelerator) has $250K revenue minimum vs EO's $1M. EOA annual fee $3,500 (EO is $15K first year, $8K ongoing). EO Chicago chapter: 130 members, HQ in Bucktown with co-working space, 5 conference rooms, 24/7 access, weekly events, mentorship program with YPO. Application process: discovery call (done) → attend event → test drive (mock forum) → application with CPA revenue verification → annual payment. Mac's current revenue: $175K (targeting $600K by year-end, $55K last month). Plans to reach out once T12 hits $250K — potentially next month.
+
+**Personal:** Mac OOO next week for Barcelona trip (mom's 60th birthday) with wife.
+
+No new commitments identified — user testing setup items are team-level tasks, not explicit Mac commitments with firm verbs.
+
+*(Source: `Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow.md`)*
+
+---
+
+
 ## Week of Apr 28, 2026
 
 **June 1 go-live confirmed:** The custom "Meadow" time-entry system (built for High Meadow Solutions) will go live on June 1. It replaces the current Google Sheets-based process with an LWC-powered Salesforce app for all consultants.

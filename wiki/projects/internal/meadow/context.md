@@ -9,6 +9,7 @@
 - **Product:** Meadow (capacity planning & time tracking)
 - **Team:** Aisha (HMS), Mac (MSS — lead)
 - **Priority:** Active alongside MAI; Flex-Dash paused to keep capacity here
+- **Status:** User testing phase — DB consolidation complete (2026-05-11). June 1 go-live target.
 
 ## What We're Building
 - Cloud migration from local SQLite to Supabase PostgreSQL + Vercel hosting
@@ -40,6 +41,15 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 4. Vercel Deployment — static build, backend hosting decision, cron jobs, CORS/domain config
 5. Clockify Sunset — admin toggle, legacy fields nullable, source field enforcement
 6. Time Entry Polish — collision detection on edit, merge/block dialog
+
+## Testing Requirements (as of 2026-05-11)
+- Defect repository (spreadsheet acceptable)
+- Three access levels required: admin, manager, user
+- Test data purge after testing complete
+- Name formatting script runs on first-time login (auto-corrects casing)
+- Capacity field now editable (no longer defaulted to 40 hours)
+- User deactivation toggle needed for inactive assignment records
+- React app may need cache refresh if changes don't stick
 
 ## Related Pages
 - [[high-meadows]] — parent org

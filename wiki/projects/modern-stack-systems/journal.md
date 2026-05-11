@@ -14,6 +14,21 @@ Blink Data Cloud Advisory Follow-up (May 11, w/ Raphi Katz, R Brayam) — Granol
 
 *(Source: `Meeting Notes/_Unmatched/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md`)*
 
+
+Andrew/Mac Sync (May 11, w/ Andrew Smith): Gambling movie recs, Granola MCP integration plans, Second Brain demo, local AI model experimentation, fine-tuning vs RAG debate, personal updates.
+
+**Granola MCP integration:** Andrew wants to pull Granola notes directly into Claude via MCP — eliminating the manual copy/paste step. Mac demonstrated the full Second Brain pipeline: raw folder for articles/artifacts, wiki layer for synthesized knowledge, auto-generated folders for clients/projects/contacts, Jira/Confluence data pulled for context, connection mapping across information sources.
+
+**Local AI models:** Andrew running Qwen 35B locally via LLM Studio on 48GB RAM — performance comparable to Claude Sonnet for coding tasks, successfully building Swift apps. Constraints: single instance (memory-bound), slower than cloud, can't run larger models (full Qwen, Chimera). Using Cursor IDE with local model integration, built an iOS game using a JSON rules engine with AI-generated game rules from Wikipedia.
+
+**Fine-tuning vs RAG:** Mac advocated fine-tuning for domain-specific agents (CPA/tax law). Andrew prefers RAG with vector databases — cites update frequency concerns (laws change, fine-tuned models go stale). Andrew values interpretability: wants agents that show source information and cite reasoning, not black-box answers. No resolution — both approaches have tradeoffs depending on use case stability and auditability requirements.
+
+**Personal:** Mac dealing with Audi key fob issues (mobile app as backup). Andrew using AI agents for house construction planning — set up an OpenClaw channel that generated specific contractor contacts and engineer task lists. Mac negotiated CRSX subscription down from $20/mo to $5/mo through persistence.
+
+No new commitments identified.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac.md`)*
+
 ---
 
 

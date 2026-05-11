@@ -2225,3 +2225,30 @@ Reviewed journals updated this cycle (MAI, LNW, Cetera). No new reusable pattern
 ### Maintenance
 - Commitments Done section: empty, no archival needed.
 - Log rotation: log is very large (200+ entries). Archiving entries older than 90 days to `wiki/log-archive-2026.md` is deferred — the log file structure needs a dedicated cleanup pass (lint task).
+
+
+## [2026-05-11] ingest | Andrew/Mac Sync (May 11)
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac.md`
+- Pages created: none
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md` (appended to Week of May 11 entry)
+- Patterns extracted: none — fine-tuning vs RAG debate is a recurring discussion topic (also Apr 22 High Meadow Labs) but not yet a settled pattern or architectural decision. Will create concept page if it crystallizes.
+- Commitments: 0 (no Mac commitments passed 4-gate)
+- Key takeaways: Andrew exploring Granola MCP integration. Running Qwen 35B locally on 48GB RAM (Sonnet-comparable for coding). Fine-tuning vs RAG debate continues — Mac favors fine-tuning for stable domains, Andrew favors RAG for auditability and update frequency.
+
+## [2026-05-11] ingest | Meadow Internal Sync (May 11)
+- Source: `Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow.md`
+- Pages created: none
+- Pages updated: `wiki/projects/internal/meadow/journal.md` (new Week of May 11 entry), `wiki/projects/internal/meadow/context.md` (status updated to user testing phase, testing requirements section added)
+- Patterns extracted: none
+- Commitments: 0 — user testing setup items are team-level tasks, EOA membership is personal/future.
+- Key takeaways: DB consolidation complete, entering user testing. Capacity field now editable (was hardcoded to 40hrs). Mac exploring EOA membership ($250K revenue min, currently at $175K, targeting $600K YE). Mac OOO next week for Barcelona.
+
+### Pattern Extraction Pass
+Reviewed both new journal entries. No new reusable patterns identified:
+- Fine-tuning vs RAG is a recurring conversation topic but not yet an architectural decision with implementation examples.
+- Meadow user testing setup is project-specific.
+- EOA membership exploration is personal/business strategy, not a technical pattern.
+
+### Maintenance
+- Commitments Done section: empty, no archival needed.
+- Log rotation: 199+ entries, approaching 200 threshold. Rotation deferred to dedicated lint pass (log structure needs cleanup — mixed entry sizes and formats).
