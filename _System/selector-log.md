@@ -202,3 +202,7 @@
 - [2026-05-08 06:00 CT] FATHOM INGEST — 0 new meetings. 4 recordings checked (2026-05-05 to 2026-05-07), all already filed: MAI Dev DSU (05-07) in High Meadows/MAI/, 3x CREtelligent daily standups (05-05, 05-06, 05-07) in Stitch/Cretelligent/. No action taken.
 
 - [2026-05-11 09:00 CT] "Modern Stack Systems between Mac Nosek and Raphi Katz" → Meeting Notes/_Unmatched/ · confidence: none · match: fallback
+
+- [2026-05-11 10:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md · confidence: high · match: keyword
+- [2026-05-11 10:30 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md · confidence: high · match: keyword
+- [2026-05-11 10:30 CT] "Modern Stack Systems between Mac Nosek and Raphi Katz" → Meeting Notes/_Unmatched/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md · confidence: none · match: fallback · note: re-processed from _Unmatched (previously had no AI summary, now summary available; still no project-mapping match for Blink Payment)
