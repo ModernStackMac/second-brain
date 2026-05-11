@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-22
+last_meeting: 2026-05-11
 open_actions: 4
 ---
 
@@ -58,3 +58,22 @@ Met once (Apr 14 — Entity Role Diagram / ERD Sync). Multi-topic session that a
 ---
 
 _Active story work tracked in `stories-f2.md` (4 tickets in Review: LNW-189/190/191/192 — Visibility Enhancements POC, parent epic LNW-112 Client Architecture)._
+
+## Week of May 11, 2026
+
+LNW CA Check In (May 11): project velocity update, new bug logged, meeting note page field mapping, Mac out Wed-Fri next week.
+
+**Family story ticket progress:** Mac targeting one ticket completion per day on the family story work (#13). Should finish remaining tickets by end of week, though new tickets may push completion to Monday/Tuesday next week.
+
+**New bug — search filter reload issue:** Identified and logged a bug where search filters/toggles don't reload properly across all filter types. Similar to the previous timeline filter bug. Estimated at 5 points (medium priority). Mac to review and fix.
+
+**Meeting note page field mapping:** Activity fields can't use lookup functionality on the meeting note object. Workaround: add start date/time fields to the meeting note object and map them during meeting creation/updates. Added to existing ticket scope.
+
+**Deployment plan:** Mac finishing current ticket by noon, then pausing for deployment push. Will message Slack when ready. End-to-end testing planned after ticket completion.
+
+**Mac OOO:** Out Wednesday–Friday next week for Barcelona trip (mom's 60th birthday). Return after Memorial Day.
+
+*(Source: `Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md`)*
+
+---
+

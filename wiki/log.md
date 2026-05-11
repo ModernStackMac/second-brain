@@ -2182,3 +2182,46 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Key takeaways: Granola stub with no summary or transcript. Follow-up to Apr 21 Blink Data Cloud Advisory intro call (Raphi Katz, R Brayam from Blink UK). Prior engagement status was "Pending" — this call may indicate the advisory moved forward. Manual review of Granola recording recommended.
 - Maintenance: Log at ~130 entries, no rotation needed. Commitments Done section empty, no archival needed.
 - Scanned: All Meeting Notes subfolders, raw/articles/, raw/projects/. This was the only new source since the May 11 morning run.
+
+
+## [2026-05-11] ingest | MAI Dev DSU (May 11)
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md`
+- Pages created: none
+- Pages updated: `wiki/projects/mai/journal.md` (new Week of May 11 entry — backlog nearly clear, QA blitz, field capacity crunch, bank field mapping uncertainty)
+- Patterns extracted: none
+- Commitments: 0 (test class completion too granular/immediate)
+- Decisions: 0 (no strategic decisions this standup)
+- Key takeaways: Only 3 tickets left in MAI backlog. Nearly out of custom fields (3 remaining) and completely out of lookup fields. Field justification meeting tomorrow — 17 potentially redundant fields identified.
+
+## [2026-05-11] ingest | LNW CA Check In (May 11)
+- Source: `Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md`
+- Pages created: none
+- Pages updated: `wiki/projects/lnw/journal.md` (new Week of May 11 entry — family story progress, search filter reload bug, meeting note field mapping), `commitments.md` (1 new)
+- Patterns extracted: none
+- Commitments: 1 (fix search filter reload bug, 5-point estimate)
+- Key takeaways: Mac targeting 1 ticket/day on family story work, aiming for end-of-week completion. Mac OOO Wed-Fri next week (Barcelona trip). New search filter reload bug logged.
+
+## [2026-05-11] ingest | Cetera Project Keystone Daily Stand-up (May 11)
+- Source: `Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up.md`
+- Pages created: none
+- Pages updated: `wiki/projects/cetera/journal.md` (new Week of May 11 entry — replanning, Plan Participants decision, RedTail prep), `commitments.md` (1 new), `Decision-Log.md` (2 new)
+- Patterns extracted: none
+- Commitments: 1 (send RedTail mappings to team)
+- Key takeaways: Plan Participants removed from manual sync — keeping plumbing for future eMoney integration. RedTail integration local dev starting. Timeline replanning underway but nothing critically behind.
+
+## [2026-05-11] ingest | Internal CREtelligent Weekly Sync (May 11) — empty
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-11 - Internal CREtelligent Weekly Sync.md`
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Key takeaways: Granola captured no summary or transcript for this meeting. No actionable content to process.
+
+### Pattern Extraction Pass
+Reviewed journals updated this cycle (MAI, LNW, Cetera). No new reusable patterns identified:
+- MAI field capacity crunch is project-tactical, not a repeatable pattern.
+- LNW search filter bug is a specific code issue.
+- Cetera Plan Participants decision is a scope management call, not an architectural pattern.
+
+### Maintenance
+- Commitments Done section: empty, no archival needed.
+- Log rotation: log is very large (200+ entries). Archiving entries older than 90 days to `wiki/log-archive-2026.md` is deferred — the log file structure needs a dedicated cleanup pass (lint task).

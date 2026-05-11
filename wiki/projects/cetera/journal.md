@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-30
+last_meeting: 2026-05-11
 open_actions: 8
 ---
 
@@ -136,6 +136,26 @@ Invoicing issue: old PO on invoices, project moved to new org — new PO being o
 **Open questions:**
 - Marketing Cloud provisioning (Sean + AE escalation in progress)
 - Field naming standards doc needed for UAT team (singular vs. plural, federal tax bracket vs. tax bracket)
+
+---
+
+## Week of May 11, 2026
+
+Project Keystone Daily Stand-up (May 11, w/ Connor + team): timeline replanning underway, JIRA cleanup items, Plan Participants scope reduction, RedTail integration prep.
+
+**Replanning in progress:** Connor had a hectic end of last week. Team working on timeline replanning — nothing critically behind yet. Brian catch-up Friday on replanning approach. Kurt received comprehensive task list Friday for feature build replanning. Chris and Connor's notes align with remaining work.
+
+**JIRA cleanup — minor items:** Flagged tickets with notes requiring attention are minor cleanup, not major blockers: testing validation questions, missing field/picklist values, general configuration checks. Work item submissions: changed default from "new" to "submitted" in flow. Fixed null reference issue (pointing to correct ID). Added test data to garden hose for page visibility. Planning dashboard updated with new planning tab on lead page layout. Currently running first QA pass in sandbox.
+
+**Plan Participants decision:** After discussion with head of financial planning, team is keeping the Salesforce-eMoney integration plumbing available for future but removing the manual sync responsibility from the financial planning team for now. In FT dev sandbox, participants section has been commented out of submission forms — object remains but request excludes participants. Will reintegrate once eMoney integration goes live, at which point data syncs automatically.
+
+**RedTail integration kickoff:** Sending RedTail mappings to team for local development start. Team will begin local work without data and port to server when ready. Risk mitigation priority given timeline concerns.
+
+**Decisions:**
+- Plan Participants: keep plumbing, remove manual sync, reintegrate when eMoney goes live
+- Work item submission default changed: "new" → "submitted"
+
+*(Source: `Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up.md`)*
 
 ---
 

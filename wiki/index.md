@@ -118,3 +118,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-05-11, synthesis):** Weekly synthesis report generated: [[reports/weekly-synthesis-2026-05-11]] — 2026-05-11 · Weekly cross-project synthesis for the week of May 5–11, 2026. 13 projects covered. Key finding: CREtelligent and MAI were the only active projects; Litify stalled 24+ days, LNW visibility POC urgency unaddressed, MAI code freeze May 22 with QA bottleneck.
+
+
+**Note (2026-05-11, ingest):** Processed 4 new meeting notes from today: MAI Dev DSU (backlog nearly empty, field capacity crunch — 3 custom fields remaining, 0 lookups), LNW CA Check In (family story ticket velocity, new search filter reload bug, Mac OOO Wed-Fri next week for Barcelona), Cetera Project Keystone (Plan Participants descoped for manual sync — keeping eMoney plumbing, RedTail integration local dev kicking off), CREtelligent Internal Weekly Sync (empty — no Granola summary). 2 commitments added, 2 decisions logged. No new patterns.

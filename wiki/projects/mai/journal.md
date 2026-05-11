@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-07
+last_meeting: 2026-05-11
 open_actions: 12
 ---
 
@@ -278,3 +278,24 @@ Internal planning sync (Apr 2). Highest priority decision of the engagement: ful
 - Argentine dev team being phased out and replaced
 
 ---
+
+## Week of May 11, 2026
+
+Dev DSU (May 11, w/ Vincent Wang + team): backlog nearly clear, test class sprint, massive QA queue processing, field capacity crunch, fund assignment lookup behavior.
+
+**Backlog almost empty:** Only 3 tickets remaining — 2 assigned to David. Need to review backlog with Aisha to reload. Mac working on test class for ticket 11 (case font assignment controller), targeting completion by noon.
+
+**Vincent's QA blitz:** Major developer review queue processing. Ticket 1469 finishing today. 1523 completed and ready for deployment with populated data. Multiple tickets cleared through QA: 1085 passed to QA, 1352 (contract exhibit creation) resolved, 1353 re-tested and passing, 1521 done, 1439 (building definition/annual fee mapping) clarified, 1451 passed, 1498 passed QA and moving to Brian for testing.
+
+**Bank field mapping uncertainty (ticket 1502):** New feed component lacks proper field mapping — unclear whether to use bank vs. bank account name fields. Brian G or Mango to provide guidance. Discussion scheduled within the hour with Brian.
+
+**Content version vs attachment transition (ticket 1515):** Files now display as content versions instead of attachments (standard attachment is deprecated). Both systems temporarily maintained during transition. Fund name display working on investment account lookup — investment accounts show "no fund membership" while fund accounts display actual fund names. Search covers both account types.
+
+**Field capacity crunch:** Nearly out of custom fields (3 remaining), entirely out of lookup fields. Brian identified 17 potentially redundant fields. Field justification meeting scheduled for tomorrow — team preparing documentation.
+
+**Next steps:** Mac completing test class by noon, ready for more tickets early afternoon. Vincent continuing developer review queue. Team preparing field justification docs for tomorrow's meeting.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md`)*
+
+---
+
