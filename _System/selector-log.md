@@ -212,3 +212,5 @@
 - [2026-05-11 10:00 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md · confidence: high · match: keyword (lnw in title) · note: re-processed — previous file had no AI summary, now summary available
 
 - [2026-05-11 13:30 CT] "Meadow" → Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow.md · confidence: high · match: keyword (meadow in title)
+
+- [2026-05-11 15:30 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac.md · confidence: high · match: attendee (Andrew Smith = MSS peer contact, consistent routing pattern)
