@@ -3,7 +3,7 @@ type: stories-sync
 project: internal/flex-dash
 workspace: linear
 linear_project: Flex Dash
-updated: 2026-05-11T18:00:00-05:00
+updated: 2026-05-11T19:00:00-05:00
 story_count: 5
 ---
 
