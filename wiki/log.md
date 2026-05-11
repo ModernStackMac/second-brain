@@ -2149,3 +2149,8 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 ### Maintenance
 - Commitments Done section: empty, no archival needed.
 - Log rotation: 128 entries — under 200 threshold. No rotation needed.
+
+## [2026-05-11] ingest | Scheduled Run — No New Sources
+- Scanned: Meeting Notes/ (all subfolders), Second Brain/raw/articles/, Second Brain/raw/projects/
+- Result: No new sources found since last ingest (2026-05-10)
+- Notes: All meeting notes through 2026-05-07, all 8 raw articles, and meadow project docs already processed
