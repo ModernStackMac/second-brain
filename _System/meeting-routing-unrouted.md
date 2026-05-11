@@ -25,3 +25,5 @@
 - **Attendees:** Brian Hyman
 - **Summary:** Brief lobby conversation (exercise equipment chat) before participants realized the actual meeting was on Zoom. No substantive content.
 - **Suggested candidates:** Likely related to a High Meadows onsite (mentions Masri), but too trivial to route confidently. The actual meeting content would be captured in the Zoom recording.
+
+- **2026-05-11** "Modern Stack Systems between Mac Nosek and Raphi Katz" — Attendees: R Brayam (r.brayam@blinkpamyent.co.uk), R Katz (r.katz@blinkpayment.co.uk). Suggested candidates: possibly a Blink Payment project under Modern Stack Systems (see prior meetings: 2026-04-21 Blink Data Cloud Advisory). No project-mapping.md entry exists for Blink Payment.
