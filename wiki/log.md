@@ -2166,3 +2166,9 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Commitments extracted: none — open items are development backlogs, not explicit Mac commitments passing the 4-gate rule.
 - Key takeaways: Three foundational docs for Meadow (11-table schema, 6 prioritized workstreams, 22 user stories). All content already incorporated into `wiki/projects/internal/meadow/context.md` in a prior session. SSO strategy pivoted from Entra/MSAL to Sanity (reflected in user-stories.md but not open-items.md, which is the older doc). Priority order confirmed: Auth hardening > Supabase > Sanity SSO > Vercel > Clockify sunset > time entry polish.
 - Note: No new meeting notes found this cycle. All 96 meeting note files already processed.
+
+
+## [2026-05-11] synthesis | Weekly Synthesis — Week of May 5–11, 2026
+- Output: wiki/reports/weekly-synthesis-2026-05-11.md
+- Projects covered: 13
+- Key finding: Only CREtelligent and MAI had active development this week. Litify has been stalled 24+ days with no next step. LNW's critical May visibility POC has had no meetings in 19 days despite stated urgency. MAI faces a QA bottleneck and ticket shortage 11 days before code freeze (May 22). CREtelligent carries 28+ open commitments and an expanding integration surface (6 concurrent vendor APIs). Cartier solution design document due May 14. Cross-project pattern: integration complexity and auth modernization efforts running in parallel across CREtelligent and Cetera.

@@ -115,3 +115,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-05-11, ingest):** Logged 3 previously untracked raw project docs (`raw/projects/meadow/` — database schema, open items, user stories). All content was already reflected in [[internal/meadow/context]] from a prior session. No new meeting notes, articles, or patterns this cycle.
+
+
+**Note (2026-05-11, synthesis):** Weekly synthesis report generated: [[reports/weekly-synthesis-2026-05-11]] — 2026-05-11 · Weekly cross-project synthesis for the week of May 5–11, 2026. 13 projects covered. Key finding: CREtelligent and MAI were the only active projects; Litify stalled 24+ days, LNW visibility POC urgency unaddressed, MAI code freeze May 22 with QA bottleneck.
