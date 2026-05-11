@@ -1,13 +1,14 @@
 ---
 type: action-tracker
-updated: 2026-05-11T19:00:00-05:00
+updated: 2026-05-11T20:30:00-05:00
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI CRM Build | MAI-1529 | New Fund Account - IM Service Type controls IPS Requirement | To Do | Highest | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1529) |
+| MAI CRM Build | MAI-1529 | New Fund Account - IM Service Type controls IPS Requirement | Active | Highest | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1529) |
+| MAI CRM Build | MAI-1414 | Financial Account: Insurance Policies HH view | Developer Review | High | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1414) |
 | MAI CRM Build | MAI-1530 | Sales Process changes | Active | Highest | — | 2026-05-11 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1530) |
 | MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
