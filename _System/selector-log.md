@@ -206,3 +206,7 @@
 - [2026-05-11 10:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md · confidence: high · match: keyword
 - [2026-05-11 10:30 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md · confidence: high · match: keyword
 - [2026-05-11 10:30 CT] "Modern Stack Systems between Mac Nosek and Raphi Katz" → Meeting Notes/_Unmatched/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md · confidence: none · match: fallback · note: re-processed from _Unmatched (previously had no AI summary, now summary available; still no project-mapping match for Blink Payment)
+
+- [2026-05-11 12:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-05-11 - Internal CREtelligent Weekly Sync.md · confidence: high · match: keyword (cretelligent in title)
+- [2026-05-11 10:30 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword (project keystone in title)
+- [2026-05-11 10:00 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md · confidence: high · match: keyword (lnw in title) · note: re-processed — previous file had no AI summary, now summary available
