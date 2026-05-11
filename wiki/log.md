@@ -2154,3 +2154,15 @@ Clean lint pass. Two structural index fixes applied, three completed items rotat
 - Scanned: Meeting Notes/ (all subfolders), Second Brain/raw/articles/, Second Brain/raw/projects/
 - Result: No new sources found since last ingest (2026-05-10)
 - Notes: All meeting notes through 2026-05-07, all 8 raw articles, and meadow project docs already processed
+
+
+## [2026-05-11] ingest | Meadow Raw Project Docs (batch)
+- Source: `Second Brain/raw/projects/meadow/meadow-database-schema.md`
+- Source: `Second Brain/raw/projects/meadow/meadow-open-items.md`
+- Source: `Second Brain/raw/projects/meadow/user-stories.md`
+- Pages created: none
+- Pages updated: none (context.md already reflected this content from a prior manual session)
+- Patterns extracted: none — auth hardening (self-scoped data access + RLS defense-in-depth) and SQLite-to-Supabase migration are strong pattern candidates but still planned, not yet implemented. Will revisit once the auth hardening work is complete.
+- Commitments extracted: none — open items are development backlogs, not explicit Mac commitments passing the 4-gate rule.
+- Key takeaways: Three foundational docs for Meadow (11-table schema, 6 prioritized workstreams, 22 user stories). All content already incorporated into `wiki/projects/internal/meadow/context.md` in a prior session. SSO strategy pivoted from Entra/MSAL to Sanity (reflected in user-stories.md but not open-items.md, which is the older doc). Priority order confirmed: Auth hardening > Supabase > Sanity SSO > Vercel > Clockify sunset > time entry polish.
+- Note: No new meeting notes found this cycle. All 96 meeting note files already processed.

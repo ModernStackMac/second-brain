@@ -112,3 +112,6 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-05-06):** New pattern page: [[automation-kill-switch]] — Hierarchical Custom Settings to selectively disable flows/triggers/validations org-wide or per user during data loads, deploys, and hotfixes. Applied in Cetera Project Keystone. Retroactive log entries added for 34 early-April meetings that were processed into journals but never logged.
+
+
+**Note (2026-05-11, ingest):** Logged 3 previously untracked raw project docs (`raw/projects/meadow/` — database schema, open items, user stories). All content was already reflected in [[internal/meadow/context]] from a prior session. No new meeting notes, articles, or patterns this cycle.
