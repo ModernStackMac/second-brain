@@ -210,3 +210,5 @@
 - [2026-05-11 12:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-05-11 - Internal CREtelligent Weekly Sync.md · confidence: high · match: keyword (cretelligent in title)
 - [2026-05-11 10:30 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword (project keystone in title)
 - [2026-05-11 10:00 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md · confidence: high · match: keyword (lnw in title) · note: re-processed — previous file had no AI summary, now summary available
+
+- [2026-05-11 13:30 CT] "Meadow" → Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow.md · confidence: high · match: keyword (meadow in title)
