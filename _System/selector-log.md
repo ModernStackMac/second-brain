@@ -214,3 +214,6 @@
 - [2026-05-11 13:30 CT] "Meadow" → Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow.md · confidence: high · match: keyword (meadow in title)
 
 - [2026-05-11 15:30 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac.md · confidence: high · match: attendee (Andrew Smith = MSS peer contact, consistent routing pattern)
+
+- [2026-05-12 08:15 CT] "AI Office Hours" → Meeting Notes/Modern Stack Systems/2026-05-12 - AI Office Hours.md · confidence: medium · match: keyword (office hours + prior routing pattern to MSS)
+- [2026-05-12 08:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-12 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent, stitch in title)
