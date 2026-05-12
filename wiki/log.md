@@ -2283,3 +2283,29 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - Result: No new sources found since last ingest (2026-05-11). No May 12 meeting notes, articles, or project docs have landed yet.
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: No archival or rotation actions needed this cycle.
+
+
+## [2026-05-12 ingest]
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-12 - AI Office Hours.md`
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+  - Key takeaways: Beacon Personal Assistant demo (Sean OS sidebar app with specialized agents, Electron→Tauri migration). Local AI infrastructure RAM limits (M4 Studio 64GB cap, Apple Silicon no eGPU). Company AI strategy: autonomous PM from Linear as first target. SF market: Mac's brother at EY on $5-7M deals, RCA resource scarcity risk.
+  - Commitments added: 0
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-12 - Stitch CREtelligent - Daily Dev Standup.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md` (field mapping updates, document endpoint architecture)
+  - Key takeaways: Week 1 new sprint. Blake OOO through May 21. Field name corrections: total_price→net_client_price, click_quote→is_click_quote. Unknown fields (elevated_conversion, fault_reason) pending Wendell. Document endpoint: bytes transfer, project_id as external ID for upserts, document types enum pending, visibility boolean, user email for auditing. Staging vs prod URL discussion needed.
+  - Commitments added: 0 (document endpoint work is existing scope)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/High Meadows/LNW/2026-05-12 - CA Check In.md`
+  - Pages updated: `wiki/projects/lnw/journal.md`, `wiki/projects/lnw/context.md` (super family hierarchy details, event redirects)
+  - Key takeaways: Super family filter needs 3-level hierarchy traversal (account→family→super family), currently showing zero records. family_type="super family" identifies super families. Family lookup field exists but unused. Event page redirects to meeting notes working. Hold deployment until super family resolved. Next check-in Thursday.
+  - Commitments added: 1 (complete super family filter logic implementation)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Maintenance: Commitments.md Done section empty — no archival needed. Log approaching rotation threshold — check count next run. No new patterns identified across these 3 meetings.

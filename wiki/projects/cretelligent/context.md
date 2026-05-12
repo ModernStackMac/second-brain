@@ -86,3 +86,25 @@ Cost worksheet references site product directly (no product lookup field). Auto-
 **Document sync:** Current logic deletes all documents and reinserts on every sync (workaround for SF content document version duplication). Must be rewritten to proper upsert before DocHub allows direct uploads from SF or DocHub to S3 — otherwise user-uploaded docs would be destroyed.
 
 **DocHub folder creation:** Creating new folders and uploading documents to them requires a separate design spike before implementation (complex enough to not inline with existing stories).
+
+
+## Field Mapping Updates (added 2026-05-12)
+
+**Field name corrections:** `total_price` → `net_client_price` (add underscores: `net_client_price__c`). `click_quote` → `is_click_quote` (boolean/picklist, add "is" prefix). These corrections align payload field names with Salesforce custom field naming conventions.
+
+**Transaction type storage:** Stored at proposal/order level, not project level. Multiple transaction types possible across sites within a single order (refinance, new loan, plus 3-4 others).
+
+**Report due date / report status:** May need to move from site product to task group level. Report status likely associated with report due date field.
+
+**Unknown fields (pending Wendell):** `elevated_conversion` and `fault_reason` — mapping unknown, may be task group related rather than site product. Deferred to task group implementation phase.
+
+
+## Document Endpoint Architecture (updated 2026-05-12)
+
+**File transfer method:** Documents sent as bytes, recreated on receiving end. No encryption needed (publicly accessible documents). Response includes S3 link via Salesforce document object.
+
+**Project ID as external ID:** `project_id` serves as unique external ID for upserts. Maps to opportunity at site level — multiple project IDs per order (one per site). Enables site-specific document retrieval.
+
+**Document object fields:** Document types enum (proposal PDF, completed report, etc.) — enum values to be shared by OT. Visibility boolean field (true/false). User email for auditing (defaults to `salesforce@cretelligent.com`).
+
+**Site verification links:** URL format: `projects/[project_ID]` for direct site page access. Staging vs production environment URL differences still need discussion.

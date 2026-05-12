@@ -1,7 +1,7 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 # Modern Stack Systems — Journal
@@ -28,6 +28,21 @@ Andrew/Mac Sync (May 11, w/ Andrew Smith): Gambling movie recs, Granola MCP inte
 No new commitments identified.
 
 *(Source: `Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac.md`)*
+
+
+AI Office Hours (May 12): Beacon Personal Assistant demo, local AI infrastructure constraints, company AI strategy (autonomous PM from Linear), Salesforce market insights.
+
+**Beacon Personal Assistant:** Sean demoed sidebar app aggregating email, chat, and action items — part of "Sean OS" with specialized agents (morning briefing, interday cleanup, weekly priority pass). Currently rebuilding interface to look less "AI-designed." Plans to migrate from Electron to Tauri. Will replace Notion notifications for proactive agent updates.
+
+**Local AI infrastructure:** Mac running Ollama and LM Studio but hitting RAM limits — currently maxed at 24-48GB on available Mac configs. Apple removed high-RAM products from lineup (M4 Studio caps at 64GB, M3 Max at 96GB). Apple Silicon doesn't support external GPU. Recommendation: LM Studio for testing, Ollama for production. Chinese models (Qwen, DeepSeek, Kimi) rapidly improving and catching up to OpenAI/Anthropic.
+
+**Company AI strategy:** Internal agent development needs knowledge base infrastructure first. Could help with onboarding, expense reports, password resets. First target: autonomous project management — auto-generate status reports from Linear, create PM artifacts without dedicated PM resources.
+
+**Salesforce market insights:** Mac's brother runs SF practice at EY — works on $5-7M deals with clients like Synopsis, 60-week paternity leave, partners earn $1-3M from profit sharing. AI accelerating delivery timelines, simple implementations now possible with smaller teams. RCA discussion: requires deep revenue methodology expertise, consultancies signing deals without proper RCA resources — high risk when specialized resources leave mid-project.
+
+No new commitments identified.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-12 - AI Office Hours.md`)*
 
 ---
 

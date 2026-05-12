@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-11
+last_meeting: 2026-05-12
 open_actions: 4
 ---
 
@@ -74,6 +74,17 @@ LNW CA Check In (May 11): project velocity update, new bug logged, meeting note 
 **Mac OOO:** Out Wednesday–Friday next week for Barcelona trip (mom's 60th birthday). Return after Memorial Day.
 
 *(Source: `Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md`)*
+
+
+LNW CA Check In (May 12): super family filter logic, event page redirect confirmed working, data architecture questions.
+
+**Super family filter implementation:** Current family filter works correctly (pulls activity records from child accounts in hierarchy). Super family logic needs a two-step traversal: (1) find family record from selected account's parent ID, (2) find super family record from family's parent ID. Super family should display all records from families beneath it — currently showing zero records. Need to traverse full 3-level hierarchy: account → family → super family. Data model uses `family_type = "super family"` to identify super families. A family lookup field exists on the object but has never been used (reason unknown).
+
+**Event page redirects:** Standard event pages now redirect to meeting notes when a meeting note exists. Events without meeting notes remain accessible. Start/end date-time components added. Redirect logic confirmed working.
+
+**Next steps:** Mac to complete super family filter logic implementation. Hold deployment until super family issue resolved. Next check-in Thursday.
+
+*(Source: `Meeting Notes/High Meadows/LNW/2026-05-12 - CA Check In.md`)*
 
 ---
 

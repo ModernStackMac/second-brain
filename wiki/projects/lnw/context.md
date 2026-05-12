@@ -6,7 +6,7 @@ status: active
 priority: p2
 owner: Mac
 stack: Salesforce FSC
-updated: 2026-04-20
+updated: 2026-05-12
 ---
 
 # LNW — Context
@@ -37,3 +37,16 @@ LNW is a wealth management client engaged through High Meadows via F2 Strategy. 
 
 - Jira board: F2 Strategy workspace → LNW project
 - Stories tracked in `stories-f2.md`
+
+
+## Account Hierarchy & Family Filters (added 2026-05-12)
+
+**Three-level hierarchy:** account/household/institution → family → super family. Parent ID relationships traverse upward through levels. `family_type = "super family"` identifies super family records.
+
+**Family filter (working):** Pulls activity records from accounts below the selected account in hierarchy. Shows proper parent-child relationships.
+
+**Super family filter (in progress):** Requires two-step traversal: (1) find family record from selected account's parent ID, (2) find super family record from family's parent ID. Super family should display all records from all families beneath it. Currently showing zero records — traversal logic not yet implemented.
+
+**Family lookup field:** Exists on the object but has never been used. Purpose unknown. May simplify hierarchy traversal once understood.
+
+**Event page redirects:** Standard event pages redirect to meeting notes when a meeting note record exists. Events without meeting notes remain accessible. Start/end date-time components added to meeting note object.

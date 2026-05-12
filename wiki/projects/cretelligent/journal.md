@@ -2,11 +2,31 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-07
+last_meeting: 2026-05-12
 open_actions: "28"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of May 12, 2026
+
+Daily Dev Standup (May 12, w/ Andrew Porter, Blake Stracener): Week 1 of new sprint, field mapping corrections, unknown fields pending Wendell, document endpoint architecture.
+
+**Sprint status:** Other services integration completed, ready for deployment. Blake OOO tomorrow through Thursday May 21. Email sent to Wendell for mapping clarifications.
+
+**Field mapping corrections:** Transaction type stored at proposal/order level (not project level) — multiple transaction types possible across sites within a single order (refinance, new loan, plus 3-4 others). Field name updates: `total_price` → `net_client_price`, `click_quote` → `is_click_quote` (boolean/picklist, add "is" prefix). Report due date may need to move from site product to task group. Report status likely associated with report due date.
+
+**Unknown fields (pending Wendell):** `elevated_conversion` and `fault_reason` — unknown mapping, may be task group related rather than site product. Will address during task group implementation phase.
+
+**Document endpoint implementation:** Reusing existing Salesforce document object structure. File transfer as bytes (recreate on receiving end), no encryption needed (publicly accessible documents). Response includes S3 link via SF document object. `project_id` serves as unique external ID for upserts — maps to opportunity at site level, multiple project IDs per order (one per site), enables site-specific document retrieval.
+
+**Document object structure:** Document types enum to be shared (proposal PDF, completed report, etc.). Visibility boolean field. User email for auditing (defaults to `salesforce@cretelligent.com`). Site verification link construction using project ID — URL format: `projects/[project_ID]` for direct site page access. Need staging vs production environment URL differences discussion.
+
+No new commitments identified (document endpoint work is existing scope).
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-12 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
 
 ## Week of May 4, 2026 (continued)
 
