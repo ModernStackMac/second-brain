@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: cetera
-updated: 2026-05-12T19:30:00-05:00
+updated: 2026-05-13T01:30:00Z
 ---
 
 # Cetera — Board
