@@ -12,12 +12,10 @@ updated: 2026-05-12T18:00:00-05:00
 ## Up Next
 
 ## In Progress
-
-- MAI-1535 Fee Addendum Case Page Layout 🔴
-- MAI-1529 New Fund Account - IM Service Type controls IPS Requirement 🔴
+- MAI-1542 Data Migration: Duplicate users per CST role 🔴
+- MAI-1359 FA: Investment Account Record page read only 🔴
 
 ## Review
-
 - MAI-1292 Hide remaining Financial Account Type picklist values 🟡
 
 ## Blocked
