@@ -1,11 +1,10 @@
 ---
 kanban-plugin: basic
-type: stories-sync
-project: internal/flex-dash
-updated: 2026-05-12T18:00:00-05:00
+project: flex-dash
+updated: 2026-05-12T16:00:00Z
 ---
 
-# Flex Dash — Board
+# Flex Dash — Kanban Board
 
 ## Backlog
 
@@ -25,3 +24,4 @@ updated: 2026-05-12T18:00:00-05:00
 ## Blocked
 
 ## Done
+

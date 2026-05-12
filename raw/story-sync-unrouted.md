@@ -40,3 +40,9 @@
 [2026-05-08T18:00:00-05:00] workspace=linear-high-meadow-solutions project=Flex Dash ticket=IP-7 — no folder at wiki/projects/flex-dash/
 
 [2026-05-08T16:20:00-05:00] workspace=linear-high-meadow-solutions project=Flex Dash ticket=IP-8 — no folder at wiki/projects/flex-dash/
+
+[2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-111 "Create new fields on TRPG_Help_Desk__c" — no mapping in project-mapping.md (mapping has F2 as cetera key, but Jira project key is CET)
+[2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (mapping has F2 as cetera key, but Jira project key is CET)
+[2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1535 "Fee Addendum Case Page Layout" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
+[2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1529 "New Fund Account - IM Service Type controls IPS Requirement" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
+[2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)

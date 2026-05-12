@@ -3,10 +3,12 @@ type: stories-sync
 project: meadow
 workspace: hm
 linear_project: Capacity Planning
-updated: 2026-05-07T18:00:00Z
+updated: 2026-05-12T16:00:00Z
 story_count: 1
 ---
 
-# Meadow — Active Stories (Linear)
+# Meadow — Active Stories (Linear / HM)
 
-- [hm-IP-145] Role system: admin / manager / user with in-app role + manager management [Status:: In Review] [Priority:: High] [Updated:: 2026-05-02] · parent: — · [Linear](https://linear.app/high-meadow-solutions/issue/IP-145/role-system-admin-manager-user-with-in-app-role-manager-management)
+- [hm-IP-145] Role system: admin / manager / user with in-app role + manager management [Status:: In Review] [Priority:: High] [Updated:: 2026-05-02] · parent: N/A · [Linear](https://linear.app/high-meadow-solutions/issue/IP-145/role-system-admin-manager-user-with-in-app-role-manager-management)
+
+> **Note:** Linear project was renamed from "Meadow" to "Capacity Planning". The project-mapping.md entry should be updated to reflect this.

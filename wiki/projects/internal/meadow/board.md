@@ -1,11 +1,10 @@
 ---
 kanban-plugin: basic
-type: stories-sync
-project: internal/meadow
-updated: 2026-05-12T18:00:00-05:00
+project: meadow
+updated: 2026-05-12T16:00:00Z
 ---
 
-# Meadow (Capacity Planning) — Board
+# Meadow — Kanban Board
 
 ## Backlog
 
@@ -15,8 +14,9 @@ updated: 2026-05-12T18:00:00-05:00
 
 ## Review
 
-- IP-145 Role system: admin / manager / user with in-app role + manager management 🟠
+- IP-145 Role system: admin / manager / user 🔴
 
 ## Blocked
 
 ## Done
+
