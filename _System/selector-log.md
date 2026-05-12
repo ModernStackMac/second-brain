@@ -221,3 +221,5 @@
 - [2026-05-12 11:00 CT] "CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-12 - CA Check In.md · confidence: high · match: keyword (super family filter, family hierarchy, client architecture — LNW scope; mirrors "LNW CA Check In" pattern from prior syncs). Transcript unavailable (paid Granola tier).
 
 - [2026-05-12 11:00 CT] SCHEDULED RUN: 10 Granola meetings found for this_week (May 11–12). All 10 already filed in Meeting Notes/ — 0 new, 0 re-processed, 0 unrouted. No _Unmatched/ folder present.
+
+- [2026-05-12 14:45 CT] "LNW" → Meeting Notes/High Meadows/LNW/2026-05-12 - LNW.md · confidence: high · match: keyword
