@@ -223,3 +223,5 @@
 - [2026-05-12 11:00 CT] SCHEDULED RUN: 10 Granola meetings found for this_week (May 11–12). All 10 already filed in Meeting Notes/ — 0 new, 0 re-processed, 0 unrouted. No _Unmatched/ folder present.
 
 - [2026-05-12 14:45 CT] "LNW" → Meeting Notes/High Meadows/LNW/2026-05-12 - LNW.md · confidence: high · match: keyword
+
+- [2026-05-12 14:45 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/ · confidence: high · match: keyword · note: re-processed — previous file had empty summary, Granola summary now available
