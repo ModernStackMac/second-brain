@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-11T22:30:00-05:00
+updated: 2026-05-12T12:00:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -13,8 +13,8 @@ updated: 2026-05-11T22:30:00-05:00
 
 ## In Progress
 
+- MAI-1535 Fee Addendum Case Page Layout 🔴
 - MAI-1529 New Fund Account - IM Service Type controls IPS Requirement 🔴
-- MAI-1530 Sales Process changes 🔴
 
 ## Review
 
