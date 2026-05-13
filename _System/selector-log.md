@@ -230,3 +230,5 @@
 - [2026-05-13 11:30 CT] "E-mail Attachment Demo" → Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo.md · confidence: medium · match: attendee (existing folder, no mapping entry)
 - [2026-05-13 11:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-13 - MAI Dev DSU.md · confidence: high · match: keyword
 - [2026-05-13 11:30 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-05-13 - Andrew Mac.md · confidence: high · match: attendee
+
+- [2026-05-13 14:00 CT] SCHEDULED RUN: Scanned 15 Granola meetings (this_week). All 15 already exist in Meeting Notes/. 0 new, 0 unmatched, 0 re-processed. No action taken.
