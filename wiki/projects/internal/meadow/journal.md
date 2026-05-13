@@ -2,6 +2,26 @@
 
 ## Week of May 11, 2026
 
+Meadow UAT Kickoff (May 13, Mac solo): User acceptance testing session — walkthrough of admin/user/manager test scripts, capacity heat map, bugs identified, feedback process established.
+
+**UAT structure:** Each test script has 3 tabs representing different user experiences: User (basic time tracking), Admin (full system access), Manager/PM (project oversight). Assignments: Brian on Admin, Aisha & Chloe on User and Manager/PM. Fourth tab being created for logging feature gaps and unlisted feedback.
+
+**Admin features demonstrated:** Dashboard showing capacity overview — 37 unforecasted projects, weekly hours tracking, 6-week capacity heat map. Staffing grid with slider control for week ranges, toggle between "by person" and "by project" views. Auto-fill feature uses average run rates for forecasting. Utilization tracking (e.g., Aisha showing 150% capacity).
+
+**Bug found:** Task selection issues when adding projects to people — "Show all tasks" displays everything instead of project-specific tasks. Should allow project and task selection together.
+
+**User experience:** Auth via Microsoft SSO or email-only for testers. Time entry with copy-from-last-week functionality. Project assignments auto-load week to week. Dashboard shows time logged vs projected hours, active projects, utilization, export with preconfigured templates.
+
+**Feature request:** Date range allocation with custom hours (not just averages from auto-fill).
+
+**Timeline:** UAT completion deadline Friday May 16 or Monday May 19 at latest. Mac OOO starting Wednesday May 21 — need feedback consolidated before departure. Test alongside Clockify for comparison. Master feedback sheet to consolidate all user input.
+
+No new Mac commitments — UAT coordination items are team-level tasks.
+
+*(Source: `Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-13 - Meadow User Testing.md`)*
+
+---
+
 Meadow Internal Sync (May 11, Mac solo): Database consolidation complete, entering user testing phase, EO/EOA membership exploration.
 
 **Database consolidation done:** Deleted one organization, moved project to correct bucket. Full test script completed. App is ready for user testing (not just cloud/dev testing anymore).

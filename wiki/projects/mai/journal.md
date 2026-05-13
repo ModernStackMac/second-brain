@@ -2,11 +2,46 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-11
-open_actions: 12
+last_meeting: 2026-05-13
+open_actions: 13
 ---
 
 # MAI — Project Journal
+
+## Week of May 12, 2026
+
+MAI Dev DSU (May 13, w/ Brian Cersosimo, Chloe Thai, others): encrypted field mystery, servicer visibility simplification, financial account lookup standardization, secondary contact complexity, credit card layout cleanup, prospect account relationship removal.
+
+**Encrypted field surprise:** Custodian account number field on contract exhibit is encrypted — no ticket found requesting it, field not encrypted in Dynamics. Likely copied from an encrypted case field. Removing encryption requires data migration. Aisha creating investigation ticket.
+
+**Servicer field visibility rules (ticket 1186):** Servicer 6 and force 6 fields successfully removed. Current rule shows only servicer 1 and hides 2-5 until populated — originally made sense but now creates confusion. Recommendation: show all servicers 1-5 permanently. Decision pending on whether to repurpose existing ticket or create a cleanup ticket under the cleanup epic for better reporting.
+
+**Financial account lookup standardization (tickets 1534/1535):** Ticket 1535 complete. Ticket 1534 flagged: new fund account lookup showing confusing number format in account closed and operation request areas. Need to standardize with investment account format (name + number). Universal lookup requires consistent implementation across all areas.
+
+**Secondary contact logic (ticket 1432):** Two person types for contract secondary — existing related person vs new person. Secondary becomes household secondary (not just spouse). Brian providing testing guidelines due to complexity.
+
+**Mac's completed work:** Ticket 1530 (main page layout updates) and ticket 1529 (IPS switching issue — fixed error when switching service type after filling IPS). Both ready for QA review.
+
+**Credit card layout cleanup (ticket 1543):** Credit card number field removed successfully. Issue: two "account number" fields on same layout — top field is main financial account number (keep), bottom is wire/ACH routing section (remove). Wire details section questionable for credit cards. Cleanup needed.
+
+**Prospect account relationship:** Removing prospect account relationship object. Prospects limited to one contact only. Account contact object remains for related contexts.
+
+**Outstanding items:** DocuSign signer limits — check with Brian G on retirement contract requirements (current: 3 signers + counter signer = 4 total). Missing test classes blocking production deployment. QA ticket prioritization needed.
+
+**Client type field (new requirement):** Previous ticket removed "client" type from non-primary person accounts. Now need to restore: primary contacts + contract signers = "client" type, non-contract signers = TBD classification. Need clarification from Corey and David on Dynamics field mapping.
+
+**Decisions:**
+- Show servicers 1-5 permanently (pending ticket routing decision)
+- Remove prospect account relationship object
+
+**Open questions:**
+- Is the encrypted custodian field intentional or a copy artifact?
+- DocuSign signer count sufficient for retirement contracts?
+- Client type classification for non-contract signers?
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-13 - MAI Dev DSU.md`)*
+
+---
 
 ## Week of May 5, 2026
 

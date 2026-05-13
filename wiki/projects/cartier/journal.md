@@ -1,10 +1,28 @@
 ---
 type: project-journal
 project: cartier
-updated: 2026-04-30
+updated: 2026-05-13
 ---
 
 # Cartier — Project Journal
+
+## Week of May 12, 2026
+
+E-mail Attachment Demo (May 13, w/ Chad Cartier): Live demo of Einstein Activity Capture integration with Outlook — incoming attachments working, outgoing TBD, deployment plan outlined.
+
+**Incoming email attachments confirmed working:** Demonstrated real-time sync between Outlook and Salesforce client records via Einstein Activity Capture. All attachment types tested successfully: PDF, Word, Excel, CSV, PNG images. Attachments appear in Salesforce client records automatically.
+
+**Outgoing email attachments need investigation:** Only incoming emails are syncing currently. Outgoing attachment capture requires separate technical review — Mac investigating today.
+
+**Advisor setup process (4 steps):** Click bear icon in Salesforce → Settings → Connected Accounts → Email and Calendar Account → Connect Office 365 with SSO. Chad's account currently disconnected — previous team disabled Einstein Activity Capture when they switched to Cirrus plugin.
+
+**Integration strategy — dual system:** Einstein Activity Capture handles emails from contacts already in Salesforce. Cirrus plugin used only for emails from external sources not in the system. Requires coordination with Nick (Outlook administrator) to update forwarding rules. Uses unique email service address for production environment.
+
+**Deployment plan:** Mac investigating outgoing email attachment functionality → Mac creating email service and providing unique address to Nick for forwarding rule updates → Mac deploys remaining code after Nick updates rules → Mac pings Chad when system ready. Estimated timeline: next few days pending outgoing email resolution.
+
+*(Source: `Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo.md`)*
+
+---
 
 ## Week of Apr 27, 2026
 

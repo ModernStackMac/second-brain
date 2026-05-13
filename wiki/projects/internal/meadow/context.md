@@ -7,9 +7,9 @@
 ## Client
 - **Company:** High Meadows (internal product)
 - **Product:** Meadow (capacity planning & time tracking)
-- **Team:** Aisha (HMS), Mac (MSS — lead)
+- **Team:** Aisha (HMS), Brian (Admin UAT), Chloe (User/Manager UAT), Mac (MSS — lead)
 - **Priority:** Active alongside MAI; Flex-Dash paused to keep capacity here
-- **Status:** User testing phase — DB consolidation complete (2026-05-11). June 1 go-live target.
+- **Status:** UAT in progress (kicked off 2026-05-13). DB consolidation complete. UAT deadline: May 16-19. June 1 go-live target. Replaces Clockify for time tracking + adds project management. Pre-configured with Notion integration.
 
 ## What We're Building
 - Cloud migration from local SQLite to Supabase PostgreSQL + Vercel hosting

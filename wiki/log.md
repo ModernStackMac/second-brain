@@ -2357,3 +2357,35 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: Commitments Done section empty, no archival needed. Log at 188 entries, under 200 threshold.
 - Key takeaways: Tuesday evening scan. Vault fully current through May 12. Mac OOO Wed-Fri this week (Barcelona, mom's 60th birthday). No new meeting activity expected until next week.
+
+
+## [2026-05-13] scheduled-ingest | 4 new sources (3 substantive, 1 empty)
+
+- Source: `Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-13 - Meadow User Testing.md`
+  - Pages updated: `wiki/projects/internal/meadow/journal.md`, `wiki/projects/internal/meadow/context.md` (UAT phase, team assignments, timeline)
+  - Key takeaways: UAT officially kicked off. Three test script tabs (User/Admin/Manager). Bug found in task selection. UAT deadline May 16-19. Replaces Clockify.
+  - Commitments added: 0
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-13 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md`
+  - Key takeaways: Encrypted custodian field mystery (no ticket, likely copy artifact). Servicer 1-5 visibility simplification proposed. Financial account lookup standardization needed. Mac completed tickets 1529/1530. Prospect account relationship being removed. Client type field restoration needed.
+  - Commitments added: 1 (prospect account relationship removal)
+  - Decisions logged: 1 (remove prospect account relationship object)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-13 - Andrew Mac.md`
+  - Result: Empty — no AI summary or transcript available. Skipped.
+  - Commitments added: 0
+
+- Source: `Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo.md`
+  - Pages updated: `wiki/projects/cartier/journal.md`, `wiki/projects/cartier/context.md` (Einstein Activity Capture integration, Nick as key contact, dual-system strategy)
+  - Key takeaways: Live demo confirmed incoming email attachments working via EAC (all file types). Outgoing attachment capture TBD. Dual integration strategy: EAC for known contacts, Cirrus for external. Nick (Outlook admin) needed for forwarding rule updates.
+  - Commitments added: 3 (investigate outgoing EAC, create email service for Nick, deploy + notify Chad)
+  - Decisions logged: 1 (dual EAC + Cirrus integration strategy)
+  - Patterns extracted: none
+
+- Pattern extraction: No new reusable patterns identified this cycle. Cartier's dual-email-integration approach (EAC + legacy plugin) is a tactical workaround rather than a generalizable pattern.
+- Maintenance: Commitments Done section empty, no archival needed. Log exceeds 200 entries — rotation recommended on next lint pass.
+- Key takeaways: Tuesday afternoon scan. Four new meeting notes landed (May 13). Mac has active work across MAI, Meadow UAT, and Cartier deployment. OOO starting May 21 (Barcelona).

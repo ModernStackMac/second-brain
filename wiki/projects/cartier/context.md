@@ -18,17 +18,23 @@ Chad Cartier is an independent financial advisor and direct client of Modern Sta
 - **Lori** — Chad's team member, reviews and approves solution documents alongside Chad
 
 ## Current Scope
-Two enhancements scoped for Phase 1 (solution design in progress):
+Two enhancements scoped for Phase 1:
 
-1. **Email Attachment Automation** — auto-capture email attachments and associate them with the related email activity record. Currently Chad manually files emails and selects attachments via Cirrus Insights. Goal: eliminate the manual step so attachments are accessible directly from the email activity.
+1. **Email Attachment Automation** — Einstein Activity Capture handles incoming emails from contacts already in Salesforce. All attachment types confirmed working (PDF, Word, Excel, CSV, PNG). Outgoing email attachment capture under investigation. Cirrus Insights retained only for emails from external sources not in the system. Deployment requires Nick (Outlook admin) to update forwarding rules with unique email service address. Target: next few days (as of May 13).
 2. **Case Activity Timeline** — chronological activity timeline on case records showing all correspondence and task updates in sequential order. Mac will repurpose the custom chatter/activity timeline LWC he previously built and surface it on the case page layout.
+
+## Key Contacts
+- **Chad Cartier** — owner/advisor, primary decision-maker
+- **Lori** — Chad's team member, reviews and approves solution documents alongside Chad
+- **Nick** — Outlook administrator, handles forwarding rule updates for email service integration
 
 ## Deferred
 - **DocuSign back-office integration** — Cetera's back office sends DocuSign envelopes through their own system; signed documents stay within the back-office portal (not returned as email attachments). No workaround currently viable. Deferred to future phase.
 
 ## Tech Stack
 - Salesforce (Sales/Service Cloud)
-- Cirrus Insights (email tracking)
+- Einstein Activity Capture (incoming email + attachment sync — primary)
+- Cirrus Insights (email tracking — retained for external-source emails only)
 - Cetera back office (DocuSign, document management)
 - Custom LWC (activity timeline component — reusable from prior work)
 
