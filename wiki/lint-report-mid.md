@@ -1,65 +1,79 @@
 # Wiki Lint Report — Mid-week
-**Run date:** 2026-05-06
-**Issues found:** 4 critical, 22 recommended
+# Wiki Lint Report — Mid-week
+**Run date:** 2026-05-13
+**Issues found:** 7 critical, 6 recommended
 
 ## Critical
 
-### 1. Broken wiki links (3)
-- `wiki/index.md`: `[[reports/mai-project-overview]]` — file does not exist. Either the report was never created or was deleted. Remove from index or create the report.
-- `wiki/patterns/multi-agent-voting.md`: `[[high-meadow-labs]]` — no file or alias exists. Should be `[[internal/high-meadow-labs/journal]]` or add alias `high-meadow-labs` to journal.md.
-- `wiki/projects/modern-stack-systems/journal.md`: `[[loftware]]` — no standalone file or alias. Should link to `[[loftware/context]]` or add alias `loftware` to loftware/context.md.
+### 1. Unmapped project folder: `cartier/`
+- `wiki/projects/cartier/` exists (context.md + journal.md) but `cartier` has no entry in project-mapping.md Canonical Slug Index or Active Projects section.
+- **Fix:** Add `cartier` row to the Canonical Slug Index table and create a full Active Projects entry. Template data available in `cartier/context.md` (MSS direct client, Chad Cartier, independent financial advisor).
 
-### 2. Deprecated slug in active use (1)
-- `wiki/projects/cetera/overview.md`: frontmatter aliases include `f2-cetera` and `f2/cetera`. These are deprecated slugs that Obsidian actively resolves. **Fix:** Change `aliases: [cetera, f2-cetera, f2/cetera]` to `aliases: [cetera]`.
-- Note: `project-mapping.md` Deprecated Slugs section still says "None." — should list `f2-cetera` and `clients` per governance rules.
+### 2. Unmapped project folder: `internal/high-meadow-labs/`
+- `wiki/projects/internal/high-meadow-labs/` exists (journal.md) but `high-meadow-labs` has no entry in project-mapping.md.
+- **Fix:** Add `high-meadow-labs` as a sub-project under `internal` (same pattern as meadow, flex-dash, high-meadow-website). Add row to Canonical Slug Index.
+
+### 3. Missing project folder: `blink-payments/`
+- project-mapping.md (Updates 2026-05-11) defines `blink-payments` with folder `wiki/projects/blink-payments/` but no such folder exists in the wiki.
+- **Fix:** Create `wiki/projects/blink-payments/` with `context.md` and `journal.md`. Source data available in MSS journal (May 11 and Apr 21 entries) and project-mapping updates section.
+
+### 4. Slug Index not updated with new projects
+- `loftware` and `blink-payments` are defined in "Updates" sections at the bottom of project-mapping.md but have NOT been moved into the Canonical Slug Index table. The updates sections explicitly say "Action needed: Move the row above into the Canonical Slug Index table."
+- `cartier` and `high-meadow-labs` are entirely absent from the Slug Index.
+- **Fix:** Merge loftware + blink-payments rows into the Canonical Slug Index. Add cartier + high-meadow-labs rows.
+
+### 5. Cetera Jira project key mismatch
+- project-mapping.md Canonical Slug Index lists cetera's Jira Project Key as `F2`, but actual tickets use prefix `CET-*` (CET-110, CET-111). Both `stories-f2.md` and `stories-jira.md` have `jira_project_key: CET`.
+- **Fix:** Update cetera's Jira Project Key from `F2` to `CET` in the Canonical Slug Index table and Active Projects section.
+
+### 6. MAI Jira workspace/key still TBD
+- project-mapping.md lists MAI's Jira Workspace and Jira Project Key as `TBD`, but stories files show `workspace: f2` / `jira_project_key: MAI` with ticket links to `f2strategy.atlassian.net/browse/MAI-*`.
+- **Fix:** Update MAI's Jira Workspace to `f2strategy.atlassian.net` and Jira Project Key to `MAI`.
+
+### 7. Deprecated slug `f2-cetera` in cetera/overview.md aliases (recurring)
+- `wiki/projects/cetera/overview.md` frontmatter: `aliases: [cetera, f2-cetera, f2/cetera]`
+- Flagged in prior lint reports (2026-04-27, 2026-05-06). Still not resolved.
+- **Fix:** Change to `aliases: [cetera]` — remove `f2-cetera` and `f2/cetera`.
 
 ## Recommended
 
-### 3. Stale project journals (3)
-- `wiki/projects/harvey/journal.md` — last entry: Week of Apr 7–13, 2026 (27 days stale, status: active)
-- `wiki/projects/litify/journal.md` — last entry: Week of Apr 13–19, 2026 (19 days stale, status: active)
-- `wiki/projects/internal/high-meadow-website/journal.md` — last entry: 2026-04-21 (15 days stale)
+### 1. Stale project journals (active status, last_meeting > 14 days)
+- **Harvey:** last_meeting 2026-04-09 (34 days ago) — status: active, priority: p3
+- **Litify:** last_meeting 2026-04-17 (26 days ago) — status: active, priority: p1
+- **High Meadow Labs:** last_meeting 2026-04-23 (20 days ago) — status: active, priority: p2
+- **Loftware:** updated 2026-04-27 (16 days ago) — no standard frontmatter format
+- Consider downgrading Harvey/Litify to `status: stalled` if no activity expected.
 
-### 4. Orphan pages (7)
-Pages with zero inbound wiki-links from other wiki pages:
-- `wiki/f2-internal/CE/growth-engine.md`
-- `wiki/f2-internal/CE/core-salesforce-usage-alignment.md`
-- `wiki/f2-internal/CE/gifts-object-alignment.md`
-- `wiki/f2-internal/CE/app-address.md`
-- `wiki/f2-internal/CE/financial-planning.md`
-- `wiki/projects/internal/high-meadow-website/files/README.md`
-- `wiki/projects/internal/high-meadow-website/files/Website-Feedback-2026-04-17.md`
+### 2. Missing index entries (main sections)
+- `cartier` — referenced in index.md Notes (2026-04-30) but not added to the Projects list
+- `high-meadow-labs` — referenced in index.md Notes (2026-04-23) but not added to the Projects list
+- `blink-payments` — no mention in index.md at all
+- **Fix:** Add all three to the Projects section of index.md. Move accumulated "Note" entries into the proper sections.
 
-Suggest: cross-link f2-internal/CE pages from cetera/context.md or a dedicated Confluence mirror index.
+### 3. MAI stories-jira.md duplicate heading
+- `wiki/projects/mai/stories-jira.md` contains `# MAI CRM Build — Jira Stories` twice (consecutive lines).
+- **Fix:** Remove the duplicate heading line.
 
-### 5. Missing from index.md proper sections (12)
-These pages exist but are only referenced in appended Note blocks, not in the structured index sections:
-- `wiki/projects/loftware/context.md`, `wiki/projects/loftware/journal.md`
-- `wiki/projects/cartier/context.md`, `wiki/projects/cartier/journal.md`
-- `wiki/projects/internal/high-meadow-labs/journal.md`
-- `wiki/patterns/uat-deployment-coordination.md`
-- `wiki/patterns/multi-agent-voting.md`
-- `wiki/patterns/dual-path-vendor-dependency.md`
-- `wiki/reports/weekly-synthesis-2026-04-27.md`
-- `wiki/reports/agentforce-knowledge-report.md`
-- `wiki/tools/contour.md`
-- All project `overview.md` files (7 total — not individually indexed)
+### 4. TAGS.md missing project tags
+- TAGS.md project tag list does not include: `#project/loftware`, `#project/cartier`, `#project/blink-payments`, `#project/meadow`, `#project/flex-dash`, `#project/high-meadow-website`, `#project/high-meadow-labs`.
+- **Fix:** Add missing project tags to TAGS.md. Consider whether sub-projects need their own tags or roll up under `#project/internal`.
 
-Suggest: promote Note-block entries into the proper index sections and update page count.
+### 5. Meadow Linear project renamed
+- `wiki/projects/internal/meadow/stories-hm.md` contains a note: "Linear project was renamed from 'Meadow' to 'Capacity Planning'. The project-mapping.md entry should be updated."
+- **Fix:** Update project-mapping.md Meadow entry `Linear Project` from `Meadow (HM workspace)` to `Capacity Planning (HM workspace)`.
 
-### 6. Unmapped project folders (9)
-These folders exist under `wiki/projects/` without entries in `project-mapping.md`. Not critical since they don't use story-sync, but adding them improves routing coverage:
-- `harvey/`, `litify/`, `nbcu/`, `cretelligent/`, `loftware/`, `cartier/`, `modern-stack-systems/`, `internal/high-meadow-website/`, `internal/high-meadow-labs/`
-
-### 7. Non-canonical tag (1)
-- `wiki/topics/obsidian-ecosystem.md`: `#active` used illustratively in prose. Low priority — may confuse tag tooling.
+### 6. project-mapping.md pending "Action needed" items (3)
+- Blink Payments Contact Update (2026-05-11): "Merge these enriched fields into the Blink Payments (NEW) entry above and delete this section."
+- Loftware slug index row (2026-04-30): "Move the row above into the Canonical Slug Index table."
+- Brian Hyman Key Contact addition (2026-04-30): not yet merged into Internal section.
+- **Fix:** Consolidate pending updates into their target sections and remove the "Action needed" notes.
 
 ## Clean checks
-- Stories frontmatter: all 9 `stories-*.md` files match enclosing folder slug
-- Ticket-prefix routing: all Jira tickets (MAI-*, CET-*, LNW-*) in correct folders
-- Workspace+key uniqueness: no duplicates in project-mapping
-- Cross-reference headings in stories: none found
-- Deprecated slug `clients`: no usage found
+- Stories frontmatter: all `stories-*.md` `project:` fields match enclosing folder slug ✓
+- Ticket-prefix routing: LNW-* tickets in lnw/, CET-* in cetera/, MAI-* in mai/ ✓
+- Workspace+key uniqueness: no duplicate (workspace, key) pairs ✓
+- Cross-reference headings in stories: none found ✓
+- Deprecated slug `clients`: no active usage (historical log.md references exempt) ✓
 
 ---
 *Auto-generated by second-brain-lint-wed*
