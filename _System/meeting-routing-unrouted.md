@@ -44,3 +44,5 @@
 - **Issue:** Granola returned no AI summary for this meeting. File written with "No AI summary available". May need manual review or re-processing if summary becomes available later.
 
 - **2026-05-13** | "Internal: AD Agentforce Opp" | Attendees: Mac Nosek | Suggested candidates: none — "AD" and "Agentforce" do not match any project in project-mapping.md
+
+- **2026-05-13 — "Internal: AD Agentforce Opp"** | Attendees: Mac Nosek | Suggested candidates: Stand8 (mentions Stand8 relationship, Harvey), or new project folder for "AD" client Agentforce opportunity
