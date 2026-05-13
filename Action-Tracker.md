@@ -1,13 +1,14 @@
 ---
 type: action-tracker
-updated: 2026-05-13T01:30:00Z
+updated: 2026-05-13T03:45:00Z
 ---
 
+# Action Tracker — All Active Stories
 # Action Tracker — All Active Stories
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| mai | MAI-1448 | Sales Process: Build Family & Household Lookup on Prospect Records | To Do | High | — | 2026-05-12 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1448) |
+| mai | MAI-1448 | Sales Process: Build Family & Household Lookup on Prospect Records | Active | High | — | 2026-05-12 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1448) |
 | mai | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
 | cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | — | 2026-05-12 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
