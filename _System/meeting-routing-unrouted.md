@@ -29,3 +29,16 @@
 - **2026-05-11** "Modern Stack Systems between Mac Nosek and Raphi Katz" — Attendees: R Brayam (r.brayam@blinkpamyent.co.uk), R Katz (r.katz@blinkpayment.co.uk). Suggested candidates: possibly a Blink Payment project under Modern Stack Systems (see prior meetings: 2026-04-21 Blink Data Cloud Advisory). No project-mapping.md entry exists for Blink Payment.
 
 - [2026-05-11] "Modern Stack Systems between Mac Nosek and Raphi Katz" | Attendees: Mac Nosek, R Brayam (blinkpayment.co.uk), R Katz (blinkpayment.co.uk) | Suggested candidates: Consider adding a "blink" project under Modern Stack Systems in project-mapping.md — prior Blink meeting exists at Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Blink Data Cloud Advisory.md
+
+### 2026-05-13 — "E-mail Attachment Demo"
+- **Date:** 2026-05-13
+- **Attendees:** Mac Nosek, Chad Cartier (chad@cartier-wealth.com)
+- **Routed to:** Meeting Notes/Modern Stack Systems/Cartier/ (existing folder, not _Unmatched)
+- **Issue:** No project-mapping.md entry for Cartier. Folder already existed with prior meeting (2026-04-30 - Chad & Mac Connect.md). Routed to existing folder rather than _Unmatched.
+- **Suggested action:** Add `cartier` as a new project under Modern Stack Systems in project-mapping.md with key contacts: Chad Cartier (chad@cartier-wealth.com), Nick (Outlook admin). Keywords: cartier, cartier wealth, einstein activity capture, cirrus.
+
+### 2026-05-13 — "Andrew / Mac" (no summary)
+- **Date:** 2026-05-13
+- **Attendees:** Mac Nosek, Andrew Smith (andsmi@gmail.com)
+- **Routed to:** Meeting Notes/Modern Stack Systems/
+- **Issue:** Granola returned no AI summary for this meeting. File written with "No AI summary available". May need manual review or re-processing if summary becomes available later.
