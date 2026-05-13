@@ -1,6 +1,6 @@
 ---
 kanban-plugin: basic
-updated: 2026-05-13T14:30:00Z
+updated: 2026-05-13T20:00:00-05:00
 ---
 
 # Cetera — Board
@@ -11,9 +11,9 @@ updated: 2026-05-13T14:30:00Z
 
 ## In Progress
 - CET-110 Case / TRPG Work Desk Alignment 🟡
-- CET-111 Create new fields on TRPG_Help_Desk__c 🟡
 
 ## Review
+- CET-111 Create new fields on TRPG_Help_Desk__c 🟡
 
 ## Blocked
 
