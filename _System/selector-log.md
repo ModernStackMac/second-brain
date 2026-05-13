@@ -232,3 +232,5 @@
 - [2026-05-13 11:30 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-05-13 - Andrew Mac.md · confidence: high · match: attendee
 
 - [2026-05-13 14:00 CT] SCHEDULED RUN: Scanned 15 Granola meetings (this_week). All 15 already exist in Meeting Notes/. 0 new, 0 unmatched, 0 re-processed. No action taken.
+
+- [2026-05-13 16:30 CT] "Internal: AD Agentforce Opp" → Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md · confidence: none · match: fallback

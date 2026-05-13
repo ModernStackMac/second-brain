@@ -42,3 +42,5 @@
 - **Attendees:** Mac Nosek, Andrew Smith (andsmi@gmail.com)
 - **Routed to:** Meeting Notes/Modern Stack Systems/
 - **Issue:** Granola returned no AI summary for this meeting. File written with "No AI summary available". May need manual review or re-processing if summary becomes available later.
+
+- **2026-05-13** | "Internal: AD Agentforce Opp" | Attendees: Mac Nosek | Suggested candidates: none — "AD" and "Agentforce" do not match any project in project-mapping.md
