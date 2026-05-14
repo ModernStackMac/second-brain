@@ -46,3 +46,13 @@
 [2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1535 "Fee Addendum Case Page Layout" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
 [2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1529 "New Fund Account - IM Service Type controls IPS Requirement" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
 [2026-05-12T16:00:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
+
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1554 — no mapping in project-mapping.md (MAI workspace listed as TBD)
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1552 — no mapping in project-mapping.md (MAI workspace listed as TBD)
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1549 — no mapping in project-mapping.md (MAI workspace listed as TBD)
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1448 — no mapping in project-mapping.md (MAI workspace listed as TBD)
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (MAI workspace listed as TBD)
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-111 — no mapping in project-mapping.md (cetera mapped to key F2, not CET)
+[2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera mapped to key F2, not CET)
+
+[2026-05-13] MAI: MAI-1554, MAI-1552, MAI-1549, MAI-1448, MAI-1292 — workspace TBD in mapping. CET: CET-111, CET-110 — key mismatch (mapping says F2).
