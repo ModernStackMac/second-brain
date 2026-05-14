@@ -1,10 +1,38 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-12
+updated: 2026-05-14
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of May 11, 2026 (continued)
+
+Internal AD Agentforce Opportunity (May 13, solo/internal): Business development discussion about Agentforce implementation for an existing AD client. Managed services model proposed.
+
+**AD client context:** 3-year on/off relationship with strong trust. Client making a significant Salesforce investment push, including an upcoming community portal project. Currently working with one business unit.
+
+**Use case:** E-commerce division customer support automation. Current workflow: end users submit tickets through portal → internal team captures in Salesforce → team inputs into custom GPT referencing documentation → manual response sent back. Goal: replace manual process with Agentforce — convert documentation to knowledge articles, train agent on knowledge base, enable direct customer chat through portal for real-time case resolution.
+
+**Implementation approach:** Mac recommended internal pilot first (safety/testing) despite client preferring external-facing agent out of the gate. Client has available admins wanting to learn Agentforce. Estimated scope: 20-30 hours support, max 2 calls/week. Delivery model: managed services through MSS — one-on-one admin training, architecture guidance/roadmapping, POC development support.
+
+**Salesforce dynamics:** Client may push Salesforce for solutions architect resources but SF is deflecting to partner delivery model (acknowledges Agentforce limitations, prefers experienced partners). Similar dynamic to Harvey Performance engagement.
+
+**BD context:** Discussion of Stand8 relationship — multiple calls but few closures (only Harvey project + small managed services). Long-term vs. short-term contract strategy tension. Industry challenges with SMB Salesforce implementations.
+
+**Next steps:** Awaiting Salesforce decision on resource allocation. If declined, opportunity returns to MSS. 30-minute prep session planned between Mac and client contact. Discovery focus: POC estimation and delivery methodology. Potential to upsell additional Agentforce use cases within the organization.
+
+No new Mac commitments identified (all next steps are contingent on Salesforce's decision or owned by other parties).
+
+*(Source: `Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md`)*
+
+
+Andrew/Mac Sync (May 13, w/ Andrew Smith) — Granola captured no summary or transcript for this recording. Content unavailable for ingest.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-13 - Andrew Mac.md`)*
+
+---
+
 
 ## Week of May 11, 2026
 
