@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-11
+last_meeting: 2026-05-18
 open_actions: 9
 ---
 

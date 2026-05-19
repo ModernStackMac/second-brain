@@ -2,11 +2,37 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-14
+last_meeting: 2026-05-18
 open_actions: 13
 ---
 
 # MAI — Project Journal
+
+## Week of May 18, 2026
+
+MAI Dev DSU (May 18): David Torsack communication alignment, annual fee field resolution, account type consolidation, fund name labeling, Salesforce lookup field limits, dev capacity.
+
+**David Torsack communication issue:** Justin Burges identified communication problems with David — doesn't communicate daily activities, causing Jira ticket confusion. Brian G and Justin scheduling alignment call. David will be added to internal standup (Mac, Brian, possibly Federal) instead of dev standup. Team communication otherwise fine.
+
+**Annual fee fields (1563):** Resolved — Brian C and Michael removed the deletion requirement from solution design. No field deletion needed. Ticket moving to UI/UX.
+
+**Account type field consolidation (1564):** Two type fields on account: "type" and "type__c". Decision: use plain "type" field instead of "customer type code." Missing and extra values identified between fields. Santa needs to run update on type field, then add active/inactive values to complete migration.
+
+**Fund name field (1470):** Fund name serves as "requested name" for fund admin team — they can ignore it and create different fund names. Decision: keep field but add "(requested)" label for clarity. Removes confusion while maintaining functionality.
+
+**Salesforce lookup field limit crisis:** Production limit is 40 custom lookup fields on Case. Current: 41 in production, 48 in UAT. UAT sandbox allows 50 (higher test capacity). Need to open Salesforce case to increase production limit, or find 10+ lookups to delete.
+
+**Dev capacity:** Mac needs more stories assigned. Vincent available for new tickets. Brian working on new prospect tab migration (letter person → prospect). Developer review items should be prioritized before cleanup tickets.
+
+**Decisions:**
+- Use "type" field (not "customer type code") for account type consolidation (1564)
+- Keep fund name field with "(requested)" label (1470)
+- Annual fee fields: no deletion, moved to UI/UX (1563)
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md`)*
+
+---
+
 
 ## Week of May 12, 2026
 

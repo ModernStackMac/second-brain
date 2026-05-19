@@ -1,10 +1,29 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-14
+updated: 2026-05-19
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of May 18, 2026
+
+Andrew/Mac Sync (May 18, w/ Andrew Smith): Blink pricing validation, Andrew's side business growth, Mac travel/workload, Thunder rejection, new Lindsay project opportunity.
+
+**Blink pricing & discount implementation validated:** Total list price field working at opportunity level ($1,150 example). Discount calculation confirmed: $1,200 discounts + $1,030 revenue = $1,150 list price. Site-level implementation mirrors opportunity structure (e.g., $2,500 list price, $500 discount = $2,000 revenue). Discount fields sourced from payload via site product array — two discount types (percentage or dollar amount), system auto-calculates. Andrew added test values, re-triggered via cost worksheet to fire all triggers. Numbers pulling correctly. Implementation ready for client review.
+
+**Andrew's side business scaling:** Web dev client dinner Saturday. Team: backend developer, training video creator, sales person, Andrew (frontend). Revenue growth: $150K/month recurring being added — projecting $3-4M annually at current growth rate. Andrew earning $8K for minimal ongoing work.
+
+**Mac workload & travel:** Leaving for Brussels tomorrow at 2 PM (direct flight return). Worked 70 hours last week on High Meadows projects. Rejected from Thunder contract (Agentforce developer role through October) — recruiter provided no reason.
+
+**New business — Lindsay project:** Brady excited about the Lindsay project. Client's dealer portal provider closing in 30 days — complete community site rebuild needed. Rate: $175/hr. Point of contact likes Brady, has significant work volume. Exploring managed services contract approach.
+
+No new Mac commitments identified.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md`)*
+
+---
+
 
 ## Week of May 11, 2026 (continued)
 

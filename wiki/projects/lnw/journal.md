@@ -2,11 +2,32 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-14
+last_meeting: 2026-05-18
 open_actions: 6
 ---
 
 # LNW — Project Journal
+
+## Week of May 18, 2026
+
+LNW CA Check In (May 18): Sprint status, Mac OOO impact, new inline editing feature request.
+
+**Sprint status:** Validation testing in progress — no errors so far (positive sign). Tickets will be assigned once validation completes. Mac can resume building when validation passes.
+
+**Mac OOO impact:** Mac leaving May 19. Sprint ends May 30/31. Current workload: task rollback (in progress, completing today), 2 bug fixes (targeting tomorrow), color changes (blocked). Testing timeline concern: ideally finish work before departure. Worst case: completion by Tuesday gives 3 days for testing (Wed-Fri).
+
+**New feature request — inline editing:** Client wants inline editing for meeting notes — target fields: meeting memo, internal notes, portfolio reviewed (everything except meeting day and account name). Current edit page too small/cumbersome. Effort estimate: medium complexity (~5 points). Priority pending — may replace brand color changes in sprint. Awaiting stakeholder meeting confirmation. Likely deferred due to Mac's departure timing.
+
+**Next steps:**
+- Mac: Complete task rollback today (May 18)
+- Mac: Investigate inline editing complexity
+- Team: Confirm inline editing priority in stakeholder meeting
+- Team: Update Mac on validation results and ticket assignments
+
+*(Source: `Meeting Notes/High Meadows/LNW/2026-05-18 - LNW CA Check In.md`)*
+
+---
+
 
 ## Week of May 11–16, 2026
 
