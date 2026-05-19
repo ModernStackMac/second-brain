@@ -250,3 +250,7 @@
 - [2026-05-19 10:30 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword (project keystone in title)
 - [2026-05-19 12:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-05-18 - Internal CREtelligent Weekly Sync.md · confidence: high · match: keyword (cretelligent in title)
 - [2026-05-19 08:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-19 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent + stitch in title)
+
+- [2026-05-19 14:00 CT] "AI Office Hours" → Meeting Notes/Modern Stack Systems/2026-05-19 - AI Office Hours.md · confidence: medium · match: keyword (AI Office Hours pattern, follows 2026-05-12 routing precedent)
+- [2026-05-19 14:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-15 - MAI Dev DSU.md · confidence: high · match: keyword (MAI Dev DSU established pattern)
+- [2026-05-19 14:00 CT] "Salesforce attachments — image ordering and Cirrus duplicate cleanup" → Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup.md · confidence: none · match: fallback (Salesforce/Cirrus keywords don't map to a specific project in project-mapping.md)

@@ -50,3 +50,12 @@
 - **2026-05-13** | "Internal: AD Agentforce Opp" | Attendees: Mac Nosek | Suggested candidates: none — "AD" and "Agentforce" do not match any project in project-mapping.md
 
 - **2026-05-13 — "Internal: AD Agentforce Opp"** | Attendees: Mac Nosek | Suggested candidates: Stand8 (mentions Stand8 relationship, Harvey), or new project folder for "AD" client Agentforce opportunity
+
+
+## 2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup
+- **Date:** 2026-05-15
+- **Attendees:** Mac Nosek
+- **Granola ID:** 799ccc9f-261b-4a9f-9bee-40f4d9d26990
+- **Summary:** Salesforce attachment display ordering fix and Cirrus plugin duplicate email cleanup. Discusses signature image filtering, reverse sort order for attachments, and disabling Cirrus auto-attach.
+- **Candidate projects:** Could be MAI (Salesforce CRM build), LNW (financial services client using Cirrus), or Cartier (recent Salesforce work with Chad). "Cirrus" is a Salesforce email integration tool common in financial services orgs.
+- **Action:** Add attendee or keyword mapping to `project-mapping.md` once the client is identified. Content suggests a client meeting (references "Client: Contact Cirrus") but no client attendee was captured by Granola.
