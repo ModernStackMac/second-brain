@@ -60,3 +60,6 @@
 [2026-05-19T07:21:00-05:00] LINEAR SKIPPED — Linear MCP (HM + MSS workspaces) not authenticated; OAuth required. Meadow and Flex Dash stories carried forward from previous Action Tracker are omitted this run.
 [2026-05-19T07:21:00-05:00] NOTE — project-mapping.md lists cetera with jira_project_key=F2, but actual Jira project key is CET. Previous syncs used CET. Mapping file should be updated.
 [2026-05-19T07:21:00-05:00] NOTE — project-mapping.md lists mai with jira_project_key=TBD, but actual Jira project key is MAI at f2strategy.atlassian.net. Previous syncs used MAI. Mapping file should be updated.
+
+[2026-05-19T12:00:00-05:00] LINEAR SKIPPED — Linear MCP (HM + MSS workspaces) not connected for data queries; only auth tools available. Meadow and Flex Dash stories preserved from prior sync.
+[2026-05-19T12:00:00-05:00] NOTE — project-mapping.md still lists cetera jira_project_key=F2 (actual=CET) and mai jira_project_key=TBD (actual=MAI at f2strategy.atlassian.net). Both routed per established pattern. Mapping file needs update.

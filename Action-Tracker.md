@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-05-19T07:21:00-05:00
+updated: 2026-05-19T12:00:00-05:00
 story_count: 8
 ---
 
@@ -17,4 +17,4 @@ story_count: 8
 | LNW | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
 | LNW | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 
-> Linear stories (Meadow, Flex Dash) omitted this sync — Linear MCP not authenticated.
+> Linear stories (Meadow, Flex Dash) omitted this sync — Linear MCP not connected for data queries (only auth tools available).
