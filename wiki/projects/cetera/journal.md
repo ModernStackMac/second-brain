@@ -8,6 +8,27 @@ open_actions: 9
 
 # Cetera — Project Journal
 
+## Week of May 18, 2026
+
+Project Keystone Daily Stand-up (May 18): Jira item creation, sprint planning, parallel workstreams, UAT coordination process improvement.
+
+**Jira item creation & sprint planning:** Continuing Jira item creation for missing project components — aligned existing items Friday, targeting completion within 1-2 days. Confluence and Jira updates in progress for next sprint (starts Tuesday post-holiday). TRPG work and financial planning objects ready for testing/review. Philosophy: pull work forward when possible to accelerate timeline.
+
+**Resource management:** Laptops assigned to current users maintained — enables resource scaling if project falls behind. Two development paths now active (Connor's team parallel workstream). Coordination needed for deliverable handoffs.
+
+**UAT coordination process improvement:** Jared's team UAT deliverables planned for this week. Missing Jira items creation includes UAT review marking. List delivery target: by Friday at latest. Facilitation approach: mark items ready for UAT as completed, provide testing write-ups based on internal testing methods, anticipate questions from Jared's team to Connor's group. **New process: standup review before UAT handoffs** — quick assumption validation, terminology alignment with other workstreams, smoother handoff.
+
+**Next steps:**
+- Mac: Deliver next week's work list by Wednesday
+- Mac: Complete Jira item creation and UAT marking by Friday
+- Connor: Continue affiliate/CPA feature development with forward momentum
+- Team: Review UAT assumptions in standup before delivery to Jared
+
+*(Source: `Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md`)*
+
+---
+
+
 ## Week of May 11, 2026
 
 Project Keystone Daily Stand-up (May 11): Timeline replanning, minor JIRA cleanup items, plan participants decision, RedTail integration kickoff.

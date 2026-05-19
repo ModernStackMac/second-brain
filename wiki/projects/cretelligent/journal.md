@@ -8,6 +8,35 @@ open_actions: "30"
 
 # CREtelligent — Project Journal
 
+## Week of May 18, 2026
+
+Internal CREtelligent Weekly Sync (May 18): Proposal templates finalized, all Mac stories blocked, priority pivot to Environment Task Group Grid Component, Mac OOO Wed-Tue.
+
+**Status:** Proposal template fields finalized and working well. Site verification functionality completed and ready for demo (includes parcel boundaries, verification status, plus 2 additional fields).
+
+**All Mac stories blocked:** Waiting on multiple API endpoints from development team — environmental auto report payloads not ready (Blake on PTO), document endpoints still pending, proposal generation endpoints not started.
+
+**Priority task — Environment Task Group Grid Component:** Replace existing LWC displaying enviro site task groups. Build separate lightning tab showing: first 7 columns (up to account name) visible, alert data from enviro site task group with color coding (red/yellow row highlighting based on task alerts), PM dropdown filter (user type-ahead for project managers). Copy alert trigger field from site object to enviro site task group for sorting. Focus on enviro task groups first, then replicate for site task groups later.
+
+**Mac availability:** Out Wednesday May 21, returning Tuesday May 27. Working tomorrow (Tuesday) before departure. Team will continue Salesforce-specific work during Mac's absence. No commits to main branches while Mac is out.
+
+**Blocked items requiring external dependencies:** Environmental management features waiting on integration work. Choir report generation and folder creation pending API development. Order processing still not functioning (Mike out, Jeff/Rain supposed to handle). Cost roll-ups completed but waiting for order service API integration.
+
+**Next steps:**
+- Mac: Start environment task group component immediately (priority pivot)
+- Hold off on field deletions until project direction confirmed
+- Follow up on API endpoint delivery timelines
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-18 - Internal CREtelligent Weekly Sync.md`)*
+
+
+Stitch CREtelligent Daily Dev Standup (May 19): Granola captured no summary or transcript. Content unavailable for ingest.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-19 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
+
+
 ## Week of May 12, 2026
 
 Daily Dev Standup (May 14): Miami blocker, hardware issues across team, Connect API integration decision pending, document payroll creation, UAT target mid-to-late June.

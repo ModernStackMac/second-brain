@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-05-19] ingest | 6 meeting notes (May 18-19)
+- Sources:
+  - `Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md`
+  - `Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md`
+  - `Meeting Notes/High Meadows/LNW/2026-05-18 - LNW CA Check In.md`
+  - `Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-18 - Internal CREtelligent Weekly Sync.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-19 - Stitch CREtelligent - Daily Dev Standup.md` (empty stub)
+- Pages updated: `wiki/projects/modern-stack-systems/journal.md`, `wiki/projects/mai/journal.md`, `wiki/projects/lnw/journal.md`, `wiki/projects/cetera/journal.md`, `wiki/projects/cretelligent/journal.md`
+- Pages created: none
+- Commitments added: 4 (lnw: inline editing investigation; cetera: work list by Wed + Jira items by Fri; cretelligent: environment task group grid component)
+- Decisions logged: 4 (MAI: type field consolidation, fund name label, annual fee resolution; Cetera: UAT handoff process)
+- Patterns extracted: none
+- Key takeaways: May 18 meetings landed via selector today (May 19). All five projects got journal updates. Mac heading to Brussels — OOO impacting LNW (returning after May 19), CREtelligent (out Wed-Tue May 27). MAI hitting Salesforce lookup field limits in production (41/40). CREtelligent blocked on multiple API endpoints with Blake on PTO. Blink pricing implementation validated and ready for client review.
+
+
 ## [2026-05-19] scheduled-ingest | No new sources
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new sources since last scan. All meeting notes through May 14, all 8 raw articles, and 3 meadow project docs remain fully processed. No May 15-19 meeting notes have landed from Fathom.
