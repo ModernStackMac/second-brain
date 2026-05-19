@@ -56,3 +56,7 @@
 [2026-05-13T23:30:00Z] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera mapped to key F2, not CET)
 
 [2026-05-13] MAI: MAI-1554, MAI-1552, MAI-1549, MAI-1448, MAI-1292 — workspace TBD in mapping. CET: CET-111, CET-110 — key mismatch (mapping says F2).
+
+[2026-05-19T07:21:00-05:00] LINEAR SKIPPED — Linear MCP (HM + MSS workspaces) not authenticated; OAuth required. Meadow and Flex Dash stories carried forward from previous Action Tracker are omitted this run.
+[2026-05-19T07:21:00-05:00] NOTE — project-mapping.md lists cetera with jira_project_key=F2, but actual Jira project key is CET. Previous syncs used CET. Mapping file should be updated.
+[2026-05-19T07:21:00-05:00] NOTE — project-mapping.md lists mai with jira_project_key=TBD, but actual Jira project key is MAI at f2strategy.atlassian.net. Previous syncs used MAI. Mapping file should be updated.

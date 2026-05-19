@@ -3,7 +3,7 @@ type: stories-sync
 project: lnw
 workspace: f2strategy.atlassian.net
 jira_project_key: LNW
-updated: 2026-05-13T23:30:00Z
+updated: 2026-05-19T07:21:00-05:00
 story_count: 4
 ---
 

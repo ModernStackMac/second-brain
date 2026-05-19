@@ -1,11 +1,9 @@
 ---
 kanban-plugin: basic
-type: stories-board
+type: board
 project: mai
-updated: 2026-05-18T22:30:00-05:00
+updated: 2026-05-19T07:21:00-05:00
 ---
-
-# MAI CRM Build — Board
 
 ## Backlog
 
@@ -13,13 +11,11 @@ updated: 2026-05-18T22:30:00-05:00
 
 ## In Progress
 
-- MAI-1572 Fund Assignment: emails should not be sent to case owner after case has been closed :red_circle:
-
 ## Review
 
-- MAI-1292 Hide remaining Financial Account Type picklist values (red items) :yellow_circle:
+- MAI-1562 Fund Assignment - Remove Assign To Account Name 🔴
+- MAI-1292 Hide remaining Financial Account Type picklist values (red items) 🟡
 
 ## Blocked
 
 ## Done
-

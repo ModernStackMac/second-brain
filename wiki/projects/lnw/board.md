@@ -1,11 +1,9 @@
 ---
 kanban-plugin: basic
-type: stories-board
+type: board
 project: lnw
-updated: 2026-05-18T22:30:00-05:00
+updated: 2026-05-19T07:21:00-05:00
 ---
-
-# LNW — Board
 
 ## Backlog
 

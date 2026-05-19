@@ -1,14 +1,14 @@
 ---
 type: action-tracker
-updated: 2026-05-18T22:30:00-05:00
-story_count: 14
+updated: 2026-05-19T07:21:00-05:00
+story_count: 8
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI CRM Build | MAI-1572 | Fund Assignment: emails should not be sent to case owner after case has been closed | Active | High | — | 2026-05-18 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1572) |
+| MAI CRM Build | MAI-1562 | Fund Assignment - Remove Assign To Account Name | Developer Review | Highest | — | 2026-05-18 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1562) |
 | MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values (red items) | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-111 | Create new fields on TRPG_Help_Desk__c | Ready for Demo | Medium | — | 2026-05-12 | [Jira](https://f2strategy.atlassian.net/browse/CET-111) |
 | Cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
@@ -16,9 +16,5 @@ story_count: 14
 | LNW | LNW-191 | Part 3: Visibility Enhancements POC - Family Level Creation and Assignment | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-191) |
 | LNW | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
 | LNW | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
-| Meadow | IP-145 | Role system: admin / manager / user with in-app role + manager management | In Review | High | — | 2026-05-02 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-145/role-system-admin-manager-user-with-in-app-role-manager-management) |
-| Flex Dash | IP-8 | View As Feature | In Progress | Medium | — | 2026-03-31 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-8/view-as-feature) |
-| Flex Dash | IP-34 | External Data Source | Backlog | Medium | — | 2026-05-02 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-34/external-data-source) |
-| Flex Dash | IP-33 | Dashboard Metrics for Demos | Backlog | Medium | — | 2026-05-02 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-33/dashboard-metrics-for-demos) |
-| Flex Dash | IP-1 | Dynamic Dashboard Filtering | Backlog | Medium | — | 2026-05-02 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-1/dynamic-dashboard-filtering) |
-| Flex Dash | IP-7 | Apex Class to set up Financial Services Cloud Test Data | Backlog | No priority | — | 2026-03-05 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-7/apex-class-to-set-up-financial-services-cloud-test-data) |
+
+> Linear stories (Meadow, Flex Dash) omitted this sync — Linear MCP not authenticated.
