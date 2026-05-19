@@ -1,12 +1,8 @@
 ---
 kanban-plugin: basic
-updated: 2026-05-13T21:00:00-05:00
----
----
-kanban-plugin: basic
-type: stories-sync
+type: stories-board
 project: mai
-updated: 2026-05-13T22:30:00-05:00
+updated: 2026-05-18T22:30:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -16,11 +12,14 @@ updated: 2026-05-13T22:30:00-05:00
 ## Up Next
 
 ## In Progress
-- MAI-1448 Sales Process: Build Family & Household Lookup on Prospect Records 🔴
+
+- MAI-1572 Fund Assignment: emails should not be sent to case owner after case has been closed :red_circle:
 
 ## Review
-- MAI-1292 Hide remaining Financial Account Type picklist values (red items) 🟡
+
+- MAI-1292 Hide remaining Financial Account Type picklist values (red items) :yellow_circle:
 
 ## Blocked
 
 ## Done
+

@@ -1,29 +1,25 @@
 ---
 kanban-plugin: basic
+type: stories-board
 project: lnw
-updated: 2026-05-13T23:30:00Z
+updated: 2026-05-18T22:30:00-05:00
 ---
 
-# LNW — Kanban Board
+# LNW — Board
 
 ## Backlog
 
-
 ## Up Next
-
 
 ## In Progress
 
-
 ## Review
 
-- Part 4: Visibility Enhancements POC - UI and UX Enablement 🟡
-- Part 3: Visibility Enhancements POC - Family Level Creation and Assignment 🟡
-- Part 2: Visibility Enhancements POC - Aggregated Visibility 🟡
-- Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality 🟡
+- LNW-192 Part 4: Visibility Enhancements POC - UI and UX Enablement 🟡
+- LNW-191 Part 3: Visibility Enhancements POC - Family Level Creation and Assignment 🟡
+- LNW-190 Part 2: Visibility Enhancements POC - Aggregated Visibility 🟡
+- LNW-189 Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality 🟡
 
 ## Blocked
 
-
 ## Done
-

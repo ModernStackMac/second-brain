@@ -236,3 +236,10 @@
 - [2026-05-13 16:30 CT] "Internal: AD Agentforce Opp" → Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md · confidence: none · match: fallback
 
 - [2026-05-13 16:30 CT] "Internal: AD Agentforce Opp" → Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md · confidence: none · match: fallback (re-processed: summary now available, no route match)
+
+- [2026-05-14 13:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-14 - MAI Dev DSU.md · confidence: high · match: keyword (MAI in title)
+- [2026-05-14 13:30 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-14 - LNW CA Check In.md · confidence: high · match: keyword (LNW in title)
+- [2026-05-14 13:30 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-14 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (CREtelligent, Stitch in title)
+- [2026-05-14 13:30 CT] "Einstein Activity Capture deployment with Dan" → Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan.md · confidence: none · match: fallback (Salesforce EAC deployment, attendee "Dan" not in project-mapping, could be LNW/MAI/Cetera or external client)
+- [2026-05-14 13:30 CT] "New note" → Meeting Notes/_Unmatched/2026-05-14 - New Note.md · confidence: none · match: fallback (multi-topic scratchpad: bug report, Meadow demo, personal notes — no single project match)
+- [2026-05-14 13:30 CT] SCHEDULED RUN: 21 Granola meetings found for this_week (May 11–14). 5 new, 16 already filed. 3 routed to projects, 2 to _Unmatched. All 5 transcripts failed (paid Granola tier).

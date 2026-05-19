@@ -98,9 +98,13 @@ Priority order: Auth > Supabase > Sanity SSO > Vercel > Clockify Sunset > Time E
 - Savey data migration underway (data hierarchy remodel, reparenting script ready)
 - Post-migration: quality review before company GitHub move
 
-**Current Status**
-- MVP committed and in testing/cleanup phase
-- Ready for quality review before internal GitHub migration
+**Current Status** (updated 2026-05-14)
+- UAT underway with 3 testers (Brian as Admin, Aisha & Chloe as User/Manager)
+- Target: June 1 org-wide adoption, replaces Clockify for time tracking
+- Database consolidation complete; test scripts distributed
+- UAT completion deadline: May 16 (or May 19 at latest); Mac OOO starting May 21
+- UI feedback: too much green, contrast/accessibility issues flagged; missing Google SSO (client prefers Office 365)
+- Tech stack note: frontend is Next.js/TypeScript (not just Vite), backend Supabase PostgreSQL
 
 ## AI & Tools
 

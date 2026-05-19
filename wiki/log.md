@@ -1,5 +1,111 @@
 # Wiki Log
 
+## [2026-05-19] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since last scan. All meeting notes through May 14, all 8 raw articles, and 3 meadow project docs remain fully processed. No May 15-19 meeting notes have landed from Fathom.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section check skipped (no changes). Log at ~235 entries, exceeds 200 threshold but all entries within 90 days — no rotation candidates. Obsidian REST API offline — used direct file access fallback.
+- Key takeaways: Tuesday morning scan. Vault fully current through May 14. Expecting today's meeting notes to land via Fathom later today.
+
+## [2026-05-18] scheduled-ingest | No new sources (late night run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since earlier scans today. All meeting notes through May 14, all 8 raw articles, and meadow project docs remain fully processed. No May 15-18 meeting notes have landed from Fathom.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 233 entries, exceeds 200 threshold but all entries within 90 days — no rotation candidates. Obsidian REST API offline — used direct file access fallback.
+- Key takeaways: Monday late-night scan. Vault fully current through May 14. Next expected sources are Tuesday meeting notes via Fathom.
+
+## [2026-05-18] scheduled-ingest | No new sources (night run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since earlier scans today. All meeting notes through May 14, all 8 raw articles, and meadow project docs remain fully processed. No May 15-18 meeting notes have landed from Fathom.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 165 entries, under 200 threshold. No rotation needed. Obsidian REST API offline — used direct file access fallback.
+- Key takeaways: Monday night scan. Vault fully current through May 14. Any meetings from today should land via Fathom overnight.
+
+## [2026-05-18] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since morning scan. All meeting notes through May 14, all 8 raw articles, and meadow project docs remain fully processed. No May 15-18 meeting notes have landed from Fathom.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 165 entries, under 200 threshold. No rotation needed. Obsidian REST API offline — used direct file access fallback.
+- Key takeaways: Monday evening scan. Vault fully current through May 14. Any meetings from today should land via Fathom overnight or tomorrow.
+
+## [2026-05-18] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/HMS-Capacity-Planning, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Blink Payments, Modern Stack Systems/Cartier, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since last scan. All meeting notes through May 14, all 8 raw articles, and meadow project docs remain fully processed. Weekend — no new Fathom recordings or clipped articles landed.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 163 entries, under 200 threshold. No rotation needed. Obsidian REST API offline — used direct file access fallback.
+- Key takeaways: Monday morning scan. Vault fully current through May 14. Expecting new meeting notes from today's syncs to land via Fathom later today.
+
+## [2026-05-17] lint | Weekly Health Check
+- Pages scanned: 106
+- Issues: 5 critical, 8 recommended, 4 informational
+- Auto-fixed: Added `aliases: [loftware]` to loftware/context.md, added `aliases: [high-meadow-labs]` to internal/high-meadow-labs/journal.md (resolves 2 broken wiki-links)
+- Critical findings: 10 unmapped project folders in project-mapping.md, 2 stories frontmatter mismatches (internal/flex-dash and internal/meadow stories-hm.md), deprecated `f2-cetera` alias persists in cetera/overview.md, missing `reports/mai-project-overview.md`, stale empty `wiki/projects/flex-dash/` directory
+- Report: wiki/lint-report.md
+
+## [2026-05-15] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since last scan. All meeting notes through May 14, all 8 raw articles, and meadow project docs remain fully processed. No May 15 meeting notes have landed from Fathom yet.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 162 entries, under 200 threshold.
+- Key takeaways: Friday scan. Vault fully current. Expecting May 15 meetings to land from Fathom/Granola later.
+
+## [2026-05-15] scheduled-ingest | No new sources (late night)
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/HMS-Capacity-Planning, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Blink Payments, Modern Stack Systems/Cartier, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources found. All meeting notes through May 14, all 8 raw articles, and meadow project docs remain fully processed. Two previously-empty notes re-checked (Andrew/Mac 05-13, LNW 05-12) — still empty, no Granola backfill.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty, no archival needed. Log under 200 threshold. Obsidian REST API offline — used direct file access fallback.
+- Key takeaways: Friday late-night scan. No May 15 meeting notes have landed from Fathom. Vault fully current through May 14.
+
+## [2026-05-15] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-14 remain current. No new meeting notes, articles, or project docs for May 15. Friday evening — Fathom notes from today's meetings still have not landed.
+- Maintenance: Done section empty — no archival needed. Log at ~158 entries, under 200 threshold. No rotation needed.
+- Patterns extracted: none
+- Key takeaways: Clean scan, vault current through May 14. Weekend ahead — next expected sources are any May 15 meeting notes once Fathom processes them, or Monday's notes next week.
+
+## [2026-05-15] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All sources through 2026-05-14 remain current. No new meeting notes, articles, or project docs for May 15. Friday — Fathom notes from today's meetings have not landed yet.
+- Maintenance: Done section empty — no archival needed. Log at 157 entries, under 200 threshold. No rotation needed.
+- Patterns extracted: none
+- Key takeaways: Clean scan, vault current through May 14. Next expected sources are any May 15 meeting notes once Fathom processes them.
+
+## [2026-05-14] ingest-supplement | Gap fill from prior batch run
+- Prior batch (below) processed 21 meeting notes into journals, commitments, decisions, and index but missed several items.
+- Pages created: `wiki/patterns/einstein-dual-capture.md` (new pattern), `wiki/patterns/data-cloud-bulk-processing.md` (new pattern), `wiki/projects/blink-payments/context.md` (new project)
+- Pages updated: `wiki/projects/mai/context.md` (added field capacity constraints, code freeze May 23, encrypted field issue), `wiki/projects/cetera/context.md` (added Plan Participants / eMoney integration section), `wiki/projects/internal/meadow/overview.md` (updated current status to UAT phase, June 1 target, tech stack correction, UI feedback), `wiki/index.md` (added blink-payments project, 2 new patterns), `commitments.md` (added 2 missing CREtelligent items: site verification integration, internal expense stories)
+- Patterns extracted: `einstein-dual-capture` (dual email capture system: EAC for known contacts + secondary tool for unknowns; applied in Cartier), `data-cloud-bulk-processing` (high-volume Data Cloud → Apex queueable in 500-record batches; applied in Blink Payments)
+- Maintenance: Done section empty, no archival needed. Log under 200 threshold, no rotation needed.
+- Key takeaways: Two reusable patterns identified across the May 11-14 batch that the prior run missed. Blink Payments is a net-new advisory engagement needing its own project context page. MAI context needed critical platform constraint updates (3 custom fields remaining, code freeze imminent).
+
+## [2026-05-14] ingest | Batch: 21 meeting notes (May 11–14)
+- Sources processed:
+  - `Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md`
+  - `Meeting Notes/High Meadows/MAI/2026-05-13 - MAI Dev DSU.md` (already in journal — skipped)
+  - `Meeting Notes/High Meadows/MAI/2026-05-14 - MAI Dev DSU.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-11 - Internal CREtelligent Weekly Sync.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-12 - Stitch CREtelligent - Daily Dev Standup.md` (already in journal — skipped)
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-14 - Stitch CREtelligent - Daily Dev Standup.md`
+  - `Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In.md`
+  - `Meeting Notes/High Meadows/LNW/2026-05-12 - CA Check In.md`
+  - `Meeting Notes/High Meadows/LNW/2026-05-12 - LNW.md` (no summary — skipped)
+  - `Meeting Notes/High Meadows/LNW/2026-05-14 - LNW CA Check In.md`
+  - `Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up.md`
+  - `Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow.md` (already in journal — skipped)
+  - `Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-13 - Meadow User Testing.md` (already in journal — skipped)
+  - `Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac.md` (already in journal — fixed Blink entry)
+  - `Meeting Notes/Modern Stack Systems/Blink Payments/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md` (corrected: full summary replaced "no summary" entry)
+  - `Meeting Notes/Modern Stack Systems/2026-05-12 - AI Office Hours.md` (already in journal — skipped)
+  - `Meeting Notes/Modern Stack Systems/2026-05-13 - Andrew Mac.md` (no summary — already logged)
+  - `Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo.md` (already in journal — skipped)
+  - `Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md` (already in journal — skipped)
+  - `Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan.md`
+  - `Meeting Notes/_Unmatched/2026-05-14 - New Note.md` (informal — no journal update needed)
+- Pages created: none
+- Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/mai/journal.md`, `wiki/projects/lnw/journal.md`, `wiki/projects/cetera/journal.md`, `wiki/projects/cartier/journal.md`, `wiki/projects/modern-stack-systems/journal.md` (Blink Payments entry corrected), `wiki/index.md` (added Cartier), `Decision-Log.md` (10 new entries), `commitments.md` (5 new items + new Blink Payments section)
+- Patterns extracted: none new (existing patterns like cost-rollup-hierarchy and validation-rule-workaround remain relevant but no novel patterns identified this cycle)
+- Key takeaways: Heavy week across all projects. MAI code freeze May 23 with production testing gap. CREtelligent UAT target mid-to-late June, Connect API integration decision pending. LNW global case + super family filter push before Barcelona trip. Cartier Einstein Activity Capture hitting production. Blink Payments advisory engagement confirmed active (Data Cloud transform architecture). New AD Agentforce opportunity in pipeline (managed services model).
+
 ## [2026-05-10] lint | Weekly Health Check
 - Pages scanned: 102
 - Issues: 8 critical, 12 recommended, 4 informational
@@ -2428,3 +2534,74 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: Commitments Done section empty, no archival needed. Log exceeds 200 threshold; rotation to `wiki/log-archive-2026.md` recommended on next lint pass.
 - Key takeaways: Wednesday afternoon scan. Vault fully current. All sources through May 13 plus one re-processed _Unmatched note remain fully ingested.
+
+
+## [2026-05-14] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/HMS-Capacity-Planning, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Blink Payments, Modern Stack Systems/Cartier, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources found since last ingest (earlier today). No new May 14 meeting notes, articles, or project docs have landed.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Commitments Done section empty, no archival needed. Log at 153 entries, under 200 threshold — no rotation needed.
+- Key takeaways: Wednesday evening scan. Vault fully current. All sources through May 13 remain fully ingested. No new meetings recorded today.
+
+
+## [2026-05-14] scheduled-ingest | 5 new sources (4 substantive, 1 internal/mixed)
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-14 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md`
+  - Key takeaways: Hardware issues resolved, 4 simultaneous projects. Ticket 1530 passed to UAT (Brian G), 1529 error gone, 1502 bank field mapping fixed (text→picklist). Tickets 1432 (blocked on Ryan) and 1271 (blocked on Justin). Production smoke testing gap flagged — no process, no prod access. Code freeze May 23.
+  - Commitments added: 0 (next steps assigned to Vincent, Ryan, team)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-14 - Stitch CREtelligent - Daily Dev Standup.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`
+  - Key takeaways: Miami blocker slowing progress. Hardware failures across team (likely bad update). Pushing all proposals to Salesforce, questions to Travis. Connect API integration decision pending — direct vs through order service, needs offline discussion with Rainier/Travis/Chris. Document payroll creation: new Apex REST class. UAT target mid-to-late June.
+  - Commitments added: 0 (all existing scope)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/High Meadows/LNW/2026-05-14 - LNW CA Check In.md`
+  - Pages updated: `wiki/projects/lnw/journal.md`
+  - Key takeaways: Ticket 313 ready for testing (badge filtering for task/event/case). Conditional visibility feature completed — hierarchy filtering working. Super family operational. LNW team dynamics causing friction (slow decisions, PM burden on MSS team — estimated 50-100 hrs). Loft project 80% likely, RCA concerns. Mac: global case by Friday, deployment Monday.
+  - Commitments added: 1 (complete global case functionality by Friday, deployment Monday)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan.md`
+  - Pages updated: `wiki/projects/cartier/journal.md`
+  - Key takeaways: EAC production deployment in progress. Testing verified. Mac authenticated into prod. Deployment steps: deploy EAC → generate unique SF emails → pass to Mac for rule updates → live after ~20 min propagation. Dan practiced user auth navigation. Target: system live by tomorrow.
+  - Commitments added: 1 (complete EAC production deployment and email generation)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/_Unmatched/2026-05-14 - New Note.md`
+  - Pages updated: `wiki/projects/internal/meadow/journal.md`
+  - Key takeaways: Meadow product demo with UAT feedback — too much green (accessibility/contrast issues), missing Google SSO (client prefers Office 365). Scroll bar bug after editing/saving on meeting notes page. HMU launched this week with positive feedback. Mac billing 70+ hrs/week.
+  - Commitments added: 0 (bug is team-level, SSO is product backlog)
+  - Decisions logged: 0
+  - Patterns extracted: none
+
+- Pattern extraction: Reviewed all 5 journal updates. No new reusable patterns identified. MAI's production testing gap is notable but project-specific (managed service with no prod access). LNW's PM burden on MSS team is a client management concern, not a generalizable pattern yet (one data point).
+- Maintenance: Commitments Done section empty, no archival needed. Log exceeds 200 threshold; rotation to `wiki/log-archive-2026.md` recommended on next lint pass.
+- Key takeaways: Wednesday late scan. Five May 14 meeting notes landed and processed. Mac active across MAI (code freeze approaching May 23), CREtelligent (UAT mid-to-late June), LNW (deployment Monday), Cartier (EAC going live tomorrow), and Meadow (UAT feedback rolling in). No new articles or project docs.
+
+## [2026-05-15] ingest | No new sources
+- Scanned: Meeting Notes/, Second Brain/raw/articles/, Second Brain/raw/projects/
+- Result: All sources already processed through 2026-05-14. No new meeting notes, articles, or project docs found.
+- Next expected: Meeting notes from May 15 (Thursday) should land later today.
+
+## [2026-05-15] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since earlier May 15 scan. All meeting notes through May 14 remain fully processed. One modified file in `raw/archived-stories/mai/` (excluded per scan rules).
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 158 entries, under 200 threshold.
+- Key takeaways: Friday evening scan. Vault current. May 15 meeting notes (if any) have not landed from Fathom yet.
+
+## [2026-05-19] scheduled-ingest | 1 empty stub logged
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: 1 previously unlogged source identified — empty Granola stub, no actionable content.
+- Source: `Meeting Notes/High Meadows/LNW/2026-05-12 - LNW.md` — empty Granola stub (no AI summary, no transcript). No wiki updates warranted.
+- No new meeting notes from May 15–19 have landed from Fathom/Granola.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Commitments Done section empty — no archival needed. Log at 168 entries, under 200 threshold.
+- Key takeaways: Monday scan. Vault current through May 14 substantive content. Weekend + Monday gap likely means notes will land later today or tomorrow as Fathom/Granola processes recordings.

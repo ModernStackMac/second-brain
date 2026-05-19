@@ -4,6 +4,7 @@ owner: Mac
 priority: p2
 last_meeting: 2026-04-23
 open_actions: 3
+aliases: [high-meadow-labs]
 ---
 
 # High Meadow Labs — Project Journal

@@ -1,12 +1,24 @@
 ---
 type: project-journal
 project: cartier
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 # Cartier — Project Journal
 
 ## Week of May 12, 2026
+
+Einstein Activity Capture Production Deployment (May 14, w/ Dan): Testing verified, production deployment in progress, user authentication walkthrough.
+
+**Testing verified:** Mac showed Dan test results from previous session. System functionality confirmed working. Ready to proceed with production deployment.
+
+**Production deployment steps:** (1) Deploy Einstein Activity Capture system, (2) Generate unique Salesforce emails, (3) Pass emails to Mac for rule updates, (4) System goes live after ~20 minutes for rule propagation.
+
+**User auth walkthrough:** Dan practiced navigation: gear icon (upper right) → Settings → Connected Accounts → Email and Calendar Accounts → New Account → Microsoft logo → SSO authentication. Target: system live by tomorrow at latest.
+
+*(Source: `Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture deployment with Dan.md`)*
+
+---
 
 E-mail Attachment Demo (May 13, w/ Chad Cartier): Live demo of Einstein Activity Capture integration with Outlook — incoming attachments working, outgoing TBD, deployment plan outlined.
 

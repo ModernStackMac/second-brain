@@ -2,12 +2,43 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-12
-open_actions: 4
+last_meeting: 2026-05-14
+open_actions: 6
 ---
 
 # LNW — Project Journal
 
+## Week of May 11–16, 2026
+
+Three check-ins this week (May 11, 12, 14). Major themes: super family filter implementation, family story ticket progress, deployment planning for Monday, and global case functionality push.
+
+**LNW CA Check In (May 14):** Ticket 313 ready for testing (record filter functionality — badge filtering for task, event, case records + button filtering bug). Conditional visibility feature completed — account hierarchy filtering now working (current account shows only its records, family view shows all hierarchy records, removed "back on" option from all relations view). Super family functionality operational.
+
+Client management challenges: LNW team's west-coast consensus-driven decision-making impacting productivity. PM burden shifted to MSS team (June and Mac handling client admin work — estimated 50-100 hours spent on PM tasks). Client frustration over costs vs visible output (no production releases yet, by design).
+
+Mac completing global case functionality by end of day Friday. Deployment scheduled Monday morning.
+
+**CA Check In (May 12):** Super family filter needs two-step operation: (1) find family record from selected account's parent ID, (2) find super family record from family's parent ID. Super family should display all records from families beneath it — currently showing zero records. Need to traverse full hierarchy (3 levels: account → family → super family). Data model uses `family_type = "super family"` to identify super families. Family lookup field exists but was never used (reason unknown).
+
+Event page redirect updates: standard event pages now redirect to meeting notes when meeting note exists. Events without meeting notes remain accessible. Added start/end date/time components.
+
+**LNW CA Check In (May 11):** Family story ticket (#13) making good progress — targeting one ticket per day, should finish remaining by end of week (new tickets may push to Mon/Tue next week). New bug logged: search filter reload issue across all filters/toggles (similar to previous timeline filter bug, 5-point estimate, Mac to review and fix).
+
+Meeting note page updates needed: activity fields can't use lookup functionality, requires start date/time fields on meeting note object, will map fields during meeting creation/updates (added to existing ticket scope).
+
+Mac out Wednesday-Friday next week for Barcelona trip (mom's 60th birthday). Deployment push planned — Mac will message Slack when ready.
+
+**Decisions:**
+- Hold deployment until super family issue resolved
+- Keep conditional visibility logic (current account vs family view separation)
+
+**Open questions:**
+- Why was the family lookup field created if never used?
+- Three-level hierarchy architecture rationale unclear
+
+*(Sources: `Meeting Notes/High Meadows/LNW/2026-05-14 - LNW CA Check In.md`, `2026-05-12 - CA Check In.md`, `2026-05-11 - LNW CA Check In.md`)*
+
+---
 
 ## Week of Apr 20–26, 2026
 

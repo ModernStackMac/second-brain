@@ -2,13 +2,41 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-13
+last_meeting: 2026-05-14
 open_actions: 13
 ---
 
 # MAI — Project Journal
 
 ## Week of May 12, 2026
+
+MAI Dev DSU (May 14): Hardware issues resolved, 4 simultaneous projects, ticket updates, production testing gap, code freeze May 23.
+
+**Ticket progress:** Ticket 1530 passed to UAT (Brian Gallagher). Ticket 1529 confirmed good — error no longer reproducible. Ticket 1502 resolved (bank field mapping — changed from text to picklist, now mapping correctly to case). Ticket 1432 awaiting guidelines from Ryan. Ticket 1271 still open, needs follow-up with Justin — moved to blocked.
+
+**Production testing concern:** No current production smoke testing process. Team lacks production access/visibility. Code freeze approaching May 23. Need clarification on production testing ownership — strategic discussion needed with client.
+
+**Meadow product:** Initial positive feedback received. UAT testing planned for today. Time logging functionality under consideration.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-14 - MAI Dev DSU.md`)*
+
+---
+
+MAI Dev DSU (May 11): Sprint winding down (3 tickets remaining), test class work, bank field mapping discussion, field capacity crisis.
+
+**Sprint status:** Only 3 tickets remaining in backlog (2 assigned to David). Need to review backlog with Aisha. Mac working on test class for ticket 11 (case font assignment controller), targeting noon completion.
+
+**Vincent's queue:** Ticket 1469 in progress (finishing today). Ticket 1523 completed (ready for deployment). Multiple tickets in developer review: 1085 passed to QA, 1352 contract exhibit issue resolved, 1353 re-tested good, 1521 done, 1439 building definition/annual fee mapping clarified, 1451 passed, 1498 passed QA (moving to Brian).
+
+**Bank field mapping (ticket 1502):** New feed component lacks proper field mapping — need clarification on bank vs bank account name fields. Brian G or Mango to provide guidance (discussion scheduled in 1 hour).
+
+**Field capacity crisis:** Nearly out of custom fields (3 remaining). Out of lookup fields entirely. 17 potentially redundant fields identified by Brian. Field justification meeting scheduled for tomorrow.
+
+**Content version vs attachment (ticket 1515):** Files display instead of attachments (attachment deprecated). Both systems temporarily maintained during transition. Fund name display on investment account lookup working — search covers both account types.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md`)*
+
+---
 
 MAI Dev DSU (May 13, w/ Brian Cersosimo, Chloe Thai, others): encrypted field mystery, servicer visibility simplification, financial account lookup standardization, secondary contact complexity, credit card layout cleanup, prospect account relationship removal.
 

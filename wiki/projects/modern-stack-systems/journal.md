@@ -36,11 +36,25 @@ Andrew/Mac Sync (May 13, w/ Andrew Smith) — Granola captured no summary or tra
 
 ## Week of May 11, 2026
 
-Blink Data Cloud Advisory Follow-up (May 11, w/ Raphi Katz, R Brayam) — Granola captured no summary or transcript for this recording. This is a follow-up to the April 21 advisory intro call with Blink (UK payments company). Content unavailable for ingest. Manual review of Granola recording recommended if substantive discussion occurred.
+Blink Payments Data Cloud Advisory (May 11, w/ Raphi Katz, R Brayam): Full advisory session on Data Cloud implementation for payment processor consolidation.
 
-**Status:** Blink advisory engagement status unknown — prior state was "Pending" (Mac to send scope email, Raphi to get FD confirmation). This call may indicate the engagement moved forward.
+**Team:** R Brayam (data analyst, Data Cloud experience, struggles with object integration in recipes), R Katz (leading main implementation and data cloud setups), Liam (handles transaction linking between systems, manual monthly transaction tracking due to Stripe integration issues).
 
-*(Source: `Meeting Notes/_Unmatched/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md`)*
+**Primary goal:** Consolidate multiple bank/payment processor data streams into actionable Salesforce records. 300,000 daily transaction records across ~50 columns (only 6 columns needed). Multiple data sources with potential overlapping/duplicate data requiring harmonization.
+
+**Current setup:** Daily CSV files via SFTP → S3 → Data Cloud streaming. Data ingesting successfully but no downstream Salesforce actions configured. Merchant processing data visible in Data Cloud reports but isolated.
+
+**Recommended architecture:**
+1. Data Cloud record-triggered flow → Apex queueable class for bulk processing
+2. Async processing in 500-record batches to avoid governor limits
+3. Error logging mechanism for failed record handling
+4. Transform object to merge portal + Stripe transaction streams into master table
+
+Similar pattern to recent Confluence-Salesforce Knowledge integration project.
+
+**Next steps:** Mac to work with Liam on transform configuration (few 30-minute sessions over next weeks). Blink team to create object ERD and user stories before transform work. Mac unavailable May 20-22. Future developer consultation on Apex implementation once architecture finalized. End goal: automated merchant processing summaries, forecasting, and billing integration across all bank relationships.
+
+*(Source: `Meeting Notes/Modern Stack Systems/Blink Payments/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md`)*
 
 
 Andrew/Mac Sync (May 11, w/ Andrew Smith): Gambling movie recs, Granola MCP integration plans, Second Brain demo, local AI model experimentation, fine-tuning vs RAG debate, personal updates.

@@ -28,6 +28,10 @@
 
 - **2026-05-11** "Modern Stack Systems between Mac Nosek and Raphi Katz" — Attendees: R Brayam (r.brayam@blinkpamyent.co.uk), R Katz (r.katz@blinkpayment.co.uk). Suggested candidates: possibly a Blink Payment project under Modern Stack Systems (see prior meetings: 2026-04-21 Blink Data Cloud Advisory). No project-mapping.md entry exists for Blink Payment.
 
+- **2026-05-14** "Einstein Activity Capture deployment with Dan" — Attendees: Mac Nosek. Summary: Production deployment of Einstein Activity Capture, generating unique Salesforce emails, rule propagation, Dan practicing SSO auth setup. Suggested candidates: Could be LNW, MAI, or Cetera (all active Salesforce projects), or an external client engagement. "Dan" not in project-mapping. Needs manual routing once client/project is identified.
+
+- **2026-05-14** "New note" — Attendees: Mac Nosek. Summary: Multi-topic scratchpad covering bug report (meeting notes CSS scroll issue), work/billing discussion, HMU launch, and Meadow capacity planning demo (Next.js/TypeScript/Supabase, UAT, Clockify integration). No single project match — content spans Meadow, HMU, and personal items.
+
 - [2026-05-11] "Modern Stack Systems between Mac Nosek and Raphi Katz" | Attendees: Mac Nosek, R Brayam (blinkpayment.co.uk), R Katz (blinkpayment.co.uk) | Suggested candidates: Consider adding a "blink" project under Modern Stack Systems in project-mapping.md — prior Blink meeting exists at Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Blink Data Cloud Advisory.md
 
 ### 2026-05-13 — "E-mail Attachment Demo"

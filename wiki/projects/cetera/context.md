@@ -55,6 +55,13 @@
 - Connor's team implementing adjustments to existing integrations (starting late Apr 2026)
 - Adding to most/all existing integrations; some integrations should remain always-on
 
+## Plan Participants (eMoney Integration)
+- eMoney integration plumbing kept available for future use
+- Manual sync responsibility removed from financial planning team
+- FT dev sandbox: participants section commented out of submission forms
+- Object remains but current request excludes participants
+- Will reintegrate once eMoney integration is live — data will sync automatically from eMoney after updates
+
 ## Related Pages
 - [[high-meadows]] — partner
 - [[case-migration]] — core migration pattern

@@ -17,7 +17,9 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
 - [[internal/flex-dash/stories-hm]] — Flex Dash reporting product. Development paused for MAI.
 - [[loftware/context]] · [[loftware/journal]] — Loftware (High Meadows prospect). Wealth management firm, Salesforce implementation takeover from Plative, RCA high-risk component, seven-figure deal.
-- [[modern-stack-systems/context]] · [[modern-stack-systems/journal]] — Modern Stack Systems (Mac's consulting practice). Recruiting, business development, peer network, operations.
+- [[cartier/context]] · [[cartier/journal]] — Cartier (Modern Stack Systems). Salesforce enhancements for financial advisor — Einstein Activity Capture email attachment automation, case activity timeline LWC, Cirrus/EAC dual system strategy.
+- [[blink-payments/context]] — Blink Payments (Modern Stack Systems). UK payment processor, Data Cloud advisory — consolidating transaction data from multiple banks/Stripe into Salesforce.
+- [[modern-stack-systems/context]] · [[modern-stack-systems/journal]] — Modern Stack Systems (Mac's consulting practice). Recruiting, business development, peer network, operations. AD Agentforce opportunity.
 
 ## Concepts
 
@@ -33,6 +35,8 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[validation-rule-workaround]] — Three-step fallback for required picklist fields blocking automated record saves.
 - [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through a hierarchical chain. Applied in CREtelligent.
 - [[job-function-permission-sets]] — Align Salesforce permission sets to job functions (3–5 groups) instead of per-record-type or per-feature. Applied in Cetera.
+- [[einstein-dual-capture]] — Run Einstein Activity Capture for known contacts alongside a secondary email tool (Cirrus) for external sources. Applied in Cartier.
+- [[data-cloud-bulk-processing]] — Process high-volume Data Cloud ingestion into Salesforce objects using record-triggered flows and Apex queueable classes in 500-record batches. Applied in Blink Payments.
 
 ## Tools
 

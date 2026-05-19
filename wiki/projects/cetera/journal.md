@@ -3,10 +3,30 @@ status: active
 owner: Mac
 priority: p2
 last_meeting: 2026-05-11
-open_actions: 8
+open_actions: 9
 ---
 
 # Cetera — Project Journal
+
+## Week of May 11, 2026
+
+Project Keystone Daily Stand-up (May 11): Timeline replanning, minor JIRA cleanup items, plan participants decision, RedTail integration kickoff.
+
+**Replanning:** Nothing critically behind yet. Kurt received comprehensive task list Friday for feature build replanning. Brian catch-up Friday on replanning approach. Chris and Connor's notes align with remaining work list.
+
+**Development issues (minor):** JIRA tickets flagged with notes — testing validation questions, missing field/picklist values, general configuration checks. Work item submissions: changed default from "new" to "submitted" in flow. Fixed null reference issue pointing to correct ID. Added test data to garden hose for page visibility. Planning dashboard updated with new planning tab on lead page layout. Currently running first QA pass in sandbox.
+
+**Plan participants decision:** Discussed with head of financial planning. Keeping Salesforce-eMoney integration plumbing available for future. Removing manual sync responsibility from financial planning team. FT dev sandbox: participants section commented out of submission forms (object remains but request excludes participants). Will reintegrate participants once eMoney integration is live — data will sync automatically from eMoney after updates.
+
+**RedTail:** Sending RedTail mappings to team for local development start. Team will begin local work without data, port to server when ready. Risk mitigation priority given timeline concerns.
+
+**Decisions:**
+- Plan participants removed from submission forms now; reintegrate when eMoney integration goes live
+- Team starts RedTail local development without data (risk mitigation)
+
+*(Source: `Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up.md`)*
+
+---
 
 ## Week of Apr 28, 2026
 

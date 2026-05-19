@@ -1,6 +1,7 @@
 ---
 type: project-context
 project: loftware
+aliases: [loftware]
 status: prospect
 client: High Meadows (prospect pursuit)
 priority: p2

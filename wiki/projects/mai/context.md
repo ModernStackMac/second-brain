@@ -22,6 +22,9 @@
 ## Known Platform Constraints
 - **Type field on Financial Account** — always required in Salesforce; cannot be made optional. Workaround: custom field, hide standard Type from layout, set via trigger. User never sees standard field.
 - **IAM Service Type picklist** — was showing only one value instead of four for Support record type; root cause: page layout picklist settings / FLS
+- **Case custom field capacity** — only 3 custom fields remaining, out of lookup fields entirely. 17 potentially redundant fields identified by Brian for removal. Field justification review underway.
+- **Code freeze** — May 23, 2026. No production smoke testing process currently exists; testing ownership with client TBD.
+- **Encrypted fields** — custodian account number field on contract exhibit unexpectedly encrypted (no ticket found requesting it, not encrypted in Dynamics, likely copied from encrypted case field). Data migration needed if encryption removed.
 
 ## Permission Set Model
 - Client service-based permission set missing fund object access — all custom permission sets need at least read access

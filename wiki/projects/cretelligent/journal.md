@@ -2,13 +2,43 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-12
-open_actions: "28"
+last_meeting: 2026-05-14
+open_actions: "30"
 ---
 
 # CREtelligent — Project Journal
 
 ## Week of May 12, 2026
+
+Daily Dev Standup (May 14): Miami blocker, hardware issues across team, Connect API integration decision pending, document payroll creation, UAT target mid-to-late June.
+
+**Blockers:** Miami blocker preventing work progress. Hardware issues affecting multiple team members (Mac and another — likely bad update). Rainier missing meeting invites due to system updates — Andrew to remove/re-add.
+
+**Salesforce integration:** Working through Blake's stories — pushing all proposals to Salesforce. Questions sent to Travis for clarification. Salesforce document (request/response draft) in progress, will send for review.
+
+**Connect API integration decision:** Staffing process requirements under review. Current setup: Connect API only interfaces with order service. Two paths being evaluated: direct Connect API integration (straightforward) vs through order service (preserves existing logic/data collection). Needs offline decision with Rainier, Travis, and Chris.
+
+**Document payroll creation:** New REST class in Apex needed to accept payload. Will post documents as net new feature. Pricing data points confirmed: two discount fields, list price, sales price. Roll-ups optimization plan to be created.
+
+**Timeline:** Target mid-to-late June for UAT. Finance/billing/accounting portion remains only unknown. Core workflow rails priority before additional capabilities.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-14 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
+
+Internal CREtelligent Weekly Sync (May 11): Product scope of work structure, integration testing moved to testing, cost roll-up system updates, internal expense object ready.
+
+**Product scope of work implementation:** New object structure — special terms object as parent to product, rich text field for detailed work descriptions, rolls up to opportunity for proposal generation. Character count calculations completed. HTML templates ready from Blake's previous work. Plan: copy existing scope content into new structure with de-duping logic for multi-product applications.
+
+**Integration testing status:** All integration stories moved to testing phase. Cloud-generated mapping spreadsheet attached to ticket showing payload field mappings. Major concern: only one sample payload received — need multiple representative samples ASAP (Blake can provide). Cannot go live without proper testing coverage, especially critical for PM data beyond basic Mac data.
+
+**Cost roll-up system updates:** Three-level roll-up: site product → site → opportunity. Required fix: automated reports not setting site product total cost (will update to match other cost types: environmental, survey, zoning). Revenue roll-ups working correctly (net client price → total site product revenue at all levels). Cost roll-ups stop at site level; revenue continues to opportunity.
+
+**Internal expense object:** PA/Internal expense story located in build section under manual quote cost rollups. Data model confirmed and ready. Work begins after roll-up fixes completed.
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-11 - Internal CREtelligent Weekly Sync.md`)*
+
+---
 
 Daily Dev Standup (May 12, w/ Andrew Porter, Blake Stracener): Week 1 of new sprint, field mapping corrections, unknown fields pending Wendell, document endpoint architecture.
 

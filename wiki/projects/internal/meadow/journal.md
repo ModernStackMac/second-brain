@@ -22,6 +22,26 @@ No new Mac commitments — UAT coordination items are team-level tasks.
 
 ---
 
+Meadow Product Demo & Feedback (May 14, internal): Live product walkthrough with UAT feedback — UI accessibility issues, missing SSO provider, scroll bar bug.
+
+**Demo walkthrough:** Capacity heat map with executive actions and forecasting. Staffing page displays by project or person with utilization metrics. Resource management with filtering and slider controls. Integration with Clockify for timesheet pulling during transition period.
+
+**Tech stack confirmed:** Next.js, TypeScript, Supabase. 3 UAT testers currently piloting.
+
+**UI feedback:** Too much green — contrast issues flagged for accessibility. Color differentiation between elements not distinct enough despite visible differences.
+
+**Missing feature:** Google SSO not implemented — client preference is Office 365 (Microsoft SSO already supported, Google not yet).
+
+**Bug — scroll bar disappears:** Meeting notes page loses scroll bar after editing/saving, trapping users on the page. Likely CSS issue. Will log as bug — fix should implement automatic reload after save.
+
+**HMU update:** HMU launched this week with positive initial feedback. Quick feature at 100% focus this week to reach finish line.
+
+No new Mac commitments — bug is team-level, SSO is product backlog.
+
+*(Source: `Meeting Notes/_Unmatched/2026-05-14 - New Note.md`)*
+
+---
+
 Meadow Internal Sync (May 11, Mac solo): Database consolidation complete, entering user testing phase, EO/EOA membership exploration.
 
 **Database consolidation done:** Deleted one organization, moved project to correct bucket. Full test script completed. App is ready for user testing (not just cloud/dev testing anymore).
