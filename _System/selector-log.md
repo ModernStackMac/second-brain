@@ -243,3 +243,10 @@
 - [2026-05-14 13:30 CT] "Einstein Activity Capture deployment with Dan" → Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan.md · confidence: none · match: fallback (Salesforce EAC deployment, attendee "Dan" not in project-mapping, could be LNW/MAI/Cetera or external client)
 - [2026-05-14 13:30 CT] "New note" → Meeting Notes/_Unmatched/2026-05-14 - New Note.md · confidence: none · match: fallback (multi-topic scratchpad: bug report, Meadow demo, personal notes — no single project match)
 - [2026-05-14 13:30 CT] SCHEDULED RUN: 21 Granola meetings found for this_week (May 11–14). 5 new, 16 already filed. 3 routed to projects, 2 to _Unmatched. All 5 transcripts failed (paid Granola tier).
+
+- [2026-05-19 09:00 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md · confidence: high · match: attendee (andsmi@gmail.com)
+- [2026-05-19 09:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md · confidence: high · match: keyword (mai in title)
+- [2026-05-19 10:00 CT] "LNW CA Check In" → Meeting Notes/High Meadows/LNW/2026-05-18 - LNW CA Check In.md · confidence: high · match: keyword (lnw in title)
+- [2026-05-19 10:30 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword (project keystone in title)
+- [2026-05-19 12:00 CT] "Internal: CREtelligent Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-05-18 - Internal CREtelligent Weekly Sync.md · confidence: high · match: keyword (cretelligent in title)
+- [2026-05-19 08:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-19 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent + stitch in title)
