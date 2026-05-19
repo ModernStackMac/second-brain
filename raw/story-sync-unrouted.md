@@ -63,3 +63,9 @@
 
 [2026-05-19T12:00:00-05:00] LINEAR SKIPPED — Linear MCP (HM + MSS workspaces) not connected for data queries; only auth tools available. Meadow and Flex Dash stories preserved from prior sync.
 [2026-05-19T12:00:00-05:00] NOTE — project-mapping.md still lists cetera jira_project_key=F2 (actual=CET) and mai jira_project_key=TBD (actual=MAI at f2strategy.atlassian.net). Both routed per established pattern. Mapping file needs update.
+
+[2026-05-19T16:00:00-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-111 "Create new fields on TRPG_Help_Desk__c" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET)
+[2026-05-19T16:00:00-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET)
+[2026-05-19T16:00:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI workspace/key listed as TBD)
+[2026-05-19T16:00:00-05:00] LINEAR SKIPPED — Linear MCP requires OAuth authentication; user not present. Meadow and Flex Dash stories not fetched.
+[2026-05-19T16:00:00-05:00] NOTE — MAI-1562 "Fund Assignment - Remove Assign To Account Name" no longer returned by active Jira query (likely completed/closed since last sync).
