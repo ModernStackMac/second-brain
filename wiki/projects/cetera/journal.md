@@ -2,11 +2,31 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-18
+last_meeting: 2026-05-26
 open_actions: 9
 ---
 
 # Cetera — Project Journal
+
+## Week of May 25, 2026
+
+Project Keystone Daily Stand-up (May 26): F2 dev sandbox deployment verification, gifts & addresses analysis, ABP action plans assessment, database access resolution.
+
+**F2 dev sandbox deployment:** Connor targeted deployment of work desk and financial planning items — needs verification testing. Generated items list needed for deployment log.
+
+**Gifts & addresses analysis:** Started comparison between current gifts system and existing capabilities. Data quality issues with addresses. Third/fourth address handling uncertain — custom field addition capability unclear. AP conversation scheduled for guidance. Resolution expected by end of sprint.
+
+**ABP action plans assessment:** Reviewed existing ABP action plan structure — most contain only 2 tasks with basic subjects, not worth recreating in Salesforce. Exception: CPA affiliate departure process (multiple tasks, different assignees). Similar to current Notion onboarding/offboarding workflow — will explore Notion solution first before Salesforce.
+
+**Infrastructure:** Database access resolution call scheduled (Informatica and SSMS installed, CyberArk connection process blocking). Springboard flip planned with no group impact.
+
+**Decisions:**
+- ABP action plans: not worth recreating in Salesforce except CPA affiliate departure — Notion first
+- Connor's F2 deployment needs verification testing before confirming
+
+*(Source: `Meeting Notes/High Meadows/Cetera/2026-05-26 - Project Keystone Daily Stand-up.md`)*
+
+---
 
 ## Week of May 18, 2026
 

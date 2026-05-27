@@ -1,10 +1,33 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-19
+updated: 2026-05-27
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of May 25, 2026
+
+AI Office Hours (May 26): Barcelona trip recap, AI infrastructure & second brain development, CRM migration strategy, client project updates, MCP product development concept.
+
+**AI infrastructure:** Brian building comprehensive second brain (ingesting email, contacts, prospects). Moving from Salesforce to Notion-based system with Mini PC as delegated compute. Sean developing "Ichabod" — federated context layer for project work (headless architecture, autonomous data organization and status reports). Architecture takeaway: company-wide second brain too messy — need source of truth (Notion) with individual personal layers.
+
+**CRM migration strategy:** Current Salesforce cost ~$10K/year with minimal license usage. Migration to Notion planned within next year. Power users access through Claude, not front-end — reduced license requirements. Agent-maintained data updates. Custom CRM build: multi-sprint project, needs permissions/access control, integration with [[internal/meadow|Meadow]] for opportunity-to-project workflow.
+
+**Client project updates:**
+- [[lnw|LNW]] termination likely mid-June or month-end. F2 relationship deteriorating, new CIO bringing own consultants. Opportunity for direct HMS engagement at lower cost.
+- [[loftware|Loftware]] decision expected this week — board approved moving away from Plantive. Three SI proposals submitted (likely negotiating tactic). Meeting Wednesday, decision Thursday.
+- Pipeline: multiple proposals out, projects winding down.
+
+**MCP product concept:** High Meadow-specific MCP bundle — combine Salesforce MCP with industry-specific skills. Financial services and RIA-focused packages. Server-hosted auth. Include workflows, agents, transferable skills. Ian as beta tester (Meadow for household profitability, DocuSign field recommendations pending).
+
+**Decisions:**
+- Salesforce to Notion CRM migration planned within next year
+- Company-wide second brain deemed too messy — individual personal layers on shared Notion source of truth
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-26 - AI Office Hours.md`)*
+
+---
 
 ## Week of May 18, 2026
 

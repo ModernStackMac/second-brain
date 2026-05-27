@@ -2783,3 +2783,73 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - All 118 meeting notes, 8 articles, and 3 project docs confirmed already logged.
 - Key takeaways: Vault fully caught up. No new meetings since 2026-05-19. Next ingest will likely pick up activity from the current week.
 
+
+## [2026-05-27] scheduled-ingest | 8 new sources (7 substantive, 1 empty stub)
+
+- Source: `Meeting Notes/High Meadows/Cetera/2026-05-26 - Project Keystone Daily Stand-up.md`
+  - Pages updated: `wiki/projects/cetera/journal.md`
+  - Key takeaways: F2 dev sandbox deployment verification needed. ABP action plans too simple for Salesforce — CPA affiliate departure exception explored via Notion first. Database access blocked by CyberArk.
+  - Commitments added: 0
+  - Decisions logged: 1 (ABP action plans — Notion first)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-26 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md`, `wiki/projects/mai/context.md`
+  - Key takeaways: Team restart post-OOO. Case object at 47/50 custom fields blocking production deployments. Need 7 new lookups. Ticket 1596 to delete unused fields. Environmental quote management stories ready for Mac/Obed.
+  - Commitments added: 0
+  - Decisions logged: 0
+  - Patterns extracted: Updated `wiki/patterns/salesforce-field-capacity-management.md` with new MAI data
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-27 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md`, `wiki/projects/mai/context.md`
+  - Key takeaways: Go-live June 16. Full capacity through June 22, half from June 23. Data migration discrepancies (registration type, investing entity objects). Permission issues (Becky's operations PSG). Phase 2 discussions beginning.
+  - Commitments added: 0
+  - Decisions logged: 1 (go-live June 16 + staffing plan)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-26 - Stitch CREtelligent - Daily Dev Standup.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`
+  - Key takeaways: Mac's flight diverted (Bogota→Savannah). Payload integration root cause: no account creation logic. Fix: match-then-create fallback. Site product options expanded to 5. Two stories remaining for functional parity. Deployment Thursday/Friday.
+  - Commitments added: 3 (UTC time zone fix, meeting date automation, B313 ticket)
+  - Decisions logged: 2 (account creation fallback, site product options expanded)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-27 - Mac Obed.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`
+  - Key takeaways: Choir templates blocked on vague requirements. Stage gate validation approach consolidated (all flows or all Apex, not mixed). Site management features scoped (local office, distance calc, turnkey). PA management requirements surfaced (3-tab interface, bidirectional Connect sync).
+  - Commitments added: 1 (message Andrew/Tom requesting system review meeting)
+  - Decisions logged: 1 (consolidated validation approach)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Daily Dev Standup.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`
+  - Key takeaways: Zoning checkboxes payload sent. Automated reports clarified (EPS Pro Insight = manual, not automated). Documents endpoint testing complete. Invoice/billing CSV export scoped.
+  - Commitments added: 1 (review automated report payload and test locally)
+  - Decisions logged: 1 (EPS Pro Insight classification)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-26 - AI Office Hours.md`
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md`
+  - Key takeaways: SF→Notion CRM migration planned within next year. Sean building "Ichabod" federated context layer. LNW termination likely mid-June. Loftware decision expected this week. MCP product bundle concept (HMS-specific, financial services/RIA packages).
+  - Commitments added: 0
+  - Decisions logged: 1 (CRM migration strategy)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow.md`
+  - Pages updated: `wiki/projects/internal/meadow/journal.md`, `wiki/projects/internal/meadow/context.md`
+  - Key takeaways: Phased rollout replaces full company-wide launch (beta: Mac, Chloe, June). Linear adopted for bugs. External sales interest emerging. Quick integration model: 30hrs flat bill. F2 NY unblocked. MAI go-live discrepancy (Meadow says June 8, MAI DSU says June 16).
+  - Commitments added: 0
+  - Decisions logged: 2 (phased rollout + Linear, quick integration model)
+  - Patterns extracted: none
+
+- Source: `Meeting Notes/_Unmatched/2026-05-27 - Environmental Quote Management is perfect No questions allowed.md`
+  - Pages updated: none (empty Granola stub — no summary, no transcript)
+  - Commitments added: 0
+  - Decisions logged: 0
+  - Patterns extracted: none
+  - Key takeaways: Empty recording, no actionable content. Title suggests CREtelligent environmental quote management context but no data to process.
+
+- Pattern extraction summary: Updated `wiki/patterns/salesforce-field-capacity-management.md` with MAI May 26-27 data (47/50 crisis, ticket 1596, 7 blocked lookups). No new patterns created — account creation fallback and consolidated validation approach are single data points.
+- Maintenance: Commitments Done section empty — no archival needed. Log at 180 entries, under 200 threshold.
+- Commitments: 5 new items added (all CREtelligent). 9 decisions logged across 6 projects.
+- Key takeaways: Mac back from OOO and Barcelona. Heavy activity across all projects. MAI go-live June 16 (critical date). CREtelligent nearing functional parity (2 stories left). Meadow pivoting to phased rollout. MSS planning CRM migration off Salesforce. LNW likely ending mid-June.

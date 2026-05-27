@@ -2,11 +2,48 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-18
+last_meeting: 2026-05-27
 open_actions: 13
 ---
 
 # MAI — Project Journal
+
+## Week of May 25, 2026
+
+MAI Dev DSU (May 26): Team restart after Mac's OOO, access issues blocking offshore resources, Case object field limit crisis at 47/50, integration development priorities, environmental quote management stories ready.
+
+**Team access issues:** Federico lost access (working around for Rodrigo). Rodrigo can't log into F2, blocking UAT via VDI. Brian out sick. Mac sent Rodrigo SSO resolution contacts. Mac picked up 4 tickets early morning.
+
+**Case field limit crisis (47/50):** Case object at 47/50 custom fields, blocking production deployments. Contract request and lead conversion controller blocked — need 7 new custom lookup fields (Prospect 2, Prospect 3, SMA Manager). Ticket 1596: delete unused case fields (requires code search + David/Cory approval + mapping sheet update). Blocking regression testing this week. Code freeze continues — bug fixes only.
+
+**Integration priorities:** Vendor endpoint discussion with choir team. Regression fixes: (1) mapping confirmed, (2) project ID per opportunity/site reverted from unique constraint, (3) product checkboxes — pull all zoning/product fields, (4) additional services — comma-separated product list. Environmental quote management stories ready for Mac/Obed. Automated reports verification needed. Site-level task deprecation in progress to task groups.
+
+**Next priorities:** Pay vendor and generate invoice stories, then doc hub.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-26 - MAI Dev DSU.md`)*
+
+---
+
+MAI Dev DSU (May 27): Fund assignment/account stories starting, file upload limits, permission issues, data migration discrepancies, **go-live June 16**.
+
+**Sprint progress:** Mac deploying tickets and starting fund assignment/account stories (3 related component tickets). Federico deploying new custom fields to production.
+
+**Ticket updates:** 1592 — file upload 3MB limit implemented (potential UIT memory issues, needs offline testing). 1584 — last name/middle name mapping resolved. 1605 — picklist working despite placement issues. 1581 — section consolidation completed. 1583 — user access issue (Becky has operations PSG causing broader record type access, other CSS users correctly limited to person accounts).
+
+**Data migration discrepancies:**
+- Registration type: legacy data not migrated to new global value set field. Can't use restricted picklist for data load — options: add legacy values temporarily or use dynamic field display.
+- Investing entity: UAT using custom investing entity object, production using legal entity object. No data in UAT, populated in production. Mapping docs need updates.
+- Sales process: waiting on record type names from Brian G (ETA Friday).
+
+**Go-live timeline:** June 16. Full capacity through June 22 (2 weeks post go-live). Half capacity starting June 23, then gradual reduction. Phase 2 discussions beginning.
+
+**Decisions:**
+- Go-live confirmed: June 16
+- Post go-live staffing: full through June 22, half from June 23
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-27 - MAI Dev DSU.md`)*
+
+---
 
 ## Week of May 18, 2026
 

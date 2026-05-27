@@ -58,7 +58,9 @@ Case object hit 41 custom lookup fields in production against a 40-field limit. 
 
 Additional pressure: only 3 custom fields remaining on Case across all types. Content Version vs. Attachment migration (ticket 1515) added to the field burden during a deprecated-to-new-API transition.
 
-Source: [[mai]] journal, May 11 + May 18 2026
+**May 26-27 update:** Case object now at 47/50 custom fields. Production deployment of contract request and lead conversion controller blocked — need 7 new custom lookup fields (Prospect 2, Prospect 3, SMA Manager). Ticket 1596 opened to delete unused fields (requires codebase search + David/Cory approval + mapping sheet update). Blocking production regression testing. Data migration discrepancies (registration type, investing entity objects) adding complexity to field management.
+
+Source: [[mai]] journal, May 11 + May 18 + May 26-27 2026
 
 ## Related Pages
 - [[mai]] — primary example (Case object field crisis)
@@ -67,4 +69,4 @@ Source: [[mai]] journal, May 11 + May 18 2026
 
 ---
 *Created: 2026-05-26*
-*Sources: Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md, Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md*
+*Sources: Meeting Notes/High Meadows/MAI/2026-05-11 - MAI Dev DSU.md, Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md, Meeting Notes/High Meadows/MAI/2026-05-26 - MAI Dev DSU.md, Meeting Notes/High Meadows/MAI/2026-05-27 - MAI Dev DSU.md*

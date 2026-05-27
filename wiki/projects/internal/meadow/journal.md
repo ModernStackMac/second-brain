@@ -1,5 +1,24 @@
 # Meadow — Project Journal
 
+## Week of May 25, 2026
+
+Meadow Sync (May 27): Phased rollout decision, product sales interest, staffing updates, quick integration model.
+
+**Phased rollout replaces full rollout:** High risk rolling company-wide next week without more testing. Agreed on phased approach: beta group (Mac, Chloe, June) for one week, everyone else stays on Clockify. Mac volunteering as backup (already logs time in spreadsheet). Brady to run user testing as manager and admin before Friday. QA person interview scheduled (experienced UAT, potential hire split across product and projects). Post-beta: org-wide rollout after confirming stability. Linear adopted for bug tracking and feature requests.
+
+**Unexpected sales interest:** External inquiries for Meadow — interest in time and capacity planning features. Missing features before external sales: company holidays for different countries, total capacity calculations, professional services scheduling. Longer-term: Salesforce connection (v2), pipeline planning (pull opps at certain stage to convert to projects), eventually replace pipeline reporting.
+
+**Staffing & project timing:** [[mai|MAI]] going live June 16 (per MAI DSU — Meadow discussion referenced June 8, likely stale). Two weeks full-time support then half-time — frees Mac's availability. [[loftware|Loftware]] decision expected tomorrow. Quick integration deployment model: 30 hours flat bill per engagement, tiger team approach (front-end conversation + back-end implementation), Mac likely involved in multiple concurrent 3-hour/week projects. F2 New York unblocked after diversification concerns — leading with data expertise instead of CRM-first.
+
+**Decisions:**
+- Phased Meadow rollout: beta group (Mac, Chloe, June) first, then org-wide
+- Linear adopted for bug tracking and feature requests
+- Quick integration deployment model: 30 hrs flat bill per engagement
+
+*(Source: `Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow.md`)*
+
+---
+
 ## Week of May 11, 2026
 
 Meadow UAT Kickoff (May 13, Mac solo): User acceptance testing session — walkthrough of admin/user/manager test scripts, capacity heat map, bugs identified, feedback process established.

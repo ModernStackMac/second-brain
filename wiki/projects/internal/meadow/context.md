@@ -9,7 +9,7 @@
 - **Product:** Meadow (capacity planning & time tracking)
 - **Team:** Aisha (HMS), Brian (Admin UAT), Chloe (User/Manager UAT), Mac (MSS — lead)
 - **Priority:** Active alongside MAI; Flex-Dash paused to keep capacity here
-- **Status:** UAT in progress (kicked off 2026-05-13). DB consolidation complete. UAT deadline: May 16-19. June 1 go-live target. Replaces Clockify for time tracking + adds project management. Pre-configured with Notion integration.
+- **Status:** Phased rollout in progress (May 2026). Beta group: Mac, Chloe, June for one week (Clockify parallel). Post-beta: org-wide. Bug tracking moved to Linear. External sales interest emerging (time + capacity planning features). Missing for external: country-specific holidays, total capacity calcs, professional services scheduling.
 
 ## What We're Building
 - Cloud migration from local SQLite to Supabase PostgreSQL + Vercel hosting

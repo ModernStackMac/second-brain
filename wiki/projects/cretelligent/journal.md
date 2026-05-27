@@ -2,11 +2,63 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-18
+last_meeting: 2026-05-27
 open_actions: "30"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of May 25, 2026
+
+Stitch CREtelligent Daily Dev Standup (May 26): Travel delays, payload integration root cause (account creation logic missing), deployment Thursday/Friday, two stories remaining for functional parity.
+
+**Travel disruption:** Mac's flight from Bogota diverted to Savannah (broken weather radar). 2+ hours on tarmac, hotel voucher, minimal sleep.
+
+**Payload integration fix:** QA found complete failures with new payload Friday. Root cause: code only finds existing accounts by CRE account ID — no creation logic when ID not found. Fix implemented: matching logic first, then account creation fallback (new account gets CRE account ID, account name from payload, HubSpot ID if available). Site product options expanded to 5 (added Valuation, Other).
+
+**Project status:** Two stories remaining for functional parity: generate invoice + pay vendor. Deployment scheduled Thursday evening or Friday early morning. Order Service vs MuleSoft discussion ongoing — standard process needed across lines of business before decomposition. Leadership expecting dev team pivot to customer-facing UI.
+
+**Decisions:**
+- Account creation fallback logic: match existing first, create new with CRE account ID + name + HubSpot ID
+- Site product options expanded from 3 to 5 (added Valuation, Other)
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-26 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
+
+Mac/Obed Sync (May 27): Choir templates confusion, story review, validation approach consolidated, site management features scoped, PA management requirements surfaced.
+
+**Choir templates blocked:** Very little requirement clarity. User stories extremely vague. Waiting for Rain to confirm endpoint details. Obed created separate object to hold choir templates. Testing difficult due to edge cases.
+
+**Validation approach:** Stage gate validation — opportunity can't move past quota until every retype console has initials and suggested sales price populated. Team preference: consolidated approach (all validations in flows OR all in Apex, not mixed). Obed handling flow-based validations.
+
+**Site management features identified:** Stage flow alignment needed (opportunity stages and ESTG status). Site cancellation without canceling opportunity. Local office object needs creation. Distance calculation using Salesforce DISTANCE formula. Turnkey calculator concept unclear — Andrew investigating.
+
+**PA management requirements:** LWC mapping component for PA assignment. Three-tab interface (accepted/declined/no response). Status tracking, decline reasons, automated escalation. Manual skills validation against Connect. Bidirectional Connect/Salesforce sync required.
+
+**Decisions:**
+- Consolidated validation approach: all in flows OR all in Apex (not mixed)
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-27 - Mac Obed.md`)*
+
+---
+
+Stitch CREtelligent Daily Dev Standup (May 27): Zoning checkboxes payload sent, choir on hold, automated reports clarified, documents endpoint tested, invoice/billing scope discussion.
+
+**Status:** Zoning checkboxes payload sent (confirmed in Slack). Choir on hold (Rain unavailable). 45-min environmental management epic planning session with Obed after standup.
+
+**Automated reports clarified:** Products implemented: EPS, EPS Advanced, Property Condition Pre-Screen. EPS Pro Insight requires manual professional verification — not classified as automated report. Three test payloads generated.
+
+**Documents endpoint:** Testing complete for document requests via order service to S3. POST/GET for listing, project-level GET, individual ID retrieval all available. Test environment ready in one week. Waiting for Rain's review. QA resource constraints impacting timeline.
+
+**Invoice/billing:** Export all bills and invoices to CSV. Template source likely Windle/Salesforce side. QuickBooks integration handles backend. Documentation needed for vendor/invoicing endpoints — may need new endpoints.
+
+**Decisions:**
+- EPS Pro Insight: manual verification required, not classified as automated report
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Daily Dev Standup.md`)*
+
+---
 
 ## Week of May 18, 2026
 
