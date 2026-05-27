@@ -254,3 +254,11 @@
 - [2026-05-19 14:00 CT] "AI Office Hours" → Meeting Notes/Modern Stack Systems/2026-05-19 - AI Office Hours.md · confidence: medium · match: keyword (AI Office Hours pattern, follows 2026-05-12 routing precedent)
 - [2026-05-19 14:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-15 - MAI Dev DSU.md · confidence: high · match: keyword (MAI Dev DSU established pattern)
 - [2026-05-19 14:00 CT] "Salesforce attachments — image ordering and Cirrus duplicate cleanup" → Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup.md · confidence: none · match: fallback (Salesforce/Cirrus keywords don't map to a specific project in project-mapping.md)
+
+- [2026-05-27 11:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-26 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent, stitch)
+- [2026-05-27 11:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-26 - MAI Dev DSU.md · confidence: high · match: keyword (mai)
+- [2026-05-27 11:00 CT] "AI Office Hours" → Meeting Notes/Modern Stack Systems/2026-05-26 - AI Office Hours.md · confidence: high · match: keyword (established prior routing pattern for AI Office Hours → MSS)
+- [2026-05-27 11:00 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-05-26 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword (project keystone → cetera)
+- [2026-05-27 11:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent, stitch)
+- [2026-05-27 11:00 CT] "Mac/Obed" → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Mac Obed.md · confidence: high · match: attendee (Obed Labra-Pelaez is CREtelligent key contact)
+- [2026-05-27 11:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-27 - MAI Dev DSU.md · confidence: high · match: keyword (mai)
