@@ -59,3 +59,5 @@
 - **Summary:** Salesforce attachment display ordering fix and Cirrus plugin duplicate email cleanup. Discusses signature image filtering, reverse sort order for attachments, and disabling Cirrus auto-attach.
 - **Candidate projects:** Could be MAI (Salesforce CRM build), LNW (financial services client using Cirrus), or Cartier (recent Salesforce work with Chad). "Cirrus" is a Salesforce email integration tool common in financial services orgs.
 - **Action:** Add attendee or keyword mapping to `project-mapping.md` once the client is identified. Content suggests a client meeting (references "Client: Contact Cirrus") but no client attendee was captured by Granola.
+
+| 2026-05-27 | Environmental Quote Management is perfect. No questions allowed. | Mac Nosek | Possible CREtelligent/Stitch (environmental keyword), but no project-mapping.md entry exists for Stitch/CREtelligent |

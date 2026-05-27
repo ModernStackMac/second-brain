@@ -262,3 +262,6 @@
 - [2026-05-27 11:00 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (cretelligent, stitch)
 - [2026-05-27 11:00 CT] "Mac/Obed" → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Mac Obed.md · confidence: high · match: attendee (Obed Labra-Pelaez is CREtelligent key contact)
 - [2026-05-27 11:00 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-27 - MAI Dev DSU.md · confidence: high · match: keyword (mai)
+
+- [2026-05-27 12:00 CT] "Meadow" → Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow.md · confidence: high · match: keyword
+- [2026-05-27 12:00 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/_Unmatched/2026-05-27 - Environmental Quote Management is perfect No questions allowed.md · confidence: none · match: fallback
