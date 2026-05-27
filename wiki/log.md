@@ -2853,3 +2853,17 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - Maintenance: Commitments Done section empty — no archival needed. Log at 180 entries, under 200 threshold.
 - Commitments: 5 new items added (all CREtelligent). 9 decisions logged across 6 projects.
 - Key takeaways: Mac back from OOO and Barcelona. Heavy activity across all projects. MAI go-live June 16 (critical date). CREtelligent nearing functional parity (2 stories left). Meadow pivoting to phased rollout. MSS planning CRM migration off Salesforce. LNW likely ending mid-June.
+
+
+## [2026-05-27] scheduled-ingest | 1 new source
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Weekly Refinement and Planning.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md`, `wiki/projects/cretelligent/context.md`
+  - Key takeaways: Conga proposal template replication successful (cover page, maps, dynamic content). Proposal acceptance workflow gap identified (no e-signature, need datetime field + Order ID signal). Turnkey calculator logic formally defined (verified land use-based rules for ESA/TSA/PCA). Click quote products confirmed (5 types). Connect API vendor integration scoped (lat/long from Regrid GeoJSON, Teams notifications for local offices). Historical vs forward-looking scope isolation decided (edits future-only, existing opps snapshot).
+  - Commitments added: 0 (all next steps are team-level without explicit Mac assignment)
+  - Decisions logged: 4 (proposal acceptance signal, turnkey calculator logic, scope isolation, vendor integration geocoding)
+  - Patterns extracted: none — historical scope isolation is a single data point; may become a pattern if seen in another CPQ/proposal context
+
+- Pattern extraction: Reviewed journal update. The "snapshot vs live config" concept (product edits apply forward-only) is conceptually reusable in CPQ/proposal systems but remains a single CREtelligent data point. Monitoring for cross-project recurrence. Turnkey calculator is business-logic-specific, not a generalizable pattern.
+- Maintenance: Commitments Done section empty — no archival needed. Log exceeds 200 entries — rotation recommended on next lint pass.
+- Key takeaways: Late-evening scan. One substantive meeting note from today's weekly refinement. CREtelligent proposal and pricing workflows gaining definition — significant context expansion (template, turnkey logic, vendor integration, acceptance workflow). No new commitments for Mac this cycle.
