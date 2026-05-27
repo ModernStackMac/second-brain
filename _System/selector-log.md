@@ -267,3 +267,6 @@
 - [2026-05-27 12:00 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/_Unmatched/2026-05-27 - Environmental Quote Management is perfect No questions allowed.md · confidence: none · match: fallback
 
 - [2026-05-27 12:15 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/_Unmatched/ · confidence: none · match: fallback (re-processed: had "No AI summary available", now populated with Granola summary; mixed content — CREtelligent dev work + personal CPA consultation; no project-mapping match)
+
+- [2026-05-27 14:30 CT] "Stitch // CREtelligent - Weekly Refinement & Planning" → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Weekly Refinement and Planning.md · confidence: high · match: keyword (title contains "Stitch", "CREtelligent")
+- [2026-05-27 14:30 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Environmental Quote Management is perfect No questions allowed.md · confidence: high · match: keyword (environmental quote, rollup, Andrew Porter, Obed references) · note: re-processed from _Unmatched (previously routed as _unmatched; summary populated with Granola content; CREtelligent keywords + contacts now matched)

@@ -63,3 +63,8 @@
 | 2026-05-27 | Environmental Quote Management is perfect. No questions allowed. | Mac Nosek | Possible CREtelligent/Stitch (environmental keyword), but no project-mapping.md entry exists for Stitch/CREtelligent |
 
 - **2026-05-27** | "Environmental Quote Management is perfect. No questions allowed." | Attendees: Mac Nosek | Mixed content: CREtelligent environmental quote management review + personal CPA consultation (WCG). Suggested candidates: Stitch/Cretelligent (env quote mgmt, rollup issues, LWCs) or split into two notes.
+
+
+## 2026-05-27 — Re-processed
+
+- **2026-05-27 "Environmental Quote Management is perfect. No questions allowed."** — Previously in _Unmatched. Re-routed to Meeting Notes/Stitch/Cretelligent/ based on CREtelligent keywords (environmental quote management, rollup, Andrew, Obed). Note: meeting also contains personal CPA consultation content (Jace/WCG) unrelated to CREtelligent — routed to primary project match.
