@@ -270,3 +270,5 @@
 
 - [2026-05-27 14:30 CT] "Stitch // CREtelligent - Weekly Refinement & Planning" → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Weekly Refinement and Planning.md · confidence: high · match: keyword (title contains "Stitch", "CREtelligent")
 - [2026-05-27 14:30 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/Stitch/Cretelligent/2026-05-27 - Environmental Quote Management is perfect No questions allowed.md · confidence: high · match: keyword (environmental quote, rollup, Andrew Porter, Obed references) · note: re-processed from _Unmatched (previously routed as _unmatched; summary populated with Granola content; CREtelligent keywords + contacts now matched)
+
+- [2026-05-27 16:00 CT] SCHEDULED RUN — 10 meetings found for this_week, 0 new. All already filed: 6× Stitch/Cretelligent (2 standups, 1 refinement, 1 quote mgmt, 1 Mac/Obed, 1 prior standup), 2× High Meadows/MAI (DSUs), 1× High Meadows/Cetera (Keystone standup), 1× Modern Stack Systems (AI Office Hours), 1× High Meadows/HMS-Capacity-Planning (Meadow). No re-process exceptions triggered. _Unmatched/: 4 items from May 13-15 (unchanged).
