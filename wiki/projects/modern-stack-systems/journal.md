@@ -22,6 +22,22 @@ No new Mac commitments identified.
 
 *(Source: `Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md`)*
 
+AI Office Hours (May 19): Second Brain tooling updates, Meadow UAT progress, business pipeline, QA tool concept, personal finance app, Anthropic certification.
+
+**Second Brain & AI tooling:** Second Brain refactoring completed using Claude materials. Sunday lint schedule now running weekly (last ran May 17). Automatically fixes corrupted files — weekly maintenance cycle established. Anthropic partnership certification starting — Mac needs to redo training due to mixed email restrictions (personal account training not transferable). 2-3 hours estimated (4 modules covering prompt caching, evaluation, MCP tool calls).
+
+**Meadow UAT progress:** All UAT feedback addressed and fixed. Test scripts regenerated and shared in channel. User setup completed for testing team. Sean to update users to manager level for project sign-in testing. Admin testing phase planned after manager testing. Dark mode UI improvements implemented. Phase 2 planning: Salesforce integration, dashboard enhancements, data purge needed before rollout.
+
+**Business pipeline:** Loftware proposal submitted — decision expected this week. Timeline pressure communicated to client (end-of-year launch target). Credence and other firms still pending responses. MAI nearing completion — pre-go-live cleanup in progress, multiple additional phases likely. Internal tooling opportunities identified.
+
+**QA tool concept:** Proposed automated QA solution for Salesforce and external systems — similar to Copado's $1K/month robotics testing. Bot-based testing with user personas. Would reduce ticket flip-flopping issues seen on MAI. QA role shifts from testing to test script writing. Discussion planned for post-vacation.
+
+**Personal finance app & RIA opportunity:** Personal budgeting app in development — multi-account aggregation view (Chase, investments, loans, savings). Potential RIA client tool opportunity — could offer as advisor benefit. Similar to TrueBill/Rocket model. Goal-setting integration for advisor-client collaboration.
+
+**Travel:** Mac leaving for Brussels, returning May 27 (took day off for jet lag). Two-week Lithuania trip in August for father-in-law's birthday. Full Randall system walkthrough scheduled for next Thursday.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-19 - AI Office Hours.md`)*
+
 ---
 
 

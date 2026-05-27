@@ -49,6 +49,17 @@ Fix: Mac adopted a shared "UAT Deployment Collaboration" Google Doc and committe
 
 Source: [[mai]] journal, Apr 17 2026
 
+### Cetera — Standup-Before-UAT-Handoff (2026)
+When Jared's team was designated as the UAT validation group for Project Keystone, the team introduced a mandatory standup review step before any UAT deliverables were handed off. The process:
+
+1. Mark items as "ready for UAT" only after internal testing complete.
+2. Review assumptions in standup before handoff — quick validation that terminology aligns across workstreams and anticipated questions from Jared's team are pre-addressed.
+3. Provide testing write-ups based on internal testing methods alongside the deliverables.
+
+This variant addresses a different failure mode than the MAI deployment log: not developer overwrites, but **assumption misalignment** between the build team and the UAT team. Particularly valuable when the UAT team operates in a different workstream with its own terminology and context.
+
+Source: [[cetera]] journal, May 18 2026
+
 ## Implementation Notes
 
 - Google Docs works well for small teams (real-time, low friction, searchable)
@@ -57,10 +68,12 @@ Source: [[mai]] journal, Apr 17 2026
 - This pattern complements (not replaces) proper source control; it solves the "sandbox as shared state" visibility gap
 
 ## Related Pages
-- [[mai]] — primary implementation
+- [[mai]] — primary implementation (deployment log)
+- [[cetera]] — standup-before-handoff variant
+- [[salesforce-field-capacity-management]] — field capacity should be on deployment checklist
 - [[json-deserialize-refactor]] — related Apex development pattern
 - [[site-product-joiner]] — related data model pattern
 
 ---
-*Created: 2026-04-22*
-*Sources: Meeting Notes/High Meadows/MAI/2026-04-17 - MAI Dev DSU.md*
+*Created: 2026-04-22 · Updated: 2026-05-26*
+*Sources: Meeting Notes/High Meadows/MAI/2026-04-17 - MAI Dev DSU.md, Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md*

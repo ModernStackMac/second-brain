@@ -13,6 +13,8 @@ Meadow is High Meadows' internal capacity planning and time tracking application
 
 ## Current State
 
+**UAT Status (as of 2026-05-19):** All UAT feedback addressed and fixed. Test scripts regenerated and shared. User setup complete for testing team. Currently in manager-level testing phase (Sean updating users). Admin testing phase next. Dark mode UI improvements implemented. Phase 2 planned: Salesforce integration, dashboard enhancements, data purge before rollout.
+
 **Database Schema** (11 tables)
 - Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, ActionItems, NotionSyncLog, ExportTemplates, ProjectResources
 

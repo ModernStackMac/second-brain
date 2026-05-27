@@ -1,5 +1,84 @@
 # Wiki Log
 
+## [2026-05-27] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since last ingest (2026-05-19). All meeting notes through May 19 remain fully processed. No new articles or project docs.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 178 entries, under 200 threshold.
+- Key takeaways: Tuesday scan — Mac's first day back from Brussels. No new Fathom meeting notes have landed yet. Expect new sources as meetings resume today.
+
+## [2026-05-26] scheduled-ingest | No new sources (overnight run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since earlier scans today. All meeting notes through May 19 remain fully processed. No new articles or project docs.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 176 entries, under 200 threshold.
+- Key takeaways: Tuesday overnight scan. Mac returns from Brussels May 27. Expect new meeting notes to land Tuesday/Wednesday as meetings resume.
+
+## [2026-05-26] scheduled-ingest | No new sources (late night run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since earlier scans today. All meeting notes through May 19 remain fully processed. No new articles or project docs.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 175 entries, under 200 threshold.
+- Key takeaways: Monday late night scan. Mac OOO in Brussels through May 27. Week-long gap in meeting notes (May 20–26) expected. Next sources likely Tuesday May 27 when meetings resume.
+
+## [2026-05-26] scheduled-ingest | No new sources (evening run)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since earlier scan today. All meeting notes through May 19 remain fully processed. No new articles or project docs.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 174 entries, under 200 threshold. No rotation needed.
+- Key takeaways: Monday evening scan. Mac OOO in Brussels through May 27. Week-long gap in meeting notes (May 20–26) expected. Next sources likely Tuesday May 27 when meetings resume.
+
+## [2026-05-26] lint | Weekly Health Check
+- Pages scanned: 106
+- Issues: 8 critical, 10 recommended, 3 informational
+- Auto-fixed: none (all critical issues require manual review due to blast radius)
+- Report: wiki/lint-report.md
+- Key findings: 11 unmapped project folders in project-mapping.md (persistent since prior lints — only mai/cetera/lnw/internal-meadow/internal-flex-dash are mapped). 80+ broken bare-slug wiki-links (`[[harvey]]` etc.) remain the biggest structural debt. Deprecated `f2-cetera` alias still in cetera/overview.md. Empty top-level `wiki/projects/flex-dash/` still present. Missing `reports/mai-project-overview.md`. 5 journals missing all required frontmatter. Index.md claims 61 pages but vault has 106.
+
+## [2026-05-26] ingest | Corrective log — 7 missing source attributions from May 19 run
+- Note: The 2026-05-19 ingest processed 10 sources but only logged 3 in its Source section. Journals, commitments, and decision log were all correctly updated at the time. This entry retroactively logs the 7 missing sources.
+- Sources:
+  - `Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md`
+  - `Meeting Notes/High Meadows/LNW/2026-05-18 - LNW CA Check In.md`
+  - `Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md`
+  - `Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-18 - Internal CREtelligent Weekly Sync.md`
+  - `Meeting Notes/Stitch/Cretelligent/2026-05-19 - Stitch CREtelligent - Daily Dev Standup.md` — empty Granola stub (no summary, no transcript)
+  - `Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md` — routed to modern-stack-systems (AD client Agentforce opportunity, MSS business development)
+- Pages updated (by May 19 run, retroactively attributed):
+  - `wiki/projects/cetera/journal.md` — Week of May 18: Jira item creation, UAT coordination process, parallel workstreams
+  - `wiki/projects/lnw/journal.md` — Week of May 18: sprint status pre-OOO, inline editing feature request (~5 points)
+  - `wiki/projects/mai/journal.md` — Week of May 18: David Torsack comms issue, annual fee/type/fund name ticket resolutions, lookup field limit crisis (41/40 in prod)
+  - `wiki/projects/modern-stack-systems/journal.md` — Week of May 18: Blink pricing validated, Andrew side biz $3-4M projection, Thunder rejection, Lindsay project opp ($175/hr), AD Agentforce managed services pitch (20-30 hrs)
+  - `wiki/projects/cretelligent/journal.md` — Week of May 18: all Mac stories blocked on API endpoints, priority pivot to Environment Task Group Grid Component, Mac OOO Wed-Tue
+- Pages created: none
+- Commitments added (by May 19 run): Cetera work list by Wednesday + Jira items by Friday, LNW inline editing investigation, CREtelligent grid component build, MAI activity display changes
+- Decisions logged (by May 19 run): MAI type field consolidation (use "type" not "type__c"), MAI fund name "(requested)" label, MAI annual fee no-delete, Cetera UAT standup-before-handoff process, MSS AD Agentforce internal-pilot-first recommendation
+- Re-route noted: `Meeting Notes/Modern Stack Systems/Blink Payments/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md` — file moved from `_Unmatched/` to `Blink Payments/` subfolder. Already fully processed under original path in May 11 ingest. No re-processing needed.
+- Patterns extracted: none new (see Step 3 below)
+- Key takeaways: May 18 was a heavy meeting day across all active projects. Mac departing for Brussels May 19 with return May 27. All projects in varying degrees of pre-OOO handoff mode. MAI hitting Salesforce platform limits (lookup fields). CREtelligent entirely blocked on external API delivery.
+
+## [2026-05-26] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders: Stand8/Harvey, Stand8/Litify, Stand8/NBCU, High Meadows/Cetera, High Meadows/HMS-Capacity-Planning, High Meadows/Internal/*, High Meadows/LNW, High Meadows/Lefavi, High Meadows/Loftware, High Meadows/MAI, Stitch/Cretelligent, Modern Stack Systems, Modern Stack Systems/Blink Payments, Modern Stack Systems/Cartier, _Unmatched), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources found since last ingest (2026-05-19). No meeting notes from May 20–26, no new articles, no new project docs.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Commitments Done section empty — no archival needed. Log at 172 entries, under 200 threshold.
+- Key takeaways: Monday scan. Week-long gap in meeting notes (May 20–26). Vault fully current through May 19 content.
+
+## [2026-05-19] ingest | 3 meeting notes (May 15, 19) + commitment housekeeping
+- Sources:
+  - `Meeting Notes/High Meadows/MAI/2026-05-15 - MAI Dev DSU.md`
+  - `Meeting Notes/Modern Stack Systems/2026-05-19 - AI Office Hours.md`
+  - `Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup.md` (routed to Cartier)
+- Pages updated: `wiki/projects/mai/journal.md`, `wiki/projects/modern-stack-systems/journal.md`, `wiki/projects/cartier/journal.md`, `wiki/projects/internal/meadow/overview.md` (UAT status), `wiki/patterns/einstein-dual-capture.md` (Cirrus auto-attach + attachment ordering considerations)
+- Pages created: none
+- Commitments added: 5 (MAI: activity display changes; Cartier: attachment ordering fix + signature image exclusion test; MSS: Anthropic certification + Randall walkthrough)
+- Commitments relocated: 4 items moved from Done → correct Open sections (LNW inline editing, Cetera work list + Jira items, CREtelligent grid component)
+- Decisions logged: 3 (MAI: activity display approach; Cartier: attachment sort order preference + Cirrus auto-attach disable)
+- Patterns extracted: reinforced [[einstein-dual-capture]] (Cirrus duplicate issue + attachment ordering)
+- Maintenance: Obsidian REST API offline — used direct file access fallback. Log exceeds 200 entries but all within 90 days — no rotation candidates.
+- Key takeaways: May 15 MAI DSU landed late (Granola backfill). AI Office Hours confirms Meadow UAT on track (phase 2 planning: SF integration, dashboards), Loftware decision imminent, Mac OOO until May 27. Cartier email integration hitting Cirrus duplicate issue — disable auto-attach is the fix.
+
 ## [2026-05-19] ingest | 6 meeting notes (May 18-19)
 - Sources:
   - `Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md`
@@ -2621,3 +2700,86 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - Pattern extraction: Skipped (no new journal updates).
 - Maintenance: Commitments Done section empty — no archival needed. Log at 168 entries, under 200 threshold.
 - Key takeaways: Monday scan. Vault current through May 14 substantive content. Weekend + Monday gap likely means notes will land later today or tomorrow as Fathom/Granola processes recordings.
+
+## [2026-05-27] scheduled-ingest | Corrective log for 10 sources (processed by May 26 run, never logged)
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-15 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md` (Week of May 12 section)
+  - Commitments added: 1 (complete activity display functionality changes)
+  - Decisions logged: 1 (activity display: combine what ID with meeting relations)
+  - Patterns extracted: none
+  - Key takeaways: Case closure blocked by billing tasks, Salesforce replacing email notifications. Fund account naming confusion across teams (3+ competing terms for same concept). Activity display enhancement — combine what ID with meeting relations for full history.
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-18 - MAI Dev DSU.md`
+  - Pages updated: `wiki/projects/mai/journal.md` (Week of May 18 section)
+  - Commitments added: 0 (next steps assigned to Santa, team, Brian — not Mac-specific)
+  - Decisions logged: 3 (type field consolidation 1564, fund name labeling 1470, annual fee fields no-delete 1563)
+  - Patterns extracted: none → see salesforce-field-capacity-management below
+  - Key takeaways: David Torsack communication alignment, 3 ticket resolutions, Salesforce lookup field limit crisis (41/40 in prod, 48/50 in UAT). Mac needs more stories assigned.
+
+- Source: `Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up.md`
+  - Pages updated: `wiki/projects/cetera/journal.md` (Week of May 18 section)
+  - Commitments added: 2 (deliver work list by Wednesday, complete Jira items + UAT marking by Friday)
+  - Decisions logged: 1 (standup review before UAT handoffs)
+  - Patterns extracted: none → see uat-deployment-coordination update
+  - Key takeaways: Jira item creation in progress, two dev paths active (Connor parallel), UAT coordination process improvement — standup reviews before handoffs.
+
+- Source: `Meeting Notes/High Meadows/LNW/2026-05-18 - LNW CA Check In.md`
+  - Pages updated: `wiki/projects/lnw/journal.md` (Week of May 18 section)
+  - Commitments added: 2 (complete task rollback, investigate inline editing complexity)
+  - Decisions logged: 0
+  - Patterns extracted: none
+  - Key takeaways: Validation testing clean so far. Mac OOO May 19, sprint ends May 30/31. New inline editing feature request (~5 pts) — likely deferred. Tight timeline: worst case finish by Tue gives 3 days for testing.
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac.md`
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md` (Week of May 18 section)
+  - Commitments added: 0 (no firm Mac commitments — business dev items are contingent)
+  - Decisions logged: 0
+  - Patterns extracted: none
+  - Key takeaways: Blink pricing/discount implementation validated and ready for client review. Andrew's side business at $150K/month recurring. Thunder contract rejection. New Lindsay project opportunity ($175/hr, dealer portal rebuild).
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-19 - AI Office Hours.md`
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md` (Week of May 18 section)
+  - Commitments added: 1 (complete Anthropic certification during flight)
+  - Decisions logged: 0
+  - Patterns extracted: none
+  - Key takeaways: Second Brain lint running weekly. Anthropic partnership certification starting (4 modules, 2-3 hrs). Meadow UAT feedback addressed, Phase 2 planning. Loftware decision expected this week. QA tool concept (Copado alternative). Personal finance app + RIA opportunity. Mac back May 27, Lithuania Aug.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-18 - Internal CREtelligent Weekly Sync.md`
+  - Pages updated: `wiki/projects/cretelligent/journal.md` (Week of May 18 section)
+  - Commitments added: 1 (build Environment Task Group Grid Component)
+  - Decisions logged: 0
+  - Patterns extracted: none
+  - Key takeaways: Proposal templates finalized. All Mac stories blocked on external API endpoints. Priority pivot to Enviro Task Group Grid Component (color-coded alerts, PM filter). Mac OOO Wed-Tue. No main branch commits during absence.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-19 - Stitch CREtelligent - Daily Dev Standup.md`
+  - Pages updated: none (empty Granola stub — no summary or transcript)
+  - Commitments added: 0
+  - Decisions logged: 0
+  - Patterns extracted: none
+  - Key takeaways: Empty recording, no actionable content.
+
+- Source: `Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp.md` (re-confirmed)
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md` (previously processed and logged on 2026-05-14 after Granola backfill; re-confirmed present in Week of May 11 continued section)
+  - Note: This source was already logged on 2026-05-14 after Granola backfilled the summary. Confirmed content intact.
+
+- Source: `Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup.md`
+  - Pages updated: `wiki/projects/cartier/journal.md` (routed to Cartier per email attachment context)
+  - Commitments added: 2 (deploy attachment ordering fix, test signature image exclusion)
+  - Decisions logged: 2 (reverse sort for attachment ordering, disable Cirrus auto-attach)
+  - Patterns extracted: none
+  - Key takeaways: Signature images (image001.png) displaying before documents — reverse sort preferred over filename exclusion. Cirrus auto-attach creating duplicates — switching to manual/on-command mode.
+
+- File re-route noted: `Meeting Notes/Modern Stack Systems/Blink Payments/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md` — re-filed from `_Unmatched/` (processed on 2026-05-11). No re-processing needed.
+
+- Pattern pages created/updated by May 26 run:
+  - Created: `wiki/patterns/salesforce-field-capacity-management.md` — proactive field/lookup limit monitoring. Applied in MAI (41/40 production lookup crisis).
+  - Updated: `wiki/patterns/uat-deployment-coordination.md` — added Cetera standup-before-handoff variant.
+
+- Maintenance: Commitments Done section empty — no archival needed. Log exceeds 200 entries — rotation recommended on next lint pass.
+
+## [2026-05-27] scheduled-ingest | No new sources
+- Source: Scheduled scan of Meeting Notes/, raw/articles/, raw/projects/
+- All 118 meeting notes, 8 articles, and 3 project docs confirmed already logged.
+- Key takeaways: Vault fully caught up. No new meetings since 2026-05-19. Next ingest will likely pick up activity from the current week.
+

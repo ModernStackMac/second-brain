@@ -1,12 +1,26 @@
 ---
 type: project-journal
 project: cartier
-updated: 2026-05-14
+updated: 2026-05-19
 ---
 
 # Cartier — Project Journal
 
 ## Week of May 12, 2026
+
+Salesforce Attachments — Image Ordering and Cirrus Duplicate Cleanup (May 15): Attachment display ordering fix, signature image filtering, Cirrus duplicate resolution.
+
+**Attachment display issues:** Two problems identified: (1) Signature images (image001.png, image002.png) appearing as attachments, (2) Images showing before actual document attachments. Solution: reverse sort order to show documents first, keep images at bottom. Excluding by filename considered too risky — might block legitimate attachments.
+
+**Cirrus duplicate emails:** Cirrus plugin creating duplicate entries due to automatic email attachment feature still being enabled. Resolution: contact Cirrus support to disable auto-attach, switch to manual/on-command attachment process, maintain existing Cirrus functionality otherwise.
+
+**Technical notes:** Screenshot naming convention standard across Mac systems (image_001.png format). Microsoft Outlook attachment handling causes issues with image files. UTC timezone conversion working properly.
+
+**Next steps:** Mac deploying attachment ordering fix. Mac testing signature image exclusion (low risk given standard naming). Client contacting Cirrus to disable automatic email attachment. Follow-up testing planned within one week.
+
+*(Source: `Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup.md`)*
+
+---
 
 Einstein Activity Capture Production Deployment (May 14, w/ Dan): Testing verified, production deployment in progress, user authentication walkthrough.
 

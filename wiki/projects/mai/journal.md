@@ -36,6 +36,20 @@ MAI Dev DSU (May 18): David Torsack communication alignment, annual fee field re
 
 ## Week of May 12, 2026
 
+MAI Dev DSU (May 15): Case closure billing blockers, fund account naming confusion, activity display enhancement, Jira workflow alignment.
+
+**Case management & billing:** Email notification system working but case closure blocked by incomplete billing tasks. Account closure technically possible but task completion still required. Salesforce notifications replacing legacy email system — David Torsack handling transition. Legacy email notification ticket can be closed. Jira usage discussion needed with dev team — no single dev resource assigned; completed work should be marked done, not canceled.
+
+**Fund account naming confusion:** Multiple conflicting naming conventions causing confusion: fund account vs financial account record types, "investment entity" terminology introduced recently, "client account title" story just received. Record type only created one month ago. Different teams using different terms for the same concept. Filter approval requirements tied to account number field — field still needed despite naming changes; fund account number should populate even if not used for name.
+
+**Activity display enhancement:** Current system shows activities where selected account ID equals what ID. Requested change: show activities from both what ID and meeting relations (historical items not in meeting relations need inclusion). Solution: combine what ID with meeting relations related account IDs. L&W-specific implementation concerns — data model may not transfer easily to other accounts, but similar model will be prescribed for future clients. Less customization anticipated than initially expected.
+
+**Next steps:** Mac completing activity display functionality changes. Team scheduling Jira usage discussion with development.
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-15 - MAI Dev DSU.md`)*
+
+---
+
 MAI Dev DSU (May 14): Hardware issues resolved, 4 simultaneous projects, ticket updates, production testing gap, code freeze May 23.
 
 **Ticket progress:** Ticket 1530 passed to UAT (Brian Gallagher). Ticket 1529 confirmed good — error no longer reproducible. Ticket 1502 resolved (bank field mapping — changed from text to picklist, now mapping correctly to case). Ticket 1432 awaiting guidelines from Ryan. Ticket 1271 still open, needs follow-up with Justin — moved to blocked.

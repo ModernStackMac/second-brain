@@ -24,6 +24,8 @@ Run both systems in parallel with clear routing rules:
 - Outgoing email attachment functionality is not guaranteed — test per environment
 - Need coordination with email administrators for forwarding rule updates
 - Each production environment needs its own unique email service address
+- **Cirrus auto-attach creates duplicates** — if the secondary tool has automatic email attachment enabled, it will duplicate entries already captured by EAC. Resolution: disable auto-attach in the secondary tool, switch to manual/on-command attachment mode (May 2026, Cartier)
+- **Attachment display ordering** — signature images (image001.png, etc.) may appear before document attachments. Prefer reverse sort order over filename exclusion (filename exclusion risks blocking legitimate attachments)
 
 ## Applied In
 - [[cartier]] — Chad Cartier's team using EAC + Cirrus (May 2026)

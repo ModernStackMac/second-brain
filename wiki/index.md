@@ -37,6 +37,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[job-function-permission-sets]] — Align Salesforce permission sets to job functions (3–5 groups) instead of per-record-type or per-feature. Applied in Cetera.
 - [[einstein-dual-capture]] — Run Einstein Activity Capture for known contacts alongside a secondary email tool (Cirrus) for external sources. Applied in Cartier.
 - [[data-cloud-bulk-processing]] — Process high-volume Data Cloud ingestion into Salesforce objects using record-triggered flows and Apex queueable classes in 500-record batches. Applied in Blink Payments.
+- [[salesforce-field-capacity-management]] — Proactive monitoring and governance of custom field/lookup limits. Includes audit process, justification reviews, and architecture alternatives. Applied in MAI.
 
 ## Tools
 
@@ -125,3 +126,9 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 
 **Note (2026-05-11, ingest):** Processed 4 new meeting notes from today: MAI Dev DSU (backlog nearly empty, field capacity crunch — 3 custom fields remaining, 0 lookups), LNW CA Check In (family story ticket velocity, new search filter reload bug, Mac OOO Wed-Fri next week for Barcelona), Cetera Project Keystone (Plan Participants descoped for manual sync — keeping eMoney plumbing, RedTail integration local dev kicking off), CREtelligent Internal Weekly Sync (empty — no Granola summary). 2 commitments added, 2 decisions logged. No new patterns.
+
+
+**Note (2026-05-26, ingest):** Corrective log for 7 sources processed by the May 19 run but not logged (Cetera May 18, LNW May 18, MAI May 18, MSS May 18, CRE May 18+19, AD Agentforce Opp May 13). New pattern page: [[salesforce-field-capacity-management]] — proactive field/lookup limit monitoring, applied in MAI (41/40 lookup crisis). Updated: [[uat-deployment-coordination]] with Cetera standup-before-handoff variant. Blink Payments file re-route noted (_Unmatched → Blink Payments subfolder, no re-processing).
+
+
+**Note (2026-05-27, ingest):** Corrective log written for 10 sources processed by the May 26 run but never logged in log.md. Sources: MAI May 15 + May 18, Cetera May 18, LNW May 18, MSS May 18 + May 19 (AI Office Hours), CREtelligent May 18 + May 19 (empty stub), AD Agentforce Opp May 13 (re-confirmed), Salesforce Attachments May 15 (routed to Cartier). Blink Payments file re-route noted (_Unmatched → Blink Payments subfolder). Pattern extraction: no new patterns — previous run already created [[salesforce-field-capacity-management]] and updated [[uat-deployment-coordination]] + [[einstein-dual-capture]]. MAI naming fragmentation (fund account / financial account / investment entity / client account title) flagged for future monitoring. No maintenance actions needed (Done empty, log at 178 entries).
