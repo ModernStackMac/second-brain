@@ -69,3 +69,5 @@
 [2026-05-19T16:00:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI workspace/key listed as TBD)
 [2026-05-19T16:00:00-05:00] LINEAR SKIPPED — Linear MCP requires OAuth authentication; user not present. Meadow and Flex Dash stories not fetched.
 [2026-05-19T16:00:00-05:00] NOTE — MAI-1562 "Fund Assignment - Remove Assign To Account Name" no longer returned by active Jira query (likely completed/closed since last sync).
+
+[2026-05-27T14:30:00-05:00] Linear workspaces (high-meadow-solutions) skipped — Linear MCP not authenticated. User must complete OAuth to include Linear stories in sync.
