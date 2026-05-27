@@ -71,3 +71,5 @@
 [2026-05-19T16:00:00-05:00] NOTE — MAI-1562 "Fund Assignment - Remove Assign To Account Name" no longer returned by active Jira query (likely completed/closed since last sync).
 
 [2026-05-27T14:30:00-05:00] Linear workspaces (high-meadow-solutions) skipped — Linear MCP not authenticated. User must complete OAuth to include Linear stories in sync.
+
+[2026-05-27T20:15:00-05:00] LINEAR UNAVAILABLE — Linear MCP requires OAuth authentication; user not present for scheduled run. Workspaces MSS and high-meadow-solutions were not synced this run.
