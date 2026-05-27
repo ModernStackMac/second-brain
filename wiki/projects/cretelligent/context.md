@@ -108,3 +108,27 @@ Cost worksheet references site product directly (no product lookup field). Auto-
 **Document object fields:** Document types enum (proposal PDF, completed report, etc.) — enum values to be shared by OT. Visibility boolean field (true/false). User email for auditing (defaults to `salesforce@cretelligent.com`).
 
 **Site verification links:** URL format: `projects/[project_ID]` for direct site page access. Staging vs production environment URL differences still need discussion.
+
+
+## Proposal Template & Acceptance (added 2026-05-27)
+
+**Conga template:** Replicates Radius proposal design — cover page, proposal details, site information with maps, dynamic content based on site products. Maps pull from document records (queries most recent doc with correct type field). Product ordering alphabetical as placeholder. Scopes of work and special terms stored as HTML in long text area fields at product level. Automatic deduplication when multiple products share same scope.
+
+**Acceptance workflow:** No e-signature currently implemented. Manual process (download, sign, upload). Enhancement needed: datetime field for "ready to kick off" status. Order ID indicates acceptance vs Proposal ID for pending. DocuSign/PandaDoc previously evaluated, deferred.
+
+## Turnkey Calculator Logic (added 2026-05-27)
+
+Based on `verified_land_use` field from site verification:
+- **ESA/TSA:** Site visit only when shopping mall AND <200 acres AND <100k sq ft building. Otherwise turnkey.
+- **PCA:** Always turnkey.
+- **All other products:** Default turnkey.
+- `staffing_strategy` field drives designation: local / milk run / site visit only / turnkey.
+- SV-only scenarios: PA costs split between site visit and report writing.
+
+## Click Quote Products (confirmed 2026-05-27)
+
+Five supported products: Survey, ESA, ESA with Enhanced File Review, PCA, TSA. Everything else requires manual pricing workflow. Zoning reports have list prices (no click quote needed).
+
+## Vendor Management Integration (added 2026-05-27)
+
+Connect API vendor lists per site location require lat/long (from Regrid GeoJSON format). Rainier building order service API endpoints. Teams notification needed for local office assignments (researching Teams API connector vs email-to-channel). 15-minute delay acceptable.

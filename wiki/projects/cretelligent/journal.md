@@ -585,3 +585,30 @@ Internal Team Sync (Apr 21, w/ Andrew Porter + Obed Labra-Pelaez): status check 
 
 *(Source: `Meeting Notes/Stitch/Cretelligent/2026-04-21 - INTERNAL CREtelligent Team Sync.md`)*
 
+
+
+---
+
+Weekly Refinement & Planning (May 27): Proposal template demo, turnkey calculator logic defined, Connect API vendor integration scoped, proposal acceptance workflow gaps identified.
+
+**Proposal template success:** New Conga template successfully replicates Radius proposal design — cover page, proposal details, site information with maps, dynamic content based on site products (scopes of work, special terms, conditional discounts/rush flags). Map integration updated to pull from document records instead of Conga map links. Product ordering currently alphabetical as placeholder.
+
+**Scopes of work architecture:** Stored as HTML in long text area fields at product level on opportunity. Automatic deduplication when multiple products share same scope. Dynamic rendering based on site products added to opportunity. Page overflow handling available via table grouping settings — needs stress testing with multi-site scenarios.
+
+**Proposal acceptance gap:** No electronic signature capability currently. Manual process (download, sign, upload). Enhancement needed: datetime field for "ready to kick off" status. Order ID indicates acceptance vs proposal ID for pending. DocuSign/PandaDoc previously evaluated but deferred.
+
+**Turnkey calculator defined:** Logic based on verified land use field from site verification. ESA/TSA: site visit only when shopping mall + <200 acres + <100k sq ft building, otherwise turnkey. PCA always turnkey. All other products default turnkey. Staffing strategy field drives local/milk run/site visit only/turnkey designation. Pricing splits PA costs between site visit and report writing for SV-only scenarios.
+
+**Cost worksheet clarity:** Manual products (consult type) default zero sell price. PA estimates populate for review/adjustment. Validation: can't move to "Ready for Kickoff" without initials and non-null suggested sales price. Click quote products confirmed: Survey, ESA, ESA with enhanced file review, PCA, TSA (5 total). Everything else requires manual pricing.
+
+**Connect API vendor integration:** Vendor lists per site location require lat/long coordinates (available from Regrid in GeoJSON format). Rainier building order service API endpoints. Teams notification system needed for local office assignments — research required for Teams API connector vs email-to-channel option. 15-minute delay acceptable.
+
+**System validation guardrails:** Proposal acceptance prevention (no kickoff without signed proposal). Historical vs forward-looking scope: product-level edits apply to future proposals only, existing opportunities maintain snapshot of original terms. Site verification fields required for ESA/PCA orders from Radius.
+
+**Decisions:**
+- Proposal acceptance signal: datetime field + Order ID vs Proposal ID distinction
+- Turnkey calculator: verified land use-based conditional logic (ESA/TSA/PCA rules)
+- Historical scope isolation: product edits future-only, existing opps snapshot
+- Connect API vendor integration: lat/long from Regrid GeoJSON
+
+*(Source: `Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Weekly Refinement and Planning.md`)*
