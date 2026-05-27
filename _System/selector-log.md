@@ -265,3 +265,5 @@
 
 - [2026-05-27 12:00 CT] "Meadow" → Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow.md · confidence: high · match: keyword
 - [2026-05-27 12:00 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/_Unmatched/2026-05-27 - Environmental Quote Management is perfect No questions allowed.md · confidence: none · match: fallback
+
+- [2026-05-27 12:15 CT] "Environmental Quote Management is perfect. No questions allowed." → Meeting Notes/_Unmatched/ · confidence: none · match: fallback (re-processed: had "No AI summary available", now populated with Granola summary; mixed content — CREtelligent dev work + personal CPA consultation; no project-mapping match)

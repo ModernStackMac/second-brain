@@ -61,3 +61,5 @@
 - **Action:** Add attendee or keyword mapping to `project-mapping.md` once the client is identified. Content suggests a client meeting (references "Client: Contact Cirrus") but no client attendee was captured by Granola.
 
 | 2026-05-27 | Environmental Quote Management is perfect. No questions allowed. | Mac Nosek | Possible CREtelligent/Stitch (environmental keyword), but no project-mapping.md entry exists for Stitch/CREtelligent |
+
+- **2026-05-27** | "Environmental Quote Management is perfect. No questions allowed." | Attendees: Mac Nosek | Mixed content: CREtelligent environmental quote management review + personal CPA consultation (WCG). Suggested candidates: Stitch/Cretelligent (env quote mgmt, rollup issues, LWCs) or split into two notes.
