@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-05-28T17:00:00-05:00
+updated: 2026-05-28T21:00:00-05:00
 total_active: 15
 ---
 
@@ -24,4 +24,4 @@ total_active: 15
 | Flex Dash | IP-1 | Dynamic Dashboard Filtering | Backlog | Medium | — | 2026-05-02 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-1) |
 | Flex Dash | IP-7 | Apex Class to set up FSC Test Data | Backlog | Medium | — | 2026-03-05 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-7) |
 
-> [!note] Linear stories carried forward from last sync — no Linear query tools available in this session (only auth/connect tools present). Linear stories unchanged from prior sync.
+> [!note] Linear stories carried forward — Linear MCP requires authentication (user not present for scheduled run). Linear stories unchanged from prior sync (2026-05-18).
