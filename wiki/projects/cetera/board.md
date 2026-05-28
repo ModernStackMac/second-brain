@@ -1,7 +1,8 @@
 ---
 kanban-plugin: basic
+type: board
 project: cetera
-updated: 2026-05-27T19:00:00-05:00
+updated: 2026-05-28T12:00:00-05:00
 ---
 
 # Cetera — Board
@@ -14,7 +15,8 @@ updated: 2026-05-27T19:00:00-05:00
 
 ## In Progress
 
-- [ ] CET-110 Case / TRPG Work Desk Alignment 🟡
+- CET-110 Case / TRPG Work Desk Alignment 🟡
+
 
 ## Review
 
