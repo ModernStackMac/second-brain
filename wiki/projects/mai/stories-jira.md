@@ -3,11 +3,13 @@ type: stories-sync
 project: mai
 workspace: jira
 jira_project_key: MAI
-updated: 2026-05-28T14:30:00-05:00
-story_count: "3"
+updated: 2026-05-28T17:00:00-05:00
+story_count: 4
 ---
 
 # MAI CRM Build — Jira Stories
+
+[Jira-MAI-1604] PROD: the custom component on the home page is not filtering past events [Status:: New] [Priority:: Medium] [Updated:: 2026-05-28] · parent: General Setup (MAI-99) · [Jira](https://f2strategy.atlassian.net/browse/MAI-1604)
 
 [Jira-MAI-1593] Case Owner keeps autopopulating MCP [Status:: Developer Review] [Priority:: High] [Updated:: 2026-05-28] · parent: — · [Jira](https://f2strategy.atlassian.net/browse/MAI-1593)
 

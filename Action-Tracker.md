@@ -1,13 +1,14 @@
 ---
 type: action-tracker
-updated: 2026-05-28T14:30:00-05:00
-total_active: "14"
+updated: 2026-05-28T17:00:00-05:00
+total_active: 15
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
+| MAI CRM Build | MAI-1604 | PROD: custom component not filtering past events | New | Medium | — | 2026-05-28 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1604) |
 | MAI CRM Build | MAI-1593 | Case Owner keeps autopopulating MCP | Developer Review | High | — | 2026-05-28 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1593) |
 | MAI CRM Build | MAI-1614 | Fund Assignment: Assignee contact search bug | Active | High | — | 2026-05-27 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1614) |
 | MAI CRM Build | MAI-1292 | Hide remaining FA Type picklist values | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
@@ -23,4 +24,4 @@ total_active: "14"
 | Flex Dash | IP-1 | Dynamic Dashboard Filtering | Backlog | Medium | — | 2026-05-02 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-1) |
 | Flex Dash | IP-7 | Apex Class to set up FSC Test Data | Backlog | Medium | — | 2026-03-05 | [Linear](https://linear.app/high-meadow-solutions/issue/IP-7) |
 
-> [!note] Linear stories carried forward from last sync (2026-05-13) — Linear plugin requires OAuth re-authentication (no user present for automated task).
+> [!note] Linear stories carried forward from last sync — no Linear query tools available in this session (only auth/connect tools present). Linear stories unchanged from prior sync.

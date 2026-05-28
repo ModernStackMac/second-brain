@@ -2,13 +2,14 @@
 kanban-plugin: basic
 type: board
 project: mai
-updated: 2026-05-28T14:30:00-05:00
+updated: 2026-05-28T17:00:00-05:00
 ---
 
 # MAI CRM Build — Board
 
 ## Backlog
 
+- MAI-1604 PROD: custom component not filtering past events 🟡
 
 ## Up Next
 

@@ -75,3 +75,5 @@
 [2026-05-27T20:15:00-05:00] LINEAR UNAVAILABLE — Linear MCP requires OAuth authentication; user not present for scheduled run. Workspaces MSS and high-meadow-solutions were not synced this run.
 
 [2026-05-27T21:00:00-05:00] LINEAR SKIPPED — Linear MCP (high-meadow-solutions) not connected for queries; only auth tools available. Meadow and Flex Dash stories not fetched this run.
+
+[2026-05-28T17:00:00-05:00] workspace=linear-high-meadow-solutions project=* — Linear query tools unavailable (only auth/connect present). 6 Linear stories carried forward from prior sync without refresh.
