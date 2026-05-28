@@ -2903,3 +2903,17 @@ Reviewed both new journal entries. No new reusable patterns identified:
 - Pages updated: none
 - Patterns extracted: none
 - Key takeaways: Empty Granola stub — no summary or transcript available (requires paid tier). No wiki updates possible. Only attendee listed: Mac Nosek.
+
+## 2026-05-28T14:30 — story-sync (scheduled)
+
+**Jira (f2strategy.atlassian.net):** Fetched 9 issues across MAI, CET, LNW. 8 active, 1 archived (LNW-165 → Complete).
+**Linear (high-meadow-solutions):** Skipped — plugin requires OAuth re-auth, no user present. Carried forward 6 stories from last sync (2026-05-13).
+
+Changes this run:
+- **MAI:** Added MAI-1593 (Case Owner autopopulating MCP bug, High, Developer Review). Now 3 active stories.
+- **CET:** No changes. 1 active story.
+- **LNW:** No changes to active set. Archived LNW-165 (Design: Client Architecture POC Features → Complete).
+- **internal/meadow:** Carried forward 1 story (IP-145).
+- **internal/flex-dash:** Carried forward 5 stories.
+
+Summary: Projects synced: 5 | Stories routed: 14 | Stories unrouted: 0 | Archives written: 1
