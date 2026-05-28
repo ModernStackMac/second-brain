@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-28] lint | Mid-week Health Check
+- Issues: 17 critical, 11 recommended
+- Report: wiki/lint-report-mid.md
+- Critical: 12 unique broken bare-slug link targets (99 occurrences in content pages — persistent structural debt), `[[reports/mai-project-overview]]` still missing, deprecated `f2-cetera` alias persists in cetera/overview.md, 12 unmapped project folders in project-mapping.md, 2 stories frontmatter mismatches (internal/flex-dash + internal/meadow stories-hm.md), 1 parenthetical cross-ref heading (meadow/stories-linear.md)
+- Recommended: 7 orphan overview pages, 6 stale journals (Harvey 49d, Litify 41d, HMS Website 37d, Labs 35d, Loftware 31d, NBCU 28d), 1 non-canonical tag (`#active`), log rotation approaching (227 entries)
+- Note: Empty `wiki/projects/flex-dash/` directory persists as duplicate of `internal/flex-dash/`
+
 ## [2026-05-27] scheduled-ingest | No new sources
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: No new sources since last ingest (2026-05-19). All meeting notes through May 19 remain fully processed. No new articles or project docs.
