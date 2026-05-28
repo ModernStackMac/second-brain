@@ -230,3 +230,18 @@
 - **Pages written:** 0
 - **Pages updated:** 0
 - **Result:** No action needed. All mirrors current.
+
+## [2026-05-28T06:30:00-05:00] confluence-ingest | 1 page updated
+
+- **Spaces checked:** CE (Cetera), LN (LNW), MP (MAI Post-MVP), WB (William Blair), RW (Ritholtz Wealth)
+- **CQL window:** lastModified >= now("-7d") (2026-05-21 to 2026-05-28)
+- **Pages found in window:** 1
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Growth Engine | CE | 275972100 | 2026-05-21 | Updated — wiki/f2-internal/CE/growth-engine.md (prev last_confluence_update was 2026-04-21, page modified May 21; Jira items updated to CET-156 through CET-159, content structure unchanged) |
+
+- **Synced:** 1 (updated)
+- **Skipped (unchanged):** 0
+- **Errors:** None
+- **Notes:** Only 1 page across all 5 global spaces was modified in the last 7 days. Growth Engine page now references Jira items CET-156 through CET-159 (previously CET items were embedded as smart links). LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. Existing mirrors for app-address.md, core-salesforce-usage-alignment.md, financial-planning.md, gifts-object-alignment.md remain current (aged out of 7-day window).

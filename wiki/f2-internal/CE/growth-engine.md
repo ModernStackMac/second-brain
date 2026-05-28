@@ -3,8 +3,8 @@ type: confluence-mirror
 source_url: https://f2strategy.atlassian.net/wiki/spaces/CE/pages/275972100/Growth+Engine
 space: CE
 page_id: "275972100"
-last_synced: 2026-04-22T06:00:00Z
-last_confluence_update: 2026-04-21T22:22:00Z
+last_synced: 2026-05-28T06:30:00-05:00
+last_confluence_update: 2026-05-21T00:00:00Z
 title: Growth Engine
 ---
 
@@ -52,12 +52,19 @@ title: Growth Engine
             * Revise language to indicate support for a variety of sources
                 * Legal Counsel / other professional advisors, etc _(goal is to stay broad enough that anyone could send leads through this don't want to box this in and make it sound restrictive)_
 
+        * (See diagrams in Confluence)
+
         * Lead Conversion Logic:
             * (See diagrams in Confluence)
 
-* **Jira Items:** (See Confluence)
+* **Jira Items:**
+    * [CET-156](https://f2strategy.atlassian.net/browse/CET-156)
+    * [CET-157](https://f2strategy.atlassian.net/browse/CET-157)
+    * [CET-158](https://f2strategy.atlassian.net/browse/CET-158)
+    * [CET-159](https://f2strategy.atlassian.net/browse/CET-159)
 
-* **Data Model:** (See diagrams in Confluence)
+* **Data Model:**
+    * (See diagrams in Confluence)
 
 * **Questions / Open Items**
     * Discuss two potential optional paths for future state
@@ -166,6 +173,8 @@ TRPG uses **Person Accounts** with Financial Services Cloud. APP will adopt this
 
 ### Relationship Tracking using FSC Objects
 
+TRPG uses **Financial Services Cloud**, which provides relationship objects:
+
 **AccountAccountRelation (AAR)** - Track CPA Firm to Client Account relationships
 * Create AAR record linking CPA_Firm__c (as Account) to referred Account
 * Relationship Type: "Referral Source"
@@ -184,23 +193,25 @@ TRPG uses **Person Accounts** with Financial Services Cloud. APP will adopt this
 **Trigger**: Launched from CPA_Firm__c record or Feathery form submission
 
 **Steps**:
-1. **Screen 1**: Capture referring CPA information (Select CPA Firm + Partner)
-2. **Screen 2**: Capture referred party information (Person/Business, Name, Email, Phone, Est. AUM, Service Need)
-3. **Screen 3**: Additional context (Relationship description, Best time to contact, Notes)
+1. **Screen 1**: Capture referring CPA information (Select CPA Firm, Select CPA Partner filtered by firm)
+2. **Screen 2**: Capture referred party information (Person or Business, Name, Email, Phone, Estimated AUM, Service Need)
+3. **Screen 3**: Additional context (Relationship description, Best time to contact, Special notes)
 4. **Decision**: Person or Business?
-5. **Create Account**: Record Type = APP_Person_Referral or APP_Business_Referral
-6. **Create Lead**: Record Type = APP_Referred_Lead, Link to Account
-7. **Create Relationships**: AAR (CPA Firm to Referred Account) + ACR (CPA Partner to Referred Account)
+5. **Create Account**: Record Type = APP_Person_Referral or APP_Business_Referral, populate referral fields
+6. **Create Lead**: Record Type = APP_Referred_Lead, Link to Account via Referral_Source__c
+7. **Create Relationships**: Create AAR (CPA Firm to Referred Account) + ACR (CPA Partner to Referred Account)
 8. **Assign Lead**: Run assignment rules
-9. **Send Notifications**: Email to assigned advisor + CPA confirmation
+9. **Send Notifications**: Email to assigned advisor + Email to CPA (confirmation)
 10. **Create Task**: Follow-up task for advisor
 
 ### Flow 2: Referral Status Update (Autolaunched)
 
 **Trigger**: Lead Status changes OR Opportunity Stage changes
-* Lead converts -> Account.Referral_Status__c = "Converted"
-* Opp closes Won -> Create "Referral Success" activity
-* Opp closes Lost -> Update Referral_Status__c = "Lost"
+
+**Logic**:
+* When Lead converts -> Update Account.Referral_Status__c = "Converted"
+* When Opportunity closes Won -> Create "Referral Success" activity
+* When Opportunity closes Lost -> Update Referral_Status__c = "Lost"
 * Update rollup counters on CPA_Firm__c
 
 ### Flow 3: CPA Referral Attribution Report Generator (Scheduled - Monthly)
@@ -209,7 +220,7 @@ Queries converted referrals, calculates AUM by CPA Firm, generates CSV, emails t
 
 ### Flow 4: Referral Aging Alert (Scheduled - Daily)
 
-Finds referrals with status "New" AND Referral_Date > 3 days ago. Alerts advisor, escalates to manager after 7 days.
+Finds referrals where Referral_Status__c = "New" AND Referral_Date > 3 days ago. Alerts advisor, escalates to manager after 7 days.
 
 ### Flows 5-10: Supporting Flows
 
