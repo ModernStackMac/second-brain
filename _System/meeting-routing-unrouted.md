@@ -74,3 +74,5 @@
 - **Attendees:** Mac Nosek (mac.nosek@modernstacksystems.com), David Stott (david.stott@uptima.com)
 - **Content:** Career updates, Salesforce consulting business growth, networking/partnership discussion. David finishing FDE at Salesforce, interviewing at Uptima. Mac discussing managed services model and CPA/S-corp setup.
 - **Suggested candidates:** Modern Stack Systems (business development / networking call), or create new project entry if Uptima becomes a recurring engagement.
+
+- [RESOLVED 2026-05-29] "Dave / {Mac}" (2026-05-28, granola_id aafbae24-74fc-40ce-a602-4f88588759bd) — re-processed from _Unmatched → Meeting Notes/Modern Stack Systems/2026-05-28 - Dave Mac.md. Routed as MSS business-development / networking call (medium confidence). Consider a dedicated `uptima` project entry if David Stott / Uptima becomes a recurring engagement.

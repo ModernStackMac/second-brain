@@ -287,3 +287,5 @@
 - [2026-05-28 16:30 CT] "Modern Stack Systems between Mac Nosek and Berkley Hurst" → Meeting Notes/Modern Stack Systems/2026-05-28 - Modern Stack Systems between Mac Nosek and Berkley Hurst.md · confidence: medium · match: keyword (Modern Stack Systems in title)
 - [2026-05-28 15:45 CT] "Dave / {Mac}" → Meeting Notes/_Unmatched/2026-05-28 - Dave Mac.md · confidence: none · match: fallback
 - [2026-05-29 summary] 4 new meetings captured: 1× High Meadows/MAI (DSU), 2× Modern Stack Systems (Meeting of the Minds, Berkley Hurst call), 1× _Unmatched (Dave/Mac networking). 13 skipped (already captured). All transcripts unavailable (paid Granola tier).
+
+- [2026-05-29 09:45 CT] "Dave / {Mac}" → Meeting Notes/Modern Stack Systems/2026-05-28 - Dave Mac.md · confidence: medium · match: keyword (re-processed from _Unmatched — business development / networking call, MSS practice scope)
