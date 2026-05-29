@@ -48,3 +48,8 @@ Two enhancements scoped for Phase 1:
 
 ---
 *Last updated: 2026-04-30*
+
+
+## Meeting Note Sources
+- [[Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo|2026-05-13 Email Attachment Demo]]
+- [[Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect|2026-04-30 Chad Mac Connect]]

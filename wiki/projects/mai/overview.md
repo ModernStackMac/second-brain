@@ -55,8 +55,8 @@ Core team: Rodrigo Aguirre, Vincent Wang, Sean, Federico Nieto, Brian, Michael C
 - UAT expectations management ongoing
 
 ## Related Pages
-- [[meadow]] — sister internal product, time tracking/capacity planning
-- [[cretelligent]] — parallel complex case object workflows and validation patterns
+- [[internal/meadow/context|Meadow]] — sister internal product, time tracking/capacity planning
+- [[cretelligent/context|CREtelligent]] — parallel complex case object workflows and validation patterns
 - [[flex-dash]] — development paused to prioritize MAI
 - [[validation-rule-workaround]] — pattern used for Type field and other platform constraints
 - [[high-meadows]] — parent organization

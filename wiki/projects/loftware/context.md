@@ -51,3 +51,7 @@ Mac used AI to extract all numbered requirements from the prospect's BRDs. Team 
 
 ---
 *Last updated: 2026-04-27*
+
+
+## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Loftware/2026-04-27 - Loftware - Attack Plan|2026-04-27 Loftware Attack Plan]]

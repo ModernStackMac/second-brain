@@ -71,3 +71,16 @@
 
 ---
 *Last updated: 2026-05-06*
+
+
+## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Cetera/2026-05-26 - Project Keystone Daily Stand-up|2026-05-26 Keystone Stand-up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up|2026-05-18 Keystone Stand-up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up|2026-05-11 Keystone Stand-up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-27 - Cetera Stand Up|2026-04-27 Cetera Stand Up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-30 - Impromptu Call|2026-04-30 Impromptu Call]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-16 - Cetera Stand Up [Fathom]|2026-04-16 Cetera Stand Up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-14 - Project Keystone Daily Stand-up|2026-04-14 Keystone Stand-up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-13 - Project Keystone Daily Stand-up|2026-04-13 Keystone Stand-up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-09 - Project Keystone - Cetera Daily Working Session|2026-04-09 Cetera Working Session]]
+- [[Meeting Notes/High Meadows/Cetera/2026-04-08 - Quick Sync - F2 Connor|2026-04-08 F2 Connor Quick Sync]]

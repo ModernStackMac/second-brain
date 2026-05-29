@@ -52,7 +52,7 @@ Four cost categories rolling to Site, then propagating to Site Products:
 
 New "cost product category" field added to Cost Worksheet to distinguish valuation vs. zoning (separate from the existing type field). Rollups implemented as Apex triggers (not DLRS). After stamping to Site Products, an Order Service API call sends costs back to the external system.
 
-Source: [[cretelligent]] journal, Apr 20 2026
+Source: [[cretelligent/context|CREtelligent]] journal, Apr 20 2026
 
 ## Implementation Notes
 
@@ -63,7 +63,7 @@ Source: [[cretelligent]] journal, Apr 20 2026
 
 ## Related Pages
 - [[site-product-joiner]] — the junction object these costs stamp onto
-- [[cretelligent]] — primary implementation
+- [[cretelligent/context|CREtelligent]] — primary implementation
 - [[json-deserialize-refactor]] — related pattern for handling the API payload
 
 ---

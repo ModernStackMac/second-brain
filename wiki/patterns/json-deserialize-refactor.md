@@ -65,7 +65,7 @@ The Connect API integration is being refactored using this pattern. Mac is conso
 **Update (2026-05-05):** Mac actively implementing this pattern on the `update opportunity site` endpoint. Building a complete data model class from Blake's class files (OT-side payload objects), then using `JSON.deserialize()` to parse incoming payloads and create Site Product records, cost worksheets, and site fields. The legacy JSON parser approach is being fully replaced across all four Connect API endpoints.
 
 ## Related Pages
-- [[cretelligent]] — engagement applying this pattern
+- [[cretelligent/context|CREtelligent]] — engagement applying this pattern
 - [[connect-api]] — API being integrated
 - [[prompt-builder-structured-outputs]] — platform-native alternative for LLM responses
 

@@ -58,3 +58,9 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 - [[flex-dash]] — sister internal tool (paused)
 - [[supabase]] — target database platform
 - [[claude-ai]] — Phase 2 chat interface
+
+
+## Meeting Note Sources
+- [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow|2026-05-27 Meadow]]
+- [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-13 - Meadow User Testing|2026-05-13 Meadow User Testing]]
+- [[Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow|2026-05-11 Meadow]]

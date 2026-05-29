@@ -50,3 +50,13 @@ LNW is a wealth management client engaged through High Meadows via F2 Strategy. 
 **Family lookup field:** Exists on the object but has never been used. Purpose unknown. May simplify hierarchy traversal once understood.
 
 **Event page redirects:** Standard event pages redirect to meeting notes when a meeting note record exists. Events without meeting notes remain accessible. Start/end date-time components added to meeting note object.
+
+
+## Meeting Note Sources
+- [[Meeting Notes/High Meadows/LNW/2026-05-18 - LNW CA Check In|2026-05-18 LNW CA Check In]]
+- [[Meeting Notes/High Meadows/LNW/2026-05-14 - LNW CA Check In|2026-05-14 LNW CA Check In]]
+- [[Meeting Notes/High Meadows/LNW/2026-05-12 - CA Check In|2026-05-12 CA Check In]]
+- [[Meeting Notes/High Meadows/LNW/2026-05-12 - LNW|2026-05-12 LNW]]
+- [[Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In|2026-05-11 LNW CA Check In]]
+- [[Meeting Notes/High Meadows/LNW/2026-04-22 - June Sam LNW Sync|2026-04-22 June Sam LNW Sync]]
+- [[Meeting Notes/High Meadows/LNW/2026-04-14 - Entity Role Diagram ERD Sync|2026-04-14 ERD Sync]]

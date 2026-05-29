@@ -38,9 +38,9 @@ Dual relevance — the article is both historical context and an ongoing consult
 - [[claude-ai]] — Anthropic as MCP origin
 - [[llm-knowledge-management]] — semantic layer parallel (raw → interpreted)
 - [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — supersedes the historical posture described here
-- [[harvey]] — MCP-dependent workflows
-- [[nbcu]] — MCP was the key POC blocker
-- [[litify]] — MCP-dependent service agent scope
+- [[harvey/context|Harvey]] — MCP-dependent workflows
+- [[nbcu/context|NBCU]] — MCP was the key POC blocker
+- [[litify/context|Litify]] — MCP-dependent service agent scope
 
 ## Sources
 

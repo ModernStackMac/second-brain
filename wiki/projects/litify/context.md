@@ -50,3 +50,10 @@ Knowledge currently fragmented across: Google Cloud, Slack, Jira, Confluence, Sa
 - [[agentforce]] — core service agent platform
 - [[data-cloud]] — knowledge unification layer
 - [[knowledge-management]] — KB recommendation pattern
+
+
+## Meeting Note Sources
+- [[Meeting Notes/Stand8/Litify/2026-04-17 - Ryan Liana Chat|2026-04-17 Ryan Liana Chat]]
+- [[Meeting Notes/Stand8/Litify/2026-04-14 - SOW Review|2026-04-14 SOW Review]]
+- [[Meeting Notes/Stand8/Litify/2026-04-13 - Internal Litify SOW Discussion|2026-04-13 SOW Discussion]]
+- [[Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync|2026-04-09 Litify Stand8 Sync]]

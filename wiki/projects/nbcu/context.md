@@ -42,3 +42,10 @@
 - IMDB data augmentation rejected
 - Mac flagged accuracy risk: same genre can have wildly different budgets depending on cast caliber
 - SOW is complimentary (non-billable) — scope, timeline, and level of effort
+
+
+## Meeting Note Sources
+- [[Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC|2026-04-20 NBCU Stand8 POC]]
+- [[Meeting Notes/Stand8/NBCU/2026-04-15 - NBCU STAND 8 Agentforce POC|2026-04-15 Agentforce POC]]
+- [[Meeting Notes/Stand8/NBCU/2026-04-13 - NBCU STAND 8 Agentforce POC|2026-04-13 Agentforce POC]]
+- [[Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC|2026-04-08 Agentforce POC]]

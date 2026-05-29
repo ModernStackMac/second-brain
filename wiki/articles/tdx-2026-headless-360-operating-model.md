@@ -42,8 +42,8 @@ This is the strategic lens MSS should use when framing Agentforce and MCP engage
 - [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — tools announcement (the "side-show" per Thomas)
 - [[salesforce-web-console-beta]] — tooling companion to Headless 360
 - [[salesforce-mcp-explained-sweep]] — semantic layer context
-- [[harvey]] — 3-year AI roadmap benefits most from this framing
-- [[nbcu]] — Agentforce POC scope
+- [[harvey/context|Harvey]] — 3-year AI roadmap benefits most from this framing
+- [[nbcu/context|NBCU]] — Agentforce POC scope
 - [[llm-knowledge-management]] — parallel concept (raw → legible) in the knowledge management space
 
 ## Sources

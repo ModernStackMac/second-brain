@@ -53,8 +53,8 @@ Key stakeholders include Carl (VP Digital) and Kate (CRM Program Manager), who a
 
 ## Related Pages
 - [[stand8]] — partner/reseller connection
-- [[cretelligent]] — parallel ERP integration complexity
-- [[litify]] — multi-system knowledge consolidation pattern
+- [[cretelligent/context|CREtelligent]] — parallel ERP integration complexity
+- [[litify/context|Litify]] — multi-system knowledge consolidation pattern
 
 ## Sources
 - Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop.md

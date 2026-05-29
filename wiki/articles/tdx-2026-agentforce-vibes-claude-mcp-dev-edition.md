@@ -36,9 +36,9 @@ Direct relevance to every active Agentforce engagement (Harvey, NBCU, Litify, CR
 - [[agentforce]] — Agentforce Vibes + Hosted MCP details added
 - [[claude-ai]] — Claude Sonnet 4.5 as Vibes default model
 - [[salesforce]] — TDX 2026 topic tracker
-- [[harvey]] — Agentforce engagement, MCP-dependent workflows
-- [[nbcu]] — Agentforce POC with prior MCP blockers
-- [[litify]] — Agentforce service agent engagement
+- [[harvey/context|Harvey]] — Agentforce engagement, MCP-dependent workflows
+- [[nbcu/context|NBCU]] — Agentforce POC with prior MCP blockers
+- [[litify/context|Litify]] — Agentforce service agent engagement
 - [[new-agentforce-builder-beta]] — companion Agentforce platform update
 - [[tdx-2026-headless-360-operating-model]] — broader TDX strategic context
 

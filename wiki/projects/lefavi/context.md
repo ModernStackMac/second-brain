@@ -47,3 +47,8 @@
 - **May 28, 2026:** DocuSign integration rebuild, Quick Data beta approaching, AI use cases scoped.
 
 *(Sources: [[Meeting Notes/High Meadows/Lefavi/2026-04-02 - Lefavi Weekly Call]], [[Meeting Notes/High Meadows/Lefavi/2026-05-28 - Lefavi Weekly Call]])*
+
+
+## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Lefavi/2026-05-28 - Lefavi Weekly Call|2026-05-28 Lefavi Weekly]]
+- [[Meeting Notes/High Meadows/Lefavi/2026-04-02 - Lefavi Weekly Call|2026-04-02 Lefavi Weekly]]

@@ -47,3 +47,7 @@
 - [[agentforce]] — core AI platform
 - [[multi-agent-orchestration]] — orchestration pattern (Einstein + Claude)
 - [[claude-ai]] — email intent parsing
+
+
+## Meeting Note Sources
+- [[Meeting Notes/Stand8/Harvey/2026-04-09 - Harvey Salesforce Sync - AI Vision and Agent Force Workshop|2026-04-09 Harvey AI Vision Workshop]]

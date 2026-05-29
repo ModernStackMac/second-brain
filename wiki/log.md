@@ -3008,3 +3008,36 @@ Summary: Projects synced: 5 | Stories routed: 14 | Stories unrouted: 0 | Archive
 - Patterns extracted: none
 - Maintenance: Done section empty — no archival needed. Log at 190 entries, under 200 threshold.
 - Key takeaways: Wednesday evening scan. Vault fully caught up through today's content.
+
+
+## 2026-05-29 — Structural lint and link repair
+
+**Trigger:** Manual audit of Obsidian Graph View revealed massive disconnection — meeting notes, stories files, and many wiki pages appeared as isolated nodes.
+
+**Root cause diagnosis:**
+1. 80+ broken bare-slug wikilinks (`[[harvey]]`, `[[litify]]`, `[[cretelligent]]`, etc.) — actual files live at `wiki/projects/{slug}/context.md`, not `wiki/{slug}.md`
+2. Meeting notes cited in journals as backtick code paths, not `[[wikilinks]]` — Obsidian graph drew no edges
+3. Non-canonical aliases (`[[hms-capacity-planning]]`, `[[meadow-app]]`, etc.) pointing nowhere
+
+**Fixes applied:**
+
+*Broken wikilink repair (25+ files, 80+ instances):*
+- Entities: `stand8.md`, `modern-stack-systems.md`, `stitch.md`
+- Tools: `agentforce.md`, `claude-ai.md`, `data-cloud.md`, `connect-api.md`
+- Concepts: `multi-agent-orchestration.md`, `knowledge-management.md`
+- Articles: `tdx-2026-headless-360-operating-model.md`, `salesforce-mcp-explained-sweep.md`, `prompt-builder-structured-outputs.md`, `tdx-2026-agentforce-vibes-claude-mcp-dev-edition.md`, `new-agentforce-builder-beta.md`
+- Patterns: `cost-rollup-hierarchy.md`, `site-product-joiner.md`, `json-deserialize-refactor.md`, `validation-rule-workaround.md`
+- Topics: `salesforce.md`
+- Project overviews: `cretelligent/overview.md`, `cetera/overview.md`, `harvey/overview.md`, `litify/overview.md`, `nbcu/overview.md`, `mai/overview.md`
+- Project contexts: `mai/context.md`
+
+*Meeting note connectivity (13 project context pages, 120+ wikilinks):*
+- Added `## Meeting Note Sources` section to every active project's `context.md` with `[[wikilinks]]` to each meeting note file
+- Projects: MAI (28), CREtelligent (40), MSS (22), Cetera (10), LNW (7), NBCU (4), Litify (4), Cartier (2), Lefavi (2), Loftware (1), Harvey (1), Meadow (3), Blink Payments (2)
+
+**Not fixed (deferred):**
+- Journal source citations remain as backtick paths (journals are large; full rewrite risky)
+- Index.md rebuild (stale at 61 pages vs 106 actual — needs dedicated pass)
+- Stories file links from index still use basename resolution (works but fragile)
+- wiki/log.md historical broken links (intentionally preserved as historical artifacts)
+- Journal frontmatter gaps (several journals missing status/owner/priority fields)

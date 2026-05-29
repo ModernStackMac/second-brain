@@ -68,9 +68,9 @@ Salesforce is the core platform across nearly all of Mac's active consulting eng
 - [[data-cloud]] — Salesforce Data Cloud
 - [[llm-knowledge-management]] — AI-powered knowledge bases (consulting pattern)
 - [[json-deserialize-refactor]] — superseded for Prompt Builder flows by Structured Outputs
-- [[harvey]] — Harvey engagement (Agentforce AI roadmap)
-- [[nbcu]] — NBCU engagement (Agentforce POC)
-- [[litify]] — Litify engagement (Agentforce service agent)
+- [[harvey/context|Harvey]] — Harvey engagement (Agentforce AI roadmap)
+- [[nbcu/context|NBCU]] — NBCU engagement (Agentforce POC)
+- [[litify/context|Litify]] — Litify engagement (Agentforce service agent)
 
 ---
 *Last updated: 2026-04-18*

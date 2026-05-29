@@ -63,8 +63,8 @@ Key team members: Andrew Porter, Obed Labra-Pelaez, Michael Degoll (technical le
 
 ## Related Pages
 - [[stitch]] — delivery partner
-- [[harvey]] — ERP integration complexity pattern
-- [[meadow]] — internal project management, related product/project data model
+- [[harvey/context|Harvey]] — ERP integration complexity pattern
+- [[internal/meadow/context|Meadow]] — internal project management, related product/project data model
 - [[validation-rule-workaround]] — pattern used for required picklist blocking saves
 - [[json-deserialize-refactor]] — pattern used for Connect API payload parsing
 - [[site-product-joiner]] — pattern used for per-product site-level pricing

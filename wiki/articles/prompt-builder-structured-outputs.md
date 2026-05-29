@@ -38,9 +38,9 @@ The no-nested-objects limit is the real constraint — anything with line items 
 - [[json-deserialize-refactor]] — superseded for Prompt Builder work; still applies to general Connect API integrations
 - [[agentforce]] — prompt templates feed Agentforce actions
 - [[salesforce]] — platform feature tracker
-- [[harvey]] — email intent parsing candidate
-- [[litify]] — case classification candidate
-- [[cretelligent]] — JSON parsing heritage + future Prompt Builder work
+- [[harvey/context|Harvey]] — email intent parsing candidate
+- [[litify/context|Litify]] — case classification candidate
+- [[cretelligent/context|CREtelligent]] — JSON parsing heritage + future Prompt Builder work
 
 ## Sources
 

@@ -32,3 +32,8 @@
 
 ---
 *Created: 2026-05-14 · Source: Meeting Notes/Modern Stack Systems/Blink Payments/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz.md*
+
+
+## Meeting Note Sources
+- [[Meeting Notes/Modern Stack Systems/Blink Payments/2026-05-11 - Modern Stack Systems between Mac Nosek and Raphi Katz|2026-05-11 Blink Raphi Katz]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Blink Data Cloud Advisory|2026-04-21 Blink Advisory]]

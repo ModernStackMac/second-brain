@@ -40,7 +40,7 @@ The API has gaps that need closing — missing response fields, incomplete paylo
 - Critical for financial reconciliation
 
 ## Related Pages
-- [[cretelligent]] — primary client using Connect API
+- [[cretelligent/context|CREtelligent]] — primary client using Connect API
 - [[site-product-joiner]] — downstream joiner pattern that consumes Connect API data
 - [[json-deserialize-refactor]] — pattern for robustly parsing Connect API payloads
 

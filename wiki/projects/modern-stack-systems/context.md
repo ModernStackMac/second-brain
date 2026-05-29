@@ -63,3 +63,28 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - **Matt Gary** — CTA, Salesforce development thought leader (trigger handler framework, orchestration layers). 10 years coding before Salesforce. Offered a role on the Agentforce team at Salesforce by the only two devs working on Agentforce (Mike and Jeff). Connected with Victor at TDX 2026.
 - **Odyssea** — Salesforce backup solution competing with Own Backup. Differentiators: pre/post-integration encryption (fills Shield gaps), proprietary DB optimizer (100M records in 13 seconds vs 1hr 7min standard). CEO is a CTA. Victor connected at TDX 2026.
 - **Tyler Gardner (Social Cap CPA)** — CPA recommended by Victor for tax optimization consultation. Instagram content creator, book releasing Dec 2026. Mac considering for S-Corp tax strategy review.
+
+
+## Meeting Note Sources
+- [[Meeting Notes/Modern Stack Systems/2026-05-29 - The Meeting of the Minds|2026-05-29 Meeting of the Minds]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-28 - Modern Stack Systems between Mac Nosek and Berkley Hurst|2026-05-28 Berkley Hurst]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-26 - AI Office Hours|2026-05-26 AI Office Hours]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-19 - AI Office Hours|2026-05-19 AI Office Hours]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-18 - Andrew Mac|2026-05-18 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-13 - Andrew Mac|2026-05-13 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-12 - AI Office Hours|2026-05-12 AI Office Hours]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-11 - Andrew Mac|2026-05-11 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-04 - Andrew Mac|2026-05-04 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-30 - Impromptu Call|2026-04-30 Impromptu Call]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-27 - Andrew Mac|2026-04-27 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-27 - Modern Stack Systems between Mac Nosek and Jessica Roundy|2026-04-27 Jessica Roundy]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-24 - The Meeting of the Minds|2026-04-24 Meeting of the Minds]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-22 - Impromptu Google Meet - Andrew Mac|2026-04-22 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Contour Platform Demo|2026-04-21 Contour Demo]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-21 - Modern Stack Systems - Blink Data Cloud Advisory|2026-04-21 Blink Advisory]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-20 - Andrew Mac Sync|2026-04-20 Andrew Mac Sync]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-17 - Meeting of the Minds|2026-04-17 Meeting of the Minds]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-15 - Andrew Mac|2026-04-15 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-14 - AI Office Hours|2026-04-14 AI Office Hours]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync|2026-04-10 Peer Sync]]
+- [[Meeting Notes/Modern Stack Systems/2026-04-09 - Recruiter Call - Brittany Fetzner - Salesforce QA Dev Role|2026-04-09 Recruiter Call]]
