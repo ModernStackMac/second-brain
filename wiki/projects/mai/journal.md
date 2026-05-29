@@ -2,13 +2,35 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-27
+last_meeting: 2026-05-29
 open_actions: 13
 ---
 
 # MAI — Project Journal
 
 ## Week of May 25, 2026
+
+MAI Dev DSU (May 29): Fund assignment contact bug, new case button fix, regression plan scrapped, entity record type deferred, Brian G scope concerns.
+
+**Fund assignment contact bug (1614):** Can only select David Bobberson, not Christine from same household. Previously worked with Doug and Christine in testing. Root cause: pulling from originating financial account instead of household. Need to investigate why some household contacts are unavailable.
+
+**New case button visibility (1598):** Some profiles missing new case button (admins, CSS). Mac assigned fix, currently in developer review. Vincent needs to retest after Mac's changes.
+
+**Testing status:** Multiple tickets completed and passed (1577 plus six others). Production sync with UAT completed yesterday — baseline established. Focus now on anomalies, data assignments, permissions. Retirement contract display (1437) marked pass after initial confusion.
+
+**Regression plan change:** Original regression plan scrapped. Brian Gallagher and Aisha will hand-hold the testing process instead. Team handling production deployment monitoring directly.
+
+**Entity record type:** Missing record type name for new entity — created as placeholder only, no entity type defined yet. **Not committed for June 8 deadline** — can take additional weeks since it's new functionality.
+
+**Upcoming Brian G meeting concerns:** Potential scope changes around ticket 1448 (standard prospects linking to families/households). Team worried about reversing standard prospect work — standard prospects more flexible than entities. Hoping for step-through review rather than major direction changes.
+
+**Decisions:**
+- Regression plan: scrap original plan, Brian G and Aisha handle testing directly with production deployment monitoring
+- Entity record type: not committed for June 8 — new functionality, can extend timeline
+
+*(Source: `Meeting Notes/High Meadows/MAI/2026-05-29 - MAI Dev DSU.md`)*
+
+---
 
 MAI Dev DSU (May 26): Team restart after Mac's OOO, access issues blocking offshore resources, Case object field limit crisis at 47/50, integration development priorities, environmental quote management stories ready.
 

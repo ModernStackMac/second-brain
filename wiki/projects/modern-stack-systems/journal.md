@@ -1,12 +1,62 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 # Modern Stack Systems — Journal
 
 ## Week of May 25, 2026
+
+Meeting of the Minds (May 29, w/ Victor Domatz, Andrew Smith, Bradyl): Personal catchups, Cox Automotive CPQ mess, AI budget realities, market observations.
+
+**Personal:** Mac back from Barcelona (3-bedroom flat near Gothic Quarter, canasta with mom, meaningful trip — mom fled communism). Victor expecting baby in ~2 months (44 years old). Andrew planning France trip in October (Marseille + Paris, group trip).
+
+**Victor's Cox Automotive project (Z Lab):** Massive Salesforce CPQ implementation cleanup. Legacy system: 200,000+ lines in a single controller class. Multiple ServiceNow integrations needed. Discovery phase ongoing, delivery timeline approaching. Pattern: another enterprise CPQ over-complication — see [[concepts/cpq-complexity]].
+
+**AI budget reality check:** Claude Opus still requiring corrections despite improvements. Companies hitting AI budget limits by May (Uber cited as example). Fortune 500 company received $500M cloud API bill due to limit oversight. Theme: enterprise AI spending is real but poorly governed.
+
+**Market signals:** Anthropic reportedly approaching break-even — positive signal for AI sector. Intel stock 6x growth (September $20 to current $120) with US government 10% stake. Consulting hiring: Tellus adding tech architect roles (interview scheduled same day).
+
+**Geographic discussion:** Rural vs urban tradeoffs for families. North Carolina housing market opportunities. Military service as mobility pathway from rural areas. General lifestyle/location strategy chat — no decisions.
+
+No new Mac commitments identified.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-29 - The Meeting of the Minds.md`)*
+
+---
+
+Berkley Hurst / GoInspo Call (May 28, w/ Berkley Hurst, Jpfleege from GoInspo): Staff Connect template system review, redesign proposal scoped.
+
+**Current state:** Staff Connect presentation template system in active use for every event. Client ready to invest more resources to improve UX. System works but has identified pain points.
+
+**Technical issues:**
+- PDF export formatting broken — view/print creates scrollable PDF with poor formatting. Need downloadable PDF for client distribution. Long content doesn't fit pages properly.
+- Template deletion missing — can't find delete button, currently emptying contents manually.
+
+**Design redesign proposal:** Move stats/demographics to gray/black sidebar column (frees main content for full-width). Photo standardization — force square format regardless of upload size. Logo placement — move company logo to top-left above name for better visual hierarchy.
+
+**Feature requests:** Custom question cards for client-specific needs (e.g., "Why Waymo?" interest questions). Need documentation for field mapping (currently just "field one"). Quiz module exploration — Staff Connect has similar functionality to current Google Forms workflow, potential future project.
+
+**Next steps:** Mac to review redesign requirements and provide recommendations. Password/access credentials to be confirmed. No rush — fits into broader system overhaul. Future call for quiz module discussion.
+
+*(Source: `Meeting Notes/Modern Stack Systems/2026-05-28 - Modern Stack Systems between Mac Nosek and Berkley Hurst.md`)*
+
+---
+
+Dave Stott Networking Call (May 28, w/ David Stott from Uptima): Career updates, partnership exploration, business growth discussion.
+
+**David's situation:** Finishing FDE for Salesforce AI deployment team. Uptima interviews lined up (senior manager AI product, core cloud CSM). Frustrated with current manager despite bringing in $1.5M in projects since August. Exploring pre-sales AI transition.
+
+**Mac's business growth:** $50K/month recent months through independent Salesforce consulting. High-value projects: custom activity timeline ($8K), Outlook attachment solution ($8K for 3 hours). Working with Brady on managed services model targeting $300-400K annually with outsourced delivery. New CPA setup for S-corp optimization (business 401K with $75K contribution limit).
+
+**Partnership exploration:** David interested in subcontracting/partnership. Has access to Brian's 600+ company network — Mac interested in introductions. Both frustrated with traditional consulting firms' offshore outsourcing model. David currently constrained by employment conflict of interest.
+
+No new Mac commitments identified — exploratory networking, no firm next steps.
+
+*(Source: `Meeting Notes/_Unmatched/2026-05-28 - Dave Mac.md`)*
+
+---
 
 AI Office Hours (May 26): Barcelona trip recap, AI infrastructure & second brain development, CRM migration strategy, client project updates, MCP product development concept.
 

@@ -1,5 +1,34 @@
 # Wiki Log
 
+## [2026-05-29] scheduled-ingest | 4 new sources (3 substantive, 1 networking)
+
+- Source: `Meeting Notes/High Meadows/MAI/2026-05-29 - MAI Dev DSU.md`
+  - Pages created: none
+  - Pages updated: `wiki/projects/mai/journal.md` (Week of May 25 entry), `Decision-Log.md` (2 decisions: regression plan scrapped, entity record type deferred)
+  - Patterns extracted: none (CPQ complexity cross-reference noted — see pattern extraction)
+  - Key takeaways: Fund assignment bug (1614), regression plan scrapped in favor of hands-on testing by Brian G/Aisha, entity record type not committed for June 8. Go-live still June 16.
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-29 - The Meeting of the Minds.md`
+  - Pages created: none
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md` (Week of May 25 entry)
+  - Patterns extracted: CPQ complexity pattern candidate (Victor's Cox Automotive 200K-line controller — second data point after Loftware/RCA discussion)
+  - Key takeaways: Peer sync — AI budget limits hitting enterprises, Anthropic near break-even, Intel 6x growth. Victor's Z Lab CPQ cleanup illustrates recurring enterprise over-engineering.
+
+- Source: `Meeting Notes/Modern Stack Systems/2026-05-28 - Modern Stack Systems between Mac Nosek and Berkley Hurst.md`
+  - Pages created: none
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md` (Week of May 25 entry), `commitments.md` (1 new: GoInspo redesign review)
+  - Patterns extracted: none
+  - Key takeaways: GoInspo/Staff Connect template system review — PDF export broken, redesign proposed, quiz module exploration. New client/prospect through MSS.
+
+- Source: `Meeting Notes/_Unmatched/2026-05-28 - Dave Mac.md`
+  - Pages created: none
+  - Pages updated: `wiki/projects/modern-stack-systems/journal.md` (Week of May 25 entry, filed as networking)
+  - Patterns extracted: none
+  - Key takeaways: Networking call with David Stott (Uptima). Partnership exploration, Mac's $50K/month consulting revenue discussed. David has 600+ company network access. No firm commitments.
+
+- Maintenance: Log exceeds 200 entries — rotation recommended on next lint pass.
+
+
 ## [2026-05-29] scheduled-ingest | No new sources (run 3)
 - Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
 - Result: All source files confirmed already logged. 13 recent meeting notes (May 26–28), 8 raw articles, 3 meadow project docs — all previously processed.
