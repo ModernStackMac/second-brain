@@ -47,11 +47,11 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - [[stand8]] — Partner firm; primary engagement channel
 - [[stitch]] — Partner firm; secondary engagement channel
 - [[high-meadows]] — Direct client; insurance/SaaS. Routes Cetera + LNW via F2 Strategy.
-- [[harvey]] — Stand8 client; manufacturing
-- [[nbcu]] — Stand8 client; media/entertainment
-- [[cetera/context]] — High Meadows client; financial services (Project Keystone)
-- [[litify]] — Stand8 client; legal tech
-- [[cretelligent]] — Stitch client; commercial real estate
+- [[harvey/context|Harvey]] — Stand8 client; manufacturing
+- [[nbcu/context|NBCU]] — Stand8 client; media/entertainment
+- [[cetera/context|Cetera]] — High Meadows client; financial services (Project Keystone)
+- [[litify/context|Litify]] — Stand8 client; legal tech
+- [[cretelligent/context|CREtelligent]] — Stitch client; commercial real estate
 - [[claude-ai]] — Primary AI tool across all engagements
 - [[domatz-victor]] — Peer consultant
 
@@ -60,4 +60,4 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md
 
 ---
-*Last updated: 2026-04-18*
+*Last updated: 2026-05-29*

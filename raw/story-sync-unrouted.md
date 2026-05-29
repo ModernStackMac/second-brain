@@ -77,3 +77,6 @@
 [2026-05-27T21:00:00-05:00] LINEAR SKIPPED — Linear MCP (high-meadow-solutions) not connected for queries; only auth tools available. Meadow and Flex Dash stories not fetched this run.
 
 [2026-05-28T17:00:00-05:00] workspace=linear-high-meadow-solutions project=* — Linear query tools unavailable (only auth/connect present). 6 Linear stories carried forward from prior sync without refresh.
+
+[2026-05-29T18:00:00-05:00] workspace=linear-mss project=* ticket=* — Linear query MCP not connected; only authenticate/complete_authentication tools available. All MSS stories skipped.
+[2026-05-29T18:00:00-05:00] workspace=linear-hm project=* ticket=* — Linear query MCP not connected; only authenticate/complete_authentication tools available. All HM stories skipped.
