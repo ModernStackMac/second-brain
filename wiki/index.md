@@ -24,6 +24,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 
 ## Concepts
 
+- [[cpq-complexity]] — Enterprise CPQ/RCA implementations fail when organizations over-engineer requirements. 200K-line controllers, scarce specialists, non-linear complexity.
 - [[case-migration]] — Migrating case objects between Salesforce implementations. Field mapping, record type alignment, validation rule review.
 - [[flex-dash]] — High Meadows managed package product. Case logic engine with implementation-fee-only licensing. Development paused for MAI.
 - [[knowledge-management]] — AI-powered KB recommendations with Data Cloud unification and human-in-the-loop workflows.
