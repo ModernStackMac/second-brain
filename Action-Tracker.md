@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-05-29T18:00:00-05:00
+updated: 2026-05-29T15:21:02-05:00
 story_count: 7
 ---
 
@@ -16,4 +16,5 @@ story_count: 7
 | LNW | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
 | LNW | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 
-> [!note] Linear stories not synced this run — no Linear query MCP connected (only auth tools available).
+> [!note] MAI and CET rows are shown for visibility but are NOT routed to project folders — project-mapping.md has no matching (workspace, key) entry (MAI key=TBD; cetera key=F2, actual=CET). See `raw/story-sync-unrouted.md`.
+> [!note] Linear (MSS + HM) not synced this run — Linear MCP requires interactive OAuth and no user was present. Meadow / Flex Dash stories not refreshed.

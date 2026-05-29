@@ -80,3 +80,10 @@
 
 [2026-05-29T18:00:00-05:00] workspace=linear-mss project=* ticket=* — Linear query MCP not connected; only authenticate/complete_authentication tools available. All MSS stories skipped.
 [2026-05-29T18:00:00-05:00] workspace=linear-hm project=* ticket=* — Linear query MCP not connected; only authenticate/complete_authentication tools available. All HM stories skipped.
+
+[2026-05-29T15:21:02-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1614 "Fund Assignment: Assignee contact search in Fund Assignment pulling from originating financial account" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
+[2026-05-29T15:21:02-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI Jira Project Key is TBD)
+[2026-05-29T15:21:02-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET)
+[2026-05-29T15:21:02-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; user not present for scheduled run. Meadow and Flex Dash stories not fetched this run.
+[2026-05-29T15:21:02-05:00] CLEANUP — deleted duplicate wiki/projects/lnw/stories-jira.md (non-canonical workspace token "jira"). Consolidated to canonical stories-f2.md (workspace=f2strategy.atlassian.net) per the one-file-per-(slug,workspace) rule. Prior runs flip-flopped between the two filenames.
+[2026-05-29T15:21:02-05:00] NOTE — project-mapping.md still needs fixes so these stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
