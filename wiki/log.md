@@ -1,5 +1,48 @@
 # Wiki Log
 
+## [2026-05-29] scheduled-ingest | No new sources (run 3)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All source files confirmed already logged. 13 recent meeting notes (May 26–28), 8 raw articles, 3 meadow project docs — all previously processed.
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Maintenance: Done section empty — no archival needed. Log at 193 entries, under 200 threshold. File size 261KB — dedup of repeated "no new sources" entries recommended on next lint pass.
+- Key takeaways: Friday afternoon scan. Vault fully current. Obsidian REST API offline — used direct file access.
+
+## [2026-05-29] scheduled-ingest | No new sources (run 2)
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: All 150 source files confirmed already logged. Cross-checked full filesystem listing against all `Source:` entries in log — zero unprocessed files.
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Maintenance: Done section empty — no archival needed. Log at 234 entries, all within 90-day window — no entries eligible for rotation. Log dedup recommended on next lint pass (261KB, many duplicate "no new sources" entries).
+- Key takeaways: Friday morning scan. Vault fully current. Obsidian REST API offline — used direct file access.
+
+## [2026-05-29] scheduled-ingest | No new sources
+- Scanned: `Meeting Notes/` (all subfolders), `Second Brain/raw/articles/`, `Second Brain/raw/projects/`
+- Result: No new sources since last ingest (2026-05-28). All 120 meeting notes, 8 raw articles, and 3 meadow project docs confirmed already logged.
+- Pattern extraction: Skipped (no new journal updates).
+- Maintenance: Done section empty — no archival needed. Log at 191 entries, under 200 threshold.
+- Key takeaways: Thursday scan. Vault fully current through May 28. Obsidian REST API offline — used direct file access fallback.
+
+## [2026-05-28] scheduled-ingest | 2 new sources (1 substantive, 1 empty stub)
+
+- Source: `Meeting Notes/High Meadows/Lefavi/2026-05-28 - Lefavi Weekly Call.md`
+  - Pages created: `wiki/projects/lefavi/context.md`, `wiki/projects/lefavi/journal.md`
+  - Pages updated: `wiki/index.md`, `commitments.md`, `Decision-Log.md`, `project-mapping.md`
+  - Commitments added: 2 (remove Calendly from backend, forward SF product retirement email)
+  - Decisions logged: 2 (DocuSign simple-first approach, Quick Data build-forward strategy)
+  - Patterns extracted: none — DocuSign→SF auto-create has distant parallel in Cartier (back-office envelope, deferred) but different use cases; monitoring for convergence
+  - Key takeaways: First substantive Lefavi meeting since Apr 2. Bootstrapped full project wiki (context + journal with retroactive Apr 2 entry). DocuSign integration in active testing (web form → e-signature → auto SF sync). Quick Data migrating to Form Stream ($7,500 setup). AI use cases scoped (new money reporting, meeting tracking, transaction reviews). New overnight ops person starts June 22.
+
+- Source: `Meeting Notes/Stitch/Cretelligent/2026-05-28 - Stitch CREtelligent Addl Refinement.md`
+  - Pages created: none
+  - Pages updated: none
+  - Patterns extracted: none
+  - Key takeaways: Empty Granola stub — no summary or transcript. Only attendee: Mac Nosek.
+
+- Maintenance: Done section empty — no archival needed. Log at 188 entries, under 200 threshold.
+
 ## [2026-05-28] scheduled-ingest | No new sources (run 4)
 - Source: Scheduled scan of Meeting Notes/ (all subfolders), Second Brain/raw/articles/, Second Brain/raw/projects/
 - All meeting notes, articles, and project docs confirmed already logged. The May 28 CREtelligent daily standup remains an empty Granola stub (no summary/transcript — paid tier required).
@@ -2927,3 +2970,12 @@ Changes this run:
 - **internal/flex-dash:** Carried forward 5 stories.
 
 Summary: Projects synced: 5 | Stories routed: 14 | Stories unrouted: 0 | Archives written: 1
+
+## [2026-05-28] scheduled-ingest | No new sources (run 5)
+- Source: Scheduled scan of Meeting Notes/ (all subfolders), Second Brain/raw/articles/, Second Brain/raw/projects/
+- Result: All meeting notes, articles, and project docs confirmed already logged. Full comm -23 diff against log Source entries confirms zero unprocessed files.
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Maintenance: Done section empty — no archival needed. Log at 190 entries, under 200 threshold.
+- Key takeaways: Wednesday evening scan. Vault fully caught up through today's content.

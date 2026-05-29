@@ -16,6 +16,7 @@ Each project has two files: `context.md` (stable — what it is, tech stack, sco
 - [[internal/meadow/context]] · [[internal/meadow/journal]] · [[internal/meadow/stories-hm]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
 - [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
 - [[internal/flex-dash/stories-hm]] — Flex Dash reporting product. Development paused for MAI.
+- [[lefavi/context]] · [[lefavi/journal]] — Lefavi (High Meadows). RIA client — DocuSign integration, Quick Data onboarding platform, Salesforce CRM buildout, AI use case exploration.
 - [[loftware/context]] · [[loftware/journal]] — Loftware (High Meadows prospect). Wealth management firm, Salesforce implementation takeover from Plative, RCA high-risk component, seven-figure deal.
 - [[cartier/context]] · [[cartier/journal]] — Cartier (Modern Stack Systems). Salesforce enhancements for financial advisor — Einstein Activity Capture email attachment automation, case activity timeline LWC, Cirrus/EAC dual system strategy.
 - [[blink-payments/context]] — Blink Payments (Modern Stack Systems). UK payment processor, Data Cloud advisory — consolidating transaction data from multiple banks/Stripe into Salesforce.
