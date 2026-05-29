@@ -281,3 +281,9 @@
 
 - [2026-05-28 14:00 CT] "Stitch // CREtelligent Add'l Refinement" → Meeting Notes/Stitch/Cretelligent/2026-05-28 - Stitch CREtelligent Addl Refinement.md · confidence: high · match: keyword (stitch, cretelligent). Note: no AI summary available from Granola.
 - [2026-05-28 13:00 CT] "Lefavi Weekly Call" → Meeting Notes/High Meadows/Lefavi/2026-05-28 - Lefavi Weekly Call.md · confidence: high · match: keyword (lefavi)
+
+- [2026-05-29 09:30 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-05-29 - MAI Dev DSU.md · confidence: high · match: keyword (MAI in title)
+- [2026-05-29 09:00 CT] "The Meeting of the Minds" → Meeting Notes/Modern Stack Systems/2026-05-29 - The Meeting of the Minds.md · confidence: high · match: attendee (andsmi@gmail.com, victor.domatz@gerent.com → MSS)
+- [2026-05-28 16:30 CT] "Modern Stack Systems between Mac Nosek and Berkley Hurst" → Meeting Notes/Modern Stack Systems/2026-05-28 - Modern Stack Systems between Mac Nosek and Berkley Hurst.md · confidence: medium · match: keyword (Modern Stack Systems in title)
+- [2026-05-28 15:45 CT] "Dave / {Mac}" → Meeting Notes/_Unmatched/2026-05-28 - Dave Mac.md · confidence: none · match: fallback
+- [2026-05-29 summary] 4 new meetings captured: 1× High Meadows/MAI (DSU), 2× Modern Stack Systems (Meeting of the Minds, Berkley Hurst call), 1× _Unmatched (Dave/Mac networking). 13 skipped (already captured). All transcripts unavailable (paid Granola tier).

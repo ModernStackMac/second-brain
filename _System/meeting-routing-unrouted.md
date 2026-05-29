@@ -68,3 +68,9 @@
 ## 2026-05-27 — Re-processed
 
 - **2026-05-27 "Environmental Quote Management is perfect. No questions allowed."** — Previously in _Unmatched. Re-routed to Meeting Notes/Stitch/Cretelligent/ based on CREtelligent keywords (environmental quote management, rollup, Andrew, Obed). Note: meeting also contains personal CPA consultation content (Jace/WCG) unrelated to CREtelligent — routed to primary project match.
+
+## 2026-05-28 — "Dave / {Mac}"
+- **Date:** 2026-05-28 3:45 PM CT
+- **Attendees:** Mac Nosek (mac.nosek@modernstacksystems.com), David Stott (david.stott@uptima.com)
+- **Content:** Career updates, Salesforce consulting business growth, networking/partnership discussion. David finishing FDE at Salesforce, interviewing at Uptima. Mac discussing managed services model and CPA/S-corp setup.
+- **Suggested candidates:** Modern Stack Systems (business development / networking call), or create new project entry if Uptima becomes a recurring engagement.
