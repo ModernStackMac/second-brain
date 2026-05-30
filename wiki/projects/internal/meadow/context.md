@@ -53,12 +53,11 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 
 ## Related Pages
 - [[high-meadows]] — parent org
-- [[high-meadows-mai]] — sister product
+- [[mai/context|MAI]] — sister product
 - [[high-meadow-website]] — sister engagement (marketing site)
 - [[flex-dash]] — sister internal tool (paused)
 - [[supabase]] — target database platform
 - [[claude-ai]] — Phase 2 chat interface
-
 
 ## Meeting Note Sources
 - [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow|2026-05-27 Meadow]]

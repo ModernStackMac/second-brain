@@ -7,8 +7,8 @@ High Meadows is an insurance/SaaS company running multiple product lines and int
 ## Key Details
 
 **Active Projects:**
-- [[high-meadows-mai]] — MAI insurance product; active development and strategy planning
-- [[hms-capacity-planning]] — Meadow capacity planning application; internal tool for resource management
+- [[mai/context|MAI]] — MAI insurance product; active development and strategy planning
+- [[internal/meadow/context|Meadow]] — Meadow capacity planning application; internal tool for resource management
 
 **Internal Operations:**
 - Website management and synchronization
@@ -33,18 +33,28 @@ High Meadows is an insurance/SaaS company running multiple product lines and int
 - Brian, Malcolm, Bryce, Dave, Ernie, Steven, Sean, Catherine, Stephen, Nicole, Aisha, Sam, Antonio
 
 ## Related Pages
-- [[high-meadows-mai]] — Insurance product; active development
-- [[hms-capacity-planning]] — Internal capacity planning tool
+- [[mai/context|MAI]] — Insurance product; active development
+- [[internal/meadow/context|Meadow]] — Internal capacity planning tool
 - [[flex-dash]] — Case logic product; development paused for MAI
-- [[modern-stack-systems]] — Mac's consulting practice; High Meadows is direct client
+- [[internal/high-meadow-website/context|High Meadow Website]] — Marketing site
+- [[internal/high-meadow-labs/journal|High Meadow Labs]] — AI product initiative
+- [[modern-stack-systems/context|Modern Stack Systems]] — Mac's consulting practice; High Meadows is direct client
+- [[cetera/context|Cetera]] — Client project via F2
+- [[lnw/context|LNW]] — Client project via F2
+- [[lefavi/context|Lefavi]] — Client project
+- [[loftware/context|Loftware]] — Prospect
 
-## Sources
-- Meeting Notes/High Meadows/Internal/2026-04-09 - HMS Product Strategy.md
-- Meeting Notes/High Meadows/Internal/2026-04-09 - Website Sync.md
-- Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev DSU.md
-- Meeting Notes/High Meadows/Internal/2026-04-10 - HMS Office Hours.md
-- Meeting Notes/High Meadows/Internal/2026-04-02 - Lefavi Weekly Call.md
-- Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md
+## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Internal/2026-04-27 - Impromptu Microsoft Teams Meeting|2026-04-27 Impromptu Teams Meeting]]
+- [[Meeting Notes/High Meadows/Internal/2026-04-27 - Brian Hyman|2026-04-27 Brian Hyman]]
+- [[Meeting Notes/High Meadows/Internal/2026-04-14 - Entity Role Diagram ERD Sync|2026-04-14 ERD Sync]]
+- [[Meeting Notes/High Meadows/Internal/1-1s/2026-04-16 - Brady Mac 1-1|2026-04-16 Brady Mac 1-1]]
+- [[Meeting Notes/High Meadows/Internal/HMU/2026-04-14 - Packaging Content for HMU Workshops|2026-04-14 HMU Workshops]]
+- [[Meeting Notes/High Meadows/Internal/Office Hours/2026-04-21 - AI Office Hours|2026-04-21 AI Office Hours]]
+- [[Meeting Notes/High Meadows/Internal/Office Hours/2026-04-14 - AI Office Hours|2026-04-14 AI Office Hours]]
+- [[Meeting Notes/High Meadows/Internal/Office Hours/2026-04-10 - HMS Office Hours|2026-04-10 HMS Office Hours]]
+- [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-09 - HMS Product Strategy|2026-04-09 HMS Product Strategy]]
+- [[Meeting Notes/_Unmatched/2026-05-14 - New Note|2026-05-14 Meadow Demo / HMU Launch]]
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-05-29*

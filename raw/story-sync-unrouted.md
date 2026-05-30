@@ -94,3 +94,10 @@
 [2026-05-29T17:20:46-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; user not present for scheduled run. Meadow and Flex Dash stories not fetched this run.
 [2026-05-29T17:20:46-05:00] CLEANUP — deleted stale non-canonical archive stub raw/archived-stories/lnw/jira-LNW-165.md; canonical f2-LNW-165.md retained (one-file naming uses workspace token "f2").
 [2026-05-29T17:20:46-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
+
+
+[2026-05-29T19:21:40-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1614 "Fund Assignment: Assignee contact search pulling from originating financial account" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI)
+[2026-05-29T19:21:40-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI)
+[2026-05-29T19:21:40-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET)
+[2026-05-29T19:21:40-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for scheduled run. Meadow and Flex Dash stories not fetched this run.
+[2026-05-29T19:21:40-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
