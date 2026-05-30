@@ -42,7 +42,7 @@ The key is breaking the work into phases: identify field gaps, map record types,
 - Phase 4: UAT and sign-off
 
 ## Related Pages
-- [[cetera/context]] — engagement context and client
+- [[cetera/cetera|Cetera]] — engagement context and client
 - [[high-meadows]] — consulting partner
 - [[validation-rule-workaround]] — handling validation rule blockers during migration
 
