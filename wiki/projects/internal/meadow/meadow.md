@@ -53,7 +53,7 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 
 ## Related Pages
 - [[high-meadows]] — parent org
-- [[mai/context|MAI]] — sister product
+- [[mai/mai|MAI]] — sister product
 - [[high-meadow-website]] — sister engagement (marketing site)
 - [[flex-dash]] — sister internal tool (paused)
 - [[supabase]] — target database platform

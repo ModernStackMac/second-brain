@@ -4,37 +4,37 @@
 
 ## Projects (16)
 
-Each project has `context.md` (stable — scope, tech stack, contacts) and `journal.md` (dynamic — weekly summaries, decisions). Some also have `overview.md`, `board.md`, `stories-*.md`, and `archived-stories.md` files.
+Each project has a main context page (stable — scope, tech stack, contacts) and `journal.md` (dynamic — weekly summaries, decisions). Some also have `overview.md`, `board.md`, `stories-*.md`, and `archived-stories.md` files.
 
 ### Client Projects — Stand8
 
-- [[harvey/context|Harvey]] · [[harvey/journal|journal]] · [[harvey/overview|overview]] — Industrial manufacturing/distribution. Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration.
-- [[nbcu/context|NBCU]] · [[nbcu/journal|journal]] · [[nbcu/overview|overview]] — NBCUniversal. Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
-- [[litify/context|Litify]] · [[litify/journal|journal]] · [[litify/overview|overview]] — Legal SaaS. Agentforce service agent for case triage, KB recommendations, Data Cloud unification.
+- [[harvey/harvey|Harvey]] · [[harvey/journal|journal]] · [[harvey/overview|overview]] — Industrial manufacturing/distribution. Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration.
+- [[nbcu/nbcu|NBCU]] · [[nbcu/journal|journal]] · [[nbcu/overview|overview]] — NBCUniversal. Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
+- [[litify/litify|Litify]] · [[litify/journal|journal]] · [[litify/overview|overview]] — Legal SaaS. Agentforce service agent for case triage, KB recommendations, Data Cloud unification.
 
 ### Client Projects — Stitch
 
-- [[cretelligent/context|CREtelligent]] · [[cretelligent/journal|journal]] · [[cretelligent/overview|overview]] — Commercial real estate/environmental. Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
+- [[cretelligent/cretelligent|CREtelligent]] · [[cretelligent/journal|journal]] · [[cretelligent/overview|overview]] — Commercial real estate/environmental. Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
 
 ### Client Projects — High Meadows
 
-- [[cetera/context|Cetera]] · [[cetera/journal|journal]] · [[cetera/overview|overview]] · [[cetera/board|board]] · [[cetera/stories-f2|stories-f2]] · [[cetera/stories-jira|stories-jira]] · [[cetera/archived-stories|archived]] — Financial services (via F2). Case object migration (Project Keystone), Marketing Cloud, FSC standardization.
-- [[lnw/context|LNW]] · [[lnw/journal|journal]] · [[lnw/board|board]] · [[lnw/stories-f2|stories-f2]] · [[lnw/archived-stories|archived]] — Wealth management (via F2). Entity Role Diagrams, family-level aggregation, visibility enhancements.
-- [[mai/context|MAI]] · [[mai/journal|journal]] · [[mai/overview|overview]] · [[mai/board|board]] · [[mai/stories-f2|stories-f2]] · [[mai/stories-jira|stories-jira]] · [[mai/archived-stories|archived]] — Internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
-- [[lefavi/context|Lefavi]] · [[lefavi/journal|journal]] — RIA client. DocuSign integration, Quick Data onboarding, AI exploration.
-- [[loftware/context|Loftware]] · [[loftware/journal|journal]] — Prospect. Wealth management Salesforce takeover from Plative, RCA component.
+- [[cetera/cetera|Cetera]] · [[cetera/journal|journal]] · [[cetera/overview|overview]] · [[cetera/board|board]] · [[cetera/stories-f2|stories-f2]] · [[cetera/stories-jira|stories-jira]] · [[cetera/archived-stories|archived]] — Financial services (via F2). Case object migration (Project Keystone), Marketing Cloud, FSC standardization.
+- [[lnw/lnw|LNW]] · [[lnw/journal|journal]] · [[lnw/board|board]] · [[lnw/stories-f2|stories-f2]] · [[lnw/archived-stories|archived]] — Wealth management (via F2). Entity Role Diagrams, family-level aggregation, visibility enhancements.
+- [[mai/mai|MAI]] · [[mai/journal|journal]] · [[mai/overview|overview]] · [[mai/board|board]] · [[mai/stories-f2|stories-f2]] · [[mai/stories-jira|stories-jira]] · [[mai/archived-stories|archived]] — Internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
+- [[lefavi/lefavi|Lefavi]] · [[lefavi/journal|journal]] — RIA client. DocuSign integration, Quick Data onboarding, AI exploration.
+- [[loftware/loftware|Loftware]] · [[loftware/journal|journal]] — Prospect. Wealth management Salesforce takeover from Plative, RCA component.
 
 ### Client Projects — Modern Stack Systems
 
-- [[modern-stack-systems/context|Modern Stack Systems]] · [[modern-stack-systems/journal|journal]] — Mac's consulting practice. Recruiting, business dev, peer network, operations.
-- [[cartier/context|Cartier]] · [[cartier/journal|journal]] — Direct client. Einstein Activity Capture, case activity timeline LWC, Cirrus strategy.
-- [[blink-payments/context|Blink Payments]] — UK payment processor. Data Cloud advisory, transaction data consolidation.
+- [[modern-stack-systems/modern-stack-systems|Modern Stack Systems]] · [[modern-stack-systems/journal|journal]] — Mac's consulting practice. Recruiting, business dev, peer network, operations.
+- [[cartier/cartier|Cartier]] · [[cartier/journal|journal]] — Direct client. Einstein Activity Capture, case activity timeline LWC, Cirrus strategy.
+- [[blink-payments/blink-payments|Blink Payments]] — UK payment processor. Data Cloud advisory, transaction data consolidation.
 
 ### Internal Projects — High Meadows
 
-- [[internal/meadow/context|Meadow]] · [[internal/meadow/journal|journal]] · [[internal/meadow/overview|overview]] · [[internal/meadow/board|board]] · [[internal/meadow/stories-hm|stories-hm]] · [[internal/meadow/stories-linear|stories-linear]] · [[internal/meadow/archived-stories|archived]] — Capacity planning & time tracking SaaS. Cloud migration to Supabase/Vercel, Sanity SSO.
-- [[internal/high-meadow-website/context|High Meadow Website]] · [[internal/high-meadow-website/journal|journal]] — HMS public marketing site. Brand system, feedback punch list.
-- [[internal/high-meadow-labs/context|High Meadow Labs]] · [[internal/high-meadow-labs/journal|journal]] — AI product initiative. Regulatory compliance POC, multi-agent voting, specialized model training.
+- [[internal/meadow/meadow|Meadow]] · [[internal/meadow/journal|journal]] · [[internal/meadow/overview|overview]] · [[internal/meadow/board|board]] · [[internal/meadow/stories-hm|stories-hm]] · [[internal/meadow/stories-linear|stories-linear]] · [[internal/meadow/archived-stories|archived]] — Capacity planning & time tracking SaaS. Cloud migration to Supabase/Vercel, Sanity SSO.
+- [[internal/high-meadow-website/high-meadow-website|High Meadow Website]] · [[internal/high-meadow-website/journal|journal]] — HMS public marketing site. Brand system, feedback punch list.
+- [[internal/high-meadow-labs/high-meadow-labs|High Meadow Labs]] · [[internal/high-meadow-labs/journal|journal]] — AI product initiative. Regulatory compliance POC, multi-agent voting, specialized model training.
 - [[flex-dash]] · [[internal/flex-dash/board|board]] · [[internal/flex-dash/stories-hm|stories-hm]] · [[internal/flex-dash/stories-linear|stories-linear]] · [[internal/flex-dash/archived-stories|archived]] — Salesforce managed package. Case logic engine. Development paused for MAI.
 
 ## Concepts (5)
@@ -117,5 +117,5 @@ Confluence mirrors for Cetera (CE space):
 - [[f2-internal/CE/app-address|APP Address]] — Address object design.
 
 ---
-*Last updated: 2026-05-29*
+*Last updated: 2026-05-30*
 *Total pages: 111 (16 projects + 53 project subfiles + 5 concepts + 12 patterns + 7 tools + 5 entities + 10 articles + 4 topics + 5 reports + 5 f2-internal)*

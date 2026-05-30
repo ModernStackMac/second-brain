@@ -13,7 +13,7 @@ project: high-meadow-website
 - **Owner:** Mac (MSS)
 - **HMS stakeholders:** Brian, Sean, Bryce (logo files), plus HMS leadership
 - **Legal:** Brian is sourcing Privacy Policy + Terms of Use from outside counsel
-- **Related projects:** [[internal/meadow/context|Meadow]] (internal capacity-planning SaaS), [[flex-dash]]
+- **Related projects:** [[internal/meadow/meadow|Meadow]] (internal capacity-planning SaaS), [[flex-dash]]
 
 ## Scope
 Public-facing marketing site with the following tabs/pages:
@@ -101,7 +101,7 @@ _TBD. Leading candidates: Next.js + Vercel, Sanity or Payload CMS, Tailwind. Rev
 Working files live in `./files/` — brand guide, feedback docs, partner logos, design mocks, copy drafts. Curated context lives in this file and `feedback-tracker.md`. Raw uploads in `files/`.
 
 ## Related Pages
-- [[internal/meadow/context|Meadow]] — internal SaaS product (sister project)
+- [[internal/meadow/meadow|Meadow]] — internal SaaS product (sister project)
 - [[flex-dash]] — sister internal tool
 - [[high-meadows]] — parent entity
 

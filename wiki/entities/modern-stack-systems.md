@@ -12,6 +12,10 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - Primary partners: [[stand8]], [[stitch]]
 - Direct client: [[high-meadows]]
 
+**Direct Client Projects:**
+- [[cartier/cartier|Cartier]] — Independent financial advisor; Einstein Activity Capture, case activity timeline LWC
+- [[blink-payments/blink-payments|Blink Payments]] — UK payment processor; Data Cloud advisory, transaction data consolidation
+
 **Service Areas:**
 - Salesforce architecture and implementation
 - DevOps and CI/CD pipeline development
@@ -47,11 +51,13 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - [[stand8]] — Partner firm; primary engagement channel
 - [[stitch]] — Partner firm; secondary engagement channel
 - [[high-meadows]] — Direct client; insurance/SaaS. Routes Cetera + LNW via F2 Strategy.
-- [[harvey/context|Harvey]] — Stand8 client; manufacturing
-- [[nbcu/context|NBCU]] — Stand8 client; media/entertainment
-- [[cetera/context|Cetera]] — High Meadows client; financial services (Project Keystone)
-- [[litify/context|Litify]] — Stand8 client; legal tech
-- [[cretelligent/context|CREtelligent]] — Stitch client; commercial real estate
+- [[harvey/harvey|Harvey]] — Stand8 client; manufacturing
+- [[nbcu/nbcu|NBCU]] — Stand8 client; media/entertainment
+- [[cetera/cetera|Cetera]] — High Meadows client; financial services (Project Keystone)
+- [[litify/litify|Litify]] — Stand8 client; legal tech
+- [[cretelligent/cretelligent|CREtelligent]] — Stitch client; commercial real estate
+- [[cartier/cartier|Cartier]] — Direct client; financial advisor
+- [[blink-payments/blink-payments|Blink Payments]] — Direct client; UK payment processor
 - [[claude-ai]] — Primary AI tool across all engagements
 - [[domatz-victor]] — Peer consultant
 
@@ -60,4 +66,4 @@ Modern Stack Systems (MSS) is a boutique consulting firm specializing in enterpr
 - Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync.md
 
 ---
-*Last updated: 2026-05-29*
+*Last updated: 2026-05-30*

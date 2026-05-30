@@ -7,8 +7,8 @@ High Meadows is an insurance/SaaS company running multiple product lines and int
 ## Key Details
 
 **Active Projects:**
-- [[mai/context|MAI]] — MAI insurance product; active development and strategy planning
-- [[internal/meadow/context|Meadow]] — Meadow capacity planning application; internal tool for resource management
+- [[mai/mai|MAI]] — MAI insurance product; active development and strategy planning
+- [[internal/meadow/meadow|Meadow]] — Meadow capacity planning application; internal tool for resource management
 
 **Internal Operations:**
 - Website management and synchronization
@@ -33,16 +33,16 @@ High Meadows is an insurance/SaaS company running multiple product lines and int
 - Brian, Malcolm, Bryce, Dave, Ernie, Steven, Sean, Catherine, Stephen, Nicole, Aisha, Sam, Antonio
 
 ## Related Pages
-- [[mai/context|MAI]] — Insurance product; active development
-- [[internal/meadow/context|Meadow]] — Internal capacity planning tool
+- [[mai/mai|MAI]] — Insurance product; active development
+- [[internal/meadow/meadow|Meadow]] — Internal capacity planning tool
 - [[flex-dash]] — Case logic product; development paused for MAI
-- [[internal/high-meadow-website/context|High Meadow Website]] — Marketing site
-- [[internal/high-meadow-labs/journal|High Meadow Labs]] — AI product initiative
-- [[modern-stack-systems/context|Modern Stack Systems]] — Mac's consulting practice; High Meadows is direct client
-- [[cetera/context|Cetera]] — Client project via F2
-- [[lnw/context|LNW]] — Client project via F2
-- [[lefavi/context|Lefavi]] — Client project
-- [[loftware/context|Loftware]] — Prospect
+- [[internal/high-meadow-website/high-meadow-website|High Meadow Website]] — Marketing site
+- [[internal/high-meadow-labs/high-meadow-labs|High Meadow Labs]] — AI product initiative
+- [[modern-stack-systems/modern-stack-systems|Modern Stack Systems]] — Mac's consulting practice; High Meadows is direct client
+- [[cetera/cetera|Cetera]] — Client project via F2
+- [[lnw/lnw|LNW]] — Client project via F2
+- [[lefavi/lefavi|Lefavi]] — Client project
+- [[loftware/loftware|Loftware]] — Prospect
 
 ## Meeting Note Sources
 - [[Meeting Notes/High Meadows/Internal/2026-04-27 - Impromptu Microsoft Teams Meeting|2026-04-27 Impromptu Teams Meeting]]
@@ -57,4 +57,4 @@ High Meadows is an insurance/SaaS company running multiple product lines and int
 - [[Meeting Notes/_Unmatched/2026-05-14 - New Note|2026-05-14 Meadow Demo / HMU Launch]]
 
 ---
-*Last updated: 2026-05-29*
+*Last updated: 2026-05-30*

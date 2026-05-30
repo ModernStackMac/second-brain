@@ -46,7 +46,7 @@
 
 ## Related Pages
 - [[high-meadows]] — parent org
-- [[internal/meadow/context|Meadow]] — sister internal product
+- [[internal/meadow/meadow|Meadow]] — sister internal product
 - [[flex-dash]] — paused product
 - [[validation-rule-workaround]] — used for Type field and platform constraints
 

@@ -7,14 +7,14 @@ Stitch is a consulting firm that acts as an intermediary, bringing client projec
 ## Key Details
 
 **Current Engagements:**
-- [[cretelligent/context|CREtelligent]] — Commercial real estate and environmental services; Salesforce development including API integrations, site verification, and automated reporting
+- [[cretelligent/cretelligent|CREtelligent]] — Commercial real estate and environmental services; Salesforce development including API integrations, site verification, and automated reporting
 
 **Key Contacts:**
 - Andrew Porter
 
 ## Related Pages
 - [[modern-stack-systems]] — MSS consulting practice; Stitch is partner channel
-- [[cretelligent/context|CREtelligent]] — Stitch client; commercial real estate/environmental services
+- [[cretelligent/cretelligent|CREtelligent]] — Stitch client; commercial real estate/environmental services
 - [[stand8]] — Similar partner firm; other client channels
 
 ## Sources
@@ -23,4 +23,4 @@ Stitch is a consulting firm that acts as an intermediary, bringing client projec
 - Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync.md
 
 ---
-*Last updated: 2026-05-29*
+*Last updated: 2026-05-30*
