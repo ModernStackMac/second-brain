@@ -84,3 +84,14 @@
 - [[Meeting Notes/High Meadows/Cetera/2026-04-13 - Project Keystone Daily Stand-up|2026-04-13 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-04-09 - Project Keystone - Cetera Daily Working Session|2026-04-09 Cetera Working Session]]
 - [[Meeting Notes/High Meadows/Cetera/2026-04-08 - Quick Sync - F2 Connor|2026-04-08 F2 Connor Quick Sync]]
+
+
+## Project Files
+- [[cetera/board|Board]] — Kanban board
+- [[cetera/stories-f2|Stories (F2)]] — F2 stories
+- [[cetera/stories-jira|Stories (Jira)]] — Jira stories
+- [[f2-internal/CE/growth-engine|Growth Engine (Confluence)]]
+- [[f2-internal/CE/core-salesforce-usage-alignment|Core SF Usage Alignment]]
+- [[f2-internal/CE/financial-planning|Financial Planning]]
+- [[f2-internal/CE/gifts-object-alignment|Gifts Object Alignment]]
+- [[f2-internal/CE/app-address|APP Address]]

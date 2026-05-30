@@ -80,3 +80,9 @@
 - [[Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev DSU|2026-04-09 MAI Dev DSU]]
 - [[Meeting Notes/High Meadows/MAI/2026-04-09 - MAI Dev Session - Type Field and Address Auto-Population|2026-04-09 Type Field Session]]
 - [[Meeting Notes/High Meadows/MAI/2026-04-06 - Bug IAM Service Type Showing Single Value per Record Type|2026-04-06 IAM Bug]]
+
+
+## Project Files
+- [[mai/board|Board]] — Kanban board
+- [[mai/stories-f2|Stories (Jira)]] — active Jira stories
+- [[mai/stories-jira|Stories (Jira Import)]] — imported Jira stories

@@ -63,3 +63,9 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 - [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow|2026-05-27 Meadow]]
 - [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-13 - Meadow User Testing|2026-05-13 Meadow User Testing]]
 - [[Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow|2026-05-11 Meadow]]
+
+
+## Project Files
+- [[internal/meadow/board|Board]] — Kanban board
+- [[internal/meadow/stories-hm|Stories (HM)]] — High Meadows stories
+- [[internal/meadow/stories-linear|Stories (Linear)]] — Linear stories

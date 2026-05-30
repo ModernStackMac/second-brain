@@ -49,4 +49,4 @@ Two kickoff sessions (Apr 22 — High Meadow Labs initial discussion, Apr 23 —
 - Sean Wakashiri added for infrastructure/instantiation expertise
 - NDA implications for compliance agent build (Brian flagged)
 
-*(Source: `Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs.md`, `Meeting Notes/High Meadows/Internal/Product Calls/2026-04-23 - High Meadow Labs 0.1.md`)*
+*(Source: [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs|2026-04-22 High Meadow Labs]], [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-23 - High Meadow Labs 0.1|2026-04-23 High Meadow Labs 0.1]])*

@@ -60,3 +60,8 @@ LNW is a wealth management client engaged through High Meadows via F2 Strategy. 
 - [[Meeting Notes/High Meadows/LNW/2026-05-11 - LNW CA Check In|2026-05-11 LNW CA Check In]]
 - [[Meeting Notes/High Meadows/LNW/2026-04-22 - June Sam LNW Sync|2026-04-22 June Sam LNW Sync]]
 - [[Meeting Notes/High Meadows/LNW/2026-04-14 - Entity Role Diagram ERD Sync|2026-04-14 ERD Sync]]
+
+
+## Project Files
+- [[lnw/board|Board]] — Kanban board
+- [[lnw/stories-f2|Stories (F2)]] — F2 stories

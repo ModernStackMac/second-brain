@@ -53,3 +53,6 @@ Two enhancements scoped for Phase 1:
 ## Meeting Note Sources
 - [[Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo|2026-05-13 Email Attachment Demo]]
 - [[Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect|2026-04-30 Chad Mac Connect]]
+
+- [[Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup|2026-05-15 Attachment Ordering / Cirrus Cleanup]]
+- [[Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan|2026-05-14 EAC Deployment with Dan]]

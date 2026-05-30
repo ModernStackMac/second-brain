@@ -2,135 +2,120 @@
 
 > Master index of all wiki pages. Updated automatically with every ingest operation.
 
-## Projects
+## Projects (16)
 
-Each project has two files: `context.md` (stable — what it is, tech stack, scope) and `journal.md` (dynamic — rolling weekly summaries, decisions, open questions).
+Each project has `context.md` (stable — scope, tech stack, contacts) and `journal.md` (dynamic — weekly summaries, decisions). Some also have `overview.md`, `board.md`, and `stories-*.md` files.
 
-- [[cetera/context]] · [[cetera/journal]] · [[cetera/stories-f2]] — Financial services (High Meadows / F2 Strategy). Case object migration (Project Keystone), Marketing Cloud journeys, Advice Works integration, FSC standardization.
-- [[lnw/context]] · [[lnw/journal]] · [[lnw/stories-f2]] — LNW Visibility Enhancements POC (High Meadows via F2). Entity Role Diagrams, family-level aggregation, meeting note composer.
-- [[mai/context]] · [[mai/journal]] · [[mai/stories-f2]] — High Meadows internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
-- [[harvey/context]] · [[harvey/journal]] — Industrial manufacturing/distribution (Stand8). Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration (Einstein + Claude).
-- [[nbcu/context]] · [[nbcu/journal]] — NBCUniversal (Stand8). Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
-- [[litify/context]] · [[litify/journal]] — Legal SaaS (Stand8). Agentforce service agent for case triage, KB recommendations, Data Cloud unification. SOW in progress.
-- [[cretelligent/context]] · [[cretelligent/journal]] — Commercial real estate/environmental (Stitch). Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
-- [[internal/meadow/context]] · [[internal/meadow/journal]] · [[internal/meadow/stories-hm]] — High Meadows internal capacity planning app (Meadow). Cloud migration to Supabase/Vercel, Sanity SSO, AI chat interface roadmap.
-- [[internal/high-meadow-website/context]] · [[internal/high-meadow-website/journal]] — HMS public marketing site. Content punch list, partnerships updates, Services/Insights page cleanup.
-- [[internal/flex-dash/stories-hm]] — Flex Dash reporting product. Development paused for MAI.
-- [[lefavi/context]] · [[lefavi/journal]] — Lefavi (High Meadows). RIA client — DocuSign integration, Quick Data onboarding platform, Salesforce CRM buildout, AI use case exploration.
-- [[loftware/context]] · [[loftware/journal]] — Loftware (High Meadows prospect). Wealth management firm, Salesforce implementation takeover from Plative, RCA high-risk component, seven-figure deal.
-- [[cartier/context]] · [[cartier/journal]] — Cartier (Modern Stack Systems). Salesforce enhancements for financial advisor — Einstein Activity Capture email attachment automation, case activity timeline LWC, Cirrus/EAC dual system strategy.
-- [[blink-payments/context]] — Blink Payments (Modern Stack Systems). UK payment processor, Data Cloud advisory — consolidating transaction data from multiple banks/Stripe into Salesforce.
-- [[modern-stack-systems/context]] · [[modern-stack-systems/journal]] — Modern Stack Systems (Mac's consulting practice). Recruiting, business development, peer network, operations. AD Agentforce opportunity.
+### Client Projects — Stand8
 
-## Concepts
+- [[harvey/context|Harvey]] · [[harvey/journal|journal]] · [[harvey/overview|overview]] — Industrial manufacturing/distribution. Salesforce + Agentforce, 3-year AI roadmap, EU expansion, multi-agent orchestration.
+- [[nbcu/context|NBCU]] · [[nbcu/journal|journal]] · [[nbcu/overview|overview]] — NBCUniversal. Agentforce POC: content recommendation + sales pricing strategy via Data Cloud.
+- [[litify/context|Litify]] · [[litify/journal|journal]] · [[litify/overview|overview]] — Legal SaaS. Agentforce service agent for case triage, KB recommendations, Data Cloud unification.
 
-- [[cpq-complexity]] — Enterprise CPQ/RCA implementations fail when organizations over-engineer requirements. 200K-line controllers, scarce specialists, non-linear complexity.
-- [[case-migration]] — Migrating case objects between Salesforce implementations. Field mapping, record type alignment, validation rule review.
-- [[flex-dash]] — High Meadows managed package product. Case logic engine with implementation-fee-only licensing. Development paused for MAI.
-- [[knowledge-management]] — AI-powered KB recommendations with Data Cloud unification and human-in-the-loop workflows.
-- [[multi-agent-orchestration]] — Using multiple AI agents (Einstein, Claude) with triage routing for complex business processes.
+### Client Projects — Stitch
 
-## Patterns
+- [[cretelligent/context|CREtelligent]] · [[cretelligent/journal|journal]] · [[cretelligent/overview|overview]] — Commercial real estate/environmental. Connect API, cost worksheets, Quote Matrix LWC, DocHub, SiteProduct joiner.
 
-- [[json-deserialize-refactor]] — Replacing fragile manual JSON parsing in Apex with JSON.deserialize and typed wrapper classes.
-- [[site-product-joiner]] — Junction object pattern to avoid field explosion on parent records. Per-product pricing, cost, and margin tracking.
-- [[validation-rule-workaround]] — Three-step fallback for required picklist fields blocking automated record saves.
-- [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through a hierarchical chain. Applied in CREtelligent.
-- [[job-function-permission-sets]] — Align Salesforce permission sets to job functions (3–5 groups) instead of per-record-type or per-feature. Applied in Cetera.
-- [[einstein-dual-capture]] — Run Einstein Activity Capture for known contacts alongside a secondary email tool (Cirrus) for external sources. Applied in Cartier.
-- [[data-cloud-bulk-processing]] — Process high-volume Data Cloud ingestion into Salesforce objects using record-triggered flows and Apex queueable classes in 500-record batches. Applied in Blink Payments.
-- [[salesforce-field-capacity-management]] — Proactive monitoring and governance of custom field/lookup limits. Includes audit process, justification reviews, and architecture alternatives. Applied in MAI.
+### Client Projects — High Meadows
 
-## Tools
+- [[cetera/context|Cetera]] · [[cetera/journal|journal]] · [[cetera/overview|overview]] · [[cetera/board|board]] · [[cetera/stories-f2|stories-f2]] · [[cetera/stories-jira|stories-jira]] — Financial services (via F2). Case object migration (Project Keystone), Marketing Cloud, FSC standardization.
+- [[lnw/context|LNW]] · [[lnw/journal|journal]] · [[lnw/board|board]] · [[lnw/stories-f2|stories-f2]] — Wealth management (via F2). Entity Role Diagrams, family-level aggregation, visibility enhancements.
+- [[mai/context|MAI]] · [[mai/journal|journal]] · [[mai/overview|overview]] · [[mai/board|board]] · [[mai/stories-f2|stories-f2]] · [[mai/stories-jira|stories-jira]] — Internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
+- [[lefavi/context|Lefavi]] · [[lefavi/journal|journal]] — RIA client. DocuSign integration, Quick Data onboarding, AI exploration.
+- [[loftware/context|Loftware]] · [[loftware/journal|journal]] — Prospect. Wealth management Salesforce takeover from Plative, RCA component.
 
-- [[agentforce]] — Salesforce's AI agent platform. Used across Harvey, NBCU, Litify, CREtelligent. MCP support in beta is key limitation.
-- [[data-cloud]] — Salesforce Data Cloud for unifying fragmented data sources. Key to Litify and NBCU engagements.
-- [[claude-ai]] — Anthropic's Claude model. Used for email parsing (Harvey), rapid development (HMS), agentic frameworks (MSS).
-- [[marketing-cloud]] — Salesforce Marketing Cloud. Being provisioned for Cetera (Project Keystone) journey automation.
-- [[supabase]] — Open-source PostgreSQL platform. Target database for Meadow migration from SQLite.
-- [[connect-api]] — CREtelligent's external API for vendor management, site verification, and order processing.
+### Client Projects — Modern Stack Systems
 
-## Entities
+- [[modern-stack-systems/context|Modern Stack Systems]] · [[modern-stack-systems/journal|journal]] — Mac's consulting practice. Recruiting, business dev, peer network, operations.
+- [[cartier/context|Cartier]] · [[cartier/journal|journal]] — Direct client. Einstein Activity Capture, case activity timeline LWC, Cirrus strategy.
+- [[blink-payments/context|Blink Payments]] — UK payment processor. Data Cloud advisory, transaction data consolidation.
 
-- [[stand8]] — Consulting/staffing partner channeling Harvey, NBCU, and Litify engagements to MSS.
-- [[stitch]] — Consulting partner for the CREtelligent engagement.
-- [[high-meadows]] — Insurance/SaaS company. Internal products (MAI, Meadow), website, product strategy. Routes Cetera + LNW via F2 Strategy.
+### Internal Projects — High Meadows
+
+- [[internal/meadow/context|Meadow]] · [[internal/meadow/journal|journal]] · [[internal/meadow/overview|overview]] · [[internal/meadow/board|board]] · [[internal/meadow/stories-hm|stories-hm]] · [[internal/meadow/stories-linear|stories-linear]] — Capacity planning & time tracking SaaS. Cloud migration to Supabase/Vercel, Sanity SSO.
+- [[internal/high-meadow-website/context|High Meadow Website]] · [[internal/high-meadow-website/journal|journal]] — HMS public marketing site. Brand system, feedback punch list.
+- [[internal/high-meadow-labs/context|High Meadow Labs]] · [[internal/high-meadow-labs/journal|journal]] — AI product initiative. Regulatory compliance POC, multi-agent voting, specialized model training.
+- [[flex-dash]] · [[internal/flex-dash/board|board]] · [[internal/flex-dash/stories-hm|stories-hm]] · [[internal/flex-dash/stories-linear|stories-linear]] — Salesforce managed package. Case logic engine. Development paused for MAI.
+
+## Concepts (5)
+
+- [[cpq-complexity]] — Enterprise CPQ/RCA failures from over-engineering. 200K-line controllers, scarce specialists.
+- [[case-migration]] — Migrating case objects between Salesforce orgs. Field mapping, record types, validation rules.
+- [[flex-dash]] — HMS managed package product. Case logic engine, implementation-fee-only licensing.
+- [[knowledge-management]] — AI-powered KB recommendations with Data Cloud unification and human-in-the-loop.
+- [[multi-agent-orchestration]] — Multiple AI agents (Einstein, Claude) with triage routing for complex workflows.
+
+## Patterns (12)
+
+- [[automation-kill-switch]] — Hierarchical Custom Settings to selectively disable flows/triggers/validations. Applied in Cetera.
+- [[cost-rollup-hierarchy]] — Apex-driven multi-category cost aggregation through hierarchical chain. Applied in CREtelligent.
+- [[data-cloud-bulk-processing]] — High-volume Data Cloud ingestion via record-triggered flows + Apex queueable in 500-record batches. Applied in Blink.
+- [[dual-path-vendor-dependency]] — Proceed with primary vendor-dependent + backup vendor-independent paths when licensing stalls. Applied in NBCU.
+- [[einstein-dual-capture]] — Einstein Activity Capture for known contacts + secondary tool (Cirrus) for external sources. Applied in Cartier.
+- [[job-function-permission-sets]] — Permission sets aligned to job functions (3–5 groups) instead of per-feature. Applied in Cetera.
+- [[json-deserialize-refactor]] — Replace fragile manual JSON parsing with JSON.deserialize + typed wrapper classes. Applied in CREtelligent.
+- [[multi-agent-voting]] — Multiple AI agents in parallel, surface results only on consensus. Applied in High Meadow Labs.
+- [[salesforce-field-capacity-management]] — Proactive custom field/lookup limit monitoring and governance. Applied in MAI.
+- [[site-product-joiner]] — Junction object to avoid field explosion. Per-product pricing, cost, margin tracking. Applied in CREtelligent.
+- [[uat-deployment-coordination]] — Shared deployment log to prevent cross-developer UAT overwrites. Applied in MAI.
+- [[validation-rule-workaround]] — Three-step fallback for required picklist fields blocking automated saves. Applied in CREtelligent.
+
+## Tools (7)
+
+- [[agentforce]] — Salesforce AI agent platform. Used across Harvey, NBCU, Litify, CREtelligent.
+- [[claude-ai]] — Anthropic Claude. Email parsing (Harvey), rapid dev (HMS), agentic frameworks (MSS).
+- [[connect-api]] — CREtelligent external API for vendor management, site verification, order processing.
+- [[contour]] — AI platform for software implementation lifecycle. Discovery bot, SOW generation, traceability.
+- [[data-cloud]] — Salesforce Data Cloud. Key to Litify, NBCU, and Blink engagements.
+- [[marketing-cloud]] — Salesforce Marketing Cloud. Provisioned for Cetera (Project Keystone).
+- [[supabase]] — Open-source PostgreSQL platform. Target database for Meadow migration.
+
+## Entities (5)
+
+- [[domatz-victor]] — Peer consultant. Recurring sync calls, ABL Consulting, Saterra project.
+- [[high-meadows]] — Insurance/SaaS company. Internal products (MAI, Meadow), routes Cetera + LNW via F2.
 - [[modern-stack-systems]] — Mac Nosek's consulting practice. Salesforce, DevOps, AI/MCP, cloud architecture.
-- [[domatz-victor]] — Peer consultant. Recurring sync calls with Mac and Bradyl (ABL Consulting). Currently on Saterra project.
+- [[stand8]] — Consulting/staffing partner. Channels Harvey, NBCU, Litify to MSS.
+- [[stitch]] — Consulting partner for CREtelligent engagement.
 
-## Articles
+## Articles (10)
 
-- [[m5-mac-mini-mac-studio-wwdc-2026]] — Apple's 2026 Mac lineup leaked: five models, M5 Ultra with 512GB unified memory, MacBook Ultra with OLED + touchscreen.
-- [[andrej-karpathy-method-claude-skills-obsidian]] — The LLM wiki pattern: raw/ → wiki/ → reports/. Claude as compiler/librarian, Obsidian as knowledge IDE, MCP-Obsidian integration, Claude Code Skills for automation.
-- [[claude-obsidian-illegal]] — Practical implementation of the LLM wiki pattern. Maintenance as the bottleneck (solved by LLMs). CLI examples. Memory.md seeding. Morning briefing and Action-Tracker automation. Vannevar Bush Memex connection.
-- [[obsidian-plugins-replace-paid-apps]] — Six free plugins that replace Notion, Todoist, Trello, Fantastical, TextExpander, and backups: Dataview, Tasks, Kanban, Calendar, Templater, Obsidian Git.
-- [[new-agentforce-builder-beta]] — Salesforce's redesigned Agentforce Builder in beta: Agent Script for deterministic logic, Agent Canvas for visual no-code editing, improved testing and debugging.
-- [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — TDX 2026: free Developer Edition gets Agentforce Vibes IDE (browser VS Code), Agentforce Vibes with Claude Sonnet 4.5, and Salesforce Hosted MCP Servers.
-- [[salesforce-web-console-beta]] — TDX 2026: Web Console (Beta) launches 2026-04-14 — browser IDE embedded in Salesforce for debug logs, SOQL, Query Plan Inspector, Anonymous Apex, in-context Apex edits.
-- [[prompt-builder-structured-outputs]] — Platform-enforced JSON response format via Object-based Lightning types. Typed Flow variables, castable `structuredResponse` in Apex. No more `JSON.deserialize` boilerplate for LLM outputs.
-- [[salesforce-mcp-explained-sweep]] — MCP primer (Anthropic's USB-C for AI), historical Salesforce posture (pre-TDX 2026), HubSpot's early public connector, Sweep's semantic-layer pitch.
-- [[tdx-2026-headless-360-operating-model]] — Diginomica's strategic take: Headless 360 is operating-model transformation, not a feature release.
+- [[andrej-karpathy-method-claude-skills-obsidian]] — The LLM wiki pattern: raw/ → wiki/ → reports/. Claude as compiler/librarian.
+- [[claude-obsidian-illegal]] — Practical LLM wiki implementation. Maintenance solved by LLMs. Vannevar Bush Memex connection.
+- [[m5-mac-mini-mac-studio-wwdc-2026]] — Apple 2026 Mac lineup: M5 Ultra 512GB, MacBook Ultra OLED + touchscreen.
+- [[new-agentforce-builder-beta]] — Redesigned Agentforce Builder: Agent Script, Agent Canvas, improved testing.
+- [[obsidian-plugins-replace-paid-apps]] — Six free plugins replacing Notion, Todoist, Trello, Fantastical, TextExpander, backups.
+- [[prompt-builder-structured-outputs]] — Platform-enforced JSON responses via Object-based Lightning types.
+- [[salesforce-mcp-explained-sweep]] — MCP primer, Salesforce posture, HubSpot connector, Sweep semantic layer.
+- [[salesforce-web-console-beta]] — TDX 2026 Web Console: browser IDE for debug logs, SOQL, Query Plan, Anonymous Apex.
+- [[tdx-2026-agentforce-vibes-claude-mcp-dev-edition]] — TDX 2026: free Dev Edition, Agentforce Vibes IDE, Claude Sonnet 4.5, Hosted MCP.
+- [[tdx-2026-headless-360-operating-model]] — Headless 360 as operating-model transformation, not a feature release.
 
-## Topics
+## Topics (4)
 
-- [[apple-hardware]] — Apple hardware releases, leaks, and ecosystem developments.
+- [[apple-hardware]] — Apple hardware releases, leaks, ecosystem developments.
 - [[llm-knowledge-management]] — Using LLMs to build and maintain persistent wikis.
-- [[obsidian-ecosystem]] — Local-first markdown IDE with plugins. Graph view, backlinks, Dataview, Tasks, Kanban, Calendar, Templater, Git. MCP-Obsidian integration for Claude.
-- [[salesforce]] — Salesforce platform news, product releases, and ecosystem developments.
+- [[obsidian-ecosystem]] — Local-first markdown IDE with plugins. Graph view, backlinks, MCP-Obsidian.
+- [[salesforce]] — Salesforce platform news, product releases, ecosystem developments.
 
-## Reports
+## Reports (5)
 
-- [[reports/weekly-synthesis-2026-04-20]] — 2026-04-20 · Weekly cross-project synthesis for the week of Apr 14–20, 2026.
-- [[reports/weekly-synthesis-2026-04-19]] — 2026-04-19 · Weekly cross-project synthesis for the week of Apr 13–19, 2026.
-- [[reports/mai-project-overview]] — 2026-04-18 · Snapshot of the MAI engagement.
+- [[reports/agentforce-knowledge-report]] — 2026-05-01 · Agentforce knowledge synthesis across 4 engagements.
+- [[reports/weekly-synthesis-2026-05-11]] — 2026-05-11 · Week of May 5–11. CREtelligent + MAI active; Litify stalled 24+ days.
+- [[reports/weekly-synthesis-2026-04-27]] — 2026-04-27 · Week of Apr 21–27. CRE co-sprint, MAI go-live push, Labs launched.
+- [[reports/weekly-synthesis-2026-04-20]] — 2026-04-20 · Week of Apr 14–20.
+- [[reports/weekly-synthesis-2026-04-19]] — 2026-04-19 · Week of Apr 13–19.
+
+## F2 Internal Reference (5)
+
+Confluence mirrors for Cetera (CE space):
+
+- [[f2-internal/CE/growth-engine|Growth Engine]] — CPA Referral Engine / Referral Flywheel design.
+- [[f2-internal/CE/core-salesforce-usage-alignment|Core SF Usage Alignment]] — APP operational in TRPG org.
+- [[f2-internal/CE/financial-planning|Financial Planning]] — Financial planning process design.
+- [[f2-internal/CE/gifts-object-alignment|Gifts Object Alignment]] — Gifts object design.
+- [[f2-internal/CE/app-address|APP Address]] — Address object design.
 
 ---
-*Last updated: 2026-04-21*
-*Total pages: 61 (19 project pages + 40 wiki pages + 2 reports)*
-
-- [[contour]] — AI platform for the software implementation lifecycle. Discovery call bot, SOW generation, traceability. Trial in progress (Apr 2026).
-
-
-**Note (2026-04-22):** New pattern page added: [[uat-deployment-coordination]] — Shared deployment log to prevent cross-developer UAT overwrites. Applied in MAI.
-
-
-**Note (2026-04-23):** New project page: [[internal/high-meadow-labs/journal]] — HMS internal AI product initiative. Training specialized models for wealth management, regulatory compliance POC selected as first use case. New pattern page: [[multi-agent-voting]] — Run multiple AI agents in parallel and surface results only on consensus. Addresses LLM consistency challenge for high-stakes outputs.
-
-
-**Note (2026-04-24):** Ingested 2 meeting notes (Meeting of the Minds Apr 24, CREtelligent Weekly Status Apr 24). Updated journals, context pages, commitments, and decision log. CREtelligent context expanded with data model clarifications (EnviroSite task deletion, cost worksheet timing, click quote, opportunity stages, payload approach). MSS context expanded with industry contacts (Matt Gary, Odyssea, Tyler Gardner CPA).
-
-
-**Note (2026-04-27):** Weekly synthesis report generated: [[reports/weekly-synthesis-2026-04-27]] — 2026-04-27 · Weekly cross-project synthesis for the week of Apr 21–27, 2026. 11 projects covered. Key finding: CREtelligent co-sprint and MAI go-live push dominated the week; High Meadow Labs launched as new AI initiative; Litify 14 days stale.
-
-
-**Note (2026-04-27, ingest #2):** Ingested 4 meeting notes (Andrew/Mac Apr 27, Internal CREtelligent Weekly Sync Apr 27, Loftware Attack Plan Apr 27, Impromptu MS Teams Apr 27). New project created: [[loftware/context]] + [[loftware/journal]] (High Meadows prospect pursuit, seven-figure RCA deal, John Gravins as RCA architect candidate). CREtelligent journal updated with Week of Apr 27 (Mule client pushback, Quire API stories, expense object blockers). MSS journal extended (GitHub agents, model training debate, Labs pitch, RCA risk discussion). Impromptu Teams meeting had no substantive content (platform switch to Zoom).
-
-
-**Note (2026-04-28, ingest #2):** Ingested 1 new meeting note (INTERNAL CREtelligent Team Sync Apr 28). CREtelligent journal extended with task group field cleanup, API push verification, Mac pivoting to Quire API work, discount functionality testing. 2 commitments added. Brian Hyman support call (Apr 27, _Unmatched) logged as low-value — no wiki pages created.
-
-
-**Note (2026-04-30, ingest):** Ingested 1 new meeting note (Chad & Mac Connect Apr 30). New project created: [[cartier/context]] + [[cartier/journal]] (direct MSS client, independent financial advisor). Scope: email attachment automation + case activity timeline LWC reuse. DocuSign back-office integration deferred. 2 commitments added, 3 decisions logged.
-
-
-**Note (2026-05-01):** New report: [[reports/agentforce-knowledge-report]] -- 2026-05-01 -- Comprehensive Agentforce knowledge synthesis across 11 wiki pages. Covers 4 client engagements (Harvey, NBCU, Litify, CREtelligent), platform updates (Builder beta, Vibes IDE, Hosted MCP GA, Structured Outputs), and architecture patterns (multi-agent orchestration, multi-agent voting, semantic layer gap).
-
-
-**Note (2026-05-04, ingest):** Ingested 3 meeting notes (Andrew/Mac May 4, Cetera/MAI Impromptu Call Apr 30 — dual-routed). New pattern page: [[dual-path-vendor-dependency]] — proceed with primary vendor-dependent + backup vendor-independent paths when licensing stalls. Applied in NBCU Agentforce POC. Updated: [[validation-rule-workaround]] with queue-scoping variant from Cetera. Updated journals: MSS (May 4 week), Cetera (Apr 28 week), MAI (Apr 28 week), NBCU (Apr 28 week). Updated Cetera context (DocuSign, EAC/Inbox Graph upgrade, Sumo→Onito). 14 commitments added (11 Cetera, 3 NBCU). 4 decisions logged.
-
-
-**Note (2026-05-06):** New pattern page: [[automation-kill-switch]] — Hierarchical Custom Settings to selectively disable flows/triggers/validations org-wide or per user during data loads, deploys, and hotfixes. Applied in Cetera Project Keystone. Retroactive log entries added for 34 early-April meetings that were processed into journals but never logged.
-
-
-**Note (2026-05-11, ingest):** Logged 3 previously untracked raw project docs (`raw/projects/meadow/` — database schema, open items, user stories). All content was already reflected in [[internal/meadow/context]] from a prior session. No new meeting notes, articles, or patterns this cycle.
-
-
-**Note (2026-05-11, synthesis):** Weekly synthesis report generated: [[reports/weekly-synthesis-2026-05-11]] — 2026-05-11 · Weekly cross-project synthesis for the week of May 5–11, 2026. 13 projects covered. Key finding: CREtelligent and MAI were the only active projects; Litify stalled 24+ days, LNW visibility POC urgency unaddressed, MAI code freeze May 22 with QA bottleneck.
-
-
-**Note (2026-05-11, ingest):** Processed 4 new meeting notes from today: MAI Dev DSU (backlog nearly empty, field capacity crunch — 3 custom fields remaining, 0 lookups), LNW CA Check In (family story ticket velocity, new search filter reload bug, Mac OOO Wed-Fri next week for Barcelona), Cetera Project Keystone (Plan Participants descoped for manual sync — keeping eMoney plumbing, RedTail integration local dev kicking off), CREtelligent Internal Weekly Sync (empty — no Granola summary). 2 commitments added, 2 decisions logged. No new patterns.
-
-
-**Note (2026-05-26, ingest):** Corrective log for 7 sources processed by the May 19 run but not logged (Cetera May 18, LNW May 18, MAI May 18, MSS May 18, CRE May 18+19, AD Agentforce Opp May 13). New pattern page: [[salesforce-field-capacity-management]] — proactive field/lookup limit monitoring, applied in MAI (41/40 lookup crisis). Updated: [[uat-deployment-coordination]] with Cetera standup-before-handoff variant. Blink Payments file re-route noted (_Unmatched → Blink Payments subfolder, no re-processing).
-
-
-**Note (2026-05-27, ingest):** Corrective log written for 10 sources processed by the May 26 run but never logged in log.md. Sources: MAI May 15 + May 18, Cetera May 18, LNW May 18, MSS May 18 + May 19 (AI Office Hours), CREtelligent May 18 + May 19 (empty stub), AD Agentforce Opp May 13 (re-confirmed), Salesforce Attachments May 15 (routed to Cartier). Blink Payments file re-route noted (_Unmatched → Blink Payments subfolder). Pattern extraction: no new patterns — previous run already created [[salesforce-field-capacity-management]] and updated [[uat-deployment-coordination]] + [[einstein-dual-capture]]. MAI naming fragmentation (fund account / financial account / investment entity / client account title) flagged for future monitoring. No maintenance actions needed (Done empty, log at 178 entries).
+*Last updated: 2026-05-29*
+*Total pages: 106 (16 projects + 48 project subfiles + 5 concepts + 12 patterns + 7 tools + 5 entities + 10 articles + 4 topics + 5 reports + 5 f2-internal)*

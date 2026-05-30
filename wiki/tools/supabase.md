@@ -33,13 +33,11 @@ Supabase offers a managed PostgreSQL instance, row-level security (RLS) for mult
 - Better integration with external services (Salesforce, Notion, etc.)
 
 ## Related Pages
-- [[meadow-app]] — primary migration project
-- [[hms-capacity-planning]] — HMS context and team
+- [[internal/meadow/context|Meadow]] — primary migration project
 - [[high-meadows]] — parent organization
 
 ## Sources
-- raw/projects/hms-capacity-planning/meadow-open-items.md
-- Meeting Notes/High Meadows/Internal/2026-04-09 - Website Sync.md
+- [[Meeting Notes/High Meadows/Internal/Website/2026-04-09 - Website Sync|2026-04-09 Website Sync]]
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-05-29*

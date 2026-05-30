@@ -2,7 +2,7 @@
 > High Meadows' Salesforce managed package product — case logic engine with implementation-fee-only licensing model.
 
 ## Overview
-Flex-Dash is an internal High Meadows product built as a Salesforce managed package. It handles case logic workflows (claim triggers, status transitions, record type routing) and serves as a "foot-in-the-door" product for client engagements. The managed package architecture prevents partner code theft while enabling quick demos. Development is currently paused to redirect all capacity to [[high-meadows-mai]].
+Flex-Dash is an internal High Meadows product built as a Salesforce managed package. It handles case logic workflows (claim triggers, status transitions, record type routing) and serves as a "foot-in-the-door" product for client engagements. The managed package architecture prevents partner code theft while enabling quick demos. Development is currently paused to redirect all capacity to [[mai/context|MAI]].
 
 ## Key Details
 
@@ -28,13 +28,14 @@ Flex-Dash is an internal High Meadows product built as a Salesforce managed pack
 
 ## Related Pages
 - [[high-meadows]] — parent organization
-- [[high-meadows-mai]] — sister product; all capacity redirected here
+- [[mai/context|MAI]] — sister product; all capacity redirected here
 - [[case-migration]] — related case object patterns
 - [[validation-rule-workaround]] — pattern used in case logic
 
-## Sources
-- Meeting Notes/High Meadows/Internal/2026-04-02 - Lefavi Weekly Call.md
-- Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync.md (Flex Dash mentioned in CREtelligent context)
+## Project Files
+- [[internal/flex-dash/board|Board]] — Kanban board
+- [[internal/flex-dash/stories-hm|Stories (HM)]] — High Meadows stories
+- [[internal/flex-dash/stories-linear|Stories (Linear)]] — Linear stories
 
 ---
-*Last updated: 2026-04-10*
+*Last updated: 2026-05-29*

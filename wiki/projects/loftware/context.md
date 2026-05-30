@@ -55,3 +55,4 @@ Mac used AI to extract all numbered requirements from the prospect's BRDs. Team 
 
 ## Meeting Note Sources
 - [[Meeting Notes/High Meadows/Loftware/2026-04-27 - Loftware - Attack Plan|2026-04-27 Loftware Attack Plan]]
+- [[Meeting Notes/High Meadows/Internal/2026-04-27 - Brian Hyman|2026-04-27 Brian Hyman (Loftware Pursuit)]]

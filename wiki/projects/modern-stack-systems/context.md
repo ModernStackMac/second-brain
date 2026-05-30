@@ -88,3 +88,5 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - [[Meeting Notes/Modern Stack Systems/2026-04-14 - AI Office Hours|2026-04-14 AI Office Hours]]
 - [[Meeting Notes/Modern Stack Systems/2026-04-10 - The Meeting of the Minds - Peer Sync|2026-04-10 Peer Sync]]
 - [[Meeting Notes/Modern Stack Systems/2026-04-09 - Recruiter Call - Brittany Fetzner - Salesforce QA Dev Role|2026-04-09 Recruiter Call]]
+- [[Meeting Notes/Modern Stack Systems/2026-05-28 - Dave Mac|2026-05-28 Dave Mac]]
+- [[Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp|2026-05-13 AD Agentforce Opp]]
