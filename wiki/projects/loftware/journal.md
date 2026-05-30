@@ -1,7 +1,9 @@
 ---
-type: project-journal
-project: loftware
-updated: 2026-04-27
+status: prospect
+owner: Mac
+priority: p2
+last_meeting: 2026-04-27
+open_actions: 2
 ---
 
 # Loftware — Project Journal
@@ -22,7 +24,7 @@ Attack Plan Session (Apr 27, w/ Brian Hyman, Dave Masri, Sean Berry): first inte
 
 **Capacity concerns:** Mac flagged bandwidth constraints with MAI, LNW, Cetera, and Meadow already on his plate. Requested help validating the requirements workbook from Chloe and Antonio.
 
-*(Source: `Meeting Notes/_Unmatched/2026-04-27 - Loftware - Attack Plan.md`)*
+*(Source: [[Meeting Notes/_Unmatched/2026-04-27 - Loftware - Attack Plan|2026-04-27 — Loftware Attack Plan]])*
 
 ---
 *Last updated: 2026-04-27*

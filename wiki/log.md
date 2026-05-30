@@ -3041,3 +3041,11 @@ Summary: Projects synced: 5 | Stories routed: 14 | Stories unrouted: 0 | Archive
 - Stories file links from index still use basename resolution (works but fragile)
 - wiki/log.md historical broken links (intentionally preserved as historical artifacts)
 - Journal frontmatter gaps (several journals missing status/owner/priority fields)
+
+## [2026-05-29] fix | Archived Stories Graph Connectivity
+- Source: raw/archived-stories/ (all project subdirectories)
+- Pages created: mai/archived-stories.md, cetera/archived-stories.md, lnw/archived-stories.md, internal/meadow/archived-stories.md, internal/flex-dash/archived-stories.md
+- Pages updated: mai/context.md, cetera/context.md, lnw/context.md, internal/meadow/context.md, concepts/flex-dash.md, wiki/index.md
+- Patterns extracted: none
+- Meeting note linked to context: n/a
+- Key takeaways: Created archive index pages connecting ~192 orphaned archived story files (raw/archived-stories/) to their projects via wikilinks. Each project's context.md now links to its archived-stories.md in the Project Files section.

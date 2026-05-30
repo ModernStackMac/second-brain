@@ -65,3 +65,4 @@ LNW is a wealth management client engaged through High Meadows via F2 Strategy. 
 ## Project Files
 - [[lnw/board|Board]] — Kanban board
 - [[lnw/stories-f2|Stories (F2)]] — F2 stories
+- [[lnw/archived-stories|Archived Stories]] — completed/closed stories

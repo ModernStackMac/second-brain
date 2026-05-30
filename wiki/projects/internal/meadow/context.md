@@ -69,3 +69,4 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 - [[internal/meadow/board|Board]] — Kanban board
 - [[internal/meadow/stories-hm|Stories (HM)]] — High Meadows stories
 - [[internal/meadow/stories-linear|Stories (Linear)]] — Linear stories
+- [[internal/meadow/archived-stories|Archived Stories]] — completed/closed stories

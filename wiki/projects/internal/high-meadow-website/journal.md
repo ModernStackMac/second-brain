@@ -1,3 +1,11 @@
+---
+status: active
+owner: Mac
+priority: p3
+last_meeting: 2026-04-21
+open_actions: 3
+---
+
 # High Meadow Website — Journal
 
 ## 2026-04-21 — Icon styling + content updates

@@ -4,7 +4,7 @@
 
 ## Projects (16)
 
-Each project has `context.md` (stable — scope, tech stack, contacts) and `journal.md` (dynamic — weekly summaries, decisions). Some also have `overview.md`, `board.md`, and `stories-*.md` files.
+Each project has `context.md` (stable — scope, tech stack, contacts) and `journal.md` (dynamic — weekly summaries, decisions). Some also have `overview.md`, `board.md`, `stories-*.md`, and `archived-stories.md` files.
 
 ### Client Projects — Stand8
 
@@ -18,9 +18,9 @@ Each project has `context.md` (stable — scope, tech stack, contacts) and `jour
 
 ### Client Projects — High Meadows
 
-- [[cetera/context|Cetera]] · [[cetera/journal|journal]] · [[cetera/overview|overview]] · [[cetera/board|board]] · [[cetera/stories-f2|stories-f2]] · [[cetera/stories-jira|stories-jira]] — Financial services (via F2). Case object migration (Project Keystone), Marketing Cloud, FSC standardization.
-- [[lnw/context|LNW]] · [[lnw/journal|journal]] · [[lnw/board|board]] · [[lnw/stories-f2|stories-f2]] — Wealth management (via F2). Entity Role Diagrams, family-level aggregation, visibility enhancements.
-- [[mai/context|MAI]] · [[mai/journal|journal]] · [[mai/overview|overview]] · [[mai/board|board]] · [[mai/stories-f2|stories-f2]] · [[mai/stories-jira|stories-jira]] — Internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
+- [[cetera/context|Cetera]] · [[cetera/journal|journal]] · [[cetera/overview|overview]] · [[cetera/board|board]] · [[cetera/stories-f2|stories-f2]] · [[cetera/stories-jira|stories-jira]] · [[cetera/archived-stories|archived]] — Financial services (via F2). Case object migration (Project Keystone), Marketing Cloud, FSC standardization.
+- [[lnw/context|LNW]] · [[lnw/journal|journal]] · [[lnw/board|board]] · [[lnw/stories-f2|stories-f2]] · [[lnw/archived-stories|archived]] — Wealth management (via F2). Entity Role Diagrams, family-level aggregation, visibility enhancements.
+- [[mai/context|MAI]] · [[mai/journal|journal]] · [[mai/overview|overview]] · [[mai/board|board]] · [[mai/stories-f2|stories-f2]] · [[mai/stories-jira|stories-jira]] · [[mai/archived-stories|archived]] — Internal insurance SaaS. FSC, case config, IAM service, active UAT backlog.
 - [[lefavi/context|Lefavi]] · [[lefavi/journal|journal]] — RIA client. DocuSign integration, Quick Data onboarding, AI exploration.
 - [[loftware/context|Loftware]] · [[loftware/journal|journal]] — Prospect. Wealth management Salesforce takeover from Plative, RCA component.
 
@@ -32,10 +32,10 @@ Each project has `context.md` (stable — scope, tech stack, contacts) and `jour
 
 ### Internal Projects — High Meadows
 
-- [[internal/meadow/context|Meadow]] · [[internal/meadow/journal|journal]] · [[internal/meadow/overview|overview]] · [[internal/meadow/board|board]] · [[internal/meadow/stories-hm|stories-hm]] · [[internal/meadow/stories-linear|stories-linear]] — Capacity planning & time tracking SaaS. Cloud migration to Supabase/Vercel, Sanity SSO.
+- [[internal/meadow/context|Meadow]] · [[internal/meadow/journal|journal]] · [[internal/meadow/overview|overview]] · [[internal/meadow/board|board]] · [[internal/meadow/stories-hm|stories-hm]] · [[internal/meadow/stories-linear|stories-linear]] · [[internal/meadow/archived-stories|archived]] — Capacity planning & time tracking SaaS. Cloud migration to Supabase/Vercel, Sanity SSO.
 - [[internal/high-meadow-website/context|High Meadow Website]] · [[internal/high-meadow-website/journal|journal]] — HMS public marketing site. Brand system, feedback punch list.
 - [[internal/high-meadow-labs/context|High Meadow Labs]] · [[internal/high-meadow-labs/journal|journal]] — AI product initiative. Regulatory compliance POC, multi-agent voting, specialized model training.
-- [[flex-dash]] · [[internal/flex-dash/board|board]] · [[internal/flex-dash/stories-hm|stories-hm]] · [[internal/flex-dash/stories-linear|stories-linear]] — Salesforce managed package. Case logic engine. Development paused for MAI.
+- [[flex-dash]] · [[internal/flex-dash/board|board]] · [[internal/flex-dash/stories-hm|stories-hm]] · [[internal/flex-dash/stories-linear|stories-linear]] · [[internal/flex-dash/archived-stories|archived]] — Salesforce managed package. Case logic engine. Development paused for MAI.
 
 ## Concepts (5)
 
@@ -118,4 +118,4 @@ Confluence mirrors for Cetera (CE space):
 
 ---
 *Last updated: 2026-05-29*
-*Total pages: 106 (16 projects + 48 project subfiles + 5 concepts + 12 patterns + 7 tools + 5 entities + 10 articles + 4 topics + 5 reports + 5 f2-internal)*
+*Total pages: 111 (16 projects + 53 project subfiles + 5 concepts + 12 patterns + 7 tools + 5 entities + 10 articles + 4 topics + 5 reports + 5 f2-internal)*

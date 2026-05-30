@@ -36,6 +36,7 @@ Flex-Dash is an internal High Meadows product built as a Salesforce managed pack
 - [[internal/flex-dash/board|Board]] — Kanban board
 - [[internal/flex-dash/stories-hm|Stories (HM)]] — High Meadows stories
 - [[internal/flex-dash/stories-linear|Stories (Linear)]] — Linear stories
+- [[internal/flex-dash/archived-stories|Archived Stories]] — completed/closed stories
 
 ---
 *Last updated: 2026-05-29*

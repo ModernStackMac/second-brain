@@ -95,3 +95,4 @@
 - [[f2-internal/CE/financial-planning|Financial Planning]]
 - [[f2-internal/CE/gifts-object-alignment|Gifts Object Alignment]]
 - [[f2-internal/CE/app-address|APP Address]]
+- [[cetera/archived-stories|Archived Stories]] — completed/closed stories

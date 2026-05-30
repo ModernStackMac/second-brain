@@ -86,3 +86,4 @@
 - [[mai/board|Board]] — Kanban board
 - [[mai/stories-f2|Stories (Jira)]] — active Jira stories
 - [[mai/stories-jira|Stories (Jira Import)]] — imported Jira stories
+- [[mai/archived-stories|Archived Stories]] — completed/closed stories
