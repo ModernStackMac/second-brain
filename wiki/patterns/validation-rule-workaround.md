@@ -75,7 +75,7 @@ THEN set Status__c = Status_Temp__c
 CREtelligent has a required Status__c picklist on the Case object with a validation rule. The Connect API doesn't provide status values in the initial payload. Mac is implementing the Step 1 approach: setting a sensible default value ("Pending Review") so cases can be created, then case workers manually confirm the real status later. If that doesn't satisfy the validation rule, the team will move to Step 2 (workaround picklist).
 
 ## Related Pages
-- [[cretelligent/context|CREtelligent]] — engagement using this pattern
+- [[cretelligent/cretelligent|CREtelligent]] — engagement using this pattern
 - [[case-migration]] — related pattern for handling validation rules during data migration
 
 ## Cetera Example: Queue-Scoping Variant

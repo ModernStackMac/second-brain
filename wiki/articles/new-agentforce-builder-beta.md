@@ -32,9 +32,9 @@ Watch for GA announcement at TDX 2026. Worth piloting in sandbox environments on
 ## Related Pages
 
 - [[agentforce]] — updated with new builder capabilities
-- [[harvey/context|Harvey]] — active Agentforce engagement, best candidate for piloting new builder
-- [[nbcu/context|NBCU]] — Agentforce POC
-- [[litify/context|Litify]] — Agentforce service agent
+- [[harvey/harvey|Harvey]] — active Agentforce engagement, best candidate for piloting new builder
+- [[nbcu/nbcu|NBCU]] — Agentforce POC
+- [[litify/litify|Litify]] — Agentforce service agent
 - [[salesforce]] — Salesforce ecosystem news topic
 
 ## Sources

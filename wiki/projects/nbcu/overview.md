@@ -41,7 +41,7 @@ Primary contact is Naresh, with Salesforce licensing and CoE support backing the
 
 ## Related Pages
 - [[stand8]] — partner/reseller connection
-- [[litify/context|Litify]] — concurrent agent/MCP use case, similar constraints
+- [[litify/litify|Litify]] — concurrent agent/MCP use case, similar constraints
 - [[agentforce]] — core technology for POC use cases
 - [[data-cloud]] — holdings data for content recommendation engine
 

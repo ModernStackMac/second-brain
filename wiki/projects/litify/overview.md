@@ -44,8 +44,8 @@ Key stakeholders: Evan Markovich (Salesforce AE), Sarah Paulson (Data Cloud AE),
 
 ## Related Pages
 - [[stand8]] — partner/reseller connection
-- [[harvey/context|Harvey]] — parallel email automation and multi-system intent parsing
-- [[cretelligent/context|CREtelligent]] — data model consolidation pattern
+- [[harvey/harvey|Harvey]] — parallel email automation and multi-system intent parsing
+- [[cretelligent/cretelligent|CREtelligent]] — data model consolidation pattern
 - [[agentforce]] — core technology for service agent implementation
 - [[data-cloud]] — unification layer for fragmented knowledge sources
 

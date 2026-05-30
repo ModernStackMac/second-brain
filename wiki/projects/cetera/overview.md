@@ -55,8 +55,8 @@ Key contacts: Connor, Trevor, Kevin, James, Sean, Darren, Jared, Chris, Kurt, Ju
 
 ## Related Pages
 - [[high-meadows]] — partner/reseller connection
-- [[litify/context|Litify]] — parallel knowledge consolidation effort
-- [[cretelligent/context|CREtelligent]] — complex data model design pattern
+- [[litify/litify|Litify]] — parallel knowledge consolidation effort
+- [[cretelligent/cretelligent|CREtelligent]] — complex data model design pattern
 - [[marketing-cloud]] — provisioning blocker for journey automation
 - [[case-migration]] — core migration pattern
 

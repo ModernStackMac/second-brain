@@ -72,7 +72,7 @@ Keeping SiteProduct schema aligned with standard Product fields (product_key, pr
 CREtelligent is implementing SiteProduct to track multiple environmental services (excavation, soil testing, disposal) per project site. Each product has different costs, timelines, and pricing. The joiner allows the sales team to quote individual products per site, and the operations team to track distinct workflows and actuals per product type.
 
 ## Related Pages
-- [[cretelligent/context|CREtelligent]] — engagement implementing this pattern
+- [[cretelligent/cretelligent|CREtelligent]] — engagement implementing this pattern
 - [[connect-api]] — source of order payload data
 - [[json-deserialize-refactor]] — pattern for parsing the Connect API payloads that populate SiteProducts
 

@@ -42,7 +42,7 @@ Litify's implementation is a good example: knowledge is fragmented across multip
 - Better customer self-service (if exposed externally)
 
 ## Related Pages
-- [[litify/context|Litify]] — primary engagement using this pattern
+- [[litify/litify|Litify]] — primary engagement using this pattern
 - [[agentforce]] — the agent providing recommendations
 - [[data-cloud]] — the unification layer
 - [[llm-knowledge-management]] — broader topic page covering LLM-powered wiki patterns

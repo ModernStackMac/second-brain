@@ -2,7 +2,7 @@
 > Salesforce Marketing Cloud — journey automation and campaign management platform. Being provisioned for the Cetera engagement.
 
 ## Overview
-Salesforce Marketing Cloud is the enterprise marketing automation platform used for journey-based campaigns, email automation, and audience segmentation. In the MSS context, it's being provisioned for the [[cetera/context|Cetera]] engagement (Project Keystone) to build automated customer journeys alongside the core Salesforce org consolidation work.
+Salesforce Marketing Cloud is the enterprise marketing automation platform used for journey-based campaigns, email automation, and audience segmentation. In the MSS context, it's being provisioned for the [[cetera/cetera|Cetera]] engagement (Project Keystone) to build automated customer journeys alongside the core Salesforce org consolidation work.
 
 ## Key Details
 
@@ -19,7 +19,7 @@ Salesforce Marketing Cloud is the enterprise marketing automation platform used 
 - Growth engine work continuing in parallel
 
 ## Related Pages
-- [[cetera/context]] — primary engagement requiring Marketing Cloud
+- [[cetera/cetera|Cetera]] — primary engagement requiring Marketing Cloud
 - [[high-meadows]] — partner firm for the engagement
 
 ## Sources

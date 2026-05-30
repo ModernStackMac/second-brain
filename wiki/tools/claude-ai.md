@@ -40,7 +40,7 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 **HMS Internal (High Meadows):**
 - Claude Sonnet running at 2% capacity
 - Development velocity accelerating: complete app rebuilds in a single day, Slack bot deployments in 25 minutes with recursive issue resolution
-- Integration with [[internal/meadow/context|Meadow]] (capacity planning tool) planned as Phase 2 (chat interface)
+- Integration with [[internal/meadow/meadow|Meadow]] (capacity planning tool) planned as Phase 2 (chat interface)
 
 **Model Exploration:**
 - Mythos AI tested and performs better than Sonnet/Opus in some contexts
@@ -50,8 +50,8 @@ Mac is a power user across Claude's entire ecosystem — Claude Code for rapid d
 - Salesforce QA/Dev role specifically seeking Claude Code integration experience
 
 ## Related Pages
-- [[harvey/context|Harvey]] — email intent parsing use case
-- [[internal/meadow/context|Meadow]] — internal capacity planning with Claude integration planned (Phase 2 chat interface)
+- [[harvey/harvey|Harvey]] — email intent parsing use case
+- [[internal/meadow/meadow|Meadow]] — internal capacity planning with Claude integration planned (Phase 2 chat interface)
 - [[agentforce]] — part of multi-model orchestration strategy
 - [[modern-stack-systems]] — primary employer using Claude extensively
 - [[llm-knowledge-management]] — Claude as compiler/librarian for persistent wikis

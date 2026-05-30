@@ -47,7 +47,7 @@ Harvey's email intake workflow is a perfect example: incoming emails contain mix
 - Latency-sensitive (orchestration adds round-trip overhead)
 
 ## Related Pages
-- [[harvey/context|Harvey]] — email intake use case
+- [[harvey/harvey|Harvey]] — email intake use case
 - [[agentforce]] — one component in the orchestration
 - [[claude-ai]] — another component, specialized for intent parsing
 

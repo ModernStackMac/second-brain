@@ -55,10 +55,10 @@ Key clients are piloting Agentforce for specific workflows: email intent parsing
 - Office 365 integration scope should be revisited in light of Hosted MCP + Claude Desktop.
 
 ## Related Pages
-- [[harvey/context|Harvey]] — email intent parsing use case
-- [[nbcu/context|NBCU]] — content recommendation pilot
-- [[litify/context|Litify]] — service agent triage use case
-- [[cretelligent/context|CREtelligent]] — product model standardization
+- [[harvey/harvey|Harvey]] — email intent parsing use case
+- [[nbcu/nbcu|NBCU]] — content recommendation pilot
+- [[litify/litify|Litify]] — service agent triage use case
+- [[cretelligent/cretelligent|CREtelligent]] — product model standardization
 - [[data-cloud]] — unification layer for agent data
 - [[claude-ai]] — external AI model coordination (Claude Sonnet 4.5 = Vibes default)
 - [[multi-agent-orchestration]] — orchestration pattern across models

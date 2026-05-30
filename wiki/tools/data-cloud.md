@@ -31,9 +31,9 @@ Across MSS engagements, Data Cloud is emerging as critical infrastructure for ag
 - Key advantage: agents don't need to orchestrate multiple API calls — query once from the unified model
 
 ## Related Pages
-- [[litify/context|Litify]] — primary use case for knowledge unification
-- [[nbcu/context|NBCU]] — secondary use case for content recommendations
-- [[blink-payments/context|Blink Payments]] — merchant data ingestion and identity resolution
+- [[litify/litify|Litify]] — primary use case for knowledge unification
+- [[nbcu/nbcu|NBCU]] — secondary use case for content recommendations
+- [[blink-payments/blink-payments|Blink Payments]] — merchant data ingestion and identity resolution
 - [[agentforce]] — primary consumer of unified data
 
 ## Sources
