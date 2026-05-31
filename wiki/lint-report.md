@@ -1,154 +1,43 @@
 # Wiki Lint Report
-**Run date:** 2026-05-26
-**Total pages scanned:** 106
-**Issues found:** 8 critical, 10 recommended, 3 informational
+**Run date:** 2026-05-31
+**Total pages scanned:** 0 wiki pages (the `wiki/` tree does not exist yet)
+**Meeting notes checked:** 5
+**Raw sources checked:** 3
+**Issues found:** 3 critical, 4 recommended, 3 informational
+
+> **Headline:** The `wiki/` knowledge base has never been built. The vault currently contains only source material (`raw/`, `Meeting Notes/`) plus governance files. Because there are no wiki pages, the link/orphan/journal/slug-folder checks have nothing to scan — every one of them resolves to "missing target." The single highest-leverage fix is to run **`kb-ingest-now`** to compile the 5 meeting notes and 3 raw sources into project pages, then re-run this lint.
 
 ## Critical Issues
 
-### 1. Unmapped project folders (10a)
+1. **Entire `wiki/` tree is missing.** None of the expected scaffolding exists: `wiki/index.md`, `wiki/log.md`, `wiki/projects/{slug}/context.md`, `wiki/projects/{slug}/journal.md`. The README and SCHEMA both assume this structure. Consequence: standard checks 1–7 and slug-integrity checks 10a/10b/10c/10g cannot run (no pages, no folders, no journals to validate). **Fix:** run `kb-ingest-now` to build `wiki/projects/litify-nexus`, `wiki/projects/litify-lawworks`, and `wiki/projects/cetera-sf`, each with `context.md` + `journal.md`, then build `wiki/index.md`.
 
-11 project folders under `wiki/projects/` have no entry in `project-mapping.md`. These folders are actively used but cannot be routed by story-sync.
+2. **All 5 meeting notes are unlinked from the graph (check 11).** No wiki page links any meeting note, because no wiki pages exist. Affected files:
+   - `Meeting Notes/Cetera/2026-05-18 Cetera Salesforce Sync.md` → should be linked from `wiki/projects/cetera-sf/context.md`
+   - `Meeting Notes/Litify/2026-05-12 Litify Kickoff.md` → `wiki/projects/litify-lawworks/context.md`
+   - `Meeting Notes/Litify/2026-05-révisé Litify Onboarding.md` → `wiki/projects/litify-lawworks/context.md`
+   - `Meeting Notes/Nexus/2026-05-20 Nexus Data Migration Kickoff.md` → `wiki/projects/litify-nexus/context.md`
+   - `Meeting Notes/Nexus/2026-05-27 Nexus Schema Review.md` → `wiki/projects/litify-nexus/context.md`
+   **Fix:** add a `## Meeting Note Sources` section with `[[wikilinks]]` to each project's `context.md` during ingest.
 
-| Folder | Suggested Fix |
-|---|---|
-| `blink-payments` | Add to Canonical Slug Index (no Jira/Linear source — manual project) |
-| `cartier` | Add to Canonical Slug Index (no Jira/Linear source — direct MSS client) |
-| `cretelligent` | Add to Canonical Slug Index (no Jira/Linear source — Stitch partner) |
-| `harvey` | Add to Canonical Slug Index (no Jira/Linear source — Stand8 partner) |
-| `litify` | Add to Canonical Slug Index (no Jira/Linear source — Stand8 partner) |
-| `loftware` | Add to Canonical Slug Index (no Jira/Linear source — HMS prospect) |
-| `modern-stack-systems` | Add to Canonical Slug Index (no Jira/Linear source — internal) |
-| `nbcu` | Add to Canonical Slug Index (no Jira/Linear source — Stand8 partner) |
-| `internal/high-meadow-labs` | Add to Canonical Slug Index under internal/ |
-| `internal/high-meadow-website` | Add to Canonical Slug Index under internal/ |
-| `flex-dash` (top-level) | **DELETE** — empty duplicate of `internal/flex-dash`. Contains zero files. |
-
-### 2. Stories frontmatter mismatches (10b)
-
-| File | Frontmatter `project` | Enclosing folder | Fix |
-|---|---|---|---|
-| `wiki/projects/internal/flex-dash/stories-hm.md` | `flex-dash` | `internal/flex-dash` | Update frontmatter to `project: internal/flex-dash` |
-| `wiki/projects/internal/meadow/stories-hm.md` | `meadow` | `internal/meadow` | Update frontmatter to `project: internal/meadow` |
-
-### 3. Deprecated slug alias persists
-
-`wiki/projects/cetera/overview.md` line 2 still has `aliases: [cetera, f2-cetera, f2/cetera]`. The `f2-cetera` and `f2/cetera` aliases are deprecated. Remove them from the aliases array.
-
-### 4. Missing report file
-
-`wiki/reports/mai-project-overview.md` is referenced in `wiki/index.md` (line 82) and `wiki/log.md` but does not exist. Either recreate the report or remove the dead index entry.
-
-### 5. Broken wiki-links — bare project slug pattern (80+ instances)
-
-The most pervasive issue: wiki pages link to project slugs using bare names like `[[harvey]]`, `[[litify]]`, `[[cretelligent]]`, etc. These don't resolve because project pages live at `wiki/projects/{slug}/context.md`, not `wiki/{slug}.md`. Affected files include nearly every tool, pattern, entity, article, concept, and overview page.
-
-**Most-referenced broken targets:**
-- `[[harvey]]` — 14 references across tools, articles, entities, patterns
-- `[[litify]]` — 13 references
-- `[[cretelligent]]` — 12 references
-- `[[nbcu]]` — 10 references
-- `[[cetera]]` — 4 references
-- `[[meadow]]` — 7 references (should be `[[internal/meadow/context]]`)
-- `[[mai]]` — 3 references
-- `[[high-meadow-website]]` — 5 references (should be `[[internal/high-meadow-website/context]]`)
-- `[[loftware]]` — 2 references
-- `[[high-meadow-labs]]` — 2 references (should be `[[internal/high-meadow-labs/journal]]`)
-
-**Fix:** Standardize all project cross-references to use `[[{slug}/context]]` or `[[{slug}/context|Display Name]]` format. This is a vault-wide find-and-replace operation.
-
-### 6. Non-canonical link aliases in older pages
-
-Several pages use legacy slug forms that never existed as files:
-- `[[hms-capacity-planning]]` — should be `[[internal/meadow/context|Meadow]]` (3 references)
-- `[[high-meadows-mai]]` — should be `[[mai/context|MAI]]` (4 references)
-- `[[meadow-app]]` — should be `[[internal/meadow/context|Meadow]]` (3 references)
-- `[[mai-crm-build]]` — should be `[[mai/context|MAI]]` (1 reference)
-- `[[capacity-planning]]` — should be `[[internal/meadow/context]]` (1 reference)
-
-### 7. Empty stale folder
-
-`wiki/projects/flex-dash/` at top level is empty (0 files). This is a leftover from before the slug was corrected to `internal/flex-dash`. Safe to delete.
-
-### 8. `wiki/log.md` broken links
-
-`wiki/log.md` contains 30+ broken `[[wiki-links]]` in historical entries. These are in log text referencing pages by old/non-canonical slugs. Since log entries are historical records, these should be left as-is but noted. Key examples: `[[MCP-Obsidian]]`, `[[scheduled-tasks]]`, `[[productivity-systems]]`, `[[mcp]]`, `[[slug]]`.
+3. **Deprecated slug `f2-cetera` used in `raw/cetera-salesforce-sync.md` (check 10d).** Line: `"This is the f2-cetera project. Jira key CET."` Per `project-mapping.md`, `f2-cetera` was deprecated → canonical `cetera-sf` on 2026-05-22. Raw sources are never modified, so this is **flag-only** — but the ingest step MUST resolve this to `cetera-sf`, not create an `f2-cetera` folder. The Cetera meeting note frontmatter already uses the correct `cetera-sf`, so the source of truth is the meeting note, not the raw clipping.
 
 ## Recommended Fixes
 
-### 1. Missing journals (10g)
+1. **`SCHEMA.md` exists as BOTH a file and a directory.** Vault root contains a `SCHEMA.md` file (governance prose) *and* a `SCHEMA.md/` directory holding `SCHEMA.md/SCHEMA.md` (a YAML-style restatement). The README references a single `SCHEMA.md`. The two copies are substantively consistent (same canonical tags, same deprecated slugs, same journal frontmatter requirements) so there is no factual contradiction, but the duplication breaks "single source of truth." **Fix (ask first — involves deletion):** keep the root `SCHEMA.md` file as canonical, fold any unique content from `SCHEMA.md/SCHEMA.md` into it, then remove the stray directory.
 
-These project folders lack `journal.md` or have journals missing required frontmatter fields (`status`, `owner`, `priority`, `last_meeting`, `open_actions`):
+2. **Non-standard meeting-note filename:** `Meeting Notes/Litify/2026-05-révisé Litify Onboarding.md`. Siblings follow `YYYY-MM-DD Title.md`; this one has a malformed date segment (`2026-05-révisé`) and a non-ASCII character. The file's own frontmatter is `date: 2026-05-13`. **Fix (ask first — renames a meeting-note source):** rename to `2026-05-13 Litify Onboarding (revised).md`.
 
-**Missing journal entirely:**
-- `wiki/projects/blink-payments/` — has `context.md` only
-- `wiki/projects/flex-dash/` (top-level) — empty folder, should be deleted
-- `wiki/projects/internal/flex-dash/` — has stories files but no journal (development paused)
+3. **No project folders for the 3 active projects (checks 10a / 10g).** `project-mapping.md` defines `litify-nexus`, `litify-lawworks`, `cetera-sf` as active, but none has a `wiki/projects/{slug}/` folder, `context.md`, or `journal.md` (with required frontmatter `status, owner, priority, last_meeting, open_actions`). Resolved by the ingest run in Critical #1.
 
-**Journals missing all frontmatter fields:**
-- `wiki/projects/cartier/journal.md`
-- `wiki/projects/internal/high-meadow-website/journal.md`
-- `wiki/projects/internal/meadow/journal.md`
-- `wiki/projects/loftware/journal.md`
-- `wiki/projects/modern-stack-systems/journal.md`
-
-### 2. Orphan pages (no inbound links)
-
-38 wiki pages have zero inbound `[[wiki-links]]` from other pages. Most are project journals, overviews, boards, and stories files that are only reachable by navigating the folder structure. Key orphans outside of project folders:
-
-- `wiki/projects/projects.md` — unclear purpose, not referenced anywhere
-- `wiki/f2-internal/CE/*.md` (5 files) — Confluence mirror pages with no cross-links
-
-Project journals, overviews, and board files are structurally orphaned because index.md links to `[[slug/context]]` and `[[slug/journal]]` using Obsidian basename resolution, but many use path-based links that don't resolve the same way.
-
-### 3. Missing index entries
-
-Files not listed in `wiki/index.md`:
-- `wiki/projects/mai/stories-jira.md`
-- `wiki/projects/cetera/stories-jira.md`
-- `wiki/projects/lnw/stories-jira.md`
-- `wiki/projects/internal/flex-dash/stories-linear.md`
-- `wiki/projects/internal/meadow/stories-linear.md`
-- `wiki/projects/internal/high-meadow-website/files/Website-Feedback-2026-04-17.md`
-- `wiki/projects/internal/high-meadow-website/files/README.md`
-
-Stories-jira and stories-linear files were added by story-sync after the index was last updated. Add references alongside existing stories entries.
-
-### 4. Dead index entry
-
-`wiki/index.md` line 82 references `[[reports/mai-project-overview]]` but the file does not exist. Remove this line or recreate the report.
-
-### 5. Missing cross-references
-
-- `wiki/tools/contour.md` — listed at bottom of index.md as an afterthought note but not in the Tools section
-- `wiki/reports/weekly-synthesis-2026-04-27.md` and `wiki/reports/weekly-synthesis-2026-05-11.md` — not listed in Reports section of index.md
-- `wiki/reports/agentforce-knowledge-report.md` — not listed in Reports section of index.md
-- `wiki/f2-internal/CE/*.md` (5 files) — not referenced from any project or entity page
-
-### 6. Index.md is stale
-
-`wiki/index.md` header says "Last updated: 2026-04-21" with "Total pages: 61" but the vault now has 106 wiki pages. The index has been extended with append-style notes but not restructured. Recommended: full index rebuild.
-
-### 7. Non-canonical tag
-
-Tag `#active` found in wiki pages. Not in TAGS.md canonical list. Should be `#status/in-progress` or added to taxonomy.
+4. **No `wiki/index.md` master catalog (check 3).** Nothing to catalog yet; create during ingest.
 
 ## Informational
 
-### 1. Source coverage gaps
+1. **Source coverage (check 8):** all 3 `raw/` files and all 5 meeting notes are unprocessed — no `wiki/log.md` records any ingest run. Mapping of raw → project is clean: `litify-onboarding-notes.md`→`litify-lawworks`, `cetera-salesforce-sync.md`→`cetera-sf`, `nexus-migration-kickoff.md`→`litify-nexus`.
 
-`raw/archived-stories/` contains 160+ archived story files (MAI, Cetera, flex-dash, meadow, LNW) not logged in `wiki/log.md`. These are story-sync archives and may not require wiki processing, but they should be acknowledged in the log or explicitly excluded from lint scope.
+2. **Tag hygiene (check 9):** all tags found in meeting-note frontmatter (`meeting`, `cetera-sf`, `litify-lawworks`, `litify-nexus`) are canonical or valid slug tags. No non-canonical tags detected. No contradictions across tech-stack claims (Litify-on-Salesforce, Nexus PostgreSQL→Litify+S3, Cetera SF-system-of-record are internally consistent).
 
-`raw/templates/quick-capture.md` is a template, not a source — expected to be unprocessed.
-
-`raw/story-sync-unrouted.md` — unrouted stories file, should be reviewed.
-
-### 2. Log size
-
-`wiki/log.md` exceeds the 200-entry rotation threshold. All entries are within 90 days (earliest ~2026-04-06), so no rotation candidates yet. Will need rotation by July 2026.
-
-### 3. wiki/log.md historical broken links
-
-30+ broken links in historical log entries (pre-canonical slug era). These are expected artifacts and should not be modified — they document the state at the time of writing.
+3. **Governance freshness:** `project-mapping.md` last updated 2026-05-28 (current). `README.md` and `SCHEMA.md` last updated 2026-05-10 (21 days — within the 60-day staleness window). Jira workspace+key pairs (check 10f) are unique. No deprecated slugs in meeting-note frontmatter.
 
 ---
 *Auto-generated by second-brain-lint*
