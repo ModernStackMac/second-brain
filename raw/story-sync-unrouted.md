@@ -109,3 +109,12 @@
 [2026-06-01T07:21:47-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET)
 [2026-06-01T07:21:47-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for scheduled run. Meadow and Flex Dash stories not fetched this run.
 [2026-06-01T07:21:47-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
+
+
+[2026-06-01T09:22:35-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 "PROD: Flexdash component keeps flipping back to 'no component groups configured'" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI)
+[2026-06-01T09:22:35-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1614 "Fund Assignment: Assignee contact search pulling from originating financial account" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI)
+[2026-06-01T09:22:35-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI)
+[2026-06-01T09:22:35-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET)
+[2026-06-01T09:22:35-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for scheduled run. Meadow and Flex Dash stories not fetched this run.
+[2026-06-01T09:22:35-05:00] NO-OP — active Jira set unchanged since 07:21:47 run today (LNW-189/190/191/192 all Review; LNW-165 already archived). Canonical lnw/stories-f2.md, board.md, archived-stories.md, and Action-Tracker.md already reflect current state; not rewritten to avoid duplicate-append corruption (write tools are append-only).
+[2026-06-01T09:22:35-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
