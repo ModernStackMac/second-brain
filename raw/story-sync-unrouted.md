@@ -126,3 +126,11 @@
 [2026-06-01T15:21:42-05:00] NOTE — MAI-1614 "Fund Assignment: Assignee contact search" no longer returned by active Jira query (completed/closed since 09:22 run); removed from Action-Tracker.
 [2026-06-01T15:21:42-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for scheduled run. Meadow and Flex Dash stories not fetched this run.
 [2026-06-01T15:21:42-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
+
+
+[2026-06-01T17:21:02-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 "PROD: Flexdash component keeps flipping back from visible to 'no component groups configured'" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI). Status=Active (High).
+[2026-06-01T17:21:02-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 "Hide remaining Financial Account Type picklist values (red items)" — no mapping in project-mapping.md (MAI Jira Project Key is TBD; actual=MAI). Status=Developer Review.
+[2026-06-01T17:21:02-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, actual Jira key is CET). Status=In Progress.
+[2026-06-01T17:21:02-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for scheduled run. Meadow and Flex Dash stories not fetched this run.
+[2026-06-01T17:21:02-05:00] NO-OP — active Jira set unchanged since 15:21:42 run today (LNW-189/190/191/192 all Review; LNW-165 already archived; MAI-1633/MAI-1292/CET-110 unrouted). Canonical lnw/stories-f2.md, board.md, archived-stories.md, and Action-Tracker.md already reflect current state; not rewritten to avoid duplicate-append corruption (write tools are append-only).
+[2026-06-01T17:21:02-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
