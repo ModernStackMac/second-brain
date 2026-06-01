@@ -60,3 +60,26 @@
 - Decisions: already present in Decision-Log (Cartier rows exist).
 - ROUTING GAP: Cartier has no entry in project-mapping.md despite an active Meeting Notes folder. Recommend adding a canonical slug entry (provisional `cartier`, company Modern Stack Systems, client Chad Cartier, Cetera back office). Flagged on cartier/context.
 - Key takeaways: EAC for in-system contacts + Cirrus for external; attachment-ordering fix; DocuSign-via-back-office out of scope.
+
+## [2026-06-01] ingest | Stitch/CREtelligent — registered existing wiki + patterns/concept
+- Source: Meeting Notes/Stitch/Cretelligent/ (2026-04-02 → 2026-05-28, 40 notes)
+- Finding: a prior (≈2026-05-30) run had ALREADY built the cretelligent wiki — projects/cretelligent/cretelligent.md (context, all 40 notes linked in ## Meeting Note Sources), journal.md (weekly entries through May 27), and overview.md — but it was never recorded in this log or wiki/index.md, so the project looked unbuilt. No duplicate project pages created (cretelligent.md is the canonical context page, matching the meadow.md convention).
+- Pages created: patterns/validation-rule-bypass-before-save, patterns/junction-object-line-item-model, concepts/mulesoft-vs-apex-integration
+- Pages updated: index.md — added cretelligent (→ cretelligent/cretelligent), 2 patterns, 1 concept; removed Cretelligent + meadow-raw from Backlog
+- Patterns extracted: validation-rule-bypass-before-save, junction-object-line-item-model; concept mulesoft-vs-apex-integration (all reusable across SF engagements, sourced from CREtelligent)
+- Commitments: none added — all genuine Mac items (Apr 13 → May 27) already in commitments.md ## Open.
+- Decisions: none added — Decision-Log.md already has comprehensive CREtelligent rows through 2026-05-27.
+- LINT FLAGS for next health check: (1) existing cretelligent.md/journal.md/overview.md use backtick source citations `*(Source: \`Meeting Notes/...\`)*` instead of wikilinks — violates SCHEMA graph-connectivity rule (graph linkage IS established via cretelligent.md ## Meeting Note Sources wikilinks, so non-urgent). (2) journal.md weekly entries are partly out of chronological order and use inconsistent week-heading formats. (3) overview.md ## Sources cites deprecated raw path raw/projects/hms-capacity-planning/ (now raw/projects/meadow/).
+- ROUTING ANOMALIES (files left untouched per immutability): 2026-04-02 Internal Team Sync = wealth-mgmt content (Schwab/Altruist/Orion), likely mis-filed; 2026-04-20 Impromptu Call [Fathom] = MAI/Cetera/HMS-website standup content; 2026-05-04 frontmatter project=cetera but content is CREtelligent (routed by folder); 2026-05-27 "Environmental Quote Management" includes personal CPA/WCG content; 2026-05-19 & both 2026-05-28 notes have no Granola summary.
+- Key takeaways: CRE/environmental due-diligence Salesforce build. Migration from opportunity-checkbox model → product-centric Site Product junction (OLI replacement); Order Service (Radius) Apex integration (JSON.deserialize refactor); Cost Worksheet + Apex roll-ups (CW→Site Product→Site→Opp); Conga proposal redesign, Quire report-gen (S3 polling, no webhooks), DocHub. MuleSoft deferred in favor of enriching the Apex payload. UAT targeted mid-to-late June.
+
+## [2026-06-01] ingest | raw/projects/meadow — already-ingested check
+- Source: Second Brain/raw/projects/meadow/ (meadow-database-schema.md, meadow-open-items.md, user-stories.md, schema.txt)
+- Pages created/updated: none
+- Finding: content (11-table schema, 22 user stories across 6 workstreams, open items, priority order) is already fully represented in wiki/projects/internal/meadow/meadow.md and overview.md. No new pages — avoids duplication.
+- Note (for lint): overview.md ## Sources cites deprecated raw path raw/projects/hms-capacity-planning/; current location is raw/projects/meadow/. Citation refresh deferred to lint.
+- Patterns extracted: none
+
+## [2026-06-01] ingest | run note
+- Maintenance: commitments.md ## Done has no checked items >14d to archive; wiki/log.md well under 200 entries (no rotation). 
+- Self-correction: this run initially created a duplicate cretelligent/context.md and appended a second weekly block to journal.md before discovering the existing (unlogged) May-30 cretelligent pages; both were reverted (context.md deleted, journal.md restored to original 614 lines). Net new this run = 2 patterns + 1 concept + index/log registration.
