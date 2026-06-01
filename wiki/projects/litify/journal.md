@@ -65,3 +65,32 @@ Confirmed the core challenge: knowledge fragmented across 5 platforms (Google Cl
 - Internal vs. external agent scope — determining which workflows the agent handles
 
 ---
+# Litify — Journal
+
+## Week of Apr 13–19, 2026
+
+SOW iteration week. Internal working session (Apr 13) scoped the AI case-management features and hours (~120 hrs base, 8-week timeline at Mac's 20 hrs/week), pending Evan March's AI requirements doc. SOW review (Apr 14) settled 120 hrs base + 18 hrs PM (138–158 range) and removed case prioritization. Then ahead of the Salesforce + Litify meeting, Mac/Ryan/Liana scaled the SOW down hard (Apr 17): the Litify meeting covered ~80% of the wishlist but pricing came in above Salesforce's expectation and Litify questioned licensing and wanted a pilot. Team trimmed to core easy wins — case summaries, case resolution, KB-article creation — landing a fixed-price 66-hour SOW, plus ballpark external-agent (40 hrs) and internal similar-case agent (20 hrs) estimates to send to Evan. *(Sources: [[Meeting Notes/Stand8/Litify/2026-04-13 - Internal Litify SOW Discussion|2026-04-13]], [[Meeting Notes/Stand8/Litify/2026-04-14 - SOW Review|2026-04-14]], [[Meeting Notes/Stand8/Litify/2026-04-17 - Ryan Liana Chat|2026-04-17]])*
+
+**Decisions:**
+- Scaled SOW to 66 hrs (57 impl + 9 PM), fixed price; cut KB recommendation, email drafting, case field population.
+- Button-triggered case summaries (conserve credits) + auto resolution summary on close.
+- Send both SOW versions + two agent estimate blurbs to Evan March; let Litify confirm assumptions.
+- No true pilot — full Agentforce + Data Cloud still required.
+
+**Open questions:**
+- Exact "case updates" scope for the external agent (status-only vs richer context)?
+- KB access/tagging structure (drives recommendation difficulty)?
+- "Surface related cases" = internal similar-resolved-cases (agreed interpretation).
+
+## Week of Apr 6–12, 2026
+
+New opportunity kickoff. Salesforce AEs (Evan Markovich, Sarah Paulson) brought Stand8/MSS into a Litify Agentforce for Service engagement — case triage, prioritization/scoring, KB recommendation + creation with human-in-the-loop, and Data Cloud to unify knowledge across Google Cloud, Slack, Jira, Confluence, and SF Knowledge. Mac flagged that Agentforce doesn't support MCP, so some Claude Code-style features (e.g. deck generation) aren't feasible there. Planned a 1-hour reverse demo of Litify's service environment to inform the SOW. *(Source: [[Meeting Notes/Stand8/Litify/2026-04-09 - Litify & Stand8 Sync|2026-04-09 — Litify & Stand8 Sync]])*
+
+**Decisions:**
+- Run a 1-hour reverse demo before drafting the SOW.
+- SOW to cover Data Cloud integrations, case scoring, KB recommendation/creation, external agent exposure.
+
+**Open questions:**
+- Access level for each external data source; Litify's current SF licenses/Data Cloud entitlements; KB approval workflow; where/how the external agent is exposed and its auth model.
+
+---

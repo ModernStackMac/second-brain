@@ -68,3 +68,25 @@ As the wiki grows large enough (hundreds of sources, thousands of pages), the na
 
 ---
 *Last updated: 2026-04-19*
+# LLM Knowledge Management (Second Brain Pattern)
+
+> Accumulator for the "LLM as compiler/librarian" pattern — persistent, compounding wikis maintained by an LLM.
+
+## Overview
+The pattern (popularized via Andrej Karpathy) where raw sources are compiled by an LLM into a structured, backlinked markdown wiki that stays current as new sources arrive — distinct from stateless RAG, which re-derives knowledge on every query. The human curates and questions; the LLM does the summarizing, cross-referencing, filing, and bookkeeping. This very vault is an implementation.
+
+## Key Developments (newest first)
+- **2026-04-09** — Practical 5-minute setup + the original "LLM Wiki" prompt; Ingest/Query/Lint ops, index.md + log.md conventions, ready-to-run `claude -p` commands. → [[articles/claude-obsidian-second-brain]]
+- **2026-04-09** — Full method walkthrough: capture → compile → navigate → query-as-files → lint; Claude Code + Skills; mcp-obsidian for direct vault access. → [[articles/karpathy-claude-skills-obsidian]]
+
+## Core Principles
+- Three layers: immutable raw sources, LLM-owned wiki, schema doc (CLAUDE.md) that enforces discipline.
+- Answers get filed back as wiki pages so explorations compound.
+- Periodic linting keeps integrity high with near-zero manual bookkeeping.
+
+## Related Pages
+- [[obsidian]] — the substrate
+- [[articles/obsidian-6-free-plugins]] — supporting plugins (Dataview, Templater, Git)
+
+---
+*Last updated: 2026-06-01*

@@ -68,3 +68,29 @@ Chad & Mac Connect (Apr 30, w/ Chad Cartier): scoping session for two Salesforce
 
 ---
 *Last updated: 2026-04-30*
+# Cartier — Journal
+
+## Week of May 11–17, 2026
+
+Email attachment demo. Mac showed Einstein Activity Capture syncing incoming Outlook emails + attachments (PDF, Word, Excel, CSV, PNG all tested) onto Salesforce client records in real time. Outgoing attachments still need investigation. Settled on a dual approach — EAC for contacts already in Salesforce, Cirrus only for external senders not in the system. Chad's EAC was disconnected by a prior team when they moved to Cirrus; documented the 4-step reconnect (bear icon → Settings → Connected Accounts → Office 365 SSO). Requires coordinating with Nick (Outlook admin) on forwarding rules and a unique email-service address for production. *(Source: [[Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo|2026-05-13 — Email Attachment Demo]])*
+
+**Decisions:**
+- Use both EAC (in-system contacts) and Cirrus (external senders).
+- Reconnect Chad's EAC account; deploy remaining code after Nick updates forwarding rules.
+
+**Open questions:**
+- Outgoing email attachment capture — feasible with EAC or needs another mechanism?
+
+## Week of Apr 27 – May 3, 2026
+
+Requirements call. Chad walked the current manual process — emails auto-track via Cirrus Insights but attachments must be filed manually. Goal: auto-capture attachments to the right records without bloating the client record with a huge attachment list (keep them on the email). Mac flagged binary file types (Word/Excel) as the hard part vs PDFs/text. Chad also wants a chronological case activity timeline for a new service hire; Mac proposed repurposing his existing custom chatter/activity-timeline component onto the case page. DocuSign docs from Cetera's back office don't return as email attachments — deferred to a future phase. *(Source: [[Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect|2026-04-30 — Chad & Mac Connect]])*
+
+**Decisions:**
+- Phase 1 = email attachment automation; DocuSign/back-office attachments deferred.
+- Reuse the existing activity-timeline LWC on the case object.
+- Deliver a solution design doc (exec summary + implementation/files) for Chad + Lori to approve before build.
+
+**Open questions:**
+- Whether attachments should also attach to the source/person record or stay only on the email.
+
+---

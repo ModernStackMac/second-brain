@@ -45,3 +45,30 @@ The no-nested-objects limit is the real constraint — anything with line items 
 ## Sources
 
 - raw/articles/2026-04-18T074249-0500-Building AI Automations with Prompt Builder Structured Outputs.md
+# Building AI Automations with Prompt Builder Structured Outputs
+
+> Structured Outputs moves JSON format enforcement from the prompt to the platform, giving Flow/Apex reliable parseable responses.
+
+**Source:** [Prompt Builder Structured Outputs](https://developer.salesforce.com/blogs/2026/04/building-ai-automations-with-prompt-builder-structured-outputs) | **Published:** 2026-04-02 | **Tags:** salesforce, ai
+
+## Summary
+Prompt templates normally return a plain string, forcing you to beg the model for JSON and write Apex to parse it — fragile when the model adds Markdown fences or hallucinates fields. Structured Outputs (Spring '26) switches the response format from Default to JSON and enforces it at the platform level. You define the shape with object-based Lightning types (String, Boolean, Integer, Date, DateTime), and every invocation returns conforming JSON. In Flow, fields surface as mappable variables; in Apex, you cast `structuredResponse` directly via the `LightningTypes` namespace — no `JSON.deserialize`, no wrapper classes.
+
+## Key Takeaways
+- Format is enforced by the platform, not the model's willingness to comply.
+- Lightning types are declarative; assign as the template's response structure.
+- Limitations: no nested objects/arrays (return lists as JSON-string fields, parse in Apex); picklists not natively enforced (validate downstream); Lightning types aren't versioned — editing a live type silently breaks wired Flows/Apex (create a new type instead).
+- Structured ≠ accurate: guarantees valid shape, not correct values — still add validation.
+
+## Why It Matters
+Practical pattern for Agentforce/Prompt Builder client work: case classification, contract extraction, email-to-record automations. Directly applicable to Litify (case triage) and Harvey (email parsing).
+
+## Related Pages
+- [[salesforce-ai-tooling]] — SF AI tooling news
+- [[litify/context]] — Agentforce for Service case triage
+
+## Sources
+- Second Brain/raw/articles/2026-04-18T074249-0500-Building AI Automations with Prompt Builder Structured Outputs.md
+
+---
+*Last updated: 2026-06-01*

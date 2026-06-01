@@ -79,3 +79,38 @@ Naresh expressed frustration about unresolved questions on the original problem 
 
 ---
 
+# NBCU — Journal
+
+## Week of Apr 20–26, 2026
+
+Raghu/Speaker-1 gave a full DealSet data-model walkthrough (opportunities → proposals → line items; Safe as source of truth syncing every 20 min via platform events; Budget Module via Data Cloud; Deal Approvals for >$5M). The bulk of the call was problem-statement alignment on the pricing-fee recommendation agent. Mac pushed consultatively on matching accuracy — genre + budget alone can't reliably match comparable deals — but NBCU (per Karthi) has ruled cast out as a parameter and considers the approach "open for solutioning." Some friction: Naresh reset expectations that the call was to showcase the data model, not re-debate the approach. Agreed to proceed while staying open to refinement. *(Source: [[Meeting Notes/Stand8/NBCU/2026-04-20 - NBCU Stand8 POC|2026-04-20 — DealSet Walkthrough]])*
+
+**Decisions:**
+- Proceed with pricing-fee recommendation as the focus use case (genre + budget matching).
+- Cast/actor data excluded as a scoring parameter.
+- Deliver complimentary (non-billable) SOW with scope/timeline/LOE — target Thursday review.
+
+**Open questions:**
+- How to make budget matching accurate enough for confidence without cast/performance signals?
+- What additional data could refine matching (rejected IMDB augmentation)?
+
+## Week of Apr 13–19, 2026
+
+Two architecture-review sessions (Apr 13, Apr 15) were both cut short / rescheduled because Karthi (Business Solutions partner) was unavailable. Established that the agent will recommend pricing from historical closed-won opportunities with data flowing through Salesforce Data Cloud; full SF walkthrough (products, price book, opportunity flow) deferred until all required participants present. *(Sources: [[Meeting Notes/Stand8/NBCU/2026-04-13 - NBCU STAND 8 Agentforce POC|2026-04-13]], [[Meeting Notes/Stand8/NBCU/2026-04-15 - NBCU STAND 8 Agentforce POC|2026-04-15]])*
+
+**Decisions:**
+- Data Cloud is the target for opportunity/product/pricing data.
+- Postpone full SF walkthrough until all participants present.
+
+## Week of Apr 6–12, 2026
+
+POC kickoff. NBCU wants agentic capabilities for real business problems on its content-distribution org. Two use cases surfaced: content recommendations (priority, but blocked on MCP/Office 365 GA for deck generation) and sales strategy/pricing recommendations. Licensing under negotiation at ~$400–450/user with complimentary POC credits expected; MSS positioned as vendor-agnostic. *(Source: [[Meeting Notes/Stand8/NBCU/2026-04-08 - NBCU STAND 8 Agentforce POC|2026-04-08 — POC Kickoff]])*
+
+**Decisions:**
+- Content recommendations = Priority #1; sales strategy/pricing = Priority #2 (later reprioritized to pricing as the buildable focus).
+- SOW within 48h of org demo; 4-week POC once environment access secured.
+
+**Open questions:**
+- Complimentary SF credits for POC? MCP GA timeline for Agentforce? Is $400–450/user acceptable or explore alternatives?
+
+---
