@@ -291,3 +291,5 @@
 - [2026-05-29 09:45 CT] "Dave / {Mac}" → Meeting Notes/Modern Stack Systems/2026-05-28 - Dave Mac.md · confidence: medium · match: keyword (re-processed from _Unmatched — business development / networking call, MSS practice scope)
 
 - [2026-06-01 07:26 CT] "Modern Stack Systems between Mac Nosek and Randall Jordan" → Meeting Notes/Modern Stack Systems/2026-06-01 - Modern Stack Systems between Mac Nosek and Randall Jordan.md · confidence: medium · match: keyword
+
+- [2026-06-01 09:55 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac.md · confidence: high · match: attendee
