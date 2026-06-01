@@ -102,3 +102,15 @@
 - MCP note: heading patches on modern-stack-systems.md returned invalid-target (known bug) for both Active Engagements and Meeting Note Sources; used append_content with "(continued)" sub-sections as the workaround — wikilink graph connectivity preserved.
 - Maintenance: commitments.md ## Done has no items >14d to archive; wiki/log.md under 200 entries (no rotation).
 - Key takeaways: Randall's licensed-professional membership site (Squarespace + Tally + Airtable + Make.com) has an unreliable Make.com approval-email automation and unclear Squarespace paywall routing. Mac to evaluate automation alternatives and paywall capability; custom build possible if Squarespace too limiting.
+
+## [2026-06-01] ingest | MSS/Andrew Mac — practice ops, tax strategy, Dreamforce
+- Source: Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac.md
+- Gap analysis: full vault scan (basename match against all wiki pages + commitments + Decision-Log) found exactly ONE unreferenced meeting note — this one. All other Meeting Notes, all 8 articles, and raw/projects/meadow already referenced/processed. The index.md "Backlog" (High Meadows projects "not yet ingested") is STALE — those projects (cetera, mai, lnw, lefavi, loftware, high-meadow-*) already have built wiki pages with Meeting Note Sources; flag for lint.
+- Pages created: none
+- Pages updated: projects/modern-stack-systems/journal (Andrew/Mac entry under Week of June 1), projects/modern-stack-systems/modern-stack-systems (Meeting Note Sources + new Practice Operations section: QuickBooks invoicing, Veil Advisory CPA), commitments.md
+- Patterns extracted: none — internal practice-ops + AI-industry commentary; no reusable client-delivery pattern.
+- Meeting note linked to context: yes
+- Commitments: +1 (reschedule Andrew/Mac sync to 8:30 ET/7:30 CT). Refreshed existing tax item (was "consult Tyler Gardner") → now "Decide on CPA switch; Veil Advisory leading candidate." Skipped QuickBooks (in-progress tooling, ambiguous owner/no firm next step) and "continue AI conversations" (vague).
+- Decisions: none added to Decision-Log — CPA switch is a proposal (not finalized); QuickBooks adoption is minor ops tooling. Both captured in journal/context narrative instead.
+- Maintenance: commitments.md ## Done has no items >14d (sole item Done 2026-06-01); wiki/log.md at 13 entries (no rotation).
+- Key takeaways: MSS moving to QuickBooks for project-based invoicing; evaluating Veil Advisory ($5K/yr S-corp specialist) to replace generalist CPA, +Gusto payroll, P-TET election for IL double taxation. Cash flow tight (Mac owed $15K from April). Andrew running 3 MuleSoft/AI hotel demos at Dreamforce.

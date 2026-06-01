@@ -42,12 +42,11 @@
 - [[articles/obsidian-6-free-plugins|6 Free Obsidian Plugins]]
 
 ## Backlog (not yet ingested — for subsequent runs)
-- **High Meadows projects** — Cetera, MAI, LNW, Lefavi, Loftware meeting notes (journals not yet built)
-- **Modern Stack Systems** — root notes (peer syncs, recruiting, AI office hours, Andrew/Mac, Dave/Mac) now built into modern-stack-systems journal/context through 2026-06-01
+- **STALE — needs lint correction:** the 2026-06-01 ingest gap-scan confirmed Cetera, MAI, LNW, Lefavi, Loftware, and the High Meadow internal projects ALREADY have built wiki pages with Meeting Note Sources. As of 2026-06-01 every meeting note in the vault is referenced in the wiki — no meeting-note backlog remains.
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-01 (MSS/Andrew Mac ingest)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker

@@ -1,12 +1,28 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-05-29
+updated: 2026-06-01
 ---
 
 # Modern Stack Systems — Journal
 
 ## Week of June 1, 2026
+
+Andrew / Mac Sync (Jun 1, w/ Andrew Smith): Practice business-ops and tax-strategy check-in, plus Dreamforce planning and an AI-industry conversation.
+
+**Business operations:** Moving project-based invoicing to QuickBooks (split billable hours by project, e.g. 20h on one engagement vs 200h on AI work) — replaces spreadsheet tracking and lets Brady log time against projects directly. Cash-flow friction noted: Andrew cleared an $8K payment that morning; Mac still waiting on $15K from an April invoice.
+
+**Dreamforce:** Andrew running hotel-room demos rather than attending sessions. Three planned: (1) Salesforce AI tools + Claude for MuleSoft training, (2) a MuleSoft authentication checkup service, (3) MuleSoft Agent Fabric (if still available). These read as productized MSS service offerings worth tracking.
+
+**Tax strategy / CPA change:** Current CPA (a father-in-law connection, generalist) lacks single-member S-corp expertise and offers no proactive optimization. Proposal on the table to switch to Veil Advisory Platform — $5K/year including two tax-planning sessions, covering through the 2027 tax year, S-corp specialist (NY-based, CEO of Hive Meadow). Would add Gusto payroll (~$500/year, currently handled by the existing CPA). A P-TET election could save thousands against Illinois double taxation. Brady stays a 1099 contractor. This advances the earlier "research tax optimization" thread — Veil is now the leading candidate, displacing the earlier Tyler Gardner referral.
+
+**AI industry chat (no actions):** Job-displacement narrative seen as overblown/COVID-like fear; most layoffs attributed to poor hiring decisions with AI used as a scapegoat. Enterprise adoption gated by data-security/trade-secret concerns (Synopsys, Nvidia cited) and cross-contamination risk between competitors. Non-adoption increasingly framed as a career liability — one of Andrew's employees quit over AI integration.
+
+**Next steps:** Mac to move the recurring sync earlier (8:30am ET / 7:30am CT) and continue the AI-industry thread in future meetings.
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]])*
+
+---
 
 Randall Jordan System Walkthrough (Jun 1, w/ Randall Jordan): Full walkthrough of Randall's licensed-professional membership/application site. Diagnostic session focused on a broken approval-email automation and incomplete paywall access control.
 
