@@ -62,6 +62,7 @@ Settings, Clients, People, Projects, ProjectTasks, TimeEntries, Projections, Act
 ## Meeting Note Sources
 - [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-27 - Meadow|2026-05-27 Meadow]]
 - [[Meeting Notes/High Meadows/HMS-Capacity-Planning/2026-05-13 - Meadow User Testing|2026-05-13 Meadow User Testing]]
+- [[Meeting Notes/_Unmatched/2026-05-14 - New Note|2026-05-14 Meadow Product Demo & Feedback]] *(filed in _Unmatched — primarily Meadow demo content)*
 - [[Meeting Notes/High Meadows/Internal/2026-05-11 - Meadow|2026-05-11 Meadow]]
 
 

@@ -18,7 +18,7 @@ Salesforce Attachments — Image Ordering and Cirrus Duplicate Cleanup (May 15):
 
 **Next steps:** Mac deploying attachment ordering fix. Mac testing signature image exclusion (low risk given standard naming). Client contacting Cirrus to disable automatic email attachment. Follow-up testing planned within one week.
 
-*(Source: `Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup.md`)*
+*(Source: [[Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup|2026-05-15 — Attachment Ordering + Cirrus Cleanup]])*
 
 ---
 
@@ -30,7 +30,7 @@ Einstein Activity Capture Production Deployment (May 14, w/ Dan): Testing verifi
 
 **User auth walkthrough:** Dan practiced navigation: gear icon (upper right) → Settings → Connected Accounts → Email and Calendar Accounts → New Account → Microsoft logo → SSO authentication. Target: system live by tomorrow at latest.
 
-*(Source: `Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture deployment with Dan.md`)*
+*(Source: [[Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan|2026-05-14 — EAC Production Deployment (w/ Dan)]])*
 
 ---
 

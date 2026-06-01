@@ -33,6 +33,8 @@ Chad Cartier is a financial advisor operating on Salesforce (with Cetera as his 
 ## Meeting Note Sources
 - [[Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect|2026-04-30 — Chad & Mac Connect (requirements)]]
 - [[Meeting Notes/Modern Stack Systems/Cartier/2026-05-13 - E-mail Attachment Demo|2026-05-13 — Email Attachment Demo]]
+- [[Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan|2026-05-14 — EAC Production Deployment (w/ Dan)]] *(filed in _Unmatched — Cartier content, see routing note below)*
+- [[Meeting Notes/_Unmatched/2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup|2026-05-15 — Attachment Ordering + Cirrus Cleanup]] *(filed in _Unmatched — Cartier content, see routing note below)*
 
 ## Sources
 - Meeting Notes/Modern Stack Systems/Cartier/2026-04-30 - Chad & Mac Connect.md

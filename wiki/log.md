@@ -114,3 +114,21 @@
 - Decisions: none added to Decision-Log — CPA switch is a proposal (not finalized); QuickBooks adoption is minor ops tooling. Both captured in journal/context narrative instead.
 - Maintenance: commitments.md ## Done has no items >14d (sole item Done 2026-06-01); wiki/log.md at 13 entries (no rotation).
 - Key takeaways: MSS moving to QuickBooks for project-based invoicing; evaluating Veil Advisory ($5K/yr S-corp specialist) to replace generalist CPA, +Gusto payroll, P-TET election for IL double taxation. Cash flow tight (Mac owed $15K from April). Andrew running 3 MuleSoft/AI hotel demos at Dreamforce.
+
+## [2026-06-01] ingest | _Unmatched cleanup — 3 mis-filed notes reconnected to graph
+- Sources: Meeting Notes/_Unmatched/2026-05-14 - Einstein Activity Capture Deployment with Dan; 2026-05-15 - Salesforce Attachments - Image Ordering and Cirrus Duplicate Cleanup; 2026-05-14 - New Note
+- Finding: all three were ALREADY content-processed into journals by a prior (unlogged) run, but each used backtick source citations (SCHEMA violation — no graph link) and none appeared in their project context.md ## Meeting Note Sources. Net result: orphaned from the Obsidian graph despite being summarized.
+- Routing (by content; files left in _Unmatched per immutability):
+  - 2026-05-14 EAC Deployment (w/ Dan) → cartier (EAC production deploy; matches Cartier email-attachment scope)
+  - 2026-05-15 Attachment Ordering + Cirrus Cleanup → cartier (attachment sort fix + Cirrus dup cleanup)
+  - 2026-05-14 "New Note" → meadow (primary content = Meadow product demo: Next.js/TS/Supabase, 3 UAT testers, too-much-green contrast, missing Google SSO, scroll-bar bug; secondary MSS practice-ops bits already captured in MSS context)
+- Pages updated: projects/cartier/context (+2 Meeting Note Sources wikilinks), projects/cartier/journal (2 backtick citations → wikilinks), projects/internal/meadow/meadow (+1 Meeting Note Sources wikilink), projects/internal/meadow/journal (1 backtick citation → wikilink)
+- Pages created: none
+- Patterns extracted: none — EAC+Cirrus dual-system and attachment handling already covered by [[patterns/email-attachment-capture]]; New Note content is Meadow-product-specific.
+- Commitments: none added — all Mac items from these notes (EAC prod deploy, attachment ordering fix, signature-image exclusion test) already in commitments.md ## Open under Cartier; New Note items are team-level (no firm Mac verb).
+- Decisions: none added — tactical deployment/bug-level, not strategic.
+- Note (corrected): the EAC note's prior backtick citation pointed at a lowercase ".../Einstein Activity Capture deployment with Dan.md" — actual filename has capital "Deployment". Wikilink now uses correct casing.
+- LINT FLAG for next health check: backtick source citations remain widespread in meadow/journal.md (and likely other journals from earlier runs). Only the 3 _Unmatched-note citations were converted this run; a broader backtick→wikilink sweep is a lint job.
+- ROUTING FLAG: 2026-05-14 / 2026-05-15 are clearly Cartier but sit in _Unmatched (confidence: none from Granola — solo notes, no attendees beyond Mac). Consider moving to Meeting Notes/Modern Stack Systems/Cartier/ on next manual review. Cartier still has no project-mapping.md entry (provisional slug `cartier`) — flagged previously, still open.
+- Maintenance: commitments.md ## Done has only the Randall walkthrough (Done 2026-06-01, <14d) — no archive. wiki/log.md ~16 entries — no rotation.
+- Key takeaways: No genuinely-new sources this cycle; the actionable gap was graph connectivity for 3 already-summarized _Unmatched notes. All now linked via ## Meeting Note Sources (primary graph mechanism) + wikilink citations.

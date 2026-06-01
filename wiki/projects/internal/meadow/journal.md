@@ -57,7 +57,7 @@ Meadow Product Demo & Feedback (May 14, internal): Live product walkthrough with
 
 No new Mac commitments — bug is team-level, SSO is product backlog.
 
-*(Source: `Meeting Notes/_Unmatched/2026-05-14 - New Note.md`)*
+*(Source: [[Meeting Notes/_Unmatched/2026-05-14 - New Note|2026-05-14 Meadow Product Demo & Feedback]])*
 
 ---
 
