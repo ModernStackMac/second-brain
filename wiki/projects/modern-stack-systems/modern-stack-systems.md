@@ -90,3 +90,22 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - [[Meeting Notes/Modern Stack Systems/2026-04-09 - Recruiter Call - Brittany Fetzner - Salesforce QA Dev Role|2026-04-09 Recruiter Call]]
 - [[Meeting Notes/Modern Stack Systems/2026-05-28 - Dave Mac|2026-05-28 Dave Mac]]
 - [[Meeting Notes/_Unmatched/2026-05-13 - Internal AD Agentforce Opp|2026-05-13 AD Agentforce Opp]]
+
+
+---
+
+## Active Engagements (continued)
+
+### Randall Jordan — Membership Site Advisory (Jun 2026)
+- **Contact:** Randall Jordan (randall.jordan91@gmail.com)
+- **Scope:** Licensed-professional membership/application website. Diagnose and fix the approval-email automation and paywall access control; advise on no-code stack vs. custom build.
+- **Stack:** Squarespace (template site) + Tally (application forms) + Airtable (applicant store) + Make.com (email automation)
+- **Status:** Diagnostic — Mac researching Make.com automation alternatives + Squarespace paywall routing; Randall to send stack access links.
+- **Open issues:** Make.com scenarios firing unreliably (can't test pending→approved status change or confirm approval email); Squarespace paywall auto-routing uncertain (may require custom development). Custom-built site on the table if Squarespace is too limiting.
+- **Pattern:** [[patterns/no-code-membership-site]]
+
+## Meeting Note Sources (continued)
+- [[Meeting Notes/Modern Stack Systems/2026-06-01 - Modern Stack Systems between Mac Nosek and Randall Jordan|2026-06-01 Randall Jordan]]
+
+---
+*Last updated: 2026-06-01*

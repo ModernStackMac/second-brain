@@ -6,6 +6,22 @@ updated: 2026-05-29
 
 # Modern Stack Systems — Journal
 
+## Week of June 1, 2026
+
+Randall Jordan System Walkthrough (Jun 1, w/ Randall Jordan): Full walkthrough of Randall's licensed-professional membership/application site. Diagnostic session focused on a broken approval-email automation and incomplete paywall access control.
+
+**Current stack (all no-code):** Squarespace template site (product inventory with screenshots + pricing) → Tally embedded application forms (name, license number, applicant details) → Airtable (applicant store via Tally webhook, status defaults to "pending") → Make.com (email automation). A paywall page exists but access control is incomplete.
+
+**Intended workflow:** Applicant submits Tally form → webhooks to Airtable as "pending" → Make.com fires an "application received" email. A manual approval (status change) should then trigger an approval email containing the paywall link.
+
+**Problems identified:** (1) Make.com scenarios fire unreliably — Randall can't test the pending→approved transition or confirm the approval email sends. (2) Squarespace paywall routing is unclear — uncertain whether approved users can be auto-routed to the paywall site; may need custom development beyond Squarespace's capabilities.
+
+**Direction:** Mac to research Make.com automation alternatives (1–2 days) and investigate Squarespace paywall routing; Randall to send links to the current stack (Make, Tally, Airtable). Migration to a custom-built site is on the table if Squarespace proves too limiting. See [[patterns/no-code-membership-site]].
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-01 - Modern Stack Systems between Mac Nosek and Randall Jordan|2026-06-01 Randall Jordan]])*
+
+---
+
 ## Week of May 25, 2026
 
 Meeting of the Minds (May 29, w/ Victor Domatz, Andrew Smith, Bradyl): Personal catchups, Cox Automotive CPQ mess, AI budget realities, market observations.

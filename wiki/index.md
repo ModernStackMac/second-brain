@@ -10,6 +10,7 @@
 - [[blink-payments/context|Blink Payments (MSS)]] — Data Cloud advisory, payments/fintech
 - [[cartier/context|Cartier (MSS)]] — SF email-attachment automation + case timeline (advisor; project-mapping entry pending)
 - [[internal/meadow/meadow|Meadow (High Meadows)]] — internal capacity-planning/time-tracking app; cloud migration, auth hardening
+- [[modern-stack-systems/modern-stack-systems|Modern Stack Systems]] — Mac's own practice; peer network, BD, advisory engagements (Blink, GoInspo, Randall membership site)
 
 ## Concepts
 - [[model-context-protocol]] — open standard bridging LLMs and external systems/CRM
@@ -21,6 +22,7 @@
 - [[patterns/email-attachment-capture|Email attachment capture]] — EAC + Cirrus split (Cartier)
 - [[patterns/validation-rule-bypass-before-save|Validation-rule bypass via before-save trigger]] — required-picklist workaround (CREtelligent)
 - [[patterns/junction-object-line-item-model|Junction object as line-item replacement]] — Site Product / OLI-style model (CREtelligent)
+- [[patterns/no-code-membership-site|No-code approval-gated membership site]] — Squarespace/Tally/Airtable/Make.com application→paywall flow (Randall/MSS)
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate
@@ -41,7 +43,7 @@
 
 ## Backlog (not yet ingested — for subsequent runs)
 - **High Meadows projects** — Cetera, MAI, LNW, Lefavi, Loftware meeting notes (journals not yet built)
-- **Modern Stack Systems** — ~23 root notes (peer syncs, recruiting, AI office hours, Andrew/Mac, Dave/Mac)
+- **Modern Stack Systems** — root notes (peer syncs, recruiting, AI office hours, Andrew/Mac, Dave/Mac) now built into modern-stack-systems journal/context through 2026-06-01
 - **_Unmatched/** — pending routing review
 
 ---

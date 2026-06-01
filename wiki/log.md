@@ -89,3 +89,16 @@
 - Projects covered: 13 (active movers: MAI, CREtelligent, Cetera, Lefavi; dormant: Litify, NBCU, Harvey, Loftware; light/OOO: LNW, Blink, Cartier, MSS, Internal)
 - Key finding: Two unrelated engagements (Cetera, MSS) independently chose Notion over Salesforce for lightweight workflows/CRM the same week, citing SF licensing cost — worth a reusable "when SF is overkill" POV. Separately, June deadlines (MAI go-live 6/16, CRE UAT, LNW sprint close) converge as Mac's ~6-week availability window closes, and MAI is gated by a Salesforce Case field/lookup-limit blocker 15 days from go-live.
 - Index: added Reports section.
+
+## [2026-06-01] ingest | MSS/Randall Jordan — Membership Site Advisory
+- Source: Meeting Notes/Modern Stack Systems/2026-06-01 - Modern Stack Systems between Mac Nosek and Randall Jordan.md
+- Pages created: patterns/no-code-membership-site
+- Pages updated: projects/modern-stack-systems/journal (Week of June 1 entry), projects/modern-stack-systems/modern-stack-systems (Active Engagements + Meeting Note Sources), commitments.md, index.md
+- Patterns extracted: no-code-membership-site (Squarespace/Tally/Airtable/Make.com approval→paywall flow; first instance, reusable across small-client builds)
+- Meeting note linked to context: yes
+- Commitments: +2 (research Make.com alternatives [Due 2026-06-03]; investigate Squarespace paywall routing). Moved "Full Randall system walkthrough" → Done (this meeting fulfilled it).
+- Decisions: none added — "potential migration to custom site" is contingent, not a firm decision.
+- Routing note: filed at MSS root, frontmatter project=modern-stack-systems. Randall Jordan is a distinct advisory client (not internal ops); if this engagement continues, consider a dedicated slug/subfolder (e.g. `randall-membership`) + project-mapping entry. Processed under modern-stack-systems for now per folder routing.
+- MCP note: heading patches on modern-stack-systems.md returned invalid-target (known bug) for both Active Engagements and Meeting Note Sources; used append_content with "(continued)" sub-sections as the workaround — wikilink graph connectivity preserved.
+- Maintenance: commitments.md ## Done has no items >14d to archive; wiki/log.md under 200 entries (no rotation).
+- Key takeaways: Randall's licensed-professional membership site (Squarespace + Tally + Airtable + Make.com) has an unreliable Make.com approval-email automation and unclear Squarespace paywall routing. Mac to evaluate automation alternatives and paywall capability; custom build possible if Squarespace too limiting.
