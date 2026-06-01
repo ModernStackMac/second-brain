@@ -3,8 +3,8 @@ type: confluence-mirror
 source_url: https://f2strategy.atlassian.net/wiki/spaces/CE/pages/430768132/APP+Address
 space: CE
 page_id: "430768132"
-last_synced: 2026-04-27T06:00:00Z
-last_confluence_update: 2026-04-24T00:00:00Z
+last_synced: 2026-06-01T06:39:24-05:00
+last_confluence_update: 2026-05-28T00:00:00Z
 title: APP Address
 ---
 
@@ -22,8 +22,7 @@ Key Components:
 
 **Design Notes:**
 
-* Evaluate potential paths forward here in terms of using the newer Salesforce custom Address object vs A custom object or the Standard Address Fields on the Account object. Propose course of action for this custom object.
-    * Leaning towards mapping of this object to the standard SFDC fields on the Account to avoid potential pitfalls with integrations and existing data set.
+* Adopt the current TRPG address model and map the existing fields to the standard address fields. This aligns with the current TRPG data model, provides the lowest amount of ongoing maintenance, and provides the best overall compatibility as it aligns with the standard Salesforce data model that is also expected for most app integrations. _(Note as part of the data migration the data will be mapped to the appropriate sets of address fields.)_
 * Note: TRPG Location is used for internal use, not client addresses.
 
 **Jira Items:**
@@ -32,3 +31,8 @@ Key Components:
 * [CET-132](https://f2strategy.atlassian.net/browse/CET-132)
 * [CET-133](https://f2strategy.atlassian.net/browse/CET-133)
 * [CET-134](https://f2strategy.atlassian.net/browse/CET-134)
+* [CET-167](https://f2strategy.atlassian.net/browse/CET-167)
+
+**Address Object Analysis and Recommendation:**
+
+*(See full analysis in Confluence)*

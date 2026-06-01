@@ -245,3 +245,30 @@
 - **Skipped (unchanged):** 0
 - **Errors:** None
 - **Notes:** Only 1 page across all 5 global spaces was modified in the last 7 days. Growth Engine page now references Jira items CET-156 through CET-159 (previously CET items were embedded as smart links). LN, WB, RW, MP had no pages modified in the last 7 days. No pages tagged "private" or in personal spaces were encountered. Existing mirrors for app-address.md, core-salesforce-usage-alignment.md, financial-planning.md, gifts-object-alignment.md remain current (aged out of 7-day window).
+
+## [2026-06-01T06:39:24-05:00] confluence-ingest | 6 pages synced
+
+- **Spaces checked:** CE (Cetera), LN (LNW), MP (MAI Post-MVP), WB (William Blair), RW (Ritholtz Wealth)
+- **Active project keywords (project-mapping.md):** cetera/CET → CE, mai/MAI → MP, lnw/LNW → LN
+- **CQL window:** `type = page AND lastModified >= now("-7d") AND space IN ("CE","LN","MP","WB","RW")` (2026-05-25 to 2026-06-01)
+- **Pages found in window:** 6 (all in CE / Cetera)
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Affiliate Onboarding | CE | 451575809 | 2026-05-28 | New — wiki/f2-internal/CE/affiliate-onboarding.md |
+| Case Object Alignment | CE | 274071713 | 2026-05-28 | New — wiki/f2-internal/CE/case-object-alignment.md |
+| Growth Engine | CE | 275972100 | 2026-05-28 | Updated — prev last_confluence_update 2026-05-21; Jira items now CET-156–159 + CET-168 |
+| Financial Planning | CE | 433487874 | 2026-05-28 | Updated — prev last_confluence_update 2026-04-29; Jira items now CET-122–124, 127, 164 |
+| Gifts Object Alignment | CE | 430964740 | 2026-05-28 | Updated — prev last_confluence_update 2026-04-24; Jira item CET-166 added |
+| APP Address | CE | 430768132 | 2026-05-28 | Updated — prev last_confluence_update 2026-04-24; Jira item CET-167 added |
+
+- **Synced:** 6 (2 new, 4 updated)
+- **Skipped (unchanged):** 1 — core-salesforce-usage-alignment.md (page 275382274, not modified in window, aged out at 2026-04-21)
+- **Errors:** `getAccessibleAtlassianResources` returned a transient credential-refresh error on first call; recovered — `atlassianUserInfo` and all space/page calls succeeded against cloud `f2strategy.atlassian.net`.
+- **Notes:**
+  - All 6 in-window pages are in the CE (Cetera) space. LN, WB, RW, MP had no pages modified in the last 7 days.
+  - WB and RW are not active projects in project-mapping.md but were scanned for parity with prior runs; no matches.
+  - Confluence API returned date-only granularity ("May 28, 2026") for lastModified — `last_confluence_update` recorded as `2026-05-28T00:00:00Z`.
+  - Two new Cetera design pages mirrored this run: **Affiliate Onboarding** (Story 1.4) and **Case Object Alignment** (Story 7.7 — large design doc, 40+20 new fields, 10 open design decisions, references to attached CSV/PDF mapping files which are not mirrored).
+  - Image/diagram blobs not mirrored — noted inline as "(See diagrams in Confluence)".
+  - No pages tagged "private" or in personal spaces were copied.

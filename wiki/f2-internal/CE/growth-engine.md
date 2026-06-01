@@ -3,8 +3,8 @@ type: confluence-mirror
 source_url: https://f2strategy.atlassian.net/wiki/spaces/CE/pages/275972100/Growth+Engine
 space: CE
 page_id: "275972100"
-last_synced: 2026-05-28T06:30:00-05:00
-last_confluence_update: 2026-05-21T00:00:00Z
+last_synced: 2026-06-01T06:39:24-05:00
+last_confluence_update: 2026-05-28T00:00:00Z
 title: Growth Engine
 ---
 
@@ -62,6 +62,7 @@ title: Growth Engine
     * [CET-157](https://f2strategy.atlassian.net/browse/CET-157)
     * [CET-158](https://f2strategy.atlassian.net/browse/CET-158)
     * [CET-159](https://f2strategy.atlassian.net/browse/CET-159)
+    * [CET-168](https://f2strategy.atlassian.net/browse/CET-168)
 
 * **Data Model:**
     * (See diagrams in Confluence)
