@@ -46,3 +46,11 @@
 
 ---
 *Last updated: 2026-06-01*
+
+## Reports
+- [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker
+- [[reports/weekly-synthesis-2026-05-11|Weekly Synthesis — Week of May 5–11, 2026]] — CRE + MAI moving; integration-complexity and QA-bottleneck patterns; several stalled engagements
+- [[reports/agentforce-knowledge-report|Agentforce Knowledge Report]] — cross-project Agentforce synthesis
+
+---
+*Reports section added 2026-06-01 by weekly-synthesis.*

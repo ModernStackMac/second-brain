@@ -83,3 +83,9 @@
 ## [2026-06-01] ingest | run note
 - Maintenance: commitments.md ## Done has no checked items >14d to archive; wiki/log.md well under 200 entries (no rotation). 
 - Self-correction: this run initially created a duplicate cretelligent/context.md and appended a second weekly block to journal.md before discovering the existing (unlogged) May-30 cretelligent pages; both were reverted (context.md deleted, journal.md restored to original 614 lines). Net new this run = 2 patterns + 1 concept + index/log registration.
+
+## [2026-06-01] synthesis | Weekly Synthesis — Week of May 25–June 1, 2026
+- Output: wiki/reports/weekly-synthesis-2026-06-01.md
+- Projects covered: 13 (active movers: MAI, CREtelligent, Cetera, Lefavi; dormant: Litify, NBCU, Harvey, Loftware; light/OOO: LNW, Blink, Cartier, MSS, Internal)
+- Key finding: Two unrelated engagements (Cetera, MSS) independently chose Notion over Salesforce for lightweight workflows/CRM the same week, citing SF licensing cost — worth a reusable "when SF is overkill" POV. Separately, June deadlines (MAI go-live 6/16, CRE UAT, LNW sprint close) converge as Mac's ~6-week availability window closes, and MAI is gated by a Salesforce Case field/lookup-limit blocker 15 days from go-live.
+- Index: added Reports section.
