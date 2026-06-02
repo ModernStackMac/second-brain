@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-06-01T15:21:42-05:00
+updated: 2026-06-01T19:22:05-05:00
 story_count: 7
 ---
 
@@ -17,5 +17,4 @@ story_count: 7
 | LNW | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 
 > [!note] Only LNW rows are routed to a project folder (`wiki/projects/lnw/`). MAI and CET rows are shown for visibility but NOT routed — project-mapping.md has no matching (workspace, key) entry (MAI key=TBD, actual=MAI; cetera key=F2, actual=CET). See `raw/story-sync-unrouted.md`.
-> [!note] MAI-1614 dropped from this tracker — no longer returned by the active Jira query (completed/closed since the 2026-06-01 09:22 run).
-> [!note] Linear (MSS + HM) not synced this run — Linear MCP requires interactive OAuth and no user was present. Meadow / Flex Dash stories not refreshed.
+> [!note] Linear (MSS + HM) not synced this run — no Linear MCP connected (only OAuth/auth tools available) and no user present for the scheduled run. Meadow / Flex Dash stories not refreshed.
