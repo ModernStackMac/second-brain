@@ -176,3 +176,4 @@ Connect API vendor lists per site location require lat/long (from Regrid GeoJSON
 - [[Meeting Notes/Stitch/Cretelligent/2026-04-09 - Stitch & CREtelligent - Tech Team Huddle|2026-04-09 Tech Huddle]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-04-02 - CREtelligent Internal Team Sync|2026-04-02 Internal Sync]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-06-01 - Stitch CREtelligent - Weekly Refinement Planning|2026-06-01 Weekly Refinement (stub — no summary)]]
+- [[Meeting Notes/Stitch/Cretelligent/2026-06-02 - Stitch CREtelligent - Daily Dev Standup|2026-06-02 Dev Standup (stub — no summary)]]
