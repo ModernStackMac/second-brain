@@ -23,6 +23,7 @@
 - [[patterns/validation-rule-bypass-before-save|Validation-rule bypass via before-save trigger]] — required-picklist workaround (CREtelligent)
 - [[patterns/junction-object-line-item-model|Junction object as line-item replacement]] — Site Product / OLI-style model (CREtelligent)
 - [[patterns/no-code-membership-site|No-code approval-gated membership site]] — Squarespace/Tally/Airtable/Make.com application→paywall flow (Randall/MSS)
+- [[patterns/go-live-hypercare-cutover|Go-live hypercare cutover]] — bug-only freeze + hypercare sprint + cross-org issue log + idle-capacity gate (MAI, Lefavi)
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate
@@ -46,7 +47,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-01 (MSS/Andrew Mac ingest)*
+*Last updated: 2026-06-02 (High Meadows ingest: Cetera/Lefavi/MAI Jun 2 standups)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker

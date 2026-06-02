@@ -18,7 +18,7 @@ Lefavi Internal Sync (Jun 2): Schwab integration signed off, client-meeting prep
 
 **M / Flex dashboard:** Flex dashboard working in both UAT and prod. The events issue was resolved (federal push completed successfully); the morning display problems were temporary.
 
-**Dev pipeline:** All 100 in-scope dev items complete — current focus is bug fixes only. Mac available for additional tickets. Go-live week may spike workload; during high-call periods, use the group chat with Sean and Michael.
+**Dev pipeline:** All 100 in-scope dev items complete — current focus is bug fixes only. Mac available for additional tickets. Go-live week may spike workload; during high-call periods, use the group chat with Sean and Michael. (Lightweight instance of [[go-live-hypercare-cutover]] — same week as MAI's formal hypercare cutover.)
 
 **Decisions:**
 - Field-level security on financial account / cash transaction fields: not implementing (team consensus, deemed unnecessary)
