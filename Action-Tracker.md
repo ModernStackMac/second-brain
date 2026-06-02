@@ -1,14 +1,16 @@
 ---
 type: action-tracker
-updated: 2026-06-01T19:22:05-05:00
-story_count: 7
+updated: 2026-06-02T07:22:03-05:00
+story_count: 9
 ---
 
 # Action Tracker
 
 | Project | Ticket | Title | Status | Priority | Due | Updated | Link |
 |---|---|---|---|---|---|---|---|
-| MAI CRM Build | MAI-1633 | PROD: Flexdash component reverts to "no component groups configured" | Active | High | — | 2026-06-01 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1633) |
+| MAI CRM Build | MAI-1633 | PROD: Flexdash component reverts to "no component groups configured" | QA | High | — | 2026-06-02 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1633) |
+| MAI CRM Build | MAI-1629 | Add Household Member Records for Member Records | Active | Medium | — | 2026-06-02 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1629) |
+| MAI CRM Build | MAI-1621 | Financial account: Investment account RT page updates | Developer Review | Low | — | 2026-06-01 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1621) |
 | MAI CRM Build | MAI-1292 | Hide remaining Financial Account Type picklist values | Developer Review | Medium | — | 2026-04-22 | [Jira](https://f2strategy.atlassian.net/browse/MAI-1292) |
 | Cetera | CET-110 | Case / TRPG Work Desk Alignment | In Progress | Medium | — | 2026-04-13 | [Jira](https://f2strategy.atlassian.net/browse/CET-110) |
 | LNW | LNW-192 | Part 4: Visibility Enhancements POC - UI and UX Enablement | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-192) |
