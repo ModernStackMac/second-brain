@@ -8,6 +8,23 @@ open_actions: 9
 
 # Cetera — Project Journal
 
+
+## Week of June 1, 2026
+
+Project Keystone Daily Stand-up (Jun 1): Sprint Week 2 progress, demo prep, and UAT testing planning.
+
+**Sprint Week 2 progress:** Financial planning testing kicked off last week. Connor provided the deployment items list for financial planning, and the TRPG work desk items were reviewed and deployed. All components are now in place for the testing phase.
+
+**Demo prep:** Demo outline due tomorrow/Wednesday for team review, focused on the financial planning piece. Connor to validate the structure and suggest additions. A separate working session may be scheduled if stand-up time runs short.
+
+**UAT testing plan:** A UAT testing outline is being prepared for Connor to review and flag gaps. June enlisted for demo support once current testing wraps; collaboration targeted for later today or tomorrow.
+
+**AI industry chat (no actions):** Workflow-as-algorithm framing — software generation becoming a commodity, with taste and domain expertise as the differentiators and verification of generated output as the current edge. Noted Opus 4.7 uses ~2x tokens vs GPT 5.5 for equivalent results yet Anthropic revenue keeps climbing.
+
+*(Source: [[Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up|2026-06-01 Project Keystone Daily Stand-up]])*
+
+---
+
 ## Week of May 25, 2026
 
 Project Keystone Daily Stand-up (May 26): F2 dev sandbox deployment verification, gifts & addresses analysis, ABP action plans assessment, database access resolution.

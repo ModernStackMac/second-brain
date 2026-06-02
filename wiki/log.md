@@ -132,3 +132,17 @@
 - ROUTING FLAG: 2026-05-14 / 2026-05-15 are clearly Cartier but sit in _Unmatched (confidence: none from Granola — solo notes, no attendees beyond Mac). Consider moving to Meeting Notes/Modern Stack Systems/Cartier/ on next manual review. Cartier still has no project-mapping.md entry (provisional slug `cartier`) — flagged previously, still open.
 - Maintenance: commitments.md ## Done has only the Randall walkthrough (Done 2026-06-01, <14d) — no archive. wiki/log.md ~16 entries — no rotation.
 - Key takeaways: No genuinely-new sources this cycle; the actionable gap was graph connectivity for 3 already-summarized _Unmatched notes. All now linked via ## Meeting Note Sources (primary graph mechanism) + wikilink citations.
+
+## [2026-06-01] ingest | 2 new same-day notes — Cetera Keystone stand-up + CREtelligent refinement stub
+- Sources: Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up; Meeting Notes/Stitch/Cretelligent/2026-06-01 - Stitch CREtelligent - Weekly Refinement Planning
+- Finding: both landed ~16:10 today, after the prior gap-analysis + _Unmatched-cleanup runs, and neither was in this log. The earlier "AD Agentforce Opp" note I first flagged turned out to be already processed (full journal entry + Meeting Note Sources link from a prior unlogged run) — no action needed there.
+- Pages updated: projects/cetera/journal (Week of June 1 entry), projects/cetera/cetera (Meeting Note Sources via "(continued)" append workaround), projects/cretelligent/cretelligent (Meeting Note Sources link), commitments.md (+2 Cetera)
+- Pages created: none
+- Patterns extracted: none — Cetera note is sprint progress/demo/UAT planning; CREtelligent note is an empty stub (no Granola summary/transcript)
+- Meeting notes linked to context: yes (both)
+- Commitments: +2 Cetera (prepare financial-planning demo outline [Due 2026-06-03]; prepare UAT testing outline for Connor). Skipped Connor's validation + June's demo support (not Mac-owned) and the AI-industry chat (no actions).
+- Decisions: none added — progress/planning, no strategic decisions.
+- MCP note: heading patches (prepend/append, plain + nested "Open::Cetera" path) returned invalid-target on cetera.md, cretelligent.md, and commitments.md. Journal H1 prepend worked. Workarounds: cetera.md used a "## Meeting Note Sources (continued)" append; cretelligent.md appended the bullet directly (Meeting Note Sources is the file's last section); commitments.md was rebuilt via delete + full re-append with the 2 items inserted in the Cetera Open section.
+- LINT FLAGS (carryover): backtick source citations remain widespread in cetera/journal.md and other older journal entries (this run only added wikilink citations for the new entry); cetera.md now has a split "Meeting Note Sources" + "(continued)" pair worth merging on a lint pass.
+- Maintenance: commitments.md ## Done has only the Randall walkthrough (Done 2026-06-01, <14d) — no archive. wiki/log.md under 200 entries — no rotation.
+- Key takeaways: Cetera Project Keystone in Sprint Week 2 — financial planning testing underway, TRPG work desk items deployed, demo outline + UAT testing outline in prep with Connor validating and June supporting the demo.

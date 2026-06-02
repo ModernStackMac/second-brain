@@ -96,3 +96,7 @@
 - [[f2-internal/CE/gifts-object-alignment|Gifts Object Alignment]]
 - [[f2-internal/CE/app-address|APP Address]]
 - [[cetera/archived-stories|Archived Stories]] — completed/closed stories
+
+
+## Meeting Note Sources (continued)
+- [[Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up|2026-06-01 Keystone Stand-up]]
