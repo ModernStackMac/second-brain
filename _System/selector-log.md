@@ -298,3 +298,7 @@
 - [2026-06-01 16:00 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword
 
 - [2026-06-02 08:30 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-06-02 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (title: stitch + cretelligent). No AI summary; transcript unavailable (free Granola tier).
+- [2026-06-02 10:15 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-06-02 - MAI Dev DSU.md · confidence: high · match: keyword
+- [2026-06-02 10:15 CT] "Lefavi Internal Sync" → Meeting Notes/High Meadows/Lefavi/2026-06-02 - Lefavi Internal Sync.md · confidence: high · match: keyword
+- [2026-06-02 10:15 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-06-02 - Stitch CREtelligent - daily dev standup.md · confidence: high · match: keyword (re-process: prior file had no AI summary)
+- [2026-06-02 10:15 CT] "Stitch // CREtelligent - Weekly Refinement / Planning" → Meeting Notes/Stitch/Cretelligent/2026-06-01 - Stitch CREtelligent - Weekly Refinement Planning.md · confidence: high · match: keyword (re-process: prior file had no AI summary)
