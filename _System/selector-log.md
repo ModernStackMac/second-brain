@@ -296,3 +296,5 @@
 
 - [2026-06-01 16:00 CT] "Stitch // CREtelligent - Weekly Refinement / Planning" → Meeting Notes/Stitch/Cretelligent/2026-06-01 - Stitch CREtelligent - Weekly Refinement Planning.md · confidence: high · match: keyword
 - [2026-06-01 16:00 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword
+
+- [2026-06-02 08:30 CT] "Stitch // CREtelligent - daily dev standup" → Meeting Notes/Stitch/Cretelligent/2026-06-02 - Stitch CREtelligent - Daily Dev Standup.md · confidence: high · match: keyword (title: stitch + cretelligent). No AI summary; transcript unavailable (free Granola tier).
