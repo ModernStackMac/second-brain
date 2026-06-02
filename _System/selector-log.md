@@ -304,3 +304,5 @@
 - [2026-06-02 10:15 CT] "Stitch // CREtelligent - Weekly Refinement / Planning" → Meeting Notes/Stitch/Cretelligent/2026-06-01 - Stitch CREtelligent - Weekly Refinement Planning.md · confidence: high · match: keyword (re-process: prior file had no AI summary)
 
 - [2026-06-02 12:30 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-06-02 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword
+
+- [2026-06-02 16:09 CT] "Mac/Kai Sync on Accounts" → Meeting Notes/_Unmatched/2026-06-02 - Mac Kai Sync on Accounts.md · confidence: none · match: fallback
