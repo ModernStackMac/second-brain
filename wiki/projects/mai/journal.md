@@ -2,11 +2,39 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-29
-open_actions: 13
+last_meeting: 2026-06-02
+open_actions: 14
 ---
 
 # MAI — Project Journal
+
+## Week of June 1, 2026
+
+MAI Dev DSU (Jun 2): **100% in-scope dev complete** — bug-only mode, go-live testing cadence, Hypercare sprint, and Phase 2 on the horizon.
+
+**Milestone:** Officially hit 100% completion on in-scope dev items — only bug tickets remain. Team praised for six weeks of work; all stakeholders happy. Hours expected to taper, and MAI leadership is reading lower utilization as a positive go-live-readiness signal.
+
+**Bug workflow / capacity discipline:** Aisha is loading bug tickets into Jira as fast as testing surfaces them (testing volume is delaying ticket creation); she'll ping chats when new tickets are ready. If the team goes idle: reach out to Sean and Michael first, confirm with Michael/Sean/Aisha before starting anything, and no self-assigned work without approval. Documentation process still TBD.
+
+**Go-live testing:** Standard contract testing at 3:00 PM ET, fund workflow testing at 4:00 PM ET. Prior week's blockers resolved. Priority: clear any contract/fund issues before the testing sessions. Go-live plan and event sequence still being finalized — Michael to distribute prioritized items; capacity planning in progress.
+
+**Sprint management:** Current sprint stays open until next Monday, then a fresh "Hypercare" sprint starts (closing the long 8–10 week sprint) for a clean Jira structure. Bug documentation: MAI wants an Excel issue log for shared access (MAI, F2, dev team); Aisha maintains the admin side while the team keeps using Jira for dev work.
+
+**Phase 2 / transition:** Phase 2 planning underway with a potential cooling period between phases; goal is to minimize downtime and maintain continuity.
+
+**Action items:**
+- Mac: Investigate household member records issue (ticket 1629) — determine data-migration vs automation root cause, create UAT records for testing, document any production scripts needed
+- Aisha: Create Jira tickets for recent bug fixes
+- Team: Prioritize contract/fund issues before 3 PM testing
+
+**Decisions:**
+- Sprint structure: close the long 8–10 week sprint Monday; open a fresh "Hypercare" sprint for clean Jira tracking post-go-live
+- Bug tracking: maintain an Excel issue log for cross-team (MAI/F2/dev) visibility; Jira remains the dev system of record
+- Idle-capacity rule: no self-assigned work — confirm with Michael/Sean/Aisha first
+
+*(Source: [[Meeting Notes/High Meadows/MAI/2026-06-02 - MAI Dev DSU|2026-06-02 MAI Dev DSU]])*
+
+---
 
 ## Week of May 25, 2026
 

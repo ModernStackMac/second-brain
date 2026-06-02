@@ -74,6 +74,8 @@
 
 
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Cetera/2026-06-02 - Project Keystone Daily Stand-up|2026-06-02 Keystone Stand-up]]
+- [[Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up|2026-06-01 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-05-26 - Project Keystone Daily Stand-up|2026-05-26 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-05-18 - Project Keystone Daily Stand-up|2026-05-18 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-05-11 - Project Keystone Daily Stand-up|2026-05-11 Keystone Stand-up]]
@@ -96,7 +98,3 @@
 - [[f2-internal/CE/gifts-object-alignment|Gifts Object Alignment]]
 - [[f2-internal/CE/app-address|APP Address]]
 - [[cetera/archived-stories|Archived Stories]] — completed/closed stories
-
-
-## Meeting Note Sources (continued)
-- [[Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up|2026-06-01 Keystone Stand-up]]

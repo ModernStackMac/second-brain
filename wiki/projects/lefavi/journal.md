@@ -2,11 +2,30 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-28
+last_meeting: 2026-06-02
 open_actions: "2"
 ---
 
 # Lefavi — Project Journal
+
+## Week of June 1, 2026
+
+Lefavi Internal Sync (Jun 2): Schwab integration signed off, client-meeting prep for Mac's week out, dashboard issues resolved, dev pipeline at 100% in-scope.
+
+**Schwab integration:** Email review complete, no action needed. Field-level security is available for the financial account / cash transaction fields, but the team's consensus is that implementing it is unnecessary. Confidence in system stability despite earlier concerns.
+
+**Client meeting prep:** Mac is out next week — Ian will run the client meeting independently. Deliverables needed from the client: DocuSign validation + field-mapping completion, and a requirements list for additional fields. The AI follow-up is in the client's court; waiting on the London hire's onboarding to free up client bandwidth.
+
+**M / Flex dashboard:** Flex dashboard working in both UAT and prod. The events issue was resolved (federal push completed successfully); the morning display problems were temporary.
+
+**Dev pipeline:** All 100 in-scope dev items complete — current focus is bug fixes only. Mac available for additional tickets. Go-live week may spike workload; during high-call periods, use the group chat with Sean and Michael.
+
+**Decisions:**
+- Field-level security on financial account / cash transaction fields: not implementing (team consensus, deemed unnecessary)
+
+*(Source: [[Meeting Notes/High Meadows/Lefavi/2026-06-02 - Lefavi Internal Sync|2026-06-02 Lefavi Internal Sync]])*
+
+---
 
 ## Week of May 25, 2026
 

@@ -2,14 +2,38 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-05-26
-open_actions: 9
+last_meeting: 2026-06-02
+open_actions: 12
 ---
 
 # Cetera — Project Journal
 
 
 ## Week of June 1, 2026
+
+Project Keystone Daily Stand-up (Jun 2): demo script finalization, technical bugs surfaced, database restoration options, retirement migration scoping.
+
+**Demo script:** Building out the Keystone demo script covering financial plan page layout, financial plan participant (forward-looking preview), planning discussion layout, planning dashboard LWC, plans submission web component, and planning review reminder. Script finalizes after today's session with June. The planning topic opportunity conversion screen flow was pulled from demo scope — the team isn't using the conversion workflow as expected and the flow needs adjustment.
+
+**Technical issues:** (1) Planning review reminder throwing a picklist value error ("value doesn't exist or is restricted") — needs a fix within the next day. (2) LWCs missing from account pages — present on lead records but not on account/person account/contact; likely the account Lightning page deployment is missing. Components should specifically appear on household records.
+
+**Database restoration:** Working with Krishna and Greg on options. SSMS caps at 2GB files, and only individual instance files are available (not a consolidated DB). Exploring PowerShell authentication. Next steps over the next couple days.
+
+**Retirement migration:** JIRA stories created. Migrating CPP plan servicing into the Cetera (Satera) Salesforce; CPP Salesforce records will serve as proxy/shadow records so the team no longer has to work across two Salesforce instances. RPS case types no longer need migration.
+
+**Next steps:**
+- Mac: Send demo script after June meeting + refinement
+- Mac: Add comments to UAT JIRA tickets with demo notes attachment
+- Mac: Send retirement migration JIRA stories email
+- Connor: Investigate picklist error and account page deployment
+
+**Decisions:**
+- Retirement migration: migrate CPP plan servicing to Cetera Salesforce with CPP records as proxy/shadow records; RPS case types excluded from migration
+- Planning topic opportunity conversion screen flow removed from demo scope (workflow unused, flow needs adjustment)
+
+*(Source: [[Meeting Notes/High Meadows/Cetera/2026-06-02 - Project Keystone Daily Stand-up|2026-06-02 Project Keystone Daily Stand-up]])*
+
+---
 
 Project Keystone Daily Stand-up (Jun 1): Sprint Week 2 progress, demo prep, and UAT testing planning.
 

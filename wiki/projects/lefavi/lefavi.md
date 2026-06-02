@@ -45,10 +45,12 @@
 ## Historical Context
 - **Apr 2, 2026:** Flex-Dash licensing decided (no AppExchange, implementation fee only). Full Flex-Dash pause to redirect capacity to MAI. Argentine dev team replacement planned.
 - **May 28, 2026:** DocuSign integration rebuild, Quick Data beta approaching, AI use cases scoped.
+- **Jun 2, 2026:** Schwab integration signed off (FLS deemed unnecessary by team consensus); all 100 in-scope dev items complete, now bug-fix only; Ian to run next week's client meeting solo (Mac out).
 
 *(Sources: [[Meeting Notes/High Meadows/Lefavi/2026-04-02 - Lefavi Weekly Call]], [[Meeting Notes/High Meadows/Lefavi/2026-05-28 - Lefavi Weekly Call]])*
 
 
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Lefavi/2026-06-02 - Lefavi Internal Sync|2026-06-02 Lefavi Internal Sync]]
 - [[Meeting Notes/High Meadows/Lefavi/2026-05-28 - Lefavi Weekly Call|2026-05-28 Lefavi Weekly]]
 - [[Meeting Notes/High Meadows/Lefavi/2026-04-02 - Lefavi Weekly Call|2026-04-02 Lefavi Weekly]]
