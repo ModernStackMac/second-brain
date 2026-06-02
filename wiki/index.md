@@ -10,6 +10,7 @@
 - [[blink-payments/context|Blink Payments (MSS)]] — Data Cloud advisory, payments/fintech
 - [[cartier/context|Cartier (MSS)]] — SF email-attachment automation + case timeline (advisor; project-mapping entry pending)
 - [[internal/meadow/meadow|Meadow (High Meadows)]] — internal capacity-planning/time-tracking app; cloud migration, auth hardening
+- [[talus/context|Talus (MSS)]] — sales-led SF org; lead/contact dedup, MCP/Claude automation, forecasting alerts, Clay/Apollo enrichment (advisor; project-mapping entry pending)
 - [[modern-stack-systems/modern-stack-systems|Modern Stack Systems]] — Mac's own practice; peer network, BD, advisory engagements (Blink, GoInspo, Randall membership site)
 
 ## Concepts
@@ -24,6 +25,7 @@
 - [[patterns/junction-object-line-item-model|Junction object as line-item replacement]] — Site Product / OLI-style model (CREtelligent)
 - [[patterns/no-code-membership-site|No-code approval-gated membership site]] — Squarespace/Tally/Airtable/Make.com application→paywall flow (Randall/MSS)
 - [[patterns/go-live-hypercare-cutover|Go-live hypercare cutover]] — bug-only freeze + hypercare sprint + cross-org issue log + idle-capacity gate (MAI, Lefavi)
+- [[patterns/lead-contact-dedup-merge|Lead/contact dedup merge (Apex invokeable)]] — email-match, master-precedence merge, opt-out preservation, bulk + real-time (Talus)
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate
@@ -47,7 +49,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-02 (High Meadows ingest: Cetera/Lefavi/MAI Jun 2 standups)*
+*Last updated: 2026-06-02 (ingest: new Talus engagement — Mac/Kai sync; +dedup-merge pattern)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker
