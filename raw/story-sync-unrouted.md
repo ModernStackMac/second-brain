@@ -183,3 +183,7 @@
 [2026-06-02T13:22:59-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for scheduled run. Meadow and Flex Dash stories not fetched this run.
 [2026-06-02T13:22:59-05:00] NO-OP — active Jira set unchanged since 11:21:18 run today (LNW-189/190/191/192 all Review; LNW-165 already archived; MAI-1633/MAI-1629/MAI-1292 and CET-110 unrouted). Canonical lnw/stories-f2.md, board.md, and Action-Tracker.md already reflect current state; not rewritten to avoid duplicate-append churn. No new archives.
 [2026-06-02T13:22:59-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI and cetera jira_project_key=CET (both at f2strategy.atlassian.net).
+[2026-06-02T15:21:26-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — no mapping in project-mapping.md (MAI jira_project_key=TBD)
+[2026-06-02T15:21:26-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1629 — no mapping in project-mapping.md (MAI jira_project_key=TBD)
+[2026-06-02T15:21:26-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (MAI jira_project_key=TBD)
+[2026-06-02T15:21:26-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera maps to project_key=F2, not CET)
