@@ -209,3 +209,14 @@
 - Maintenance: commitments.md ## Done holds only the Randall walkthrough (Done 2026-06-01, <14d) — no archive. wiki/log.md ~21 entries — no rotation.
 - Carryover lint flags (unchanged): widespread backtick source citations in older journals (cetera, meadow, cretelligent) pending a backtick→wikilink sweep; overview.md (meadow) cites deprecated raw path raw/projects/hms-capacity-planning/; Cartier still has no project-mapping.md Canonical Slug Index row (provisional slug `cartier`).
 - Key takeaways: New MSS client "Talus" — sales-led Salesforce org. Three build tracks (lead/contact dedup Apex, MCP+Claude sales-notes automation, OpportunityHistory forecasting + stale-opp Slack alerts) plus a GTM data layer (Clay/Apollo enrichment US-only, Jira-Assets account health). MCP track blocked on Dave deploying the server. Mac has sandbox access and owns discovery + estimates.
+
+## [2026-06-02] ingest | No new sources
+- Scan scope: Meeting Notes/ (High Meadows {Cetera, HMS-Capacity-Planning, Internal, LNW, Lefavi, Loftware, MAI}, Modern Stack Systems {root + Blink Payments + Cartier}, Stand8 {Harvey, Litify, NBCU}, Stitch/Cretelligent, _Unmatched), Second Brain/raw/articles/ (8 files), Second Brain/raw/projects/ (meadow/).
+- Finding: nothing new in scope this cycle. Recent-changes scan (2-day window) confirms the latest in-scope source files — the three Jun 2 High Meadows standups (Cetera, Lefavi, MAI), the CREtelligent Jun 2 dev standup stub, and the _Unmatched/2026-06-02 Mac/Kai (Talus) note — were all processed in the earlier 2026-06-02 runs (last build completed ~16:41). No source files newer than those.
+- Out-of-scope changes since last run (not ingested per task scan scope): Second Brain/raw/story-sync-unrouted.md (raw/ root, not raw/articles or raw/projects), Action-Tracker.md (deprecated), wiki/projects/lnw/board.md, wiki/projects/lnw/stories-f2.md (wiki story files, not raw sources).
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Maintenance: commitments.md ## Done holds only the Randall walkthrough (Done 2026-06-01, <14d) — no archive. wiki/log.md ~22 entries — no rotation.
+- Carryover lint flags (unchanged, for next health check): widespread backtick source citations in older journals (cetera, meadow, cretelligent) pending a backtick→wikilink sweep; overview.md (meadow) cites deprecated raw path raw/projects/hms-capacity-planning/; Cartier still has no project-mapping.md Canonical Slug Index row (provisional slug `cartier`); Talus added via project-mapping Updates section but no Canonical Slug Index row yet (provisional slug `talus`), source note still in _Unmatched/.
+- Key takeaways: Quiet cycle — no new raw material to compile. Wiki current through the 2026-06-02 source set (latest: Talus engagement + Jun 2 High Meadows standups).
