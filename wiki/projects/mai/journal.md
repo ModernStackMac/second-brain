@@ -2,13 +2,40 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-06-02
-open_actions: 14
+last_meeting: 2026-06-03
+open_actions: 15
 ---
 
 # MAI — Project Journal
 
 ## Week of June 1, 2026
+
+MAI Stand Up (Jun 3): FlexDash event-filtering fix, case field type conversions, field-capacity consolidation, prod-only layout strategy, and data-validation progress ahead of the June 16 go-live.
+
+**Dashboard filtering (Mac's fix):** FlexDash is surfacing internal calls in the upcoming-events section. Fix is to filter on the "Related To" field — internal calls have a blank Related To (no household/client), so excluding blanks shows only external upcoming events. Quick patch, deployable immediately.
+
+**Case field type changes:** Four Case fields need numeric → string conversion (Tax Prep, Financial Planning, Bill Pay, Insurance Admin Fee). They're used in only one report type, so the change is safe. Root cause: data lives in Dynamics as strings but got created as numeric in Salesforce. Santi to send the field list.
+
+**Field-capacity consolidation:** Only one Case field slot remains, but validation work needs two (requester + fund account name). Solution: collapse the per-subtype "completed" boolean fields into a single "Case Completed" checkbox (keeping the DocuSign field separate, since it's required), freeing several fields.
+
+**Environment management:** Moving page-layout changes to prod-only to avoid UAT/prod drift; UAT/prod alignment check tomorrow (David), focused on Case record pages with missing/replaced fields. Flexi pages won't be deployed to avoid DocuSign button conflicts. Test-class deployment issues traced to hard-coded record-type IDs in flows — Federico to reach out for specific fixes.
+
+**Data validation:** Most case request types validated except Standard (in progress, Corey by Friday for delta planning). Contact validation next. Activities mapping uses owner ID with parent-record owner as fallback — goal is no activities owned by the data-migration user before go-live.
+
+**Action items:**
+- Mac: Fix FlexDash dashboard filtering to exclude internal calls via the "Related To" field
+- Santi: Send list of the four numeric Case fields for type conversion
+- David: Check UAT/prod page-layout alignment tomorrow (Case record pages)
+- Team: Consolidate per-subtype completed fields into one "Case Completed" checkbox; update mapping doc
+- Corey: Complete Standard case validation by Friday for delta planning
+
+**Decisions:**
+- Page-layout changes go prod-only going forward to prevent UAT/prod drift; flexi pages held back to avoid DocuSign button conflicts
+- Collapse per-subtype "completed" booleans into a single "Case Completed" checkbox (DocuSign field stays separate) to reclaim field capacity
+
+*(Source: [[Meeting Notes/High Meadows/MAI/2026-06-03 - Stand Up|2026-06-03 MAI Stand Up]])*
+
+---
 
 MAI Dev DSU (Jun 2): **100% in-scope dev complete** — bug-only mode, go-live testing cadence, Hypercare sprint, and Phase 2 on the horizon.
 

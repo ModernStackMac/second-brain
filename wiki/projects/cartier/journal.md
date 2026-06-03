@@ -1,10 +1,22 @@
 ---
 type: project-journal
 project: cartier
-updated: 2026-05-19
+updated: 2026-06-03
 ---
 
 # Cartier — Project Journal
+
+## Week of June 1, 2026
+
+Cartier check-in (Jun 3, w/ Chad Cartier): embedded-image email rendering issue surfaced; low priority.
+
+**Embedded image rendering:** A March 17 email contains a chart image at the bottom that isn't rendering in Salesforce — the system is detecting an embedded PDF and auto-attaching that instead. Images embedded directly in the email body don't show up. Mac suspects a conflict with the signature-attachment exclusion logic (same mechanism that previously excluded signature images). Chad's preference: if the embedded image can't be rendered inline, log it as an attachment instead. Chad flagged this for awareness — not urgent. Goal remains full Salesforce operation without external email storage.
+
+**Next steps:** Mac to investigate the root cause of the embedded-image rendering issue and report back.
+
+*(Source: [[Meeting Notes/Modern Stack Systems/Cartier/2026-06-03 - Modern Stack Systems between Mac Nosek and Chad Cartier|2026-06-03 — Cartier Check-in]])*
+
+---
 
 ## Week of May 12, 2026
 

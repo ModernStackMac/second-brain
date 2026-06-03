@@ -54,6 +54,7 @@
 
 
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/MAI/2026-06-03 - Stand Up|2026-06-03 MAI Stand Up]]
 - [[Meeting Notes/High Meadows/MAI/2026-06-02 - MAI Dev DSU|2026-06-02 MAI Dev DSU]]
 - [[Meeting Notes/High Meadows/MAI/2026-05-29 - MAI Dev DSU|2026-05-29 MAI Dev DSU]]
 - [[Meeting Notes/High Meadows/MAI/2026-05-27 - MAI Dev DSU|2026-05-27 MAI Dev DSU]]
