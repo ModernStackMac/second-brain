@@ -313,3 +313,7 @@
 - [2026-06-03 10:10 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac.md · confidence: high · match: attendee (andsmi@gmail.com = MSS peer contact)
 - [2026-06-03 10:10 CT] "Aidentified Demo Prep" → Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep.md · confidence: low · match: keyword (HM products FlexDash/AskVery, HM CEO Brian Hyman + Catherine + Dave Mazra; partnership/demo-prep = Internal product-strategy call). Ambiguous between High Meadows/Internal and Modern Stack Systems; "Aidentified" not a mapped project. Flagged for review.
 - [2026-06-03 10:10 CT] SCHEDULED RUN: process-granola-meetings. 12 Granola meetings this_week (Jun 1–3). 3 new (Chad Cartier, Andrew/Mac, Aidentified Demo Prep), 9 already filed. 0 routed to _Unmatched. All 3 transcripts failed (paid Granola tier).
+
+- [2026-06-03 13:15 CT] "Stand Up" → Meeting Notes/High Meadows/MAI/2026-06-03 - Stand Up.md · confidence: high · match: keyword
+- [2026-06-03 13:15 CT] "Aidentified Demo Prep" → Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep.md · confidence: medium · match: keyword
+- [2026-06-03 13:15 CT] "Maciej (Mac) Nosek Interview with Vladimir Mitevski" → Meeting Notes/_Unmatched/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski.md · confidence: none · match: fallback

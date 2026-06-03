@@ -78,3 +78,10 @@
 - [RESOLVED 2026-05-29] "Dave / {Mac}" (2026-05-28, granola_id aafbae24-74fc-40ce-a602-4f88588759bd) — re-processed from _Unmatched → Meeting Notes/Modern Stack Systems/2026-05-28 - Dave Mac.md. Routed as MSS business-development / networking call (medium confidence). Consider a dedicated `uptima` project entry if David Stott / Uptima becomes a recurring engagement.
 
 - **2026-06-02 "Mac/Kai Sync on Accounts"** (granola_id 24a8c799-9547-483e-be88-88b7318cf983) — Attendees: Mac Nosek only (counterpart "Kai" not captured in participant list). Content is hands-on Salesforce delivery work (Apex dedup invokeable, MCP-server-for-Claude integration, forecasting/stagnation alerting, Clay/Apollo enrichment, Jira Assets) for an org referred to as **"Talus"**. Other named people: Dave (tech ops admin), Tim (sales head). None of these (Kai, Talus, Dave, Tim) match any project, contact, or keyword in project-mapping.md. **Suggested candidates:** likely a NEW client engagement — possibly under Modern Stack Systems (Mac's practice) given his MSS email as note creator. Recommend adding a "Talus" project entry (canonical slug `talus`) and confirming the partner/company before re-routing out of _Unmatched/.
+
+## 2026-06-03 — "Maciej (Mac) Nosek Interview with Vladimir Mitevski"
+- **Date:** 2026-06-03 12:00 PM CDT
+- **Granola ID:** 8cbb5e68-c3c0-4737-87ca-c32c73671d46
+- **Attendees:** Mac Nosek <mac.nosek@modernstacksystems.com>, Ryan Wischnefski <ryan.wischnefski@28northconsulting.com>, Brittany Dickinson <bdickinson@salesforce.com>, Mariah Vaskis <mvaskis@zrgpartners.com>, Vladimir Mitevski <vmitevski@zrgpartners.com>
+- **Why unrouted:** No AI summary and no transcript (free Granola tier). No attendee email or title keyword matches any active project. ZRG Partners is an executive-search firm and the title is an interview.
+- **Suggested candidate projects:** Modern Stack Systems (recruiting / business-development pattern — Mac's own practice; consistent with prior recruiter/interview calls routed to MSS). Confirm whether ZRG/28north/Salesforce interview should live under Modern Stack Systems and, if so, whether to add these contacts.
