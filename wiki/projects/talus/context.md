@@ -50,11 +50,11 @@ Salesforce (Talus org), Apex (invokeable actions, queueable), Flow, MCP server +
 - [[talus/journal|Journal]]
 
 ## Meeting Note Sources
-- [[Meeting Notes/_Unmatched/2026-06-02 - Mac Kai Sync on Accounts|2026-06-02 — Mac/Kai Sync on Accounts]]
+- [[Meeting Notes/Modern Stack Systems/Talus/2026-06-02 - Mac Kai Sync on Accounts|2026-06-02 — Mac/Kai Sync on Accounts]]
 
 ## Sources
-- Meeting Notes/_Unmatched/2026-06-02 - Mac Kai Sync on Accounts.md
+- Meeting Notes/Modern Stack Systems/Talus/2026-06-02 - Mac Kai Sync on Accounts.md
 - project-mapping.md
 
 ---
-*Last updated: 2026-06-02*
+*Last updated: 2026-06-03*
