@@ -231,3 +231,10 @@
 - Maintenance: commitments.md ## Done holds only the Randall walkthrough (Done 2026-06-01, <14d) — no archive. wiki/log.md ~23 entries — no rotation.
 - Carryover lint flags (unchanged, for next health check): widespread backtick source citations in older journals (cetera, meadow, cretelligent) pending a backtick→wikilink sweep; overview.md (meadow) cites deprecated raw path raw/projects/hms-capacity-planning/; Cartier still has no project-mapping.md Canonical Slug Index row (provisional slug `cartier`); Talus added via project-mapping Updates section but no Canonical Slug Index row yet (provisional slug `talus`), source note still in _Unmatched/.
 - Key takeaways: Quiet cycle — no new raw material to compile. Wiki current through the 2026-06-02 source set (latest: Talus engagement + Jun 2 High Meadows standups).
+
+## [2026-06-03] lint | Mid-week Health Check
+- Meeting notes checked: ~130 (full tree; connectivity verified on 9 notes since 2026-06-01 ingest)
+- Issues: 6 critical, 7 recommended
+- Auto-fixed: none (backtick→wikilink conversions flagged but deferred — no safe in-place edit via Obsidian MCP; slug/mapping fixes require confirmation)
+- Critical: unmapped folders (cartier, internal/high-meadow-labs); deprecated slug f2-cetera in cetera/overview.md aliases; stories project≠folder in meadow & flex-dash stories-linear.md; backtick source citations in 9 journals
+- Report: wiki/lint-report-mid.md
