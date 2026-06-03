@@ -308,3 +308,8 @@
 - [2026-06-02 16:09 CT] "Mac/Kai Sync on Accounts" → Meeting Notes/_Unmatched/2026-06-02 - Mac Kai Sync on Accounts.md · confidence: none · match: fallback
 
 - [2026-06-03 09:00 CT] "Mac/Kai Sync on Accounts" → Meeting Notes/Modern Stack Systems/Talus/2026-06-02 - Mac Kai Sync on Accounts.md · confidence: medium · match: keyword (re-process: moved from _Unmatched now that `talus` slug is mapped)
+
+- [2026-06-03 10:10 CT] "Modern Stack Systems between Mac Nosek and Chad Cartier" → Meeting Notes/Modern Stack Systems/Cartier/2026-06-03 - Modern Stack Systems between Mac Nosek and Chad Cartier.md · confidence: medium · match: attendee (chad@cartier-wealth.com → existing Cartier folder; cartier still not in project-mapping.md slug index — recommend adding a formal entry)
+- [2026-06-03 10:10 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac.md · confidence: high · match: attendee (andsmi@gmail.com = MSS peer contact)
+- [2026-06-03 10:10 CT] "Aidentified Demo Prep" → Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep.md · confidence: low · match: keyword (HM products FlexDash/AskVery, HM CEO Brian Hyman + Catherine + Dave Mazra; partnership/demo-prep = Internal product-strategy call). Ambiguous between High Meadows/Internal and Modern Stack Systems; "Aidentified" not a mapped project. Flagged for review.
+- [2026-06-03 10:10 CT] SCHEDULED RUN: process-granola-meetings. 12 Granola meetings this_week (Jun 1–3). 3 new (Chad Cartier, Andrew/Mac, Aidentified Demo Prep), 9 already filed. 0 routed to _Unmatched. All 3 transcripts failed (paid Granola tier).
