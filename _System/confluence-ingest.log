@@ -297,3 +297,28 @@
   - Verified body content of Affiliate Onboarding against its mirror: identical (Story 1.4, CET-151–154, 169). Confirms no content drift.
   - LN (LNW) had no pages modified in the last 7 days. WB, RW, MP scanned for parity — no in-window matches (not active F2 keyword projects).
   - No pages tagged "private" or in personal spaces were copied.
+
+## [2026-06-03T06:39:12-05:00] confluence-ingest | No changes
+
+- **Spaces checked:** CE (Cetera), LN (LNW), MP (MAI Post-MVP), WB (William Blair), RW (Ritholtz Wealth)
+- **Active F2 projects (project-mapping.md + identity.yaml):** cetera/CET → CE, lnw/LNW → LN. (WB, RW, MP scanned for parity; not active F2 keyword projects.)
+- **CQL window:** `space in (CE, LN) AND type = page AND lastmodified >= "2026-05-27" order by lastmodified desc` (7-day lookback, 2026-05-27 to 2026-06-03)
+- **Pages found in window:** 6 (all in CE / Cetera)
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Affiliate Onboarding | CE | 451575809 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28; last_synced 2026-06-01 > page lastModified) |
+| Growth Engine | CE | 275972100 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28) |
+| APP Address | CE | 430768132 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28) |
+| Gifts Object Alignment | CE | 430964740 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28) |
+| Case Object Alignment | CE | 274071713 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28) |
+| Financial Planning | CE | 433487874 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28) |
+
+- **Synced:** 0
+- **Skipped (unchanged):** 6
+- **Errors:** None
+- **Notes:**
+  - Verified all 6 in-window mirrors' frontmatter directly: each has `last_confluence_update: 2026-05-28T00:00:00Z` and `last_synced: 2026-06-01`. Confluence still reports `lastModified` = May 28, 2026 (date-only granularity) for all six, which predates `last_synced` — no edits since last sync, so all skipped per immutability rule.
+  - LN (LNW) had no pages modified in the window. WB, RW, MP scanned for parity — no in-window matches.
+  - Mirror directory `wiki/f2-internal/CE/` holds 7 files (the 6 above + core-salesforce-usage-alignment.md, aged out of window) — all current.
+  - No pages tagged "private" or in personal spaces were copied.
