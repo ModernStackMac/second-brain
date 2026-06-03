@@ -8,6 +8,20 @@ updated: 2026-06-03
 
 ## Week of June 1, 2026
 
+Mac Interview with Vladimir Mitevski (Jun 3, w/ Vladimir Mitevski + Mariah Vaskis of ZRG Partners, Ryan Wischnefski of 28 North Consulting, Brittany Dickinson of Salesforce): Exec-search/opportunity interview — ZRG Partners' CIO walked through their Salesforce + Data Cloud architecture and executive-search use case. (This note was previously an empty stub in _Unmatched; full summary landed after relocation to the MSS folder.)
+
+**Vladimir/ZRG background:** Vladimir Mitevski is CIO at ZRG Partners (executive search) — hands-on with Einstein, Agentforce, and Data Cloud since early releases, deep knowledge of the Data Cloud stack, and has hit multiple implementation limits across Salesforce's AI platforms.
+
+**ZRG's architecture:** Entire company runs on Salesforce; all data consolidated in Data Cloud as the single source of truth — primarily unstructured, some semi-structured/structured, "set it and forget it" (minimal post-entry modification). Strategic choice to avoid custom development (Vladimir has built 4 complex platforms before but stays in the SF ecosystem for economics — no extra DevOps overhead). They push platform limits in direct collaboration with Salesforce product teams (Data Cloud, Agentforce, AI Research, Tableau, Core).
+
+**Use case:** C-level executive search — hundreds of candidates filtered to a 5–10 shortlist; non-hired finalists stay valuable for future searches. Needs: contextual search by location/industry/transaction history (e.g., PE-backed), access to historical interview notes and position descriptions 6 months–2+ years old, third-party data integration.
+
+**Takeaway:** Interview/opportunity conversation — no commitments or decisions for Mac this session. ZRG's all-in Data Cloud unstructured-data approach is a useful reference point for [[patterns/data-cloud-bulk-processing]]-adjacent advisory work.
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski|2026-06-03 Vladimir Mitevski Interview]])*
+
+---
+
 Andrew / Mac Sync (Jun 3, w/ Andrew Smith): Practice growth update, a deep demo of Mac's time-tracking app, and Andrew's AI/auth recommendations.
 
 **Practice growth:** New managed-services contract starting at $200/hr with an initial 50-hour bank and multi-year expansion potential. Workload is ramping — a vendor management system rebuild (a few hundred hours), the Stitch/CREtelligent project going live, and another project launching simultaneously. Positive client feedback throughout.

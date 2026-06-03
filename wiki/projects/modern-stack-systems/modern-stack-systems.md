@@ -31,6 +31,10 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - Salesforce DX, GitHub Actions (client delivery)
 - QuickBooks (financials)
 
+## Project Files
+
+- [[modern-stack-systems/journal|Journal]]
+
 ## Related Pages
 
 - [[meadow]] — capacity planning app (internal product)
@@ -108,6 +112,7 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - [[Meeting Notes/Modern Stack Systems/2026-06-01 - Modern Stack Systems between Mac Nosek and Randall Jordan|2026-06-01 Randall Jordan]]
 - [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]]
 - [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski|2026-06-03 Vladimir Mitevski Interview (ZRG Partners)]]
 
 ## Practice Operations (updated Jun 2026)
 - **Invoicing:** Moving to QuickBooks for project-based invoicing (hours split by project; Brady logs time per project). Replaces spreadsheet tracking. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]])*

@@ -37,6 +37,10 @@ MAI Stand Up (Jun 3): FlexDash event-filtering fix, case field type conversions,
 
 ---
 
+Cross-reference (Jun 3, from the HMU ideation session): Go-live deployment is now handled by the client team — no longer an MSS responsibility. Integration coverage is a flagged risk: the original integration lead quit the week before first go-live, replacement coverage is unclear, and the capable federal resource may be politically inaccessible. *(Source: [[Meeting Notes/High Meadows/Internal/HMU/2026-06-03 - HMU Workshops & Content Library Ideation|2026-06-03 HMU Workshops & Content Library]])*
+
+---
+
 MAI Dev DSU (Jun 2): **100% in-scope dev complete** — bug-only mode, go-live testing cadence, Hypercare sprint, and Phase 2 on the horizon.
 
 **Milestone:** Officially hit 100% completion on in-scope dev items — only bug tickets remain. Team praised for six weeks of work; all stakeholders happy. Hours expected to taper, and MAI leadership is reading lower utilization as a positive go-live-readiness signal.

@@ -3,7 +3,7 @@ status: active
 owner: Mac
 priority: p2
 last_meeting: 2026-06-03
-open_actions: 3
+open_actions: 4
 aliases: [high-meadow-labs]
 ---
 
@@ -14,6 +14,18 @@ aliases: [high-meadow-labs]
 ---
 
 ## Week of June 1, 2026
+
+HMU Workshops & Content Library Ideation (Jun 3): HMU workshop confirmed for June 12, content-library expansion planning, and MAI resource-strategy spillover.
+
+**HMU workshop (June 12) — Mac confirmed:** Topic is Anthropic/Claude best practices drawn from Mac's certification content. Focus areas: XML in queries to reduce cognitive load, effective skill definition, and API troubleshooting (context/historical messages). Format: 60 minutes — 5-min intro, 30–40 min content, 15 min Q&A/community engagement. VS Code complexity flagged as an "attention token" drain on the audience; mitigation is a brief disclaimer up front, resource links at the end, and keeping the session on Claude workflow rather than the IDE. Positioning: "Mac from Modern Stack Systems, Technical Architect at HMS, Resident AI Expert."
+
+**Workshop series + content library:** Three-part series planned — (1) planning and requirements definition, (2) execution methodology, (3) iteration and refinement. Content-library expansion across formats (podcasts, talking-head videos, screen recordings) on AI and Salesforce development. Local-model deployment education identified as an opportunity: hardware requirements (16GB Mac Mini limitations), hybrid local/cloud strategies, parameter count vs. performance expectations.
+
+**MAI resource strategy (spillover — see [[mai/journal]]):** MAI go-live scheduled for Monday with end-to-end testing in progress; deployment is now handled by the client team (no longer an MSS responsibility). Integration risk: the original integration lead quit the week before first go-live, replacement coverage is unclear, and the capable federal resource may be inaccessible due to team politics. Broader resourcing: Mac is essential to multiple projects but that's unsustainable — identify 5–10 mentees for training/deployment, Albin to split 50/50 between Mac's billable work and product development once Quick launches, and an India route is being pursued for scaling.
+
+*(Source: [[Meeting Notes/High Meadows/Internal/HMU/2026-06-03 - HMU Workshops & Content Library Ideation|2026-06-03 HMU Workshops & Content Library]])*
+
+---
 
 Aidentified Demo Prep (Jun 3): GTM planning for a mutual demo with Aidentified plus internal demo-resourcing for FlexDash and AskVery.
 

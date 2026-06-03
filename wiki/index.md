@@ -26,6 +26,7 @@
 - [[patterns/no-code-membership-site|No-code approval-gated membership site]] — Squarespace/Tally/Airtable/Make.com application→paywall flow (Randall/MSS)
 - [[patterns/go-live-hypercare-cutover|Go-live hypercare cutover]] — bug-only freeze + hypercare sprint + cross-org issue log + idle-capacity gate (MAI, Lefavi)
 - [[patterns/lead-contact-dedup-merge|Lead/contact dedup merge (Apex invokeable)]] — email-match, master-precedence merge, opt-out preservation, bulk + real-time (Talus)
+- [[patterns/vendor-skill-geo-matching|Vendor skill + geography matching]] — two-tier qualification, radius + state/nation opt-ins, SF-side matching over broken marketplace search (CREtelligent)
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate
@@ -49,7 +50,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-03 (ingest: 5 Jun-3 meeting notes — MAI, Cartier, MSS Andrew/Mac, Aidentified Demo Prep, Vladimir interview stub; no new pages, +field-capacity pattern example)*
+*Last updated: 2026-06-03 (evening ingest: HMU workshops note, 2 CREtelligent Jun-3 notes, Vladimir/ZRG interview content; +1 pattern vendor-skill-geo-matching)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker

@@ -34,6 +34,12 @@ Selected because it's "more cut and dry" than financial opinions — less likely
 - Open-source models (70B+ parameter range)
 - Multi-agent voting pattern for consistency
 
+## HMU Workshops & Content Library (added 2026-06-03)
+HMS education/content arm (High Meadows University). Mac confirmed for a June 12 workshop on Anthropic/Claude best practices (XML in queries, skill definition, API troubleshooting; 60-min format). Three-part workshop series planned (planning/requirements → execution → iteration), plus a content-library expansion (podcasts, videos, screen recordings on AI + Salesforce dev) and a local-model deployment education track. HMU meeting notes route here.
+
+## Resourcing (added 2026-06-03)
+Mac essential-but-unsustainable across projects — plan is 5–10 mentees for training/deployment, Albin split 50/50 between Mac's billable work and product dev once Quick launches, and an India route for scaling.
+
 ## Related Pages
 - [[high-meadows]] — parent org
 - [[multi-agent-voting]] — consistency pattern
@@ -43,6 +49,7 @@ Selected because it's "more cut and dry" than financial opinions — less likely
 - [[high-meadow-labs/journal|Journal]]
 
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Internal/HMU/2026-06-03 - HMU Workshops & Content Library Ideation|2026-06-03 HMU Workshops & Content Library]]
 - [[Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep|2026-06-03 Aidentified Demo Prep]]
 - [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-23 - High Meadow Labs 0.1|2026-04-23 High Meadow Labs 0.1]]
 - [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs|2026-04-22 High Meadow Labs]]

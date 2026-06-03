@@ -2,11 +2,43 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-05-27
+last_meeting: 2026-06-03
 open_actions: "30"
 ---
 
 # CREtelligent — Project Journal
+
+## Week of June 1, 2026
+
+Weekly Refinement & Planning (Jun 3): Order Service API integration review, proposed Salesforce-side vendor matching, Connect skills/zones structural problems, and a bidding-workstream pause.
+
+**Order Service API:** Current API expects product code + lat/long and returns a vendor list. Two endpoints identified: vendor search by service type/location, and vendor invitation with project data. Mac clarified the find-vendor endpoint requires a service type per site — it returns vendors meeting site-specific requirements, tied to the proposal/order ID.
+
+**Proposed strategy shift — vendor selection in Salesforce:** Move vendor-selection logic into Salesforce instead of the Order Service API: Salesforce queries its own contacts against the criteria rather than Connect, skipping the first API call entirely and inviting selected vendors directly via the second Connect API. Story 6172 would change to eliminate the Order Service dependency. See [[patterns/vendor-skill-geo-matching]].
+
+**Connect skills/zones structural issues:** Top-level services (Phase 1 ESA, PCA) vs specialty services (drone, asbestos, radon) are treated as linked when they're mutually exclusive skill sets; zone configuration is opt-out rather than opt-in; "nationwide" selections (vendors avoiding county-by-county setup) generate invitation spam — currently suppressed in Order Tracker invitations.
+
+**Geographic coverage logic:** Proposed 200-mile radius from vendor address as the primary filter, plus vendors opted into entire-nation or entire-state coverage. Gaps: many vendors lack addresses in the system; licensing must be layered in (e.g., radon requires state licensing).
+
+**Pause and next steps:** All bidding-process stories (epics 4–5) on hold pending skills-analysis resolution. Wendell to document the complete logic requirements from the 3.5-hour analysis; Travis and Wendell to meet separately on Connect capabilities. Proceeding meanwhile: billing/invoicing CSV exports from Salesforce, UX-testing discussion (separate call), next level chat Friday 8:30 Pacific.
+
+*(Source: [[Meeting Notes/Stitch/Cretelligent/2026-06-03 - Stitch CREtelligent - Weekly Refinement & Planning|2026-06-03 Weekly Refinement & Planning]])*
+
+---
+
+Shaun / Mac Weekly Sync (Jun 3): Skill-specialties restructuring and Connect vendor-matching qualification logic.
+
+**Skills structure problem:** Current system treats mutually exclusive specialties as linked — PC/ESA certification can coexist with a radon license, but the radon license incorrectly shows under PCA/Freddie Mac ESA categories. These are separate skill sets, not subcategories.
+
+**Proposed framework:** Two qualification levels per service type — site visit only vs full service. Primary focus on Phase One ESA qualifications ("Phase One ESA" with site visit as a separate designation).
+
+**Connect integration logic:** Staffing decisions pull from Salesforce product definitions. Two qualification questions per vendor match: (1) qualified for this product (full service vs site-visit only)? (2) within 200 miles of the site? Primary products: ESAs (majority of volume), PCAs, TSAs — logic applies product-by-product.
+
+**Considerations:** Structural changes to skills/service zones need a broader impact discussion; ESA qualification framework is the starting point; complete vendor-matching logic framework needs documentation.
+
+*(Source: [[Meeting Notes/Stitch/Cretelligent/2026-06-03 - Shaun Mac Weekly Sync|2026-06-03 Shaun Mac Weekly Sync]])*
+
+---
 
 ## Week of May 25, 2026
 

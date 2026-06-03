@@ -134,7 +134,19 @@ Five supported products: Survey, ESA, ESA with Enhanced File Review, PCA, TSA. E
 Connect API vendor lists per site location require lat/long (from Regrid GeoJSON format). Rainier building order service API endpoints. Teams notification needed for local office assignments (researching Teams API connector vs email-to-channel). 15-minute delay acceptable.
 
 
+## Project Files
+- [[cretelligent/journal|Journal]]
+- [[cretelligent/overview|Overview]]
+
+## Vendor Matching & Skills Framework (added 2026-06-03)
+
+**Proposed (pending skills analysis):** vendor-selection logic moves to Salesforce — query own contacts against criteria instead of calling the Order Service find-vendor endpoint; invite selected vendors directly via the Connect invitation API (Story 6172 would drop the Order Service dependency).
+
+**Qualification model:** two levels per service type — site visit only vs full service. Phase One ESA framework first; primary products ESA (majority volume), PCA, TSA; logic applies product-by-product. Match gates: (1) product qualification, (2) within 200 miles of site (plus entire-state / entire-nation opt-ins). Known gaps: missing vendor addresses, state licensing layers (radon), Connect's opt-out zone model and linked mutually-exclusive specialties. Bidding stories (epics 4–5) on hold pending Wendell's logic documentation. See [[patterns/vendor-skill-geo-matching]].
+
 ## Meeting Note Sources
+- [[Meeting Notes/Stitch/Cretelligent/2026-06-03 - Stitch CREtelligent - Weekly Refinement & Planning|2026-06-03 Weekly Refinement & Planning]]
+- [[Meeting Notes/Stitch/Cretelligent/2026-06-03 - Shaun Mac Weekly Sync|2026-06-03 Shaun Mac Weekly Sync]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-05-28 - Stitch CREtelligent Addl Refinement|2026-05-28 Addl Refinement]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-05-28 - Stitch CREtelligent - Daily Dev Standup|2026-05-28 Dev Standup]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-05-27 - Stitch CREtelligent - Weekly Refinement and Planning|2026-05-27 Weekly Refinement]]
