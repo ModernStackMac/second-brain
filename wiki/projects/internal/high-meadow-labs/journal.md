@@ -2,7 +2,7 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-04-23
+last_meeting: 2026-06-03
 open_actions: 3
 aliases: [high-meadow-labs]
 ---
@@ -10,6 +10,22 @@ aliases: [high-meadow-labs]
 # High Meadow Labs — Project Journal
 
 > HMS internal AI product initiative. Training specialized models for wealth management use cases and building enterprise AI agent products.
+
+---
+
+## Week of June 1, 2026
+
+Aidentified Demo Prep (Jun 3): GTM planning for a mutual demo with Aidentified plus internal demo-resourcing for FlexDash and AskVery.
+
+**Aidentified partnership / mutual demo:** A mutual demo is planned with Aidentified — MSS/HMS demos FlexDash to showcase its AI-development capabilities, and Aidentified demos its NCP platform (still in development). Positioning: HMS as an innovation partner that gets clients to market faster by leveraging its AI developers; revenue model is client referrals for implementation.
+
+**Demo resourcing:** Sean Arnold identified as an alternative FlexDash demo lead so Mac can stay focused on billable FlexDash development hours. Additional demo coverage needed: Brian Hyman requested AskVery demo ability; Catherine suggested multiple people be able to demo each tool; Dave Mazra was unavailable for today's demo (joining late). Mac is not joining today's Aidentified demo.
+
+**AskVery deck enhancement:** Proposed a single 4-quadrant slide mapping roles (Advisor, C-level, Data Analyst, Administrator) with three sample questions per role as a demo springboard. Catherine is working with Mazra on an RIA-specific deck.
+
+**Next steps:** Sean Arnold conversation scheduled for the FlexDash demo handoff.
+
+*(Source: [[Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep|2026-06-03 Aidentified Demo Prep]])*
 
 ---
 

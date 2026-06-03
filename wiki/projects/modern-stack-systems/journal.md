@@ -1,12 +1,28 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-06-01
+updated: 2026-06-03
 ---
 
 # Modern Stack Systems — Journal
 
 ## Week of June 1, 2026
+
+Andrew / Mac Sync (Jun 3, w/ Andrew Smith): Practice growth update, a deep demo of Mac's time-tracking app, and Andrew's AI/auth recommendations.
+
+**Practice growth:** New managed-services contract starting at $200/hr with an initial 50-hour bank and multi-year expansion potential. Workload is ramping — a vendor management system rebuild (a few hundred hours), the Stitch/CREtelligent project going live, and another project launching simultaneously. Positive client feedback throughout.
+
+**Time-tracking app demo:** React app with real-time filtering and graph animations, monthly/weekly/quarterly goal tracking and projections, and calendar sync that auto-maps meetings to time cards. QuickBooks integration covers CSV export, draft-invoice creation, and automatic customer creation. PM layer handles client/sub-project organization, color coding, per-client hourly rates, and rule-based time allocation via title matching.
+
+**Andrew's recommendations:** Add a chat interface for querying project data and an MCP server for Claude integration. Auth — current Google Auth works well; Clerk is an alternative for multiple login types (free tier ~100 users). Microsoft Build takeaways: local-AI-model emphasis (96GB-memory hardware), Windows Unix CLI tooling, Git features in file explorer, OpenAI containerization improvements.
+
+**Next dev priorities (Mac's app):** One-button automated time logging for Salesforce/Stitch work; calendar-sync optimization for multi-user deployment (calendar sync may stay a Mac-only feature; other users would need a Google account).
+
+**Personal:** Andrew's son had his car repossessed (a paying-your-bills lesson); Andrew planning a 7-person France trip (Marseille, driving the Mediterranean coast to Italy, possible Monaco F1/casino stop).
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]])*
+
+---
 
 Andrew / Mac Sync (Jun 1, w/ Andrew Smith): Practice business-ops and tax-strategy check-in, plus Dreamforce planning and an AI-industry conversation.
 

@@ -49,7 +49,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-02 (ingest: new Talus engagement — Mac/Kai sync; +dedup-merge pattern)*
+*Last updated: 2026-06-03 (ingest: 5 Jun-3 meeting notes — MAI, Cartier, MSS Andrew/Mac, Aidentified Demo Prep, Vladimir interview stub; no new pages, +field-capacity pattern example)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker

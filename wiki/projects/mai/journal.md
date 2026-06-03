@@ -31,7 +31,7 @@ MAI Stand Up (Jun 3): FlexDash event-filtering fix, case field type conversions,
 
 **Decisions:**
 - Page-layout changes go prod-only going forward to prevent UAT/prod drift; flexi pages held back to avoid DocuSign button conflicts
-- Collapse per-subtype "completed" booleans into a single "Case Completed" checkbox (DocuSign field stays separate) to reclaim field capacity
+- Collapse per-subtype "completed" booleans into a single "Case Completed" checkbox (DocuSign field stays separate) to reclaim field capacity — see [[patterns/salesforce-field-capacity-management]]
 
 *(Source: [[Meeting Notes/High Meadows/MAI/2026-06-03 - Stand Up|2026-06-03 MAI Stand Up]])*
 

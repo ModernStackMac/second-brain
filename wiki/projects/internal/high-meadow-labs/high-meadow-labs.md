@@ -39,6 +39,10 @@ Selected because it's "more cut and dry" than financial opinions — less likely
 - [[multi-agent-voting]] — consistency pattern
 - [[claude-ai]] — comparison baseline
 
+## Project Files
+- [[high-meadow-labs/journal|Journal]]
+
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep|2026-06-03 Aidentified Demo Prep]]
 - [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-23 - High Meadow Labs 0.1|2026-04-23 High Meadow Labs 0.1]]
 - [[Meeting Notes/High Meadows/Internal/Product Calls/2026-04-22 - High Meadow Labs|2026-04-22 High Meadow Labs]]

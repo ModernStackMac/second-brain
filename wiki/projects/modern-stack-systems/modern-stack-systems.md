@@ -107,10 +107,13 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 ## Meeting Note Sources (continued)
 - [[Meeting Notes/Modern Stack Systems/2026-06-01 - Modern Stack Systems between Mac Nosek and Randall Jordan|2026-06-01 Randall Jordan]]
 - [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]]
+- [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]]
 
 ## Practice Operations (updated Jun 2026)
 - **Invoicing:** Moving to QuickBooks for project-based invoicing (hours split by project; Brady logs time per project). Replaces spreadsheet tracking. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]])*
 - **Tax / CPA:** Veil Advisory Platform is the leading candidate to replace the current generalist CPA — $5K/yr incl. two tax-planning sessions through 2027, single-member S-corp specialist (NY, CEO of Hive Meadow). Adds Gusto payroll (~$500/yr). P-TET election under consideration for Illinois double-taxation relief. Brady remains 1099. (Supersedes the earlier Tyler Gardner referral.)
+- **New managed-services contract (Jun 3):** New engagement starting at $200/hr with an initial 50-hour bank and multi-year expansion potential. Concurrent pipeline includes a vendor-management-system rebuild (few hundred hours), CREtelligent/Stitch go-live, and another project launching. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]])*
+- **Internal time-tracking app:** React app in active development — real-time filtering/graph animations, monthly/weekly/quarterly goal tracking, calendar→time-card sync, QuickBooks integration (CSV export, draft invoices, auto customer creation), and a PM layer (client/sub-project org, color coding, per-client rates, title-match time-allocation rules). Roadmap: one-button SF/Stitch time logging, multi-user calendar sync, chat/MCP query interface, optional Clerk auth. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]])*
 
 ---
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-03*
