@@ -306,3 +306,5 @@
 - [2026-06-02 12:30 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-06-02 - Project Keystone Daily Stand-up.md · confidence: high · match: keyword
 
 - [2026-06-02 16:09 CT] "Mac/Kai Sync on Accounts" → Meeting Notes/_Unmatched/2026-06-02 - Mac Kai Sync on Accounts.md · confidence: none · match: fallback
+
+- [2026-06-03 09:00 CT] "Mac/Kai Sync on Accounts" → Meeting Notes/Modern Stack Systems/Talus/2026-06-02 - Mac Kai Sync on Accounts.md · confidence: medium · match: keyword (re-process: moved from _Unmatched now that `talus` slug is mapped)
