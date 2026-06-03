@@ -317,3 +317,7 @@
 - [2026-06-03 13:15 CT] "Stand Up" → Meeting Notes/High Meadows/MAI/2026-06-03 - Stand Up.md · confidence: high · match: keyword
 - [2026-06-03 13:15 CT] "Aidentified Demo Prep" → Meeting Notes/High Meadows/Internal/Product Calls/2026-06-03 - Aidentified Demo Prep.md · confidence: medium · match: keyword
 - [2026-06-03 13:15 CT] "Maciej (Mac) Nosek Interview with Vladimir Mitevski" → Meeting Notes/_Unmatched/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski.md · confidence: none · match: fallback
+
+- [2026-06-03 14:11 CT] "HMU Workshops & Content Library Ideation" → Meeting Notes/High Meadows/Internal/HMU/2026-06-03 - HMU Workshops & Content Library Ideation.md · confidence: high · match: keyword
+- [2026-06-03 14:11 CT] "Aidentified Demo Prep" → Meeting Notes/High Meadows/Internal/2026-06-03 - Aidentified Demo Prep.md · confidence: low · match: keyword
+- [2026-06-03 14:11 CT] "Shaun / {Mac} Weekly Sync" → Meeting Notes/_Unmatched/2026-06-03 - Shaun Mac Weekly Sync.md · confidence: none · match: fallback
