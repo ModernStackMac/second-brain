@@ -321,3 +321,6 @@
 - [2026-06-03 14:11 CT] "HMU Workshops & Content Library Ideation" → Meeting Notes/High Meadows/Internal/HMU/2026-06-03 - HMU Workshops & Content Library Ideation.md · confidence: high · match: keyword
 - [2026-06-03 14:11 CT] "Aidentified Demo Prep" → Meeting Notes/High Meadows/Internal/2026-06-03 - Aidentified Demo Prep.md · confidence: low · match: keyword
 - [2026-06-03 14:11 CT] "Shaun / {Mac} Weekly Sync" → Meeting Notes/_Unmatched/2026-06-03 - Shaun Mac Weekly Sync.md · confidence: none · match: fallback
+- [2026-06-03 16:12 CT] "Stitch // CREtelligent - Weekly Refinement & Planning" → Meeting Notes/Stitch/Cretelligent/2026-06-03 - Stitch CREtelligent - Weekly Refinement & Planning.md · confidence: medium · match: keyword
+- [2026-06-03 16:12 CT] "Shaun / {Mac} Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-06-03 - Shaun Mac Weekly Sync.md · confidence: medium · match: keyword (re-processed from _Unmatched — summary now available; content is CREtelligent vendor skills/Connect matching, mirrors same-day refinement call)
+- [2026-06-03 16:12 CT] "Maciej (Mac) Nosek Interview with Vladimir Mitevski" → Meeting Notes/Modern Stack Systems/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski.md · confidence: medium · match: keyword (re-processed from _Unmatched — summary now available; recruiting/business-dev pattern per MSS precedent)
