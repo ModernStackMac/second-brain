@@ -322,3 +322,29 @@
   - LN (LNW) had no pages modified in the window. WB, RW, MP scanned for parity — no in-window matches.
   - Mirror directory `wiki/f2-internal/CE/` holds 7 files (the 6 above + core-salesforce-usage-alignment.md, aged out of window) — all current.
   - No pages tagged "private" or in personal spaces were copied.
+
+## [2026-06-04T06:39:00-05:00] confluence-ingest | No changes
+
+- **Spaces checked:** CE (Cetera), LN (LNW), MP (MAI Post-MVP), WB (William Blair), RW (Ritholtz Wealth)
+- **Active F2 projects (identity.yaml project_slug_map):** cetera/f2-cetera → CE, lnw → LN. (WB, RW, MP scanned for parity; not active keyword projects.)
+- **CQL window:** `space in ("CE","LN","MP","WB","RW") AND type = page AND lastmodified >= "2026-05-28" order by lastmodified desc` (7-day lookback, 2026-05-28 to 2026-06-04)
+- **Pages found in window:** 6 (all in CE / Cetera)
+
+| Page | Space | Page ID | Last Modified | Action |
+|------|-------|---------|---------------|--------|
+| Affiliate Onboarding | CE | 451575809 | 2026-05-28 | Skipped, unchanged since last sync (mirror last_confluence_update: 2026-05-28T00:00:00Z; last_synced 2026-06-01 > page lastModified) |
+| Growth Engine | CE | 275972100 | 2026-05-28 | Skipped, unchanged since last sync |
+| APP Address | CE | 430768132 | 2026-05-28 | Skipped, unchanged since last sync |
+| Gifts Object Alignment | CE | 430964740 | 2026-05-28 | Skipped, unchanged since last sync |
+| Case Object Alignment | CE | 274071713 | 2026-05-28 | Skipped, unchanged since last sync |
+| Financial Planning | CE | 433487874 | 2026-05-28 | Skipped, unchanged since last sync |
+
+- **Synced:** 0
+- **Skipped (unchanged):** 6
+- **Errors:** None
+- **Notes:**
+  - Confluence still reports lastModified = May 28, 2026 (date-only granularity) for all six pages — no edits since the 2026-06-01 full sync. Spot-checked affiliate-onboarding.md frontmatter: last_confluence_update 2026-05-28T00:00:00Z, last_synced 2026-06-01 — current.
+  - project-mapping.md not found in _System (consistent with prior runs); used identity.yaml project_slug_map for active project keywords.
+  - LN, WB, RW, MP had no pages modified in the window.
+  - Mirror directory wiki/f2-internal/CE/ holds 7 files (6 above + core-salesforce-usage-alignment.md, aged out of window) — all current.
+  - No pages tagged "private" or in personal spaces were copied.
