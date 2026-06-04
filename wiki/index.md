@@ -27,6 +27,7 @@
 - [[patterns/go-live-hypercare-cutover|Go-live hypercare cutover]] — bug-only freeze + hypercare sprint + cross-org issue log + idle-capacity gate (MAI, Lefavi)
 - [[patterns/lead-contact-dedup-merge|Lead/contact dedup merge (Apex invokeable)]] — email-match, master-precedence merge, opt-out preservation, bulk + real-time (Talus)
 - [[patterns/vendor-skill-geo-matching|Vendor skill + geography matching]] — two-tier qualification, radius + state/nation opt-ins, SF-side matching over broken marketplace search (CREtelligent)
+- [[patterns/docusign-maestro-prefill-mapping|DocuSign Maestro prefill field mapping]] — raw fields only (no encrypted/formula), contact-ID format for record selection, schema-gap pass (Lefavi, Cetera)
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate
@@ -50,7 +51,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-04 (ingest: Jun 4 Cetera Keystone stand-up + MAI Dev DSU; MAI go-live pulled forward to Jun 8; go-live-hypercare-cutover pattern extended with freeze/on-call/go-no-go mechanics)*
+*Last updated: 2026-06-04 (ingest: Lefavi DocuSign schema & Reg SP review; new docusign-maestro-prefill-mapping pattern; Schwab sync regression + Reg SP C-grade decision logged)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker

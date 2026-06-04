@@ -2,13 +2,30 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-06-02
+last_meeting: 2026-06-04
 open_actions: "2"
 ---
 
 # Lefavi — Project Journal
 
 ## Week of June 1, 2026
+
+DocuSign schema & Regulation SP review (Jun 4): Maestro testing hit a household-creation bug, new SF fields scoped, Schwab sync degraded, Reg SP compliance review underway.
+
+**DocuSign schema:** Maestro workflow failed on household creation due to a representative-selection error — working with DocuSign on the contact-selection fix (rep ID needs contact ID format). Contract and profile pages are mapped with prefill fields; web-form schema is being built in parallel; household-name merging for multi-client households still unresolved. Prefill gotchas confirmed: use the raw `ssn` field (not the encrypted `sssn`) and `birth_date` (not the `next_birthday_calc` formula) — encrypted and formula fields don't populate prefill. Phone type defaults to home for now. New SF fields scoped: securities-industry employment (yes/no + company), expanded employment-status options, trusted-contact relationship picklist, optional driver's-license verification. (Pattern: [[patterns/docusign-maestro-prefill-mapping]].)
+
+**Schwab integration regression:** OpenView Gateway connection failing across profile accounts, RMD account roles, balances, and positions — manual sync reports "successful" but data isn't landing. Schwab's Salesforce system was down today, possibly the upstream cause. Plan: watch the 10am sync tomorrow; if it fails again, unenroll/re-enroll both Advisor Center and Download ID (standard fix), with a backup call scheduled. (Note: this is a post-sign-off regression — integration was signed off Jun 2.)
+
+**Regulation SP:** FINRA/SEC cybersecurity and data-protection regs — the deadline for firms Lefavi's size was June 3. Compliance review in progress; Stuart's guidance is to target pragmatic "C grade" compliance rather than gold-plating. System-impact document to be shared this week.
+
+**Client ops:** IRA withdrawal completed for the farmer client (ACH via USB); Schwab statement needed from the client for bid approval, remaining balance transfer to follow. Ian unavailable next week (client engagement in Cleveland) — overlaps with Mac's travel week.
+
+**Decisions:**
+- Regulation SP: aim for C-grade compliance, not A-grade (Stuart's guidance)
+
+*(Source: [[Meeting Notes/High Meadows/Lefavi/2026-06-04 - DocuSign schema and Regulation SP compliance review|2026-06-04 DocuSign schema & Reg SP review]])*
+
+---
 
 Lefavi Internal Sync (Jun 2): Schwab integration signed off, client-meeting prep for Mac's week out, dashboard issues resolved, dev pipeline at 100% in-scope.
 
