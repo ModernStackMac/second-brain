@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: lnw
-updated: 2026-06-04T13:24:27-05:00
+updated: 2026-06-04T15:20:55-05:00
 ---
 
 # LNW — Board
