@@ -307,3 +307,9 @@
 [2026-06-04T15:20:55-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
 [2026-06-04T15:20:55-05:00] NOTE: CET-4, CET-112, CET-113 are Done but unarchivable — CET unmapped, no canonical slug for archive path
 [2026-06-04T15:20:55-05:00] NOTE: Linear (MSS + HM workspaces) not synced — Linear MCP requires OAuth authentication; no user present during scheduled run
+[2026-06-04T17:21:49-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1648 — no mapping in project-mapping.md
+[2026-06-04T17:21:49-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1641 — no mapping in project-mapping.md
+[2026-06-04T17:21:49-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — no mapping in project-mapping.md
+[2026-06-04T17:21:49-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md
+[2026-06-04T17:21:49-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
+[2026-06-04T17:21:49-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
