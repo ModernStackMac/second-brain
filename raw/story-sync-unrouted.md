@@ -286,3 +286,9 @@
 [2026-06-04T09:24:17-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (mapping says key=F2 for cetera, actual Jira project key is CET)
 [2026-06-04T09:24:17-05:00] NOTE: MAI-1648 dropped out of the active set since the 07:22 run — no archive stub written (MAI is unmapped, no canonical slug for raw/archived-stories/{slug}/)
 [2026-06-04T09:24:17-05:00] NOTE: Linear (MSS + HM workspaces) not synced — Linear MCP unauthenticated (OAuth required, scheduled run)
+
+[2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — no mapping in project-mapping.md
+[2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1641 — no mapping in project-mapping.md
+[2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md
+[2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
+[2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
