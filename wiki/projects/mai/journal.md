@@ -2,13 +2,30 @@
 status: active
 owner: Mac
 priority: p1
-last_meeting: 2026-06-03
+last_meeting: 2026-06-04
 open_actions: 15
 ---
 
 # MAI — Project Journal
 
 ## Week of June 1, 2026
+
+MAI Dev DSU (Jun 4): **Go-live Monday (Jun 8)** — deployment freeze, weekend on-call, steering committee go/no-go today.
+
+**Go-live cutover:** Going live Monday; final preparations underway. Deployment freeze from 1 PM today so sales process testing can run on a stable build. Weekend on-call coverage staffed — Mac and another dev confirmed availability, support structure in place. Steering committee meets today for the final go/no-go decision. Sales process testing session at 3 PM with existing family scenarios, focused on the entity mapping issues from yesterday (minor updates needed, team briefed). Note: this pulls go-live forward from the previously documented June 16 date.
+
+**QA / bug resolution:** 1635 (family vs household) clarified and passed; 1638 (new family email) deployment confirmed; 1643 (prospect conversion) identified, needs investigation; 1629 (household member numbering) fixed with batch backfill — closes Mac's Jun 2 investigation item. Regression testing emphasized for all production deployments. New high/highest-priority bugs available for pickup. Test class coverage work ongoing, running longer than expected.
+
+**Outstanding issues:** Flex dashboard updated to show only records with required fields populated. Operations billing queue access issue — users need to move cases to "signatures received" status; billing fee field process needs clarification for the "other" option; separate call needed for queue permissions. Authorized persons not populating on LWC in production (ticket 1650). Smoke testing planned as proactive bug prevention.
+
+**Next steps:** High-priority bug fixes continue through the weekend; resolve ops billing access/process; complete smoke testing of key processes; monitor the go/no-go announcement.
+
+**Decisions:**
+- Go-live Monday 2026-06-08 (pending steering committee go/no-go), with deployment freeze from 1 PM Jun 4 and weekend on-call coverage — see [[patterns/go-live-hypercare-cutover]]
+
+*(Source: [[Meeting Notes/High Meadows/MAI/2026-06-04 - MAI Dev DSU|2026-06-04 MAI Dev DSU]])*
+
+---
 
 MAI Stand Up (Jun 3): FlexDash event-filtering fix, case field type conversions, field-capacity consolidation, prod-only layout strategy, and data-validation progress ahead of the June 16 go-live.
 

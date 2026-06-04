@@ -74,6 +74,7 @@
 
 
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/Cetera/2026-06-04 - Project Keystone Daily Stand-up|2026-06-04 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-06-02 - Project Keystone Daily Stand-up|2026-06-02 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-06-01 - Project Keystone Daily Stand-up|2026-06-01 Keystone Stand-up]]
 - [[Meeting Notes/High Meadows/Cetera/2026-05-26 - Project Keystone Daily Stand-up|2026-05-26 Keystone Stand-up]]
