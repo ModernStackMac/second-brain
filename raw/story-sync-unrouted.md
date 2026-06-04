@@ -292,3 +292,11 @@
 [2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md
 [2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
 [2026-06-04T11:20:50-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1641 — no mapping in project-mapping.md (MAI entry has Jira Workspace/Key TBD)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — no mapping in project-mapping.md (MAI entry has Jira Workspace/Key TBD)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md (MAI entry has Jira Workspace/Key TBD)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (MAI entry has Jira Workspace/Key TBD)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera maps to key F2, actual key is CET)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-4 — no mapping in project-mapping.md (Done — would archive, but no canonical slug for archive path)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-112 — no mapping in project-mapping.md (Done — would archive, but no canonical slug for archive path)
+[2026-06-04T13:24:27-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-113 — no mapping in project-mapping.md (Done — would archive, but no canonical slug for archive path)
