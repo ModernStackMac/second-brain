@@ -325,3 +325,4 @@
 - [2026-06-03 16:12 CT] "Shaun / {Mac} Weekly Sync" → Meeting Notes/Stitch/Cretelligent/2026-06-03 - Shaun Mac Weekly Sync.md · confidence: medium · match: keyword (re-processed from _Unmatched — summary now available; content is CREtelligent vendor skills/Connect matching, mirrors same-day refinement call)
 - [2026-06-03 16:12 CT] "Maciej (Mac) Nosek Interview with Vladimir Mitevski" → Meeting Notes/Modern Stack Systems/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski.md · confidence: medium · match: keyword (re-processed from _Unmatched — summary now available; recruiting/business-dev pattern per MSS precedent)
 - [2026-06-04 ~09:45 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-06-04 - MAI Dev DSU.md · confidence: medium · match: keyword
+- [2026-06-04 12:10 CT] "Project Keystone Daily Stand-up" → Meeting Notes/High Meadows/Cetera/2026-06-04 - Project Keystone Daily Stand-up.md · confidence: medium · match: keyword
