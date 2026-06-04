@@ -266,3 +266,12 @@
 [2026-06-03T19:20:18-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md (mai entry has Jira Project Key: TBD)
 [2026-06-03T19:20:18-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (mai entry has Jira Project Key: TBD)
 [2026-06-03T19:20:18-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera entry maps key F2, not CET)
+
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1648 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1651 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1632 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1641 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (mai Jira Workspace/Project Key are TBD)
+[2026-06-04T07:22:43-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (mapping says key=F2 for cetera, actual Jira project key is CET)
