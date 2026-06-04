@@ -44,6 +44,8 @@ Hit 100% in-scope dev completion — bug tickets only. Plan: close the long 8–
 
 Source: [[mai]] journal, Jun 2 2026
 
+**Update (2026-06-04):** Go-live pulled forward to Monday Jun 8. Final cutover mechanics added: deployment freeze from 1 PM on the Thursday before go-live (stable build for sales-process testing), weekend on-call rotation staffed from the dev team, steering-committee go/no-go gate on freeze day, and proactive smoke testing of key processes as bug prevention. Confirms the pattern extends past "bug-only mode" into a formal freeze → on-call → go/no-go sequence. *(Source: [[Meeting Notes/High Meadows/MAI/2026-06-04 - MAI Dev DSU|2026-06-04 MAI Dev DSU]])*
+
 ### Lefavi (2026-06-02)
 Same week, separate engagement: all 100 in-scope dev items complete, current focus bug fixes only. Mac available for additional tickets, with a heads-up that go-live week may spike workload — and a defined comms protocol (group chat with Sean and Michael) for high-call periods. Lighter-weight instance of the same cutover shape: in-scope-done → bug-only → go-live with a communication channel for the surge.
 
@@ -64,4 +66,4 @@ Source: [[lefavi]] journal, Jun 2 2026
 
 ---
 *Created: 2026-06-02*
-*Sources: Meeting Notes/High Meadows/MAI/2026-06-02 - MAI Dev DSU.md, Meeting Notes/High Meadows/Lefavi/2026-06-02 - Lefavi Internal Sync.md*
+*Sources: [[Meeting Notes/High Meadows/MAI/2026-06-02 - MAI Dev DSU|2026-06-02 MAI Dev DSU]], [[Meeting Notes/High Meadows/Lefavi/2026-06-02 - Lefavi Internal Sync|2026-06-02 Lefavi Internal Sync]], [[Meeting Notes/High Meadows/MAI/2026-06-04 - MAI Dev DSU|2026-06-04 MAI Dev DSU]]*

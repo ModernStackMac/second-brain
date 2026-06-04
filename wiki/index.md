@@ -50,7 +50,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-03 (evening ingest: HMU workshops note, 2 CREtelligent Jun-3 notes, Vladimir/ZRG interview content; +1 pattern vendor-skill-geo-matching)*
+*Last updated: 2026-06-04 (ingest: Jun 4 Cetera Keystone stand-up + MAI Dev DSU; MAI go-live pulled forward to Jun 8; go-live-hypercare-cutover pattern extended with freeze/on-call/go-no-go mechanics)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker

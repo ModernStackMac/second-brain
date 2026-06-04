@@ -2,14 +2,33 @@
 status: active
 owner: Mac
 priority: p2
-last_meeting: 2026-06-02
-open_actions: 12
+last_meeting: 2026-06-04
+open_actions: 15
 ---
 
 # Cetera — Project Journal
 
 
 ## Week of June 1, 2026
+
+Project Keystone Daily Stand-up (Jun 4): deployment prep, demo-over-TRPG prioritization, sprint close-out before Mac's travel.
+
+**Deployment & demo prep:** Governance column work completed. Deployment log updated yesterday with Sam's review — next: build the change set for sandbox deployment, then create demo records. Connor's recent changes status unclear; Mac will audit the deployment log for differences. Multiple deployment rounds expected under the new process.
+
+**Testing priorities:** Financial planning demo takes priority over TRPG work. Sam completed additional TRPG testing with ticket comments; TRPG Modesk work deprioritized until after the financial demo. Demo script adjustments in progress (June working on this) with Connor review tomorrow — script gets parsed into UAT testing notes on tickets, reducing Connor's workload and giving Jared and Darren direction.
+
+**Sprint close-out:** End of current sprint. Sprint approval needed from Mac before travel; next sprint planning list due today.
+
+**Availability:** Mac traveling for his mother's memorial service in upstate New York and will be out of pocket — closing out all items beforehand.
+
+**Next steps:**
+- Mac: Audit deployment log for Connor's changes, then build sandbox change set + demo records
+- Mac: Approve sprint before travel; deliver next sprint planning list today
+- Connor: Review adjusted demo script tomorrow
+
+*(Source: [[Meeting Notes/High Meadows/Cetera/2026-06-04 - Project Keystone Daily Stand-up|2026-06-04 Project Keystone Daily Stand-up]])*
+
+---
 
 Project Keystone Daily Stand-up (Jun 2): demo script finalization, technical bugs surfaced, database restoration options, retirement migration scoping.
 
