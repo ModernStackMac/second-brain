@@ -348,3 +348,19 @@
   - LN, WB, RW, MP had no pages modified in the window.
   - Mirror directory wiki/f2-internal/CE/ holds 7 files (6 above + core-salesforce-usage-alignment.md, aged out of window) — all current.
   - No pages tagged "private" or in personal spaces were copied.
+
+## [2026-06-05T06:39:00-05:00] confluence-ingest | No changes
+
+- **Spaces checked:** CE (Cetera), LN (LNW), MP (MAI Post-MVP), WB (William Blair), RW (Ritholtz Wealth)
+- **Active F2 projects (identity.yaml project_slug_map):** cetera/f2-cetera → CE, lnw → LN. (WB, RW, MP scanned for parity; not active keyword projects. project-mapping.md still not present in _System — consistent with prior runs.)
+- **CQL window:** `space in ("CE","LN","MP","WB","RW") AND type = page AND lastmodified >= "2026-05-29" order by lastmodified desc` (7-day lookback, 2026-05-29 to 2026-06-05)
+- **Pages found in window:** 0
+
+- **Synced:** 0
+- **Skipped (unchanged):** 0 in window
+- **Errors:** None
+- **Notes:**
+  - The 6 CE pages from the 2026-06-01 full sync (Affiliate Onboarding, Growth Engine, APP Address, Gifts Object Alignment, Case Object Alignment, Financial Planning) all still report lastModified = May 28, 2026 — confirmed via wider sanity-check query (lastmodified >= 2026-05-26 returned exactly those 6, all CE). They have now aged out of the 7-day window and were last mirrored 2026-06-01 — mirrors current.
+  - LN, WB, RW, MP had no pages modified in the window.
+  - Mirror directory wiki/f2-internal/CE/ holds 7 files (6 above + core-salesforce-usage-alignment.md) — all current.
+  - No pages tagged "private" or in personal spaces were encountered.
