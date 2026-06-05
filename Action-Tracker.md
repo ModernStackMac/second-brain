@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-06-05T09:22:04-05:00
+updated: 2026-06-05T11:21:41-05:00
 story_count: "8"
 ---
 
@@ -18,6 +18,6 @@ story_count: "8"
 | LNW | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 
 > [!note] Only LNW rows are routed to a project folder (`wiki/projects/lnw/`). MAI and CET rows are shown for visibility but NOT routed — project-mapping.md has no matching (workspace, key) entry (MAI key=TBD, actual=MAI; cetera key=F2, actual=CET). See `raw/story-sync-unrouted.md`.
-> [!note] CHANGES this run: MAI-1660 (Other Accounts related-list bug, High, Active) is NEW since the last sync — assigned to Mac 2026-06-05. No stories dropped out of the active set; no archive stubs written.
+> [!note] CHANGES this run (2026-06-05 11:21 CT): none — Jira state unchanged since the 09:22 sync. No new stories, no stories dropped out of the active set, no archive stubs written.
 > [!note] Stale file flag: `wiki/projects/cetera/stories-f2.md` still carries jira_project_key CET from a pre-mapping-reset sync (CET-110 still active but unroutable). Left untouched — fix the mapping (cetera key F2 vs actual CET) to resume routing/archiving.
 > [!note] Linear (MSS + HM) not synced this run — Linear MCP requires OAuth authentication and no user is present for the scheduled run. Meadow / Flex Dash stories not refreshed.
