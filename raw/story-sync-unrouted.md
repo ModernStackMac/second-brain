@@ -333,3 +333,7 @@
 [2026-06-05T11:21:41-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md
 [2026-06-05T11:21:41-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
 [2026-06-05T11:21:41-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
+[2026-06-05T13:24:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1660 — no mapping in project-mapping.md
+[2026-06-05T13:24:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
+[2026-06-05T13:24:00-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
+[2026-06-05T13:24:00-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — dropped from assigned set since last sync; no mapping in project-mapping.md, archive stub not written
