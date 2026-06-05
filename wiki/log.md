@@ -373,3 +373,14 @@
 - Maintenance: commitments.md ## Done holds 2 items (Randall walkthrough Done 2026-06-01, MAI household-records #1629 Done 2026-06-04) — both <14d, no archive. wiki/log.md ~34 entries — no rotation.
 - Carryover lint flags (unchanged; see wiki/lint-report-mid.md): backtick source citations in older journals (cetera, meadow, cretelligent, older MAI/MSS entries) pending a backtick→wikilink sweep; meadow overview.md cites deprecated raw path raw/projects/hms-capacity-planning/; Cartier + internal/high-meadow-labs folders unmapped in project-mapping.md; Talus slug not yet promoted into the Canonical Slug Index; duplicate Aidentified note at Internal/ root + duplicated frontmatter/body in the Product Calls copy awaiting manual review.
 - Key takeaways: Quiet cycle — no new raw material to compile. Wiki current through the Jun 4 source set (Cetera/MAI stand-ups, Lefavi DocuSign Maestro prefill + Reg SP decision). Heads-up for upcoming cycles: MAI go-live weekend coverage runs Jun 6–8.
+
+## [2026-06-05] ingest | No new sources
+- Scan scope: Meeting Notes/ (all company/project subfolders incl. _Unmatched), Second Brain/raw/articles/ (8 files), Second Brain/raw/projects/ (meadow/).
+- Finding: nothing new in scope this cycle. Mtime scan since the prior [2026-06-05] run (logged 10:17) shows no new or modified files under Meeting Notes/, raw/articles/, or raw/projects/. Newest in-scope sources remain the Jun 4 set (Cetera Keystone stand-up, MAI Dev DSU, Lefavi DocuSign/Reg SP review) — all processed in the [2026-06-04] entries.
+- Out-of-scope change since last run (not ingested per task scan scope): Second Brain/raw/story-sync-unrouted.md modified 12:22 (raw/ root, not raw/articles or raw/projects — consistent with prior runs' handling).
+- Pages created: none
+- Pages updated: none
+- Patterns extracted: none
+- Meeting note linked to context: n/a
+- Maintenance: commitments.md ## Done items both <14d — no archive. wiki/log.md ~35 entries — no rotation.
+- Key takeaways: quiet cycle; vault fully ingested through Jun 4. Watch story-sync-unrouted.md — it keeps changing at raw/ root and may warrant explicit routing scope in a future task revision.
