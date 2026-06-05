@@ -384,3 +384,11 @@
 - Meeting note linked to context: n/a
 - Maintenance: commitments.md ## Done items both <14d — no archive. wiki/log.md ~35 entries — no rotation.
 - Key takeaways: quiet cycle; vault fully ingested through Jun 4. Watch story-sync-unrouted.md — it keeps changing at raw/ root and may warrant explicit routing scope in a future task revision.
+
+## [2026-06-05] ingest | MSS Meeting of the Minds (Jun 5)
+- Source: [[Meeting Notes/Modern Stack Systems/2026-06-05 - The Meeting of the Minds|2026-06-05 Meeting of the Minds]]
+- Pages created: wiki/tools/nebula-logger.md
+- Pages updated: wiki/projects/modern-stack-systems/journal.md (Week of June 1 entry), wiki/projects/modern-stack-systems/modern-stack-systems.md (Meeting Note Sources), wiki/index.md (Tools section), commitments.md (refreshed MAI weekend on-call item with Mon 8am ET war-room detail per dedup rule)
+- Patterns extracted: none (tool page only — Nebula Logger; Salesforce Inspector event monitoring and Claude+VS Code org analysis noted in journal)
+- Meeting note linked to context: yes
+- Key takeaways: Peer sync covering Victor's Salesforce dev-tooling demos (Claude+VS Code org analysis, SF Inspector event monitoring, Nebula Logger) and MAI Monday go-live war-room prep (8am ET, Mac + David on tickets; Federico's deployment blockers; dashboard config priority). No new commitments — war-room detail merged into existing MAI on-call item.

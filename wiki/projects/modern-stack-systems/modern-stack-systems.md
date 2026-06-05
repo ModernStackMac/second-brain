@@ -114,6 +114,8 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]]
 - [[Meeting Notes/Modern Stack Systems/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski|2026-06-03 Vladimir Mitevski Interview (ZRG Partners)]]
 
+- [[Meeting Notes/Modern Stack Systems/2026-06-05 - The Meeting of the Minds|2026-06-05 Meeting of the Minds]]
+
 ## Practice Operations (updated Jun 2026)
 - **Invoicing:** Moving to QuickBooks for project-based invoicing (hours split by project; Brady logs time per project). Replaces spreadsheet tracking. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]])*
 - **Tax / CPA:** Veil Advisory Platform is the leading candidate to replace the current generalist CPA — $5K/yr incl. two tax-planning sessions through 2027, single-member S-corp specialist (NY, CEO of Hive Meadow). Adds Gusto payroll (~$500/yr). P-TET election under consideration for Illinois double-taxation relief. Brady remains 1099. (Supersedes the earlier Tyler Gardner referral.)

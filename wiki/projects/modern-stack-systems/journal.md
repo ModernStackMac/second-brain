@@ -1,12 +1,24 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-06-03
+updated: 2026-06-05
 ---
 
 # Modern Stack Systems — Journal
 
 ## Week of June 1, 2026
+
+Meeting of the Minds (Jun 5, w/ Victor Domatz, Andrew Smith, Bradyl): Travel chat (Barcelona, Ireland, Alsace/Naples food recs), Salesforce dev-tooling demos, and Monday go-live war-room prep.
+
+**Salesforce dev tooling (Victor's demos):** Claude wired into VS Code against a full org download (metadata queries, automation-flow and data-relationship mapping) surfaced sharing-rule conflicts that had taken 4 months to untangle manually. Salesforce Inspector's new event-monitoring feature does real-time platform event subscription — kills the need for external Mule Studio monitoring. [[tools/nebula-logger|Nebula Logger]] recommended as the standard apex logging layer: free managed package, persistent error tracking replacing system.debug, invocable actions for Flow.
+
+**MAI go-live (Monday Jun 8) war-room prep:** Federico hit deployment blockers — test-class failures from sharing-rule query limits, manual record-page layout sync required UAT→prod; new fields (fund account name, requesting advisor) prioritized for deployment. War room starts 8am ET Monday: Mac and David handling incoming tickets collaboratively (virtual + physical rooms, async-first with immediate escalation). Weekend availability confirmed (Sat limited during travel, Sun airport laptop time). Dashboard config is a launch priority — standard dashboards, customization docs, dashboard-admin permission sets. Cross-ref: [[mai/mai|MAI]].
+
+**Security note:** Salesforce flagged Proton VPN as an anonymizer — locked accounts and invalidated OAuth keys; three-factor auth becoming standard across platforms.
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-05 - The Meeting of the Minds|2026-06-05 Meeting of the Minds]])*
+
+---
 
 Mac Interview with Vladimir Mitevski (Jun 3, w/ Vladimir Mitevski + Mariah Vaskis of ZRG Partners, Ryan Wischnefski of 28 North Consulting, Brittany Dickinson of Salesforce): Exec-search/opportunity interview — ZRG Partners' CIO walked through their Salesforce + Data Cloud architecture and executive-search use case. (This note was previously an empty stub in _Unmatched; full summary landed after relocation to the MSS folder.)
 

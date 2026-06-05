@@ -31,6 +31,7 @@
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate
+- [[tools/nebula-logger|Nebula Logger]] — free managed package for persistent apex/flow logging; system.debug replacement
 
 ## Topics
 - [[salesforce-ai-tooling]] — Agentforce, Vibes IDE, Prompt Builder, Web Console news
@@ -51,7 +52,7 @@
 - **_Unmatched/** — pending routing review
 
 ---
-*Last updated: 2026-06-04 (ingest: Lefavi DocuSign schema & Reg SP review; new docusign-maestro-prefill-mapping pattern; Schwab sync regression + Reg SP C-grade decision logged)*
+*Last updated: 2026-06-05 (ingest: MSS Meeting of the Minds Jun 5; new nebula-logger tool page; MAI go-live war-room prep captured)*
 
 ## Reports
 - [[reports/weekly-synthesis-2026-06-01|Weekly Synthesis — Week of May 25–June 1, 2026]] — June deadline pile-up (MAI go-live, CRE UAT, LNW close); Notion-vs-Salesforce pattern; MAI field-limit blocker
