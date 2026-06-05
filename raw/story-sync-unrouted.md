@@ -323,3 +323,9 @@
 [2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera entry claims key F2; actual board key is CET)
 [2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1641 — dropped from active set (reassigned to Vincent Wang, status QA); no archive stub written because MAI is unmapped
 [2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — dropped from active set (status Cancelled, unassigned); no archive stub written because MAI is unmapped
+[2026-06-05T09:22:04-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1660 — no mapping in project-mapping.md
+[2026-06-05T09:22:04-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md
+[2026-06-05T09:22:04-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
+[2026-06-05T09:22:04-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
+[2026-06-05T09:22:04-05:00] LINEAR SKIPPED — Linear MCP requires OAuth; no user present in scheduled run. MSS + HM workspaces (Meadow, Flex Dash) not synced.
+[2026-06-05T09:22:04-05:00] NOTE — NEW unrouted ticket this run: MAI-1660 (Other Accounts related-list bug, High, Active). MAI project key remains TBD in project-mapping.md; cetera entry still lists jira_project_key=F2 while live Cetera tickets use key CET.
