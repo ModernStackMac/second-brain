@@ -1,6 +1,6 @@
 ---
 type: action-tracker
-updated: 2026-06-05T13:24:00-05:00
+updated: 2026-06-05T15:22:00-05:00
 story_count: "7"
 ---
 
@@ -16,7 +16,6 @@ story_count: "7"
 | LNW | LNW-190 | Part 2: Visibility Enhancements POC - Aggregated Visibility | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-190) |
 | LNW | LNW-189 | Part 1: Visibility Enhancements POC - Meeting Note Additional Functionality | Review | Medium | — | 2026-04-06 | [Jira](https://f2strategy.atlassian.net/browse/LNW-189) |
 
-> [!note] Only LNW rows are routed to a project folder (`wiki/projects/lnw/`). MAI and CET rows are shown for visibility but NOT routed — project-mapping.md has no matching (workspace, key) entry (MAI key=TBD, actual=MAI; cetera key=F2, actual=CET). See `raw/story-sync-unrouted.md`.
-> [!note] CHANGES this run (2026-06-05 13:24 CT): MAI-1634 dropped from Mac's assigned set since the 11:21 sync (no longer returned by Jira). It was never routed (unmapped project), so no archive stub written — logged in `raw/story-sync-unrouted.md`. LNW set unchanged; no archives written.
-> [!note] Stale file flag: `wiki/projects/cetera/stories-f2.md` still carries jira_project_key CET from a pre-mapping-reset sync (CET-110 still active but unroutable). Left untouched — fix the mapping (cetera key F2 vs actual CET) to resume routing/archiving. `wiki/projects/cetera/stories-jira.md` (workspace "jira") is likewise legacy and left untouched.
-> [!note] Linear (MSS + HM) not synced this run — Linear MCP requires OAuth authentication and no user is present for the scheduled run. Meadow / Flex Dash stories not refreshed.
+> [!note] CHANGES this run (2026-06-05 15:22 CT): All three Jira projects (MAI, CET, LNW) routed cleanly via project-mapping.md — the mapping mismatches flagged by the 13:24 run are resolved in the current mapping file. Archived: MAI-1562 (Deployed), MAI-1614 (Deployed, reassigned to Aisha Royer), CET-111 (Ready for Demo, reassigned to Trevor Pollack). New active story: MAI-1660 (High, Bug).
+> [!note] Linear (MSS + HM) not synced this run — Linear MCP requires OAuth authentication and no user was present for the scheduled run. Meadow / Flex Dash stories not refreshed.
+> [!note] Legacy files `wiki/projects/mai/stories-jira.md` and `wiki/projects/cetera/stories-jira.md` (workspace token "jira", stale data) left untouched — flagged for cleanup via wiki lint.

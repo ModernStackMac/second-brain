@@ -2,7 +2,7 @@
 kanban-plugin: basic
 type: stories-sync
 project: mai
-updated: 2026-05-29T18:00:00-05:00
+updated: 2026-06-05T15:22:00-05:00
 ---
 
 # MAI CRM Build — Board
@@ -13,7 +13,7 @@ updated: 2026-05-29T18:00:00-05:00
 
 ## In Progress
 
-- MAI-1614 Fund Assignment: Assignee contact search bug 🔴
+- MAI-1660 Financial Accounts - Other Accounts not showing on household related list 🔴
 
 ## Review
 
