@@ -318,3 +318,8 @@
 [2026-06-04T19:23:26-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md
 [2026-06-04T19:23:26-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md
 [2026-06-04T19:23:26-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md
+[2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1634 — no mapping in project-mapping.md (mai entry has Jira Project Key: TBD)
+[2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1292 — no mapping in project-mapping.md (mai entry has Jira Project Key: TBD)
+[2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera entry claims key F2; actual board key is CET)
+[2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1641 — dropped from active set (reassigned to Vincent Wang, status QA); no archive stub written because MAI is unmapped
+[2026-06-05T07:20:50-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1633 — dropped from active set (status Cancelled, unassigned); no archive stub written because MAI is unmapped
