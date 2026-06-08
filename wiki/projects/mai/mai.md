@@ -27,6 +27,7 @@
 - **Go-live** — Monday June 8, 2026 (pulled forward from the previously documented June 16; steering committee go/no-go Jun 4). Deployment freeze from 1 PM Jun 4; weekend on-call coverage staffed (Mac + one dev). Full capacity through June 22, half capacity starting June 23, then gradual reduction. Phase 2 discussions beginning.
 - **100% in-scope dev complete (Jun 2, 2026)** — only bug tickets remain. Current sprint closes Monday; a fresh "Hypercare" sprint opens for clean post-go-live Jira tracking. Bugs tracked in an Excel issue log shared across MAI/F2/dev (Jira remains dev system of record). Idle-capacity rule: no self-assigned work without Michael/Sean/Aisha approval.
 - **Encrypted fields** — custodian account number field on contract exhibit unexpectedly encrypted (no ticket found requesting it, not encrypted in Dynamics, likely copied from encrypted case field). Data migration needed if encryption removed.
+- **Production access** — Mac has no production access; production-only tickets are routed to Aisha. Prod testing pattern: create example records, validate via login-as different users, then clean up the non-migration records afterward. (2026-06-08)
 
 ## Permission Set Model
 - Client service-based permission set missing fund object access — all custom permission sets need at least read access
@@ -54,6 +55,7 @@
 
 
 ## Meeting Note Sources
+- [[Meeting Notes/High Meadows/MAI/2026-06-08 - MAI Dev DSU|2026-06-08 MAI Dev DSU]]
 - [[Meeting Notes/High Meadows/MAI/2026-06-04 - MAI Dev DSU|2026-06-04 MAI Dev DSU]]
 - [[Meeting Notes/High Meadows/MAI/2026-06-03 - Stand Up|2026-06-03 MAI Stand Up]]
 - [[Meeting Notes/High Meadows/MAI/2026-06-02 - MAI Dev DSU|2026-06-02 MAI Dev DSU]]

@@ -28,6 +28,7 @@
 - [[patterns/lead-contact-dedup-merge|Lead/contact dedup merge (Apex invokeable)]] — email-match, master-precedence merge, opt-out preservation, bulk + real-time (Talus)
 - [[patterns/vendor-skill-geo-matching|Vendor skill + geography matching]] — two-tier qualification, radius + state/nation opt-ins, SF-side matching over broken marketplace search (CREtelligent)
 - [[patterns/docusign-maestro-prefill-mapping|DocuSign Maestro prefill field mapping]] — raw fields only (no encrypted/formula), contact-ID format for record selection, schema-gap pass (Lefavi, Cetera)
+- [[patterns/picklist-to-text-volatile-values|Picklist → freeform text for volatile values]] — drop picklists for churning reference sets (people/vendors); standardize payload on email/external ID; rework dependent formulas (CREtelligent)
 
 ## Tools
 - [[obsidian]] — local-first markdown knowledge base; second-brain substrate

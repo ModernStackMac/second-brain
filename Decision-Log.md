@@ -235,3 +235,11 @@ append_only: true
 | 2026-06-03 | CREtelligent | Bidding-process stories (epics 4–5) on hold pending skills-analysis resolution; proposed shift of vendor-selection logic from Order Service API to Salesforce-side contact queries (Story 6172 would drop the find-vendor dependency) | Connect skills/zones structure problems (mutually exclusive specialties linked, opt-out zone model, nationwide spam) make vendor matching unreliable; Wendell documenting full logic from 3.5-hr analysis | Team | meeting\|2026-06-03 - Stitch CREtelligent - Weekly Refinement & Planning | When skills analysis lands — confirm or revert the Salesforce-side matching shift |
 | 2026-06-04 | MAI | Go-live pulled forward to Monday Jun 8 (was June 16): deployment freeze from 1 PM Jun 4, weekend on-call staffed (Mac + one dev), steering committee go/no-go same day | Final prep complete — 100% in-scope dev done Jun 2, bug-only mode; sales process testing at 3 PM on entity-mapping fixes | Team | meeting\|2026-06-04 - MAI Dev DSU | If steering committee returns a no-go |
 | 2026-06-04 | Lefavi | Regulation SP compliance: target pragmatic "C grade" compliance, not A-grade gold-plating (Stuart's guidance) | FINRA/SEC cybersecurity + data-protection regs; deadline for firms Lefavi's size was Jun 3; review in progress with J, system-impact doc to be shared this week | Stuart | meeting\|2026-06-04 - DocuSign schema and Regulation SP compliance review | If regulators or audit push back on the C-grade posture |
+# Decision Log
+
+> Significant cross-project decisions captured by `second-brain-ingest`. Strategic only — trivial ticket-level choices excluded.
+
+| Date | Project | Decision | Context |
+|---|---|---|---|
+| 2026-06-08 | cretelligent | Convert Opportunity PM fields from picklist to freeform text | Picklist broke integration sync whenever a new PM joined; freeform removes per-PM maintenance. Trade-off: dependent formula fields (incl. Site PM-lookup) stop firing and need rework. Payload standardized to include PM email for deterministic mapping. See [[Second Brain/wiki/patterns/picklist-to-text-volatile-values]]. |
+| 2026-06-08 | cretelligent | Choir endpoint to reference Opportunity ID instead of POID | Opportunity ID = bulk-load ID in their system; simpler single-reference structure. |

@@ -412,3 +412,19 @@
 - Patterns extracted: none — networking/BD conversation; the undocumented-ERP bi-directional sync is exploratory with no solution delivered yet
 - Meeting note linked to context: yes
 - Key takeaways: Sean English (Rivet & Ridge) is a US-based, RCA-specialist boutique SF shop floated as a reciprocal staffing partner; near-term ~$2K bi-directional Salesforce↔ABS (Absolute Laundry Solutions) ERP integration on a 2–3 week window, Mac to review the poorly-documented API docs midweek after the MAI go-live.
+
+## [2026-06-08] ingest | Jun 8 batch — MAI Dev DSU, MSS Andrew/Mac, CREtelligent Salesforce Field Changes (3 notes)
+- Sources:
+  - Meeting Notes/High Meadows/MAI/2026-06-08 - MAI Dev DSU.md
+  - Meeting Notes/Modern Stack Systems/2026-06-08 - Andrew Mac.md
+  - Meeting Notes/Stitch/Cretelligent/2026-06-08 - Salesforce Field Changes.md
+- Pages created: wiki/patterns/picklist-to-text-volatile-values.md; Second Brain/Decision-Log.md (initialized — header + first 2 rows)
+- Pages updated: mai/journal.md (new Week of Jun 8), mai/mai.md (production-access constraint + MNS link); modern-stack-systems/journal.md (Jun 8 Andrew/Mac entry), modern-stack-systems.md (CPA Jun 8 update, "off-Salesforce" BD idea, Supabase backend note, MNS link); cretelligent/journal.md (new Week of Jun 8), cretelligent.md (PM field restructuring & team section + MNS link); commitments.md (2 new items + CPA item refreshed); wiki/index.md (new pattern listed)
+- Commitments: +1 MAI (story 1673 → ticket 1569 Novops PDP), +1 CREtelligent (PM picklist→text conversion + remapping post-payload); refreshed MSS CPA-switch item with Jun 8 WGC quote + Andrew's defer-to-next-year rec (dedup, not duplicated). MSS Sean English ABS item already captured 2026-06-08 — no dup.
+- Decision-Log: +2 CREtelligent (PM picklist→freeform text; Choir endpoint POID→Opportunity ID). MSS CPA left out (Andrew's rec to defer is a recommendation, not a firm decision).
+- Patterns extracted: picklist-to-text-volatile-values (NEW) from CREtelligent PM field conversion — reusable Salesforce data-model pattern (drop picklists for churning reference sets; standardize integration payload on email/external ID; rework dependent formulas). MAI/MSS notes yielded no new cross-engagement patterns this cycle.
+- Connectivity check: all three touched context files already carry ## Project Files + ## Meeting Note Sources; Jun 8 meeting notes linked to context (yes/yes/yes).
+- Maintenance: ## Done items (Done 2026-06-01, 2026-06-04) both <14 days — no archive. log.md ~60 entries, all <90 days — no rotation.
+- Note: obsidian_patch_content heading-target failed (invalid-target) for the MSS journal sub-heading and both context MNS prepends — fell back to file Edit on host paths (clean inserts, order preserved). MAI journal.md intermittently shows an iCloud sync lock in bash (Resource deadlock) — read via host path Read tool, written via Obsidian MCP without issue.
+- Meeting note linked to context: yes
+- Key takeaways: MAI go-live day (Jun 8) — Mac triaging permission/profile tickets under a no-prod-access constraint (prod tickets routed to Aisha). CREtelligent shifting PM picklist → freeform text + email-keyed payload to fix sync; new reusable pattern captured. MSS practice ops: WGC CPA quote on the table, Andrew advises deferring the switch to next year.

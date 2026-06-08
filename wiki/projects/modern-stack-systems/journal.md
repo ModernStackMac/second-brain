@@ -8,6 +8,20 @@ updated: 2026-06-08
 
 ## Week of June 8, 2026
 
+Andrew / Mac sync (Jun 8): Practice-ops and product check-in — app traction, Mac's time-tracking build, an SMB "off-Salesforce" angle, self-hosting exploration, and the CPA decision.
+
+**Andrew's app:** ~10 downloads/day heading into summer; Google ad revenue up to ~$70 (from near zero); strong Czech Republic traction. Android lagging badly (120 downloads vs. several thousand on iOS). New free QA resource — a just-departed 12-year Capgemini contractor testing Android builds and giving UX feedback (keyboard, search). Startup-speed improvements underway; replacing an 8-year-old media server with a new Intel box.
+
+**Mac's time-tracking app:** Demo'd the build — Supabase backend + QuickBooks integration, contractor management, client billing, project assignments, calendar integration, and automatic meeting→time-bucket mapping.
+
+**BD angle — "get me off Salesforce":** Custom builds for SMB / smaller mid-market could run ~half a Salesforce subscription; enterprise unlikely (AI-adoption hesitancy). Explored self-hosting via Coolify (pre-configured Jenkins, WordPress, error tracking, personal finance) — a VM-to-VM "virtual cloud" with Cloudflare redundancy across locations.
+
+**CPA decision:** Current CPA $2,600/yr (quarterly + year-end, incl. payroll). WGC proposal $5,000/yr + $500 Gusto payroll (no mid-year proration), 10 meetings, $250/hr for complex work, tax-planning vs. maintenance-only. Andrew's rec: wait until next year to switch — hard to compare without a full year, and worth finding a younger, ambitious CPA building their practice (current one "going through the motions").
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-08 - Andrew Mac|2026-06-08 Andrew Mac]])*
+
+---
+
 Sean English intro (Jun 8, w/ Sean English of Rivet & Ridge): Peer-firm networking call between two boutique Salesforce shops — market conditions, BD strategy, and a near-term subcontract opportunity.
 
 **Market conditions:** Both firms feeling Salesforce-ecosystem rate compression — EY's SF practice margins reportedly down 50% YoY. Sean's shop struggles to hold $150–175/hr against recruiters pushing $100–120 and $70/hr offers becoming common (both reject sub-market rates). Ecosystem oversaturated with consultants and larger SIs.

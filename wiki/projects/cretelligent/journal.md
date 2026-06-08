@@ -8,6 +8,24 @@ open_actions: "30"
 
 # CREtelligent — Project Journal
 
+## Week of June 8, 2026
+
+Salesforce Field Changes (Jun 8): PM field restructuring, payload standardization, a Choir endpoint reference change, and team-coverage notes. *(confidence: medium — Granola summary only)*
+
+**PM fields picklist → freeform text:** The PM picklist on Opportunity breaks sync whenever a new PM joins; converting it to freeform text. Caveat — dependent formula fields stop firing after the conversion. Affected Opportunity fields: PM ID (email), PM first/full/last name (parsed from full name), a combined first/last field, and the project-manager field on the environment opportunity. The Site object has a formula field that looks up PM from the opportunity.
+
+**Payload standardization:** PM data is inconsistent with the CSM/CE format — PM sends initials + full name while CSM/CE send name + email. Fix: add PM email to the payload so it aligns with the CSM/CE structure and maps cleanly into Salesforce. PM initials purpose unclear (likely display only). See [[patterns/picklist-to-text-volatile-values]].
+
+**Choir endpoint update:** Removing the POID reference; the Choir endpoint will use Opportunity ID instead (= the bulk-load ID in their system) for a simpler reference structure. Updated docs to follow.
+
+**Team:** Blake out temporarily — another dev covering; Rainier (lead developer) is the primary technical contact. June completed the invoicing-endpoint PR and is generating documentation.
+
+**Next steps:** Integration team adds PM email to the payload; once in, Mac handles the Salesforce field conversion and mapping. Choir work continues until the Salesforce changes are ready. Team call this afternoon.
+
+*(Source: [[Meeting Notes/Stitch/Cretelligent/2026-06-08 - Salesforce Field Changes|2026-06-08 Salesforce Field Changes]])*
+
+---
+
 ## Week of June 1, 2026
 
 Weekly Refinement & Planning (Jun 3): Order Service API integration review, proposed Salesforce-side vendor matching, Connect skills/zones structural problems, and a bidding-workstream pause.

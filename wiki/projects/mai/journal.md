@@ -8,6 +8,22 @@ open_actions: 15
 
 # MAI — Project Journal
 
+## Week of June 8, 2026
+
+MAI Dev DSU (Jun 8): Go-live day — ticket triage, permission/profile changes, and production-access constraints as new requirements land.
+
+**Active work:** Mac on story 1673 (discussed in Slack). Next up is ticket 1569 — remove PDP "system" user access for Novops so only operations (not admins) can upload cases; needs clarification from Aisha.
+
+**Permission/layout tickets:** 1668 — make a field editable on the Case page layout (control signer sourced from practice; case record page only) via system-profile + permission-set updates. 1669 — same standard-process flow but building the definition on Case instead of Contract. Lower priority (time permitting): restrict incoming-receiver remote from top search.
+
+**Production-access constraint:** Mac has no production access, so prod-only tickets are routed to Aisha. Prod testing pattern: create example records, log in as different users to validate, then clean up the non-migration records afterward. New requirements arriving today are affecting the go-live timeline.
+
+**Next steps:** Complete story 1673, then follow up on ticket 1569.
+
+*(Source: [[Meeting Notes/High Meadows/MAI/2026-06-08 - MAI Dev DSU|2026-06-08 MAI Dev DSU]])*
+
+---
+
 ## Week of June 1, 2026
 
 MAI Dev DSU (Jun 4): **Go-live Monday (Jun 8)** — deployment freeze, weekend on-call, steering committee go/no-go today.

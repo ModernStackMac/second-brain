@@ -144,7 +144,18 @@ Connect API vendor lists per site location require lat/long (from Regrid GeoJSON
 
 **Qualification model:** two levels per service type — site visit only vs full service. Phase One ESA framework first; primary products ESA (majority volume), PCA, TSA; logic applies product-by-product. Match gates: (1) product qualification, (2) within 200 miles of site (plus entire-state / entire-nation opt-ins). Known gaps: missing vendor addresses, state licensing layers (radon), Connect's opt-out zone model and linked mutually-exclusive specialties. Bidding stories (epics 4–5) on hold pending Wendell's logic documentation. See [[patterns/vendor-skill-geo-matching]].
 
+## PM Field Restructuring & Team (added 2026-06-08)
+
+**PM fields → freeform text:** The Opportunity PM picklist is being converted to freeform text — the picklist broke sync whenever a new PM joined. Affected fields: PM ID (email), PM first/full/last name (parsed), combined first/last, and the environment-opportunity project-manager field. Caveat: dependent formula fields stop firing post-conversion (incl. the Site object's PM-lookup formula). See [[patterns/picklist-to-text-volatile-values]].
+
+**Payload standardization:** PM email added to the payload to match the CSM/CE contract (name + email), replacing PM's initials + full-name format. Enables clean Salesforce mapping; PM initials likely display-only. Mac owns the Salesforce-side field conversion and remapping once the payload is updated.
+
+**Choir endpoint:** POID reference removed in favor of Opportunity ID (= bulk-load ID) for a simpler reference structure; docs to follow.
+
+**Team:** Blake out temporarily (another dev covering). Rainier — lead developer, primary technical contact. June completed the invoicing-endpoint PR.
+
 ## Meeting Note Sources
+- [[Meeting Notes/Stitch/Cretelligent/2026-06-08 - Salesforce Field Changes|2026-06-08 Salesforce Field Changes]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-06-03 - Stitch CREtelligent - Weekly Refinement & Planning|2026-06-03 Weekly Refinement & Planning]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-06-03 - Shaun Mac Weekly Sync|2026-06-03 Shaun Mac Weekly Sync]]
 - [[Meeting Notes/Stitch/Cretelligent/2026-05-28 - Stitch CREtelligent Addl Refinement|2026-05-28 Addl Refinement]]
