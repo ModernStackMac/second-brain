@@ -336,3 +336,5 @@
 - [2026-06-08 09:55 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-06-08 - Andrew Mac.md · confidence: high · match: attendee
 
 - [2026-06-08 13:00 CT] "Salesforce Field Changes" → Meeting Notes/Stitch/Cretelligent/2026-06-08 - Salesforce Field Changes.md · confidence: medium · match: keyword
+
+- [2026-06-08 16:09 CT] "Stitch // CREtelligent - User Experience Prep" → Meeting Notes/Stitch/Cretelligent/2026-06-08 - Stitch CREtelligent - User Experience Prep.md · confidence: medium · match: keyword
