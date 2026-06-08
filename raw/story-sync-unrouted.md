@@ -347,3 +347,8 @@
 [2026-06-08T07:22:16-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1652 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
 [2026-06-08T07:22:16-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1667 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
 [2026-06-08T07:22:16-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera maps to key F2, live project key is CET)
+
+[2026-06-08T09:21:18-05:00] workspace=f2 project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera entry lists Jira key `F2`, live key is `CET`)
+[2026-06-08T09:21:18-05:00] workspace=f2 project=MAI ticket=MAI-1631 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
+[2026-06-08T09:21:18-05:00] workspace=f2 project=MAI ticket=MAI-1569 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
+[2026-06-08T09:21:18-05:00] source=linear workspaces=MSS,HM — SKIPPED: Linear MCP not authenticated (OAuth required); autonomous run could not authenticate. Meadow/Flex Dash stories not synced.
