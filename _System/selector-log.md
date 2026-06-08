@@ -334,3 +334,5 @@
 
 - [2026-06-08 09:55 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-06-08 - MAI Dev DSU.md · confidence: high · match: keyword
 - [2026-06-08 09:55 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-06-08 - Andrew Mac.md · confidence: high · match: attendee
+
+- [2026-06-08 13:00 CT] "Salesforce Field Changes" → Meeting Notes/Stitch/Cretelligent/2026-06-08 - Salesforce Field Changes.md · confidence: medium · match: keyword
