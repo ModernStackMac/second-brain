@@ -364,3 +364,8 @@
 [2026-06-08T15:21:50-05:00] workspace=f2 project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera is mapped to Jira project key F2; live project key is CET)
 [2026-06-08T15:21:50-05:00] workspace=f2 project=MAI ticket=MAI-1640 — no mapping in project-mapping.md (mai Jira workspace/key = TBD)
 [2026-06-08T15:21:50-05:00] workspace=f2 project=MAI ticket=MAI-1569 — no mapping in project-mapping.md (mai Jira workspace/key = TBD)
+
+
+[2026-06-08T17:21:46-05:00] workspace=f2 project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera maps to jira_key F2, live key is CET)
+[2026-06-08T17:21:46-05:00] workspace=f2 project=MAI ticket=MAI-1640 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
+[2026-06-08T17:21:46-05:00] workspace=f2 project=MAI ticket=MAI-1569 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
