@@ -1,10 +1,26 @@
 ---
 type: project-journal
 project: modern-stack-systems
-updated: 2026-06-05
+updated: 2026-06-08
 ---
 
 # Modern Stack Systems — Journal
+
+## Week of June 8, 2026
+
+Sean English intro (Jun 8, w/ Sean English of Rivet & Ridge): Peer-firm networking call between two boutique Salesforce shops — market conditions, BD strategy, and a near-term subcontract opportunity.
+
+**Market conditions:** Both firms feeling Salesforce-ecosystem rate compression — EY's SF practice margins reportedly down 50% YoY. Sean's shop struggles to hold $150–175/hr against recruiters pushing $100–120 and $70/hr offers becoming common (both reject sub-market rates). Ecosystem oversaturated with consultants and larger SIs.
+
+**BD strategy:** Neither competes on AE-relationship spend ("I'd rather make you money than buy you lunch"). What works: personal networks/referrals, catching deals when larger partners "fumble," and Christmas gift boxes to clients + SI partners to build ownership.
+
+**Rivet & Ridge (Sean's firm):** 2 partners, 3 1099 admins, hiring first W2. Specializes in RCA (Revenue Cloud Advanced) implementations — 3 under belt. All US-based, no offshore. Two revenue streams: year-long 1099 engagements via recruiting firms, and MSP agreements (~100 hrs/month dev + support). Long-term plan: build up and sell as a larger SI.
+
+**Subcontract opportunity:** Sean has a near-term project — bi-directional Salesforce ↔ ABS (Absolute Laundry Solutions) ERP integration for a laundry-services client (orders, pricing, revenue sync). ABS API is poorly documented and the vendor is reluctant to share. Tight 2–3 week timeline (client getting married), ~$2K for a quick build. Sean to send API docs within the hour; Mac to review midweek after the MAI go-live. Both agreed to stay in touch for reciprocal staffing/overflow work.
+
+*(Source: [[Meeting Notes/Modern Stack Systems/2026-06-08 - Modern Stack Systems between Mac Nosek and Sean English|2026-06-08 Sean English]])*
+
+---
 
 ## Week of June 1, 2026
 

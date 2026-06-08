@@ -115,6 +115,7 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - [[Meeting Notes/Modern Stack Systems/2026-06-03 - Maciej (Mac) Nosek Interview with Vladimir Mitevski|2026-06-03 Vladimir Mitevski Interview (ZRG Partners)]]
 
 - [[Meeting Notes/Modern Stack Systems/2026-06-05 - The Meeting of the Minds|2026-06-05 Meeting of the Minds]]
+- [[Meeting Notes/Modern Stack Systems/2026-06-08 - Modern Stack Systems between Mac Nosek and Sean English|2026-06-08 Sean English (Rivet & Ridge)]]
 
 ## Practice Operations (updated Jun 2026)
 - **Invoicing:** Moving to QuickBooks for project-based invoicing (hours split by project; Brady logs time per project). Replaces spreadsheet tracking. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-01 - Andrew Mac|2026-06-01 Andrew Mac]])*
@@ -123,4 +124,9 @@ Modern Stack Systems is Mac's own practice. This project tracks internal operati
 - **Internal time-tracking app:** React app in active development — real-time filtering/graph animations, monthly/weekly/quarterly goal tracking, calendar→time-card sync, QuickBooks integration (CSV export, draft invoices, auto customer creation), and a PM layer (client/sub-project org, color coding, per-client rates, title-match time-allocation rules). Roadmap: one-button SF/Stitch time logging, multi-user calendar sync, chat/MCP query interface, optional Clerk auth. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-03 - Andrew Mac|2026-06-03 Andrew Mac]])*
 
 ---
-*Last updated: 2026-06-03*
+
+## Partner Network (updated Jun 2026)
+- **Sean English — Rivet & Ridge** (sean@rivetandridge.com): Boutique SF shop — 2 partners + 3 1099 admins (first W2 pending), all US-based, no offshore. RCA (Revenue Cloud Advanced) implementation specialist (3 delivered). Revenue from year-long 1099 recruiter engagements + ~100 hr/month MSP agreements; long-term plan to build and sell as a larger SI. Potential reciprocal subcontracting/staffing partner. Near-term opportunity: ~$2K bi-directional Salesforce ↔ ABS (Absolute Laundry Solutions) ERP integration (orders/pricing/revenue) on a 2–3 week window — Mac reviewing the (poorly documented) API docs midweek. *(Source: [[Meeting Notes/Modern Stack Systems/2026-06-08 - Modern Stack Systems between Mac Nosek and Sean English|2026-06-08 Sean English]])*
+
+---
+*Last updated: 2026-06-08*

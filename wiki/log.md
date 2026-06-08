@@ -403,3 +403,12 @@
 - Maintenance: commitments.md ## Done holds 2 items (Randall walkthrough Done 2026-06-01, MAI #1629 Done 2026-06-04) — both <14d, no archive. wiki/log.md ~37 entries — no rotation.
 - Carryover lint flags (unchanged; see wiki/lint-report-mid.md): backtick source citations in older journals (cetera, meadow, cretelligent, older MAI/MSS entries) pending a backtick→wikilink sweep; meadow overview.md cites deprecated raw path raw/projects/hms-capacity-planning/; Cartier + internal/high-meadow-labs folders unmapped in project-mapping.md; Talus slug not yet promoted into the Canonical Slug Index; duplicate Aidentified note at Internal/ root + duplicated frontmatter/body in the Product Calls copy awaiting manual review.
 - Key takeaways: Quiet cycle — vault fully ingested through the Jun 5 MSS Meeting of the Minds. Heads-up: MAI go-live war room Monday Jun 8, 8am ET (Mac + David on tickets); weekend on-call Jun 6–8.
+
+
+## [2026-06-08] ingest | MSS/Sean English — Rivet & Ridge peer-firm networking + subcontract opportunity
+- Source: Meeting Notes/Modern Stack Systems/2026-06-08 - Modern Stack Systems between Mac Nosek and Sean English.md
+- Pages created: none
+- Pages updated: projects/modern-stack-systems/journal.md (new "Week of June 8" entry), projects/modern-stack-systems/modern-stack-systems.md (new Partner Network section + meeting-note source wikilink), commitments.md (1 new MSS item)
+- Patterns extracted: none — networking/BD conversation; the undocumented-ERP bi-directional sync is exploratory with no solution delivered yet
+- Meeting note linked to context: yes
+- Key takeaways: Sean English (Rivet & Ridge) is a US-based, RCA-specialist boutique SF shop floated as a reciprocal staffing partner; near-term ~$2K bi-directional Salesforce↔ABS (Absolute Laundry Solutions) ERP integration on a 2–3 week window, Mac to review the poorly-documented API docs midweek after the MAI go-live.
