@@ -428,3 +428,16 @@
 - Note: obsidian_patch_content heading-target failed (invalid-target) for the MSS journal sub-heading and both context MNS prepends — fell back to file Edit on host paths (clean inserts, order preserved). MAI journal.md intermittently shows an iCloud sync lock in bash (Resource deadlock) — read via host path Read tool, written via Obsidian MCP without issue.
 - Meeting note linked to context: yes
 - Key takeaways: MAI go-live day (Jun 8) — Mac triaging permission/profile tickets under a no-prod-access constraint (prod tickets routed to Aisha). CREtelligent shifting PM picklist → freeform text + email-keyed payload to fix sync; new reusable pattern captured. MSS practice ops: WGC CPA quote on the table, Andrew advises deferring the switch to next year.
+
+## [2026-06-08] ingest | CREtelligent User Experience Prep (stub)
+- Source: [[Meeting Notes/Stitch/Cretelligent/2026-06-08 - Stitch CREtelligent - User Experience Prep|2026-06-08 User Experience Prep]]
+- Finding: 1 genuinely-new note (mtime 2026-06-08 21:09, after the Jun 8 batch whose newest source was the 17:10 Salesforce Field Changes note). Full mtime scan (since 2026-06-06) of Meeting Notes/, raw/articles/, raw/projects/ confirms nothing else new. Note is a content-free stub — frontmatter only (Mac sole attendee, granola_id b4e342c0), "No AI summary available" / "Transcript unavailable — requires paid Granola tier."
+- Pages created: none
+- Pages updated: projects/cretelligent/cretelligent.md (+1 Meeting Note Source wikilink, stub-flagged)
+- Patterns extracted: none — no content to mine.
+- Meeting note linked to context: yes (## Meeting Note Sources on cretelligent.md; matches prior 06-01/06-02 stub handling).
+- Commitments: none (no content). Decisions: none.
+- Connectivity: cretelligent.md already carries ## Project Files + ## Meeting Note Sources — no repair needed.
+- Maintenance: commitments.md ## Done holds Randall walkthrough (Done 2026-06-01) + MAI #1629 (Done 2026-06-04) — both <14d, no archive. log.md ~61 entries, all <90d — no rotation.
+- Carryover lint flags (unchanged): backtick source citations in older journals (cetera, meadow, cretelligent, older MAI/MSS entries) pending a backtick→wikilink sweep; meadow overview.md cites deprecated raw path raw/projects/hms-capacity-planning/; Cartier + internal/high-meadow-labs folders unmapped in project-mapping.md; Talus slug not yet promoted into the Canonical Slug Index; duplicate Aidentified note at Internal/ root awaiting manual review.
+- Key takeaways: Quiet cycle — the only new source is a Granola stub (no summary/transcript) for a CREtelligent UX prep session. Captured for graph continuity; no substantive content to compile. Wiki current through the Jun 8 batch (PM picklist→text restructuring, Choir POID→Opportunity ID) plus this UX-prep stub.
