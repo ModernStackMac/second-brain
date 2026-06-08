@@ -357,3 +357,6 @@
 [2026-06-08T11:22:56-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1667 "Contract Request: only operations should see generate contract button" (Status=To Do) — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD; actual workspace=f2strategy.atlassian.net key=MAI)
 [2026-06-08T11:22:56-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1569 "All Cases: Remove ability for non-ops & system admin users to approve/deny cases" (Status=To Do) — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD; actual workspace=f2strategy.atlassian.net key=MAI)
 [2026-06-08T11:22:56-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires OAuth authentication; no user present for scheduled run. Meadow / Flex Dash not synced.
+
+[2026-06-08T13:23:10-05:00] workspace=f2 project=CET ticket=CET-110 — no mapping in project-mapping.md
+[2026-06-08T13:23:10-05:00] workspace=f2 project=MAI ticket=MAI-1569 — no mapping in project-mapping.md
