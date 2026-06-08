@@ -338,3 +338,5 @@
 - [2026-06-08 13:00 CT] "Salesforce Field Changes" → Meeting Notes/Stitch/Cretelligent/2026-06-08 - Salesforce Field Changes.md · confidence: medium · match: keyword
 
 - [2026-06-08 16:09 CT] "Stitch // CREtelligent - User Experience Prep" → Meeting Notes/Stitch/Cretelligent/2026-06-08 - Stitch CREtelligent - User Experience Prep.md · confidence: medium · match: keyword
+
+- [2026-06-08 18:09 CT] SCHEDULED RUN: process-granola-meetings. 26 Granola meetings scanned (5 this_week Jun 8, 21 last_week Jun 1–5). 0 new — all already filed under Meeting Notes/. 0 routed to _Unmatched. No re-process exceptions triggered.
