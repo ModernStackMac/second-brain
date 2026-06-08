@@ -331,3 +331,6 @@
 - [2026-06-05 09:15 CT] "The Meeting of the Minds" → Meeting Notes/Modern Stack Systems/2026-06-05 - The Meeting of the Minds.md · confidence: high · match: attendee (re-processed: prior file had "No AI summary available"; Granola summary now available and populated. Transcript still unavailable — free Granola tier.)
 
 - [2026-06-08 09:05 CT] "Modern Stack Systems between Mac Nosek and Sean English" → Meeting Notes/Modern Stack Systems/2026-06-08 - Modern Stack Systems between Mac Nosek and Sean English.md · confidence: medium · match: keyword
+
+- [2026-06-08 09:55 CT] "MAI Dev DSU" → Meeting Notes/High Meadows/MAI/2026-06-08 - MAI Dev DSU.md · confidence: high · match: keyword
+- [2026-06-08 09:55 CT] "Andrew / Mac" → Meeting Notes/Modern Stack Systems/2026-06-08 - Andrew Mac.md · confidence: high · match: attendee
