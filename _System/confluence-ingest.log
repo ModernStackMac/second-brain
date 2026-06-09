@@ -380,3 +380,19 @@
   - LN (LNW) had no pages modified in the window (most recent LN edits 2026-04-06). WB, RW, MP scanned for parity — no in-window matches.
   - Mirror directory `wiki/f2-internal/CE/` holds 7 files (the 6 above + core-salesforce-usage-alignment.md) — all current.
   - No pages tagged "private" or in personal spaces were copied. ~70 personal spaces and non-F2 global spaces (William Blair, Ritholtz Wealth, MAI Post-MVP, Modera, Common) excluded per task rules.
+
+## [2026-06-09T06:39:00-05:00] confluence-ingest | No changes
+
+- **Spaces checked:** CE (Cetera), LN (LNW). (WB, RW, MP, Modera, Common and ~70 personal spaces excluded — not active F2 keyword projects per project-mapping.md.)
+- **Active F2 projects (project-mapping.md + identity.yaml):** cetera/CET → CE, lnw/LNW → LN. identity.yaml workspaces.confluence = f2-internal (cloud f2strategy) → destination Second Brain/wiki/f2-internal/.
+- **CQL window:** `space in (CE, LN) AND type = page AND lastmodified >= now("-7d") order by lastmodified desc` (7-day lookback, 2026-06-02 to 2026-06-09).
+- **Pages found in window:** 0
+
+- **Synced:** 0
+- **Skipped (unchanged):** 0 in window
+- **Errors:** None
+- **Notes:**
+  - Sanity-check query (`lastmodified >= now("-60d")`) confirms the most recent modification across CE + LN is **May 28, 2026** — the 6 CE design pages from the 2026-06-01 full sync (Affiliate Onboarding, Growth Engine, APP Address, Gifts Object Alignment, Case Object Alignment, Financial Planning) plus Core Salesforce Usage Alignment (Apr 21). All have aged out of the 7-day window and were last mirrored 2026-06-01 — mirrors current.
+  - LN (LNW) had no pages modified in the window or in the last 60 days.
+  - Mirror directory `wiki/f2-internal/CE/` holds 7 files (the 6 above + core-salesforce-usage-alignment.md) — all current. No edits since last sync, so nothing rewritten per immutability rule.
+  - No pages tagged "private" or in personal spaces were copied.
