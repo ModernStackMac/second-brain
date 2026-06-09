@@ -369,3 +369,9 @@
 [2026-06-08T17:21:46-05:00] workspace=f2 project=CET ticket=CET-110 — no mapping in project-mapping.md (cetera maps to jira_key F2, live key is CET)
 [2026-06-08T17:21:46-05:00] workspace=f2 project=MAI ticket=MAI-1640 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
 [2026-06-08T17:21:46-05:00] workspace=f2 project=MAI ticket=MAI-1569 — no mapping in project-mapping.md (mai Jira Workspace/Key = TBD)
+
+[2026-06-08T19:21:07-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1640 "Fund Assignment: Contact & investing entity fields" — no mapping in project-mapping.md (mai jira_project_key=TBD)
+[2026-06-08T19:21:07-05:00] workspace=f2strategy.atlassian.net project=MAI ticket=MAI-1569 "All Cases: Remove ability for non-ops & system admin users to approve/deny cases" — no mapping in project-mapping.md (mai jira_project_key=TBD)
+[2026-06-08T19:21:07-05:00] workspace=f2strategy.atlassian.net project=CET ticket=CET-110 "Case / TRPG Work Desk Alignment" — no mapping in project-mapping.md (cetera mapped to key F2, live project key is CET)
+[2026-06-08T19:21:07-05:00] LINEAR SKIPPED — Linear MCP (MSS + HM workspaces) requires interactive OAuth; only authenticate/complete_authentication tools available and no user present for this scheduled run. Meadow / Flex Dash stories not refreshed.
+[2026-06-08T19:21:07-05:00] NOTE — project-mapping.md still needs fixes so MAI/CET stop landing here every run: set MAI jira_project_key=MAI (workspace f2strategy.atlassian.net) and cetera jira_project_key=CET (both at f2strategy.atlassian.net). Outstanding since prior runs.
